@@ -559,6 +559,14 @@ footer {
   max-width: none; margin: 0;
 }
 footer > * { max-width: 1100px; margin-left: auto; margin-right: auto; }
+/* Force light text on dark footer — overrides inline styles using CSS vars */
+footer h4 { color: rgba(255,255,255,0.85) !important; }
+footer a { color: rgba(255,255,255,0.9) !important; }
+footer a:hover { color: #F97700 !important; }
+footer p { color: rgba(255,255,255,0.7) !important; }
+footer .nav-logo { color: #ffffff !important; }
+footer .nav-logo span { color: #F97700 !important; }
+footer div[style*="border-top"] { border-top-color: rgba(255,255,255,0.15) !important; }
 .footer-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; margin-bottom: 2rem; }
 .footer-col h4 {
   font-family: var(--font-mono); font-size: 0.72rem; font-weight: 600;
