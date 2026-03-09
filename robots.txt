@@ -1,0 +1,4 @@
+# DEMO SITE — block all crawlers
+# Remove this file (or replace contents) for production launch
+User-agent: *
+Disallow: /

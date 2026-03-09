@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<!-- Farr Yacht Design - Homepage (Type A) - Proto v0.1 - 2026-03-03 -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Farr Yacht Design — naval architecture, structural engineering, and consulting for racing yachts, superyachts, and production sailboats. 800+ designs since 1969.">
+  <link rel="canonical" href="https://www.farrdesign.com/">
+  <title>Farr Yacht Design &mdash; Designed to Perform</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&amp;family=IBM+Plex+Sans:wght@300;400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="farr-style.css">
+<!-- Google Analytics (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-XXXXXXXXXX");</script>
+<script src="farr-analytics.js" defer></script>
+  <meta name="robots" content="noindex, nofollow"> <!-- DEMO: remove for production -->
+</head>
+<body class="homepage">
+
+  <!-- Skip link -->
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <!-- ============ NAVIGATION ============ -->
+  <nav>
+    <a href="index.html" class="nav-logo">Farr <span>Yacht Design</span></a>
+    <div class="nav-links">
+      <a href="portfolio.html">Portfolio</a>
+      <a href="services.html">Services</a>
+      <a href="design-plans.html">Design Plans</a>
+      <div class="nav-dropdown">
+        <span class="nav-dropdown-toggle nav-links a" tabindex="0" role="button" aria-expanded="false" aria-haspopup="true">About <span class="nav-arrow">&#9662;</span></span>
+        <div class="nav-dropdown-menu">
+          <a href="about.html">Our Story</a>
+          <a href="team.html">Team</a>
+          <a href="racing.html">Racing Heritage</a>
+          <a href="partners.html">Partners</a>
+          <a href="news.html">News</a>
+        </div>
+      </div>
+      <a href="contact.html" class="nav-cta">Contact</a>
+    </div>
+    <!-- Hamburger -->
+    <div class="nav-hamburger" onclick="toggleMobileNav()" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- Mobile nav -->
+  <div class="nav-mobile" id="mobileNav">
+    <a href="portfolio.html" onclick="closeMobileNav()">Portfolio</a>
+    <a href="services.html" onclick="closeMobileNav()">Services</a>
+    <a href="design-plans.html" onclick="closeMobileNav()">Design Plans</a>
+    <div class="nav-mobile-group">
+      <a href="about.html" onclick="closeMobileNav()">Our Story</a>
+      <a href="team.html" onclick="closeMobileNav()">Team</a>
+      <a href="racing.html" onclick="closeMobileNav()">Racing Heritage</a>
+      <a href="americas-cup.html" onclick="closeMobileNav()">America&rsquo;s Cup</a>
+      <a href="volvo-ocean-race.html" onclick="closeMobileNav()">Volvo Ocean Race</a>
+    </div>
+    <a href="partners.html" onclick="closeMobileNav()">Partners</a>
+    <a href="news.html" onclick="closeMobileNav()">News</a>
+    <a href="contact.html" onclick="closeMobileNav()">Contact</a>
+  </div>
+
+  <!-- ============ HERO ============ -->
+  <main id="main">
+    <div class="hero" style="text-align:center; padding:5rem 2rem 3rem;">
+      <div class="hero-content" style="max-width:800px; margin:0 auto;">
+        <div class="hero-badge">
+          <span class="hero-badge-icon">&#9733;</span>
+          World Superyacht Award Winner 2025
+        </div>
+        <h1>Designed to Perform</h1>
+        <p class="hero-sub" style="max-width:620px; margin:0 auto 1.5rem;">From America&rsquo;s Cup campaigns to World Superyacht Award winners &mdash; yacht design for those who demand more.</p>
+        <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+          <a href="portfolio.html" class="hero-cta" style="text-decoration:none;">Explore Our Work</a>
+          <a href="contact.html" class="hero-secondary" style="text-decoration:none;">Get in Touch</a>
+        </div>
+      </div>
+
+      <div class="hero-rotator" id="heroRotator" style="max-width:1000px; margin:3rem auto 0; border-radius:12px; overflow:hidden; border:1px solid var(--border); height:400px; background-image:linear-gradient(to bottom, rgba(10,25,47,0.15), rgba(10,25,47,0.4)), url('images/Kiboko4-1.webp'); background-size:cover; background-position:center; transition:background-image 0.6s ease;">
+      </div>
+    </div>
+
+    <!-- ============ PROOF BAR ============ -->
+    <div class="proof-bar">
+      <div class="proof-item">
+        <div class="proof-item-number">43</div>
+        <div class="proof-item-label">World Championships</div>
+      </div>
+      <div class="proof-item">
+        <div class="proof-item-number">50+</div>
+        <div class="proof-item-label">Years</div>
+      </div>
+      <div class="proof-item">
+        <div class="proof-item-number">800+</div>
+        <div class="proof-item-label">Designs</div>
+      </div>
+    </div>
+
+    <!-- ============ FEATURED WORK ============ -->
+    <div class="featured-work">
+      <h2>Featured Work</h2>
+      <div class="featured-work-grid">
+
+        <!-- Project Card 1: Kiboko 4 -->
+        <a href="kiboko-4.html" class="project-card" style="text-decoration:none;">
+          <div class="project-card-image" style="background-image:url('images/Kiboko4-1.webp');background-size:cover;background-position:center;"></div>
+          <div class="project-card-body">
+            <div class="project-card-badge">&#9733; Sailing Yacht of the Year 2025</div>
+            <h3>Kiboko 4</h3>
+            <div class="project-card-meta">142&rsquo; Performance Superyacht &middot; Baltic Yachts</div>
+            <p class="project-card-desc">Award-winning performance superyacht blending racing pedigree with world-class luxury.</p>
+            <span class="card-link">View project &rarr;</span>
+          </div>
+        </a>
+
+        <!-- Project Card 2: Gelliceaux (SW108) -->
+        <a href="gelliceaux.html" class="project-card" style="text-decoration:none;">
+          <div class="project-card-image" style="background-image:url('images/SW10802_AIR-12_resize.webp');background-size:cover;background-position:center;"></div>
+          <div class="project-card-body">
+            <div class="project-card-badge">&#9733; St. Barths Bucket Winner 2024</div>
+            <h3>Gelliceaux</h3>
+            <div class="project-card-meta">108&rsquo; Performance Cruiser &middot; Southern Wind</div>
+            <p class="project-card-desc">The latest in a long line of Southern Wind collaborations, proving Farr performance at expedition scale.</p>
+            <span class="card-link">View project &rarr;</span>
+          </div>
+        </a>
+
+        <!-- Project Card 3: American Magic AC37 -->
+        <a href="americas-cup.html" class="project-card" style="text-decoration:none;">
+          <div class="project-card-image" style="background-image:url('images/bg-racing-bow.jpg');background-size:cover;background-position:center;"></div>
+          <div class="project-card-body">
+            <div class="project-card-badge">America&rsquo;s Cup 37</div>
+            <h3>American Magic</h3>
+            <div class="project-card-meta">AC75 Hull Platform &middot; 2024</div>
+            <p class="project-card-desc">Farr hull design powering the American Magic campaign at the 37th America&rsquo;s Cup in Barcelona.</p>
+            <span class="card-link">View project &rarr;</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+
+    <!-- ============ SERVICES OVERVIEW ============ -->
+    <div class="services-overview">
+      <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:1.5rem; flex-wrap:wrap; gap:0.5rem;">
+        <h2 style="margin-bottom:0;">What We Do</h2>
+        <a href="services.html" class="card-link" style="text-decoration:none;">View All Services &rarr;</a>
+      </div>
+      <div class="services-overview-grid">
+
+        <div class="service-card">
+          <div class="card-icon">&#9875;</div>
+          <h3>Naval Architecture</h3>
+          <p>Hull shapes, appendages, and sail plans optimized through five decades of competitive experience.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="card-icon">&#9670;</div>
+          <h3>Structural Engineering</h3>
+          <p>Lightweight structures engineered for performance and classification compliance.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="card-icon">&#9998;</div>
+          <h3>Design Detail &amp; Drafting</h3>
+          <p>Production-ready drawing sets, weight calculations, and hardware specification.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="card-icon">&#9881;</div>
+          <h3>Research &amp; Development</h3>
+          <p>Tank testing, CFD analysis, wind tunnel programs, and VPP development.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="card-icon">&#9733;</div>
+          <h3>Consulting</h3>
+          <p>Rating optimization, performance analysis, and campaign strategy for competitive sailors.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="card-icon">&#8635;</div>
+          <h3>Lifecycle Support</h3>
+          <p>Re-engineering, appendage redesign, and certificate reviews to keep Farr designs competitive.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ============ LATEST NEWS ============ -->
+    <div class="services-overview">
+      <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:1.5rem; flex-wrap:wrap; gap:0.5rem;">
+        <h2 style="margin-bottom:0;">Latest News</h2>
+        <a href="news.html" class="card-link" style="text-decoration:none;">All News &rarr;</a>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:1.5rem;">
+
+        <div class="news-card">
+          <div style="display:flex; gap:0.75rem; align-items:center; margin-bottom:0.75rem;">
+            <span class="news-card-tag">Award</span>
+            <span class="news-card-date">January 2025</span>
+          </div>
+          <h3 style="font-size:1.05rem;">Kiboko 4 Wins World Superyacht Award</h3>
+          <p style="font-size:0.88rem; color:var(--text-secondary); line-height:1.6;">The Farr-designed Baltic 142 received the World Superyacht Award in the sailing category &mdash; the highest honour in superyacht design.</p>
+          <a href="kiboko-4.html" style="font-size:0.82rem; color:var(--accent);">View Kiboko 4 &rarr;</a>
+        </div>
+
+        <div class="news-card">
+          <div style="display:flex; gap:0.75rem; align-items:center; margin-bottom:0.75rem;">
+            <span class="news-card-tag">Racing</span>
+            <span class="news-card-date">March 2024</span>
+          </div>
+          <h3 style="font-size:1.05rem;">Gelliceaux Wins St. Barths Bucket</h3>
+          <p style="font-size:0.88rem; color:var(--text-secondary); line-height:1.6;">The Farr-designed Southern Wind 108 took her class at the premier superyacht regatta in the Caribbean.</p>
+          <a href="gelliceaux.html" style="font-size:0.82rem; color:var(--accent);">View Gelliceaux &rarr;</a>
+        </div>
+
+        <div class="news-card">
+          <div style="display:flex; gap:0.75rem; align-items:center; margin-bottom:0.75rem;">
+            <span class="news-card-tag">Racing</span>
+            <span class="news-card-date">October 2024</span>
+          </div>
+          <h3 style="font-size:1.05rem;">American Magic &mdash; AC37</h3>
+          <p style="font-size:0.88rem; color:var(--text-secondary); line-height:1.6;">Farr contributed to the American Magic campaign at the 37th America&rsquo;s Cup in Barcelona.</p>
+          <a href="americas-cup.html" style="font-size:0.82rem; color:var(--accent);">America&rsquo;s Cup Program &rarr;</a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ============ CTA BAND ============ -->
+    <div class="cta-band" style="text-align:center; padding:4rem 2rem;">
+      <p style="font-family:var(--font-heading); font-size:1.5rem; color:var(--text-primary); margin-bottom:1.25rem;">Ready to start something?</p>
+      <a href="contact.html" class="hero-cta" style="text-decoration:none;">Get in Touch</a>
+    </div>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer>
+    <div class="footer-grid" style="max-width:1100px; margin:0 auto; padding:3rem 2rem 1.5rem; display:grid; grid-template-columns:repeat(4,1fr); gap:2rem;">
+      <div>
+        <h4 style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--text-muted); margin-bottom:0.75rem;">Portfolio</h4>
+        <div style="display:flex; flex-direction:column; gap:0.4rem;">
+          <a href="portfolio.html" style="font-size:0.85rem; color:var(--text-secondary);">All Designs</a>
+          <a href="superyachts.html" style="font-size:0.85rem; color:var(--text-secondary);">Superyachts</a>
+          <a href="racing.html" style="font-size:0.85rem; color:var(--text-secondary);">Racing</a>
+        </div>
+      </div>
+      <div>
+        <h4 style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--text-muted); margin-bottom:0.75rem;">Services</h4>
+        <div style="display:flex; flex-direction:column; gap:0.4rem;">
+          <a href="services.html" style="font-size:0.85rem; color:var(--text-secondary);">Naval Architecture</a>
+          <a href="consulting.html" style="font-size:0.85rem; color:var(--text-secondary);">Consulting</a>
+        </div>
+      </div>
+      <div>
+        <h4 style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--text-muted); margin-bottom:0.75rem;">About</h4>
+        <div style="display:flex; flex-direction:column; gap:0.4rem;">
+          <a href="about.html" style="font-size:0.85rem; color:var(--text-secondary);">Our Story</a>
+          <a href="team.html" style="font-size:0.85rem; color:var(--text-secondary);">Team</a>
+          <a href="racing.html" style="font-size:0.85rem; color:var(--text-secondary);">Racing Heritage</a>
+          <a href="partners.html" style="font-size:0.85rem; color:var(--text-secondary);">Partners</a>
+        </div>
+      </div>
+      <div>
+        <h4 style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--text-muted); margin-bottom:0.75rem;">Get Started</h4>
+        <div style="display:flex; flex-direction:column; gap:0.4rem;">
+          <a href="contact.html" style="font-size:0.85rem; color:var(--text-secondary);">Contact</a>
+          <a href="design-plans.html" style="font-size:0.85rem; color:var(--text-secondary);">Design Plans</a>
+        </div>
+      </div>
+    </div>
+    <div style="max-width:1100px; margin:0 auto; padding:1.5rem 2rem; border-top:1px solid var(--border); display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
+      <div class="nav-logo" style="font-size:1rem;">Farr <span>Yacht Design</span></div>
+      <p style="font-size:0.75rem; color:var(--text-muted); margin:0;">&copy; 2026 Farr Yacht Design &middot; Annapolis, MD &middot; &ldquo;Designed to Perform&rdquo;</p>
+    </div>
+  </footer>
+
+  <!-- ============ SCRIPTS ============ -->
+  <script>
+    function toggleMobileNav() {
+      var nav = document.getElementById('mobileNav');
+      var hamburger = document.querySelector('.nav-hamburger');
+      nav.classList.toggle('active');
+      hamburger.classList.toggle('active');
+    }
+    function closeMobileNav() {
+      var nav = document.getElementById('mobileNav');
+      var hamburger = document.querySelector('.nav-hamburger');
+      nav.classList.remove('active');
+      hamburger.classList.remove('active');
+    }
+
+    /* Dropdown nav */
+    document.querySelectorAll('.nav-dropdown-toggle').forEach(function(toggle) {
+      toggle.addEventListener('click', function() {
+        var menu = this.nextElementSibling;
+        var expanded = this.getAttribute('aria-expanded') === 'true';
+        this.setAttribute('aria-expanded', !expanded);
+        if (menu) menu.style.display = expanded ? 'none' : 'block';
+      });
+    });
+
+    /* Close dropdown on outside click */
+    document.addEventListener('click', function(e) {
+      if (!e.target.closest('.nav-dropdown')) {
+        document.querySelectorAll('.nav-dropdown-menu').forEach(function(m) { m.style.display = 'none'; });
+        document.querySelectorAll('.nav-dropdown-toggle').forEach(function(t) { t.setAttribute('aria-expanded', 'false'); });
+      }
+    });
+
+    /* Hero image rotator */
+    (function() {
+      var slides = [
+        'images/Kiboko4-1.webp',
+        'images/SW10802_AIR-12_resize.webp',
+        'images/bg-offshore-fleet.jpg'
+      ];
+      var idx = 0;
+      var el = document.getElementById('heroRotator');
+      if (el) {
+        setInterval(function() {
+          idx = (idx + 1) % slides.length;
+          el.style.backgroundImage = "linear-gradient(to bottom, rgba(10,25,47,0.15), rgba(10,25,47,0.4)), url('" + slides[idx] + "')";
+        }, 5000);
+      }
+    })();
+  </script>
+
+</body>
+</html>

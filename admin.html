@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin &mdash; Farr Yacht Design Plans</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&amp;family=IBM+Plex+Sans:wght@300;400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="farr-style.css">
+  <!-- Netlify Identity Widget -->
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<!-- Google Analytics (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-XXXXXXXXXX");</script>
+<script src="farr-analytics.js" defer></script>
+  <meta name="robots" content="noindex, nofollow"> <!-- DEMO: remove for production -->
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <!-- Login Gate (Netlify Identity) -->
+  <div id="login-gate" style="display:block;">
+    <nav>
+      <a href="index.html" class="nav-logo">Farr <span>Yacht Design</span></a>
+    </nav>
+    <div class="admin-login-wrap">
+      <div class="nav-logo" style="margin-bottom:1.5rem;font-size:1.1rem;">Farr <span>Yacht Design</span></div>
+      <h1>Plans Admin</h1>
+      <p style="font-size:0.82rem;color:var(--text-muted);margin-bottom:1.5rem;">Sign in with your Netlify Identity account to continue.</p>
+      <button class="btn-buy" style="width:100%;margin-top:0;" id="identity-btn" onclick="netlifyIdentity.open()">Sign In</button>
+      <p id="login-error" style="color:#b91c1c;font-size:0.8rem;margin-top:0.75rem;display:none;">Sign in failed. Check your credentials or contact your site admin.</p>
+    </div>
+  </div>
+
+  <!-- Admin Dashboard -->
+  <div id="admin-dashboard" style="display:none;" role="main" id="main">
+
+    <div class="admin-topbar">
+      <div class="admin-topbar-title">Farr Yacht Design &mdash; Plans Admin</div>
+      <div style="display:flex;gap:1rem;align-items:center;">
+        <a href="design-plans.html" style="font-size:0.8rem;color:var(--text-secondary);">View Public Page</a>
+        <button class="btn-waitlist" style="font-size:0.78rem;padding:0.35rem 0.9rem;" onclick="logout()">Sign Out</button>
+      </div>
+    </div>
+
+    <div class="admin-wrap">
+
+      <!-- Stats Bar -->
+      <div class="admin-stat-grid" style="margin-top:2rem;" id="stats-grid">
+        <div class="admin-stat">
+          <div class="admin-stat-label">Plans Available</div>
+          <div class="admin-stat-value" id="stat-available">--</div>
+          <div class="admin-stat-sub">Ready for purchase</div>
+        </div>
+        <div class="admin-stat">
+          <div class="admin-stat-label">In Digitization</div>
+          <div class="admin-stat-value" id="stat-digitizing">--</div>
+          <div class="admin-stat-sub">Queue</div>
+        </div>
+        <div class="admin-stat">
+          <div class="admin-stat-label">Design Requests</div>
+          <div class="admin-stat-value" id="stat-requests">--</div>
+          <div class="admin-stat-sub">Waitlist entries</div>
+        </div>
+        <div class="admin-stat">
+          <div class="admin-stat-label">Revenue (30d)</div>
+          <div class="admin-stat-value" id="stat-revenue">--</div>
+          <div class="admin-stat-sub">Stripe charges</div>
+        </div>
+      </div>
+
+      <!-- Inventory Management -->
+      <div class="admin-section" style="margin-top:2.5rem;">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem;">
+          <div class="admin-section-title" style="margin-bottom:0;border:none;padding:0;">Plan Inventory</div>
+          <div style="display:flex;gap:0.5rem;align-items:center;">
+            <button class="btn-waitlist" style="font-size:0.78rem;padding:0.4rem 0.9rem;" onclick="loadInventoryFromBlob()">&#8635; Refresh</button>
+            <button class="btn-buy" style="font-size:0.78rem;padding:0.4rem 0.9rem;" onclick="showAddPlanForm()">+ Add Plan</button>
+          </div>
+        </div>
+        <!-- Save confirmation banner (hidden, shown on successful persist) -->
+        <div id="inventory-save-msg" style="display:none;background:var(--accent);color:#fff;font-size:0.8rem;padding:0.6rem 1rem;border-radius:6px;margin-bottom:1rem;">
+          Inventory saved successfully to Netlify Blobs.
+        </div>
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>Plan Name</th>
+              <th>Class</th>
+              <th>Year</th>
+              <th>Status</th>
+              <th>Price</th>
+              <th>Contents</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="inventory-tbody">
+            <tr><td colspan="7" style="text-align:center;color:var(--text-muted);padding:2rem;">Loading inventory&hellip;</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Add / Edit Plan Form (hidden by default) -->
+      <div id="plan-form-panel" class="waitlist-panel" style="display:none;margin-top:0;">
+        <h2 id="plan-form-title" style="font-size:1.1rem;margin-top:0;">Add New Plan</h2>
+        <div class="waitlist-form" style="max-width:600px;">
+          <div class="waitlist-row">
+            <div class="waitlist-field">
+              <label for="pf-id">Plan ID (no spaces)</label>
+              <input type="text" id="pf-id" placeholder="farr-30-full">
+            </div>
+            <div class="waitlist-field">
+              <label for="pf-status">Status</label>
+              <select id="pf-status">
+                <option value="digitizing">Digitizing</option>
+                <option value="available">Available</option>
+                <option value="archive">Archive (not listed)</option>
+              </select>
+            </div>
+          </div>
+          <div class="waitlist-row">
+            <div class="waitlist-field">
+              <label for="pf-name">Display Name</label>
+              <input type="text" id="pf-name" placeholder="Farr 30">
+            </div>
+            <div class="waitlist-field">
+              <label for="pf-class">Boat Class</label>
+              <input type="text" id="pf-class" placeholder="One-Design">
+            </div>
+          </div>
+          <div class="waitlist-row">
+            <div class="waitlist-field">
+              <label for="pf-year">Year</label>
+              <input type="text" id="pf-year" placeholder="1999">
+            </div>
+            <div class="waitlist-field">
+              <label for="pf-price">Price (USD)</label>
+              <input type="number" id="pf-price" value="350">
+            </div>
+          </div>
+          <div class="waitlist-field">
+            <label for="pf-desc">Description</label>
+            <input type="text" id="pf-desc" placeholder="Short description of this design.">
+          </div>
+          <div class="waitlist-field">
+            <label for="pf-contents">Contents (comma-separated)</label>
+            <input type="text" id="pf-contents" placeholder="Sail Plan, Lines Drawing, Deck Layout">
+          </div>
+          <div class="waitlist-field">
+            <label for="pf-stripe-price">Stripe Price ID</label>
+            <input type="text" id="pf-stripe-price" placeholder="price_..." style="font-family:var(--font-mono);">
+          </div>
+          <div style="display:flex;gap:0.75rem;margin-top:0.5rem;">
+            <button class="btn-buy" onclick="savePlan()">Save Plan</button>
+            <button class="btn-waitlist" onclick="cancelPlanForm()">Cancel</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Waitlist / Design Requests -->
+      <div class="admin-section" style="margin-top:2.5rem;">
+        <div class="admin-section-title">Design Requests (Waitlist)</div>
+        <p style="font-size:0.82rem;color:var(--text-muted);margin-bottom:1rem;">Submitted via the design-plans.html request form. Managed in Netlify Forms.</p>
+        <div id="waitlist-container">
+          <table class="admin-table" id="waitlist-table" style="display:none;">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Design Requested</th>
+                <th>Intended Use</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="waitlist-tbody"></tbody>
+          </table>
+          <p id="waitlist-load-msg" style="color:var(--text-muted);font-size:0.85rem;">
+            Waitlist data is managed in <a href="https://app.netlify.com" target="_blank" rel="noopener">Netlify Dashboard &rarr; Forms</a>.
+            Enter your Netlify API token below to load entries here.
+          </p>
+          <div class="waitlist-form" style="max-width:480px;margin-top:1rem;">
+            <div class="waitlist-field">
+              <label for="netlify-token">Netlify API Token</label>
+              <input type="password" id="netlify-token" placeholder="nfp_...">
+            </div>
+            <div class="waitlist-field">
+              <label for="netlify-site-id">Netlify Site ID</label>
+              <input type="text" id="netlify-site-id" placeholder="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx">
+            </div>
+            <button class="btn-waitlist" style="align-self:flex-start;" onclick="loadWaitlist()">Load Entries</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recent Purchases -->
+      <div class="admin-section" style="margin-top:2.5rem;">
+        <div class="admin-section-title">Recent Purchases</div>
+        <p style="font-size:0.82rem;color:var(--text-muted);margin-bottom:1rem;">Recent Stripe charges for design plan purchases.</p>
+        <div id="purchases-load-prompt">
+          <div class="waitlist-form" style="max-width:380px;">
+            <div class="waitlist-field">
+              <label for="stripe-pk">Stripe Restricted Key</label>
+              <input type="password" id="stripe-pk" placeholder="rk_live_... (charges:read only)">
+            </div>
+            <button class="btn-waitlist" style="align-self:flex-start;" onclick="loadPurchases()">Load Purchases</button>
+          </div>
+          <p style="font-size:0.75rem;color:var(--text-muted);margin-top:0.5rem;">Use a Stripe restricted key with charges:read permission only.</p>
+        </div>
+        <div id="purchases-container" style="display:none;">
+          <table class="admin-table">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Plan</th>
+                <th>Customer</th>
+                <th>Amount</th>
+                <th>Status</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="purchases-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    /* ---- Netlify Identity Auth ---- */
+    /* Requires: Netlify Identity enabled on this site (Site Settings -> Identity -> Enable).
+       Registration must be set to "Invite Only".
+       Invite admin users from: Netlify Dashboard -> Identity -> Invite Users.
+       Widget docs: https://github.com/netlify/netlify-identity-widget */
+
+    function logout() {
+      netlifyIdentity.logout();
+    }
+
+    function showDashboard(user) {
+      /* Capture JWT for authenticated save calls */
+      if (user && user.token && user.token.access_token) {
+        _identityToken = user.token.access_token;
+      }
+      document.getElementById('login-gate').style.display = 'none';
+      document.getElementById('admin-dashboard').style.display = 'block';
+      loadInventoryFromBlob();
+    }
+
+    /* netlifyIdentity events */
+    netlifyIdentity.on('init', function(user) {
+      if (user) {
+        /* Already logged in -- go straight to dashboard */
+        showDashboard(user);
+      }
+    });
+
+    netlifyIdentity.on('login', function(user) {
+      netlifyIdentity.close();
+      showDashboard(user);
+    });
+
+    netlifyIdentity.on('logout', function() {
+      document.getElementById('admin-dashboard').style.display = 'none';
+      document.getElementById('login-gate').style.display = 'block';
+    });
+
+    netlifyIdentity.on('error', function(err) {
+      console.error('Netlify Identity error:', err);
+      document.getElementById('login-error').style.display = 'block';
+    });
+
+    /* ---- Inventory (loaded from Netlify Blobs via get-inventory function) ---- */
+    var INVENTORY = [];
+    var _identityToken = null; /* Set after Netlify Identity login */
+
+    /* Load inventory from Netlify Blobs on page ready */
+    function loadInventoryFromBlob() {
+      var tbody = document.getElementById('inventory-tbody');
+      if (tbody) tbody.innerHTML = '<tr><td colspan="7" style="text-align:center;color:var(--text-muted);padding:1.5rem;">Loading inventory&hellip;</td></tr>';
+      fetch('/.netlify/functions/get-inventory')
+        .then(function(r){ return r.json(); })
+        .then(function(data){
+          if (data.plans && Array.isArray(data.plans)) {
+            INVENTORY = data.plans;
+            renderInventory();
+          } else {
+            if (tbody) tbody.innerHTML = '<tr><td colspan="7" style="color:#b91c1c;">Failed to load inventory.</td></tr>';
+          }
+        })
+        .catch(function(err){
+          console.error('get-inventory error:', err);
+          if (tbody) tbody.innerHTML = '<tr><td colspan="7" style="color:#b91c1c;">Network error loading inventory.</td></tr>';
+        });
+    }
+
+    /* Persist inventory to Netlify Blobs -- requires admin Identity token */
+    function persistInventory(onSuccess) {
+      if (!_identityToken) {
+        alert('Not signed in. Reload and sign in with Netlify Identity to save changes.');
+        return;
+      }
+      fetch('/.netlify/functions/save-inventory', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': 'Bearer ' + _identityToken
+        },
+        body: JSON.stringify({ plans: INVENTORY })
+      })
+      .then(function(r){ return r.json(); })
+      .then(function(data){
+        if (data.success) {
+          if (onSuccess) onSuccess();
+          var msg = document.getElementById('inventory-save-msg');
+          if (msg) { msg.style.display = 'block'; setTimeout(function(){ msg.style.display = 'none'; }, 3000); }
+        } else {
+          alert('Save failed: ' + (data.error || 'Unknown error'));
+        }
+      })
+      .catch(function(err){
+        alert('Network error saving inventory: ' + err.message);
+      });
+    }
+
+    function renderInventory() {
+      var avail = INVENTORY.filter(function(p){ return p.status==='available'; }).length;
+      var dig = INVENTORY.filter(function(p){ return p.status==='digitizing'; }).length;
+      document.getElementById('stat-available').textContent = avail;
+      document.getElementById('stat-digitizing').textContent = dig;
+      document.getElementById('stat-requests').textContent = '--';
+      document.getElementById('stat-revenue').textContent = '--';
+
+      var tbody = document.getElementById('inventory-tbody');
+      tbody.innerHTML = INVENTORY.map(function(p, i) {
+        var badgeClass = p.status==='available' ? 'plan-badge--available' : p.status==='digitizing' ? 'plan-badge--digitizing' : 'plan-badge--archive';
+        var badgeText = p.status.charAt(0).toUpperCase() + p.status.slice(1);
+        var contents = Array.isArray(p.contents) ? p.contents.join(', ') : (p.description || '--');
+        return '<tr>'
+          +'<td style="font-weight:500;color:var(--text-primary);">'+p.name+'</td>'
+          +'<td>'+(p.boatClass||p.subtitle||'--')+'</td>'
+          +'<td style="font-family:var(--font-mono);">'+(p.year||'--')+'</td>'
+          +'<td><span class="plan-badge '+badgeClass+'">'+badgeText+'</span></td>'
+          +'<td style="font-family:var(--font-mono);">$'+p.price+'</td>'
+          +'<td style="font-size:0.78rem;color:var(--text-muted);">'+contents+'</td>'
+          +'<td><button class="btn-waitlist" style="font-size:0.72rem;padding:0.25rem 0.7rem;" onclick="editPlan('+i+')">Edit</button></td>'
+          +'</tr>';
+      }).join('');
+    }
+
+    var editingIndex = -1;
+    function showAddPlanForm() {
+      editingIndex = -1;
+      document.getElementById('plan-form-title').textContent = 'Add New Plan';
+      ['pf-id','pf-name','pf-class','pf-year','pf-desc','pf-contents','pf-stripe-price'].forEach(function(id){ var el=document.getElementById(id); if(el) el.value=''; });
+      document.getElementById('pf-price').value = '350';
+      document.getElementById('pf-status').value = 'digitizing';
+      document.getElementById('plan-form-panel').style.display = 'block';
+      document.getElementById('plan-form-panel').scrollIntoView({behavior:'smooth'});
+    }
+    function editPlan(idx) {
+      editingIndex = idx;
+      var p = INVENTORY[idx];
+      document.getElementById('plan-form-title').textContent = 'Edit: ' + p.name;
+      document.getElementById('pf-id').value = p.id;
+      document.getElementById('pf-name').value = p.name;
+      document.getElementById('pf-class').value = p.boatClass || p.subtitle || '';
+      document.getElementById('pf-year').value = p.year || '';
+      document.getElementById('pf-price').value = p.price;
+      document.getElementById('pf-status').value = p.status;
+      document.getElementById('pf-desc').value = p.desc || p.description || '';
+      var contents = Array.isArray(p.contents) ? p.contents.join(', ') : '';
+      document.getElementById('pf-contents').value = contents;
+      document.getElementById('pf-stripe-price').value = p.stripePrice || '';
+      document.getElementById('plan-form-panel').style.display = 'block';
+      document.getElementById('plan-form-panel').scrollIntoView({behavior:'smooth'});
+    }
+    function savePlan() {
+      var plan = {
+        id: document.getElementById('pf-id').value.trim(),
+        name: document.getElementById('pf-name').value.trim(),
+        boatClass: document.getElementById('pf-class').value.trim(),
+        year: document.getElementById('pf-year').value.trim(),
+        price: parseInt(document.getElementById('pf-price').value, 10) || 350,
+        status: document.getElementById('pf-status').value,
+        desc: document.getElementById('pf-desc').value.trim(),
+        description: document.getElementById('pf-desc').value.trim(),
+        contents: document.getElementById('pf-contents').value.split(',').map(function(s){ return s.trim(); }).filter(Boolean),
+        stripePrice: document.getElementById('pf-stripe-price').value.trim()
+      };
+      if (!plan.id || !plan.name) { alert('Plan ID and Name are required.'); return; }
+      if (editingIndex >= 0) { INVENTORY[editingIndex] = plan; }
+      else { INVENTORY.push(plan); }
+      renderInventory();
+      cancelPlanForm();
+      persistInventory(function(){ /* saved */ });
+    }
+    function cancelPlanForm() { document.getElementById('plan-form-panel').style.display = 'none'; }
+
+    /* ---- Waitlist loader (Netlify Forms API) ---- */
+    function loadWaitlist() {
+      var token = document.getElementById('netlify-token').value.trim();
+      var siteId = document.getElementById('netlify-site-id').value.trim();
+      if (!token || !siteId) { alert('Both Netlify API token and Site ID are required.'); return; }
+
+      document.getElementById('waitlist-load-msg').textContent = 'Loading...';
+
+      fetch('https://api.netlify.com/api/v1/sites/' + siteId + '/submissions?form_id=design-request&per_page=100', {
+        headers: { 'Authorization': 'Bearer ' + token }
+      })
+      .then(function(r){ return r.json(); })
+      .then(function(data) {
+        if (!Array.isArray(data)) {
+          document.getElementById('waitlist-load-msg').textContent = 'Error loading entries. Check token and site ID.';
+          return;
+        }
+        document.getElementById('stat-requests').textContent = data.length;
+        document.getElementById('waitlist-load-msg').style.display = 'none';
+        var tbody = document.getElementById('waitlist-tbody');
+        if (data.length === 0) {
+          tbody.innerHTML = '<tr><td colspan="6" style="text-align:center;color:var(--text-muted);padding:1.5rem;">No submissions yet.</td></tr>';
+        } else {
+          tbody.innerHTML = data.map(function(sub) {
+            var d = sub.data || {};
+            var date = new Date(sub.created_at);
+            return '<tr>'
+              +'<td style="font-family:var(--font-mono);font-size:0.75rem;">'+date.toLocaleDateString()+'</td>'
+              +'<td>'+escHtml(d.name||'')+'</td>'
+              +'<td><a href="mailto:'+escHtml(d.email||'')+'" style="color:var(--accent);">'+escHtml(d.email||'')+'</a></td>'
+              +'<td style="font-weight:500;color:var(--text-primary);">'+escHtml(d.design||'')+'</td>'
+              +'<td>'+escHtml(d.use||'')+'</td>'
+              +'<td><span class="plan-badge plan-badge--digitizing">New</span></td>'
+              +'</tr>';
+          }).join('');
+        }
+        document.getElementById('waitlist-table').style.display = 'table';
+      })
+      .catch(function(){ document.getElementById('waitlist-load-msg').textContent = 'Network error loading waitlist.'; });
+    }
+
+    /* ---- Purchases loader (Stripe API) ---- */
+    function loadPurchases() {
+      var key = document.getElementById('stripe-pk').value.trim();
+      if (!key) { alert('Enter a Stripe restricted key.'); return; }
+
+      fetch('https://api.stripe.com/v1/payment_intents?limit=20&created[gte]=' + Math.floor((Date.now()-30*24*3600*1000)/1000), {
+        headers: { 'Authorization': 'Bearer ' + key }
+      })
+      .then(function(r){ return r.json(); })
+      .then(function(data) {
+        if (data.error) { alert('Stripe error: ' + data.error.message); return; }
+        var items = (data.data || []).filter(function(pi){ return pi.metadata && pi.metadata.planId; });
+        var total = items.reduce(function(sum, pi){ return sum + (pi.amount_received||0); }, 0);
+        document.getElementById('stat-revenue').textContent = '$' + (total/100).toFixed(0);
+
+        var tbody = document.getElementById('purchases-tbody');
+        if (items.length === 0) {
+          tbody.innerHTML = '<tr><td colspan="6" style="text-align:center;color:var(--text-muted);padding:1.5rem;">No plan purchases in last 30 days.</td></tr>';
+        } else {
+          tbody.innerHTML = items.map(function(pi) {
+            var date = new Date(pi.created * 1000);
+            var statusBadge = pi.status==='succeeded' ? '<span class="plan-badge plan-badge--available">Paid</span>' : '<span class="plan-badge plan-badge--archive">'+pi.status+'</span>';
+            return '<tr>'
+              +'<td style="font-family:var(--font-mono);font-size:0.75rem;">'+date.toLocaleDateString()+'</td>'
+              +'<td style="font-weight:500;">'+escHtml(pi.metadata.planName||pi.metadata.planId||'')+'</td>'
+              +'<td style="font-size:0.8rem;color:var(--text-muted);">'+(pi.receipt_email?escHtml(pi.receipt_email):'--')+'</td>'
+              +'<td style="font-family:var(--font-mono);">$'+(pi.amount_received/100).toFixed(2)+'</td>'
+              +'<td>'+statusBadge+'</td>'
+              +'<td><a href="https://dashboard.stripe.com/payments/'+pi.id+'" target="_blank" rel="noopener" style="font-size:0.75rem;color:var(--accent);">Stripe &rarr;</a></td>'
+              +'</tr>';
+          }).join('');
+        }
+        document.getElementById('purchases-load-prompt').style.display = 'none';
+        document.getElementById('purchases-container').style.display = 'block';
+      })
+      .catch(function(){ alert('Error loading from Stripe. Check your restricted key.'); });
+    }
+
+    function escHtml(str) {
+      return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+    }
+  </script>
+  <footer style="padding:1rem 2rem;border-top:1px solid var(--border);font-size:0.72rem;color:var(--text-muted);text-align:center;">&copy; 2026 Farr Yacht Design &middot; Annapolis, MD &middot; Plans Admin</footer>
+</body>
+</html>

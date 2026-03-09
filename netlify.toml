@@ -1,0 +1,93 @@
+# netlify.toml
+# Farr Yacht Design - Netlify Configuration
+# Deploy: farr-deploy-v8.zip -> Netlify drag-and-drop
+
+[build]
+  publish = "."
+  functions = "netlify/functions"
+
+# Node version for functions
+[functions]
+  node_bundler = "esbuild"
+
+# Required: Stripe npm package bundled with functions
+# Run: npm install stripe in the functions directory before deploy
+# Or use Netlify's dependency management via package.json at root
+
+# --- Redirects ---
+
+# Stripe webhook endpoint - must be POST only
+[[redirects]]
+  from = "/stripe-webhook"
+  to = "/.netlify/functions/stripe-webhook"
+  status = 200
+  force = true
+
+# Pretty URL for checkout
+[[redirects]]
+  from = "/checkout"
+  to = "/.netlify/functions/create-checkout"
+  status = 200
+  force = true
+
+# Pretty URL for download
+[[redirects]]
+  from = "/download"
+  to = "/.netlify/functions/get-download"
+  status = 200
+  force = true
+
+# Inventory API (public, GET only)
+[[redirects]]
+  from = "/api/inventory"
+  to = "/.netlify/functions/get-inventory"
+  status = 200
+  force = true
+
+# Save inventory API (admin, POST only)
+[[redirects]]
+  from = "/api/save-inventory"
+  to = "/.netlify/functions/save-inventory"
+  status = 200
+  force = true
+
+# Waitlist API (backup to Netlify Forms)
+[[redirects]]
+  from = "/api/waitlist"
+  to = "/.netlify/functions/join-waitlist"
+  status = 200
+  force = true
+
+# --- Security Headers ---
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+
+# Stricter CSP for admin page
+[[headers]]
+  for = "/admin.html"
+  [headers.values]
+    Cache-Control = "no-store, no-cache, must-revalidate"
+    X-Frame-Options = "DENY"
+
+# Cache static assets
+[[headers]]
+  for = "/farr-style.css"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+
+# --- Environment Variables (set in Netlify UI, NOT here) ---
+# STRIPE_SECRET_KEY         sk_live_... or sk_test_...
+# STRIPE_WEBHOOK_SECRET     whsec_... (from Stripe Dashboard)
+# STRIPE_PRICE_FARR40       price_... (Farr 40 plan Stripe Price ID)
+# DOWNLOAD_HMAC_SECRET      <long random string - generate with openssl rand -hex 32>
+# DOWNLOAD_BASE_URL         https://plans.farrdesign.com (or S3/R2 bucket URL)
+# SITE_URL                  https://farrdesign.com
+# RESEND_API_KEY            re_... (optional, for email delivery)
+# WAITLIST_NOTIFY_EMAIL     britton@farrdesign.com (optional admin notification)

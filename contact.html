@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<!-- Farr Yacht Design - Contact Page (Type H) - Proto v0.1 - 2026-03-03 -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Farr Yacht Design in Annapolis, MD. Inquire about new design projects, consulting services, plan purchases, or media requests.">
+  <link rel="canonical" href="https://www.farrdesign.com/contact.html">
+  <title>Contact &mdash; Farr Yacht Design</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&amp;family=IBM+Plex+Sans:wght@300;400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="farr-style.css">
+<!-- Google Analytics (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-XXXXXXXXXX");</script>
+<script src="farr-analytics.js" defer></script>
+  <meta name="robots" content="noindex, nofollow"> <!-- DEMO: remove for production -->
+</head>
+<body>
+
+  <!-- Skip link -->
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <!-- ============ NAVIGATION ============ -->
+  <nav>
+    <a href="index.html" class="nav-logo">Farr <span>Yacht Design</span></a>
+    <div class="nav-links">
+      <a href="portfolio.html">Portfolio</a>
+      <a href="services.html">Services</a>
+      <a href="design-plans.html">Design Plans</a>
+      <div class="nav-dropdown">
+        <span class="nav-dropdown-toggle nav-links a" tabindex="0" role="button" aria-expanded="false" aria-haspopup="true">About <span class="nav-arrow">&#9662;</span></span>
+        <div class="nav-dropdown-menu">
+          <a href="about.html">Our Story</a>
+          <a href="team.html">Team</a>
+          <a href="racing.html">Racing Heritage</a>
+          <a href="partners.html">Partners</a>
+          <a href="news.html">News</a>
+        </div>
+      </div>
+      <a href="contact.html" class="nav-cta">Contact</a>
+    </div>
+    <!-- Hamburger -->
+    <div class="nav-hamburger" onclick="toggleMobileNav()" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- Mobile nav -->
+  <div class="nav-mobile" id="mobileNav">
+    <a href="portfolio.html" onclick="closeMobileNav()">Portfolio</a>
+    <a href="services.html" onclick="closeMobileNav()">Services</a>
+    <a href="design-plans.html" onclick="closeMobileNav()">Design Plans</a>
+    <div class="nav-mobile-group">
+      <a href="about.html" onclick="closeMobileNav()">Our Story</a>
+      <a href="team.html" onclick="closeMobileNav()">Team</a>
+      <a href="racing.html" onclick="closeMobileNav()">Racing Heritage</a>
+      <a href="americas-cup.html" onclick="closeMobileNav()">America&rsquo;s Cup</a>
+      <a href="volvo-ocean-race.html" onclick="closeMobileNav()">Volvo Ocean Race</a>
+    </div>
+    <a href="partners.html" onclick="closeMobileNav()">Partners</a>
+    <a href="news.html" onclick="closeMobileNav()">News</a>
+    <a href="contact.html" onclick="closeMobileNav()">Contact</a>
+  </div>
+
+  <!-- ============ HERO ============ -->
+  <main id="main">
+    <div class="feature-hero">
+      <div class="hero-content" style="text-align:center; max-width:700px; margin:0 auto;">
+        <h1>Let&rsquo;s Talk</h1>
+        <p class="hero-sub">Whether you&rsquo;re planning a campaign, exploring a new design, or need expert consulting &mdash; we&rsquo;re here.</p>
+      </div>
+    </div>
+
+    <!-- ============ FORM + INFO (two-col) ============ -->
+    <section>
+      <div class="two-col">
+        <!-- LEFT: Contact form -->
+        <div>
+          <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="contact-form" id="contactForm">
+            <input type="hidden" name="form-name" value="contact">
+            <!-- Honeypot spam protection -->
+            <p style="display:none;"><label>Don&rsquo;t fill this out: <input name="bot-field"></label></p>
+
+            <div class="form-group">
+              <label for="contact-name">Name</label>
+              <input type="text" id="contact-name" name="name" placeholder="Your name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email">Email</label>
+              <input type="email" id="contact-email" name="email" placeholder="you@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-phone">Phone <span class="optional">(optional)</span></label>
+              <input type="tel" id="contact-phone" name="phone" placeholder="+1 (555) 000-0000">
+            </div>
+
+            <div class="form-group">
+              <label for="contact-inquiry">What can we help with?</label>
+              <select id="contact-inquiry" name="inquiry_type" required>
+                <option value="" disabled selected>Select an inquiry type</option>
+                <option value="new-design">New custom design</option>
+                <option value="consulting">Consulting / rating optimization</option>
+                <option value="design-plans">Purchasing design plans</option>
+                <option value="builder-partnership">Builder partnership</option>
+                <option value="superyacht">Superyacht project</option>
+                <option value="media">Media / press</option>
+                <option value="general">General question</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" name="message" placeholder="Tell us about your project or question&hellip;" required></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit" id="submitBtn">Send Message</button>
+            <p class="form-note">We typically respond within one business day.</p>
+
+            <!-- Success state -->
+            <div id="formSuccess" style="display:none; padding:1.5rem; background:var(--bg-card); border:1px solid #2d6a4f; border-radius:8px; margin-top:1rem; text-align:center;">
+              <p style="font-size:1.1rem; font-weight:600; color:#2d6a4f; margin-bottom:0.5rem;">Message Sent</p>
+              <p style="color:var(--text-secondary); font-size:0.9rem;">Thank you &mdash; we&rsquo;ll be in touch within one business day.</p>
+            </div>
+
+            <!-- Error state -->
+            <div id="formError" style="display:none; padding:1.5rem; background:var(--bg-card); border:1px solid #c1121f; border-radius:8px; margin-top:1rem; text-align:center;">
+              <p style="font-size:1.1rem; font-weight:600; color:#c1121f; margin-bottom:0.5rem;">Something went wrong</p>
+              <p style="color:var(--text-secondary); font-size:0.9rem;">Please try again, or email us directly at <a href="mailto:info@farrdesign.com">info@farrdesign.com</a>.</p>
+            </div>
+          </form>
+        </div>
+
+        <!-- RIGHT: Contact info + callout -->
+        <div>
+          <div class="contact-info-card" style="margin-bottom:1.5rem;">
+            <h3>Get in Touch</h3>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">&#9993;</div>
+              <div>
+                <div class="contact-info-label">Email</div>
+                <div class="contact-info-value"><a href="mailto:info@farrdesign.com">info@farrdesign.com</a></div>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">&#9742;</div>
+              <div>
+                <div class="contact-info-label">Phone</div>
+                <div class="contact-info-value"><a href="tel:+14102670780">+1 (410) 267-0780</a></div>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">&#9873;</div>
+              <div>
+                <div class="contact-info-label">Office</div>
+                <div class="contact-info-value">1011 Bay Ridge Avenue<br>Annapolis, MD 21403</div>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">&#9200;</div>
+              <div>
+                <div class="contact-info-label">Hours</div>
+                <div class="contact-info-value">Monday &ndash; Friday, 9:00 AM &ndash; 5:00 PM EST</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Callout: Before You Reach Out -->
+          <div class="callout">
+            <h4>Before You Reach Out</h4>
+            <p>Having a few details ready helps us give you a better answer faster:</p>
+            <ul style="padding-left:1.2rem; color:var(--text-secondary); font-size:0.88rem; line-height:1.7;">
+              <li><strong>New design:</strong> Intended use, approximate LOA, timeline, budget range</li>
+              <li><strong>Consulting:</strong> Boat class, rating rule, current certificate if available</li>
+              <li><strong>Design plans:</strong> Design number or name, intended use</li>
+              <li><strong>Superyacht:</strong> Size range, intended use, build timeline</li>
+            </ul>
+            <p style="margin-top:0.75rem; font-style:italic; color:var(--text-muted); font-size:0.85rem;">Don&rsquo;t worry if you don&rsquo;t have all the details &mdash; that&rsquo;s what the conversation is for.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA BAND ============ -->
+    <div class="cta-band" style="text-align:center; padding:3rem 2rem;">
+      <p class="section-label">Prefer email directly?</p>
+      <p style="color:var(--text-secondary); font-size:0.95rem;">Drop us a line at <a href="mailto:info@farrdesign.com">info@farrdesign.com</a> &mdash; we read every message.</p>
+    </div>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer>
+    <div class="footer-grid" style="max-width:1100px; margin:0 auto; padding:3rem 2rem 1.5rem; display:grid; grid-template-columns:repeat(4,1fr); gap:2rem;">
+      <div>
+        <h4 style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--text-muted); margin-bottom:0.75rem;">Portfolio</h4>
+        <div style="display:flex; flex-direction:column; gap:0.4rem;">
+          <a href="portfolio.html" style="font-size:0.85rem; color:var(--text-secondary);">All Designs</a>
+          <a href="superyachts.html" style="font-size:0.85rem; color:var(--text-secondary);">Superyachts</a>
+          <a href="racing.html" style="font-size:0.85rem; color:var(--text-secondary);">Racing</a>
+        </div>
+      </div>
+      <div>
+        <h4 style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--text-muted); margin-bottom:0.75rem;">Services</h4>
+        <div style="display:flex; flex-direction:column; gap:0.4rem;">
+          <a href="services.html" style="font-size:0.85rem; color:var(--text-secondary);">Naval Architecture</a>
+          <a href="consulting.html" style="font-size:0.85rem; color:var(--text-secondary);">Consulting</a>
+        </div>
+      </div>
+      <div>
+        <h4 style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--text-muted); margin-bottom:0.75rem;">About</h4>
+        <div style="display:flex; flex-direction:column; gap:0.4rem;">
+          <a href="about.html" style="font-size:0.85rem; color:var(--text-secondary);">Our Story</a>
+          <a href="team.html" style="font-size:0.85rem; color:var(--text-secondary);">Team</a>
+          <a href="racing.html" style="font-size:0.85rem; color:var(--text-secondary);">Racing Heritage</a>
+          <a href="partners.html" style="font-size:0.85rem; color:var(--text-secondary);">Partners</a>
+        </div>
+      </div>
+      <div>
+        <h4 style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--text-muted); margin-bottom:0.75rem;">Get Started</h4>
+        <div style="display:flex; flex-direction:column; gap:0.4rem;">
+          <a href="contact.html" style="font-size:0.85rem; color:var(--text-secondary);">Contact</a>
+          <a href="design-plans.html" style="font-size:0.85rem; color:var(--text-secondary);">Design Plans</a>
+        </div>
+      </div>
+    </div>
+    <div style="max-width:1100px; margin:0 auto; padding:1.5rem 2rem; border-top:1px solid var(--border); display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
+      <div class="nav-logo" style="font-size:1rem;">Farr <span>Yacht Design</span></div>
+      <p style="font-size:0.75rem; color:var(--text-muted); margin:0;">&copy; 2026 Farr Yacht Design &middot; Annapolis, MD &middot; &ldquo;Designed to Perform&rdquo;</p>
+    </div>
+  </footer>
+
+  <!-- ============ SCRIPTS ============ -->
+  <script>
+    function toggleMobileNav() {
+      var nav = document.getElementById('mobileNav');
+      var hamburger = document.querySelector('.nav-hamburger');
+      nav.classList.toggle('active');
+      hamburger.classList.toggle('active');
+    }
+    function closeMobileNav() {
+      var nav = document.getElementById('mobileNav');
+      var hamburger = document.querySelector('.nav-hamburger');
+      nav.classList.remove('active');
+      hamburger.classList.remove('active');
+    }
+
+    /* Dropdown nav */
+    document.querySelectorAll('.nav-dropdown-toggle').forEach(function(toggle) {
+      toggle.addEventListener('click', function() {
+        var menu = this.nextElementSibling;
+        var expanded = this.getAttribute('aria-expanded') === 'true';
+        this.setAttribute('aria-expanded', !expanded);
+        if (menu) menu.style.display = expanded ? 'none' : 'block';
+      });
+    });
+
+    /* Close dropdown on outside click */
+    document.addEventListener('click', function(e) {
+      if (!e.target.closest('.nav-dropdown')) {
+        document.querySelectorAll('.nav-dropdown-menu').forEach(function(m) { m.style.display = 'none'; });
+        document.querySelectorAll('.nav-dropdown-toggle').forEach(function(t) { t.setAttribute('aria-expanded', 'false'); });
+      }
+    });
+
+    /* Contact form submission via Netlify Forms */
+    (function() {
+      var form = document.getElementById('contactForm');
+      var submitBtn = document.getElementById('submitBtn');
+      var successEl = document.getElementById('formSuccess');
+      var errorEl = document.getElementById('formError');
+
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Sending\u2026';
+        successEl.style.display = 'none';
+        errorEl.style.display = 'none';
+
+        var formData = new FormData(form);
+        fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: new URLSearchParams(formData).toString()
+        })
+        .then(function(response) {
+          if (response.ok) {
+            form.reset();
+            successEl.style.display = 'block';
+            submitBtn.textContent = 'Send Message';
+            submitBtn.disabled = false;
+          } else {
+            throw new Error('Form submission failed');
+          }
+        })
+        .catch(function() {
+          errorEl.style.display = 'block';
+          submitBtn.textContent = 'Send Message';
+          submitBtn.disabled = false;
+        });
+      });
+    })();
+  </script>
+
+</body>
+</html>

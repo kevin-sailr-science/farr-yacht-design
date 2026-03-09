@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Purchase Complete &mdash; Farr Yacht Design</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&amp;family=IBM+Plex+Sans:wght@300;400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="farr-style.css">
+<!-- Google Analytics (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-XXXXXXXXXX");</script>
+<script src="farr-analytics.js" defer></script>
+  <meta name="robots" content="noindex, nofollow"> <!-- DEMO: remove for production -->
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+  <nav>
+    <a href="index.html" class="nav-logo">Farr <span>Yacht Design</span></a>
+    <div class="nav-links">
+      <a href="portfolio.html">Portfolio</a>
+      <a href="services.html">Services</a>
+      <a href="design-plans.html">Design Plans</a>
+      <div class="nav-dropdown">
+        <span class="nav-dropdown-toggle nav-links a" tabindex="0" role="button" aria-expanded="false" aria-haspopup="true">About <span class="nav-arrow">&#9662;</span></span>
+        <div class="nav-dropdown-menu">
+          <a href="about.html">Our Story</a>
+          <a href="team.html">Team</a>
+          <a href="racing.html">Racing Heritage</a>
+          <a href="partners.html">Partners</a>
+          <a href="news.html">News</a>
+        </div>
+      </div>
+      <a href="contact.html" class="nav-cta">Contact</a>
+    </div>
+    <div class="nav-hamburger" onclick="toggleMobileNav()" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+  <div class="nav-mobile" id="mobileNav">
+    <a href="portfolio.html" onclick="closeMobileNav()">Portfolio</a>
+    <a href="services.html" onclick="closeMobileNav()">Services</a>
+    <a href="design-plans.html" onclick="closeMobileNav()">Design Plans</a>
+    <div class="nav-mobile-group">
+      <a href="about.html" onclick="closeMobileNav()">Our Story</a>
+      <a href="team.html" onclick="closeMobileNav()">Team</a>
+      <a href="racing.html" onclick="closeMobileNav()">Racing Heritage</a>
+    </div>
+    <a href="partners.html" onclick="closeMobileNav()">Partners</a>
+    <a href="contact.html" onclick="closeMobileNav()">Contact</a>
+  </div>
+
+  <main id="main">
+
+    <div class="success-hero" id="loading-state">
+      <div class="success-icon" id="status-icon" style="background:var(--farr-mid);border-color:var(--border);">
+        <span id="status-glyph" style="font-size:1.4rem;">&#8203;</span>
+      </div>
+      <p class="section-label" id="status-label">Verifying payment&hellip;</p>
+      <h1 id="status-heading">Please wait</h1>
+      <p id="status-body" style="color:var(--text-secondary);font-size:0.92rem;line-height:1.7;">We&rsquo;re confirming your purchase with Stripe. This takes just a moment.</p>
+    </div>
+
+    <div id="download-section" style="display:none;max-width:600px;margin:0 auto;padding:0 2rem 4rem;">
+      <div class="success-download-box">
+        <h2 style="margin-top:0;font-size:1.1rem;">Your Purchase</h2>
+        <div class="success-detail-row">
+          <span class="success-detail-label">Plan Set</span>
+          <span class="success-detail-value" id="detail-plan">Loading&hellip;</span>
+        </div>
+        <div class="success-detail-row">
+          <span class="success-detail-label">Order ID</span>
+          <span class="success-detail-value" id="detail-order" style="font-family:var(--font-mono);font-size:0.78rem;">Loading&hellip;</span>
+        </div>
+        <div class="success-detail-row">
+          <span class="success-detail-label">Amount</span>
+          <span class="success-detail-value" id="detail-amount">Loading&hellip;</span>
+        </div>
+        <div class="success-detail-row">
+          <span class="success-detail-label">Link Expires</span>
+          <span class="success-detail-value" id="detail-expires">48 hours from now</span>
+        </div>
+        <div style="margin-top:1.5rem;">
+          <a id="download-btn" href="#" class="btn-buy" style="display:none;font-size:0.9rem;padding:0.7rem 1.5rem;text-decoration:none;">
+            &#11015;&nbsp; Download Plan Set (PDF)
+          </a>
+          <p id="download-note" style="font-size:0.78rem;color:var(--text-muted);margin-top:0.75rem;">A copy of this download link has been sent to your email address on file with Stripe.</p>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:2rem;">
+        <a href="design-plans.html" style="font-size:0.85rem;color:var(--text-secondary);">&larr; Back to Design Plans</a>
+      </div>
+    </div>
+
+    <div id="error-section" style="display:none;max-width:520px;margin:0 auto;padding:0 2rem 4rem;text-align:center;">
+      <div class="callout-box" style="text-align:left;">
+        <h3>Something went wrong</h3>
+        <p id="error-detail" style="color:var(--text-secondary);">We couldn&rsquo;t verify your payment. If you were charged, please contact us and we&rsquo;ll resolve it immediately.</p>
+        <div style="display:flex;gap:1rem;margin-top:1.25rem;flex-wrap:wrap;">
+          <a href="contact.html" class="btn-buy" style="text-decoration:none;">Contact Us</a>
+          <a href="design-plans.html" class="btn-waitlist" style="text-decoration:none;">Back to Plans</a>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <div style="max-width:1100px;margin:0 auto;padding:1.5rem 2rem;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;">
+      <div class="nav-logo" style="font-size:1rem;">Farr <span>Yacht Design</span></div>
+      <p style="font-size:0.75rem;color:var(--text-muted);margin:0;">&copy; 2026 Farr Yacht Design &middot; Annapolis, MD &middot; &ldquo;Designed to Perform&rdquo;</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMobileNav(){var n=document.getElementById('mobileNav'),h=document.querySelector('.nav-hamburger');n.classList.toggle('active');h.classList.toggle('active');}
+    function closeMobileNav(){var n=document.getElementById('mobileNav'),h=document.querySelector('.nav-hamburger');n.classList.remove('active');h.classList.remove('active');}
+    document.querySelectorAll('.nav-dropdown-toggle').forEach(function(t){t.addEventListener('click',function(){var m=this.nextElementSibling,e=this.getAttribute('aria-expanded')==='true';this.setAttribute('aria-expanded',!e);if(m)m.style.display=e?'none':'block';});});
+    document.addEventListener('click',function(e){if(!e.target.closest('.nav-dropdown')){document.querySelectorAll('.nav-dropdown-menu').forEach(function(m){m.style.display='none';});document.querySelectorAll('.nav-dropdown-toggle').forEach(function(t){t.setAttribute('aria-expanded','false');});}});
+
+    /* Read session_id from URL -- Stripe appends ?session_id={CHECKOUT_SESSION_ID} */
+    var params = new URLSearchParams(window.location.search);
+    var sessionId = params.get('session_id');
+
+    function showError(msg) {
+      document.getElementById('loading-state').style.display = 'none';
+      document.getElementById('error-section').style.display = 'block';
+      if (msg) document.getElementById('error-detail').textContent = msg;
+    }
+
+    function showSuccess(data) {
+      /* Update status hero */
+      var icon = document.getElementById('status-icon');
+      icon.style.background = 'linear-gradient(135deg,#d1fae5,#a7f3d0)';
+      icon.style.borderColor = '#6ee7b7';
+      document.getElementById('status-glyph').textContent = '\u2713';
+      document.getElementById('status-label').textContent = 'Purchase complete';
+      document.getElementById('status-heading').textContent = 'Your plans are ready.';
+      document.getElementById('status-body').textContent = 'Payment confirmed. Download your plan set below.';
+
+      /* Fill purchase details */
+      document.getElementById('detail-plan').textContent = data.planName || 'Design Plan Set';
+      document.getElementById('detail-order').textContent = data.orderId || sessionId || '&mdash;';
+      document.getElementById('detail-amount').textContent = data.amount ? '$'+data.amount : '$350.00';
+      if (data.expiresAt) {
+        var exp = new Date(data.expiresAt);
+        document.getElementById('detail-expires').textContent = exp.toLocaleString(undefined, {dateStyle:'medium',timeStyle:'short'});
+      }
+
+      /* Show download button */
+      if (data.downloadUrl) {
+        var btn = document.getElementById('download-btn');
+        btn.href = data.downloadUrl;
+        btn.style.display = 'inline-block';
+      }
+
+      document.getElementById('download-section').style.display = 'block';
+    }
+
+    if (!sessionId) {
+      showError('No session ID found. If you completed a purchase, please check your email for the download link or contact us.');
+    } else {
+      fetch('/.netlify/functions/get-download?session_id=' + encodeURIComponent(sessionId))
+        .then(function(r){ return r.json(); })
+        .then(function(data){
+          if (data.error) { showError(data.error); }
+          else { showSuccess(data); }
+        })
+        .catch(function(){
+          showError('Unable to verify purchase. Please check your email or contact plans@farrdesign.com');
+        });
+    }
+  </script>
+</body>
+</html>
