@@ -1,0 +1,178 @@
+---
+layout: base.njk
+pagination:
+  data: boats
+  size: 1
+  alias: boat
+permalink: "yacht/{{ boat.slug }}.html"
+eleventyComputed:
+  pageTitle: "{{ boat.name | default: boat.title }}"
+---
+
+{# --- Compute display values --- #}
+{% set displayName = boat.name | default(boat.title) %}
+{% set displayNumber = boat.designNumber | default("") %}
+{% set year = boat.year %}
+{% set decade = year | decade %}
+{% set category = boat.category[0] if boat.category and boat.category.length > 0 else "" %}
+{% set designRule = boat.designRule | default("") %}
+{% set designType = boat.designType | default("") %}
+
+{# Meta line: category | rule/type #}
+{% set metaParts = [] %}
+{% if category %}{% set metaParts = metaParts | concat(category) %}{% endif %}
+{% if designRule %}{% set metaParts = metaParts | concat(designRule) %}{% endif %}
+{% if designType and designType != designRule %}{% set metaParts = metaParts | concat(designType) %}{% endif %}
+{% set metaLine = metaParts | join(" | ") %}
+{% if not metaLine and year %}{% set metaLine = decade %}{% endif %}
+
+{# Image #}
+{% set hasImage = boat.images and boat.images.main and boat.images.main != "Farr-YACHT-DESIGN_trans.png" %}
+{% set imageUrl = "/images/" ~ boat.slug ~ ".jpg" %}
+
+{# Description #}
+{% set description = boat.description | cleanHtml if boat.description else "" %}
+{% set shortDesc = boat.shortDescription | default("") %}
+{% set shortSummary = boat.shortSummary | default("") %}
+{% set displayDesc = description if description | length > 20 else shortSummary %}
+
+{# Specs #}
+{% set specs = boat.specs %}
+
+<div class="yacht-detail-layout">
+  <div class="breadcrumb">
+    <a href="/portfolio.html">Portfolio</a> &rsaquo; {% if decade != "Unknown" %}<a href="/portfolio.html#{{ decade }}">{{ decade }}</a> &rsaquo; {% endif %}{{ displayName }}
+  </div>
+  <div class="yacht-detail-header">
+    <div class="yacht-number">{% if displayNumber and displayNumber != displayName %}#{{ displayNumber }}{% else %}#{{ boat.title }}{% endif %}</div>
+    <h1>{{ displayName }}</h1>
+    {% if metaLine %}<div class="yacht-meta-line">{{ metaLine }}{% if year %} | {{ year }}{% endif %}</div>{% endif %}
+  </div>
+  <div class="yacht-detail-body">
+    <div>
+      <div class="yacht-detail-image" style="background-image:url('{{ imageUrl }}')">
+        {% if not hasImage %}
+        <span class="img-tbc"><svg class="img-tbc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="7" width="18" height="14" rx="2"/><path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2"/><circle cx="12" cy="14" r="3"/></svg><span class="img-tbc-label">Photo coming soon</span></span>
+        {% endif %}
+      </div>
+      <div style="margin-top:1.5rem;">
+        {% if displayDesc %}
+        <p style="color:var(--text-secondary);line-height:1.7;font-size:0.92rem;">{{ displayDesc }}</p>
+        {% elif shortDesc %}
+        <p style="color:var(--text-secondary);line-height:1.7;font-size:0.92rem;">{{ shortDesc }}</p>
+        {% else %}
+        <p style="color:var(--text-secondary);line-height:1.7;font-size:0.92rem;">{{ displayName }} is a Farr Yacht Design{% if year %} from {{ year }}{% endif %}{% if category %}, built for {{ category | lower }}{% endif %}.</p>
+        {% endif %}
+      </div>
+    </div>
+    <div class="yacht-detail-sidebar">
+      <table class="spec-table">
+        <thead><tr><th>Specification</th><th>Value</th></tr></thead>
+        <tbody>
+          {% if year %}<tr><td>Year</td><td>{{ year }}</td></tr>{% endif %}
+          {% if category %}<tr><td>Type</td><td>{{ category }}</td></tr>{% endif %}
+          {% if designRule %}<tr><td>Rule</td><td>{{ designRule }}</td></tr>{% endif %}
+          {% if designType and designType != designRule %}<tr><td>Design Type</td><td>{{ designType }}</td></tr>{% endif %}
+          {% if boat.classification %}<tr><td>Classification</td><td>{{ boat.classification }}</td></tr>{% endif %}
+          {% if specs and specs.loa and (specs.loa.ft or specs.loa.m) %}
+          <tr><td>LOA</td><td>
+            {% if specs.loa.ft %}{{ specs.loa.ft }} ft{% endif %}
+            {% if specs.loa.ft and specs.loa.m %} / {% endif %}
+            {% if specs.loa.m %}{{ specs.loa.m }} m{% endif %}
+          </td></tr>
+          {% endif %}
+          {% if specs and specs.draft and (specs.draft.ft or specs.draft.m) %}
+          <tr><td>Draft</td><td>
+            {% if specs.draft.ft %}{{ specs.draft.ft }} ft{% endif %}
+            {% if specs.draft.ft and specs.draft.m %} / {% endif %}
+            {% if specs.draft.m %}{{ specs.draft.m }} m{% endif %}
+          </td></tr>
+          {% endif %}
+          {% if specs and specs.draftUp and (specs.draftUp.ft or specs.draftUp.m) %}
+          <tr><td>Draft (up)</td><td>
+            {% if specs.draftUp.ft %}{{ specs.draftUp.ft }} ft{% endif %}
+            {% if specs.draftUp.ft and specs.draftUp.m %} / {% endif %}
+            {% if specs.draftUp.m %}{{ specs.draftUp.m }} m{% endif %}
+          </td></tr>
+          {% endif %}
+          {% if specs and specs.draftDown and (specs.draftDown.ft or specs.draftDown.m) %}
+          <tr><td>Draft (down)</td><td>
+            {% if specs.draftDown.ft %}{{ specs.draftDown.ft }} ft{% endif %}
+            {% if specs.draftDown.ft and specs.draftDown.m %} / {% endif %}
+            {% if specs.draftDown.m %}{{ specs.draftDown.m }} m{% endif %}
+          </td></tr>
+          {% endif %}
+          {% if specs and specs.ballast and (specs.ballast.lbs or specs.ballast.kg) %}
+          <tr><td>Ballast</td><td>
+            {% if specs.ballast.lbs %}{{ specs.ballast.lbs }} lbs{% endif %}
+            {% if specs.ballast.lbs and specs.ballast.kg %} / {% endif %}
+            {% if specs.ballast.kg %}{{ specs.ballast.kg }} kg{% endif %}
+          </td></tr>
+          {% endif %}
+          {% if specs and specs.mainHoist and (specs.mainHoist.ft or specs.mainHoist.m) %}
+          <tr><td>Main Hoist</td><td>
+            {% if specs.mainHoist.ft %}{{ specs.mainHoist.ft }} ft{% endif %}
+            {% if specs.mainHoist.ft and specs.mainHoist.m %} / {% endif %}
+            {% if specs.mainHoist.m %}{{ specs.mainHoist.m }} m{% endif %}
+          </td></tr>
+          {% endif %}
+          {% if specs and specs.mainFoot and (specs.mainFoot.ft or specs.mainFoot.m) %}
+          <tr><td>Main Foot</td><td>
+            {% if specs.mainFoot.ft %}{{ specs.mainFoot.ft }} ft{% endif %}
+            {% if specs.mainFoot.ft and specs.mainFoot.m %} / {% endif %}
+            {% if specs.mainFoot.m %}{{ specs.mainFoot.m }} m{% endif %}
+          </td></tr>
+          {% endif %}
+          {% if specs and specs.headsailHoist and (specs.headsailHoist.ft or specs.headsailHoist.m) %}
+          <tr><td>Headsail Hoist</td><td>
+            {% if specs.headsailHoist.ft %}{{ specs.headsailHoist.ft }} ft{% endif %}
+            {% if specs.headsailHoist.ft and specs.headsailHoist.m %} / {% endif %}
+            {% if specs.headsailHoist.m %}{{ specs.headsailHoist.m }} m{% endif %}
+          </td></tr>
+          {% endif %}
+          {% if specs and specs.overlap and (specs.overlap.ft or specs.overlap.m) %}
+          <tr><td>Overlap</td><td>
+            {% if specs.overlap.ft %}{{ specs.overlap.ft }} ft{% endif %}
+            {% if specs.overlap.ft and specs.overlap.m %} / {% endif %}
+            {% if specs.overlap.m %}{{ specs.overlap.m }} m{% endif %}
+          </td></tr>
+          {% endif %}
+          {% if specs and specs.spinHoist and (specs.spinHoist.ft or specs.spinHoist.m) %}
+          <tr><td>Spinnaker Hoist</td><td>
+            {% if specs.spinHoist.ft %}{{ specs.spinHoist.ft }} ft{% endif %}
+            {% if specs.spinHoist.ft and specs.spinHoist.m %} / {% endif %}
+            {% if specs.spinHoist.m %}{{ specs.spinHoist.m }} m{% endif %}
+          </td></tr>
+          {% endif %}
+          {% if specs and specs.spinPole and (specs.spinPole.ft or specs.spinPole.m) %}
+          <tr><td>Spinnaker Pole</td><td>
+            {% if specs.spinPole.ft %}{{ specs.spinPole.ft }} ft{% endif %}
+            {% if specs.spinPole.ft and specs.spinPole.m %} / {% endif %}
+            {% if specs.spinPole.m %}{{ specs.spinPole.m }} m{% endif %}
+          </td></tr>
+          {% endif %}
+          {% if boat.rigType %}<tr><td>Rig Type</td><td>{{ boat.rigType }}</td></tr>{% endif %}
+          {% if boat.rigMaterial %}<tr><td>Rig Material</td><td>{{ boat.rigMaterial }}</td></tr>{% endif %}
+          {% if boat.keelType %}<tr><td>Keel Type</td><td>{{ boat.keelType }}</td></tr>{% endif %}
+          {% if boat.hullConstruction %}<tr><td>Hull Construction</td><td>{{ boat.hullConstruction }}</td></tr>{% endif %}
+          {% if boat.builder %}<tr><td>Builder</td><td>{{ boat.builder }}</td></tr>{% endif %}
+          {% if boat.owner %}<tr><td>Owner</td><td>{{ boat.owner }}</td></tr>{% endif %}
+          {% if boat.hullsBuilt and boat.hullsBuilt > 0 %}<tr><td>Hulls Built</td><td>{{ boat.hullsBuilt }}</td></tr>{% endif %}
+        </tbody>
+      </table>
+      <div class="purchase-card purchase-card--waitlist">
+        <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:0.5rem;">
+          <h3 style="margin:0;">Design Plans</h3>
+          <span class="availability-badge availability-badge--coming">Digitizing</span>
+        </div>
+        <p class="purchase-waitlist-note">This design is in our digitization queue. Join the waitlist and we&rsquo;ll notify you as soon as plans are available for download.</p>
+        <button class="btn-waitlist">Join Waitlist</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="cta-band" style="text-align:center;padding:3rem 2rem;">
+  <p style="font-family:var(--font-heading);font-size:1.15rem;color:var(--text-primary);margin-bottom:0.5rem;">Interested in a Farr design?</p>
+  <p style="color:var(--text-secondary);font-size:0.9rem;max-width:500px;margin:0.5rem auto 1.25rem;">Whether you&rsquo;re looking for plans, consulting, or a new project &mdash; let&rsquo;s talk.</p>
+  <a href="/contact.html" class="hero-cta" style="text-decoration:none;">Get in Touch</a>
+</div>
