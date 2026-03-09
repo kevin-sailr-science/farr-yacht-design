@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Farr Yacht Design — Site Launch Review</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #f8f9fc; font-family: 'Inter', system-ui, -apple-system, sans-serif; -webkit-font-smoothing: antialiased; }
+    #root { min-height: 100vh; }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.9/babel.min.js"></script>
+
+  <script type="text/babel">
+    const { useState } = React;
+
+    const FarrBlue = "#00267F";
+    const FarrOrange = "#F97700";
+    const FarrBronze = "#C0A280";
+
+    const StatCard = ({ number, label, sub }) => (
+      <div style={{
+        background: "#fff",
+        borderRadius: 12,
+        padding: "28px 20px",
+        textAlign: "center",
+        border: "1px solid #e8ecf2",
+        flex: "1 1 140px",
+        minWidth: 140,
+      }}>
+        <div style={{ fontSize: 42, fontWeight: 700, color: FarrBlue, lineHeight: 1 }}>{number}</div>
+        <div style={{ fontSize: 14, fontWeight: 600, color: "#4a5568", marginTop: 8 }}>{label}</div>
+        {sub && <div style={{ fontSize: 12, color: "#8896a8", marginTop: 4 }}>{sub}</div>}
+      </div>
+    );
+
+    const StatusBadge = ({ status }) => {
+      const colors = {
+        live: { bg: "#e6f9ed", text: "#1a7a3a", label: "Live" },
+        ready: { bg: "#e8f0fe", text: FarrBlue, label: "Ready" },
+        pending: { bg: "#fff4e5", text: "#b45309", label: "Pending" },
+        parked: { bg: "#f1f3f7", text: "#6b7280", label: "Next Epic" },
+      };
+      const c = colors[status];
+      return (
+        <span style={{
+          display: "inline-block",
+          padding: "3px 10px",
+          borderRadius: 20,
+          fontSize: 11,
+          fontWeight: 600,
+          letterSpacing: "0.03em",
+          background: c.bg,
+          color: c.text,
+        }}>{c.label}</span>
+      );
+    };
+
+    const Section = ({ title, children }) => (
+      <div style={{ marginBottom: 32 }}>
+        <h3 style={{
+          fontSize: 13,
+          fontWeight: 700,
+          textTransform: "uppercase",
+          letterSpacing: "0.08em",
+          color: FarrBronze,
+          marginBottom: 16,
+          paddingBottom: 8,
+          borderBottom: `2px solid ${FarrBronze}33`,
+        }}>{title}</h3>
+        {children}
+      </div>
+    );
+
+    const Row = ({ label, value, status }) => (
+      <div style={{
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "center",
+        padding: "10px 0",
+        borderBottom: "1px solid #f0f2f5",
+      }}>
+        <div style={{ flex: 1 }}>
+          <span style={{ fontSize: 14, color: "#1a1f2e", fontWeight: 500 }}>{label}</span>
+          {typeof value === "string" && (
+            <span style={{ fontSize: 13, color: "#7a8599", marginLeft: 8 }}>{value}</span>
+          )}
+        </div>
+        {status && <StatusBadge status={status} />}
+      </div>
+    );
+
+    function SiteLaunchReview() {
+      const [activeTab, setActiveTab] = useState("overview");
+
+      return (
+        <div style={{
+          fontFamily: "'Inter', system-ui, -apple-system, sans-serif",
+          maxWidth: 680,
+          margin: "0 auto",
+          background: "#f8f9fc",
+          minHeight: "100vh",
+          padding: "0 0 40px",
+        }}>
+          {/* Header */}
+          <div style={{
+            background: `linear-gradient(135deg, ${FarrBlue} 0%, #001a5c 100%)`,
+            padding: "40px 36px 32px",
+            borderRadius: "0 0 20px 20px",
+          }}>
+            <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 24 }}>
+              <img
+                src="https://farr-designs.sailr.science/images/farr-yacht-design-logo-white.png"
+                alt="Farr Yacht Design"
+                style={{ width: 40, height: 40, borderRadius: 10, objectFit: "contain" }}
+              />
+              <div>
+                <div style={{ color: "#fff", fontSize: 18, fontWeight: 700, letterSpacing: "-0.01em" }}>
+                  Farr Yacht Design
+                </div>
+                <div style={{ color: "rgba(255,255,255,0.55)", fontSize: 12, fontWeight: 500 }}>
+                  farr-designs.sailr.science
+                </div>
+              </div>
+            </div>
+            <h1 style={{
+              color: "#fff", fontSize: 28, fontWeight: 800,
+              lineHeight: 1.2, margin: 0, letterSpacing: "-0.02em",
+            }}>
+              Website Rebuild<br />
+              <span style={{ color: FarrOrange }}>Status &amp; Inventory</span>
+            </h1>
+            <div style={{ color: "rgba(255,255,255,0.5)", fontSize: 13, marginTop: 12 }}>
+              March 9, 2026 — Client Review Package
+            </div>
+          </div>
+
+          {/* Stats Strip */}
+          <div style={{
+            display: "flex", gap: 12, padding: "0 24px",
+            marginTop: -20, flexWrap: "wrap",
+          }}>
+            <StatCard number="781" label="Web Pages" sub="308 yacht · 12 site · 461 legacy" />
+            <StatCard number="481" label="Images" sub="448 JPG · 21 WebP · 7 PNG · 3 SVG" />
+            <StatCard number="8" label="PDFs" sub="3 plans · 4 newsletters · 1 brochure" />
+          </div>
+
+          {/* Tabs */}
+          <div style={{ display: "flex", gap: 4, padding: "24px 24px 0", marginBottom: 24 }}>
+            {[
+              { id: "overview", label: "Overview" },
+              { id: "inventory", label: "Inventory" },
+              { id: "next", label: "Next Epic" },
+            ].map(tab => (
+              <button
+                key={tab.id}
+                onClick={() => setActiveTab(tab.id)}
+                style={{
+                  padding: "8px 18px",
+                  borderRadius: 8,
+                  border: "none",
+                  fontSize: 13,
+                  fontWeight: 600,
+                  cursor: "pointer",
+                  background: activeTab === tab.id ? FarrBlue : "#e8ecf2",
+                  color: activeTab === tab.id ? "#fff" : "#6b7280",
+                  transition: "all 0.15s ease",
+                }}
+              >{tab.label}</button>
+            ))}
+          </div>
+
+          <div style={{ padding: "0 24px" }}>
+
+            {/* OVERVIEW TAB */}
+            {activeTab === "overview" && (
+              <>
+                <Section title="What Was Done">
+                  <div style={{
+                    background: "#fff", borderRadius: 12, padding: 24,
+                    border: "1px solid #e8ecf2",
+                  }}>
+                    <div style={{ fontSize: 15, fontWeight: 600, color: FarrBlue, marginBottom: 12 }}>
+                      Full Rebrand to Farr Corporate Identity
+                    </div>
+                    <div style={{ fontSize: 13, color: "#4a5568", lineHeight: 1.7 }}>
+                      Migrated the entire site from the dark SailrScience development theme to the
+                      official Farr brand identity. This included replacing all colors with Farr Blue
+                      (Pantone 280C), Orange, and Bronze; self-hosting the brand fonts (Jost, Kumbh Sans,
+                      Nunito Sans); integrating official logo assets; and converting 506 files from
+                      dark-background to light, modern aesthetic.
+                    </div>
+                    <div style={{
+                      display: "flex", gap: 8, marginTop: 16, flexWrap: "wrap",
+                    }}>
+                      {["Farr Blue #00267F", "Orange #F97700", "Bronze #C0A280"].map(c => (
+                        <span key={c} style={{
+                          display: "inline-flex", alignItems: "center", gap: 6,
+                          padding: "4px 12px", borderRadius: 6, background: "#f5f7fa",
+                          fontSize: 12, fontWeight: 500, color: "#4a5568",
+                        }}>
+                          <span style={{
+                            width: 10, height: 10, borderRadius: 3,
+                            background: c.split(" ").pop(),
+                          }} />
+                          {c}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </Section>
+
+                <Section title="Deployment">
+                  <Row label="Platform" value="Netlify — static, no build step" status="live" />
+                  <Row label="Deploy method" value="git push → auto-deploy" status="live" />
+                  <Row label="SSL / HTTPS" value="Automatic via Netlify" status="live" />
+                  <Row label="Custom domain" value="Pending DNS configuration" status="pending" />
+                </Section>
+
+                <Section title="Brand Assets Integrated">
+                  <Row label="Corporate Identity Guidelines 2017" status="ready" />
+                  <Row label="Logo files (SVG + PNG, white variant)" status="ready" />
+                  <Row label="Brand fonts — Jost, Kumbh Sans, Nunito Sans" status="ready" />
+                  <Row label="Color system — Farr Blue, Orange, Bronze" status="ready" />
+                  <Row label="Nav logo (swap text → SVG)" status="pending" />
+                </Section>
+              </>
+            )}
+
+            {/* INVENTORY TAB */}
+            {activeTab === "inventory" && (
+              <>
+                <Section title="Web Pages — 781 Total">
+                  <Row label="Yacht detail pages (root level)" value="296 pages" status="live" />
+                  <Row label="Yacht detail pages (/yacht/)" value="473 pages" status="live" />
+                  <Row label="Site pages" value="12 pages" status="live" />
+                  <div style={{
+                    background: "#f8f9fc", borderRadius: 8, padding: 16, marginTop: 12,
+                    fontSize: 12, color: "#6b7280", lineHeight: 1.6,
+                  }}>
+                    Site pages include: Home, About, Contact, Designs, Services, News, Racing,
+                    Superyachts, Team, Partners, Americas Cup, Racing Heritage, Design Plans, and 404.
+                  </div>
+                </Section>
+
+                <Section title="Images — 481 Total">
+                  <Row label="Yacht photography (JPG)" value="448 images" status="live" />
+                  <Row label="WebP optimized" value="21 images" status="live" />
+                  <Row label="PNG assets" value="7 images" status="live" />
+                  <Row label="SVG graphics" value="3 files" status="live" />
+                  <Row label="Animated GIF" value="2 files" status="live" />
+                  <div style={{
+                    background: "#fff4e5", borderRadius: 8, padding: 16, marginTop: 12,
+                    border: "1px solid #fde4c1",
+                  }}>
+                    <div style={{ fontSize: 13, fontWeight: 600, color: "#b45309", marginBottom: 4 }}>
+                      ~141 yacht images still missing
+                    </div>
+                    <div style={{ fontSize: 12, color: "#92690d", lineHeight: 1.5 }}>
+                      These yachts have detail pages but no hero photography. Placeholder gradients
+                      are shown in their place. Client to provide original photography or approve
+                      alternative sourcing.
+                    </div>
+                  </div>
+                </Section>
+
+                <Section title="PDF Documents — 8 Total">
+                  <Row label="TP52 Deck Plan" value="tp52-deck-plan.pdf" status="live" />
+                  <Row label="TP52 Interior" value="tp52-interior.pdf" status="live" />
+                  <Row label="TP52 Sail Plan" value="tp52-sail-plan.pdf" status="live" />
+                  <Row label="Designer's Voice #01–04" value="4 newsletters" status="live" />
+                  <Row label="Consulting Services Brochure" value="1 document" status="live" />
+                </Section>
+
+                <Section title="Data Sets">
+                  <Row label="Yacht database" value="376 designs with specs" status="live" />
+                  <Row label="Related Designs" value="Cross-linked on every yacht page" status="live" />
+                  <Row label="Race results (races.json)" value="2,491 records" status="parked" />
+                </Section>
+              </>
+            )}
+
+            {/* NEXT EPIC TAB */}
+            {activeTab === "next" && (
+              <>
+                <Section title="Parked for Next Epic">
+                  <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+                    {[
+                      {
+                        title: "Missing Yacht Photography",
+                        desc: "~141 yacht pages need hero images. Requires client to provide original files or approve stock/archival sourcing.",
+                        priority: "High",
+                      },
+                      {
+                        title: "E-Commerce & Pricing",
+                        desc: "Design plan sales, pricing tiers, payment integration, and purchase flow for downloadable assets.",
+                        priority: "High",
+                      },
+                      {
+                        title: "Downloadable Assets",
+                        desc: "Expand PDF plan library beyond current TP52 set. Package and deliver design plans, sail plans, and specification sheets.",
+                        priority: "Medium",
+                      },
+                      {
+                        title: "Race Results Integration",
+                        desc: "2,491 race records in races.json ready to be surfaced — filterable results, yacht-level race history, and performance stats.",
+                        priority: "Medium",
+                      },
+                      {
+                        title: "Image Audit & Optimization",
+                        desc: "Full audit of image quality, sizing, and WebP conversion. Placeholder cleanup for missing yacht photography.",
+                        priority: "Medium",
+                      },
+                      {
+                        title: "Nav Logo Swap",
+                        desc: "Replace text-based logo in header/footer with the official Farr SVG logo. File is staged and ready.",
+                        priority: "Low",
+                      },
+                    ].map((item, i) => (
+                      <div key={i} style={{
+                        background: "#fff", borderRadius: 10, padding: "18px 20px",
+                        border: "1px solid #e8ecf2",
+                        display: "flex", gap: 16, alignItems: "flex-start",
+                      }}>
+                        <div style={{
+                          width: 28, height: 28, borderRadius: 8, flexShrink: 0, marginTop: 2,
+                          background: item.priority === "High" ? "#fff4e5" : item.priority === "Medium" ? "#e8f0fe" : "#f1f3f7",
+                          color: item.priority === "High" ? "#b45309" : item.priority === "Medium" ? FarrBlue : "#6b7280",
+                          display: "flex", alignItems: "center", justifyContent: "center",
+                          fontSize: 13, fontWeight: 700,
+                        }}>{i + 1}</div>
+                        <div>
+                          <div style={{ fontSize: 14, fontWeight: 600, color: "#1a1f2e", marginBottom: 4 }}>
+                            {item.title}
+                            <span style={{
+                              marginLeft: 8, fontSize: 11, fontWeight: 500, padding: "2px 8px",
+                              borderRadius: 4,
+                              background: item.priority === "High" ? "#fff4e5" : item.priority === "Medium" ? "#e8f0fe" : "#f1f3f7",
+                              color: item.priority === "High" ? "#b45309" : item.priority === "Medium" ? FarrBlue : "#6b7280",
+                            }}>{item.priority}</span>
+                          </div>
+                          <div style={{ fontSize: 13, color: "#6b7280", lineHeight: 1.5 }}>{item.desc}</div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </Section>
+              </>
+            )}
+          </div>
+
+          {/* Footer */}
+          <div style={{
+            margin: "32px 24px 0",
+            padding: "20px 24px",
+            background: "#fff",
+            borderRadius: 12,
+            border: "1px solid #e8ecf2",
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+          }}>
+            <div>
+              <div style={{ fontSize: 12, color: "#8896a8", marginBottom: 2 }}>Prepared by</div>
+              <div style={{ fontSize: 14, fontWeight: 600, color: FarrBlue }}>SailrScience</div>
+            </div>
+            <div style={{ textAlign: "right" }}>
+              <div style={{ fontSize: 12, color: "#8896a8", marginBottom: 2 }}>Session</div>
+              <div style={{ fontSize: 14, fontWeight: 600, color: "#4a5568" }}>March 9, 2026</div>
+            </div>
+          </div>
+        </div>
+      );
+    }
+
+    ReactDOM.createRoot(document.getElementById("root")).render(<SiteLaunchReview />);
+  </script>
+</body>
+</html>
