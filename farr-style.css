@@ -666,7 +666,7 @@ footer > * { max-width: 1100px; margin-left: auto; margin-right: auto; }
 .service-card .card-link { display: inline-block; font-family: var(--font-mono); font-size: 0.7rem; font-weight: 600; color: var(--accent); margin-top: 1rem; }
 
 /* =============== 16. HOMEPAGE OVERRIDES =============== */
-.homepage { --panel: #0d1620; min-height: 100vh; }
+.homepage { min-height: 100vh; }
 .homepage a { color: var(--accent); text-decoration: none; }
 .homepage a:hover { text-decoration: underline; }
 .homepage a.btn-cta, .homepage a.nav-cta, .homepage a.hero-cta { color: #ffffff; text-decoration: none; }
@@ -693,7 +693,7 @@ footer > * { max-width: 1100px; margin-left: auto; margin-right: auto; }
 .homepage .detail-card--clickable { padding: 1.75rem 1.5rem; }
 .homepage .detail-card--clickable p { font-size: 0.85rem; line-height: 1.55; flex-grow: 1; margin-bottom: 0; }
 .homepage .card-icon { width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; margin-bottom: 1rem; }
-.homepage .card-icon.accent-bg { background: rgba(56, 178, 232, 0.1); }
+.homepage .card-icon.accent-bg { background: rgba(0, 38, 127, 0.08); }
 .homepage .card-icon.cta-bg { background: rgba(249, 119, 0, 0.08); }
 .homepage .card-link { display: inline-block; font-family: var(--font-mono); font-size: 0.7rem; font-weight: 600; color: var(--accent); margin-top: 1rem; }
 .homepage .how-steps { display: flex; align-items: center; justify-content: center; gap: 0.75rem; margin-top: 1.5rem; flex-wrap: wrap; }
@@ -702,7 +702,7 @@ footer > * { max-width: 1100px; margin-left: auto; margin-right: auto; }
 .homepage .how-step h4 { font-family: var(--font-display); font-size: 1rem; }
 .homepage .how-step p { font-size: 0.8rem; color: var(--text-secondary); }
 .homepage .how-arrow { font-size: 1.2rem; color: var(--accent); font-weight: 700; }
-.homepage .cta-band { background: none; border: none; padding: 4rem 2rem; max-width: 960px; margin: 0 auto; }
+.homepage .cta-band { padding: 4rem 2rem; max-width: 960px; margin: 0 auto; }
 .homepage .cta-band h2 { font-size: 1.8rem; }
 .homepage .cta-band .btn-cta { margin-right: 0.5rem; }
 .homepage footer { max-width: 1100px; }
