@@ -399,9 +399,12 @@ section {
   background: var(--farr-deep);
   border-top: none; border-bottom: none;
   padding: 3rem 2rem; text-align: center;
+  color: #ffffff;
 }
-.cta-band h2 { font-family: var(--font-display); font-size: 1.6rem; margin-bottom: 0.75rem; color: #ffffff; }
-.cta-band p { color: rgba(255,255,255,0.75); margin-bottom: 1.5rem; }
+.cta-band h2 { font-family: var(--font-display); font-size: 1.6rem; margin-bottom: 0.75rem; color: #ffffff !important; }
+.cta-band p { color: rgba(255,255,255,0.75) !important; margin-bottom: 1.5rem; }
+.cta-band a { color: #ffffff; }
+.cta-band a.hero-cta, .cta-band a.btn-cta { color: #ffffff !important; }
 
 /* =============== 10. TABLES =============== */
 .detail-table { width: 100%; border-collapse: collapse; margin-top: 1rem; font-size: 0.82rem; }
@@ -702,7 +705,7 @@ footer > * { max-width: 1100px; margin-left: auto; margin-right: auto; }
 .homepage .how-step h4 { font-family: var(--font-display); font-size: 1rem; }
 .homepage .how-step p { font-size: 0.8rem; color: var(--text-secondary); }
 .homepage .how-arrow { font-size: 1.2rem; color: var(--accent); font-weight: 700; }
-.homepage .cta-band { padding: 4rem 2rem; max-width: 960px; margin: 0 auto; }
+.homepage .cta-band { padding: 4rem 2rem; max-width: none; margin: 0; margin-bottom: 0; }
 .homepage .cta-band h2 { font-size: 1.8rem; }
 .homepage .cta-band .btn-cta { margin-right: 0.5rem; }
 .homepage footer { max-width: 1100px; }
