@@ -1930,6 +1930,36 @@ footer div[style*="border-top"] { border-top-color: rgba(255,255,255,0.15) !impo
   display: none;
 }
 
+/* ── Design Plans Hub: filter buttons ── */
+.dp-filter-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.45rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  background: transparent;
+  color: var(--text-secondary);
+  font-size: 0.82rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.dp-filter-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.dp-filter-btn.dp-filter-active {
+  background: var(--accent);
+  color: var(--farr-deep);
+  border-color: var(--accent);
+  font-weight: 600;
+}
+.dp-filter-btn span {
+  font-size: 0.72rem;
+  opacity: 0.7;
+}
+
 /* Card hover: subtle zoom when bg-image present */
 .yacht-card:hover .yacht-card-image[style*="background-image"] {
   background-size: 104%;
