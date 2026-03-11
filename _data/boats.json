@@ -10032,7 +10032,7 @@
     "hasCardPDF": true,
     "cardDrawingCount": 4,
     "cardDrawingsAvailable": 4,
-    "hidden": false
+    "hidden": true
   },
   {
     "title": "175",
@@ -10719,7 +10719,7 @@
     "hasCardPDF": true,
     "cardDrawingCount": 20,
     "cardDrawingsAvailable": 20,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
@@ -12887,7 +12887,7 @@
     "hasCardPDF": true,
     "cardDrawingCount": 122,
     "cardDrawingsAvailable": 60,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
@@ -12925,7 +12925,7 @@
     "hasCardPDF": true,
     "cardDrawingCount": 36,
     "cardDrawingsAvailable": 26,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
@@ -12963,7 +12963,7 @@
     "hasCardPDF": true,
     "cardDrawingCount": 48,
     "cardDrawingsAvailable": 0,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
@@ -13039,7 +13039,7 @@
     "hasCardPDF": true,
     "cardDrawingCount": 96,
     "cardDrawingsAvailable": 0,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
@@ -13077,7 +13077,7 @@
     "hasCardPDF": true,
     "cardDrawingCount": 38,
     "cardDrawingsAvailable": 12,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
@@ -13413,7 +13413,7 @@
     "hasCardPDF": true,
     "cardDrawingCount": 21,
     "cardDrawingsAvailable": 21,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
@@ -13531,7 +13531,7 @@
     "hasCardPDF": true,
     "cardDrawingCount": 24,
     "cardDrawingsAvailable": 23,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
@@ -13681,7 +13681,7 @@
     "hasCardPDF": true,
     "cardDrawingCount": 18,
     "cardDrawingsAvailable": 18,
-    "hidden": false
+    "hidden": true
   },
   {
     "title": "258",
@@ -13875,7 +13875,7 @@
     "hasCardPDF": true,
     "cardDrawingCount": 16,
     "cardDrawingsAvailable": 16,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
@@ -13945,7 +13945,7 @@
     "hasCardPDF": true,
     "cardDrawingCount": 60,
     "cardDrawingsAvailable": 60,
-    "hidden": false
+    "hidden": true
   },
   {
     "title": "266_0001",
@@ -14220,7 +14220,7 @@
     "hasCardPDF": true,
     "cardDrawingCount": 66,
     "cardDrawingsAvailable": 66,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
@@ -15037,7 +15037,7 @@
     "hasCardPDF": true,
     "cardDrawingCount": 1,
     "cardDrawingsAvailable": 1,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
@@ -17149,7 +17149,7 @@
     "hasCardPDF": true,
     "cardDrawingCount": 4,
     "cardDrawingsAvailable": 4,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
@@ -17187,7 +17187,7 @@
     "hasCardPDF": true,
     "cardDrawingCount": 44,
     "cardDrawingsAvailable": null,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
@@ -18145,7 +18145,7 @@
     "hasCardPDF": true,
     "cardDrawingCount": 1,
     "cardDrawingsAvailable": 1,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
@@ -18361,7 +18361,7 @@
     "hasCardPDF": true,
     "cardDrawingCount": 25,
     "cardDrawingsAvailable": 25,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
@@ -18701,7 +18701,7 @@
     "hasCardPDF": true,
     "cardDrawingCount": 1,
     "cardDrawingsAvailable": 1,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
@@ -18955,7 +18955,7 @@
     "hasCardPDF": true,
     "cardDrawingCount": 36,
     "cardDrawingsAvailable": null,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
@@ -19050,7 +19050,7 @@
     "hasCardPDF": true,
     "cardDrawingCount": 10,
     "cardDrawingsAvailable": 10,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
@@ -19088,7 +19088,7 @@
     "hasCardPDF": true,
     "cardDrawingCount": 75,
     "cardDrawingsAvailable": null,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
@@ -19126,7 +19126,7 @@
     "hasCardPDF": true,
     "cardDrawingCount": 17,
     "cardDrawingsAvailable": null,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
@@ -19164,7 +19164,7 @@
     "hasCardPDF": true,
     "cardDrawingCount": 16,
     "cardDrawingsAvailable": null,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
@@ -19202,7 +19202,7 @@
     "hasCardPDF": true,
     "cardDrawingCount": 9,
     "cardDrawingsAvailable": null,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
@@ -20307,7 +20307,7 @@
     "hasCardPDF": true,
     "cardDrawingCount": 12,
     "cardDrawingsAvailable": null,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
@@ -20350,7 +20350,7 @@
     "hasCardPDF": true,
     "cardDrawingCount": 5,
     "cardDrawingsAvailable": null,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
@@ -20875,7 +20875,7 @@
     "hasCardPDF": true,
     "cardDrawingCount": 32,
     "cardDrawingsAvailable": null,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
@@ -20913,7 +20913,7 @@
     "hasCardPDF": true,
     "cardDrawingCount": 2,
     "cardDrawingsAvailable": null,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
@@ -20956,7 +20956,7 @@
     "hasCardPDF": true,
     "cardDrawingCount": 1,
     "cardDrawingsAvailable": 1,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
@@ -20999,7 +20999,7 @@
     "hasCardPDF": true,
     "cardDrawingCount": 4,
     "cardDrawingsAvailable": null,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
@@ -21540,7 +21540,7 @@
     "hasCardPDF": true,
     "cardDrawingCount": 10,
     "cardDrawingsAvailable": null,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
@@ -22202,7 +22202,7 @@
     "hasCardPDF": true,
     "cardDrawingCount": 1,
     "cardDrawingsAvailable": 1,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
@@ -22240,7 +22240,7 @@
     "hasCardPDF": true,
     "cardDrawingCount": 7,
     "cardDrawingsAvailable": 3,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
@@ -22278,7 +22278,7 @@
     "hasCardPDF": true,
     "cardDrawingCount": 3,
     "cardDrawingsAvailable": null,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
@@ -22316,7 +22316,7 @@
     "hasCardPDF": true,
     "cardDrawingCount": 13,
     "cardDrawingsAvailable": null,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
@@ -22354,7 +22354,7 @@
     "hasCardPDF": true,
     "cardDrawingCount": 2,
     "cardDrawingsAvailable": null,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
@@ -22570,7 +22570,7 @@
     "hasCardPDF": true,
     "cardDrawingCount": 4,
     "cardDrawingsAvailable": null,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
@@ -24406,7 +24406,7 @@
     "title": "609M",
     "slug": "609m",
     "designNumber": "609M",
-    "name": null,
+    "name": "Open 60 (IMOCA)",
     "year": 2006,
     "category": [
       "Open 60"
@@ -24427,7 +24427,7 @@
     "description": null,
     "shortDescription": "Open 60",
     "shortSummary": "IMOCA 60 specifically designed for shorthanded ocean racing.",
-    "builder": null,
+    "builder": "Beyou (Jérémie Beyou)",
     "owner": null,
     "rigType": null,
     "rigMaterial": null,
@@ -24448,53 +24448,10 @@
     "nid": 8402,
     "tier": 1,
     "planStatus": "not_digitized",
-    "hasCardPDF": false,
-    "cardDrawingCount": null,
-    "cardDrawingsAvailable": null,
-    "hidden": false
-  },
-  {
-    "title": "609m",
-    "slug": "609m-card",
-    "designNumber": "609m",
-    "name": "Open 60 (IMOCA)",
-    "year": 2005,
-    "category": [
-      "Racing"
-    ],
-    "classification": null,
-    "designRule": null,
-    "designType": "Racing",
-    "specs": {
-      "loa": {
-        "m": null,
-        "ft": 60
-      }
-    },
-    "description": null,
-    "shortDescription": "Open 60 (IMOCA)",
-    "shortSummary": null,
-    "builder": "Beyou (Jérémie Beyou)",
-    "owner": null,
-    "rigType": null,
-    "rigMaterial": null,
-    "keelType": null,
-    "hullConstruction": null,
-    "hullsBuilt": null,
-    "inProduction": null,
-    "isArchived": null,
-    "images": null,
-    "drawings": null,
-    "vppFile": null,
-    "drupalAlias": null,
-    "nid": null,
-    "tier": 2,
-    "planStatus": "request_from_shed",
     "hasCardPDF": true,
     "cardDrawingCount": 39,
     "cardDrawingsAvailable": null,
-    "hidden": false,
-    "yearEstimated": false
+    "hidden": false
   },
   {
     "title": "613",
@@ -24774,7 +24731,7 @@
     "hasCardPDF": true,
     "cardDrawingCount": 5,
     "cardDrawingsAvailable": null,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
@@ -25202,7 +25159,7 @@
     "hasCardPDF": true,
     "cardDrawingCount": 22,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": true
   },
   {
     "title": "668",
@@ -25476,7 +25433,7 @@
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": true
   },
   {
     "title": "680",
@@ -27968,7 +27925,7 @@
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": true
   },
   {
     "title": "793",
@@ -28008,7 +27965,7 @@
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": true
   },
   {
     "title": "794",
@@ -28043,7 +28000,7 @@
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": true
   },
   {
     "title": "795",
@@ -28078,7 +28035,7 @@
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": true
   },
   {
     "title": "796",
@@ -28113,7 +28070,7 @@
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": true
   },
   {
     "title": "797",
@@ -28148,7 +28105,7 @@
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": true
   },
   {
     "title": "798",
@@ -28183,7 +28140,7 @@
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": true
   },
   {
     "title": "799",
@@ -29402,7 +29359,7 @@
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": true
   },
   {
     "title": "836",
@@ -29482,7 +29439,7 @@
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": true
   },
   {
     "title": "838",
@@ -29517,7 +29474,7 @@
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": true
   },
   {
     "title": "839",
@@ -29552,7 +29509,7 @@
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": true
   },
   {
     "title": "840",
@@ -29587,7 +29544,7 @@
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": true
   },
   {
     "title": "841",
@@ -29702,7 +29659,7 @@
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": true
   },
   {
     "title": "844",
@@ -30113,7 +30070,7 @@
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": true
   },
   {
     "title": "857",
