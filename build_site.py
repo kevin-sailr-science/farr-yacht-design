@@ -38,7 +38,7 @@ for boat in all_boats:
         plan_catalog[plan_id] = {
             'designNumber': boat.get('designNumber'),
             'name': f"{boat.get('name') or boat.get('title', '')} — Full Plan Set",
-            'stripePriceEnv': boat.get('stripePriceEnv'),
+            'stripePriceId': boat.get('stripePriceId', ''),
             'price': boat.get('planPrice'),
             'description': boat.get('planDescription', ''),
             'planContents': boat.get('planContents', ''),

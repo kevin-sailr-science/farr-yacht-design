@@ -99,11 +99,11 @@
     Cache-Control = "public, max-age=86400"
 
 # --- Environment Variables (set in Netlify UI, NOT here) ---
-# STRIPE_SECRET_KEY         sk_live_... or sk_test_...
+# STRIPE_SECRET_KEY         sk_live_... or sk_test_... (use sk_test_ for testing)
 # STRIPE_WEBHOOK_SECRET     whsec_... (from Stripe Dashboard)
-# STRIPE_PRICE_FARR40       price_... (Farr 40 plan Stripe Price ID)
 # DOWNLOAD_HMAC_SECRET      <long random string - generate with openssl rand -hex 32>
 # DOWNLOAD_BASE_URL         https://plans.farrdesign.com (or S3/R2 bucket URL)
 # SITE_URL                  https://farrdesign.com
 # RESEND_API_KEY            re_... (optional, for email delivery)
 # WAITLIST_NOTIFY_EMAIL     britton@farrdesign.com (optional admin notification)
+# Note: Stripe Price IDs are stored in boats.json (stripePriceId field), not as env vars

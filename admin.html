@@ -290,8 +290,8 @@
                   <input type="number" id="ce-planprice" placeholder="350">
                 </div>
                 <div class="waitlist-field">
-                  <label for="ce-stripepriceenv">Stripe Price Env Var</label>
-                  <input type="text" id="ce-stripepriceenv" placeholder="STRIPE_PRICE_FARR40" style="font-family:var(--font-mono);font-size:0.82rem;">
+                  <label for="ce-stripepriceenv">Stripe Price ID</label>
+                  <input type="text" id="ce-stripepriceenv" placeholder="price_1abc..." style="font-family:var(--font-mono);font-size:0.82rem;">
                 </div>
               </div>
               <div class="waitlist-field">
@@ -669,7 +669,7 @@
       /* E-commerce */
       document.getElementById('ce-planid').value = design.planId || '';
       document.getElementById('ce-planprice').value = design.planPrice || '';
-      document.getElementById('ce-stripepriceenv').value = design.stripePriceEnv || '';
+      document.getElementById('ce-stripepriceenv').value = design.stripePriceId || '';
       document.getElementById('ce-plandesc').value = design.planDescription || '';
       document.getElementById('ce-plancontents').value = Array.isArray(design.planContents) ? design.planContents.join(', ') : '';
 
@@ -823,7 +823,7 @@
         /* E-commerce */
         planId: document.getElementById('ce-planid').value.trim() || null,
         planPrice: parseInt(document.getElementById('ce-planprice').value) || null,
-        stripePriceEnv: document.getElementById('ce-stripepriceenv').value.trim() || null,
+        stripePriceId: document.getElementById('ce-stripepriceenv').value.trim() || null,
         planDescription: document.getElementById('ce-plandesc').value.trim() || null,
         planContents: document.getElementById('ce-plancontents').value.split(',').map(function(s){return s.trim();}).filter(Boolean)
       };

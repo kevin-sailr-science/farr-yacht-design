@@ -321,7 +321,7 @@ exports.handler = async function (event) {
         vppFile: design.vppFile || null,
         /* E-commerce fields */
         planId: design.planId || null,
-        stripePriceEnv: design.stripePriceEnv || null,
+        stripePriceId: design.stripePriceId || null,
         planPrice: design.planPrice || null,
         planDescription: design.planDescription || null,
         planContents: design.planContents || null,
