@@ -1,0 +1,2854 @@
+{
+  "design_pages": [
+    {
+      "source": "Scripts/768-copy.html",
+      "designNumber": "778",
+      "boatName": "Southern Wind 105",
+      "specs": {
+        "loa": {
+          "m": 32.1,
+          "ft": 105.3,
+          "kg": null,
+          "lbs": null,
+          "tons": null,
+          "raw": "32.1 m / 105.3 ft"
+        },
+        "lwl": {
+          "m": 29.4,
+          "ft": 96.46,
+          "kg": null,
+          "lbs": null,
+          "tons": null,
+          "raw": "29.4 m / 96.46 ft"
+        },
+        "beam": {
+          "m": 7.32,
+          "ft": 24.0,
+          "kg": null,
+          "lbs": null,
+          "tons": null,
+          "raw": "7.32 m / 24.0 ft"
+        },
+        "draft — fixed": {
+          "m": 4.5,
+          "ft": 14.7,
+          "kg": null,
+          "lbs": null,
+          "tons": null,
+          "raw": "4.5 m / 14.7 ft"
+        },
+        "displacement": {
+          "m": null,
+          "ft": null,
+          "kg": 66200.0,
+          "lbs": 145946.0,
+          "tons": null,
+          "raw": "66,200 kg / 145,946 lbs"
+        }
+      },
+      "description": "Photo: © Carlo Baroncini / Courtesy of Southern Wind Shipyard\n\nFarr Yacht Design is delighted to present our tenth design commission from Southern Wind shipyard. The new Southern Wind 105 is a stunning, thoroughly modern yacht designed for the sailor who expects cutting edge design and superb styling in a fast, safe, passage capable yacht equipped to contest any superyacht regatta.\n\nFYD was given a free hand to develop the naval architecture concept. With Southern Wind’s advanced construction technology and fanatical commitment to weight control, we were able to create a light, powerful masterpiece with aggressive hull styling, a highly advanced appendage package and a more than ample rig size. Twin rudders were chosen to best match both the lifting keel configuration and the wide, powerful transom.\n\nThe interior and deck styling are the product of Nauta Design and were developed in concert with the overall concept to be the \"new wave in the future of Southern Wind.\"",
+      "images": [
+        "images/fys.png",
+        "images/linkedin.png",
+        "images/g-white.png"
+      ],
+      "builder": null,
+      "builderUrl": "http://facebook.com/FarrYachtDesign"
+    },
+    {
+      "source": "Scripts/781-copy-copy.html",
+      "designNumber": "813",
+      "boatName": "14m Tender",
+      "specs": {},
+      "description": "This 14m Tender is a collaborative development between Farr Yacht Design, Tenderworks and RWD design. Built using the latest in carbon composite technology and featuring an advanced stepped planing hull for unrivaled performance and handling. The first boat is well advanced in construction with design underway on a limousine variant.\n\nContact info@farrdesign.com in order to receive a detailed information package. Sign up for our email list to get the latest information about this design, other upcoming projects and news.",
+      "images": [
+        "images/fys.png",
+        "images/linkedin.png",
+        "images/g-white.png"
+      ],
+      "builder": "Tenderworks",
+      "builderUrl": null
+    },
+    {
+      "source": "Scripts/781-copy.html",
+      "designNumber": "828",
+      "boatName": "Expedition Rowing/Sailing Craft",
+      "specs": {},
+      "description": "This Expedition craft was commissioned in 2017 by Spindrift Rowing. Designed for coastal and ocean rowing in single or doublehanded configurations the boat can be easily moded for sailing with the addition of the ama's and rigging. The boat is constructed from infused Carbon Foam with additional abrasion protection engineered into the laminates.\n\nContact info@farrdesign.com in order to receive a detailed information package. Sign up for our email list to get the latest information about this design, other upcoming projects and news.",
+      "images": [
+        "images/fys.png",
+        "images/linkedin.png",
+        "images/g-white.png"
+      ],
+      "builder": null,
+      "builderUrl": null,
+      "year": 2017
+    },
+    {
+      "source": "Scripts/784-copy-2.html",
+      "designNumber": "826",
+      "boatName": "IMOCA Open 60",
+      "specs": {
+        "loa": {
+          "m": 18.28,
+          "ft": 60.0,
+          "kg": null,
+          "lbs": null,
+          "tons": null,
+          "raw": "18.28 m / 60.0 ft"
+        },
+        "beam": {
+          "raw": "5.XX m / 18.X ft"
+        },
+        "draft": {
+          "m": 4.5,
+          "ft": 14.7,
+          "kg": null,
+          "lbs": null,
+          "tons": null,
+          "raw": "4.5 m / 14.7 ft"
+        },
+        "displacement": {
+          "raw": "7,XXX kg / 15,XXX lbs"
+        },
+        "cant angle": {
+          "degrees": 38.0,
+          "raw": "38 Degrees"
+        },
+        "features": {
+          "raw": "Hydrofoil Assisted"
+        }
+      },
+      "description": "Farr Yacht Design presents Design 826, a revolutionary new IMOCA 60 design that has been developed from a clean sheet of paper for the next era of offshore sailing. This design builds upon our extensive experience in IMOCA 60 design and leverages much of our ongoing Vendee Globe IMOCA 2020 concept developments. The boat is envisioned to be easily adaptable for singlehanded, doublehanded or crewed sailing with specific consideration for the Volvo Ocean Race courses and the implications of sailing with 5 crew and an onboard reporter.\n\nUnlike the existing IMOCA fleet, this design has been optimized from the outset to leverage the full power of hydrofoils. The forces generated by the foils increase the speed potential but also alter how the hydrodynamic forces are shared by the hull and the different appendages. Compared to conventional IMOCA designs, this results in significant changes in the optimal design parameters, hull form shape and dimensions, foil design, keel placement and incline angles as well as having significant sail design and aerodynamic considerations.\n\nThe advanced foil designs leverage FYD multi-year investment in the development of foil assisted designs, including our development of the world’s largest foil assisted monohull due to launch in Spring 2019. The higher speeds and increased impact loadings for foil assisted boats, coupled with the rule drivers to the minimum possible structural weight require a next generation of structural concept, one that minimizes weight without sacrificing strength or reliability and robustness. As with all FYD designs, the structural approach is always carefully considered in view of buildability and cost in order to insure the resulting product meets all of the team’s objectives.\n\nThe boat must be able to operate at peak efficiency, able to maintain high average speeds for the solo sailor while being robust enough to be pushed to the limit by a full crew. On a performance basis this emphasizes the need for a boat that is easily driven and as sea kindly as possible; able to achieve excellent speeds even when in non-optimal configurations. The deck and interior arrangements, rigging and deck hardware systems are ergonomically optimized with this in mind. As displayed, this design incorporates a deck and interior layout that has been developed to support crewed sailing with an emphasis on human helming, gear stacking, guest space and media inclusion. A design only focused on solo or doublehanded racing would likely result in a different cockpit, deck layout and interior.",
+      "images": [
+        "images/fys.png",
+        "images/linkedin.png",
+        "images/g-white.png"
+      ],
+      "builder": null,
+      "builderUrl": null
+    },
+    {
+      "source": "Scripts/784-copy.html",
+      "designNumber": "842",
+      "boatName": "55ft One Design",
+      "specs": {},
+      "description": "Contact info@farrdesign.com in order to receive a detailed information package. Sign up for our email list to get the latest information about this design, other upcoming projects and news.",
+      "images": [
+        "images/fys.png",
+        "images/linkedin.png",
+        "images/g-white.png"
+      ],
+      "builder": null,
+      "builderUrl": null
+    },
+    {
+      "source": "Scripts/788.html",
+      "designNumber": "788",
+      "boatName": "Baltic 142",
+      "specs": {
+        "loa": {
+          "m": 43.3,
+          "ft": 142.06,
+          "kg": null,
+          "lbs": null,
+          "tons": null,
+          "raw": "43.3 m / 142.06 ft"
+        },
+        "dwl": {
+          "m": 41.6,
+          "ft": 136.48,
+          "kg": null,
+          "lbs": null,
+          "tons": null,
+          "raw": "41.60 m / 136.48 ft"
+        },
+        "beam": {
+          "m": 9.0,
+          "ft": 29.53,
+          "kg": null,
+          "lbs": null,
+          "tons": null,
+          "raw": "9.00 m / 29.53 ft"
+        },
+        "draft (keel down)": {
+          "m": 6.5,
+          "ft": 21.33,
+          "kg": null,
+          "lbs": null,
+          "tons": null,
+          "raw": "6.50 m / 21.33 ft"
+        },
+        "draft (keel up)": {
+          "m": 3.8,
+          "ft": 12.47,
+          "kg": null,
+          "lbs": null,
+          "tons": null,
+          "raw": "3.80 m / 12.47 ft"
+        },
+        "displacement": {
+          "m": null,
+          "ft": null,
+          "kg": null,
+          "lbs": 268000.0,
+          "tons": 134.0,
+          "raw": "134 tons / 268,000 lbs"
+        },
+        "ballast": {
+          "m": null,
+          "ft": null,
+          "kg": null,
+          "lbs": 97400.0,
+          "tons": 48.7,
+          "raw": "48.7 tons / 97,400 lbs"
+        }
+      },
+      "description": "The Baltic 142 Custom combines timeless, elegant looks with dramatic superstructure styling and a modern hull shape. Features include a plumb bow and maximum beam carried well aft to enhance performance and provide useful hull volume. The accommodation comprises a large amidships owner’s cabin to ensure maximum comfort while underway, an upper saloon with direct access to the cockpit and an additional six cabins, three for guests forward and three for crew aft.\n\nWith naval architecture by Farr Yacht Design, final styling by Lucio Micheletti and overall engineering by Baltic Yachts, the yacht will benefit from advanced carbon sandwich construction.\n\nThe final phase of mould tooling for this Farr Yacht Design performance cruiser was completed in the summer and hull lamination in pre-preg carbon is well advanced.\n\nProject manager Sören Jansson said that apart from the 9m long Dynamic Stability System foil being built into the yacht, the diesel electric propulsion system is also a key feature, the machinery room for which is being built in modular from outside the yacht.\n\n\"This not only enables us to gain some time in the overall build schedule but also allows the workers easier access for speed and accuracy\" said Sören.\n\nThe 142 will step a Rondal carbon rig, be fitted with in-boom furling, set a square top main and to gain full benefit from the keel in the up position (draft 3.8m), is designed with twin rudders. The yacht is scheduled to launch in Spring 2019.",
+      "images": [
+        "images/788_baltic142_rendering-crop-u746327.jpg",
+        "images/fys.png",
+        "images/linkedin.png",
+        "images/g-white.png",
+        "images/788_baltic142_rendering-crop-u7463272.jpg"
+      ],
+      "builder": null,
+      "builderUrl": "http://facebook.com/FarrYachtDesign"
+    },
+    {
+      "source": "Scripts/809.html",
+      "designNumber": "809",
+      "boatName": "50M Superyacht",
+      "specs": {},
+      "description": "Farr Yacht Design and Design Unlimited have partnered together to create this high performance racer cruiser that will establish a new class in competitive sailing superyachts.\n\nBreaking records, dominating the Superyacht Racing Circuit, and comfortable Mediterranean and Caribbean cruising round out the uncompromising design brief. Cutting days from trans-ocean records and finishing hours ahead of the closet competition in superyacht day races are all easily within the capabilities of this incredible yacht.\n\nThis 50m concept is pure power with a long, light hull of only 155 tons displacement, and a rig that stands 68m above the waterline. 2500 square meters of sail, twin daggerboards and rudders and a telescoping/canting keel allow this yacht to easily achieve speeds into the mid-20’s in moderate winds and well above 30 knots in strong winds. Advanced and proven sail handling systems provide the necessary flexibility and safety needed to confidently achieve those high speeds.\n\nContact info@farrdesign.com in order to receive a detailed information package. Sign up for our email list to get the latest information about this design, other upcoming projects and news.",
+      "images": [
+        "images/809banner-crop-u748384.jpg",
+        "images/fys.png",
+        "images/fbpost-crop-u754138.jpg",
+        "images/809-bow-iso-1b-3300x2200-crop-u754106.jpg",
+        "images/809-top-view-1b-3300x2200-crop-u748126.jpg",
+        "images/linkedin.png",
+        "images/g-white.png",
+        "images/809banner-crop-u7483842.jpg",
+        "images/fbpost-crop-u7541382.jpg",
+        "images/809-bow-iso-1b-3300x2200-crop-u7541062.jpg",
+        "images/809-top-view-1b-3300x2200-crop-u7481262.jpg",
+        "images/809banner-crop-u7483843.jpg",
+        "images/fbpost-crop-u7541383.jpg",
+        "images/809-bow-iso-1b-3300x2200-crop-u7541063.jpg",
+        "images/809-top-view-1b-3300x2200-crop-u7481263.jpg",
+        "images/809banner-crop-u7483844.jpg",
+        "images/fbpost-crop-u7541384.jpg",
+        "images/809-bow-iso-1b-3300x2200-crop-u7541064.jpg",
+        "images/809-top-view-1b-3300x2200-crop-u7481264.jpg",
+        "images/809banner-crop-u7483845.jpg",
+        "images/fbpost-crop-u7541385.jpg",
+        "images/809-bow-iso-1b-3300x2200-crop-u7541065.jpg",
+        "images/809-top-view-1b-3300x2200-crop-u7481265.jpg",
+        "images/809banner-crop-u7483846.jpg",
+        "images/fbpost-crop-u7541386.jpg",
+        "images/809-bow-iso-1b-3300x2200-crop-u7541066.jpg",
+        "images/809-top-view-1b-3300x2200-crop-u7481266.jpg"
+      ],
+      "builder": null,
+      "builderUrl": null
+    },
+    {
+      "source": "Scripts/819.html",
+      "designNumber": "819",
+      "boatName": "Najad",
+      "specs": {
+        "loa": {
+          "raw": "DOWNLOADS"
+        }
+      },
+      "description": "Our goal at Farr Yacht Design with the new Najad 395 was to look back at Najad Yacht’s history, as well as forward to their future, and to create two new 12m models that would help take important steps forward while remaining true Najads. The brand Najad has so much great heritage, that our steps as thoughtful designers had to be very carefully considered. The Najad 395 that we have created together is an artful blend of performance improvements and industrialization, with traditional values, sea worthiness, and good solid engineering. Both versions of the boat, center cockpit and aft cockpit, have been developed with the attention deserving of single focus models, and yet have achieved a level of industrialized integration which is a real testament to the team. We are confident that we have created new Najad 395’s that can stand the test of time, and be rewarding, and confidence inspiring yachts for her owners well into the future.",
+      "images": [
+        "images/819_ac_leeward_banner-crop-u814367.jpg",
+        "images/fys.png",
+        "images/linkedin.png",
+        "images/g-white.png",
+        "images/819_ac_leeward_banner-crop-u8143672.jpg"
+      ],
+      "builder": null,
+      "builderUrl": null
+    },
+    {
+      "source": "Scripts/fyd--design-841-fast-40-.html",
+      "designNumber": "841",
+      "boatName": "Design 841-Fast 40+",
+      "specs": {},
+      "description": "Around the world we are seeing a resurgence of interest in high performance race boats at the 40’ size. Originating in the UK, the Fast 40+ class has gone from strength to strength providing exceptionally close racing for well matched, high performance 40 footers. The dynamic performance of the Fast 40’s and their more accessible construction and operating costs have peaked the interest of sailors around the world. We are seeing a significant amount of interest in boats of this style from Australia, New Zealand, USA, and European owners with particular interest in boats that are not solely targeted at inshore style racing. Responding to this interest we have developed a brand new design that reflects the recent evolutions of the IRC and Fast 40+ rules, but is specifically optimised to a larger component of offshore sailing conditions; positioned to excel in both inshore regattas and in the offshore races.\n\n• Design parameters optimised to the 2018 FAST 40+ class rule and targeted to perform both inshore and offshore in dynamic conditions\n\n• An aggressive approach to maximize the benefit of moving crew weight both longitudinally and transversely\n\n• Refined, high stability/low drag hull shape integrated with advanced deck and structural design\n\n• Modern, open cockpit deck geometry designed to maximize efficient handling with minimized weight, windage and pitch gyradius\n\n• Maximum-performance high efficiency appendages for impressive downwind offshore performance and high lift in demanding conditions or racing in tight fleets\n\n• Easily re-modeable to optimise for inshore or offshore focused schedules\n\n• Light, reliable and efficient structural design integrated with deck and rig features\n\nThis design is developed to excel in coastal and offshore races where dynamic reaching performance is paramount while still providing excellent inshore performance in tight windward leeward regattas. Design 841 is a product of the latest in design technology and leverages 40 years of design experience. It features a fresh look at every element of the boat, leaving no stone unturned. It combines cutting-edge research with countless innovations and refinements that will define the next generation of FAST 40+.\n\nWe are in advanced discussions with Van Munster boats in Australia in preparation for a construction start that would see the first boat available for the Australian Summer. A full design presentation, proposed specification and pricing is available upon request.",
+      "images": [
+        "images/fys.png",
+        "images/841-aft-iso-view-1-mounted-small.jpg",
+        "images/linkedin.png",
+        "images/g-white.png",
+        "images/841-aft-iso-view-1-mounted-small517x400.jpg",
+        "images/841-aft-iso-view-1-mounted-small467x361.jpg",
+        "images/841-aft-iso-view-1-mounted-small375x290.jpg"
+      ],
+      "builder": "Van Munster Boats",
+      "builderUrl": null
+    },
+    {
+      "source": "Scripts/fyd--farr-43-(design-844).html",
+      "designNumber": "844",
+      "boatName": "Farr 43",
+      "specs": {
+        "loa": {
+          "m": 13.1,
+          "ft": 43.0,
+          "kg": null,
+          "lbs": null,
+          "tons": null,
+          "raw": "13.10 m / 43.0 ft"
+        },
+        "lwl": {
+          "m": 11.43,
+          "ft": 37.5,
+          "kg": null,
+          "lbs": null,
+          "tons": null,
+          "raw": "11.43 m / 37.5 ft"
+        },
+        "beam": {
+          "m": 4.04,
+          "ft": 13.25,
+          "kg": null,
+          "lbs": null,
+          "tons": null,
+          "raw": "4.04 m / 13.25 ft"
+        },
+        "draft": {
+          "m": 2.74,
+          "ft": 9.0,
+          "kg": null,
+          "lbs": null,
+          "tons": null,
+          "raw": "2.74 m / 9.0 ft"
+        },
+        "displacement": {
+          "m": null,
+          "ft": null,
+          "kg": 6300.0,
+          "lbs": 13900.0,
+          "tons": null,
+          "raw": "6300 kg / 13,900 lbs"
+        },
+        "target irc tcc": {
+          "raw": "1.19"
+        }
+      },
+      "description": "This design embodies Farr Yacht Design’s deep understanding of the IRC rule space, and our many years producing high level grand-prix and production racer and cruiser designs. The concept is positioned to provide exceptional performance in a wide range of conditions; able to perform in both the toughest offshore races and weekend club races and rewarding to sail by both Corinthian crews and professionals. While designed to achieve an exceptional IRC rating the boat is envisioned as an excellent all-purpose boat, able to perform under a range of handicap and rating systems including ORCi, PHRF and others. At 43’ the boat has been sized to fit within the burgeoning Super 12 Class in Australia to maximize racing opportunities.\n\nMany of the larger manufacturers have adjusted their focus to pure cruising and charter solutions meaning there have been very few high performance cruiser/racers developed in recent years. Many of our existing cruiser/racer designs have continued to perform well and place in major events around the world but there are very limited options for these owners to move up into. These owners are looking for a new boat that retains the dual purpose cruising and racing concept but takes advantage of the significant advancements in design and construction that have occurred in recent years.",
+      "images": [
+        "images/fys.png",
+        "images/844%20aft%20iso%20view%201%20mounted%20800x600.jpg",
+        "images/linkedin.png",
+        "images/g-white.png",
+        "images/844%20aft%20iso%20view%201%20mounted%20800x600467x361.jpg",
+        "images/844%20aft%20iso%20view%201%20mounted%20800x600375x290.jpg"
+      ],
+      "builder": null,
+      "builderUrl": null
+    }
+  ],
+  "design_list_entries": [
+    {
+      "designNumber": "814",
+      "year": 2017,
+      "type": "56ft. Blue Water Cruiser",
+      "name": "Infiniti 56C"
+    },
+    {
+      "designNumber": "801",
+      "year": 2016,
+      "type": "41' Racer",
+      "name": "Fast 40+"
+    },
+    {
+      "designNumber": "781",
+      "year": 2015,
+      "type": "13m IRC Daysailer Concept",
+      "name": "IRC Daysailer 13m"
+    },
+    {
+      "designNumber": "779",
+      "year": 2015,
+      "type": "53' Canting Keelboat",
+      "name": "Infiniti 53"
+    },
+    {
+      "designNumber": "766",
+      "year": 2014,
+      "type": "96' Performance Cruiser/Racer",
+      "name": "Southern Wind 96"
+    },
+    {
+      "designNumber": "766",
+      "year": 2014,
+      "type": "44' IRC Racer Concept",
+      "name": "IRC440"
+    },
+    {
+      "designNumber": "757",
+      "year": 2012,
+      "type": "VO65 One Design",
+      "name": "Volvo Ocean 65"
+    },
+    {
+      "designNumber": "750",
+      "year": 2012,
+      "type": "23' Sportboat",
+      "name": "BAVARIA B/One"
+    },
+    {
+      "designNumber": "746",
+      "year": 2013,
+      "type": "14' Paddleboard",
+      "name": "HORIZON F14"
+    },
+    {
+      "designNumber": "740",
+      "year": 2013,
+      "type": "38' Powerboat",
+      "name": "PREMIER 38"
+    },
+    {
+      "designNumber": "739",
+      "year": 2012,
+      "type": "42' Cruising Yacht",
+      "name": "BAVARIA VISION 42"
+    },
+    {
+      "designNumber": "733",
+      "year": 2011,
+      "type": "46' Cruising Yacht",
+      "name": "BAVARIA VISION 46"
+    },
+    {
+      "designNumber": "732",
+      "year": 2012,
+      "type": "28' One Design",
+      "name": "FARR 280 ONE DESIGN"
+    },
+    {
+      "designNumber": "727",
+      "year": 2011,
+      "type": "63' Racing/Cruising Yacht",
+      "name": "Paris 63"
+    },
+    {
+      "designNumber": "726",
+      "year": 2010,
+      "type": "36' Cruising Yacht",
+      "name": "BAVARIA CRUISER 36"
+    },
+    {
+      "designNumber": "724",
+      "year": 2010,
+      "type": "40' One Design",
+      "name": "FARR 400 ONE DESIGN"
+    },
+    {
+      "designNumber": "720",
+      "year": 2010,
+      "type": "40' Cruising Yacht",
+      "name": "BAVARIA CRUISER 40"
+    },
+    {
+      "designNumber": "715",
+      "year": 2010,
+      "type": "VO70",
+      "name": "TEAM ABU DHABI"
+    },
+    {
+      "designNumber": "695",
+      "year": 2009,
+      "type": "45' Cruising Yacht",
+      "name": "BAVARIA CRUISER 45"
+    },
+    {
+      "designNumber": "691",
+      "year": 2010,
+      "type": "102' Cruising Yacht",
+      "name": "SOUTHERN WIND 102"
+    },
+    {
+      "designNumber": "685",
+      "year": 2010,
+      "type": "Class 40",
+      "name": "KIWI 40FC"
+    },
+    {
+      "designNumber": "680",
+      "year": 2010,
+      "type": "50' Cruising Yacht",
+      "name": "BAVARIA CRUISER 50"
+    },
+    {
+      "designNumber": "675",
+      "year": 2009,
+      "type": "32' Cruising Yacht",
+      "name": "BAVARIA CRUISER 32"
+    },
+    {
+      "designNumber": "673",
+      "year": 2009,
+      "type": "55' Cruising Yacht",
+      "name": "BAVARIA CRUISER 55"
+    },
+    {
+      "designNumber": "668",
+      "year": 2008,
+      "type": "80' IRC Racing Yacht",
+      "name": "BEAU GESTE"
+    },
+    {
+      "designNumber": "667",
+      "year": 2008,
+      "type": "25' Day Racer",
+      "name": "FARR 25 OD"
+    },
+    {
+      "designNumber": "642",
+      "year": 2008,
+      "type": "IRC 55",
+      "name": "LIVING DOLL"
+    },
+    {
+      "designNumber": "641",
+      "year": 2007,
+      "type": "GP42",
+      "name": "NEAR MISS"
+    },
+    {
+      "designNumber": "640",
+      "year": 2007,
+      "type": "GP42",
+      "name": "ROMA II"
+    },
+    {
+      "designNumber": "635",
+      "year": 2007,
+      "type": "VO70",
+      "name": "TELEFONICA BLACK"
+    },
+    {
+      "designNumber": "634",
+      "year": 2007,
+      "type": "VO70",
+      "name": "TELEFONICA BLUE"
+    },
+    {
+      "designNumber": "622",
+      "year": 2008,
+      "type": "35' Cruiser/Racer",
+      "name": "BENETEAU FIRST 35"
+    },
+    {
+      "designNumber": "620",
+      "year": 2007,
+      "type": "43' IRC Crusier/Racer",
+      "name": "FINNGULF 43"
+    },
+    {
+      "designNumber": "615",
+      "year": 2006,
+      "type": "110' Cruising Yacht",
+      "name": "SOUTHERN WIND 110"
+    },
+    {
+      "designNumber": "613",
+      "year": 2006,
+      "type": "36' Canting Keel Day Boat",
+      "name": "FARR 11s"
+    },
+    {
+      "designNumber": "609",
+      "year": 2005,
+      "type": "Open 60",
+      "name": "DELTA DORE"
+    },
+    {
+      "designNumber": "608",
+      "year": 2007,
+      "type": "40' Performance Cruiser/Racer",
+      "name": "BENETEAU FIRST 40"
+    },
+    {
+      "designNumber": "606",
+      "year": 2005,
+      "type": "IRC 46",
+      "name": "IRC 46"
+    },
+    {
+      "designNumber": "605",
+      "year": 2005,
+      "type": "GP42",
+      "name": "ROMA"
+    },
+    {
+      "designNumber": "604",
+      "year": 2006,
+      "type": "Storm Trysail-Transpac 65",
+      "name": "ROSEBUD"
+    },
+    {
+      "designNumber": "603",
+      "year": 2005,
+      "type": "Open 60",
+      "name": "PAPREC-VIRBAC"
+    },
+    {
+      "designNumber": "602",
+      "year": 2005,
+      "type": "Open 60",
+      "name": "PRB"
+    },
+    {
+      "designNumber": "597",
+      "year": 2005,
+      "type": "Transpac 52",
+      "name": "STAY CALM II"
+    },
+    {
+      "designNumber": "591",
+      "year": 2006,
+      "type": "30M Canting Keel",
+      "name": "LEOPARD 3"
+    },
+    {
+      "designNumber": "590",
+      "year": 2005,
+      "type": "Transpac 52",
+      "name": "FRAM XVI"
+    },
+    {
+      "designNumber": "588",
+      "year": 2004,
+      "type": "IRC 42",
+      "name": "IRC 42"
+    },
+    {
+      "designNumber": "586",
+      "year": 2004,
+      "type": "Transpac 52",
+      "name": "ATALANTI & PEGASUS"
+    },
+    {
+      "designNumber": "585",
+      "year": 2004,
+      "type": "Transpac 52",
+      "name": "BRIBON, CAIXA GALICIA, AIFOS & RUSH"
+    },
+    {
+      "designNumber": "560",
+      "year": 2003,
+      "type": "AC 2007",
+      "name": "BMW ORACLE RACING"
+    },
+    {
+      "designNumber": "550",
+      "year": 2003,
+      "type": "VO70",
+      "name": "TELEFONICA MOVISTAR"
+    },
+    {
+      "designNumber": "546",
+      "year": 2003,
+      "type": "VO70 Tank Testing",
+      "name": null
+    },
+    {
+      "designNumber": "545",
+      "year": 2003,
+      "type": "VO70",
+      "name": "BRASIL 1, BLACK PEARL & ERICSSON"
+    },
+    {
+      "designNumber": "543",
+      "year": 2003,
+      "type": "34' Fast Cruiser/Racer",
+      "name": "BENETEAU FIRST 34.7/BENETEAU FIRST 10R"
+    },
+    {
+      "designNumber": "542",
+      "year": 2003,
+      "type": "100' Cruising yacht",
+      "name": "SOUTHERN WIND 100"
+    },
+    {
+      "designNumber": "541",
+      "year": 2003,
+      "type": "50' C/R",
+      "name": "COOKSON 50"
+    },
+    {
+      "designNumber": "540",
+      "year": 2003,
+      "type": "74' Cruising yacht",
+      "name": "NAUTA 74"
+    },
+    {
+      "designNumber": "539",
+      "year": 2003,
+      "type": "2004 IMS Racing Yacht",
+      "name": "CAM"
+    },
+    {
+      "designNumber": "535",
+      "year": 2003,
+      "type": "FARR 85",
+      "name": "ROMA"
+    },
+    {
+      "designNumber": "534",
+      "year": 2003,
+      "type": "IMS 600",
+      "name": "MTN 415"
+    },
+    {
+      "designNumber": "534",
+      "year": 2003,
+      "type": "IMS 600",
+      "name": "SKIF 42"
+    },
+    {
+      "designNumber": "533",
+      "year": 2003,
+      "type": "Transpac 52",
+      "name": null
+    },
+    {
+      "designNumber": "498",
+      "year": 2002,
+      "type": "Open 60",
+      "name": "VIRBAC"
+    },
+    {
+      "designNumber": "496",
+      "year": 2002,
+      "type": "43' C/R",
+      "name": "BENETEAU FIRST 44.7"
+    },
+    {
+      "designNumber": "495",
+      "year": 2002,
+      "type": "Transpac 52",
+      "name": "BEAU GESTE"
+    },
+    {
+      "designNumber": "493",
+      "year": 2001,
+      "type": "IMS 53",
+      "name": "AZUR DE PUIG"
+    },
+    {
+      "designNumber": "492",
+      "year": 2001,
+      "type": "36' OD",
+      "name": "FARR 36 OD"
+    },
+    {
+      "designNumber": "491",
+      "year": 2001,
+      "type": "IMS 43",
+      "name": "ATALANTI XIV"
+    },
+    {
+      "designNumber": "490",
+      "year": 2001,
+      "type": "IMS 70 C/R",
+      "name": "ATALANTA II"
+    },
+    {
+      "designNumber": "489",
+      "year": 2000,
+      "type": "80' Fast Cruiser",
+      "name": "NATUA 80"
+    },
+    {
+      "designNumber": "488",
+      "year": 2001,
+      "type": "IMS 51",
+      "name": "MASCALZONE LATINO"
+    },
+    {
+      "designNumber": "488",
+      "year": 2000,
+      "type": "IMS 51",
+      "name": "FRAM XV"
+    },
+    {
+      "designNumber": "487",
+      "year": 2000,
+      "type": "67' Fast Cruiser",
+      "name": "VISMARA 67"
+    },
+    {
+      "designNumber": "486",
+      "year": 2000,
+      "type": "56' Classic Cruiser",
+      "name": "Beneteau 57"
+    },
+    {
+      "designNumber": "476",
+      "year": 2001,
+      "type": "VO60",
+      "name": "AMER SPORT TOO"
+    },
+    {
+      "designNumber": "476",
+      "year": 2000,
+      "type": "VO60",
+      "name": "ASSA ABLOY"
+    },
+    {
+      "designNumber": "474",
+      "year": 2000,
+      "type": "VO60",
+      "name": "TEAM NEWS CORPS"
+    },
+    {
+      "designNumber": "473",
+      "year": 2000,
+      "type": "VO60",
+      "name": "TEAM SEB"
+    },
+    {
+      "designNumber": "472",
+      "year": 2000,
+      "type": "VO60",
+      "name": "TEAM TYCO"
+    },
+    {
+      "designNumber": "471",
+      "year": 2000,
+      "type": "VO60",
+      "name": "ILLBRUCK CHALLENGE"
+    },
+    {
+      "designNumber": "468",
+      "year": 2000,
+      "type": "38' C/R",
+      "name": "FARR 395"
+    },
+    {
+      "designNumber": "467",
+      "year": 2000,
+      "type": "IMS 53 C/R",
+      "name": "YELLOW JACKET (x Talisman, Bribon)"
+    },
+    {
+      "designNumber": "466",
+      "year": 1999,
+      "type": "IMS 53 C/R",
+      "name": "CAM (x Esmeralda)"
+    },
+    {
+      "designNumber": "447",
+      "year": 1999,
+      "type": "IMS 49",
+      "name": "STING (x Yendys)"
+    },
+    {
+      "designNumber": "446",
+      "year": 1999,
+      "type": "36' R/C",
+      "name": "Beneteau First 36.7"
+    },
+    {
+      "designNumber": "444",
+      "year": 1999,
+      "type": "52' OD",
+      "name": "FARR 52 One Design"
+    },
+    {
+      "designNumber": "443",
+      "year": 1999,
+      "type": "IMS 43 C/R",
+      "name": "PHOENIX (x MASCALZONE LATINO)"
+    },
+    {
+      "designNumber": "442",
+      "year": 2001,
+      "type": "115' High Performace Cruising Sloop",
+      "name": "SOJANA"
+    },
+    {
+      "designNumber": "441",
+      "year": 1999,
+      "type": "IMS 47 C/R",
+      "name": "HIGH V & SEA HAWK"
+    },
+    {
+      "designNumber": "435",
+      "year": 1999,
+      "type": "80' High Performance Cruiser",
+      "name": "WALLY 80"
+    },
+    {
+      "designNumber": "429",
+      "year": 1999,
+      "type": "IMS 49",
+      "name": "SIRIUS V"
+    },
+    {
+      "designNumber": "428",
+      "year": 1999,
+      "type": "IMS 49",
+      "name": "BRAVA Q8"
+    },
+    {
+      "designNumber": "425",
+      "year": 1999,
+      "type": "55' Pilothouse",
+      "name": "FARR 56 PH"
+    },
+    {
+      "designNumber": "422",
+      "year": 1998,
+      "type": "47' Cruiser",
+      "name": "BENETEAU FIRST 47.7"
+    },
+    {
+      "designNumber": "421",
+      "year": 1999,
+      "type": "63' Ocean Racer",
+      "name": "FARR 65"
+    },
+    {
+      "designNumber": "420",
+      "year": 1997,
+      "type": "IMS 49",
+      "name": "HASTA SIEMPRE (x Beau Geste)"
+    },
+    {
+      "designNumber": "419",
+      "year": 1997,
+      "type": "IMS 49",
+      "name": "UARSHEK II (x Ragamuffin)"
+    },
+    {
+      "designNumber": "418",
+      "year": 1997,
+      "type": "IMS 45",
+      "name": "BIG APPLE III"
+    },
+    {
+      "designNumber": "417",
+      "year": 1998,
+      "type": "61' Cruising",
+      "name": "BALTIC 60"
+    },
+    {
+      "designNumber": "416",
+      "year": 1996,
+      "type": "IMS 49",
+      "name": "AZUR DE PUIG (x Flash Gordon III)"
+    },
+    {
+      "designNumber": "415",
+      "year": 1996,
+      "type": "IMS 49",
+      "name": "JAVELIN (x Breeze)"
+    },
+    {
+      "designNumber": "414",
+      "year": 1997,
+      "type": "60'",
+      "name": "CM60"
+    },
+    {
+      "designNumber": "414",
+      "year": 1997,
+      "type": "62/63'",
+      "name": "WALLY 60"
+    },
+    {
+      "designNumber": "412",
+      "year": 1996,
+      "type": "ILC 40",
+      "name": "FRAM XIV"
+    },
+    {
+      "designNumber": "411",
+      "year": 1996,
+      "type": "IMS 49",
+      "name": "CANVASBACK (x Bribon)"
+    },
+    {
+      "designNumber": "408",
+      "year": 1996,
+      "type": "AC 2000",
+      "name": "YOUNG AMERICA"
+    },
+    {
+      "designNumber": "396",
+      "year": 1996,
+      "type": "Whitbread 60",
+      "name": "SILK CUT"
+    },
+    {
+      "designNumber": "394",
+      "year": 1996,
+      "type": "Whitbread 60",
+      "name": "SWEDISH MATCH"
+    },
+    {
+      "designNumber": "392",
+      "year": 1996,
+      "type": "Whitbread 60",
+      "name": "KVAERNER INNOVATION"
+    },
+    {
+      "designNumber": "390",
+      "year": 1996,
+      "type": "Whitbread 60",
+      "name": "MERIT CUP"
+    },
+    {
+      "designNumber": "388",
+      "year": 1996,
+      "type": "Whitbread 60",
+      "name": "MERIT CUP"
+    },
+    {
+      "designNumber": "386",
+      "year": 1996,
+      "type": "Whitbread 60",
+      "name": "CHESSIE RACING"
+    },
+    {
+      "designNumber": "384",
+      "year": 1996,
+      "type": "Whitbread 60",
+      "name": "ELLE RACING"
+    },
+    {
+      "designNumber": "382",
+      "year": 1996,
+      "type": "Whitbread 60",
+      "name": "TOSHIBA"
+    },
+    {
+      "designNumber": "378",
+      "year": 1996,
+      "type": "Whitbread 60",
+      "name": "EF LANGUAGE & EF EDUCATION"
+    },
+    {
+      "designNumber": "374",
+      "year": 1996,
+      "type": "40' OD",
+      "name": "FARR 40 OD"
+    },
+    {
+      "designNumber": "373",
+      "year": 1996,
+      "type": "50' Pilothouse",
+      "name": "FARR 50 PH"
+    },
+    {
+      "designNumber": "369",
+      "year": 1996,
+      "type": "45' OD",
+      "name": "FARR 45 (x COREL 45)"
+    },
+    {
+      "designNumber": "368",
+      "year": 1995,
+      "type": "ILC 46",
+      "name": "WASABI (x Swing)"
+    },
+    {
+      "designNumber": "366",
+      "year": 1998,
+      "type": "95' Cruising",
+      "name": "NAUTA 95"
+    },
+    {
+      "designNumber": "363",
+      "year": 1995,
+      "type": "IMS 38",
+      "name": "AZUR DE PUIG"
+    },
+    {
+      "designNumber": "362",
+      "year": 1995,
+      "type": "IMS 38",
+      "name": "EVOLUTION & DELIVERANCE"
+    },
+    {
+      "designNumber": "361",
+      "year": 1995,
+      "type": "ILC 46",
+      "name": "SEAGOON"
+    },
+    {
+      "designNumber": "360",
+      "year": 1995,
+      "type": "IMS 43 C/R",
+      "name": "PAX NZL"
+    },
+    {
+      "designNumber": "358",
+      "year": 1995,
+      "type": "Open 50",
+      "name": "WIVA"
+    },
+    {
+      "designNumber": "356",
+      "year": 1996,
+      "type": "14' dinghy",
+      "name": "MEGABYTE"
+    },
+    {
+      "designNumber": "354",
+      "year": 1997,
+      "type": "40' C/R",
+      "name": "BENETEAU FIRST 40.7"
+    },
+    {
+      "designNumber": "353",
+      "year": 1994,
+      "type": "67' Fast Cruising",
+      "name": "BALTIC 67"
+    },
+    {
+      "designNumber": "344",
+      "year": 1994,
+      "type": "ILC 40",
+      "name": null
+    },
+    {
+      "designNumber": "343",
+      "year": 1994,
+      "type": "AC 1995",
+      "name": "TAG HEUER"
+    },
+    {
+      "designNumber": "339",
+      "year": 1996,
+      "type": "ILC 40",
+      "name": null
+    },
+    {
+      "designNumber": "338",
+      "year": 1995,
+      "type": "30' OD",
+      "name": "FARR 30 (x Mumm 30)"
+    },
+    {
+      "designNumber": "336",
+      "year": 1994,
+      "type": "IMS 39",
+      "name": "FARR 39 ML & COOKSON 12M"
+    },
+    {
+      "designNumber": "333",
+      "year": 1994,
+      "type": "IMS 34",
+      "name": "FARR IMS 34"
+    },
+    {
+      "designNumber": "332",
+      "year": 1997,
+      "type": "ILC 40",
+      "name": "ATALANTI XI"
+    },
+    {
+      "designNumber": "330",
+      "year": 1995,
+      "type": "ILC 40",
+      "name": "G'NET"
+    },
+    {
+      "designNumber": "329",
+      "year": 1994,
+      "type": "IMS 43",
+      "name": "FLASH GORDON II"
+    },
+    {
+      "designNumber": "328",
+      "year": 1996,
+      "type": "IMS 47",
+      "name": "AUSMAID"
+    },
+    {
+      "designNumber": "326",
+      "year": 1994,
+      "type": "IMS 47",
+      "name": null
+    },
+    {
+      "designNumber": "325",
+      "year": 1994,
+      "type": "IMS 55",
+      "name": null
+    },
+    {
+      "designNumber": "324",
+      "year": 1996,
+      "type": "IMS 50",
+      "name": "RAGAMUFFIN"
+    },
+    {
+      "designNumber": "323",
+      "year": 1995,
+      "type": "ILC Maxi",
+      "name": "SAYONARA"
+    },
+    {
+      "designNumber": "321",
+      "year": 1993,
+      "type": "IMS 31",
+      "name": "FARR IMS 31"
+    },
+    {
+      "designNumber": "320",
+      "year": 1994,
+      "type": "60' Cruising",
+      "name": "FARR 60 PH"
+    },
+    {
+      "designNumber": "319",
+      "year": 1994,
+      "type": "80' Fast Cruiser",
+      "name": null
+    },
+    {
+      "designNumber": "317",
+      "year": 1993,
+      "type": "ILC 40",
+      "name": "FARR ILC 40"
+    },
+    {
+      "designNumber": "316",
+      "year": 1994,
+      "type": "25' OD",
+      "name": "PLATU 25 & BENETEAU 25"
+    },
+    {
+      "designNumber": "314",
+      "year": 1993,
+      "type": "IMS 47",
+      "name": "BRIBON"
+    },
+    {
+      "designNumber": "313",
+      "year": 1993,
+      "type": "ILC 40",
+      "name": "NO MERCY"
+    },
+    {
+      "designNumber": "311",
+      "year": 1995,
+      "type": "IMS 39",
+      "name": "Update of D. 302"
+    },
+    {
+      "designNumber": "309",
+      "year": 1995,
+      "type": "MAXI",
+      "name": "MAXI ONE DESIGN"
+    },
+    {
+      "designNumber": "306",
+      "year": 1993,
+      "type": "IMS 40",
+      "name": null
+    },
+    {
+      "designNumber": "304",
+      "year": 1993,
+      "type": "IMS 46",
+      "name": "NINETY SEVEN"
+    },
+    {
+      "designNumber": "302",
+      "year": 1993,
+      "type": "IMS 39",
+      "name": "BLUE STREAK"
+    },
+    {
+      "designNumber": "299",
+      "year": 1993,
+      "type": "36' OD",
+      "name": "MUMM 36"
+    },
+    {
+      "designNumber": "297",
+      "year": 1993,
+      "type": "IMS 31",
+      "name": "IMS 31"
+    },
+    {
+      "designNumber": "296",
+      "year": 1992,
+      "type": "100' Cruiser",
+      "name": "FARR 106"
+    },
+    {
+      "designNumber": "294",
+      "year": 1996,
+      "type": "41' Cruising",
+      "name": "BENETEAU FIRST 42S7"
+    },
+    {
+      "designNumber": "293",
+      "year": 1991,
+      "type": "Whitbread 60",
+      "name": "YAMAHA"
+    },
+    {
+      "designNumber": "292",
+      "year": 1992,
+      "type": "Whitbread 60",
+      "name": "INTRUM JUSTITIA"
+    },
+    {
+      "designNumber": "289",
+      "year": 1993,
+      "type": "IMS 40 R/C",
+      "name": "BENETEAU IMS 40.7"
+    },
+    {
+      "designNumber": "288",
+      "year": 1992,
+      "type": "78' Cabinhouse",
+      "name": "MAXI 78"
+    },
+    {
+      "designNumber": "287",
+      "year": 1992,
+      "type": "Whitbread 60",
+      "name": "WINSTON"
+    },
+    {
+      "designNumber": "285",
+      "year": 1992,
+      "type": "IMS 42",
+      "name": "IMS 42"
+    },
+    {
+      "designNumber": "286",
+      "year": 1992,
+      "type": "Whitbread 60",
+      "name": "TOKIO"
+    },
+    {
+      "designNumber": "284",
+      "year": 1993,
+      "type": "Whitbread 60",
+      "name": "GALICIA PESCANOVA 93"
+    },
+    {
+      "designNumber": "282",
+      "year": 1991,
+      "type": "Whitbread 60",
+      "name": "HEINEKEN (x YAMAHA) & HETMAN SAHAIDACHNY"
+    },
+    {
+      "designNumber": "281",
+      "year": 1992,
+      "type": "IMS 50",
+      "name": "MORNING MIST III & FULL CRY"
+    },
+    {
+      "designNumber": "279",
+      "year": 1992,
+      "type": "IMS 39",
+      "name": "ATALANTI VI"
+    },
+    {
+      "designNumber": "278",
+      "year": 1992,
+      "type": "WRTWR Maxi",
+      "name": "MERIT CUP & LA POSTE"
+    },
+    {
+      "designNumber": "277",
+      "year": 1992,
+      "type": "IMS 40",
+      "name": null
+    },
+    {
+      "designNumber": "276",
+      "year": 1992,
+      "type": "1 Ton",
+      "name": null
+    },
+    {
+      "designNumber": "274",
+      "year": 1992,
+      "type": "WRTWR Maxi",
+      "name": "NEW ZEALAND ENDEAVOUR"
+    },
+    {
+      "designNumber": "273",
+      "year": 1991,
+      "type": "62' Cruising Yacht",
+      "name": "CNB 64 & BENETEAU 62"
+    },
+    {
+      "designNumber": "269",
+      "year": 1991,
+      "type": "64' Maxi",
+      "name": "GRAND SOLEIL MAXI ONE"
+    },
+    {
+      "designNumber": "268",
+      "year": 1991,
+      "type": "2 Ton",
+      "name": "DONKY 6 & ATARA"
+    },
+    {
+      "designNumber": "267",
+      "year": 1991,
+      "type": "3/4 Ton",
+      "name": "ATALANTI VICTORY & NUMATA"
+    },
+    {
+      "designNumber": "266",
+      "year": 1991,
+      "type": "IMS 44",
+      "name": null
+    },
+    {
+      "designNumber": "260",
+      "year": 1993,
+      "type": "IOR 50",
+      "name": "WILL"
+    },
+    {
+      "designNumber": "258",
+      "year": 1990,
+      "type": "1 Ton",
+      "name": "BRIBON"
+    },
+    {
+      "designNumber": "256",
+      "year": 1990,
+      "type": "IOR 50",
+      "name": "Hull Only"
+    },
+    {
+      "designNumber": "254",
+      "year": 1990,
+      "type": "64' Cruising Yacht",
+      "name": "NAUTA 65/COMET 65"
+    },
+    {
+      "designNumber": "253",
+      "year": 1990,
+      "type": "1 Ton",
+      "name": "VIBES"
+    },
+    {
+      "designNumber": "250",
+      "year": 1992,
+      "type": "9M Racer",
+      "name": null
+    },
+    {
+      "designNumber": "249",
+      "year": 1992,
+      "type": "59' Cruising Yacht",
+      "name": "SUN ODYSSEY 59"
+    },
+    {
+      "designNumber": "244",
+      "year": 1990,
+      "type": "ULTIM30",
+      "name": "LONGOBARDA"
+    },
+    {
+      "designNumber": "243",
+      "year": 1990,
+      "type": "70' Cruiser",
+      "name": "MORGANA"
+    },
+    {
+      "designNumber": "242",
+      "year": 1990,
+      "type": "2 Ton - IOR 44",
+      "name": "LA ROUGE & BRAVURA"
+    },
+    {
+      "designNumber": "240",
+      "year": 1989,
+      "type": "IOR 50",
+      "name": null
+    },
+    {
+      "designNumber": "237",
+      "year": 1989,
+      "type": "AC 1992",
+      "name": "NEW ZEALAND CHALLENGE"
+    },
+    {
+      "designNumber": "229",
+      "year": 1990,
+      "type": "3/4 Ton",
+      "name": "AZUR DE PUIG (x LONE)"
+    },
+    {
+      "designNumber": "227",
+      "year": 1991,
+      "type": "2 Ton - IOR 44",
+      "name": null
+    },
+    {
+      "designNumber": "225",
+      "year": 1989,
+      "type": "70' Fast Cruiser",
+      "name": "FARR 72"
+    },
+    {
+      "designNumber": "224",
+      "year": 1989,
+      "type": "IOR 50",
+      "name": "SPRINGBOK & MANDRAKE"
+    },
+    {
+      "designNumber": "223",
+      "year": 1989,
+      "type": "1 Ton",
+      "name": null
+    },
+    {
+      "designNumber": "220",
+      "year": 1989,
+      "type": "IOR 64",
+      "name": "BRINDABELLA"
+    },
+    {
+      "designNumber": "219",
+      "year": 1989,
+      "type": "51' R/C",
+      "name": "BENETEAU FIRST 53F3"
+    },
+    {
+      "designNumber": "218",
+      "year": 1988,
+      "type": "70' Cruiser",
+      "name": "NAUTA 70"
+    },
+    {
+      "designNumber": "216",
+      "year": 1988,
+      "type": "44'",
+      "name": "LIBRAH"
+    },
+    {
+      "designNumber": "214",
+      "year": 1988,
+      "type": "1 Ton",
+      "name": "JOINT VENTURE"
+    },
+    {
+      "designNumber": "213",
+      "year": 1988,
+      "type": "IOR 50",
+      "name": "JAMARELLA"
+    },
+    {
+      "designNumber": "211",
+      "year": 1990,
+      "type": "IOR 50",
+      "name": "WILL"
+    },
+    {
+      "designNumber": "209",
+      "year": 1988,
+      "type": "1 Ton",
+      "name": null
+    },
+    {
+      "designNumber": "208",
+      "year": 1989,
+      "type": "42' Charter",
+      "name": "THE MOORINGS"
+    },
+    {
+      "designNumber": "207",
+      "year": 1988,
+      "type": "Maxi",
+      "name": "LONGOBARDA"
+    },
+    {
+      "designNumber": "206",
+      "year": 1988,
+      "type": "IOR 50",
+      "name": "WINDQUEST"
+    },
+    {
+      "designNumber": "205",
+      "year": 1988,
+      "type": "51' Cruiser",
+      "name": "SUN ODYSSEY 52.2 (aka SUN ODYSSEY 51)"
+    },
+    {
+      "designNumber": "203",
+      "year": 1988,
+      "type": "IOR 50",
+      "name": "CARAT"
+    },
+    {
+      "designNumber": "202",
+      "year": 1990,
+      "type": "45' R/C",
+      "name": "BENETEAU FIRST 45F5"
+    },
+    {
+      "designNumber": "202",
+      "year": 1990,
+      "type": "45' Cruiser",
+      "name": "MOORINGS 445"
+    },
+    {
+      "designNumber": "201",
+      "year": 1988,
+      "type": "3/4 Ton",
+      "name": "APHRODITE"
+    },
+    {
+      "designNumber": "198",
+      "year": 1988,
+      "type": "IOR 43",
+      "name": "XERYUS"
+    },
+    {
+      "designNumber": "197",
+      "year": 1988,
+      "type": "131' Cruising Sloop",
+      "name": "MIRABELLA & PHILANDERER"
+    },
+    {
+      "designNumber": "196",
+      "year": 1987,
+      "type": "AC 12Meter",
+      "name": "KZ7"
+    },
+    {
+      "designNumber": "196",
+      "year": 1988,
+      "type": "AC 1988",
+      "name": "KZ1"
+    },
+    {
+      "designNumber": "195",
+      "year": 1988,
+      "type": "WRTWR Maxi",
+      "name": "THE CARD"
+    },
+    {
+      "designNumber": "193",
+      "year": 1988,
+      "type": "50' Cruiser",
+      "name": "PHASE V/FARR 51"
+    },
+    {
+      "designNumber": "193",
+      "year": 1990,
+      "type": "51' Cruiser",
+      "name": "FARR 51 PILOT HOUSE"
+    },
+    {
+      "designNumber": "191",
+      "year": 1987,
+      "type": "WRTWR Maxi",
+      "name": "FISHER & PAYKEL"
+    },
+    {
+      "designNumber": "190",
+      "year": 1987,
+      "type": "WRTWR Maxi",
+      "name": "STEINLAGER II"
+    },
+    {
+      "designNumber": "189",
+      "year": 1987,
+      "type": "28' Cruiser",
+      "name": "SWING 28"
+    },
+    {
+      "designNumber": "188",
+      "year": 1987,
+      "type": "1 Ton",
+      "name": "STEADFAST"
+    },
+    {
+      "designNumber": "186",
+      "year": 1986,
+      "type": "50' Racer",
+      "name": null
+    },
+    {
+      "designNumber": "185",
+      "year": 1986,
+      "type": "1 Ton",
+      "name": null
+    },
+    {
+      "designNumber": "184",
+      "year": 1985,
+      "type": "1 Ton",
+      "name": "JAMARELLA"
+    },
+    {
+      "designNumber": "183",
+      "year": 1985,
+      "type": "WRTWR Maxi",
+      "name": "MERIT"
+    },
+    {
+      "designNumber": "182",
+      "year": 1985,
+      "type": "1 Ton",
+      "name": "PRIME FACTOR & PROPAGANDA"
+    },
+    {
+      "designNumber": "181",
+      "year": 1985,
+      "type": "IOR 44",
+      "name": "KIWI"
+    },
+    {
+      "designNumber": "179",
+      "year": 1986,
+      "type": "Maxi",
+      "name": "HISPANIA"
+    },
+    {
+      "designNumber": "178",
+      "year": 1986,
+      "type": "40' Cruiser",
+      "name": "FARR 41/PHASE 4"
+    },
+    {
+      "designNumber": "177",
+      "year": 1986,
+      "type": "IOR 44",
+      "name": "ATARA"
+    },
+    {
+      "designNumber": "176",
+      "year": 1989,
+      "type": "80' Cruiser",
+      "name": "WENDY LYNNE"
+    },
+    {
+      "designNumber": "175",
+      "year": 1986,
+      "type": "22M Maxi",
+      "name": "MAXIMIZER (x YEOMAN XXX) & CARMEN DI BELLAVISTA"
+    },
+    {
+      "designNumber": "174",
+      "year": 1985,
+      "type": "36' Cruiser",
+      "name": "Study Only"
+    },
+    {
+      "designNumber": "172",
+      "year": 1985,
+      "type": "38' Cruiser",
+      "name": "FARR 38"
+    },
+    {
+      "designNumber": "171",
+      "year": 1985,
+      "type": "1 Ton",
+      "name": "RAMEL II"
+    },
+    {
+      "designNumber": "170",
+      "year": 1986,
+      "type": "1/2 Ton",
+      "name": null
+    },
+    {
+      "designNumber": "168",
+      "year": 1986,
+      "type": "1 Ton",
+      "name": null
+    },
+    {
+      "designNumber": "167",
+      "year": 1985,
+      "type": "65' Sharpie",
+      "name": "LIVELY"
+    },
+    {
+      "designNumber": "165",
+      "year": 1985,
+      "type": "40' C/R",
+      "name": "FARR 1220"
+    },
+    {
+      "designNumber": "162",
+      "year": 1985,
+      "type": "IOR 50",
+      "name": null
+    },
+    {
+      "designNumber": "161",
+      "year": 1985,
+      "type": "44' from D. 137",
+      "name": "TALISMAN"
+    },
+    {
+      "designNumber": "159",
+      "year": 1985,
+      "type": "43' Ocean Racer",
+      "name": "WILD OATS"
+    },
+    {
+      "designNumber": "158",
+      "year": 1985,
+      "type": "1 TON",
+      "name": null
+    },
+    {
+      "designNumber": "157",
+      "year": 1985,
+      "type": "13' Dinghy",
+      "name": "LASER"
+    },
+    {
+      "designNumber": "156",
+      "year": 1985,
+      "type": "1/2 Ton",
+      "name": null
+    },
+    {
+      "designNumber": "155",
+      "year": 1985,
+      "type": "IOR 50",
+      "name": "GREAT EXPECTATIONS"
+    },
+    {
+      "designNumber": "154",
+      "year": 1984,
+      "type": "53' Cruiser",
+      "name": "FOREIGN EXCHANGE & SHAASA"
+    },
+    {
+      "designNumber": "152",
+      "year": 1985,
+      "type": "55' Cruiser from D. 86",
+      "name": "TOMPKINS 55"
+    },
+    {
+      "designNumber": "151",
+      "year": 1985,
+      "type": "43' IOR Racer",
+      "name": "DRAKE'S PRAYER"
+    },
+    {
+      "designNumber": "150",
+      "year": 1985,
+      "type": "60' BOC",
+      "name": "KIWI EXPRESS"
+    },
+    {
+      "designNumber": "147",
+      "year": 1984,
+      "type": "WRTWR Maxi",
+      "name": "NZ1"
+    },
+    {
+      "designNumber": "146",
+      "year": 1984,
+      "type": "14.2M Libera Class",
+      "name": null
+    },
+    {
+      "designNumber": "145",
+      "year": 1983,
+      "type": "33' IOR Racer",
+      "name": "FARR 33"
+    },
+    {
+      "designNumber": "144",
+      "year": 1983,
+      "type": "WRTWR Maxi",
+      "name": "ATLANTIC PRIVATEER"
+    },
+    {
+      "designNumber": "143",
+      "year": 1983,
+      "type": "40' R/C",
+      "name": "GARRETT 40"
+    },
+    {
+      "designNumber": "141",
+      "year": 1983,
+      "type": "40' R/C",
+      "name": null
+    },
+    {
+      "designNumber": "139",
+      "year": 1983,
+      "type": "IOR 36",
+      "name": null
+    },
+    {
+      "designNumber": "138",
+      "year": 1983,
+      "type": "IOR 40",
+      "name": "SIRIUS II & EPIC"
+    },
+    {
+      "designNumber": "137",
+      "year": 1987,
+      "type": "44' R/C",
+      "name": "FARR 44"
+    },
+    {
+      "designNumber": "136",
+      "year": 1983,
+      "type": "40' IOR Racer",
+      "name": "1 Ton"
+    },
+    {
+      "designNumber": "134",
+      "year": 1982,
+      "type": "Libera Class",
+      "name": "OPNI"
+    },
+    {
+      "designNumber": "131",
+      "year": 1983,
+      "type": "WRTWR Maxi",
+      "name": "UBS SWITZERLAND"
+    },
+    {
+      "designNumber": "130",
+      "year": 1983,
+      "type": "Charter",
+      "name": null
+    },
+    {
+      "designNumber": "129",
+      "year": 1982,
+      "type": "59' Ocean Racing Yacht",
+      "name": "ORLANDA"
+    },
+    {
+      "designNumber": "128",
+      "year": 1987,
+      "type": "37' IOR Racer",
+      "name": "FARR 37"
+    },
+    {
+      "designNumber": "126",
+      "year": 1982,
+      "type": "63' Cruiser",
+      "name": null
+    },
+    {
+      "designNumber": "125",
+      "year": 1987,
+      "type": "30' MORC",
+      "name": "FARR 30 M"
+    },
+    {
+      "designNumber": "124",
+      "year": 1982,
+      "type": "IOR 36",
+      "name": "MIGIZI & FREEFALL"
+    },
+    {
+      "designNumber": "123",
+      "year": 1981,
+      "type": "48' C/R",
+      "name": "SANGVIND"
+    },
+    {
+      "designNumber": "122",
+      "year": 1981,
+      "type": "6.4M Racer",
+      "name": "FARR 640"
+    },
+    {
+      "designNumber": "121",
+      "year": 1982,
+      "type": "34' Cruiser",
+      "name": "FARR 1020"
+    },
+    {
+      "designNumber": "112",
+      "year": 1981,
+      "type": "30' Cruiser",
+      "name": "FARR 31/940"
+    },
+    {
+      "designNumber": "112",
+      "year": 1981,
+      "type": "30' Cruiser",
+      "name": "NOELEX 30"
+    },
+    {
+      "designNumber": "104",
+      "year": 1980,
+      "type": "Windsurfer",
+      "name": null
+    },
+    {
+      "designNumber": "103",
+      "year": 1981,
+      "type": "10.5M",
+      "name": null
+    },
+    {
+      "designNumber": "102",
+      "year": 1980,
+      "type": "INTL MOTH",
+      "name": null
+    },
+    {
+      "designNumber": "101",
+      "year": 1979,
+      "type": "25' Racer",
+      "name": "FARR 740 & FARR 740 SPORT"
+    },
+    {
+      "designNumber": "100",
+      "year": 1981,
+      "type": "44' Cruiser",
+      "name": "FARR 44"
+    },
+    {
+      "designNumber": "99",
+      "year": 1980,
+      "type": "30' Cruiser",
+      "name": "BINKS 30"
+    },
+    {
+      "designNumber": "97",
+      "year": 1980,
+      "type": "44.2 Libera Class",
+      "name": "FARRNETICANTE"
+    },
+    {
+      "designNumber": "94",
+      "year": 1980,
+      "type": "1 Ton",
+      "name": null
+    },
+    {
+      "designNumber": "93",
+      "year": 1980,
+      "type": "1/2 Ton",
+      "name": null
+    },
+    {
+      "designNumber": "92",
+      "year": 1980,
+      "type": "45'11\" Cruiser",
+      "name": "FARR 46"
+    },
+    {
+      "designNumber": "91",
+      "year": 1980,
+      "type": "28' Racer",
+      "name": "LASER 28"
+    },
+    {
+      "designNumber": "90",
+      "year": 1980,
+      "type": "WRTWR Maxi",
+      "name": "CERAMCO NEW ZEALAND"
+    },
+    {
+      "designNumber": "89",
+      "year": 1982,
+      "type": "44'3\" Cruiser",
+      "name": "FARR 44"
+    },
+    {
+      "designNumber": "87",
+      "year": 1979,
+      "type": "30'3\" Cruiser",
+      "name": "FARR 30/9.2"
+    },
+    {
+      "designNumber": "86",
+      "year": 1979,
+      "type": "54'10\" Cruiser",
+      "name": "FARR 55"
+    },
+    {
+      "designNumber": "85",
+      "year": 1978,
+      "type": "1/4 Ton",
+      "name": "ESPADA"
+    },
+    {
+      "designNumber": "84",
+      "year": 1979,
+      "type": "34'8\" Cruiser",
+      "name": "FARR 35"
+    },
+    {
+      "designNumber": "83",
+      "year": 1979,
+      "type": "18' Skiff",
+      "name": null
+    },
+    {
+      "designNumber": "82",
+      "year": 1979,
+      "type": "IOR 40",
+      "name": "ROPE RUNNER"
+    },
+    {
+      "designNumber": "81",
+      "year": 1981,
+      "type": "WRTWR Maxi",
+      "name": "DISQUE D'OR"
+    },
+    {
+      "designNumber": "80",
+      "year": 1980,
+      "type": "14' Javelin",
+      "name": null
+    },
+    {
+      "designNumber": "79",
+      "year": 1980,
+      "type": "1 Ton",
+      "name": "EXPORT LION"
+    },
+    {
+      "designNumber": "78",
+      "year": 1979,
+      "type": "1 Ton",
+      "name": null
+    },
+    {
+      "designNumber": "76",
+      "year": 1978,
+      "type": "25' Trailer Yacht",
+      "name": "FARR 7500"
+    },
+    {
+      "designNumber": "74",
+      "year": 1978,
+      "type": "17' Trailer Yacht",
+      "name": "FARR 5000"
+    },
+    {
+      "designNumber": "73",
+      "year": 1978,
+      "type": "2 Ton",
+      "name": null
+    },
+    {
+      "designNumber": "72",
+      "year": 1978,
+      "type": "38'3\" R/C",
+      "name": "FARR 38"
+    },
+    {
+      "designNumber": "71",
+      "year": 1978,
+      "type": "1 Ton",
+      "name": null
+    },
+    {
+      "designNumber": "68",
+      "year": 1977,
+      "type": "42' R/C",
+      "name": null
+    },
+    {
+      "designNumber": "67",
+      "year": 1977,
+      "type": "2 Ton",
+      "name": null
+    },
+    {
+      "designNumber": "66",
+      "year": 1977,
+      "type": "1 Ton",
+      "name": "MR JUMPA"
+    },
+    {
+      "designNumber": "65",
+      "year": 1977,
+      "type": "1/2 Ton",
+      "name": "GUNBOAT RANGIRIRI"
+    },
+    {
+      "designNumber": "64",
+      "year": 1977,
+      "type": "1 Ton",
+      "name": "RED LION"
+    },
+    {
+      "designNumber": "63",
+      "year": 1977,
+      "type": "1 Ton",
+      "name": "SMIRNOFFAGEN"
+    },
+    {
+      "designNumber": "62",
+      "year": 1977,
+      "type": "1 Ton",
+      "name": "JENNY H"
+    },
+    {
+      "designNumber": "61",
+      "year": 1977,
+      "type": "1 Ton",
+      "name": "GRANNY APPLE"
+    },
+    {
+      "designNumber": "60",
+      "year": 1977,
+      "type": "52' C/R",
+      "name": "ZAMAZAAN"
+    },
+    {
+      "designNumber": "59",
+      "year": 1977,
+      "type": "1 Ton",
+      "name": null
+    },
+    {
+      "designNumber": "58",
+      "year": 1977,
+      "type": "2 Ton",
+      "name": null
+    },
+    {
+      "designNumber": "57",
+      "year": 1977,
+      "type": "20' Cruiser",
+      "name": "FARR 6000"
+    },
+    {
+      "designNumber": "56",
+      "year": 1977,
+      "type": "3/4 Ton",
+      "name": "JOE LOUIS"
+    },
+    {
+      "designNumber": "55",
+      "year": 1976,
+      "type": "2 Ton",
+      "name": null
+    },
+    {
+      "designNumber": "54",
+      "year": 1976,
+      "type": "1/2 Ton",
+      "name": "FARR 30/920"
+    },
+    {
+      "designNumber": "53",
+      "year": 1975,
+      "type": "1/4 Ton",
+      "name": "45 DEGREES SOUTH II"
+    },
+    {
+      "designNumber": "52",
+      "year": 1973,
+      "type": "12' Doublehanded Skiff",
+      "name": null
+    },
+    {
+      "designNumber": "51",
+      "year": 1975,
+      "type": "1 Ton",
+      "name": "FARR 1104"
+    },
+    {
+      "designNumber": "50",
+      "year": 1973,
+      "type": "18' Centerboard",
+      "name": null
+    },
+    {
+      "designNumber": "49",
+      "year": 1973,
+      "type": "12' Skiff",
+      "name": null
+    },
+    {
+      "designNumber": "48",
+      "year": 1972,
+      "type": "12' Cherub",
+      "name": null
+    },
+    {
+      "designNumber": "47",
+      "year": 1973,
+      "type": "18' Centerboard",
+      "name": null
+    },
+    {
+      "designNumber": "46",
+      "year": 1973,
+      "type": "29' Racer",
+      "name": null
+    },
+    {
+      "designNumber": "45",
+      "year": 1973,
+      "type": "3/4 Ton",
+      "name": "RASTUZ"
+    },
+    {
+      "designNumber": "44",
+      "year": 1973,
+      "type": "12' Skiff",
+      "name": null
+    },
+    {
+      "designNumber": "43",
+      "year": 1973,
+      "type": "18' Centerboard",
+      "name": null
+    },
+    {
+      "designNumber": "42",
+      "year": 1973,
+      "type": "3 Man Dinghy",
+      "name": "TRAVELODGE"
+    },
+    {
+      "designNumber": "41",
+      "year": 1973,
+      "type": "Centerboard",
+      "name": null
+    },
+    {
+      "designNumber": "40",
+      "year": 1973,
+      "type": "Centerboard",
+      "name": null
+    },
+    {
+      "designNumber": "39",
+      "year": 1973,
+      "type": "42' Cruiser",
+      "name": "GERONTIUS"
+    },
+    {
+      "designNumber": "38",
+      "year": 1972,
+      "type": "36' R/C",
+      "name": null
+    },
+    {
+      "designNumber": "37",
+      "year": 1972,
+      "type": "23' Cruising Sloop",
+      "name": "FANZIPANZ"
+    },
+    {
+      "designNumber": "36",
+      "year": 1972,
+      "type": "Centerboard",
+      "name": null
+    },
+    {
+      "designNumber": "35",
+      "year": 1972,
+      "type": "Q Class",
+      "name": null
+    },
+    {
+      "designNumber": "34",
+      "year": 1972,
+      "type": "Centerboard",
+      "name": "INTL MOTH MARK IV"
+    },
+    {
+      "designNumber": "33",
+      "year": 1971,
+      "type": "Q Class",
+      "name": "JOSHUA & AFFAKAZE"
+    },
+    {
+      "designNumber": "32",
+      "year": 1971,
+      "type": "Javelin",
+      "name": null
+    },
+    {
+      "designNumber": "31",
+      "year": 1971,
+      "type": "Cherub",
+      "name": null
+    },
+    {
+      "designNumber": "30",
+      "year": 1971,
+      "type": "Centerboard",
+      "name": null
+    },
+    {
+      "designNumber": "29",
+      "year": 1973,
+      "type": "3.7M Singlehanded",
+      "name": "3.7"
+    },
+    {
+      "designNumber": "28",
+      "year": 1971,
+      "type": "33'3\" Cruiser",
+      "name": "MOONSHINE"
+    },
+    {
+      "designNumber": "27",
+      "year": 1971,
+      "type": "26'8\" Cruiser",
+      "name": "TITUS CANBY"
+    },
+    {
+      "designNumber": "26",
+      "year": 1971,
+      "type": "10' Dinghy",
+      "name": "MOONMAN"
+    },
+    {
+      "designNumber": "25",
+      "year": 1971,
+      "type": "Javelin",
+      "name": null
+    },
+    {
+      "designNumber": "24",
+      "year": 1971,
+      "type": "Cherub",
+      "name": null
+    }
+  ],
+  "design_list_new": [
+    {
+      "designNumber": "746",
+      "year": 2013,
+      "type": "14' Paddleboard",
+      "name": "HORIZON F14"
+    },
+    {
+      "designNumber": "740",
+      "year": 2013,
+      "type": "38' Powerboat",
+      "name": "PREMIER 38"
+    },
+    {
+      "designNumber": "732",
+      "year": 2012,
+      "type": "28' One Design",
+      "name": "FARR 280 ONE DESIGN"
+    },
+    {
+      "designNumber": "93",
+      "year": 1980,
+      "type": "1/2 Ton",
+      "name": null
+    },
+    {
+      "designNumber": "80",
+      "year": 1980,
+      "type": "14' Javelin",
+      "name": null
+    },
+    {
+      "designNumber": "72",
+      "year": 1978,
+      "type": "38'3\" R/C",
+      "name": "FARR 38"
+    },
+    {
+      "designNumber": "64",
+      "year": 1977,
+      "type": "1 Ton",
+      "name": "RED LION"
+    },
+    {
+      "designNumber": "60",
+      "year": 1977,
+      "type": "52' C/R",
+      "name": "ZAMAZAAN"
+    },
+    {
+      "designNumber": "35",
+      "year": 1972,
+      "type": "Q Class",
+      "name": null
+    },
+    {
+      "designNumber": "34",
+      "year": 1972,
+      "type": "Centerboard",
+      "name": "INTL MOTH MARK IV"
+    },
+    {
+      "designNumber": "31",
+      "year": 1971,
+      "type": "Cherub",
+      "name": null
+    },
+    {
+      "designNumber": "30",
+      "year": 1971,
+      "type": "Centerboard",
+      "name": null
+    },
+    {
+      "designNumber": "25",
+      "year": 1971,
+      "type": "Javelin",
+      "name": null
+    },
+    {
+      "designNumber": "24",
+      "year": 1971,
+      "type": "Cherub",
+      "name": null
+    }
+  ],
+  "size_data": {
+    "196": 65.0,
+    "197": 131.0,
+    "442": 115.0,
+    "615": 110.0,
+    "296": 106.0,
+    "691": 102.0,
+    "591": 100.0,
+    "542": 100.0,
+    "768": 96.0,
+    "366": 95.0,
+    "535": 85.0,
+    "278": 85.0,
+    "190": 84.0,
+    "274": 84.0,
+    "309": 82.0,
+    "191": 81.0,
+    "183": 81.0,
+    "668": 80.0,
+    "489": 80.0,
+    "435": 80.0,
+    "319": 80.0,
+    "207": 80.0,
+    "195": 80.0,
+    "179": 80.0,
+    "176": 80.0,
+    "144": 80.0,
+    "131": 80.0,
+    "147": 79.0,
+    "560": 78.0,
+    "288": 78.0,
+    "540": 74.0,
+    "243": 72.0,
+    "225": 72.0,
+    "175": 72.0,
+    "715": 70.0,
+    "635": 70.0,
+    "634": 70.0,
+    "550": 70.0,
+    "546": 70.0,
+    "545": 70.0,
+    "490": 70.0,
+    "323": 70.0,
+    "218": 70.0,
+    "90": 68.0,
+    "487": 67.0,
+    "353": 67.0,
+    "757": 65.0,
+    "604": 65.0,
+    "421": 65.0,
+    "254": 65.0,
+    "167": 65.0,
+    "269": 64.0,
+    "220": 64.0,
+    "727": 63.0,
+    "126": 63.0,
+    "273": 62.0,
+    "609": 60.0,
+    "603": 60.0,
+    "602": 60.0,
+    "498": 60.0,
+    "476": 60.0,
+    "474": 60.0,
+    "473": 60.0,
+    "472": 60.0,
+    "471": 60.0,
+    "417": 60.0,
+    "414": 60.0,
+    "396": 60.0,
+    "394": 60.0,
+    "392": 60.0,
+    "390": 60.0,
+    "388": 60.0,
+    "386": 60.0,
+    "384": 60.0,
+    "382": 60.0,
+    "378": 60.0,
+    "320": 60.0,
+    "293": 60.0,
+    "292": 60.0,
+    "287": 60.0,
+    "286": 60.0,
+    "284": 60.0,
+    "282": 60.0,
+    "150": 60.0,
+    "249": 59.0,
+    "129": 59.0,
+    "81": 58.0,
+    "486": 57.0,
+    "814": 56.0,
+    "425": 56.0,
+    "673": 55.0,
+    "642": 55.0,
+    "325": 55.0,
+    "152": 55.0,
+    "86": 55.0,
+    "539": 54.0,
+    "779": 53.0,
+    "493": 53.0,
+    "467": 53.0,
+    "466": 53.0,
+    "219": 53.0,
+    "154": 53.0,
+    "597": 52.0,
+    "590": 52.0,
+    "586": 52.0,
+    "585": 52.0,
+    "533": 52.0,
+    "495": 52.0,
+    "444": 52.0,
+    "205": 52.0,
+    "60": 52.0,
+    "488": 51.0,
+    "193": 51.0,
+    "680": 50.0,
+    "541": 50.0,
+    "373": 50.0,
+    "358": 50.0,
+    "324": 50.0,
+    "281": 50.0,
+    "260": 50.0,
+    "256": 50.0,
+    "240": 50.0,
+    "224": 50.0,
+    "213": 50.0,
+    "211": 50.0,
+    "206": 50.0,
+    "203": 50.0,
+    "186": 50.0,
+    "162": 50.0,
+    "155": 50.0,
+    "447": 49.0,
+    "429": 49.0,
+    "428": 49.0,
+    "420": 49.0,
+    "419": 49.0,
+    "416": 49.0,
+    "415": 49.0,
+    "411": 49.0,
+    "123": 48.0,
+    "441": 47.0,
+    "422": 47.0,
+    "328": 47.0,
+    "326": 47.0,
+    "314": 47.0,
+    "146": 47.0,
+    "733": 46.0,
+    "606": 46.0,
+    "368": 46.0,
+    "361": 46.0,
+    "304": 46.0,
+    "92": 46.0,
+    "695": 45.0,
+    "418": 45.0,
+    "369": 45.0,
+    "202": 45.0,
+    "766": 44.0,
+    "496": 44.0,
+    "268": 44.0,
+    "266": 44.0,
+    "242": 44.0,
+    "227": 44.0,
+    "216": 44.0,
+    "181": 44.0,
+    "161": 44.0,
+    "137": 44.0,
+    "100": 44.0,
+    "97": 44.0,
+    "89": 44.0,
+    "781": 43.0,
+    "620": 43.0,
+    "491": 43.0,
+    "443": 43.0,
+    "360": 43.0,
+    "329": 43.0,
+    "198": 43.0,
+    "177": 43.0,
+    "159": 43.0,
+    "151": 43.0,
+    "739": 42.0,
+    "641": 42.0,
+    "640": 42.0,
+    "605": 42.0,
+    "588": 42.0,
+    "534": 42.0,
+    "208": 42.0,
+    "68": 42.0,
+    "67": 42.0,
+    "58": 42.0,
+    "39": 42.0,
+    "285": 42.0,
+    "294": 41.0,
+    "178": 41.0,
+    "165": 41.0,
+    "801": 41.0,
+    "724": 40.0,
+    "720": 40.0,
+    "685": 40.0,
+    "608": 40.0,
+    "412": 40.0,
+    "374": 40.0,
+    "354": 40.0,
+    "344": 40.0,
+    "339": 40.0,
+    "332": 40.0,
+    "330": 40.0,
+    "317": 40.0,
+    "313": 40.0,
+    "306": 40.0,
+    "289": 40.0,
+    "277": 40.0,
+    "209": 40.0,
+    "185": 40.0,
+    "158": 40.0,
+    "143": 40.0,
+    "141": 40.0,
+    "138": 40.0,
+    "136": 40.0,
+    "82": 40.0,
+    "336": 39.0,
+    "311": 39.0,
+    "302": 39.0,
+    "279": 39.0,
+    "276": 39.0,
+    "253": 39.0,
+    "223": 39.0,
+    "214": 39.0,
+    "188": 39.0,
+    "184": 39.0,
+    "182": 39.0,
+    "168": 39.0,
+    "740": 38.0,
+    "468": 38.0,
+    "363": 38.0,
+    "362": 38.0,
+    "258": 38.0,
+    "172": 38.0,
+    "134": 38.0,
+    "72": 38.0,
+    "66": 38.0,
+    "62": 38.0,
+    "61": 38.0,
+    "128": 37.0,
+    "79": 37.0,
+    "71": 37.0,
+    "64": 37.0,
+    "726": 36.0,
+    "613": 36.0,
+    "492": 36.0,
+    "446": 36.0,
+    "299": 36.0,
+    "174": 36.0,
+    "139": 36.0,
+    "124": 36.0,
+    "78": 36.0,
+    "51": 36.0,
+    "38": 36.0,
+    "622": 35.0,
+    "84": 35.0,
+    "28": 35.0,
+    "543": 34.0,
+    "333": 34.0,
+    "121": 34.0,
+    "103": 34.0,
+    "201": 33.0,
+    "145": 33.0,
+    "56": 33.0,
+    "45": 33.0,
+    "732": 28.0,
+    "675": 32.0,
+    "267": 32.0,
+    "229": 32.0,
+    "321": 31.0,
+    "297": 31.0,
+    "65": 31.0,
+    "338": 30.0,
+    "250": 30.0,
+    "244": 30.0,
+    "170": 30.0,
+    "156": 30.0,
+    "125": 30.0,
+    "112": 30.0,
+    "99": 30.0,
+    "87": 30.0,
+    "63": 30.0,
+    "59": 30.0,
+    "54": 30.0,
+    "93": 29.0,
+    "46": 29.0,
+    "189": 28.0,
+    "91": 28.0,
+    "85": 26.0,
+    "27": 26.0,
+    "667": 25.0,
+    "316": 25.0,
+    "101": 25.0,
+    "76": 25.0,
+    "53": 24.0,
+    "750": 23.0,
+    "37": 23.0,
+    "122": 21.0,
+    "57": 20.0,
+    "83": 18.0,
+    "50": 18.0,
+    "47": 18.0,
+    "43": 18.0,
+    "42": 18.0,
+    "74": 17.0,
+    "746": 14.0,
+    "356": 14.0,
+    "80": 14.0,
+    "157": 13.0,
+    "104": 13.0,
+    "52": 12.0,
+    "49": 12.0,
+    "48": 12.0,
+    "44": 12.0,
+    "35": 12.0,
+    "33": 12.0,
+    "29": 12.0,
+    "26": 10.0
+  },
+  "summary": {
+    "design_pages_parsed": 10,
+    "new_designs_from_pages": 0,
+    "existing_designs_updated": 10,
+    "total_spec_values": 25,
+    "pages_with_description": 10,
+    "pages_with_builder": 2,
+    "total_image_refs": 65,
+    "design_list_total": 346,
+    "design_list_new": 14,
+    "sizes_extracted": 320
+  }
+}

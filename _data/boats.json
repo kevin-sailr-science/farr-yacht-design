@@ -1,83 +1,5 @@
 [
   {
-    "nid": 18503,
-    "title": "673M",
-    "slug": "673m",
-    "designNumber": "Bavaria Cruiser 56",
-    "name": null,
-    "year": 2012,
-    "category": [],
-    "classification": null,
-    "designRule": null,
-    "designType": "Cruising Yacht",
-    "specs": {
-      "loa": {
-        "m": 16.75,
-        "ft": 55
-      }
-    },
-    "description": null,
-    "shortDescription": "56' Cruising Yacht",
-    "shortSummary": null,
-    "builder": "Bavaria Yachtbau",
-    "owner": null,
-    "rigType": null,
-    "rigMaterial": null,
-    "keelType": null,
-    "hullConstruction": null,
-    "hullsBuilt": null,
-    "inProduction": null,
-    "isArchived": null,
-    "images": {
-      "main": "bys_6312.jpg"
-    },
-    "drawings": null,
-    "vppFile": null,
-    "drupalAlias": "designs/673m",
-    "tier": 3,
-    "planStatus": "coming_soon",
-    "hasCardPDF": false,
-    "cardDrawingCount": null,
-    "cardDrawingsAvailable": null,
-    "hidden": false
-  },
-  {
-    "nid": 5471,
-    "title": "667 - Farr 25OD",
-    "slug": "667-farr-25od",
-    "designNumber": "Farr 25OD",
-    "name": null,
-    "year": 2008,
-    "category": [],
-    "classification": null,
-    "designRule": null,
-    "designType": null,
-    "specs": null,
-    "description": null,
-    "shortDescription": null,
-    "shortSummary": null,
-    "builder": null,
-    "owner": null,
-    "rigType": null,
-    "rigMaterial": null,
-    "keelType": null,
-    "hullConstruction": null,
-    "hullsBuilt": null,
-    "inProduction": null,
-    "isArchived": null,
-    "images": null,
-    "drawings": null,
-    "vppFile": null,
-    "drupalAlias": "designs/667-farr-25od",
-    "tier": 3,
-    "planStatus": "coming_soon",
-    "hasCardPDF": false,
-    "cardDrawingCount": null,
-    "cardDrawingsAvailable": null,
-    "hidden": false,
-    "yearEstimated": true
-  },
-  {
     "title": "021",
     "slug": "021",
     "designNumber": "021",
@@ -238,6 +160,40 @@
     "hidden": false
   },
   {
+    "title": "24",
+    "slug": "24",
+    "designNumber": "24",
+    "name": null,
+    "year": 1971,
+    "category": [],
+    "classification": null,
+    "designRule": null,
+    "designType": "Dinghy",
+    "specs": null,
+    "description": null,
+    "shortDescription": "Cherub",
+    "shortSummary": null,
+    "builder": null,
+    "owner": null,
+    "rigType": null,
+    "rigMaterial": null,
+    "keelType": null,
+    "hullConstruction": null,
+    "hullsBuilt": null,
+    "inProduction": null,
+    "isArchived": null,
+    "images": null,
+    "drawings": null,
+    "vppFile": null,
+    "drupalAlias": null,
+    "tier": 2,
+    "planStatus": "coming_soon",
+    "hasCardPDF": false,
+    "cardDrawingCount": null,
+    "cardDrawingsAvailable": null,
+    "hidden": false
+  },
+  {
     "title": "025",
     "slug": "025",
     "designNumber": "025",
@@ -272,6 +228,40 @@
     "nid": 8740,
     "tier": 1,
     "planStatus": "not_digitized",
+    "hasCardPDF": false,
+    "cardDrawingCount": null,
+    "cardDrawingsAvailable": null,
+    "hidden": false
+  },
+  {
+    "title": "25",
+    "slug": "25",
+    "designNumber": "25",
+    "name": null,
+    "year": 1971,
+    "category": [],
+    "classification": null,
+    "designRule": null,
+    "designType": "Dinghy",
+    "specs": null,
+    "description": null,
+    "shortDescription": "Javelin",
+    "shortSummary": null,
+    "builder": null,
+    "owner": null,
+    "rigType": null,
+    "rigMaterial": null,
+    "keelType": null,
+    "hullConstruction": null,
+    "hullsBuilt": null,
+    "inProduction": null,
+    "isArchived": null,
+    "images": null,
+    "drawings": null,
+    "vppFile": null,
+    "drupalAlias": null,
+    "tier": 2,
+    "planStatus": "coming_soon",
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
@@ -450,7 +440,11 @@
     "classification": null,
     "designRule": null,
     "designType": "Racing Yacht",
-    "specs": null,
+    "specs": {
+      "loa": {
+        "ft": 26.0
+      }
+    },
     "description": null,
     "shortDescription": "1/2 Ton",
     "shortSummary": null,
@@ -769,6 +763,40 @@
     "hidden": false
   },
   {
+    "title": "30",
+    "slug": "30",
+    "designNumber": "30",
+    "name": null,
+    "year": 1971,
+    "category": [],
+    "classification": null,
+    "designRule": null,
+    "designType": "Dinghy",
+    "specs": null,
+    "description": null,
+    "shortDescription": "Centerboard",
+    "shortSummary": null,
+    "builder": null,
+    "owner": null,
+    "rigType": null,
+    "rigMaterial": null,
+    "keelType": null,
+    "hullConstruction": null,
+    "hullsBuilt": null,
+    "inProduction": null,
+    "isArchived": null,
+    "images": null,
+    "drawings": null,
+    "vppFile": null,
+    "drupalAlias": null,
+    "tier": 2,
+    "planStatus": "coming_soon",
+    "hasCardPDF": false,
+    "cardDrawingCount": null,
+    "cardDrawingsAvailable": null,
+    "hidden": false
+  },
+  {
     "title": "031",
     "slug": "031",
     "designNumber": "031",
@@ -807,6 +835,40 @@
     "nid": 8734,
     "tier": 1,
     "planStatus": "not_digitized",
+    "hasCardPDF": false,
+    "cardDrawingCount": null,
+    "cardDrawingsAvailable": null,
+    "hidden": false
+  },
+  {
+    "title": "31",
+    "slug": "31",
+    "designNumber": "31",
+    "name": null,
+    "year": 1971,
+    "category": [],
+    "classification": null,
+    "designRule": null,
+    "designType": "Dinghy",
+    "specs": null,
+    "description": null,
+    "shortDescription": "Cherub",
+    "shortSummary": null,
+    "builder": null,
+    "owner": null,
+    "rigType": null,
+    "rigMaterial": null,
+    "keelType": null,
+    "hullConstruction": null,
+    "hullsBuilt": null,
+    "inProduction": null,
+    "isArchived": null,
+    "images": null,
+    "drawings": null,
+    "vppFile": null,
+    "drupalAlias": null,
+    "tier": 2,
+    "planStatus": "coming_soon",
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
@@ -993,7 +1055,11 @@
     "classification": null,
     "designRule": null,
     "designType": "Dinghy",
-    "specs": null,
+    "specs": {
+      "loa": {
+        "ft": 12.0
+      }
+    },
     "description": null,
     "shortDescription": "International Moth Mark IV",
     "shortSummary": null,
@@ -1064,6 +1130,40 @@
     "hidden": false
   },
   {
+    "title": "34",
+    "slug": "34",
+    "designNumber": "34",
+    "name": "INTL MOTH MARK IV",
+    "year": 1972,
+    "category": [],
+    "classification": null,
+    "designRule": null,
+    "designType": "Dinghy",
+    "specs": null,
+    "description": null,
+    "shortDescription": "Centerboard",
+    "shortSummary": null,
+    "builder": null,
+    "owner": null,
+    "rigType": null,
+    "rigMaterial": null,
+    "keelType": null,
+    "hullConstruction": null,
+    "hullsBuilt": null,
+    "inProduction": null,
+    "isArchived": null,
+    "images": null,
+    "drawings": null,
+    "vppFile": null,
+    "drupalAlias": null,
+    "tier": 2,
+    "planStatus": "coming_soon",
+    "hasCardPDF": false,
+    "cardDrawingCount": null,
+    "cardDrawingsAvailable": null,
+    "hidden": false
+  },
+  {
     "title": "035",
     "slug": "035",
     "designNumber": "035",
@@ -1102,6 +1202,45 @@
     "nid": 8730,
     "tier": 1,
     "planStatus": "not_digitized",
+    "hasCardPDF": false,
+    "cardDrawingCount": null,
+    "cardDrawingsAvailable": null,
+    "hidden": false
+  },
+  {
+    "title": "35",
+    "slug": "35",
+    "designNumber": "35",
+    "name": null,
+    "year": 1972,
+    "category": [],
+    "classification": null,
+    "designRule": null,
+    "designType": null,
+    "specs": {
+      "loa": {
+        "m": null,
+        "ft": 12.0
+      }
+    },
+    "description": null,
+    "shortDescription": "Q Class",
+    "shortSummary": null,
+    "builder": null,
+    "owner": null,
+    "rigType": null,
+    "rigMaterial": null,
+    "keelType": null,
+    "hullConstruction": null,
+    "hullsBuilt": null,
+    "inProduction": null,
+    "isArchived": null,
+    "images": null,
+    "drawings": null,
+    "vppFile": null,
+    "drupalAlias": null,
+    "tier": 2,
+    "planStatus": "coming_soon",
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
@@ -1587,7 +1726,7 @@
     "designType": "Dinghy",
     "specs": null,
     "description": null,
-    "shortDescription": null,
+    "shortDescription": "Centerboard",
     "shortSummary": null,
     "builder": null,
     "owner": null,
@@ -1665,7 +1804,7 @@
     "designType": "Dinghy",
     "specs": null,
     "description": null,
-    "shortDescription": null,
+    "shortDescription": "Centerboard",
     "shortSummary": null,
     "builder": null,
     "owner": null,
@@ -2344,7 +2483,11 @@
     "classification": null,
     "designRule": null,
     "designType": "Dinghy",
-    "specs": null,
+    "specs": {
+      "loa": {
+        "ft": 12.0
+      }
+    },
     "description": null,
     "shortDescription": "Q Class Plans",
     "shortSummary": null,
@@ -2807,7 +2950,11 @@
     "classification": null,
     "designRule": null,
     "designType": "Racing Yacht",
-    "specs": null,
+    "specs": {
+      "loa": {
+        "ft": 24.0
+      }
+    },
     "description": null,
     "shortDescription": "Burmester 1/4 Ton",
     "shortSummary": null,
@@ -3321,7 +3468,11 @@
     "classification": null,
     "designRule": null,
     "designType": "Racing Yacht",
-    "specs": null,
+    "specs": {
+      "loa": {
+        "ft": 42.0
+      }
+    },
     "description": null,
     "shortDescription": "Admirals Cup Ocean Racing Yacht - 2 Ton",
     "shortSummary": null,
@@ -3399,7 +3550,11 @@
     "classification": null,
     "designRule": null,
     "designType": "Racing Yacht",
-    "specs": null,
+    "specs": {
+      "loa": {
+        "ft": 30.0
+      }
+    },
     "description": null,
     "shortDescription": "One Ton Ocean Racing Yacht",
     "shortSummary": null,
@@ -3482,6 +3637,45 @@
     "hidden": false
   },
   {
+    "title": "60",
+    "slug": "60",
+    "designNumber": "60",
+    "name": "ZAMAZAAN",
+    "year": 1977,
+    "category": [],
+    "classification": null,
+    "designRule": null,
+    "designType": "Cruising Yacht",
+    "specs": {
+      "loa": {
+        "m": null,
+        "ft": 52.0
+      }
+    },
+    "description": null,
+    "shortDescription": "52' C/R",
+    "shortSummary": null,
+    "builder": null,
+    "owner": null,
+    "rigType": null,
+    "rigMaterial": null,
+    "keelType": null,
+    "hullConstruction": null,
+    "hullsBuilt": null,
+    "inProduction": null,
+    "isArchived": null,
+    "images": null,
+    "drawings": null,
+    "vppFile": null,
+    "drupalAlias": null,
+    "tier": 2,
+    "planStatus": "coming_soon",
+    "hasCardPDF": false,
+    "cardDrawingCount": null,
+    "cardDrawingsAvailable": null,
+    "hidden": false
+  },
+  {
     "title": "061",
     "slug": "061",
     "designNumber": "061",
@@ -3533,7 +3727,11 @@
     "classification": null,
     "designRule": null,
     "designType": "Racing Yacht",
-    "specs": null,
+    "specs": {
+      "loa": {
+        "ft": 38.0
+      }
+    },
     "description": null,
     "shortDescription": "One Ton (Keel) Ocean Racing Yacht",
     "shortSummary": null,
@@ -3611,7 +3809,11 @@
     "classification": null,
     "designRule": null,
     "designType": "Racing Yacht",
-    "specs": null,
+    "specs": {
+      "loa": {
+        "ft": 38.0
+      }
+    },
     "description": null,
     "shortDescription": "One Ton Ocean Racing Yacht - Jenny H",
     "shortSummary": null,
@@ -3689,7 +3891,11 @@
     "classification": null,
     "designRule": null,
     "designType": "Racing Yacht",
-    "specs": null,
+    "specs": {
+      "loa": {
+        "ft": 30.0
+      }
+    },
     "description": null,
     "shortDescription": "One Ton Ocean Racing Yacht",
     "shortSummary": null,
@@ -3771,6 +3977,45 @@
     "nid": 8700,
     "tier": 1,
     "planStatus": "not_digitized",
+    "hasCardPDF": false,
+    "cardDrawingCount": null,
+    "cardDrawingsAvailable": null,
+    "hidden": false
+  },
+  {
+    "title": "64",
+    "slug": "64",
+    "designNumber": "64",
+    "name": "RED LION",
+    "year": 1977,
+    "category": [],
+    "classification": null,
+    "designRule": null,
+    "designType": "Racing Yacht",
+    "specs": {
+      "loa": {
+        "m": null,
+        "ft": 37.0
+      }
+    },
+    "description": null,
+    "shortDescription": "1 Ton",
+    "shortSummary": null,
+    "builder": null,
+    "owner": null,
+    "rigType": null,
+    "rigMaterial": null,
+    "keelType": null,
+    "hullConstruction": null,
+    "hullsBuilt": null,
+    "inProduction": null,
+    "isArchived": null,
+    "images": null,
+    "drawings": null,
+    "vppFile": null,
+    "drupalAlias": null,
+    "tier": 2,
+    "planStatus": "coming_soon",
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
@@ -3932,7 +4177,11 @@
     "classification": null,
     "designRule": null,
     "designType": "Racing Yacht",
-    "specs": null,
+    "specs": {
+      "loa": {
+        "ft": 38.0
+      }
+    },
     "description": null,
     "shortDescription": "One Ton Ocean Racing Yacht",
     "shortSummary": null,
@@ -4197,7 +4446,11 @@
     "classification": null,
     "designRule": null,
     "designType": "Racing Yacht",
-    "specs": null,
+    "specs": {
+      "loa": {
+        "ft": 37.0
+      }
+    },
     "description": null,
     "shortDescription": "One Ton (Keel) Ocean Racing Yacht",
     "shortSummary": null,
@@ -4279,6 +4532,45 @@
     "nid": 8694,
     "tier": 1,
     "planStatus": "not_digitized",
+    "hasCardPDF": false,
+    "cardDrawingCount": null,
+    "cardDrawingsAvailable": null,
+    "hidden": false
+  },
+  {
+    "title": "72",
+    "slug": "72",
+    "designNumber": "72",
+    "name": "FARR 38",
+    "year": 1978,
+    "category": [],
+    "classification": null,
+    "designRule": null,
+    "designType": null,
+    "specs": {
+      "loa": {
+        "m": null,
+        "ft": 38.0
+      }
+    },
+    "description": null,
+    "shortDescription": "38'3\" R/C",
+    "shortSummary": null,
+    "builder": null,
+    "owner": null,
+    "rigType": null,
+    "rigMaterial": null,
+    "keelType": null,
+    "hullConstruction": null,
+    "hullsBuilt": null,
+    "inProduction": null,
+    "isArchived": null,
+    "images": null,
+    "drawings": null,
+    "vppFile": null,
+    "drupalAlias": null,
+    "tier": 2,
+    "planStatus": "coming_soon",
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
@@ -4698,7 +4990,11 @@
     "classification": null,
     "designRule": null,
     "designType": "Racing Yacht",
-    "specs": null,
+    "specs": {
+      "loa": {
+        "ft": 36.0
+      }
+    },
     "description": null,
     "shortDescription": "One Ton Ocean Racing Yacht",
     "shortSummary": null,
@@ -4796,7 +5092,11 @@
     "classification": null,
     "designRule": null,
     "designType": "Racing Yacht",
-    "specs": null,
+    "specs": {
+      "loa": {
+        "ft": 37.0
+      }
+    },
     "description": null,
     "shortDescription": "One Ton Ocean Racing Yacht",
     "shortSummary": null,
@@ -4874,6 +5174,45 @@
     "nid": 8687,
     "tier": 1,
     "planStatus": "not_digitized",
+    "hasCardPDF": false,
+    "cardDrawingCount": null,
+    "cardDrawingsAvailable": null,
+    "hidden": false
+  },
+  {
+    "title": "80",
+    "slug": "80",
+    "designNumber": "80",
+    "name": null,
+    "year": 1980,
+    "category": [],
+    "classification": null,
+    "designRule": null,
+    "designType": "Dinghy",
+    "specs": {
+      "loa": {
+        "m": null,
+        "ft": 14.0
+      }
+    },
+    "description": null,
+    "shortDescription": "14' Javelin",
+    "shortSummary": null,
+    "builder": null,
+    "owner": null,
+    "rigType": null,
+    "rigMaterial": null,
+    "keelType": null,
+    "hullConstruction": null,
+    "hullsBuilt": null,
+    "inProduction": null,
+    "isArchived": null,
+    "images": null,
+    "drawings": null,
+    "vppFile": null,
+    "drupalAlias": null,
+    "tier": 2,
+    "planStatus": "coming_soon",
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
@@ -5068,7 +5407,11 @@
     "classification": null,
     "designRule": null,
     "designType": "Racing Yacht",
-    "specs": null,
+    "specs": {
+      "loa": {
+        "ft": 40.0
+      }
+    },
     "description": null,
     "shortDescription": "Minimum Admirals Cup Yacht",
     "shortSummary": null,
@@ -5409,7 +5752,11 @@
     "classification": null,
     "designRule": null,
     "designType": "Racing Yacht",
-    "specs": null,
+    "specs": {
+      "loa": {
+        "ft": 26.0
+      }
+    },
     "description": null,
     "shortDescription": "1/4 Ton",
     "shortSummary": null,
@@ -5982,7 +6329,11 @@
     "classification": null,
     "designRule": null,
     "designType": "Racing Yacht",
-    "specs": null,
+    "specs": {
+      "loa": {
+        "ft": 28.0
+      }
+    },
     "description": null,
     "shortDescription": "Project 81",
     "shortSummary": null,
@@ -6206,6 +6557,45 @@
     "nid": 8675,
     "tier": 1,
     "planStatus": "not_digitized",
+    "hasCardPDF": false,
+    "cardDrawingCount": null,
+    "cardDrawingsAvailable": null,
+    "hidden": false
+  },
+  {
+    "title": "93",
+    "slug": "93",
+    "designNumber": "93",
+    "name": null,
+    "year": 1980,
+    "category": [],
+    "classification": null,
+    "designRule": null,
+    "designType": "Racing Yacht",
+    "specs": {
+      "loa": {
+        "m": null,
+        "ft": 29.0
+      }
+    },
+    "description": null,
+    "shortDescription": "1/2 Ton",
+    "shortSummary": null,
+    "builder": null,
+    "owner": null,
+    "rigType": null,
+    "rigMaterial": null,
+    "keelType": null,
+    "hullConstruction": null,
+    "hullsBuilt": null,
+    "inProduction": null,
+    "isArchived": null,
+    "images": null,
+    "drawings": null,
+    "vppFile": null,
+    "drupalAlias": null,
+    "tier": 2,
+    "planStatus": "coming_soon",
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
@@ -10008,7 +10398,7 @@
     "title": "182",
     "slug": "182",
     "designNumber": "182",
-    "name": null,
+    "name": "PRIME FACTOR & PROPAGANDA",
     "year": 1985,
     "category": [],
     "classification": "",
@@ -14165,7 +14555,7 @@
     "title": "281",
     "slug": "281",
     "designNumber": "281",
-    "name": null,
+    "name": "MORNING MIST III & FULL CRY",
     "year": 1992,
     "category": [],
     "classification": "",
@@ -23766,7 +24156,7 @@
     "title": "605",
     "slug": "605",
     "designNumber": "605",
-    "name": null,
+    "name": "ROMA",
     "year": 2005,
     "category": [],
     "classification": null,
@@ -24013,49 +24403,6 @@
     "hidden": false
   },
   {
-    "title": "609m",
-    "slug": "609m-card",
-    "designNumber": "609m",
-    "name": "Open 60 (IMOCA)",
-    "year": 2005,
-    "category": [
-      "Racing"
-    ],
-    "classification": null,
-    "designRule": null,
-    "designType": "Racing",
-    "specs": {
-      "loa": {
-        "m": null,
-        "ft": 60
-      }
-    },
-    "description": null,
-    "shortDescription": "Open 60 (IMOCA)",
-    "shortSummary": null,
-    "builder": "Beyou (Jérémie Beyou)",
-    "owner": null,
-    "rigType": null,
-    "rigMaterial": null,
-    "keelType": null,
-    "hullConstruction": null,
-    "hullsBuilt": null,
-    "inProduction": null,
-    "isArchived": null,
-    "images": null,
-    "drawings": null,
-    "vppFile": null,
-    "drupalAlias": null,
-    "nid": null,
-    "tier": 2,
-    "planStatus": "request_from_shed",
-    "hasCardPDF": true,
-    "cardDrawingCount": 39,
-    "cardDrawingsAvailable": null,
-    "hidden": false,
-    "yearEstimated": false
-  },
-  {
     "title": "609M",
     "slug": "609m",
     "designNumber": "609M",
@@ -24105,6 +24452,49 @@
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
     "hidden": false
+  },
+  {
+    "title": "609m",
+    "slug": "609m-card",
+    "designNumber": "609m",
+    "name": "Open 60 (IMOCA)",
+    "year": 2005,
+    "category": [
+      "Racing"
+    ],
+    "classification": null,
+    "designRule": null,
+    "designType": "Racing",
+    "specs": {
+      "loa": {
+        "m": null,
+        "ft": 60
+      }
+    },
+    "description": null,
+    "shortDescription": "Open 60 (IMOCA)",
+    "shortSummary": null,
+    "builder": "Beyou (Jérémie Beyou)",
+    "owner": null,
+    "rigType": null,
+    "rigMaterial": null,
+    "keelType": null,
+    "hullConstruction": null,
+    "hullsBuilt": null,
+    "inProduction": null,
+    "isArchived": null,
+    "images": null,
+    "drawings": null,
+    "vppFile": null,
+    "drupalAlias": null,
+    "nid": null,
+    "tier": 2,
+    "planStatus": "request_from_shed",
+    "hasCardPDF": true,
+    "cardDrawingCount": 39,
+    "cardDrawingsAvailable": null,
+    "hidden": false,
+    "yearEstimated": false
   },
   {
     "title": "613",
@@ -24391,7 +24781,7 @@
     "title": "634",
     "slug": "634",
     "designNumber": "634",
-    "name": null,
+    "name": "TELEFONICA BLUE",
     "year": 2007,
     "category": [],
     "classification": null,
@@ -24505,7 +24895,7 @@
     "title": "640",
     "slug": "640",
     "designNumber": "640",
-    "name": null,
+    "name": "ROMA II",
     "year": 2007,
     "category": [],
     "classification": null,
@@ -24643,7 +25033,7 @@
     "title": "642",
     "slug": "642",
     "designNumber": "642",
-    "name": null,
+    "name": "LIVING DOLL",
     "year": 2008,
     "category": [
       "Grand Prix"
@@ -25991,6 +26381,45 @@
     "hidden": true
   },
   {
+    "title": "732",
+    "slug": "732",
+    "designNumber": "732",
+    "name": "FARR 280 ONE DESIGN",
+    "year": 2012,
+    "category": [],
+    "classification": null,
+    "designRule": null,
+    "designType": "Racing Yacht",
+    "specs": {
+      "loa": {
+        "m": null,
+        "ft": 28.0
+      }
+    },
+    "description": null,
+    "shortDescription": "28' One Design",
+    "shortSummary": null,
+    "builder": null,
+    "owner": null,
+    "rigType": null,
+    "rigMaterial": null,
+    "keelType": null,
+    "hullConstruction": null,
+    "hullsBuilt": null,
+    "inProduction": null,
+    "isArchived": null,
+    "images": null,
+    "drawings": null,
+    "vppFile": null,
+    "drupalAlias": null,
+    "tier": 2,
+    "planStatus": "coming_soon",
+    "hasCardPDF": false,
+    "cardDrawingCount": null,
+    "cardDrawingsAvailable": null,
+    "hidden": false
+  },
+  {
     "title": "733",
     "slug": "733",
     "designNumber": "733",
@@ -26104,6 +26533,84 @@
     "nid": 18500,
     "tier": 1,
     "planStatus": "not_digitized",
+    "hasCardPDF": false,
+    "cardDrawingCount": null,
+    "cardDrawingsAvailable": null,
+    "hidden": false
+  },
+  {
+    "title": "740",
+    "slug": "740",
+    "designNumber": "740",
+    "name": "PREMIER 38",
+    "year": 2013,
+    "category": [],
+    "classification": null,
+    "designRule": null,
+    "designType": "Power Yacht",
+    "specs": {
+      "loa": {
+        "m": null,
+        "ft": 38.0
+      }
+    },
+    "description": null,
+    "shortDescription": "38' Powerboat",
+    "shortSummary": null,
+    "builder": null,
+    "owner": null,
+    "rigType": null,
+    "rigMaterial": null,
+    "keelType": null,
+    "hullConstruction": null,
+    "hullsBuilt": null,
+    "inProduction": null,
+    "isArchived": null,
+    "images": null,
+    "drawings": null,
+    "vppFile": null,
+    "drupalAlias": null,
+    "tier": 2,
+    "planStatus": "coming_soon",
+    "hasCardPDF": false,
+    "cardDrawingCount": null,
+    "cardDrawingsAvailable": null,
+    "hidden": false
+  },
+  {
+    "title": "746",
+    "slug": "746",
+    "designNumber": "746",
+    "name": "HORIZON F14",
+    "year": 2013,
+    "category": [],
+    "classification": null,
+    "designRule": null,
+    "designType": "Other",
+    "specs": {
+      "loa": {
+        "m": null,
+        "ft": 14.0
+      }
+    },
+    "description": null,
+    "shortDescription": "14' Paddleboard",
+    "shortSummary": null,
+    "builder": null,
+    "owner": null,
+    "rigType": null,
+    "rigMaterial": null,
+    "keelType": null,
+    "hullConstruction": null,
+    "hullsBuilt": null,
+    "inProduction": null,
+    "isArchived": null,
+    "images": null,
+    "drawings": null,
+    "vppFile": null,
+    "drupalAlias": null,
+    "tier": 2,
+    "planStatus": "coming_soon",
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
@@ -26895,11 +27402,27 @@
     "designType": null,
     "specs": {
       "loa": {
-        "m": null,
+        "m": 32.1,
         "ft": 105
+      },
+      "lwl": {
+        "m": 29.4,
+        "ft": 96.46
+      },
+      "beam": {
+        "m": 7.32,
+        "ft": 24.0
+      },
+      "draft": {
+        "m": 4.5,
+        "ft": 14.7
+      },
+      "displacement": {
+        "kg": 66200.0,
+        "lbs": 145946.0
       }
     },
-    "description": null,
+    "description": "Farr Yacht Design is delighted to present our tenth design commission from Southern Wind shipyard. The new Southern Wind 105 is a stunning, thoroughly modern yacht designed for the sailor who expects cutting edge design and superb styling in a fast, safe, passage capable yacht equipped to contest any superyacht regatta.\n\nFYD was given a free hand to develop the naval architecture concept. With Southern Wind’s advanced construction technology and fanatical commitment to weight control, we were able to create a light, powerful masterpiece with aggressive hull styling, a highly advanced appendage package and a more than ample rig size. Twin rudders were chosen to best match both the lifting keel configuration and the wide, powerful transom.\n\nThe interior and deck styling are the product of Nauta Design and were developed in concert with the overall concept to be the \"new wave in the future of Southern Wind.\"",
     "shortDescription": null,
     "shortSummary": null,
     "builder": null,
@@ -27290,11 +27813,35 @@
     "designType": null,
     "specs": {
       "loa": {
-        "m": null,
+        "m": 43.3,
         "ft": 142
+      },
+      "dwl": {
+        "m": 41.6,
+        "ft": 136.48
+      },
+      "beam": {
+        "m": 9.0,
+        "ft": 29.53
+      },
+      "draft": {
+        "m": 6.5,
+        "ft": 21.33
+      },
+      "draftUp": {
+        "m": 3.8,
+        "ft": 12.47
+      },
+      "displacement": {
+        "lbs": 268000.0,
+        "tons": 134.0
+      },
+      "ballast": {
+        "lbs": 97400.0,
+        "tons": 48.7
       }
     },
-    "description": null,
+    "description": "The Baltic 142 Custom combines timeless, elegant looks with dramatic superstructure styling and a modern hull shape. Features include a plumb bow and maximum beam carried well aft to enhance performance and provide useful hull volume. The accommodation comprises a large amidships owner’s cabin to ensure maximum comfort while underway, an upper saloon with direct access to the cockpit and an additional six cabins, three for guests forward and three for crew aft.\n\nWith naval architecture by Farr Yacht Design, final styling by Lucio Micheletti and overall engineering by Baltic Yachts, the yacht will benefit from advanced carbon sandwich construction.\n\nThe final phase of mould tooling for this Farr Yacht Design performance cruiser was completed in the summer and hull lamination in pre-preg carbon is well advanced.\n\nProject manager Sören Jansson said that apart from the 9m long Dynamic Stability System foil being built into the yacht, the diesel electric propulsion system is also a key feature, the machinery room for which is being built in modular from outside the yacht.\n\n\"This not only enables us to gain some time in the overall build schedule but also allows the workers easier access for speed and accuracy\" said Sören.\n\nThe 142 will step a Rondal carbon rig, be fitted with in-boom furling, set a square top main and to gain full benefit from the keel in the up position (draft 3.8m), is designed with twin rudders. The yacht is scheduled to launch in Spring 2019.",
     "shortDescription": null,
     "shortSummary": null,
     "builder": null,
@@ -27725,7 +28272,7 @@
       }
     },
     "description": null,
-    "shortDescription": null,
+    "shortDescription": "41' Racer",
     "shortSummary": null,
     "builder": null,
     "owner": null,
@@ -27874,7 +28421,7 @@
     "designRule": null,
     "designType": null,
     "specs": null,
-    "description": null,
+    "description": "Farr Yacht Design and Design Unlimited have partnered together to create this high performance racer cruiser that will establish a new class in competitive sailing superyachts.\n\nBreaking records, dominating the Superyacht Racing Circuit, and comfortable Mediterranean and Caribbean cruising round out the uncompromising design brief. Cutting days from trans-ocean records and finishing hours ahead of the closet competition in superyacht day races are all easily within the capabilities of this incredible yacht.\n\nThis 50m concept is pure power with a long, light hull of only 155 tons displacement, and a rig that stands 68m above the waterline. 2500 square meters of sail, twin daggerboards and rudders and a telescoping/canting keel allow this yacht to easily achieve speeds into the mid-20’s in moderate winds and well above 30 knots in strong winds. Advanced and proven sail handling systems provide the necessary flexibility and safety needed to confidently achieve those high speeds.",
     "shortDescription": "Sherlock Superyacht",
     "shortSummary": null,
     "builder": null,
@@ -28019,10 +28566,10 @@
         "ft": 47
       }
     },
-    "description": null,
+    "description": "This 14m Tender is a collaborative development between Farr Yacht Design, Tenderworks and RWD design. Built using the latest in carbon composite technology and featuring an advanced stepped planing hull for unrivaled performance and handling. The first boat is well advanced in construction with design underway on a limousine variant.",
     "shortDescription": "14m Chase Boat",
     "shortSummary": null,
-    "builder": null,
+    "builder": "Tenderworks",
     "owner": null,
     "rigType": null,
     "rigMaterial": null,
@@ -28244,7 +28791,7 @@
         "ft": 39
       }
     },
-    "description": null,
+    "description": "Our goal at Farr Yacht Design with the new Najad 395 was to look back at Najad Yacht’s history, as well as forward to their future, and to create two new 12m models that would help take important steps forward while remaining true Najads. The brand Najad has so much great heritage, that our steps as thoughtful designers had to be very carefully considered. The Najad 395 that we have created together is an artful blend of performance improvements and industrialization, with traditional values, sea worthiness, and good solid engineering. Both versions of the boat, center cockpit and aft cockpit, have been developed with the attention deserving of single focus models, and yet have achieved a level of industrialized integration which is a real testament to the team. We are confident that we have created new Najad 395’s that can stand the test of time, and be rewarding, and confidence inspiring yachts for her owners well into the future.",
     "shortDescription": "Najad 395",
     "shortSummary": null,
     "builder": null,
@@ -28493,8 +29040,17 @@
     "classification": null,
     "designRule": null,
     "designType": "One Design",
-    "specs": null,
-    "description": null,
+    "specs": {
+      "loa": {
+        "m": 18.28,
+        "ft": 60.0
+      },
+      "draft": {
+        "m": 4.5,
+        "ft": 14.7
+      }
+    },
+    "description": "Farr Yacht Design presents Design 826, a revolutionary new IMOCA 60 design that has been developed from a clean sheet of paper for the next era of offshore sailing. This design builds upon our extensive experience in IMOCA 60 design and leverages much of our ongoing Vendee Globe IMOCA 2020 concept developments. The boat is envisioned to be easily adaptable for singlehanded, doublehanded or crewed sailing with specific consideration for the Volvo Ocean Race courses and the implications of sailing with 5 crew and an onboard reporter.\n\nUnlike the existing IMOCA fleet, this design has been optimized from the outset to leverage the full power of hydrofoils. The forces generated by the foils increase the speed potential but also alter how the hydrodynamic forces are shared by the hull and the different appendages. Compared to conventional IMOCA designs, this results in significant changes in the optimal design parameters, hull form shape and dimensions, foil design, keel placement and incline angles as well as having significant sail design and aerodynamic considerations.\n\nThe advanced foil designs leverage FYD multi-year investment in the development of foil assisted designs, including our development of the world’s largest foil assisted monohull due to launch in Spring 2019. The higher speeds and increased impact loadings for foil assisted boats, coupled with the rule drivers to the minimum possible structural weight require a next generation of structural concept, one that minimizes weight without sacrificing strength or reliability and robustness. As with all FYD designs, the structural approach is always carefully considered in view of buildability and cost in order to insure the resulting product meets all of the team’s objectives.\n\nThe boat must be able to operate at peak efficiency, able to maintain high average speeds for the solo sailor while being robust enough to be pushed to the limit by a full crew. On a performance basis this emphasizes the need for a boat that is easily driven and as sea kindly as possible; able to achieve excellent speeds even when in non-optimal configurations. The deck and interior arrangements, rigging and deck hardware systems are ergonomically optimized with this in mind. As displayed, this design incorporates a deck and interior layout that has been developed to support crewed sailing with an emphasis on human helming, gear stacking, guest space and media inclusion. A design only focused on solo or doublehanded racing would likely result in a different cockpit, deck layout and interior.",
     "shortDescription": null,
     "shortSummary": null,
     "builder": null,
@@ -28569,7 +29125,7 @@
     "designRule": null,
     "designType": "Cruising Yacht",
     "specs": null,
-    "description": null,
+    "description": "This Expedition craft was commissioned in 2017 by Spindrift Rowing. Designed for coastal and ocean rowing in single or doublehanded configurations the boat can be easily moded for sailing with the addition of the ama's and rigging. The boat is constructed from infused Carbon Foam with additional abrasion protection engineered into the laminates.",
     "shortDescription": "Sailing Row Cruiser",
     "shortSummary": null,
     "builder": null,
@@ -29049,10 +29605,10 @@
         "ft": 40
       }
     },
-    "description": null,
+    "description": "Around the world we are seeing a resurgence of interest in high performance race boats at the 40’ size. Originating in the UK, the Fast 40+ class has gone from strength to strength providing exceptionally close racing for well matched, high performance 40 footers. The dynamic performance of the Fast 40’s and their more accessible construction and operating costs have peaked the interest of sailors around the world. We are seeing a significant amount of interest in boats of this style from Australia, New Zealand, USA, and European owners with particular interest in boats that are not solely targeted at inshore style racing. Responding to this interest we have developed a brand new design that reflects the recent evolutions of the IRC and Fast 40+ rules, but is specifically optimised to a larger component of offshore sailing conditions; positioned to excel in both inshore regattas and in the offshore races.\n\n• Design parameters optimised to the 2018 FAST 40+ class rule and targeted to perform both inshore and offshore in dynamic conditions\n\n• An aggressive approach to maximize the benefit of moving crew weight both longitudinally and transversely\n\n• Refined, high stability/low drag hull shape integrated with advanced deck and structural design\n\n• Modern, open cockpit deck geometry designed to maximize efficient handling with minimized weight, windage and pitch gyradius\n\n• Maximum-performance high efficiency appendages for impressive downwind offshore performance and high lift in demanding conditions or racing in tight fleets\n\n• Easily re-modeable to optimise for inshore or offshore focused schedules\n\n• Light, reliable and efficient structural design integrated with deck and rig features\n\nThis design is developed to excel in coastal and offshore races where dynamic reaching performance is paramount while still providing excellent inshore performance in tight windward leeward regattas. Design 841 is a product of the latest in design technology and leverages 40 years of design experience. It features a fresh look at every element of the boat, leaving no stone unturned. It combines cutting-edge research with countless innovations and refinements that will define the next generation of FAST 40+.\n\nWe are in advanced discussions with Van Munster boats in Australia in preparation for a construction start that would see the first boat available for the Australian Summer. A full design presentation, proposed specification and pricing is available upon request.",
     "shortDescription": "Fast 40+ Van Munster",
     "shortSummary": null,
-    "builder": null,
+    "builder": "Van Munster Boats",
     "owner": null,
     "rigType": null,
     "rigMaterial": null,
@@ -29160,11 +29716,27 @@
     "designType": "Racing/Cruising",
     "specs": {
       "loa": {
-        "m": null,
+        "m": 13.1,
         "ft": 13.1
+      },
+      "lwl": {
+        "m": 11.43,
+        "ft": 37.5
+      },
+      "beam": {
+        "m": 4.04,
+        "ft": 13.25
+      },
+      "draft": {
+        "m": 2.74,
+        "ft": 9.0
+      },
+      "displacement": {
+        "kg": 6300.0,
+        "lbs": 13900.0
       }
     },
-    "description": null,
+    "description": "This design embodies Farr Yacht Design’s deep understanding of the IRC rule space, and our many years producing high level grand-prix and production racer and cruiser designs. The concept is positioned to provide exceptional performance in a wide range of conditions; able to perform in both the toughest offshore races and weekend club races and rewarding to sail by both Corinthian crews and professionals. While designed to achieve an exceptional IRC rating the boat is envisioned as an excellent all-purpose boat, able to perform under a range of handicap and rating systems including ORCi, PHRF and others. At 43’ the boat has been sized to fit within the burgeoning Super 12 Class in Australia to maximize racing opportunities.\n\nMany of the larger manufacturers have adjusted their focus to pure cruising and charter solutions meaning there have been very few high performance cruiser/racers developed in recent years. Many of our existing cruiser/racer designs have continued to perform well and place in major events around the world but there are very limited options for these owners to move up into. These owners are looking for a new boat that retains the dual purpose cruising and racing concept but takes advantage of the significant advancements in design and construction that have occurred in recent years.",
     "shortDescription": null,
     "shortSummary": null,
     "builder": null,
@@ -30554,5 +31126,83 @@
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
     "hidden": false
+  },
+  {
+    "nid": 18503,
+    "title": "673M",
+    "slug": "673m",
+    "designNumber": "Bavaria Cruiser 56",
+    "name": null,
+    "year": 2012,
+    "category": [],
+    "classification": null,
+    "designRule": null,
+    "designType": "Cruising Yacht",
+    "specs": {
+      "loa": {
+        "m": 16.75,
+        "ft": 55
+      }
+    },
+    "description": null,
+    "shortDescription": "56' Cruising Yacht",
+    "shortSummary": null,
+    "builder": "Bavaria Yachtbau",
+    "owner": null,
+    "rigType": null,
+    "rigMaterial": null,
+    "keelType": null,
+    "hullConstruction": null,
+    "hullsBuilt": null,
+    "inProduction": null,
+    "isArchived": null,
+    "images": {
+      "main": "bys_6312.jpg"
+    },
+    "drawings": null,
+    "vppFile": null,
+    "drupalAlias": "designs/673m",
+    "tier": 3,
+    "planStatus": "coming_soon",
+    "hasCardPDF": false,
+    "cardDrawingCount": null,
+    "cardDrawingsAvailable": null,
+    "hidden": false
+  },
+  {
+    "nid": 5471,
+    "title": "667 - Farr 25OD",
+    "slug": "667-farr-25od",
+    "designNumber": "Farr 25OD",
+    "name": null,
+    "year": 2008,
+    "category": [],
+    "classification": null,
+    "designRule": null,
+    "designType": null,
+    "specs": null,
+    "description": null,
+    "shortDescription": null,
+    "shortSummary": null,
+    "builder": null,
+    "owner": null,
+    "rigType": null,
+    "rigMaterial": null,
+    "keelType": null,
+    "hullConstruction": null,
+    "hullsBuilt": null,
+    "inProduction": null,
+    "isArchived": null,
+    "images": null,
+    "drawings": null,
+    "vppFile": null,
+    "drupalAlias": "designs/667-farr-25od",
+    "tier": 3,
+    "planStatus": "coming_soon",
+    "hasCardPDF": false,
+    "cardDrawingCount": null,
+    "cardDrawingsAvailable": null,
+    "hidden": false,
+    "yearEstimated": true
   }
 ]

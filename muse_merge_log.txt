@@ -1,0 +1,51 @@
+MUSE Data Merge — Change Log
+========================================
+
+D.778 Southern Wind 105: description (918 chars), loa.m = 32.1, lwl.m = 29.4, lwl.ft = 96.46, beam.m = 7.32, beam.ft = 24.0, draft.m = 4.5, draft.ft = 14.7, displacement.kg = 66200.0, displacement.lbs = 145946.0
+D.813 14m Superyacht Tender: description (335 chars), builder = Tenderworks
+D.828 Expedition Sailing/Rowing: description (347 chars)
+D.826 VOR IMOCA 60 OD: description (2565 chars), loa.m = 18.28, loa.ft = 60.0, draft.m = 4.5, draft.ft = 14.7
+D.788 Baltic 142: description (1482 chars), loa.m = 43.3, dwl.m = 41.6, dwl.ft = 136.48, beam.m = 9.0, beam.ft = 29.53, draft.m = 6.5, draft.ft = 21.33, draftUp.m = 3.8, draftUp.ft = 12.47, displacement.lbs = 268000.0, displacement.tons = 134.0, ballast.lbs = 97400.0, ballast.tons = 48.7
+D.809 50m Super Yacht Concept: description (990 chars)
+D.819 Najad 395: description (946 chars)
+D.841 Offshore Fast 40 IRC Racer: description (2492 chars), builder = Van Munster Boats
+D.844 13m IRC Cruiser/Racer: description (1323 chars), loa.m = 13.1, lwl.m = 11.43, lwl.ft = 37.5, beam.m = 4.04, beam.ft = 13.25, draft.m = 2.74, draft.ft = 9.0, displacement.kg = 6300.0, displacement.lbs = 13900.0
+D.801 (design list): shortDescription = 41' Racer
+D.642 (design list): name = LIVING DOLL
+D.640 (design list): name = ROMA II
+D.634 (design list): name = TELEFONICA BLUE
+D.605 (design list): name = ROMA
+D.281 (design list): name = MORNING MIST III & FULL CRY
+D.182 (design list): name = PRIME FACTOR & PROPAGANDA
+D.41 (design list): shortDescription = Centerboard
+D.40 (design list): shortDescription = Centerboard
+D.58: loa.ft = 42.0 (from size list)
+D.82: loa.ft = 40.0 (from size list)
+D.66: loa.ft = 38.0 (from size list)
+D.62: loa.ft = 38.0 (from size list)
+D.61: loa.ft = 38.0 (from size list)
+D.79: loa.ft = 37.0 (from size list)
+D.71: loa.ft = 37.0 (from size list)
+D.78: loa.ft = 36.0 (from size list)
+D.63: loa.ft = 30.0 (from size list)
+D.59: loa.ft = 30.0 (from size list)
+D.91: loa.ft = 28.0 (from size list)
+D.85: loa.ft = 26.0 (from size list)
+D.27: loa.ft = 26.0 (from size list)
+D.53: loa.ft = 24.0 (from size list)
+D.49: loa.ft = 12.0 (from size list)
+D.33: loa.ft = 12.0 (from size list)
+D.746 HORIZON F14: NEW DESIGN ADDED
+D.740 PREMIER 38: NEW DESIGN ADDED
+D.732 FARR 280 ONE DESIGN: NEW DESIGN ADDED
+D.93 None: NEW DESIGN ADDED
+D.80 None: NEW DESIGN ADDED
+D.72 FARR 38: NEW DESIGN ADDED
+D.64 RED LION: NEW DESIGN ADDED
+D.60 ZAMAZAAN: NEW DESIGN ADDED
+D.35 None: NEW DESIGN ADDED
+D.34 INTL MOTH MARK IV: NEW DESIGN ADDED
+D.31 None: NEW DESIGN ADDED
+D.30 None: NEW DESIGN ADDED
+D.25 None: NEW DESIGN ADDED
+D.24 None: NEW DESIGN ADDED
