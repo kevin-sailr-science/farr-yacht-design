@@ -41,6 +41,7 @@ for boat in all_boats:
             'stripePriceEnv': boat.get('stripePriceEnv'),
             'price': boat.get('planPrice'),
             'description': boat.get('planDescription', ''),
+            'planContents': boat.get('planContents', ''),
         }
 
 plan_catalog_path = os.path.join(SCRIPT_DIR, "_data", "plan_catalog.json")
@@ -122,6 +123,7 @@ def build_plan_section(boat):
     plan_id = boat.get("planId")
     plan_price = boat.get("planPrice")
     plan_desc = boat.get("planDescription", "")
+    plan_contents = boat.get("planContents", "")
 
     # ─── PURCHASABLE: Tier 1 + card + planId + price → direct Stripe checkout ───
     if tier == 1 and has_card and plan_id and plan_price:
@@ -134,6 +136,14 @@ def build_plan_section(boat):
 
         desc_html = f'<p style="font-size:0.88rem;color:var(--text-secondary);line-height:1.6;margin-bottom:0.75rem;">{esc(plan_desc)}</p>' if plan_desc else '<p style="font-size:0.88rem;color:var(--text-secondary);line-height:1.6;margin-bottom:0.75rem;">Original design drawings from the Farr archive available as PDF download.</p>'
 
+        contents_html = ""
+        if plan_contents:
+            contents_html = f'''
+            <details style="margin:0.5rem 0 0.75rem;font-size:0.84rem;">
+              <summary style="cursor:pointer;color:var(--text-secondary);font-weight:500;">What&rsquo;s included</summary>
+              <p style="margin:0.5rem 0 0;color:var(--text-muted);line-height:1.6;">{esc(plan_contents)}</p>
+            </details>'''
+
         return f'''
           <div class="purchase-card">
             <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:0.5rem;">
@@ -141,6 +151,7 @@ def build_plan_section(boat):
               <span class="availability-badge availability-badge--available">Available</span>
             </div>
             {desc_html}
+            {contents_html}
             {drawing_info}
             <div style="margin-top:1rem;">
               <button class="btn-purchase" onclick="initCheckout('{esc(plan_id)}')">Purchase &amp; Download &mdash; ${plan_price}</button>
