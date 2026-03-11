@@ -59,6 +59,13 @@
   status = 200
   force = true
 
+# Catalog API (admin portal — GET/PUT/POST)
+[[redirects]]
+  from = "/api/catalog"
+  to = "/.netlify/functions/edit-catalog"
+  status = 200
+  force = true
+
 # --- Security Headers ---
 
 [[headers]]

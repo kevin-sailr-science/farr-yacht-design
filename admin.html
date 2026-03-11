@@ -42,7 +42,260 @@
       </div>
     </div>
 
+    <!-- Tab Navigation -->
+    <div style="display:flex;gap:0;border-bottom:2px solid var(--border);margin:0 2rem;">
+      <button class="admin-tab admin-tab--active" data-tab="catalog" onclick="switchTab('catalog')">Catalog</button>
+      <button class="admin-tab" data-tab="inventory" onclick="switchTab('inventory')">Plan Inventory</button>
+      <button class="admin-tab" data-tab="requests" onclick="switchTab('requests')">Requests</button>
+      <button class="admin-tab" data-tab="purchases" onclick="switchTab('purchases')">Purchases</button>
+    </div>
+
     <div class="admin-wrap">
+
+      <!-- ══════════════════════════════════════════════ -->
+      <!-- CATALOG TAB                                    -->
+      <!-- ══════════════════════════════════════════════ -->
+      <div id="tab-catalog" class="admin-tab-panel">
+
+        <!-- Stats Bar -->
+        <div class="admin-stat-grid" style="margin-top:1.5rem;" id="catalog-stats-grid">
+          <div class="admin-stat">
+            <div class="admin-stat-label">Total Designs</div>
+            <div class="admin-stat-value" id="cat-stat-total">--</div>
+            <div class="admin-stat-sub">in boats.json</div>
+          </div>
+          <div class="admin-stat">
+            <div class="admin-stat-label">Visible</div>
+            <div class="admin-stat-value" id="cat-stat-visible">--</div>
+            <div class="admin-stat-sub">on public site</div>
+          </div>
+          <div class="admin-stat">
+            <div class="admin-stat-label">Tier 1</div>
+            <div class="admin-stat-value" id="cat-stat-t1">--</div>
+            <div class="admin-stat-sub">master list</div>
+          </div>
+          <div class="admin-stat">
+            <div class="admin-stat-label">Purchasable</div>
+            <div class="admin-stat-value" id="cat-stat-purchasable">--</div>
+            <div class="admin-stat-sub">with Stripe planId</div>
+          </div>
+        </div>
+
+        <!-- Toolbar -->
+        <div style="display:flex;flex-wrap:wrap;gap:0.75rem;align-items:center;margin-top:1.5rem;">
+          <div style="flex:1;min-width:220px;">
+            <input type="text" id="cat-search" placeholder="Search by design number, name, or builder&hellip;" style="width:100%;padding:0.55rem 1rem;border:1px solid var(--border);border-radius:8px;background:var(--panel);color:var(--text-primary);font-size:0.85rem;">
+          </div>
+          <select id="cat-tier-filter" style="padding:0.55rem 0.75rem;border:1px solid var(--border);border-radius:8px;background:var(--panel);color:var(--text-primary);font-size:0.82rem;">
+            <option value="all">All Tiers</option>
+            <option value="1">Tier 1</option>
+            <option value="2">Tier 2</option>
+            <option value="3">Tier 3</option>
+          </select>
+          <select id="cat-status-filter" style="padding:0.55rem 0.75rem;border:1px solid var(--border);border-radius:8px;background:var(--panel);color:var(--text-primary);font-size:0.82rem;">
+            <option value="all">All Statuses</option>
+            <option value="available">Available</option>
+            <option value="not_digitized">Not Digitized</option>
+            <option value="request_from_shed">Archive</option>
+            <option value="coming_soon">Coming Soon</option>
+          </select>
+          <button class="btn-waitlist" style="font-size:0.78rem;padding:0.45rem 0.9rem;" onclick="loadCatalog()">&#8635; Refresh</button>
+          <button class="btn-buy" style="font-size:0.78rem;padding:0.45rem 0.9rem;" onclick="showAddDesignForm()">+ Add Design</button>
+        </div>
+
+        <!-- Results count -->
+        <p style="color:var(--text-muted);font-size:0.8rem;margin-top:0.75rem;" id="cat-results">Loading catalog&hellip;</p>
+
+        <!-- Save banner -->
+        <div id="catalog-save-msg" style="display:none;background:var(--accent);color:#fff;font-size:0.8rem;padding:0.6rem 1rem;border-radius:6px;margin-top:0.75rem;">
+          Design saved. Site will rebuild in ~60 seconds.
+        </div>
+
+        <!-- Conflict banner -->
+        <div id="catalog-conflict-msg" style="display:none;background:#fef3c7;border:1px solid #f59e0b;color:#92400e;font-size:0.8rem;padding:0.6rem 1rem;border-radius:6px;margin-top:0.75rem;">
+          Conflict &mdash; someone else modified boats.json. Click Refresh and try your edit again.
+        </div>
+
+        <!-- Catalog table -->
+        <div style="overflow-x:auto;margin-top:1rem;">
+          <table class="admin-table" id="catalog-table">
+            <thead>
+              <tr>
+                <th style="width:70px;">#</th>
+                <th>Name</th>
+                <th>Year</th>
+                <th>Tier</th>
+                <th>Status</th>
+                <th>Builder</th>
+                <th style="width:60px;">Edit</th>
+              </tr>
+            </thead>
+            <tbody id="catalog-tbody">
+              <tr><td colspan="7" style="text-align:center;color:var(--text-muted);padding:2rem;">Loading catalog&hellip;</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Pagination -->
+        <div style="display:flex;justify-content:center;gap:0.5rem;margin-top:1rem;" id="cat-pagination"></div>
+
+        <!-- ── Edit Design Panel ── -->
+        <div id="catalog-edit-panel" class="waitlist-panel" style="display:none;margin-top:1.5rem;">
+          <div style="display:flex;justify-content:space-between;align-items:center;">
+            <h2 id="cat-edit-title" style="font-size:1.1rem;margin:0;">Edit Design</h2>
+            <button class="btn-waitlist" style="font-size:0.72rem;padding:0.25rem 0.7rem;" onclick="closeCatalogEdit()">&#10005; Close</button>
+          </div>
+
+          <div class="waitlist-form" style="max-width:720px;margin-top:1rem;">
+            <!-- Row 1: Core identity -->
+            <div class="waitlist-row">
+              <div class="waitlist-field">
+                <label for="ce-dn">Design Number</label>
+                <input type="text" id="ce-dn" readonly style="background:var(--farr-mid);cursor:not-allowed;">
+              </div>
+              <div class="waitlist-field">
+                <label for="ce-name">Name</label>
+                <input type="text" id="ce-name" placeholder="e.g. FARR 40">
+              </div>
+              <div class="waitlist-field">
+                <label for="ce-year">Year</label>
+                <input type="number" id="ce-year" placeholder="1995">
+              </div>
+            </div>
+
+            <!-- Row 2: Classification -->
+            <div class="waitlist-row">
+              <div class="waitlist-field">
+                <label for="ce-tier">Tier</label>
+                <select id="ce-tier">
+                  <option value="1">Tier 1 — Master List</option>
+                  <option value="2">Tier 2 — Card Only</option>
+                  <option value="3">Tier 3 — Orphan</option>
+                </select>
+              </div>
+              <div class="waitlist-field">
+                <label for="ce-planstatus">Plan Status</label>
+                <select id="ce-planstatus">
+                  <option value="available">Available</option>
+                  <option value="not_digitized">Not Digitized</option>
+                  <option value="request_from_shed">Archive (Request from Shed)</option>
+                  <option value="coming_soon">Coming Soon</option>
+                </select>
+              </div>
+              <div class="waitlist-field">
+                <label for="ce-hidden">Visibility</label>
+                <select id="ce-hidden">
+                  <option value="false">Visible</option>
+                  <option value="true">Hidden</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Row 3: Design details -->
+            <div class="waitlist-row">
+              <div class="waitlist-field">
+                <label for="ce-designtype">Design Type</label>
+                <input type="text" id="ce-designtype" placeholder="e.g. Racing Yacht">
+              </div>
+              <div class="waitlist-field">
+                <label for="ce-designrule">Design Rule</label>
+                <input type="text" id="ce-designrule" placeholder="e.g. IMS, IRC, ORC">
+              </div>
+              <div class="waitlist-field">
+                <label for="ce-classification">Classification</label>
+                <input type="text" id="ce-classification" placeholder="e.g. DNV, ABS">
+              </div>
+            </div>
+
+            <!-- Row 4: Build details -->
+            <div class="waitlist-row">
+              <div class="waitlist-field">
+                <label for="ce-builder">Builder</label>
+                <input type="text" id="ce-builder" placeholder="e.g. Cookson Boats">
+              </div>
+              <div class="waitlist-field">
+                <label for="ce-owner">Owner</label>
+                <input type="text" id="ce-owner" placeholder="Original owner">
+              </div>
+              <div class="waitlist-field">
+                <label for="ce-hullsbuilt">Hulls Built</label>
+                <input type="number" id="ce-hullsbuilt" placeholder="0">
+              </div>
+            </div>
+
+            <!-- Row 5: Construction -->
+            <div class="waitlist-row">
+              <div class="waitlist-field">
+                <label for="ce-hullconstruction">Hull Construction</label>
+                <input type="text" id="ce-hullconstruction" placeholder="e.g. Composite, Aluminium">
+              </div>
+              <div class="waitlist-field">
+                <label for="ce-keeltype">Keel Type</label>
+                <input type="text" id="ce-keeltype" placeholder="e.g. Fixed, Canting">
+              </div>
+              <div class="waitlist-field">
+                <label for="ce-rigtype">Rig Type</label>
+                <input type="text" id="ce-rigtype" placeholder="e.g. Sloop, Fractional">
+              </div>
+            </div>
+
+            <!-- Row 6: Categories -->
+            <div class="waitlist-field">
+              <label for="ce-category">Categories (comma-separated)</label>
+              <input type="text" id="ce-category" placeholder="e.g. Grand Prix, One Design">
+            </div>
+
+            <!-- Row 7: Descriptions -->
+            <div class="waitlist-field">
+              <label for="ce-shortdesc">Short Description</label>
+              <input type="text" id="ce-shortdesc" placeholder="One-line summary">
+            </div>
+            <div class="waitlist-field">
+              <label for="ce-description">Full Description</label>
+              <textarea id="ce-description" rows="3" style="width:100%;padding:0.5rem 0.75rem;border:1px solid var(--border);border-radius:6px;background:var(--panel);color:var(--text-primary);font-size:0.85rem;font-family:inherit;resize:vertical;" placeholder="Detailed description&hellip;"></textarea>
+            </div>
+
+            <!-- E-Commerce section -->
+            <div style="margin-top:1rem;padding-top:1rem;border-top:1px solid var(--border);">
+              <p style="font-family:var(--font-heading);font-size:0.9rem;color:var(--text-primary);margin-bottom:0.75rem;">E-Commerce (Stripe)</p>
+              <div class="waitlist-row">
+                <div class="waitlist-field">
+                  <label for="ce-planid">Plan ID</label>
+                  <input type="text" id="ce-planid" placeholder="e.g. farr-40-full" style="font-family:var(--font-mono);font-size:0.82rem;">
+                </div>
+                <div class="waitlist-field">
+                  <label for="ce-planprice">Price (USD)</label>
+                  <input type="number" id="ce-planprice" placeholder="350">
+                </div>
+                <div class="waitlist-field">
+                  <label for="ce-stripepriceenv">Stripe Price Env Var</label>
+                  <input type="text" id="ce-stripepriceenv" placeholder="STRIPE_PRICE_FARR40" style="font-family:var(--font-mono);font-size:0.82rem;">
+                </div>
+              </div>
+              <div class="waitlist-field">
+                <label for="ce-plandesc">Plan Description</label>
+                <input type="text" id="ce-plandesc" placeholder="What's included in the plan set">
+              </div>
+              <div class="waitlist-field">
+                <label for="ce-plancontents">Plan Contents (comma-separated)</label>
+                <input type="text" id="ce-plancontents" placeholder="Sail Plan, Lines Drawing, Deck Layout">
+              </div>
+            </div>
+
+            <!-- Actions -->
+            <div style="display:flex;gap:0.75rem;margin-top:1.25rem;">
+              <button class="btn-buy" id="ce-save-btn" onclick="saveCatalogEdit()">Save Design</button>
+              <button class="btn-waitlist" onclick="closeCatalogEdit()">Cancel</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ══════════════════════════════════════════════ -->
+      <!-- INVENTORY TAB                                  -->
+      <!-- ══════════════════════════════════════════════ -->
+      <div id="tab-inventory" class="admin-tab-panel" style="display:none;">
 
       <!-- Stats Bar -->
       <div class="admin-stat-grid" style="margin-top:2rem;" id="stats-grid">
@@ -156,7 +409,12 @@
         </div>
       </div>
 
-      <!-- Waitlist / Design Requests -->
+      </div><!-- end tab-inventory -->
+
+      <!-- ══════════════════════════════════════════════ -->
+      <!-- REQUESTS TAB                                   -->
+      <!-- ══════════════════════════════════════════════ -->
+      <div id="tab-requests" class="admin-tab-panel" style="display:none;">
       <div class="admin-section" style="margin-top:2.5rem;">
         <div class="admin-section-title">Design Requests (Waitlist)</div>
         <p style="font-size:0.82rem;color:var(--text-muted);margin-bottom:1rem;">Submitted via the design-plans.html request form. Managed in Netlify Forms.</p>
@@ -192,7 +450,12 @@
         </div>
       </div>
 
-      <!-- Recent Purchases -->
+      </div><!-- end tab-requests -->
+
+      <!-- ══════════════════════════════════════════════ -->
+      <!-- PURCHASES TAB                                  -->
+      <!-- ══════════════════════════════════════════════ -->
+      <div id="tab-purchases" class="admin-tab-panel" style="display:none;">
       <div class="admin-section" style="margin-top:2.5rem;">
         <div class="admin-section-title">Recent Purchases</div>
         <p style="font-size:0.82rem;color:var(--text-muted);margin-bottom:1rem;">Recent Stripe charges for design plan purchases.</p>
@@ -223,10 +486,284 @@
         </div>
       </div>
 
+      </div><!-- end tab-purchases -->
+
     </div>
   </div>
 
+  <style>
+    .admin-tab { padding:0.65rem 1.25rem;font-size:0.82rem;font-weight:600;color:var(--text-muted);background:none;border:none;border-bottom:2px solid transparent;cursor:pointer;margin-bottom:-2px;transition:color 0.15s,border-color 0.15s; }
+    .admin-tab:hover { color:var(--text-primary); }
+    .admin-tab--active { color:var(--accent);border-bottom-color:var(--accent); }
+  </style>
+
   <script>
+    /* ---- Tab switching ---- */
+    function switchTab(tabName) {
+      document.querySelectorAll('.admin-tab-panel').forEach(function(p){ p.style.display = 'none'; });
+      document.querySelectorAll('.admin-tab').forEach(function(t){ t.classList.remove('admin-tab--active'); });
+      var panel = document.getElementById('tab-' + tabName);
+      if (panel) panel.style.display = 'block';
+      var btn = document.querySelector('.admin-tab[data-tab="' + tabName + '"]');
+      if (btn) btn.classList.add('admin-tab--active');
+    }
+
+    /* ---- Catalog Management (Sprint 5B) ---- */
+    var CATALOG = [];
+    var CATALOG_SHA = null;
+    var CATALOG_PAGE = 0;
+    var CATALOG_PAGE_SIZE = 50;
+    var _catalogEditingDN = null; /* designNumber being edited, or null for add */
+
+    function loadCatalog() {
+      var tbody = document.getElementById('catalog-tbody');
+      tbody.innerHTML = '<tr><td colspan="7" style="text-align:center;color:var(--text-muted);padding:2rem;">Loading catalog&hellip;</td></tr>';
+      document.getElementById('cat-results').textContent = 'Loading catalog\u2026';
+
+      fetch('/api/catalog')
+        .then(function(r){ return r.json(); })
+        .then(function(data){
+          if (data.designs) {
+            CATALOG = data.designs;
+            CATALOG_SHA = data.sha;
+            updateCatalogStats(data.stats);
+            CATALOG_PAGE = 0;
+            renderCatalog();
+          } else {
+            tbody.innerHTML = '<tr><td colspan="7" style="color:#b91c1c;">Failed to load catalog: ' + (data.error||'unknown') + '</td></tr>';
+          }
+        })
+        .catch(function(err){
+          console.error('loadCatalog error:', err);
+          tbody.innerHTML = '<tr><td colspan="7" style="color:#b91c1c;">Network error loading catalog.</td></tr>';
+        });
+    }
+
+    function updateCatalogStats(stats) {
+      if (!stats) return;
+      document.getElementById('cat-stat-total').textContent = stats.total || '--';
+      document.getElementById('cat-stat-visible').textContent = stats.visible || '--';
+      document.getElementById('cat-stat-t1').textContent = stats.tier1 || '--';
+      document.getElementById('cat-stat-purchasable').textContent = stats.purchasable || '--';
+    }
+
+    function getFilteredCatalog() {
+      var search = (document.getElementById('cat-search').value || '').toLowerCase();
+      var tierFilter = document.getElementById('cat-tier-filter').value;
+      var statusFilter = document.getElementById('cat-status-filter').value;
+
+      return CATALOG.filter(function(b) {
+        if (tierFilter !== 'all' && String(b.tier) !== tierFilter) return false;
+        if (statusFilter !== 'all' && b.planStatus !== statusFilter) return false;
+        if (search) {
+          var dn = String(b.designNumber || '').toLowerCase();
+          var nm = String(b.name || '').toLowerCase();
+          var bl = String(b.builder || '').toLowerCase();
+          var ti = String(b.title || '').toLowerCase();
+          if (dn.indexOf(search) === -1 && nm.indexOf(search) === -1 && bl.indexOf(search) === -1 && ti.indexOf(search) === -1) return false;
+        }
+        return true;
+      });
+    }
+
+    function renderCatalog() {
+      var filtered = getFilteredCatalog();
+      var total = filtered.length;
+      var start = CATALOG_PAGE * CATALOG_PAGE_SIZE;
+      var end = Math.min(start + CATALOG_PAGE_SIZE, total);
+      var page = filtered.slice(start, end);
+
+      document.getElementById('cat-results').textContent = total + ' design' + (total!==1?'s':'') + ' found' + (total > CATALOG_PAGE_SIZE ? ' \u2014 showing ' + (start+1) + '\u2013' + end : '');
+
+      var tbody = document.getElementById('catalog-tbody');
+      if (page.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="7" style="text-align:center;color:var(--text-muted);padding:2rem;">No designs match your filters.</td></tr>';
+      } else {
+        tbody.innerHTML = page.map(function(b) {
+          var statusBadge = '';
+          if (b.planStatus === 'available') statusBadge = '<span class="plan-badge plan-badge--available">Available</span>';
+          else if (b.planStatus === 'not_digitized') statusBadge = '<span class="plan-badge plan-badge--digitizing">Digitizing</span>';
+          else if (b.planStatus === 'request_from_shed') statusBadge = '<span class="plan-badge" style="color:#d97706;background:rgba(245,158,11,0.08);border:1px solid rgba(245,158,11,0.25);font-family:var(--font-mono);font-size:0.62rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;padding:0.2rem 0.55rem;border-radius:100px;">Archive</span>';
+          else statusBadge = '<span class="plan-badge" style="color:var(--text-muted);background:rgba(85,96,112,0.08);border:1px solid rgba(85,96,112,0.2);font-family:var(--font-mono);font-size:0.62rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;padding:0.2rem 0.55rem;border-radius:100px;">Soon</span>';
+
+          var tierLabel = b.tier === 1 ? 'T1' : b.tier === 2 ? 'T2' : 'T3';
+          var tierColor = b.tier === 1 ? 'var(--accent)' : b.tier === 2 ? '#d97706' : 'var(--text-muted)';
+          var hiddenIcon = b.hidden ? ' <span title="Hidden" style="opacity:0.5;">&#128065;</span>' : '';
+
+          return '<tr style="cursor:pointer;" onclick="editCatalogDesign(\'' + escHtml(String(b.designNumber)) + '\')">'
+            +'<td style="font-family:var(--font-mono);font-size:0.82rem;font-weight:600;">' + escHtml(b.designNumber) + hiddenIcon + '</td>'
+            +'<td style="font-weight:500;color:var(--text-primary);">' + escHtml(b.name || b.title || '--') + '</td>'
+            +'<td style="font-family:var(--font-mono);">' + (b.year || '--') + '</td>'
+            +'<td><span style="font-family:var(--font-mono);font-size:0.72rem;font-weight:700;color:' + tierColor + ';">' + tierLabel + '</span></td>'
+            +'<td>' + statusBadge + '</td>'
+            +'<td style="font-size:0.82rem;color:var(--text-muted);">' + escHtml(b.builder || '--') + '</td>'
+            +'<td><button class="btn-waitlist" style="font-size:0.72rem;padding:0.2rem 0.6rem;" onclick="event.stopPropagation();editCatalogDesign(\'' + escHtml(String(b.designNumber)) + '\')">Edit</button></td>'
+            +'</tr>';
+        }).join('');
+      }
+
+      /* Pagination */
+      var totalPages = Math.ceil(total / CATALOG_PAGE_SIZE);
+      var pagDiv = document.getElementById('cat-pagination');
+      if (totalPages <= 1) { pagDiv.innerHTML = ''; return; }
+      var btns = [];
+      for (var i = 0; i < totalPages; i++) {
+        var active = i === CATALOG_PAGE ? 'background:var(--accent);color:#fff;border-color:var(--accent);' : '';
+        btns.push('<button style="padding:0.3rem 0.65rem;font-size:0.78rem;border:1px solid var(--border);border-radius:6px;background:var(--panel);color:var(--text-primary);cursor:pointer;' + active + '" onclick="CATALOG_PAGE=' + i + ';renderCatalog();">' + (i+1) + '</button>');
+      }
+      pagDiv.innerHTML = btns.join('');
+    }
+
+    /* Search/filter event listeners */
+    document.getElementById('cat-search').addEventListener('input', function(){ CATALOG_PAGE = 0; renderCatalog(); });
+    document.getElementById('cat-tier-filter').addEventListener('change', function(){ CATALOG_PAGE = 0; renderCatalog(); });
+    document.getElementById('cat-status-filter').addEventListener('change', function(){ CATALOG_PAGE = 0; renderCatalog(); });
+
+    /* ── Edit a design ── */
+    function editCatalogDesign(dn) {
+      var design = CATALOG.find(function(b){ return String(b.designNumber) === String(dn); });
+      if (!design) { alert('Design ' + dn + ' not found'); return; }
+      _catalogEditingDN = dn;
+
+      document.getElementById('cat-edit-title').textContent = 'Edit: #' + dn + (design.name ? ' \u2014 ' + design.name : '');
+      document.getElementById('ce-dn').value = design.designNumber;
+      document.getElementById('ce-name').value = design.name || '';
+      document.getElementById('ce-year').value = design.year || '';
+      document.getElementById('ce-tier').value = String(design.tier || 1);
+      document.getElementById('ce-planstatus').value = design.planStatus || 'coming_soon';
+      document.getElementById('ce-hidden').value = design.hidden ? 'true' : 'false';
+      document.getElementById('ce-designtype').value = design.designType || '';
+      document.getElementById('ce-designrule').value = design.designRule || '';
+      document.getElementById('ce-classification').value = design.classification || '';
+      document.getElementById('ce-builder').value = design.builder || '';
+      document.getElementById('ce-owner').value = design.owner || '';
+      document.getElementById('ce-hullsbuilt').value = design.hullsBuilt || '';
+      document.getElementById('ce-hullconstruction').value = design.hullConstruction || '';
+      document.getElementById('ce-keeltype').value = design.keelType || '';
+      document.getElementById('ce-rigtype').value = design.rigType || '';
+      document.getElementById('ce-category').value = Array.isArray(design.category) ? design.category.join(', ') : '';
+      document.getElementById('ce-shortdesc').value = design.shortDescription || '';
+      document.getElementById('ce-description').value = design.description || '';
+      /* E-commerce */
+      document.getElementById('ce-planid').value = design.planId || '';
+      document.getElementById('ce-planprice').value = design.planPrice || '';
+      document.getElementById('ce-stripepriceenv').value = design.stripePriceEnv || '';
+      document.getElementById('ce-plandesc').value = design.planDescription || '';
+      document.getElementById('ce-plancontents').value = Array.isArray(design.planContents) ? design.planContents.join(', ') : '';
+
+      document.getElementById('ce-dn').readOnly = true;
+      document.getElementById('ce-save-btn').textContent = 'Save Design';
+      document.getElementById('catalog-edit-panel').style.display = 'block';
+      document.getElementById('catalog-edit-panel').scrollIntoView({behavior:'smooth'});
+    }
+
+    /* ── Add new design ── */
+    function showAddDesignForm() {
+      _catalogEditingDN = null;
+      document.getElementById('cat-edit-title').textContent = 'Add New Design';
+      /* Clear all fields */
+      ['ce-dn','ce-name','ce-year','ce-designtype','ce-designrule','ce-classification',
+       'ce-builder','ce-owner','ce-hullsbuilt','ce-hullconstruction','ce-keeltype','ce-rigtype',
+       'ce-category','ce-shortdesc','ce-description',
+       'ce-planid','ce-planprice','ce-stripepriceenv','ce-plandesc','ce-plancontents'].forEach(function(id){
+        var el = document.getElementById(id);
+        if (el) el.value = '';
+      });
+      document.getElementById('ce-tier').value = '1';
+      document.getElementById('ce-planstatus').value = 'coming_soon';
+      document.getElementById('ce-hidden').value = 'false';
+      document.getElementById('ce-dn').readOnly = false;
+      document.getElementById('ce-save-btn').textContent = 'Add Design';
+      document.getElementById('catalog-edit-panel').style.display = 'block';
+      document.getElementById('catalog-edit-panel').scrollIntoView({behavior:'smooth'});
+    }
+
+    function closeCatalogEdit() {
+      document.getElementById('catalog-edit-panel').style.display = 'none';
+      _catalogEditingDN = null;
+    }
+
+    /* ── Save (PUT for edit, POST for add) ── */
+    function saveCatalogEdit() {
+      if (!_identityToken) { alert('Not signed in. Please sign in first.'); return; }
+      if (!CATALOG_SHA) { alert('Catalog not loaded. Click Refresh first.'); return; }
+
+      var dn = document.getElementById('ce-dn').value.trim();
+      if (!dn) { alert('Design Number is required.'); return; }
+
+      var fields = {
+        name: document.getElementById('ce-name').value.trim() || null,
+        year: parseInt(document.getElementById('ce-year').value) || null,
+        tier: parseInt(document.getElementById('ce-tier').value) || 1,
+        planStatus: document.getElementById('ce-planstatus').value,
+        hidden: document.getElementById('ce-hidden').value === 'true',
+        designType: document.getElementById('ce-designtype').value.trim() || null,
+        designRule: document.getElementById('ce-designrule').value.trim() || null,
+        classification: document.getElementById('ce-classification').value.trim() || null,
+        builder: document.getElementById('ce-builder').value.trim() || null,
+        owner: document.getElementById('ce-owner').value.trim() || null,
+        hullsBuilt: parseInt(document.getElementById('ce-hullsbuilt').value) || null,
+        hullConstruction: document.getElementById('ce-hullconstruction').value.trim() || null,
+        keelType: document.getElementById('ce-keeltype').value.trim() || null,
+        rigType: document.getElementById('ce-rigtype').value.trim() || null,
+        category: document.getElementById('ce-category').value.split(',').map(function(s){return s.trim();}).filter(Boolean),
+        shortDescription: document.getElementById('ce-shortdesc').value.trim() || null,
+        description: document.getElementById('ce-description').value.trim() || null,
+        /* E-commerce */
+        planId: document.getElementById('ce-planid').value.trim() || null,
+        planPrice: parseInt(document.getElementById('ce-planprice').value) || null,
+        stripePriceEnv: document.getElementById('ce-stripepriceenv').value.trim() || null,
+        planDescription: document.getElementById('ce-plandesc').value.trim() || null,
+        planContents: document.getElementById('ce-plancontents').value.split(',').map(function(s){return s.trim();}).filter(Boolean)
+      };
+      if (fields.planContents.length === 0) fields.planContents = null;
+      if (fields.category.length === 0) fields.category = [];
+
+      var saveBtn = document.getElementById('ce-save-btn');
+      saveBtn.textContent = 'Saving\u2026';
+      saveBtn.disabled = true;
+
+      var isEdit = _catalogEditingDN !== null;
+      var url = '/api/catalog';
+      var method = isEdit ? 'PUT' : 'POST';
+      var payload = isEdit
+        ? { designNumber: dn, sha: CATALOG_SHA, fields: fields }
+        : { sha: CATALOG_SHA, design: Object.assign({ designNumber: dn }, fields) };
+
+      fetch(url, {
+        method: method,
+        headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + _identityToken },
+        body: JSON.stringify(payload)
+      })
+      .then(function(r){ return r.json().then(function(d){ return {status:r.status, data:d}; }); })
+      .then(function(resp){
+        saveBtn.disabled = false;
+        saveBtn.textContent = isEdit ? 'Save Design' : 'Add Design';
+
+        if (resp.data.success) {
+          CATALOG_SHA = resp.data.sha;
+          closeCatalogEdit();
+          /* Show success */
+          var msg = document.getElementById('catalog-save-msg');
+          msg.style.display = 'block';
+          setTimeout(function(){ msg.style.display = 'none'; }, 5000);
+          /* Reload catalog to get fresh data */
+          loadCatalog();
+        } else if (resp.data.code === 'CONFLICT') {
+          var cmsg = document.getElementById('catalog-conflict-msg');
+          cmsg.style.display = 'block';
+          setTimeout(function(){ cmsg.style.display = 'none'; }, 8000);
+        } else {
+          alert('Save failed: ' + (resp.data.error || 'Unknown error'));
+        }
+      })
+      .catch(function(err){
+        saveBtn.disabled = false;
+        saveBtn.textContent = isEdit ? 'Save Design' : 'Add Design';
+        alert('Network error: ' + err.message);
+      });
+    }
+
     /* ---- Netlify Identity Auth ---- */
     /* Requires: Netlify Identity enabled on this site (Site Settings -> Identity -> Enable).
        Registration must be set to "Invite Only".
@@ -244,6 +781,7 @@
       }
       document.getElementById('login-gate').style.display = 'none';
       document.getElementById('admin-dashboard').style.display = 'block';
+      loadCatalog();
       loadInventoryFromBlob();
     }
 
