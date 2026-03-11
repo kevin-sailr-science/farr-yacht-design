@@ -3,6 +3,7 @@
 # Deploy: farr-deploy-v8.zip -> Netlify drag-and-drop
 
 [build]
+  command = "python3 build_site.py"
   publish = "."
   functions = "netlify/functions"
 
