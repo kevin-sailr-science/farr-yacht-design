@@ -66,6 +66,13 @@
   status = 200
   force = true
 
+# Image upload API (admin portal — POST)
+[[redirects]]
+  from = "/api/upload-image"
+  to = "/.netlify/functions/upload-image"
+  status = 200
+  force = true
+
 # --- Security Headers ---
 
 [[headers]]

@@ -255,6 +255,28 @@
               <textarea id="ce-description" rows="3" style="width:100%;padding:0.5rem 0.75rem;border:1px solid var(--border);border-radius:6px;background:var(--panel);color:var(--text-primary);font-size:0.85rem;font-family:inherit;resize:vertical;" placeholder="Detailed description&hellip;"></textarea>
             </div>
 
+            <!-- Image section -->
+            <div style="margin-top:1rem;padding-top:1rem;border-top:1px solid var(--border);">
+              <p style="font-family:var(--font-heading);font-size:0.9rem;color:var(--text-primary);margin-bottom:0.75rem;">Design Image</p>
+              <div style="display:flex;gap:1.5rem;align-items:flex-start;flex-wrap:wrap;">
+                <div id="ce-img-preview" style="width:200px;height:140px;border:1px dashed var(--border);border-radius:8px;display:flex;align-items:center;justify-content:center;overflow:hidden;background:var(--farr-mid);">
+                  <span style="font-size:0.75rem;color:var(--text-muted);">No image</span>
+                </div>
+                <div style="flex:1;min-width:200px;">
+                  <div class="waitlist-field" style="margin-bottom:0.5rem;">
+                    <label for="ce-imgfile">Upload New Image (JPG, max 5 MB)</label>
+                    <input type="file" id="ce-imgfile" accept="image/jpeg,image/png,image/webp" onchange="previewImage(this)" style="font-size:0.82rem;">
+                  </div>
+                  <div class="waitlist-field">
+                    <label for="ce-imgmain">Current filename</label>
+                    <input type="text" id="ce-imgmain" readonly style="font-family:var(--font-mono);font-size:0.82rem;background:var(--farr-mid);cursor:not-allowed;" placeholder="No image assigned">
+                  </div>
+                  <button class="btn-waitlist" style="font-size:0.72rem;padding:0.25rem 0.7rem;margin-top:0.5rem;" onclick="removeImage()" id="ce-img-remove-btn" disabled>Remove Image</button>
+                  <p id="ce-img-upload-status" style="font-size:0.75rem;color:var(--text-muted);margin-top:0.5rem;display:none;"></p>
+                </div>
+              </div>
+            </div>
+
             <!-- E-Commerce section -->
             <div style="margin-top:1rem;padding-top:1rem;border-top:1px solid var(--border);">
               <p style="font-family:var(--font-heading);font-size:0.9rem;color:var(--text-primary);margin-bottom:0.75rem;">E-Commerce (Stripe)</p>
@@ -653,6 +675,14 @@
 
       document.getElementById('ce-dn').readOnly = true;
       document.getElementById('ce-save-btn').textContent = 'Save Design';
+      /* Image */
+      _pendingImageFile = null;
+      _pendingImageRemove = false;
+      document.getElementById('ce-imgfile').value = '';
+      document.getElementById('ce-img-upload-status').style.display = 'none';
+      var mainImg = (design.images && design.images.main) ? design.images.main : null;
+      setImagePreview(mainImg);
+
       document.getElementById('catalog-edit-panel').style.display = 'block';
       document.getElementById('catalog-edit-panel').scrollIntoView({behavior:'smooth'});
     }
@@ -674,6 +704,13 @@
       document.getElementById('ce-hidden').value = 'false';
       document.getElementById('ce-dn').readOnly = false;
       document.getElementById('ce-save-btn').textContent = 'Add Design';
+      /* Image */
+      _pendingImageFile = null;
+      _pendingImageRemove = false;
+      document.getElementById('ce-imgfile').value = '';
+      document.getElementById('ce-img-upload-status').style.display = 'none';
+      setImagePreview(null);
+
       document.getElementById('catalog-edit-panel').style.display = 'block';
       document.getElementById('catalog-edit-panel').scrollIntoView({behavior:'smooth'});
     }
@@ -681,6 +718,80 @@
     function closeCatalogEdit() {
       document.getElementById('catalog-edit-panel').style.display = 'none';
       _catalogEditingDN = null;
+      _pendingImageFile = null;
+      _pendingImageRemove = false;
+      document.getElementById('ce-imgfile').value = '';
+    }
+
+    /* ── Image handling ── */
+    var _pendingImageFile = null;   /* File object waiting to upload on save */
+    var _pendingImageRemove = false; /* Flag: remove current image on save */
+
+    function previewImage(input) {
+      var file = input.files && input.files[0];
+      if (!file) return;
+      if (file.size > 5 * 1024 * 1024) { alert('Image must be under 5 MB.'); input.value = ''; return; }
+      _pendingImageFile = file;
+      _pendingImageRemove = false;
+      var reader = new FileReader();
+      reader.onload = function(e) {
+        document.getElementById('ce-img-preview').innerHTML = '<img src="' + e.target.result + '" style="width:100%;height:100%;object-fit:cover;">';
+      };
+      reader.readAsDataURL(file);
+      document.getElementById('ce-img-remove-btn').disabled = false;
+    }
+
+    function removeImage() {
+      _pendingImageFile = null;
+      _pendingImageRemove = true;
+      document.getElementById('ce-img-preview').innerHTML = '<span style="font-size:0.75rem;color:var(--text-muted);">Image removed</span>';
+      document.getElementById('ce-imgmain').value = '';
+      document.getElementById('ce-imgfile').value = '';
+      document.getElementById('ce-img-remove-btn').disabled = true;
+    }
+
+    function setImagePreview(filename) {
+      var preview = document.getElementById('ce-img-preview');
+      var removeBtn = document.getElementById('ce-img-remove-btn');
+      if (filename) {
+        preview.innerHTML = '<img src="/images/' + encodeURIComponent(filename) + '" style="width:100%;height:100%;object-fit:cover;" onerror="this.parentNode.innerHTML=\'<span style=\\\'font-size:0.75rem;color:var(--text-muted);\\\'>Load error</span>\'">';
+        document.getElementById('ce-imgmain').value = filename;
+        removeBtn.disabled = false;
+      } else {
+        preview.innerHTML = '<span style="font-size:0.75rem;color:var(--text-muted);">No image</span>';
+        document.getElementById('ce-imgmain').value = '';
+        removeBtn.disabled = true;
+      }
+    }
+
+    /* Upload image to GitHub via Netlify Function, returns filename on success */
+    function uploadImageToGitHub(designNumber, file) {
+      return new Promise(function(resolve, reject) {
+        var reader = new FileReader();
+        reader.onload = function(e) {
+          var base64 = e.target.result.split(',')[1]; /* strip data:... prefix */
+          var ext = file.name.split('.').pop().toLowerCase();
+          if (ext === 'jpeg') ext = 'jpg';
+          var filename = String(designNumber).padStart(3, '0') + '_main.' + ext;
+
+          fetch('/.netlify/functions/upload-image', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              'Authorization': 'Bearer ' + _identityToken
+            },
+            body: JSON.stringify({ filename: filename, content: base64 })
+          })
+          .then(function(r){ return r.json(); })
+          .then(function(data){
+            if (data.success) resolve(data.filename);
+            else reject(new Error(data.error || 'Upload failed'));
+          })
+          .catch(reject);
+        };
+        reader.onerror = function() { reject(new Error('Failed to read file')); };
+        reader.readAsDataURL(file);
+      });
     }
 
     /* ── Save (PUT for edit, POST for add) ── */
@@ -722,23 +833,50 @@
       var saveBtn = document.getElementById('ce-save-btn');
       saveBtn.textContent = 'Saving\u2026';
       saveBtn.disabled = true;
+      var statusEl = document.getElementById('ce-img-upload-status');
 
-      var isEdit = _catalogEditingDN !== null;
-      var url = '/.netlify/functions/edit-catalog';
-      var method = isEdit ? 'PUT' : 'POST';
-      var payload = isEdit
-        ? { designNumber: dn, sha: CATALOG_SHA, fields: fields }
-        : { sha: CATALOG_SHA, design: Object.assign({ designNumber: dn }, fields) };
+      /* Step 1: Upload image if pending */
+      var imagePromise;
+      if (_pendingImageFile) {
+        statusEl.textContent = 'Uploading image\u2026';
+        statusEl.style.display = 'block';
+        imagePromise = uploadImageToGitHub(dn, _pendingImageFile).then(function(filename) {
+          statusEl.textContent = 'Image uploaded: ' + filename;
+          fields.images = { main: filename, featured: [filename] };
+          return filename;
+        });
+      } else if (_pendingImageRemove) {
+        fields.images = null;
+        imagePromise = Promise.resolve(null);
+      } else {
+        imagePromise = Promise.resolve('skip');
+      }
 
-      fetch(url, {
-        method: method,
-        headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + _identityToken },
-        body: JSON.stringify(payload)
+      imagePromise.then(function(imgResult) {
+        /* If image didn't change, don't include images in fields */
+        if (imgResult === 'skip') delete fields.images;
+
+        statusEl.textContent = 'Saving design\u2026';
+        statusEl.style.display = 'block';
+
+        var isEdit = _catalogEditingDN !== null;
+        var url = '/.netlify/functions/edit-catalog';
+        var method = isEdit ? 'PUT' : 'POST';
+        var payload = isEdit
+          ? { designNumber: dn, sha: CATALOG_SHA, fields: fields }
+          : { sha: CATALOG_SHA, design: Object.assign({ designNumber: dn }, fields) };
+
+        return fetch(url, {
+          method: method,
+          headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + _identityToken },
+          body: JSON.stringify(payload)
+        });
       })
       .then(function(r){ return r.json().then(function(d){ return {status:r.status, data:d}; }); })
       .then(function(resp){
         saveBtn.disabled = false;
-        saveBtn.textContent = isEdit ? 'Save Design' : 'Add Design';
+        saveBtn.textContent = _catalogEditingDN !== null ? 'Save Design' : 'Add Design';
+        statusEl.style.display = 'none';
 
         if (resp.data.success) {
           CATALOG_SHA = resp.data.sha;
@@ -759,8 +897,9 @@
       })
       .catch(function(err){
         saveBtn.disabled = false;
-        saveBtn.textContent = isEdit ? 'Save Design' : 'Add Design';
-        alert('Network error: ' + err.message);
+        saveBtn.textContent = _catalogEditingDN !== null ? 'Save Design' : 'Add Design';
+        statusEl.style.display = 'none';
+        alert('Error: ' + err.message);
       });
     }
 
