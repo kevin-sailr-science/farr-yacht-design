@@ -520,7 +520,7 @@
       tbody.innerHTML = '<tr><td colspan="7" style="text-align:center;color:var(--text-muted);padding:2rem;">Loading catalog&hellip;</td></tr>';
       document.getElementById('cat-results').textContent = 'Loading catalog\u2026';
 
-      fetch('/api/catalog')
+      fetch('/.netlify/functions/edit-catalog')
         .then(function(r){ return r.json(); })
         .then(function(data){
           if (data.designs) {
@@ -724,7 +724,7 @@
       saveBtn.disabled = true;
 
       var isEdit = _catalogEditingDN !== null;
-      var url = '/api/catalog';
+      var url = '/.netlify/functions/edit-catalog';
       var method = isEdit ? 'PUT' : 'POST';
       var payload = isEdit
         ? { designNumber: dn, sha: CATALOG_SHA, fields: fields }
@@ -774,7 +774,11 @@
       netlifyIdentity.logout();
     }
 
+    var _dashboardShown = false; /* guard against double-fire from init+login */
+
     function showDashboard(user) {
+      if (_dashboardShown) return;
+      _dashboardShown = true;
       /* Capture JWT for authenticated save calls */
       if (user && user.token && user.token.access_token) {
         _identityToken = user.token.access_token;
