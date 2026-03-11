@@ -1,5 +1,83 @@
 [
   {
+    "nid": 18503,
+    "title": "673M",
+    "slug": "673m",
+    "designNumber": "Bavaria Cruiser 56",
+    "name": null,
+    "year": 2012,
+    "category": [],
+    "classification": null,
+    "designRule": null,
+    "designType": "Cruising Yacht",
+    "specs": {
+      "loa": {
+        "m": 16.75,
+        "ft": 55
+      }
+    },
+    "description": null,
+    "shortDescription": "56' Cruising Yacht",
+    "shortSummary": null,
+    "builder": "Bavaria Yachtbau",
+    "owner": null,
+    "rigType": null,
+    "rigMaterial": null,
+    "keelType": null,
+    "hullConstruction": null,
+    "hullsBuilt": null,
+    "inProduction": null,
+    "isArchived": null,
+    "images": {
+      "main": "bys_6312.jpg"
+    },
+    "drawings": null,
+    "vppFile": null,
+    "drupalAlias": "designs/673m",
+    "tier": 3,
+    "planStatus": "coming_soon",
+    "hasCardPDF": false,
+    "cardDrawingCount": null,
+    "cardDrawingsAvailable": null,
+    "hidden": false
+  },
+  {
+    "nid": 5471,
+    "title": "667 - Farr 25OD",
+    "slug": "667-farr-25od",
+    "designNumber": "Farr 25OD",
+    "name": null,
+    "year": 2008,
+    "category": [],
+    "classification": null,
+    "designRule": null,
+    "designType": null,
+    "specs": null,
+    "description": null,
+    "shortDescription": null,
+    "shortSummary": null,
+    "builder": null,
+    "owner": null,
+    "rigType": null,
+    "rigMaterial": null,
+    "keelType": null,
+    "hullConstruction": null,
+    "hullsBuilt": null,
+    "inProduction": null,
+    "isArchived": null,
+    "images": null,
+    "drawings": null,
+    "vppFile": null,
+    "drupalAlias": "designs/667-farr-25od",
+    "tier": 3,
+    "planStatus": "coming_soon",
+    "hasCardPDF": false,
+    "cardDrawingCount": null,
+    "cardDrawingsAvailable": null,
+    "hidden": false,
+    "yearEstimated": true
+  },
+  {
     "title": "021",
     "slug": "021",
     "designNumber": "021",
@@ -12,7 +90,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 18.0
+        "ft": 18
       }
     },
     "description": null,
@@ -52,7 +130,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 12.0
+        "ft": 12
       }
     },
     "description": null,
@@ -92,7 +170,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 12.0
+        "ft": 12
       }
     },
     "description": null,
@@ -132,7 +210,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 12.0
+        "ft": 12
       }
     },
     "description": null,
@@ -172,7 +250,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 12.0
+        "ft": 12
       }
     },
     "description": null,
@@ -212,7 +290,7 @@
     "specs": {
       "loa": {
         "m": 3.05,
-        "ft": 10.0
+        "ft": 10
       },
       "beam": {
         "m": 1.35,
@@ -271,7 +349,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 10.0
+        "ft": 10
       }
     },
     "description": null,
@@ -312,23 +390,23 @@
     "specs": {
       "loa": {
         "m": 8.115,
-        "ft": 26.0
+        "ft": 26
       },
       "beam": {
         "m": 2.743,
-        "ft": 9.0
+        "ft": 9
       },
       "draft": {
         "m": 1.473,
         "ft": 4.833333333333333
       },
       "displacement": {
-        "kg": 2096.0,
-        "lbs": 4620.0
+        "kg": 2096,
+        "lbs": 4620
       },
       "ballast": {
-        "kg": 789.0,
-        "lbs": 1740.0
+        "kg": 789,
+        "lbs": 1740
       }
     },
     "description": null,
@@ -411,7 +489,7 @@
     "specs": {
       "loa": {
         "m": 10.125,
-        "ft": 33.0
+        "ft": 33
       },
       "beam": {
         "m": 3.05,
@@ -422,12 +500,12 @@
         "ft": null
       },
       "displacement": {
-        "kg": 3570.0,
-        "lbs": 7870.0
+        "kg": 3570,
+        "lbs": 7870
       },
       "ballast": {
-        "kg": 1497.0,
-        "lbs": 3300.0
+        "kg": 1497,
+        "lbs": 3300
       }
     },
     "description": null,
@@ -474,7 +552,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 33.0
+        "ft": 33
       }
     },
     "description": null,
@@ -515,7 +593,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 35.0
+        "ft": 35
       }
     },
     "description": null,
@@ -555,23 +633,23 @@
     "specs": {
       "loa": {
         "m": 3.7,
-        "ft": 12.0
+        "ft": 12
       },
       "beam": {
         "m": 1.52,
         "ft": null
       },
       "displacement": {
-        "kg": 48.0,
-        "lbs": 106.0
+        "kg": 48,
+        "lbs": 106
       },
       "sailAreaUp": {
         "sqm": 8.8,
-        "sqft": 95.0
+        "sqft": 95
       },
       "sailAreaDown": {
         "sqm": 8.8,
-        "sqft": 95.0
+        "sqft": 95
       }
     },
     "description": "'<p style=\\\"text-align: justify\\\">The 3.7 offers the obvious excitement of single handed trapezing",
@@ -659,11 +737,11 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 12.0
+        "ft": 12
       },
       "displacement": {
         "kg": null,
-        "lbs": 0.0
+        "lbs": 0
       }
     },
     "description": null,
@@ -703,11 +781,11 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 12.0
+        "ft": 12
       },
       "displacement": {
         "kg": null,
-        "lbs": 0.0
+        "lbs": 0
       }
     },
     "description": null,
@@ -749,7 +827,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 12.0
+        "ft": 12
       }
     },
     "description": null,
@@ -790,11 +868,11 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 12.0
+        "ft": 12
       },
       "displacement": {
         "kg": null,
-        "lbs": 0.0
+        "lbs": 0
       }
     },
     "description": null,
@@ -872,11 +950,11 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 12.0
+        "ft": 12
       },
       "displacement": {
         "kg": null,
-        "lbs": 0.0
+        "lbs": 0
       }
     },
     "description": null,
@@ -954,11 +1032,11 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 12.0
+        "ft": 12
       },
       "displacement": {
         "kg": null,
-        "lbs": 0.0
+        "lbs": 0
       }
     },
     "description": null,
@@ -998,11 +1076,11 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 12.0
+        "ft": 12
       },
       "displacement": {
         "kg": null,
-        "lbs": 0.0
+        "lbs": 0
       }
     },
     "description": null,
@@ -1042,11 +1120,11 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 12.0
+        "ft": 12
       },
       "displacement": {
         "kg": null,
-        "lbs": 0.0
+        "lbs": 0
       }
     },
     "description": null,
@@ -1088,7 +1166,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 18.0
+        "ft": 18
       }
     },
     "description": null,
@@ -1129,7 +1207,7 @@
     "specs": {
       "loa": {
         "m": 6.915,
-        "ft": 23.0
+        "ft": 23
       },
       "beam": {
         "m": 2.527,
@@ -1140,12 +1218,12 @@
         "ft": null
       },
       "displacement": {
-        "kg": 1266.0,
-        "lbs": 2790.0
+        "kg": 1266,
+        "lbs": 2790
       },
       "ballast": {
-        "kg": 408.0,
-        "lbs": 900.0
+        "kg": 408,
+        "lbs": 900
       }
     },
     "description": null,
@@ -1233,11 +1311,11 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 60.0
+        "ft": 60
       },
       "displacement": {
         "kg": null,
-        "lbs": 0.0
+        "lbs": 0
       }
     },
     "description": null,
@@ -1277,11 +1355,11 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 36.0
+        "ft": 36
       },
       "displacement": {
         "kg": null,
-        "lbs": 0.0
+        "lbs": 0
       }
     },
     "description": null,
@@ -1323,7 +1401,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 36.0
+        "ft": 36
       }
     },
     "description": null,
@@ -1364,7 +1442,7 @@
     "specs": {
       "loa": {
         "m": 12.801,
-        "ft": 42.0
+        "ft": 42
       },
       "beam": {
         "m": 3.96,
@@ -1375,12 +1453,12 @@
         "ft": null
       },
       "displacement": {
-        "kg": 7246.0,
-        "lbs": 15975.0
+        "kg": 7246,
+        "lbs": 15975
       },
       "ballast": {
-        "kg": 2812.0,
-        "lbs": 6200.0
+        "kg": 2812,
+        "lbs": 6200
       }
     },
     "description": null,
@@ -1426,7 +1504,7 @@
     "designType": "Racing Yacht",
     "specs": {
       "loa": {
-        "ft": 42.0,
+        "ft": 42,
         "m": 12.8
       }
     },
@@ -1468,7 +1546,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 42.0
+        "ft": 42
       }
     },
     "description": null,
@@ -1546,7 +1624,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 42.0
+        "ft": 42
       }
     },
     "description": null,
@@ -1624,19 +1702,19 @@
     "specs": {
       "loa": {
         "m": 5.49,
-        "ft": 18.0
+        "ft": 18
       },
       "beam": {
         "m": 2.44,
-        "ft": 8.0
+        "ft": 8
       },
       "displacement": {
-        "kg": 100.0,
-        "lbs": 220.0
+        "kg": 100,
+        "lbs": 220
       },
       "sailAreaUp": {
         "sqm": null,
-        "sqft": 394.0
+        "sqft": 394
       }
     },
     "description": null,
@@ -1683,7 +1761,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 18.0
+        "ft": 18
       }
     },
     "description": null,
@@ -1724,7 +1802,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 18.0
+        "ft": 18
       }
     },
     "description": null,
@@ -1766,7 +1844,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 18.0
+        "ft": 18
       }
     },
     "description": null,
@@ -1807,7 +1885,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 12.0
+        "ft": 12
       }
     },
     "description": null,
@@ -1849,7 +1927,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 12.0
+        "ft": 12
       }
     },
     "description": null,
@@ -1890,7 +1968,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 33.0
+        "ft": 33
       }
     },
     "description": null,
@@ -1973,7 +2051,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 29.0
+        "ft": 29
       }
     },
     "description": null,
@@ -2056,7 +2134,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 18.0
+        "ft": 18
       }
     },
     "description": null,
@@ -2098,7 +2176,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 18.0
+        "ft": 18
       }
     },
     "description": null,
@@ -2139,7 +2217,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 12.0
+        "ft": 12
       }
     },
     "description": null,
@@ -2186,7 +2264,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 12.0
+        "ft": 12
       }
     },
     "description": null,
@@ -2227,7 +2305,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 12.0
+        "ft": 12
       }
     },
     "description": null,
@@ -2305,7 +2383,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 18.0
+        "ft": 18
       }
     },
     "description": null,
@@ -2347,7 +2425,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 18.0
+        "ft": 18
       }
     },
     "description": null,
@@ -2388,7 +2466,7 @@
     "specs": {
       "loa": {
         "m": 10.974,
-        "ft": 36.0
+        "ft": 36
       },
       "beam": {
         "m": 3.64,
@@ -2399,12 +2477,12 @@
         "ft": null
       },
       "displacement": {
-        "kg": 3860.0,
-        "lbs": 8510.0
+        "kg": 3860,
+        "lbs": 8510
       },
       "ballast": {
-        "kg": 1547.0,
-        "lbs": 3411.0
+        "kg": 1547,
+        "lbs": 3411
       }
     },
     "description": null,
@@ -2450,7 +2528,7 @@
     "designType": "Racing Yacht",
     "specs": {
       "loa": {
-        "m": 11.0,
+        "m": 11,
         "ft": null
       }
     },
@@ -2493,7 +2571,7 @@
     "designType": "Racing Yacht",
     "specs": {
       "loa": {
-        "m": 11.0,
+        "m": 11,
         "ft": null
       }
     },
@@ -2536,7 +2614,7 @@
     "designType": "Racing Yacht",
     "specs": {
       "loa": {
-        "m": 11.0,
+        "m": 11,
         "ft": null
       }
     },
@@ -2578,7 +2656,7 @@
     "specs": {
       "loa": {
         "m": 3.7,
-        "ft": 12.0
+        "ft": 12
       },
       "lwl": {
         "m": 3.7,
@@ -2633,7 +2711,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 12.0
+        "ft": 12
       }
     },
     "description": null,
@@ -2674,7 +2752,7 @@
     "specs": {
       "loa": {
         "m": 7.345,
-        "ft": 24.0
+        "ft": 24
       },
       "beam": {
         "m": 2.527,
@@ -2685,12 +2763,12 @@
         "ft": null
       },
       "displacement": {
-        "kg": 1270.0,
-        "lbs": 2800.0
+        "kg": 1270,
+        "lbs": 2800
       },
       "ballast": {
-        "kg": 438.0,
-        "lbs": 965.0
+        "kg": 438,
+        "lbs": 965
       }
     },
     "description": null,
@@ -2768,7 +2846,7 @@
     "specs": {
       "loa": {
         "m": 9.14,
-        "ft": 30.0
+        "ft": 30
       },
       "beam": {
         "m": 3.053,
@@ -2779,12 +2857,12 @@
         "ft": null
       },
       "displacement": {
-        "kg": 866.0,
-        "lbs": 4984.0
+        "kg": 866,
+        "lbs": 4984
       },
       "ballast": {
         "kg": 1.588,
-        "lbs": 1909.0
+        "lbs": 1909
       }
     },
     "description": null,
@@ -2910,7 +2988,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 30.0
+        "ft": 30
       }
     },
     "description": null,
@@ -2988,7 +3066,7 @@
     "specs": {
       "loa": {
         "m": 10.187,
-        "ft": 33.0
+        "ft": 33
       },
       "beam": {
         "m": 3.405,
@@ -2999,12 +3077,12 @@
         "ft": null
       },
       "displacement": {
-        "kg": 2960.0,
-        "lbs": 6526.0
+        "kg": 2960,
+        "lbs": 6526
       },
       "ballast": {
-        "kg": 1144.0,
-        "lbs": 2522.0
+        "kg": 1144,
+        "lbs": 2522
       }
     },
     "description": null,
@@ -3092,7 +3170,7 @@
     "specs": {
       "loa": {
         "m": 6.07,
-        "ft": 20.0
+        "ft": 20
       },
       "beam": {
         "m": 2.45,
@@ -3111,12 +3189,12 @@
         "ft": null
       },
       "displacement": {
-        "kg": 242.0,
-        "lbs": 1653.0
+        "kg": 242,
+        "lbs": 1653
       },
       "ballast": {
-        "kg": 750.0,
-        "lbs": 535.0
+        "kg": 750,
+        "lbs": 535
       }
     },
     "description": null,
@@ -3162,7 +3240,7 @@
     "designType": "Trailer Sailer",
     "specs": {
       "loa": {
-        "m": 6.0,
+        "m": 6,
         "ft": null
       }
     },
@@ -3204,7 +3282,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 42.0
+        "ft": 42
       }
     },
     "description": null,
@@ -3282,7 +3360,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 30.0
+        "ft": 30
       }
     },
     "description": null,
@@ -3360,7 +3438,7 @@
     "specs": {
       "loa": {
         "m": 15.9,
-        "ft": 52.0
+        "ft": 52
       },
       "beam": {
         "m": 4.69,
@@ -3371,12 +3449,12 @@
         "ft": 8.333
       },
       "displacement": {
-        "kg": 9545.0,
-        "lbs": 21043.0
+        "kg": 9545,
+        "lbs": 21043
       },
       "ballast": {
-        "kg": 4363.0,
-        "lbs": 9619.0
+        "kg": 4363,
+        "lbs": 9619
       }
     },
     "description": null,
@@ -3416,7 +3494,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 38.0
+        "ft": 38
       }
     },
     "description": null,
@@ -3494,7 +3572,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 38.0
+        "ft": 38
       }
     },
     "description": null,
@@ -3572,7 +3650,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 30.0
+        "ft": 30
       }
     },
     "description": null,
@@ -3650,7 +3728,7 @@
     "specs": {
       "loa": {
         "m": 11.47,
-        "ft": 37.0
+        "ft": 37
       },
       "beam": {
         "m": 3.84,
@@ -3661,12 +3739,12 @@
         "ft": null
       },
       "displacement": {
-        "kg": 4151.0,
-        "lbs": 9151.0
+        "kg": 4151,
+        "lbs": 9151
       },
       "ballast": {
-        "kg": 1720.0,
-        "lbs": 3792.0
+        "kg": 1720,
+        "lbs": 3792
       }
     },
     "description": null,
@@ -3711,7 +3789,7 @@
     "specs": {
       "loa": {
         "m": 9.52,
-        "ft": 31.0
+        "ft": 31
       },
       "beam": {
         "m": 3.3,
@@ -3722,12 +3800,12 @@
         "ft": null
       },
       "displacement": {
-        "kg": 2331.0,
-        "lbs": 5139.0
+        "kg": 2331,
+        "lbs": 5139
       },
       "ballast": {
-        "kg": 1134.0,
-        "lbs": 2500.0
+        "kg": 1134,
+        "lbs": 2500
       }
     },
     "description": null,
@@ -3815,7 +3893,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 38.0
+        "ft": 38
       }
     },
     "description": null,
@@ -3893,7 +3971,7 @@
     "specs": {
       "loa": {
         "m": 12.88,
-        "ft": 42.0
+        "ft": 42
       },
       "beam": {
         "m": 4.12,
@@ -3904,12 +3982,12 @@
         "ft": null
       },
       "displacement": {
-        "kg": 5594.0,
-        "lbs": 12334.0
+        "kg": 5594,
+        "lbs": 12334
       },
       "ballast": {
-        "kg": 2400.0,
-        "lbs": 5291.0
+        "kg": 2400,
+        "lbs": 5291
       }
     },
     "description": null,
@@ -3955,7 +4033,7 @@
     "designType": "Racing Yacht",
     "specs": {
       "loa": {
-        "m": 13.0,
+        "m": 13,
         "ft": null
       }
     },
@@ -3997,7 +4075,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 42.0
+        "ft": 42
       }
     },
     "description": null,
@@ -4038,7 +4116,7 @@
     "designType": "Racing Yacht",
     "specs": {
       "loa": {
-        "m": 13.0,
+        "m": 13,
         "ft": null
       }
     },
@@ -4080,7 +4158,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 37.0
+        "ft": 37
       }
     },
     "description": null,
@@ -4158,7 +4236,7 @@
     "specs": {
       "loa": {
         "m": 11.66,
-        "ft": 38.0
+        "ft": 38
       },
       "beam": {
         "m": 3.66,
@@ -4169,12 +4247,12 @@
         "ft": null
       },
       "displacement": {
-        "kg": 4800.0,
-        "lbs": 10600.0
+        "kg": 4800,
+        "lbs": 10600
       },
       "ballast": {
-        "kg": 1850.0,
-        "lbs": 4100.0
+        "kg": 1850,
+        "lbs": 4100
       }
     },
     "description": null,
@@ -4219,7 +4297,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 70.0
+        "ft": 70
       }
     },
     "description": null,
@@ -4259,7 +4337,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 38.0
+        "ft": 38
       }
     },
     "description": null,
@@ -4337,7 +4415,7 @@
     "specs": {
       "loa": {
         "m": 5.09,
-        "ft": 17.0
+        "ft": 17
       },
       "beam": {
         "m": 2.25,
@@ -4356,12 +4434,12 @@
         "ft": null
       },
       "displacement": {
-        "kg": 510.0,
-        "lbs": 1125.0
+        "kg": 510,
+        "lbs": 1125
       },
       "ballast": {
-        "kg": 180.0,
-        "lbs": 397.0
+        "kg": 180,
+        "lbs": 397
       }
     },
     "description": null,
@@ -4407,7 +4485,7 @@
     "designType": "Trailer Sailer",
     "specs": {
       "loa": {
-        "m": 5.0,
+        "m": 5,
         "ft": null
       }
     },
@@ -4449,7 +4527,7 @@
     "specs": {
       "loa": {
         "m": 7.548,
-        "ft": 25.0
+        "ft": 25
       },
       "beam": {
         "m": 2.5,
@@ -4468,12 +4546,12 @@
         "ft": null
       },
       "displacement": {
-        "kg": 1150.0,
-        "lbs": 2535.0
+        "kg": 1150,
+        "lbs": 2535
       },
       "ballast": {
-        "kg": 350.0,
-        "lbs": 770.0
+        "kg": 350,
+        "lbs": 770
       }
     },
     "description": null,
@@ -4561,7 +4639,7 @@
     "specs": {
       "loa": {
         "m": 11.25,
-        "ft": 36.0
+        "ft": 36
       },
       "beam": {
         "m": 3.84,
@@ -4576,12 +4654,12 @@
         "ft": 3.1666666666666665
       },
       "displacement": {
-        "kg": 4054.0,
-        "lbs": 8940.0
+        "kg": 4054,
+        "lbs": 8940
       },
       "ballast": {
-        "kg": 1735.0,
-        "lbs": 3825.0
+        "kg": 1735,
+        "lbs": 3825
       }
     },
     "description": null,
@@ -4659,7 +4737,7 @@
     "specs": {
       "loa": {
         "m": 11.24,
-        "ft": 37.0
+        "ft": 37
       },
       "beam": {
         "m": 3.86,
@@ -4674,12 +4752,12 @@
         "ft": 3.4166666666666665
       },
       "displacement": {
-        "kg": 3942.0,
-        "lbs": 8692.0
+        "kg": 3942,
+        "lbs": 8692
       },
       "ballast": {
-        "kg": 1455.0,
-        "lbs": 3208.0
+        "kg": 1455,
+        "lbs": 3208
       }
     },
     "description": null,
@@ -4756,12 +4834,12 @@
     "designType": null,
     "specs": {
       "loa": {
-        "m": 14.0,
-        "ft": 14.0
+        "m": 14,
+        "ft": 14
       },
       "lwl": {
-        "m": 14.0,
-        "ft": 14.0
+        "m": 14,
+        "ft": 14
       },
       "beam": {
         "m": 0.86,
@@ -4769,7 +4847,7 @@
       },
       "displacement": {
         "kg": null,
-        "lbs": 140.0
+        "lbs": 140
       }
     },
     "description": null,
@@ -4814,7 +4892,7 @@
     "specs": {
       "loa": {
         "m": 17.78,
-        "ft": 58.0
+        "ft": 58
       },
       "beam": {
         "m": 5.04,
@@ -4825,12 +4903,12 @@
         "ft": 9.083333333333334
       },
       "displacement": {
-        "kg": 14176.0,
-        "lbs": 31258.0
+        "kg": 14176,
+        "lbs": 31258
       },
       "ballast": {
-        "kg": 6140.0,
-        "lbs": 13536.0
+        "kg": 6140,
+        "lbs": 13536
       }
     },
     "description": null,
@@ -4918,7 +4996,7 @@
     "specs": {
       "loa": {
         "m": 12.046,
-        "ft": 40.0
+        "ft": 40
       },
       "beam": {
         "m": 4.022,
@@ -4929,12 +5007,12 @@
         "ft": 7.166666666666667
       },
       "displacement": {
-        "kg": 5609.0,
-        "lbs": 12356.0
+        "kg": 5609,
+        "lbs": 12356
       },
       "ballast": {
-        "kg": 2840.0,
-        "lbs": 6261.0
+        "kg": 2840,
+        "lbs": 6261
       },
       "mainHoist": {
         "m": 15.22,
@@ -5029,7 +5107,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 18.0
+        "ft": 18
       }
     },
     "description": null,
@@ -5071,7 +5149,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 18.0
+        "ft": 18
       }
     },
     "description": null,
@@ -5112,7 +5190,7 @@
     "specs": {
       "loa": {
         "m": 10.58,
-        "ft": 35.0
+        "ft": 35
       },
       "beam": {
         "m": 3.45,
@@ -5123,12 +5201,12 @@
         "ft": null
       },
       "displacement": {
-        "kg": 3960.0,
-        "lbs": 8730.0
+        "kg": 3960,
+        "lbs": 8730
       },
       "ballast": {
-        "kg": 1580.0,
-        "lbs": 3480.0
+        "kg": 1580,
+        "lbs": 3480
       }
     },
     "description": null,
@@ -5210,8 +5288,8 @@
     "designType": "Racing/Cruising",
     "specs": {
       "loa": {
-        "m": 11.0,
-        "ft": 36.0
+        "m": 11,
+        "ft": 36
       },
       "lwl": {
         "m": 8.8,
@@ -5226,12 +5304,12 @@
         "ft": 6.23
       },
       "displacement": {
-        "kg": 3762.0,
-        "lbs": 8294.0
+        "kg": 3762,
+        "lbs": 8294
       },
       "ballast": {
-        "kg": 1869.0,
-        "lbs": 4120.0
+        "kg": 1869,
+        "lbs": 4120
       }
     },
     "description": null,
@@ -5271,7 +5349,7 @@
     "specs": {
       "loa": {
         "m": 7.7,
-        "ft": 26.0
+        "ft": 26
       },
       "beam": {
         "m": 2.8,
@@ -5282,12 +5360,12 @@
         "ft": null
       },
       "displacement": {
-        "kg": 1340.0,
-        "lbs": 2950.0
+        "kg": 1340,
+        "lbs": 2950
       },
       "ballast": {
-        "kg": 590.0,
-        "lbs": 1230.0
+        "kg": 590,
+        "lbs": 1230
       }
     },
     "description": null,
@@ -5370,7 +5448,7 @@
     "specs": {
       "loa": {
         "m": 16.71,
-        "ft": 55.0
+        "ft": 55
       },
       "beam": {
         "m": 4.45,
@@ -5381,12 +5459,12 @@
         "ft": null
       },
       "displacement": {
-        "kg": 10535.0,
-        "lbs": 23180.0
+        "kg": 10535,
+        "lbs": 23180
       },
       "ballast": {
-        "kg": 4305.0,
-        "lbs": 9470.0
+        "kg": 4305,
+        "lbs": 9470
       }
     },
     "description": null,
@@ -5474,7 +5552,7 @@
     "specs": {
       "loa": {
         "m": 9.213,
-        "ft": 30.0
+        "ft": 30
       },
       "beam": {
         "m": 2.85,
@@ -5493,12 +5571,12 @@
         "ft": null
       },
       "displacement": {
-        "kg": 2205.0,
-        "lbs": 4861.0
+        "kg": 2205,
+        "lbs": 4861
       },
       "ballast": {
-        "kg": 587.0,
-        "lbs": 1294.0
+        "kg": 587,
+        "lbs": 1294
       }
     },
     "description": null,
@@ -5586,7 +5664,7 @@
     "specs": {
       "loa": {
         "m": 13.49,
-        "ft": 44.0
+        "ft": 44
       },
       "beam": {
         "m": 3.96,
@@ -5597,12 +5675,12 @@
         "ft": null
       },
       "displacement": {
-        "kg": 6655.0,
-        "lbs": 14672.0
+        "kg": 6655,
+        "lbs": 14672
       },
       "ballast": {
-        "kg": 2590.0,
-        "lbs": 5710.0
+        "kg": 2590,
+        "lbs": 5710
       }
     },
     "description": null,
@@ -5728,7 +5806,7 @@
     "specs": {
       "loa": {
         "m": 20.9,
-        "ft": 68.0
+        "ft": 68
       },
       "beam": {
         "m": 5.2,
@@ -5739,12 +5817,12 @@
         "ft": 10.75
       },
       "displacement": {
-        "kg": 19320.0,
-        "lbs": 42593.0
+        "kg": 19320,
+        "lbs": 42593
       },
       "ballast": {
-        "kg": 7847.0,
-        "lbs": 17299.0
+        "kg": 7847,
+        "lbs": 17299
       }
     },
     "description": null,
@@ -5832,7 +5910,7 @@
     "specs": {
       "loa": {
         "m": 8.66,
-        "ft": 28.0
+        "ft": 28
       },
       "lwl": {
         "m": 7.2,
@@ -5847,8 +5925,8 @@
         "ft": 4.98
       },
       "displacement": {
-        "kg": 1795.0,
-        "lbs": 3950.0
+        "kg": 1795,
+        "lbs": 3950
       },
       "mainHoist": {
         "m": 10.1,
@@ -5943,7 +6021,7 @@
     "specs": {
       "loa": {
         "m": 13.99,
-        "ft": 46.0
+        "ft": 46
       },
       "beam": {
         "m": 3.95,
@@ -5962,12 +6040,12 @@
         "ft": null
       },
       "displacement": {
-        "kg": 7886.0,
-        "lbs": 17386.0
+        "kg": 7886,
+        "lbs": 17386
       },
       "ballast": {
-        "kg": 2930.0,
-        "lbs": 6460.0
+        "kg": 2930,
+        "lbs": 6460
       }
     },
     "description": null,
@@ -6050,7 +6128,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 36.0
+        "ft": 36
       }
     },
     "description": null,
@@ -6090,7 +6168,7 @@
     "specs": {
       "loa": {
         "m": 9.16,
-        "ft": 29.0
+        "ft": 29
       },
       "beam": {
         "m": 3.212,
@@ -6101,12 +6179,12 @@
         "ft": null
       },
       "displacement": {
-        "kg": 2421.0,
-        "lbs": 5337.0
+        "kg": 2421,
+        "lbs": 5337
       },
       "ballast": {
-        "kg": 1089.0,
-        "lbs": 2401.0
+        "kg": 1089,
+        "lbs": 2401
       }
     },
     "description": null,
@@ -6146,7 +6224,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 29.0
+        "ft": 29
       }
     },
     "description": null,
@@ -6224,7 +6302,7 @@
     "specs": {
       "loa": {
         "m": 13.45,
-        "ft": 44.0
+        "ft": 44
       },
       "beam": {
         "m": 3.74,
@@ -6235,12 +6313,12 @@
         "ft": null
       },
       "displacement": {
-        "kg": 1875.0,
-        "lbs": 4125.0
+        "kg": 1875,
+        "lbs": 4125
       },
       "ballast": {
-        "kg": 640.0,
-        "lbs": 1411.0
+        "kg": 640,
+        "lbs": 1411
       }
     },
     "description": null,
@@ -6328,11 +6406,11 @@
     "specs": {
       "loa": {
         "m": 9.592,
-        "ft": 30.0
+        "ft": 30
       },
       "lwl": {
         "m": 7.913,
-        "ft": 26.0
+        "ft": 26
       },
       "beam": {
         "m": 2.895,
@@ -6347,12 +6425,12 @@
         "ft": 6.25
       },
       "displacement": {
-        "kg": 2205.0,
-        "lbs": 4861.0
+        "kg": 2205,
+        "lbs": 4861
       },
       "ballast": {
-        "kg": 587.0,
-        "lbs": 1294.0
+        "kg": 587,
+        "lbs": 1294
       }
     },
     "description": null,
@@ -6399,7 +6477,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 30.0
+        "ft": 30
       }
     },
     "description": null,
@@ -6440,7 +6518,7 @@
     "specs": {
       "loa": {
         "m": 13.493,
-        "ft": 44.0
+        "ft": 44
       },
       "beam": {
         "m": 3.948,
@@ -6451,12 +6529,12 @@
         "ft": null
       },
       "displacement": {
-        "kg": 7167.0,
-        "lbs": 15800.0
+        "kg": 7167,
+        "lbs": 15800
       },
       "ballast": {
-        "kg": 2590.0,
-        "lbs": 5710.0
+        "kg": 2590,
+        "lbs": 5710
       }
     },
     "description": null,
@@ -6502,7 +6580,7 @@
     "designType": "Cruising Sloop",
     "specs": {
       "loa": {
-        "m": 12.0,
+        "m": 12,
         "ft": null
       }
     },
@@ -6544,7 +6622,7 @@
     "specs": {
       "loa": {
         "m": 7.37,
-        "ft": 25.0
+        "ft": 25
       },
       "beam": {
         "m": 2.5,
@@ -6563,12 +6641,12 @@
         "ft": null
       },
       "displacement": {
-        "kg": 1416.0,
-        "lbs": 3120.0
+        "kg": 1416,
+        "lbs": 3120
       },
       "ballast": {
-        "kg": 376.0,
-        "lbs": 827.0
+        "kg": 376,
+        "lbs": 827
       }
     },
     "description": null,
@@ -6613,7 +6691,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 25.0
+        "ft": 25
       }
     },
     "description": null,
@@ -6653,7 +6731,7 @@
     "specs": {
       "loa": {
         "m": 10.511,
-        "ft": 34.0
+        "ft": 34
       },
       "beam": {
         "m": 2.92,
@@ -6672,12 +6750,12 @@
         "ft": null
       },
       "displacement": {
-        "kg": 2488.0,
-        "lbs": 5485.0
+        "kg": 2488,
+        "lbs": 5485
       },
       "ballast": {
-        "kg": 657.0,
-        "lbs": 1448.0
+        "kg": 657,
+        "lbs": 1448
       }
     },
     "description": null,
@@ -6722,7 +6800,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 34.0
+        "ft": 34
       }
     },
     "description": null,
@@ -6762,7 +6840,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 13.0
+        "ft": 13
       }
     },
     "description": null,
@@ -6802,7 +6880,7 @@
     "specs": {
       "loa": {
         "m": 9.41,
-        "ft": 30.0
+        "ft": 30
       },
       "beam": {
         "m": 2.86,
@@ -6851,7 +6929,7 @@
     "specs": {
       "loa": {
         "m": 10.21,
-        "ft": 34.0
+        "ft": 34
       },
       "beam": {
         "m": 3.194,
@@ -6862,8 +6940,8 @@
         "ft": null
       },
       "displacement": {
-        "kg": 1406.0,
-        "lbs": 3100.0
+        "kg": 1406,
+        "lbs": 3100
       },
       "ballast": {
         "kg": 1.75,
@@ -6912,7 +6990,7 @@
     "specs": {
       "loa": {
         "m": 10.32,
-        "ft": 34.0
+        "ft": 34
       },
       "lwl": {
         "m": 8.56,
@@ -6927,12 +7005,12 @@
         "ft": 5.48
       },
       "displacement": {
-        "kg": 3200.0,
-        "lbs": 7049.0
+        "kg": 3200,
+        "lbs": 7049
       },
       "ballast": {
-        "kg": 1451.0,
-        "lbs": 3196.0
+        "kg": 1451,
+        "lbs": 3196
       }
     },
     "description": null,
@@ -6977,7 +7055,7 @@
     "specs": {
       "loa": {
         "m": 6.4,
-        "ft": 21.0
+        "ft": 21
       },
       "lwl": {
         "m": 5.6,
@@ -7000,12 +7078,12 @@
         "ft": null
       },
       "displacement": {
-        "kg": 300.0,
-        "lbs": 661.0
+        "kg": 300,
+        "lbs": 661
       },
       "ballast": {
-        "kg": 50.0,
-        "lbs": 110.0
+        "kg": 50,
+        "lbs": 110
       }
     },
     "description": null,
@@ -7050,7 +7128,7 @@
     "specs": {
       "loa": {
         "m": 14.729,
-        "ft": 48.0
+        "ft": 48
       },
       "beam": {
         "m": 4.25,
@@ -7061,12 +7139,12 @@
         "ft": null
       },
       "displacement": {
-        "kg": 9123.0,
-        "lbs": 20111.0
+        "kg": 9123,
+        "lbs": 20111
       },
       "ballast": {
-        "kg": 3771.0,
-        "lbs": 8314.0
+        "kg": 3771,
+        "lbs": 8314
       }
     },
     "description": null,
@@ -7113,7 +7191,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 48.0
+        "ft": 48
       }
     },
     "description": null,
@@ -7154,7 +7232,7 @@
     "specs": {
       "loa": {
         "m": 11.16,
-        "ft": 36.0
+        "ft": 36
       },
       "beam": {
         "m": 3.778,
@@ -7165,12 +7243,12 @@
         "ft": null
       },
       "displacement": {
-        "kg": 4700.0,
-        "lbs": 10361.0
+        "kg": 4700,
+        "lbs": 10361
       },
       "ballast": {
-        "kg": 2185.0,
-        "lbs": 4817.0
+        "kg": 2185,
+        "lbs": 4817
       }
     },
     "description": null,
@@ -7215,7 +7293,7 @@
     "specs": {
       "loa": {
         "m": 9.132,
-        "ft": 30.0
+        "ft": 30
       },
       "beam": {
         "m": 2.87,
@@ -7226,12 +7304,12 @@
         "ft": null
       },
       "displacement": {
-        "kg": 2305.0,
-        "lbs": 5082.0
+        "kg": 2305,
+        "lbs": 5082
       },
       "ballast": {
-        "kg": 944.0,
-        "lbs": 2081.0
+        "kg": 944,
+        "lbs": 2081
       }
     },
     "description": null,
@@ -7271,7 +7349,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 63.0
+        "ft": 63
       }
     },
     "description": null,
@@ -7311,7 +7389,7 @@
     "specs": {
       "loa": {
         "m": 11.42,
-        "ft": 37.0
+        "ft": 37
       },
       "beam": {
         "m": 3.71,
@@ -7322,12 +7400,12 @@
         "ft": null
       },
       "displacement": {
-        "kg": 5534.0,
-        "lbs": 12200.0
+        "kg": 5534,
+        "lbs": 12200
       },
       "ballast": {
-        "kg": 2563.0,
-        "lbs": 5651.0
+        "kg": 2563,
+        "lbs": 5651
       },
       "mainHoist": {
         "m": 4.35,
@@ -7338,8 +7416,8 @@
         "ft": null
       },
       "headsailHoist": {
-        "m": 771.0,
-        "ft": 1700.0
+        "m": 771,
+        "ft": 1700
       }
     },
     "description": null,
@@ -7384,7 +7462,7 @@
     "specs": {
       "loa": {
         "m": 17.66,
-        "ft": 59.0
+        "ft": 59
       },
       "lwl": {
         "m": 16.04,
@@ -7399,8 +7477,8 @@
         "ft": 9.92
       },
       "displacement": {
-        "kg": 15318.0,
-        "lbs": 33767.0
+        "kg": 15318,
+        "lbs": 33767
       },
       "mainHoist": {
         "m": 22.65,
@@ -7457,7 +7535,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 59.0
+        "ft": 59
       }
     },
     "description": null,
@@ -7497,7 +7575,7 @@
     "specs": {
       "loa": {
         "m": 25.43,
-        "ft": 80.0
+        "ft": 80
       },
       "lwl": {
         "m": 19.16,
@@ -7512,8 +7590,8 @@
         "ft": 12.63
       },
       "displacement": {
-        "kg": 27495.0,
-        "lbs": 60626.0
+        "kg": 27495,
+        "lbs": 60626
       }
     },
     "description": null,
@@ -7558,7 +7636,7 @@
     "specs": {
       "loa": {
         "m": 11.5,
-        "ft": 38.0
+        "ft": 38
       },
       "beam": {
         "m": 4.49,
@@ -7569,15 +7647,15 @@
         "ft": null
       },
       "displacement": {
-        "kg": 1273.0,
-        "lbs": 2807.0
+        "kg": 1273,
+        "lbs": 2807
       },
       "mainHoist": {
         "m": 13.22,
         "ft": 43.37
       },
       "mainFoot": {
-        "m": 5.0,
+        "m": 5,
         "ft": 16.41
       },
       "headsailHoist": {
@@ -7627,7 +7705,7 @@
     "specs": {
       "loa": {
         "m": 12.245,
-        "ft": 40.0
+        "ft": 40
       },
       "lwl": {
         "m": 9.74,
@@ -7642,12 +7720,12 @@
         "ft": null
       },
       "displacement": {
-        "kg": 5975.0,
-        "lbs": 13168.0
+        "kg": 5975,
+        "lbs": 13168
       },
       "ballast": {
-        "kg": 3139.0,
-        "lbs": 6922.0
+        "kg": 3139,
+        "lbs": 6922
       },
       "mainHoist": {
         "m": 15.277,
@@ -7704,7 +7782,7 @@
     "specs": {
       "loa": {
         "m": 13.44,
-        "ft": 44.0
+        "ft": 44
       },
       "beam": {
         "m": 3.99,
@@ -7719,8 +7797,8 @@
         "ft": null
       },
       "headsailHoist": {
-        "m": 7748.0,
-        "ft": 17085.0
+        "m": 7748,
+        "ft": 17085
       }
     },
     "description": null,
@@ -7765,7 +7843,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 40.0
+        "ft": 40
       }
     },
     "description": null,
@@ -7805,7 +7883,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 36.0
+        "ft": 36
       }
     },
     "description": null,
@@ -7845,7 +7923,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 40.0
+        "ft": 40
       }
     },
     "description": null,
@@ -7885,23 +7963,23 @@
     "specs": {
       "loa": {
         "m": 12.09,
-        "ft": 40.0
+        "ft": 40
       },
       "lwl": {
         "m": 12.21,
-        "ft": 40.0
+        "ft": 40
       },
       "beam": {
         "m": 9.52,
-        "ft": 31.0
+        "ft": 31
       },
       "draft": {
         "m": 4.03,
-        "ft": 13.0
+        "ft": 13
       },
       "headsailHoist": {
         "m": null,
-        "ft": 40.0
+        "ft": 40
       }
     },
     "description": null,
@@ -7946,7 +8024,7 @@
     "specs": {
       "loa": {
         "m": 24.32,
-        "ft": 80.0
+        "ft": 80
       },
       "lwl": {
         "m": 19.22,
@@ -7961,8 +8039,8 @@
         "ft": 12.73
       },
       "displacement": {
-        "kg": 30332.0,
-        "lbs": 66871.0
+        "kg": 30332,
+        "lbs": 66871
       }
     },
     "description": null,
@@ -8007,7 +8085,7 @@
     "specs": {
       "loa": {
         "m": 10.31,
-        "ft": 33.0
+        "ft": 33
       },
       "beam": {
         "m": 3.51,
@@ -8018,8 +8096,8 @@
         "ft": 6.75
       },
       "displacement": {
-        "kg": 4190.0,
-        "lbs": 9239.0
+        "kg": 4190,
+        "lbs": 9239
       }
     },
     "description": null,
@@ -8064,7 +8142,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 47.0
+        "ft": 47
       }
     },
     "description": null,
@@ -8104,7 +8182,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 47.0
+        "ft": 47
       }
     },
     "description": null,
@@ -8144,7 +8222,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 79.0
+        "ft": 79
       }
     },
     "description": null,
@@ -8184,7 +8262,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 60.0
+        "ft": 60
       }
     },
     "description": null,
@@ -8224,7 +8302,7 @@
     "specs": {
       "loa": {
         "m": 13.1,
-        "ft": 43.0
+        "ft": 43
       },
       "beam": {
         "m": 4.22,
@@ -8235,8 +8313,8 @@
         "ft": 7.916666666666667
       },
       "displacement": {
-        "kg": 6795.0,
-        "lbs": 14949.0
+        "kg": 6795,
+        "lbs": 14949
       },
       "mainHoist": {
         "m": 4.56,
@@ -8248,7 +8326,7 @@
       },
       "headsailHoist": {
         "m": 15.65,
-        "ft": 14949.0
+        "ft": 14949
       }
     },
     "description": null,
@@ -8293,7 +8371,7 @@
     "specs": {
       "loa": {
         "m": 16.68,
-        "ft": 55.0
+        "ft": 55
       },
       "lwl": {
         "m": 13.9,
@@ -8308,8 +8386,8 @@
         "ft": 8.5
       },
       "displacement": {
-        "kg": 10535.0,
-        "lbs": 24226.0
+        "kg": 10535,
+        "lbs": 24226
       },
       "mainHoist": {
         "m": 19.6,
@@ -8366,7 +8444,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 55.0
+        "ft": 55
       }
     },
     "description": null,
@@ -8444,15 +8522,15 @@
     "specs": {
       "loa": {
         "m": 16.01,
-        "ft": 53.0
+        "ft": 53
       },
       "beam": {
         "m": 4.86,
-        "ft": 14.0
+        "ft": 14
       },
       "draft": {
         "m": 2.28,
-        "ft": 7.0
+        "ft": 7
       },
       "mainHoist": {
         "m": 17.72,
@@ -8511,7 +8589,7 @@
     "specs": {
       "loa": {
         "m": 15.33,
-        "ft": 50.0
+        "ft": 50
       },
       "lwl": {
         "m": 12.14,
@@ -8519,7 +8597,7 @@
       },
       "beam": {
         "m": 4.57,
-        "ft": 15.0
+        "ft": 15
       },
       "mainHoist": {
         "m": 19.72,
@@ -8573,7 +8651,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 50.0
+        "ft": 50
       }
     },
     "description": null,
@@ -8613,7 +8691,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 30.0
+        "ft": 30
       }
     },
     "description": null,
@@ -8653,7 +8731,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 13.0
+        "ft": 13
       }
     },
     "description": null,
@@ -8693,7 +8771,7 @@
     "specs": {
       "loa": {
         "m": 12.19,
-        "ft": 40.0
+        "ft": 40
       },
       "lwl": {
         "m": 9.72,
@@ -8708,8 +8786,8 @@
         "ft": 7.25
       },
       "displacement": {
-        "kg": 6270.0,
-        "lbs": 13794.0
+        "kg": 6270,
+        "lbs": 13794
       },
       "mainHoist": {
         "m": 15.49,
@@ -8766,7 +8844,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 43.0
+        "ft": 43
       }
     },
     "description": null,
@@ -8806,7 +8884,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 43.0
+        "ft": 43
       }
     },
     "description": null,
@@ -8846,7 +8924,7 @@
     "specs": {
       "loa": {
         "ft": 45.93,
-        "m": 14.0
+        "m": 14
       }
     },
     "description": null,
@@ -8887,7 +8965,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 44.0
+        "ft": 44
       }
     },
     "description": null,
@@ -8927,7 +9005,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 50.0
+        "ft": 50
       }
     },
     "description": null,
@@ -8969,7 +9047,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 110.0
+        "ft": 110
       }
     },
     "description": null,
@@ -9010,7 +9088,7 @@
     "specs": {
       "loa": {
         "m": 12.2,
-        "ft": 41.0
+        "ft": 41
       },
       "beam": {
         "m": 3.81,
@@ -9021,16 +9099,16 @@
         "ft": 6.53
       },
       "displacement": {
-        "kg": 6062.0,
-        "lbs": 13367.0
+        "kg": 6062,
+        "lbs": 13367
       },
       "mainHoist": {
-        "m": 13.0,
+        "m": 13,
         "ft": 42.65
       },
       "mainFoot": {
         "m": 5.2,
-        "ft": 17.0
+        "ft": 17
       },
       "headsailHoist": {
         "m": 14.9,
@@ -9079,7 +9157,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 41.0
+        "ft": 41
       }
     },
     "description": null,
@@ -9157,7 +9235,7 @@
     "specs": {
       "loa": {
         "m": 19.8,
-        "ft": 65.0
+        "ft": 65
       },
       "beam": {
         "m": 4.61,
@@ -9176,8 +9254,8 @@
         "ft": null
       },
       "displacement": {
-        "kg": 14370.0,
-        "lbs": 31614.0
+        "kg": 14370,
+        "lbs": 31614
       },
       "mainHoist": {
         "m": 0.65,
@@ -9234,7 +9312,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 39.0
+        "ft": 39
       }
     },
     "description": null,
@@ -9275,7 +9353,7 @@
     "designType": "Cruising Yacht",
     "specs": {
       "loa": {
-        "m": 16.0,
+        "m": 16,
         "ft": null
       }
     },
@@ -9317,7 +9395,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 30.0
+        "ft": 30
       }
     },
     "description": null,
@@ -9357,7 +9435,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 30.0
+        "ft": 30
       }
     },
     "description": null,
@@ -9397,7 +9475,7 @@
     "specs": {
       "loa": {
         "m": 11.7,
-        "ft": 38.0
+        "ft": 38
       },
       "lwl": {
         "m": 9.51,
@@ -9405,19 +9483,19 @@
       },
       "beam": {
         "m": 3.66,
-        "ft": 12.0
+        "ft": 12
       },
       "draft": {
         "m": 1.47,
         "ft": 4.82
       },
       "displacement": {
-        "kg": 11600.0,
-        "lbs": 11600.0
+        "kg": 11600,
+        "lbs": 11600
       },
       "ballast": {
-        "kg": 1890.0,
-        "lbs": 4170.0
+        "kg": 1890,
+        "lbs": 4170
       },
       "mainHoist": {
         "m": 4.66,
@@ -9479,7 +9557,7 @@
     "designType": "Racing Yacht",
     "specs": {
       "loa": {
-        "m": 16.0,
+        "m": 16,
         "ft": null
       }
     },
@@ -9521,7 +9599,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 36.0
+        "ft": 36
       }
     },
     "description": null,
@@ -9560,8 +9638,8 @@
     "designType": "Racing Yacht",
     "specs": {
       "loa": {
-        "m": 22.0,
-        "ft": 72.0
+        "m": 22,
+        "ft": 72
       },
       "beam": {
         "m": 5.29,
@@ -9572,8 +9650,8 @@
         "ft": 11.48
       },
       "displacement": {
-        "kg": 18000.0,
-        "lbs": 39600.0
+        "kg": 18000,
+        "lbs": 39600
       },
       "mainHoist": {
         "m": 23.98,
@@ -9630,7 +9708,7 @@
     "specs": {
       "loa": {
         "m": 24.19,
-        "ft": 80.0
+        "ft": 80
       },
       "beam": {
         "m": 6.53,
@@ -9641,8 +9719,8 @@
         "ft": 8.2
       },
       "displacement": {
-        "kg": 44906.0,
-        "lbs": 99000.0
+        "kg": 44906,
+        "lbs": 99000
       },
       "mainHoist": {
         "m": 24.89,
@@ -9699,7 +9777,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 43.0
+        "ft": 43
       }
     },
     "description": null,
@@ -9739,7 +9817,7 @@
     "specs": {
       "loa": {
         "m": 11.74,
-        "ft": 41.0
+        "ft": 41
       },
       "lwl": {
         "m": 9.86,
@@ -9754,8 +9832,8 @@
         "ft": 5.84
       },
       "displacement": {
-        "kg": 5838.0,
-        "lbs": 12843.0
+        "kg": 5838,
+        "lbs": 12843
       },
       "mainHoist": {
         "m": 12.52,
@@ -9812,7 +9890,7 @@
     "specs": {
       "loa": {
         "m": 24.475,
-        "ft": 80.0
+        "ft": 80
       },
       "beam": {
         "m": 6.07,
@@ -9823,8 +9901,8 @@
         "ft": 14.21
       },
       "displacement": {
-        "kg": 38142.0,
-        "lbs": 83912.0
+        "kg": 38142,
+        "lbs": 83912
       },
       "mainHoist": {
         "m": 28.04,
@@ -9881,7 +9959,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 44.0
+        "ft": 44
       }
     },
     "description": null,
@@ -9921,7 +9999,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 39.0
+        "ft": 39
       }
     },
     "description": null,
@@ -9961,7 +10039,7 @@
     "specs": {
       "loa": {
         "m": 24.57,
-        "ft": 81.0
+        "ft": 81
       },
       "lwl": {
         "m": 19.68,
@@ -9976,8 +10054,8 @@
         "ft": 12.89
       },
       "displacement": {
-        "kg": 32649.0,
-        "lbs": 71979.0
+        "kg": 32649,
+        "lbs": 71979
       }
     },
     "description": null,
@@ -10022,7 +10100,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 39.0
+        "ft": 39
       }
     },
     "description": null,
@@ -10062,19 +10140,19 @@
     "specs": {
       "loa": {
         "m": 12.05,
-        "ft": 40.0
+        "ft": 40
       },
       "lwl": {
         "m": 9.75,
-        "ft": 32.0
+        "ft": 32
       },
       "beam": {
         "m": 3.87,
         "ft": 12.7
       },
       "displacement": {
-        "kg": 5600.0,
-        "lbs": 12346.0
+        "kg": 5600,
+        "lbs": 12346
       },
       "mainHoist": {
         "m": 15.42,
@@ -10131,7 +10209,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 40.0
+        "ft": 40
       }
     },
     "description": null,
@@ -10171,7 +10249,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 50.0
+        "ft": 50
       }
     },
     "description": null,
@@ -10249,7 +10327,7 @@
     "specs": {
       "loa": {
         "m": 12.058,
-        "ft": 39.0
+        "ft": 39
       },
       "beam": {
         "m": 3.867,
@@ -10260,8 +10338,8 @@
         "ft": 7.38
       },
       "displacement": {
-        "kg": 5661.0,
-        "lbs": 12454.0
+        "kg": 5661,
+        "lbs": 12454
       },
       "mainHoist": {
         "m": 15.42,
@@ -10318,7 +10396,7 @@
     "specs": {
       "loa": {
         "m": 8.38,
-        "ft": 28.0
+        "ft": 28
       },
       "beam": {
         "m": 2.92,
@@ -10329,8 +10407,8 @@
         "ft": 4.96
       },
       "displacement": {
-        "kg": 1844.0,
-        "lbs": 4065.0
+        "kg": 1844,
+        "lbs": 4065
       },
       "mainHoist": {
         "m": 9.96,
@@ -10387,7 +10465,7 @@
     "specs": {
       "loa": {
         "m": 25.49,
-        "ft": 84.0
+        "ft": 84
       },
       "lwl": {
         "m": 20.29,
@@ -10402,8 +10480,8 @@
         "ft": 13.09
       },
       "displacement": {
-        "kg": 35177.0,
-        "lbs": 77552.0
+        "kg": 35177,
+        "lbs": 77552
       }
     },
     "description": null,
@@ -10448,7 +10526,7 @@
     "specs": {
       "loa": {
         "m": 24.98,
-        "ft": 81.0
+        "ft": 81
       },
       "lwl": {
         "m": 19.9,
@@ -10463,8 +10541,8 @@
         "ft": 12.63
       },
       "displacement": {
-        "kg": 31914.0,
-        "lbs": 70358.0
+        "kg": 31914,
+        "lbs": 70358
       }
     },
     "description": null,
@@ -10547,18 +10625,18 @@
     "specs": {
       "loa": {
         "m": 15.5,
-        "ft": 51.0
+        "ft": 51
       },
       "lwl": {
         "m": 13.1,
-        "ft": 43.0
+        "ft": 43
       },
       "beam": {
         "m": 4.5,
         "ft": 14.8
       },
       "draft": {
-        "m": 2.0,
+        "m": 2,
         "ft": 6.56
       },
       "mainHoist": {
@@ -10659,7 +10737,7 @@
     "specs": {
       "loa": {
         "m": 24.03,
-        "ft": 80.0
+        "ft": 80
       },
       "lwl": {
         "m": 19.32,
@@ -10674,8 +10752,8 @@
         "ft": 13.55
       },
       "displacement": {
-        "kg": 30012.0,
-        "lbs": 66165.0
+        "kg": 30012,
+        "lbs": 66165
       }
     },
     "description": null,
@@ -10720,11 +10798,11 @@
     "specs": {
       "loa": {
         "m": 19.8,
-        "ft": 65.0
+        "ft": 65
       },
       "lwl": {
         "m": 13.72,
-        "ft": 45.0
+        "ft": 45
       }
     },
     "description": null,
@@ -10768,20 +10846,20 @@
     "designType": "Cruising Sloop",
     "specs": {
       "loa": {
-        "m": 40.0,
-        "ft": 131.0
+        "m": 40,
+        "ft": 131
       },
       "lwl": {
         "m": 36.3,
         "ft": 119.1
       },
       "beam": {
-        "m": 9.0,
+        "m": 9,
         "ft": 29.5
       },
       "displacement": {
         "kg": 355997.5,
-        "lbs": 785000.0
+        "lbs": 785000
       }
     },
     "description": null,
@@ -10826,7 +10904,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 43.0
+        "ft": 43
       }
     },
     "description": null,
@@ -10940,23 +11018,23 @@
     "specs": {
       "loa": {
         "m": 10.04,
-        "ft": 33.0
+        "ft": 33
       },
       "beam": {
         "m": 3.35,
-        "ft": 11.0
+        "ft": 11
       },
       "draft": {
         "m": 1.89,
         "ft": 6.2
       },
       "displacement": {
-        "kg": 3334.0,
-        "lbs": 7349.0
+        "kg": 3334,
+        "lbs": 7349
       },
       "mainHoist": {
         "m": 12.5,
-        "ft": 41.0
+        "ft": 41
       },
       "mainFoot": {
         "m": 4.6,
@@ -11009,7 +11087,7 @@
     "specs": {
       "loa": {
         "m": 14.17,
-        "ft": 45.0
+        "ft": 45
       },
       "lwl": {
         "m": 11.1,
@@ -11017,19 +11095,19 @@
       },
       "beam": {
         "m": 4.27,
-        "ft": 14.0
+        "ft": 14
       },
       "draft": {
         "m": 2.36,
         "ft": 7.75
       },
       "displacement": {
-        "kg": 9752.0,
-        "lbs": 21500.0
+        "kg": 9752,
+        "lbs": 21500
       },
       "ballast": {
-        "kg": 3855.0,
-        "lbs": 8500.0
+        "kg": 3855,
+        "lbs": 8500
       },
       "mainHoist": {
         "m": 1.78,
@@ -11086,7 +11164,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 45.0
+        "ft": 45
       }
     },
     "description": null,
@@ -11126,7 +11204,7 @@
     "specs": {
       "loa": {
         "m": 15.197,
-        "ft": 50.0
+        "ft": 50
       },
       "beam": {
         "m": 4.541,
@@ -11137,8 +11215,8 @@
         "ft": 9.213
       },
       "displacement": {
-        "kg": 11836.0,
-        "lbs": 26093.0
+        "kg": 11836,
+        "lbs": 26093
       },
       "mainHoist": {
         "m": 19.9,
@@ -11195,7 +11273,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 50.0
+        "ft": 50
       }
     },
     "description": null,
@@ -11235,7 +11313,7 @@
     "specs": {
       "loa": {
         "m": 15.39,
-        "ft": 52.0
+        "ft": 52
       },
       "lwl": {
         "m": 12.69,
@@ -11250,12 +11328,12 @@
         "ft": 5.92
       },
       "displacement": {
-        "kg": 14969.0,
-        "lbs": 33000.0
+        "kg": 14969,
+        "lbs": 33000
       },
       "ballast": {
-        "kg": 5588.0,
-        "lbs": 12320.0
+        "kg": 5588,
+        "lbs": 12320
       },
       "mainHoist": {
         "m": 16.5,
@@ -11267,7 +11345,7 @@
       },
       "headsailHoist": {
         "m": 18.9,
-        "ft": 62.0
+        "ft": 62
       }
     },
     "description": null,
@@ -11312,7 +11390,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 50.0
+        "ft": 50
       }
     },
     "description": null,
@@ -11352,7 +11430,7 @@
     "specs": {
       "loa": {
         "m": 24.26,
-        "ft": 80.0
+        "ft": 80
       },
       "beam": {
         "m": 6.09,
@@ -11363,8 +11441,8 @@
         "ft": 14.11
       },
       "displacement": {
-        "kg": 38200.0,
-        "lbs": 84215.0
+        "kg": 38200,
+        "lbs": 84215
       },
       "mainHoist": {
         "m": 30.7,
@@ -11421,7 +11499,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 42.0
+        "ft": 42
       }
     },
     "description": null,
@@ -11461,7 +11539,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 40.0
+        "ft": 40
       }
     },
     "description": null,
@@ -11501,7 +11579,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 50.0
+        "ft": 50
       }
     },
     "description": null,
@@ -11541,7 +11619,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 50.0
+        "ft": 50
       }
     },
     "description": null,
@@ -11581,7 +11659,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 39.0
+        "ft": 39
       }
     },
     "description": null,
@@ -11621,7 +11699,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 44.0
+        "ft": 44
       }
     },
     "description": null,
@@ -11661,7 +11739,7 @@
     "specs": {
       "loa": {
         "m": 21.7,
-        "ft": 70.0
+        "ft": 70
       },
       "beam": {
         "m": 5.74,
@@ -11672,8 +11750,8 @@
         "ft": 10.5
       },
       "displacement": {
-        "kg": 28500.0,
-        "lbs": 62800.0
+        "kg": 28500,
+        "lbs": 62800
       }
     },
     "description": null,
@@ -11718,7 +11796,7 @@
     "specs": {
       "loa": {
         "m": 16.2,
-        "ft": 53.0
+        "ft": 53
       },
       "lwl": {
         "m": 13.21,
@@ -11733,20 +11811,20 @@
         "ft": 8.08
       },
       "displacement": {
-        "kg": 14000.0,
-        "lbs": 30864.0
+        "kg": 14000,
+        "lbs": 30864
       },
       "ballast": {
-        "kg": 4300.0,
-        "lbs": 9480.0
+        "kg": 4300,
+        "lbs": 9480
       },
       "mainHoist": {
         "m": 17.37,
-        "ft": 57.0
+        "ft": 57
       },
       "mainFoot": {
         "m": 5.79,
-        "ft": 19.0
+        "ft": 19
       },
       "headsailHoist": {
         "m": 19.3,
@@ -11795,7 +11873,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 53.0
+        "ft": 53
       }
     },
     "description": null,
@@ -11835,7 +11913,7 @@
     "specs": {
       "loa": {
         "m": 19.7,
-        "ft": 64.0
+        "ft": 64
       },
       "beam": {
         "m": 4.54,
@@ -11846,12 +11924,12 @@
         "ft": 11.2
       },
       "displacement": {
-        "kg": 15756.0,
-        "lbs": 34736.0
+        "kg": 15756,
+        "lbs": 34736
       },
       "ballast": {
-        "kg": 9638.0,
-        "lbs": 21248.0
+        "kg": 9638,
+        "lbs": 21248
       },
       "mainHoist": {
         "m": 23.65,
@@ -11908,7 +11986,7 @@
     "specs": {
       "loa": {
         "m": 11.95,
-        "ft": 39.0
+        "ft": 39
       },
       "beam": {
         "m": 3.8,
@@ -11919,8 +11997,8 @@
         "ft": 7.68
       },
       "displacement": {
-        "kg": 5706.0,
-        "lbs": 12582.0
+        "kg": 5706,
+        "lbs": 12582
       },
       "mainHoist": {
         "m": 15.37,
@@ -11977,7 +12055,7 @@
     "specs": {
       "loa": {
         "m": 15.12,
-        "ft": 50.0
+        "ft": 50
       },
       "beam": {
         "m": 4.57,
@@ -11988,8 +12066,8 @@
         "ft": 9.45
       },
       "displacement": {
-        "kg": 12053.0,
-        "lbs": 26577.0
+        "kg": 12053,
+        "lbs": 26577
       },
       "mainHoist": {
         "m": 20.13,
@@ -12046,7 +12124,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 50.0
+        "ft": 50
       }
     },
     "description": null,
@@ -12086,7 +12164,7 @@
     "specs": {
       "loa": {
         "m": 21.89,
-        "ft": 72.0
+        "ft": 72
       },
       "lwl": {
         "m": 18.37,
@@ -12101,12 +12179,12 @@
         "ft": 9.18
       },
       "displacement": {
-        "kg": 29000.0,
-        "lbs": 63934.0
+        "kg": 29000,
+        "lbs": 63934
       },
       "ballast": {
-        "kg": 9888.0,
-        "lbs": 21799.0
+        "kg": 9888,
+        "lbs": 21799
       },
       "mainHoist": {
         "m": 23.8,
@@ -12163,7 +12241,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 72.0
+        "ft": 72
       }
     },
     "description": null,
@@ -12241,7 +12319,7 @@
     "specs": {
       "loa": {
         "m": 13.41,
-        "ft": 44.0
+        "ft": 44
       },
       "beam": {
         "m": 4.22,
@@ -12252,8 +12330,8 @@
         "ft": 8.43
       },
       "displacement": {
-        "kg": 8534.0,
-        "lbs": 18818.0
+        "kg": 8534,
+        "lbs": 18818
       },
       "mainHoist": {
         "m": 17.53,
@@ -12310,7 +12388,7 @@
     "specs": {
       "loa": {
         "m": 9.82,
-        "ft": 32.0
+        "ft": 32
       },
       "beam": {
         "m": 3.25,
@@ -12321,8 +12399,8 @@
         "ft": 6.33
       },
       "displacement": {
-        "kg": 3212.0,
-        "lbs": 7083.0
+        "kg": 3212,
+        "lbs": 7083
       },
       "mainHoist": {
         "m": 13.68,
@@ -12607,7 +12685,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 32.0
+        "ft": 32
       }
     },
     "description": null,
@@ -12652,7 +12730,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 50.0
+        "ft": 50
       }
     },
     "description": null,
@@ -12692,7 +12770,7 @@
     "specs": {
       "loa": {
         "m": 13.39,
-        "ft": 44.0
+        "ft": 44
       },
       "beam": {
         "m": 4.22,
@@ -12703,8 +12781,8 @@
         "ft": 8.5
       },
       "displacement": {
-        "kg": 8259.0,
-        "lbs": 18211.0
+        "kg": 8259,
+        "lbs": 18211
       },
       "mainHoist": {
         "m": 17.4,
@@ -12715,7 +12793,7 @@
         "ft": 21.13
       },
       "headsailHoist": {
-        "m": 16.0,
+        "m": 16,
         "ft": 52.5
       }
     },
@@ -12761,7 +12839,7 @@
     "specs": {
       "loa": {
         "m": 13.39,
-        "ft": 44.0
+        "ft": 44
       },
       "beam": {
         "m": 4.22,
@@ -12772,8 +12850,8 @@
         "ft": 8.5
       },
       "displacement": {
-        "kg": 8259.0,
-        "lbs": 18211.0
+        "kg": 8259,
+        "lbs": 18211
       },
       "mainHoist": {
         "m": 17.4,
@@ -12784,7 +12862,7 @@
         "ft": 21.13
       },
       "headsailHoist": {
-        "m": 16.0,
+        "m": 16,
         "ft": 52.5
       }
     },
@@ -12825,7 +12903,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 72.0
+        "ft": 72
       }
     },
     "description": null,
@@ -12865,7 +12943,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 30.0
+        "ft": 30
       }
     },
     "description": null,
@@ -12943,7 +13021,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 59.0
+        "ft": 59
       }
     },
     "description": null,
@@ -12983,7 +13061,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 30.0
+        "ft": 30
       }
     },
     "description": null,
@@ -13061,7 +13139,7 @@
     "specs": {
       "loa": {
         "m": 11.96,
-        "ft": 39.0
+        "ft": 39
       },
       "beam": {
         "m": 3.8,
@@ -13072,8 +13150,8 @@
         "ft": 7.55
       },
       "displacement": {
-        "kg": 5502.0,
-        "lbs": 12132.0
+        "kg": 5502,
+        "lbs": 12132
       },
       "mainHoist": {
         "m": 15.4,
@@ -13084,7 +13162,7 @@
         "ft": 19.03
       },
       "headsailHoist": {
-        "m": 14.0,
+        "m": 14,
         "ft": 45.93
       }
     },
@@ -13130,7 +13208,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 65.0
+        "ft": 65
       }
     },
     "description": null,
@@ -13170,7 +13248,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 50.0
+        "ft": 50
       }
     },
     "description": null,
@@ -13210,7 +13288,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 38.0
+        "ft": 38
       }
     },
     "description": null,
@@ -13250,7 +13328,7 @@
     "specs": {
       "loa": {
         "m": 15.08,
-        "ft": 50.0
+        "ft": 50
       },
       "beam": {
         "m": 4.56,
@@ -13261,8 +13339,8 @@
         "ft": 9.81
       },
       "displacement": {
-        "kg": 11570.0,
-        "lbs": 25512.0
+        "kg": 11570,
+        "lbs": 25512
       },
       "mainHoist": {
         "m": 20.08,
@@ -13321,7 +13399,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 60.0
+        "ft": 60
       }
     },
     "description": null,
@@ -13364,7 +13442,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 60.0
+        "ft": 60
       }
     },
     "description": null,
@@ -13405,19 +13483,19 @@
     "specs": {
       "loa": {
         "m": 13.52,
-        "ft": 44.0
+        "ft": 44
       },
       "beam": {
         "m": 4.13,
         "ft": 13.55
       },
       "displacement": {
-        "kg": 7568.0,
-        "lbs": 16685.0
+        "kg": 7568,
+        "lbs": 16685
       },
       "ballast": {
-        "kg": 4630.0,
-        "lbs": 10209.0
+        "kg": 4630,
+        "lbs": 10209
       },
       "mainHoist": {
         "m": 4.86,
@@ -13475,7 +13553,7 @@
     "designType": "IMS Racing/Cruising Yacht",
     "specs": {
       "loa": {
-        "ft": 44.0,
+        "ft": 44,
         "m": 13.41
       }
     },
@@ -13517,7 +13595,7 @@
     "specs": {
       "loa": {
         "m": 9.85,
-        "ft": 32.0
+        "ft": 32
       },
       "beam": {
         "m": 3.25,
@@ -13528,8 +13606,8 @@
         "ft": 6.3
       },
       "displacement": {
-        "kg": 3133.0,
-        "lbs": 6908.0
+        "kg": 3133,
+        "lbs": 6908
       },
       "mainHoist": {
         "m": 12.68,
@@ -13586,7 +13664,7 @@
     "specs": {
       "loa": {
         "m": 13.37,
-        "ft": 44.0
+        "ft": 44
       },
       "beam": {
         "m": 4.22,
@@ -13597,8 +13675,8 @@
         "ft": 8.73
       },
       "displacement": {
-        "kg": 8189.0,
-        "lbs": 18057.0
+        "kg": 8189,
+        "lbs": 18057
       },
       "mainHoist": {
         "m": 17.6,
@@ -13655,7 +13733,7 @@
     "specs": {
       "loa": {
         "m": 19.5,
-        "ft": 64.0
+        "ft": 64
       },
       "lwl": {
         "m": 15.65,
@@ -13750,7 +13828,7 @@
     "specs": {
       "loa": {
         "m": 18.95,
-        "ft": 62.0
+        "ft": 62
       },
       "lwl": {
         "m": 15.6,
@@ -13807,19 +13885,19 @@
     "specs": {
       "loa": {
         "m": 25.73,
-        "ft": 84.0
+        "ft": 84
       },
       "beam": {
         "m": 5.8,
-        "ft": 19.0
+        "ft": 19
       },
       "draft": {
         "m": 3.7,
-        "ft": 12.0
+        "ft": 12
       },
       "displacement": {
-        "kg": 27500.0,
-        "lbs": 60627.0
+        "kg": 27500,
+        "lbs": 60627
       }
     },
     "description": null,
@@ -13864,7 +13942,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 39.0
+        "ft": 39
       }
     },
     "description": null,
@@ -13904,7 +13982,7 @@
     "specs": {
       "loa": {
         "m": 12.19,
-        "ft": 40.0
+        "ft": 40
       },
       "beam": {
         "m": 3.8,
@@ -13915,12 +13993,12 @@
         "ft": 7.7
       },
       "displacement": {
-        "kg": 4800.0,
-        "lbs": 10600.0
+        "kg": 4800,
+        "lbs": 10600
       },
       "ballast": {
-        "kg": 2600.0,
-        "lbs": 5730.0
+        "kg": 2600,
+        "lbs": 5730
       },
       "mainHoist": {
         "m": 15.8,
@@ -13938,7 +14016,7 @@
     "description": null,
     "shortDescription": "IMS 40",
     "shortSummary": "",
-    "builder": "Galgani (Cookson), Basaga\u00f1a (ADE/BWANA), Crawford (Cookson/ASSASSIN)",
+    "builder": "Galgani (Cookson), Basagaña (ADE/BWANA), Crawford (Cookson/ASSASSIN)",
     "owner": null,
     "rigType": "",
     "rigMaterial": "",
@@ -13977,7 +14055,7 @@
     "specs": {
       "loa": {
         "m": 25.9,
-        "ft": 85.0
+        "ft": 85
       },
       "beam": {
         "m": 5.85,
@@ -13988,12 +14066,12 @@
         "ft": 12.8
       },
       "displacement": {
-        "kg": 29500.0,
-        "lbs": 65036.0
+        "kg": 29500,
+        "lbs": 65036
       },
       "ballast": {
-        "kg": 19400.0,
-        "lbs": 42700.0
+        "kg": 19400,
+        "lbs": 42700
       }
     },
     "description": null,
@@ -14038,7 +14116,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 39.0
+        "ft": 39
       }
     },
     "description": null,
@@ -14078,7 +14156,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 50.0
+        "ft": 50
       }
     },
     "description": null,
@@ -14117,28 +14195,28 @@
     "designType": "Racing Yacht",
     "specs": {
       "loa": {
-        "m": 20.0,
-        "ft": 60.0
+        "m": 20,
+        "ft": 60
       },
       "beam": {
         "m": 5.2,
-        "ft": 17.0
+        "ft": 17
       },
       "draft": {
         "m": 3.7,
-        "ft": 12.0
+        "ft": 12
       },
       "displacement": {
-        "kg": 13500.0,
-        "lbs": 29700.0
+        "kg": 13500,
+        "lbs": 29700
       },
       "ballast": {
         "kg": null,
-        "lbs": 11023.0
+        "lbs": 11023
       },
       "mainFoot": {
         "m": null,
-        "ft": 11023.0
+        "ft": 11023
       }
     },
     "description": null,
@@ -14185,7 +14263,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 60.0
+        "ft": 60
       }
     },
     "description": null,
@@ -14226,7 +14304,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 60.0
+        "ft": 60
       }
     },
     "description": null,
@@ -14266,7 +14344,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 42.0
+        "ft": 42
       }
     },
     "description": null,
@@ -14306,7 +14384,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 60.0
+        "ft": 60
       }
     },
     "description": null,
@@ -14346,7 +14424,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 60.0
+        "ft": 60
       }
     },
     "description": null,
@@ -14386,7 +14464,7 @@
     "specs": {
       "loa": {
         "m": 24.3,
-        "ft": 78.0
+        "ft": 78
       },
       "lwl": {
         "m": 19.76,
@@ -14401,12 +14479,12 @@
         "ft": 12.47
       },
       "displacement": {
-        "kg": 40000.0,
-        "lbs": 88185.0
+        "kg": 40000,
+        "lbs": 88185
       },
       "ballast": {
-        "kg": 15000.0,
-        "lbs": 33069.0
+        "kg": 15000,
+        "lbs": 33069
       }
     },
     "description": null,
@@ -14451,7 +14529,7 @@
     "specs": {
       "loa": {
         "m": 12.41,
-        "ft": 40.0
+        "ft": 40
       },
       "lwl": {
         "m": 11.02,
@@ -14467,7 +14545,7 @@
       },
       "displacement": {
         "kg": 5124.2,
-        "lbs": 11297.0
+        "lbs": 11297
       },
       "mainHoist": {
         "m": 16.06,
@@ -14515,7 +14593,7 @@
     "title": "290",
     "slug": "290",
     "designNumber": "290",
-    "name": "120ft Round the World Yacht \u2014 Peter Blake",
+    "name": "120ft Round the World Yacht — Peter Blake",
     "year": 1993,
     "category": [
       "Racing Yacht"
@@ -14526,11 +14604,11 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 120.0
+        "ft": 120
       }
     },
     "description": null,
-    "shortDescription": "120ft Round the World Yacht \u2014 Peter Blake",
+    "shortDescription": "120ft Round the World Yacht — Peter Blake",
     "shortSummary": null,
     "builder": "Peter Blake",
     "owner": null,
@@ -14605,7 +14683,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 60.0
+        "ft": 60
       }
     },
     "description": null,
@@ -14644,28 +14722,28 @@
     "designType": "Racing Yacht",
     "specs": {
       "loa": {
-        "m": 20.0,
-        "ft": 60.0
+        "m": 20,
+        "ft": 60
       },
       "beam": {
         "m": 5.2,
-        "ft": 17.0
+        "ft": 17
       },
       "draft": {
         "m": 3.7,
-        "ft": 12.0
+        "ft": 12
       },
       "displacement": {
-        "kg": 13500.0,
-        "lbs": 29700.0
+        "kg": 13500,
+        "lbs": 29700
       },
       "ballast": {
         "kg": null,
-        "lbs": 11023.0
+        "lbs": 11023
       },
       "mainFoot": {
         "m": null,
-        "ft": 11023.0
+        "ft": 11023
       }
     },
     "description": null,
@@ -14710,7 +14788,7 @@
     "specs": {
       "loa": {
         "m": 12.95,
-        "ft": 41.0
+        "ft": 41
       },
       "lwl": {
         "m": 10.89,
@@ -14725,12 +14803,12 @@
         "ft": 7.583
       },
       "displacement": {
-        "kg": 8265.0,
-        "lbs": 18220.0
+        "kg": 8265,
+        "lbs": 18220
       },
       "ballast": {
-        "kg": 2850.0,
-        "lbs": 6283.0
+        "kg": 2850,
+        "lbs": 6283
       }
     },
     "description": null,
@@ -14818,7 +14896,7 @@
     "specs": {
       "loa": {
         "m": 31.6,
-        "ft": 106.0
+        "ft": 106
       },
       "beam": {
         "m": 6.8,
@@ -14829,8 +14907,8 @@
         "ft": 11.81
       },
       "displacement": {
-        "kg": 90098.0,
-        "lbs": 198631.0
+        "kg": 90098,
+        "lbs": 198631
       }
     },
     "description": null,
@@ -14875,7 +14953,7 @@
     "specs": {
       "loa": {
         "m": 9.58,
-        "ft": 31.0
+        "ft": 31
       },
       "beam": {
         "m": 3.25,
@@ -14886,12 +14964,12 @@
         "ft": 6.5
       },
       "displacement": {
-        "kg": 2320.0,
-        "lbs": 5116.0
+        "kg": 2320,
+        "lbs": 5116
       },
       "ballast": {
-        "kg": 920.0,
-        "lbs": 2029.0
+        "kg": 920,
+        "lbs": 2029
       },
       "mainHoist": {
         "m": 11.84,
@@ -14950,7 +15028,7 @@
     "specs": {
       "loa": {
         "m": 10.93,
-        "ft": 36.0
+        "ft": 36
       },
       "beam": {
         "m": 3.62,
@@ -14961,12 +15039,12 @@
         "ft": 7.38
       },
       "displacement": {
-        "kg": 3590.0,
-        "lbs": 7916.0
+        "kg": 3590,
+        "lbs": 7916
       },
       "ballast": {
-        "kg": 1753.0,
-        "lbs": 3865.0
+        "kg": 1753,
+        "lbs": 3865
       },
       "mainHoist": {
         "m": 13.63,
@@ -15020,7 +15098,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 39.0
+        "ft": 39
       }
     },
     "description": null,
@@ -15060,7 +15138,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 46.0
+        "ft": 46
       }
     },
     "description": null,
@@ -15100,7 +15178,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 40.0
+        "ft": 40
       }
     },
     "description": null,
@@ -15140,23 +15218,23 @@
     "specs": {
       "loa": {
         "m": 24.5,
-        "ft": 82.0
+        "ft": 82
       },
       "beam": {
         "m": 6.2,
         "ft": 20.3
       },
       "draft": {
-        "m": 4.0,
+        "m": 4,
         "ft": 13.1
       },
       "displacement": {
-        "kg": 24500.0,
-        "lbs": 54000.0
+        "kg": 24500,
+        "lbs": 54000
       },
       "ballast": {
-        "kg": 12100.0,
-        "lbs": 26700.0
+        "kg": 12100,
+        "lbs": 26700
       }
     },
     "description": null,
@@ -15201,7 +15279,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 39.0
+        "ft": 39
       }
     },
     "description": null,
@@ -15241,7 +15319,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 40.0
+        "ft": 40
       }
     },
     "description": null,
@@ -15281,7 +15359,7 @@
     "specs": {
       "loa": {
         "m": 14.43,
-        "ft": 47.0
+        "ft": 47
       },
       "beam": {
         "m": 4.46,
@@ -15292,12 +15370,12 @@
         "ft": 9.35
       },
       "displacement": {
-        "kg": 9390.0,
-        "lbs": 20700.0
+        "kg": 9390,
+        "lbs": 20700
       },
       "ballast": {
-        "kg": 5240.0,
-        "lbs": 11552.0
+        "kg": 5240,
+        "lbs": 11552
       },
       "mainHoist": {
         "m": 18.96,
@@ -15355,7 +15433,7 @@
     "designType": "ILC 40 Racer",
     "specs": {
       "loa": {
-        "ft": 40.0,
+        "ft": 40,
         "m": 12.19
       }
     },
@@ -15397,7 +15475,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 47.0
+        "ft": 47
       }
     },
     "description": null,
@@ -15437,7 +15515,7 @@
     "specs": {
       "loa": {
         "m": 7.53,
-        "ft": 25.0
+        "ft": 25
       },
       "beam": {
         "m": 2.62,
@@ -15448,12 +15526,12 @@
         "ft": 5.18
       },
       "displacement": {
-        "kg": 1219.0,
-        "lbs": 2687.0
+        "kg": 1219,
+        "lbs": 2687
       },
       "ballast": {
-        "kg": 507.0,
-        "lbs": 1118.0
+        "kg": 507,
+        "lbs": 1118
       },
       "mainHoist": {
         "m": 9.4,
@@ -15510,10 +15588,10 @@
     "specs": {
       "loa": {
         "m": 12.49,
-        "ft": 40.0
+        "ft": 40
       },
       "beam": {
-        "m": 4.0,
+        "m": 4,
         "ft": 13.12
       },
       "draft": {
@@ -15521,12 +15599,12 @@
         "ft": 7.84
       },
       "displacement": {
-        "kg": 5890.0,
-        "lbs": 12985.0
+        "kg": 5890,
+        "lbs": 12985
       },
       "ballast": {
-        "kg": 3572.0,
-        "lbs": 7875.0
+        "kg": 3572,
+        "lbs": 7875
       },
       "mainHoist": {
         "m": 17.06,
@@ -15583,7 +15661,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 80.0
+        "ft": 80
       }
     },
     "description": null,
@@ -15623,10 +15701,10 @@
     "specs": {
       "loa": {
         "m": 18.36,
-        "ft": 60.0
+        "ft": 60
       },
       "lwl": {
-        "m": 16.0,
+        "m": 16,
         "ft": 52.49
       },
       "beam": {
@@ -15638,8 +15716,8 @@
         "ft": 9.02
       },
       "displacement": {
-        "kg": 24500.0,
-        "lbs": 54013.0
+        "kg": 24500,
+        "lbs": 54013
       },
       "mainHoist": {
         "m": 21.45,
@@ -15696,7 +15774,7 @@
     "specs": {
       "loa": {
         "m": 9.57,
-        "ft": 31.0
+        "ft": 31
       },
       "beam": {
         "m": 3.25,
@@ -15707,12 +15785,12 @@
         "ft": 6.53
       },
       "displacement": {
-        "kg": 2478.0,
-        "lbs": 5463.0
+        "kg": 2478,
+        "lbs": 5463
       },
       "ballast": {
-        "kg": 933.0,
-        "lbs": 2056.0
+        "kg": 933,
+        "lbs": 2056
       },
       "mainHoist": {
         "m": 11.84,
@@ -15812,7 +15890,7 @@
     "specs": {
       "loa": {
         "m": 24.13,
-        "ft": 70.0
+        "ft": 70
       },
       "beam": {
         "m": 5.27,
@@ -15823,12 +15901,12 @@
         "ft": 13.32
       },
       "displacement": {
-        "kg": 24440.0,
-        "lbs": 53880.0
+        "kg": 24440,
+        "lbs": 53880
       },
       "ballast": {
-        "kg": 17300.0,
-        "lbs": 38140.0
+        "kg": 17300,
+        "lbs": 38140
       },
       "mainHoist": {
         "m": 28.52,
@@ -15885,7 +15963,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 50.0
+        "ft": 50
       }
     },
     "description": null,
@@ -15925,7 +16003,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 55.0
+        "ft": 55
       }
     },
     "description": null,
@@ -15965,23 +16043,23 @@
     "specs": {
       "loa": {
         "m": 14.48,
-        "ft": 47.0
+        "ft": 47
       },
       "beam": {
         "m": 4.29,
         "ft": 14.07
       },
       "draft": {
-        "m": 3.0,
+        "m": 3,
         "ft": 9.84
       },
       "displacement": {
-        "kg": 7980.0,
-        "lbs": 17593.0
+        "kg": 7980,
+        "lbs": 17593
       },
       "ballast": {
-        "kg": 5014.0,
-        "lbs": 11054.0
+        "kg": 5014,
+        "lbs": 11054
       },
       "mainHoist": {
         "m": 18.61,
@@ -16038,7 +16116,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 47.0
+        "ft": 47
       }
     },
     "description": null,
@@ -16078,23 +16156,23 @@
     "specs": {
       "loa": {
         "m": 14.47,
-        "ft": 47.0
+        "ft": 47
       },
       "beam": {
         "m": 4.3,
         "ft": 14.11
       },
       "draft": {
-        "m": 3.0,
+        "m": 3,
         "ft": 9.84
       },
       "displacement": {
-        "kg": 7840.0,
-        "lbs": 17284.0
+        "kg": 7840,
+        "lbs": 17284
       },
       "ballast": {
-        "kg": 4608.0,
-        "lbs": 10159.0
+        "kg": 4608,
+        "lbs": 10159
       },
       "mainHoist": {
         "m": 18.61,
@@ -16151,7 +16229,7 @@
     "specs": {
       "loa": {
         "m": 13.06,
-        "ft": 43.0
+        "ft": 43
       },
       "beam": {
         "m": 4.02,
@@ -16162,12 +16240,12 @@
         "ft": 8.86
       },
       "displacement": {
-        "kg": 6500.0,
-        "lbs": 14330.0
+        "kg": 6500,
+        "lbs": 14330
       },
       "ballast": {
-        "kg": 4300.0,
-        "lbs": 9480.0
+        "kg": 4300,
+        "lbs": 9480
       },
       "mainHoist": {
         "m": 17.02,
@@ -16224,7 +16302,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 40.0
+        "ft": 40
       }
     },
     "description": null,
@@ -16264,7 +16342,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 40.0
+        "ft": 40
       }
     },
     "description": null,
@@ -16304,7 +16382,7 @@
     "specs": {
       "loa": {
         "m": 10.48,
-        "ft": 34.0
+        "ft": 34
       },
       "beam": {
         "m": 3.47,
@@ -16315,12 +16393,12 @@
         "ft": 7.22
       },
       "displacement": {
-        "kg": 3250.0,
-        "lbs": 7165.0
+        "kg": 3250,
+        "lbs": 7165
       },
       "ballast": {
-        "kg": 1466.0,
-        "lbs": 3232.0
+        "kg": 1466,
+        "lbs": 3232
       },
       "mainHoist": {
         "m": 13.07,
@@ -16377,7 +16455,7 @@
     "specs": {
       "loa": {
         "m": 11.98,
-        "ft": 39.0
+        "ft": 39
       },
       "beam": {
         "m": 3.82,
@@ -16388,12 +16466,12 @@
         "ft": 8.79
       },
       "displacement": {
-        "kg": 4663.0,
-        "lbs": 10280.0
+        "kg": 4663,
+        "lbs": 10280
       },
       "ballast": {
-        "kg": 2336.0,
-        "lbs": 5150.0
+        "kg": 2336,
+        "lbs": 5150
       },
       "mainHoist": {
         "m": 15.82,
@@ -16450,7 +16528,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 39.0
+        "ft": 39
       }
     },
     "description": null,
@@ -16490,7 +16568,7 @@
     "specs": {
       "loa": {
         "m": 9.43,
-        "ft": 30.0
+        "ft": 30
       },
       "beam": {
         "m": 3.08,
@@ -16501,12 +16579,12 @@
         "ft": 6.9
       },
       "displacement": {
-        "kg": 2069.0,
-        "lbs": 4561.0
+        "kg": 2069,
+        "lbs": 4561
       },
       "ballast": {
-        "kg": 906.0,
-        "lbs": 1997.0
+        "kg": 906,
+        "lbs": 1997
       },
       "mainHoist": {
         "m": 13.77,
@@ -16562,7 +16640,7 @@
     "specs": {
       "loa": {
         "m": 12.49,
-        "ft": 40.0
+        "ft": 40
       },
       "beam": {
         "m": 3.95,
@@ -16573,12 +16651,12 @@
         "ft": 8.5
       },
       "displacement": {
-        "kg": 5470.0,
-        "lbs": 12059.0
+        "kg": 5470,
+        "lbs": 12059
       },
       "ballast": {
-        "kg": 3184.0,
-        "lbs": 7020.0
+        "kg": 3184,
+        "lbs": 7020
       },
       "mainHoist": {
         "m": 16.5,
@@ -16711,7 +16789,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 40.0
+        "ft": 40
       }
     },
     "description": null,
@@ -16756,7 +16834,7 @@
     "specs": {
       "loa": {
         "m": 12.49,
-        "ft": 40.0
+        "ft": 40
       },
       "beam": {
         "m": 3.99,
@@ -16767,12 +16845,12 @@
         "ft": 8.5
       },
       "displacement": {
-        "kg": 5660.0,
-        "lbs": 12478.0
+        "kg": 5660,
+        "lbs": 12478
       },
       "ballast": {
-        "kg": 3597.0,
-        "lbs": 7930.0
+        "kg": 3597,
+        "lbs": 7930
       },
       "mainHoist": {
         "m": 16.84,
@@ -16829,7 +16907,7 @@
     "specs": {
       "loa": {
         "m": 20.4,
-        "ft": 67.0
+        "ft": 67
       },
       "beam": {
         "m": 5.42,
@@ -16840,12 +16918,12 @@
         "ft": 11.98
       },
       "displacement": {
-        "kg": 18500.0,
-        "lbs": 40786.0
+        "kg": 18500,
+        "lbs": 40786
       },
       "ballast": {
-        "kg": 7100.0,
-        "lbs": 15655.0
+        "kg": 7100,
+        "lbs": 15655
       },
       "mainHoist": {
         "m": 24.18,
@@ -16902,7 +16980,7 @@
     "specs": {
       "loa": {
         "m": 12.26,
-        "ft": 40.0
+        "ft": 40
       },
       "lwl": {
         "m": 11.92,
@@ -16917,8 +16995,8 @@
         "ft": 6.23
       },
       "displacement": {
-        "kg": 6900.0,
-        "lbs": 15212.0
+        "kg": 6900,
+        "lbs": 15212
       },
       "mainHoist": {
         "m": 14.89,
@@ -16975,7 +17053,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 14.0
+        "ft": 14
       }
     },
     "description": null,
@@ -17017,7 +17095,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 93.0
+        "ft": 93
       }
     },
     "description": null,
@@ -17058,7 +17136,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 50.0
+        "ft": 50
       }
     },
     "description": null,
@@ -17098,7 +17176,7 @@
     "specs": {
       "loa": {
         "m": 13.06,
-        "ft": 43.0
+        "ft": 43
       },
       "beam": {
         "m": 3.99,
@@ -17109,12 +17187,12 @@
         "ft": 9.25
       },
       "displacement": {
-        "kg": 6490.0,
-        "lbs": 14310.0
+        "kg": 6490,
+        "lbs": 14310
       },
       "ballast": {
-        "kg": 3665.0,
-        "lbs": 8080.0
+        "kg": 3665,
+        "lbs": 8080
       },
       "mainHoist": {
         "m": 17.02,
@@ -17171,7 +17249,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 46.0
+        "ft": 46
       }
     },
     "description": null,
@@ -17211,7 +17289,7 @@
     "specs": {
       "loa": {
         "m": 11.66,
-        "ft": 38.0
+        "ft": 38
       },
       "beam": {
         "m": 3.81,
@@ -17222,12 +17300,12 @@
         "ft": 8.86
       },
       "displacement": {
-        "kg": 4585.0,
-        "lbs": 10108.0
+        "kg": 4585,
+        "lbs": 10108
       },
       "ballast": {
-        "kg": 2275.0,
-        "lbs": 5015.0
+        "kg": 2275,
+        "lbs": 5015
       },
       "mainHoist": {
         "m": 14.8,
@@ -17284,7 +17362,7 @@
     "specs": {
       "loa": {
         "m": 11.66,
-        "ft": 38.0
+        "ft": 38
       },
       "beam": {
         "m": 3.81,
@@ -17295,12 +17373,12 @@
         "ft": 8.86
       },
       "displacement": {
-        "kg": 4585.0,
-        "lbs": 10108.0
+        "kg": 4585,
+        "lbs": 10108
       },
       "ballast": {
-        "kg": 2275.0,
-        "lbs": 5015.0
+        "kg": 2275,
+        "lbs": 5015
       },
       "mainHoist": {
         "m": 14.8,
@@ -17357,7 +17435,7 @@
     "specs": {
       "loa": {
         "m": 28.34,
-        "ft": 95.0
+        "ft": 95
       },
       "lwl": {
         "m": 22.88,
@@ -17372,12 +17450,12 @@
         "ft": 11.48
       },
       "displacement": {
-        "kg": 62000.0,
-        "lbs": 136700.0
+        "kg": 62000,
+        "lbs": 136700
       },
       "ballast": {
-        "kg": 21000.0,
-        "lbs": 46297.0
+        "kg": 21000,
+        "lbs": 46297
       },
       "mainHoist": {
         "m": 31.58,
@@ -17434,7 +17512,7 @@
     "specs": {
       "loa": {
         "m": 14.48,
-        "ft": 46.0
+        "ft": 46
       },
       "beam": {
         "m": 4.25,
@@ -17445,15 +17523,15 @@
         "ft": 9.15
       },
       "displacement": {
-        "kg": 8580.0,
-        "lbs": 18916.0
+        "kg": 8580,
+        "lbs": 18916
       },
       "ballast": {
-        "kg": 5994.0,
-        "lbs": 13215.0
+        "kg": 5994,
+        "lbs": 13215
       },
       "mainHoist": {
-        "m": 19.0,
+        "m": 19,
         "ft": 62.34
       },
       "mainFoot": {
@@ -17461,7 +17539,7 @@
         "ft": 23.23
       },
       "headsailHoist": {
-        "m": 18.0,
+        "m": 18,
         "ft": 59.06
       }
     },
@@ -17507,7 +17585,7 @@
     "specs": {
       "loa": {
         "m": 13.86,
-        "ft": 45.0
+        "ft": 45
       },
       "beam": {
         "m": 4.24,
@@ -17518,12 +17596,12 @@
         "ft": 9.52
       },
       "displacement": {
-        "kg": 6937.0,
-        "lbs": 15294.0
+        "kg": 6937,
+        "lbs": 15294
       },
       "ballast": {
-        "kg": 3643.0,
-        "lbs": 8301.0
+        "kg": 3643,
+        "lbs": 8301
       },
       "mainHoist": {
         "m": 18.81,
@@ -17580,7 +17658,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 45.0
+        "ft": 45
       }
     },
     "description": null,
@@ -17621,7 +17699,7 @@
     "designType": "Sailing Yacht",
     "specs": {
       "loa": {
-        "m": 43.0,
+        "m": 43,
         "ft": null
       }
     },
@@ -17663,7 +17741,7 @@
     "specs": {
       "loa": {
         "m": 15.38,
-        "ft": 50.0
+        "ft": 50
       },
       "beam": {
         "m": 4.7,
@@ -17674,12 +17752,12 @@
         "ft": null
       },
       "displacement": {
-        "kg": 17000.0,
-        "lbs": 37400.0
+        "kg": 17000,
+        "lbs": 37400
       },
       "ballast": {
-        "kg": 6000.0,
-        "lbs": 13200.0
+        "kg": 6000,
+        "lbs": 13200
       }
     },
     "description": null,
@@ -17724,7 +17802,7 @@
     "specs": {
       "loa": {
         "m": 15.97,
-        "ft": 50.0
+        "ft": 50
       },
       "beam": {
         "m": 4.7,
@@ -17735,12 +17813,12 @@
         "ft": 7.5
       },
       "displacement": {
-        "kg": 6125.0,
-        "lbs": 38500.0
+        "kg": 6125,
+        "lbs": 38500
       },
       "ballast": {
-        "kg": 6125.0,
-        "lbs": 13475.0
+        "kg": 6125,
+        "lbs": 13475
       }
     },
     "description": "'<p>&nbsp;</p><div>A development of the current Farr 50 Pilot&nbsp;House hull",
@@ -17785,7 +17863,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 40.0
+        "ft": 40
       }
     },
     "description": null,
@@ -17831,7 +17909,7 @@
     "designType": "Racing Yacht",
     "specs": {
       "loa": {
-        "ft": 60.0,
+        "ft": 60,
         "m": 18.29
       }
     },
@@ -17874,7 +17952,7 @@
     "designType": "Racing Yacht",
     "specs": {
       "loa": {
-        "ft": 60.0,
+        "ft": 60,
         "m": 18.29
       }
     },
@@ -17916,7 +17994,7 @@
     "specs": {
       "loa": {
         "m": 19.5,
-        "ft": 64.0
+        "ft": 64
       },
       "beam": {
         "m": 5.25,
@@ -17927,8 +18005,8 @@
         "ft": 12.3
       },
       "displacement": {
-        "kg": 13500.0,
-        "lbs": 29700.0
+        "kg": 13500,
+        "lbs": 29700
       }
     },
     "description": null,
@@ -17974,7 +18052,7 @@
     "designType": "Racing Yacht",
     "specs": {
       "loa": {
-        "ft": 60.0,
+        "ft": 60,
         "m": 18.29
       }
     },
@@ -18016,7 +18094,7 @@
     "specs": {
       "loa": {
         "m": 19.5,
-        "ft": 64.0
+        "ft": 64
       },
       "beam": {
         "m": 5.25,
@@ -18027,8 +18105,8 @@
         "ft": 12.3
       },
       "displacement": {
-        "kg": 13500.0,
-        "lbs": 29700.0
+        "kg": 13500,
+        "lbs": 29700
       }
     },
     "description": null,
@@ -18073,7 +18151,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 64.0
+        "ft": 64
       }
     },
     "description": null,
@@ -18113,7 +18191,7 @@
     "specs": {
       "loa": {
         "m": 19.5,
-        "ft": 64.0
+        "ft": 64
       },
       "beam": {
         "m": 5.25,
@@ -18124,8 +18202,8 @@
         "ft": 12.3
       },
       "displacement": {
-        "kg": 13500.0,
-        "lbs": 29700.0
+        "kg": 13500,
+        "lbs": 29700
       }
     },
     "description": null,
@@ -18171,7 +18249,7 @@
     "designType": "Racing Yacht",
     "specs": {
       "loa": {
-        "ft": 60.0,
+        "ft": 60,
         "m": 18.29
       }
     },
@@ -18213,7 +18291,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 64.0
+        "ft": 64
       }
     },
     "description": null,
@@ -18253,7 +18331,7 @@
     "specs": {
       "loa": {
         "m": 19.5,
-        "ft": 64.0
+        "ft": 64
       },
       "beam": {
         "m": 5.25,
@@ -18264,8 +18342,8 @@
         "ft": 12.3
       },
       "displacement": {
-        "kg": 13500.0,
-        "lbs": 29700.0
+        "kg": 13500,
+        "lbs": 29700
       }
     },
     "description": null,
@@ -18310,7 +18388,7 @@
     "specs": {
       "loa": {
         "m": 19.5,
-        "ft": 64.0
+        "ft": 64
       },
       "beam": {
         "m": 5.25,
@@ -18321,8 +18399,8 @@
         "ft": 12.3
       },
       "displacement": {
-        "kg": 13500.0,
-        "lbs": 29700.0
+        "kg": 13500,
+        "lbs": 29700
       }
     },
     "description": null,
@@ -18367,7 +18445,7 @@
     "specs": {
       "loa": {
         "m": 19.5,
-        "ft": 64.0
+        "ft": 64
       },
       "beam": {
         "m": 5.25,
@@ -18378,8 +18456,8 @@
         "ft": 12.3
       },
       "displacement": {
-        "kg": 13500.0,
-        "lbs": 29700.0
+        "kg": 13500,
+        "lbs": 29700
       }
     },
     "description": null,
@@ -18426,7 +18504,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 60.0
+        "ft": 60
       }
     },
     "description": null,
@@ -18467,7 +18545,7 @@
     "specs": {
       "loa": {
         "m": 19.5,
-        "ft": 64.0
+        "ft": 64
       },
       "beam": {
         "m": 5.25,
@@ -18478,8 +18556,8 @@
         "ft": 12.3
       },
       "displacement": {
-        "kg": 13500.0,
-        "lbs": 29700.0
+        "kg": 13500,
+        "lbs": 29700
       }
     },
     "description": null,
@@ -18752,7 +18830,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 60.0
+        "ft": 60
       }
     },
     "description": null,
@@ -18792,7 +18870,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 49.0
+        "ft": 49
       }
     },
     "description": null,
@@ -18837,7 +18915,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 40.0
+        "ft": 40
       }
     },
     "description": null,
@@ -18882,7 +18960,7 @@
     "specs": {
       "loa": {
         "m": 18.46,
-        "ft": 60.0
+        "ft": 60
       },
       "lwl": {
         "m": 15.91,
@@ -18893,16 +18971,16 @@
         "ft": 16.24
       },
       "draft": {
-        "m": 4.0,
+        "m": 4,
         "ft": 13.12
       },
       "displacement": {
-        "kg": 17000.0,
-        "lbs": 37479.0
+        "kg": 17000,
+        "lbs": 37479
       },
       "ballast": {
-        "kg": 6500.0,
-        "lbs": 14330.0
+        "kg": 6500,
+        "lbs": 14330
       },
       "mainHoist": {
         "m": 24.8,
@@ -18959,7 +19037,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 49.0
+        "ft": 49
       }
     },
     "description": null,
@@ -19004,7 +19082,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 49.0
+        "ft": 49
       }
     },
     "description": null,
@@ -19049,23 +19127,23 @@
     "specs": {
       "loa": {
         "m": 18.46,
-        "ft": 60.0
+        "ft": 60
       },
       "beam": {
-        "m": 5.0,
+        "m": 5,
         "ft": 16.4
       },
       "draft": {
-        "m": 3.0,
+        "m": 3,
         "ft": 9.84
       },
       "displacement": {
-        "kg": 19000.0,
-        "lbs": 41888.0
+        "kg": 19000,
+        "lbs": 41888
       },
       "ballast": {
-        "kg": 7400.0,
-        "lbs": 16314.0
+        "kg": 7400,
+        "lbs": 16314
       },
       "mainHoist": {
         "m": 22.05,
@@ -19122,7 +19200,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 45.0
+        "ft": 45
       }
     },
     "description": null,
@@ -19167,7 +19245,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 49.0
+        "ft": 49
       }
     },
     "description": null,
@@ -19207,7 +19285,7 @@
     "specs": {
       "loa": {
         "m": 15.16,
-        "ft": 49.0
+        "ft": 49
       },
       "lwl": {
         "m": 12.96,
@@ -19222,12 +19300,12 @@
         "ft": 11.48
       },
       "displacement": {
-        "kg": 8885.0,
-        "lbs": 19588.0
+        "kg": 8885,
+        "lbs": 19588
       },
       "ballast": {
-        "kg": 5863.0,
-        "lbs": 12926.0
+        "kg": 5863,
+        "lbs": 12926
       },
       "mainHoist": {
         "m": 19.5,
@@ -19284,7 +19362,7 @@
     "specs": {
       "loa": {
         "m": 19.67,
-        "ft": 65.0
+        "ft": 65
       },
       "beam": {
         "m": 5.17,
@@ -19292,11 +19370,11 @@
       },
       "draft": {
         "m": 3.05,
-        "ft": 10.0
+        "ft": 10
       },
       "displacement": {
-        "kg": 27500.0,
-        "lbs": 60600.0
+        "kg": 27500,
+        "lbs": 60600
       },
       "mainHoist": {
         "m": 22.83,
@@ -19353,7 +19431,7 @@
     "specs": {
       "loa": {
         "m": 19.4,
-        "ft": 65.0
+        "ft": 65
       },
       "beam": {
         "m": 5.17,
@@ -19364,12 +19442,12 @@
         "ft": 10.166666666666666
       },
       "displacement": {
-        "kg": 27500.0,
-        "lbs": 60500.0
+        "kg": 27500,
+        "lbs": 60500
       },
       "ballast": {
-        "kg": 10740.0,
-        "lbs": 23628.0
+        "kg": 10740,
+        "lbs": 23628
       }
     },
     "description": "'<p>&nbsp;</p><p>In 2000",
@@ -19414,7 +19492,7 @@
     "specs": {
       "loa": {
         "m": 14.5,
-        "ft": 47.0
+        "ft": 47
       },
       "lwl": {
         "m": 12.6,
@@ -19429,12 +19507,12 @@
         "ft": 7.55
       },
       "displacement": {
-        "kg": 12000.0,
-        "lbs": 26455.0
+        "kg": 12000,
+        "lbs": 26455
       },
       "ballast": {
-        "kg": 3800.0,
-        "lbs": 8377.0
+        "kg": 3800,
+        "lbs": 8377
       },
       "mainHoist": {
         "m": 15.86,
@@ -19491,7 +19569,7 @@
     "specs": {
       "loa": {
         "m": 17.6,
-        "ft": 56.0
+        "ft": 56
       },
       "beam": {
         "m": 5.06,
@@ -19502,12 +19580,12 @@
         "ft": 8.25
       },
       "displacement": {
-        "kg": 20500.0,
-        "lbs": 45100.0
+        "kg": 20500,
+        "lbs": 45100
       },
       "ballast": {
-        "kg": 6750.0,
-        "lbs": 14036.0
+        "kg": 6750,
+        "lbs": 14036
       },
       "mainHoist": {
         "m": 19.61,
@@ -19570,7 +19648,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 55.0
+        "ft": 55
       }
     },
     "description": null,
@@ -19613,7 +19691,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 73.0
+        "ft": 73
       }
     },
     "description": null,
@@ -19654,7 +19732,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 49.0
+        "ft": 49
       }
     },
     "description": "'<p>Design 428 is a sixth generation IMS 49 design and is a development of the highly successful BEAU GESTE (Design #420",
@@ -19698,8 +19776,8 @@
     "designType": "IMS Racer",
     "specs": {
       "loa": {
-        "m": 13.0,
-        "ft": 49.0
+        "m": 13,
+        "ft": 49
       },
       "lwl": {
         "m": 12.96,
@@ -19711,15 +19789,15 @@
       },
       "draft": {
         "m": 3.35,
-        "ft": 11.0
+        "ft": 11
       },
       "displacement": {
-        "kg": 8866.0,
-        "lbs": 19546.0
+        "kg": 8866,
+        "lbs": 19546
       },
       "ballast": {
-        "kg": 5130.0,
-        "lbs": 11310.0
+        "kg": 5130,
+        "lbs": 11310
       },
       "mainHoist": {
         "m": 19.5,
@@ -19778,7 +19856,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 70.0
+        "ft": 70
       }
     },
     "description": null,
@@ -19821,7 +19899,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 98.0
+        "ft": 98
       }
     },
     "description": null,
@@ -19862,7 +19940,7 @@
     "specs": {
       "loa": {
         "m": 23.99,
-        "ft": 80.0
+        "ft": 80
       },
       "lwl": {
         "m": 21.23,
@@ -19873,16 +19951,16 @@
         "ft": 19.55
       },
       "draft": {
-        "m": 4.0,
+        "m": 4,
         "ft": 13.12
       },
       "displacement": {
-        "kg": 35000.0,
-        "lbs": 77162.0
+        "kg": 35000,
+        "lbs": 77162
       },
       "ballast": {
-        "kg": 13000.0,
-        "lbs": 28660.0
+        "kg": 13000,
+        "lbs": 28660
       }
     },
     "description": null,
@@ -19927,7 +20005,7 @@
     "specs": {
       "loa": {
         "m": 14.32,
-        "ft": 47.0
+        "ft": 47
       },
       "lwl": {
         "m": 12.26,
@@ -19938,16 +20016,16 @@
         "ft": 12.73
       },
       "draft": {
-        "m": 3.0,
+        "m": 3,
         "ft": 9.843
       },
       "displacement": {
-        "kg": 6842.0,
-        "lbs": 15084.0
+        "kg": 6842,
+        "lbs": 15084
       },
       "ballast": {
-        "kg": 3812.0,
-        "lbs": 8404.0
+        "kg": 3812,
+        "lbs": 8404
       },
       "mainHoist": {
         "m": 18.27,
@@ -20004,7 +20082,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 115.0
+        "ft": 115
       }
     },
     "description": "'<p>The basic design brief for Peter Harrison&rsquo;s 115 ft fast cruising ketch was for:</p><p style=\\\"margin-left:.5in;\\\">1",
@@ -20048,8 +20126,8 @@
     "designType": "IMS Racer",
     "specs": {
       "loa": {
-        "m": 13.0,
-        "ft": 43.0
+        "m": 13,
+        "ft": 43
       },
       "lwl": {
         "m": 11.2,
@@ -20064,12 +20142,12 @@
         "ft": 9.19
       },
       "displacement": {
-        "kg": 6094.0,
-        "lbs": 13435.0
+        "kg": 6094,
+        "lbs": 13435
       },
       "ballast": {
-        "kg": 3530.0,
-        "lbs": 7782.0
+        "kg": 3530,
+        "lbs": 7782
       },
       "mainHoist": {
         "m": 18.17,
@@ -20126,7 +20204,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 52.0
+        "ft": 52
       }
     },
     "description": "'<p>Among the Pandemonium of Rating Systems",
@@ -20173,7 +20251,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 52.0
+        "ft": 52
       }
     },
     "description": null,
@@ -20214,7 +20292,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 52.0
+        "ft": 52
       }
     },
     "description": "'<p>&nbsp;</p><p>The Farr 520 is developed from the hugely successful Farr 52OD",
@@ -20259,7 +20337,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 36.0
+        "ft": 36
       }
     },
     "description": "'<p>In May 1999",
@@ -20304,7 +20382,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 49.0
+        "ft": 49
       }
     },
     "description": null,
@@ -20346,7 +20424,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 60.0
+        "ft": 60
       }
     },
     "description": null,
@@ -20427,7 +20505,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 60.0
+        "ft": 60
       }
     },
     "description": null,
@@ -20470,7 +20548,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 60.0
+        "ft": 60
       }
     },
     "description": null,
@@ -20511,7 +20589,7 @@
     "specs": {
       "loa": {
         "m": 15.86,
-        "ft": 53.0
+        "ft": 53
       },
       "lwl": {
         "m": 13.44,
@@ -20526,12 +20604,12 @@
         "ft": 10.9
       },
       "displacement": {
-        "kg": 9871.0,
-        "lbs": 21466.0
+        "kg": 9871,
+        "lbs": 21466
       },
       "ballast": {
-        "kg": 6395.0,
-        "lbs": 14101.0
+        "kg": 6395,
+        "lbs": 14101
       },
       "mainHoist": {
         "m": 20.85,
@@ -20588,7 +20666,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 53.0
+        "ft": 53
       }
     },
     "description": null,
@@ -20630,7 +20708,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 53.0
+        "ft": 53
       }
     },
     "description": null,
@@ -20675,7 +20753,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 38.0
+        "ft": 38
       }
     },
     "description": null,
@@ -20720,11 +20798,11 @@
     "specs": {
       "loa": {
         "m": 19.4,
-        "ft": 60.0
+        "ft": 60
       },
       "lwl": {
         "m": 17.3,
-        "ft": 57.0
+        "ft": 57
       },
       "beam": {
         "m": 5.25,
@@ -20735,8 +20813,8 @@
         "ft": 12.3
       },
       "displacement": {
-        "kg": 13500.0,
-        "lbs": 29700.0
+        "kg": 13500,
+        "lbs": 29700
       }
     },
     "description": null,
@@ -20781,11 +20859,11 @@
     "specs": {
       "loa": {
         "m": 19.4,
-        "ft": 60.0
+        "ft": 60
       },
       "lwl": {
         "m": 17.3,
-        "ft": 57.0
+        "ft": 57
       },
       "beam": {
         "m": 5.25,
@@ -20796,8 +20874,8 @@
         "ft": 12.3
       },
       "displacement": {
-        "kg": 13500.0,
-        "lbs": 29700.0
+        "kg": 13500,
+        "lbs": 29700
       }
     },
     "description": null,
@@ -20842,11 +20920,11 @@
     "specs": {
       "loa": {
         "m": 19.4,
-        "ft": 60.0
+        "ft": 60
       },
       "lwl": {
         "m": 17.3,
-        "ft": 57.0
+        "ft": 57
       },
       "beam": {
         "m": 5.25,
@@ -20857,8 +20935,8 @@
         "ft": 12.3
       },
       "displacement": {
-        "kg": 13500.0,
-        "lbs": 29700.0
+        "kg": 13500,
+        "lbs": 29700
       }
     },
     "description": null,
@@ -20903,11 +20981,11 @@
     "specs": {
       "loa": {
         "m": 19.4,
-        "ft": 60.0
+        "ft": 60
       },
       "lwl": {
         "m": 17.3,
-        "ft": 57.0
+        "ft": 57
       },
       "beam": {
         "m": 5.25,
@@ -20918,8 +20996,8 @@
         "ft": 12.3
       },
       "displacement": {
-        "kg": 13500.0,
-        "lbs": 29700.0
+        "kg": 13500,
+        "lbs": 29700
       }
     },
     "description": null,
@@ -20964,7 +21042,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 60.0
+        "ft": 60
       }
     },
     "description": null,
@@ -21011,7 +21089,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 60.0
+        "ft": 60
       }
     },
     "description": null,
@@ -21052,10 +21130,10 @@
     "specs": {
       "loa": {
         "m": 17.6,
-        "ft": 57.0
+        "ft": 57
       },
       "lwl": {
-        "m": 15.0,
+        "m": 15,
         "ft": 49.21
       },
       "beam": {
@@ -21067,11 +21145,11 @@
         "ft": 8.53
       },
       "displacement": {
-        "kg": 21500.0,
-        "lbs": 47399.0
+        "kg": 21500,
+        "lbs": 47399
       },
       "mainHoist": {
-        "m": 19.0,
+        "m": 19,
         "ft": 62.34
       },
       "mainFoot": {
@@ -21079,7 +21157,7 @@
         "ft": 22.54
       },
       "headsailHoist": {
-        "m": 20.0,
+        "m": 20,
         "ft": 65.62
       }
     },
@@ -21125,7 +21203,7 @@
     "specs": {
       "loa": {
         "m": 20.3,
-        "ft": 67.0
+        "ft": 67
       },
       "lwl": {
         "m": 18.24,
@@ -21136,16 +21214,16 @@
         "ft": 16.34
       },
       "draft": {
-        "m": 4.0,
+        "m": 4,
         "ft": 13.12
       },
       "displacement": {
-        "kg": 25500.0,
-        "lbs": 56228.0
+        "kg": 25500,
+        "lbs": 56228
       },
       "ballast": {
-        "kg": 9040.0,
-        "lbs": 19922.0
+        "kg": 9040,
+        "lbs": 19922
       },
       "mainHoist": {
         "m": 25.44,
@@ -21202,7 +21280,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 51.0
+        "ft": 51
       }
     },
     "description": "'<p align=\\\"center\\\">The newest IMS design now on the tables is a 51&rsquo; racer",
@@ -21249,7 +21327,7 @@
     "specs": {
       "loa": {
         "m": 23.99,
-        "ft": 80.0
+        "ft": 80
       },
       "lwl": {
         "m": 20.92,
@@ -21264,8 +21342,8 @@
         "ft": 12.47
       },
       "displacement": {
-        "kg": 38400.0,
-        "lbs": 84672.0
+        "kg": 38400,
+        "lbs": 84672
       },
       "mainHoist": {
         "m": 30.15,
@@ -21322,7 +21400,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 70.0
+        "ft": 70
       }
     },
     "description": null,
@@ -21367,12 +21445,12 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 43.0
+        "ft": 43
       }
     },
     "description": "'<p>&nbsp;</p><p>Design 491 is poised to be a giant-killer on the Mediterranean IMS circuit.&nbsp; This design was commissioned by a Greek owner with the goal of winning in the large boat class.&nbsp; At 43&rsquo; LOA she will be one of the smallest boats in her class",
     "shortDescription": "IMS 43",
-    "shortSummary": "Design 491 is poised to be a giant-killer on the Mediterranean IMS circuit. While this design is sized to be at the small end of the big boat class it will be fast enough to sail in front of the 45\u2019 cruiser/racers.  ",
+    "shortSummary": "Design 491 is poised to be a giant-killer on the Mediterranean IMS circuit. While this design is sized to be at the small end of the big boat class it will be fast enough to sail in front of the 45’ cruiser/racers.  ",
     "builder": "G. Andreadis",
     "owner": null,
     "rigType": null,
@@ -21412,7 +21490,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 36.0
+        "ft": 36
       }
     },
     "description": "'<p>&nbsp;</p><p style=\\\"margin-left:.25in;\\\">Farr<sup>&reg;</sup> 36 Features</p><p>&nbsp;</p><p style=\\\"margin-left:.5in;\\\">Stylish One Design Racer with no rule influence</p><p style=\\\"margin-left:.5in;\\\">IRC&nbsp;&nbsp; <strong>Yes</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PHRF&nbsp;&nbsp; <strong>Yes</strong>&nbsp;&nbsp; IMS&nbsp;&nbsp; <strong>No</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IRM&nbsp;&nbsp; <strong>No</strong></p><p style=\\\"margin-left:.5in;\\\">Owner Driver Rule</p><p style=\\\"margin-left:.5in;\\\">Sail restrictions and crew weight controls</p><p style=\\\"margin-left:.5in;\\\">Extremely fast/high stability</p><p style=\\\"margin-left:.5in;\\\">No runners &ndash; masthead asymmetric spinnaker on retractable sprit</p><p style=\\\"margin-left:.5in;\\\">Non-overlapping jibs on athwartships tracks</p><p style=\\\"margin-left:.5in;\\\">ORC Category 2 legal for offshore racing (excluding safety gear",
@@ -21457,7 +21535,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 53.0
+        "ft": 53
       }
     },
     "description": null,
@@ -21499,7 +21577,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 53.0
+        "ft": 53
       }
     },
     "description": null,
@@ -21541,7 +21619,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 52.0
+        "ft": 52
       }
     },
     "description": null,
@@ -21586,7 +21664,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 44.0
+        "ft": 44
       }
     },
     "description": null,
@@ -21631,7 +21709,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 60.0
+        "ft": 60
       }
     },
     "description": "'<p>&nbsp;</p><p>In early 2002 Farr Yacht Design was commissioned by a French client to develop an Open 60 design targeted at winning the 2004-2005 Vendee Globe",
@@ -21904,7 +21982,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 52.0
+        "ft": 52
       }
     },
     "description": "'<p>&nbsp;</p><div><p>Design #533 was created to compete in a broad mix of venues including both course and distance races.&nbsp; Within the bounds of the otherwise tightly controlled Transpac 52 Rule",
@@ -21949,7 +22027,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 42.0
+        "ft": 42
       }
     },
     "description": "'<p>&nbsp;</p><p>2002 was a year of challenges for Farr Yacht Design and our newest IMS design was no different.&nbsp; The Spanish builder Sinergia Composites approached us late in 2002 to design a new generation IMS boat for the IMS 600 Class",
@@ -21994,7 +22072,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 85.0
+        "ft": 85
       }
     },
     "description": "'<p>&nbsp;</p><p>Farr Yacht Design is better known for racing designs and probably less well known for its fast cruising designs. In fact",
@@ -22041,7 +22119,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 70.0
+        "ft": 70
       }
     },
     "description": null,
@@ -22082,7 +22160,7 @@
     "specs": {
       "loa": {
         "m": 16.64,
-        "ft": 54.0
+        "ft": 54
       },
       "beam": {
         "m": 4.02,
@@ -22093,12 +22171,12 @@
         "ft": 10.83
       },
       "displacement": {
-        "kg": 13650.0,
-        "lbs": 30098.0
+        "kg": 13650,
+        "lbs": 30098
       },
       "ballast": {
-        "kg": 10300.0,
-        "lbs": 22711.0
+        "kg": 10300,
+        "lbs": 22711
       },
       "mainHoist": {
         "m": 23.49,
@@ -22121,7 +22199,7 @@
         "ft": 20.77
       }
     },
-    "description": "'<p>&nbsp;</p><p align=\\\"left\\\">Design #539 was commissioned by CAM (Caja de Ahorros del Mediterr\u00e1neo",
+    "description": "'<p>&nbsp;</p><p align=\\\"left\\\">Design #539 was commissioned by CAM (Caja de Ahorros del Mediterráneo",
     "shortDescription": "2004 IMS Racing Yacht",
     "shortSummary": "This design was built in 2004 for competitive IMS racing in the Mediterranean IMS racing circuit.",
     "builder": "Mtorres",
@@ -22163,7 +22241,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 74.0
+        "ft": 74
       }
     },
     "description": null,
@@ -22208,7 +22286,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 50.0
+        "ft": 50
       }
     },
     "description": null,
@@ -22253,7 +22331,7 @@
     "specs": {
       "loa": {
         "m": 30.2,
-        "ft": 100.0
+        "ft": 100
       },
       "lwl": {
         "m": 26.2,
@@ -22268,12 +22346,12 @@
         "ft": 11.81
       },
       "displacement": {
-        "kg": 60000.0,
-        "lbs": 132277.0
+        "kg": 60000,
+        "lbs": 132277
       },
       "ballast": {
-        "kg": 21000.0,
-        "lbs": 46297.0
+        "kg": 21000,
+        "lbs": 46297
       }
     },
     "description": "'<p>In response to rising demand in a very exclusive market",
@@ -22318,31 +22396,31 @@
     "specs": {
       "loa": {
         "m": 10.36,
-        "ft": 34.0
+        "ft": 34
       },
       "lwl": {
         "m": 8.73,
-        "ft": 38.0
+        "ft": 38
       },
       "beam": {
         "m": 3.37,
-        "ft": 11.0
+        "ft": 11
       },
       "draft": {
-        "m": 2.0,
-        "ft": 6.0
+        "m": 2,
+        "ft": 6
       },
       "displacement": {
-        "kg": 4520.0,
-        "lbs": 10265.0
+        "kg": 4520,
+        "lbs": 10265
       },
       "ballast": {
-        "kg": 1670.0,
-        "lbs": 3682.0
+        "kg": 1670,
+        "lbs": 3682
       },
       "mainHoist": {
         "m": 12.8,
-        "ft": 42.0
+        "ft": 42
       },
       "mainFoot": {
         "m": 4.49,
@@ -22350,7 +22428,7 @@
       },
       "headsailHoist": {
         "m": 13.17,
-        "ft": 43.0
+        "ft": 43
       }
     },
     "description": "'<p>&nbsp;</p><p>BENETEAU have enjoyed considerable success in the past providing sailing enthusiasts with boats that merge racing and cruising needs in one tidy economic package. Design 543 was conceived to continue providing that product in an updated and advanced form for a worldwide market place.</p><p>&nbsp;</p><p>The adoption of the IRC rule at club racing level and by some of the more legendary offshore events has sparked strong interest in boats that fair well under this single number rating system.&nbsp; The brief called for the boat to be competitive under IRC for club racing worldwide. BENETEAU and Farr Yacht Design undertook the challenges that this brief presented in terms of both design and production manufacturing.</p><p>&nbsp;</p><p>While specific formulas used to determine the IRC ratings are not published",
@@ -22395,7 +22473,7 @@
     "specs": {
       "loa": {
         "m": 21.5,
-        "ft": 70.0
+        "ft": 70
       },
       "beam": {
         "m": null,
@@ -22406,11 +22484,11 @@
         "ft": 14.76
       },
       "ballast": {
-        "kg": 4500.0,
+        "kg": 4500,
         "lbs": 9920.8
       },
       "mainHoist": {
-        "m": 28.0,
+        "m": 28,
         "ft": 91.86
       },
       "mainFoot": {
@@ -22466,7 +22544,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 70.0
+        "ft": 70
       }
     },
     "description": null,
@@ -22509,7 +22587,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 70.0
+        "ft": 70
       }
     },
     "description": null,
@@ -22552,7 +22630,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 70.0
+        "ft": 70
       }
     },
     "description": null,
@@ -22593,7 +22671,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 70.0
+        "ft": 70
       }
     },
     "description": null,
@@ -22638,7 +22716,7 @@
     "specs": {
       "loa": {
         "m": 21.5,
-        "ft": 70.0
+        "ft": 70
       },
       "beam": {
         "m": null,
@@ -22649,11 +22727,11 @@
         "ft": 14.76
       },
       "ballast": {
-        "kg": 4500.0,
+        "kg": 4500,
         "lbs": 9920.8
       },
       "mainHoist": {
-        "m": 28.0,
+        "m": 28,
         "ft": 91.86
       },
       "mainFoot": {
@@ -22707,7 +22785,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 78.0
+        "ft": 78
       }
     },
     "description": null,
@@ -22749,7 +22827,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 52.0
+        "ft": 52
       }
     },
     "description": "'<p>&nbsp;</p><p>Farr Yacht Design has developed two new third generation Transpac 52 designs (Designs #585 and #586",
@@ -22796,7 +22874,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 52.0
+        "ft": 52
       }
     },
     "description": null,
@@ -22839,7 +22917,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 52.0
+        "ft": 52
       }
     },
     "description": null,
@@ -22882,7 +22960,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 52.0
+        "ft": 52
       }
     },
     "description": null,
@@ -22923,7 +23001,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 52.0
+        "ft": 52
       }
     },
     "description": "'<p>&nbsp;</p><p>Farr Yacht Design has developed two new third generation Transpac 52 designs (Designs #585 and #586",
@@ -22970,7 +23048,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 52.0
+        "ft": 52
       }
     },
     "description": null,
@@ -23011,7 +23089,7 @@
     "specs": {
       "loa": {
         "m": 12.75,
-        "ft": 42.0
+        "ft": 42
       },
       "beam": {
         "m": 3.94,
@@ -23022,12 +23100,12 @@
         "ft": 8.4
       },
       "displacement": {
-        "kg": 7050.0,
-        "lbs": 15540.0
+        "kg": 7050,
+        "lbs": 15540
       },
       "ballast": {
-        "kg": 3310.0,
-        "lbs": 7300.0
+        "kg": 3310,
+        "lbs": 7300
       },
       "mainHoist": {
         "m": 17.31,
@@ -23092,7 +23170,7 @@
     "specs": {
       "loa": {
         "m": 12.8,
-        "ft": 42.0
+        "ft": 42
       },
       "beam": {
         "m": 3.94,
@@ -23103,12 +23181,12 @@
         "ft": 8.4
       },
       "displacement": {
-        "kg": 7050.0,
-        "lbs": 15540.0
+        "kg": 7050,
+        "lbs": 15540
       },
       "ballast": {
-        "kg": 3305.0,
-        "lbs": 7290.0
+        "kg": 3305,
+        "lbs": 7290
       },
       "mainHoist": {
         "m": 17.31,
@@ -23173,7 +23251,7 @@
     "specs": {
       "loa": {
         "m": 15.84,
-        "ft": 52.0
+        "ft": 52
       },
       "beam": {
         "m": 4.37,
@@ -23184,12 +23262,12 @@
         "ft": 10.47
       },
       "ballast": {
-        "kg": 4270.0,
-        "lbs": 9416.0
+        "kg": 4270,
+        "lbs": 9416
       },
       "mainHoist": {
         "m": 20.42,
-        "ft": 67.0
+        "ft": 67
       },
       "mainFoot": {
         "m": 7.49,
@@ -23205,7 +23283,7 @@
       },
       "spinPole": {
         "m": 7.62,
-        "ft": 25.0
+        "ft": 25
       }
     },
     "description": null,
@@ -23249,8 +23327,8 @@
     "designType": "Racing Yacht",
     "specs": {
       "loa": {
-        "m": 30.0,
-        "ft": 100.0
+        "m": 30,
+        "ft": 100
       },
       "lwl": {
         "m": 29.75,
@@ -23265,8 +23343,8 @@
         "ft": 18.04
       },
       "displacement": {
-        "kg": 36500.0,
-        "lbs": 80469.0
+        "kg": 36500,
+        "lbs": 80469
       }
     },
     "description": "'<p>&nbsp;</p><p align=\\\"left\\\">Chine</p><p align=\\\"left\\\">The hull shape",
@@ -23311,7 +23389,7 @@
     "specs": {
       "loa": {
         "m": 15.84,
-        "ft": 52.0
+        "ft": 52
       },
       "beam": {
         "m": 4.42,
@@ -23322,16 +23400,16 @@
         "ft": 10.47
       },
       "displacement": {
-        "kg": 7492.0,
-        "lbs": 16517.0
+        "kg": 7492,
+        "lbs": 16517
       },
       "ballast": {
-        "kg": 4588.0,
-        "lbs": 10115.0
+        "kg": 4588,
+        "lbs": 10115
       },
       "mainHoist": {
         "m": 20.42,
-        "ft": 67.0
+        "ft": 67
       },
       "mainFoot": {
         "m": 7.4,
@@ -23347,7 +23425,7 @@
       },
       "spinPole": {
         "m": 7.62,
-        "ft": 25.0
+        "ft": 25
       }
     },
     "description": "'<p>June 2005</p><p>&nbsp;</p><div>Following on from Design 585 (BRIBON",
@@ -23392,7 +23470,7 @@
     "specs": {
       "loa": {
         "m": 18.28,
-        "ft": 60.0
+        "ft": 60
       },
       "draft": {
         "m": 4.5,
@@ -23441,7 +23519,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 60.0
+        "ft": 60
       },
       "draft": {
         "m": 4.5,
@@ -23490,7 +23568,7 @@
     "specs": {
       "loa": {
         "m": 18.28,
-        "ft": 60.0
+        "ft": 60
       },
       "draft": {
         "m": 4.5,
@@ -23539,7 +23617,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 60.0
+        "ft": 60
       }
     },
     "description": null,
@@ -23583,8 +23661,8 @@
     "designType": "Racing Yacht",
     "specs": {
       "loa": {
-        "m": 20.0,
-        "ft": 65.0
+        "m": 20,
+        "ft": 65
       },
       "beam": {
         "m": 4.78,
@@ -23595,12 +23673,12 @@
         "ft": 15.7
       },
       "displacement": {
-        "kg": 13400.0,
-        "lbs": 29540.0
+        "kg": 13400,
+        "lbs": 29540
       },
       "ballast": {
-        "kg": 8640.0,
-        "lbs": 19050.0
+        "kg": 8640,
+        "lbs": 19050
       },
       "mainHoist": {
         "m": 26.4,
@@ -23661,7 +23739,7 @@
     "specs": {
       "loa": {
         "m": 12.8,
-        "ft": 42.0
+        "ft": 42
       },
       "draft": {
         "m": 2.6,
@@ -23729,8 +23807,8 @@
     "designType": "IRC Racing Yacht",
     "specs": {
       "loa": {
-        "m": 14.0,
-        "ft": 46.0
+        "m": 14,
+        "ft": 46
       },
       "draft": {
         "m": 2.8,
@@ -23793,11 +23871,11 @@
     "specs": {
       "loa": {
         "m": 12.24,
-        "ft": 40.0
+        "ft": 40
       },
       "lwl": {
         "m": 10.67,
-        "ft": 35.0
+        "ft": 35
       },
       "beam": {
         "m": 3.89,
@@ -23808,8 +23886,8 @@
         "ft": 6.4
       },
       "displacement": {
-        "kg": 7900.0,
-        "lbs": 17417.0
+        "kg": 7900,
+        "lbs": 17417
       },
       "mainHoist": {
         "m": 2.45,
@@ -23862,7 +23940,7 @@
     "specs": {
       "loa": {
         "m": 18.28,
-        "ft": 60.0
+        "ft": 60
       },
       "draft": {
         "m": 4.5,
@@ -23872,7 +23950,7 @@
     "description": null,
     "shortDescription": "Open 60",
     "shortSummary": null,
-    "builder": "Beyou (J\u00e9r\u00e9mie Beyou)",
+    "builder": "Beyou (Jérémie Beyou)",
     "owner": null,
     "rigType": null,
     "rigMaterial": null,
@@ -23899,6 +23977,49 @@
     "hidden": false
   },
   {
+    "title": "609m",
+    "slug": "609m-card",
+    "designNumber": "609m",
+    "name": "Open 60 (IMOCA)",
+    "year": 2005,
+    "category": [
+      "Racing"
+    ],
+    "classification": null,
+    "designRule": null,
+    "designType": "Racing",
+    "specs": {
+      "loa": {
+        "m": null,
+        "ft": 60
+      }
+    },
+    "description": null,
+    "shortDescription": "Open 60 (IMOCA)",
+    "shortSummary": null,
+    "builder": "Beyou (Jérémie Beyou)",
+    "owner": null,
+    "rigType": null,
+    "rigMaterial": null,
+    "keelType": null,
+    "hullConstruction": null,
+    "hullsBuilt": null,
+    "inProduction": null,
+    "isArchived": null,
+    "images": null,
+    "drawings": null,
+    "vppFile": null,
+    "drupalAlias": null,
+    "nid": null,
+    "tier": 2,
+    "planStatus": "request_from_shed",
+    "hasCardPDF": true,
+    "cardDrawingCount": 39,
+    "cardDrawingsAvailable": null,
+    "hidden": false,
+    "yearEstimated": false
+  },
+  {
     "title": "609M",
     "slug": "609m",
     "designNumber": "609M",
@@ -23913,7 +24034,7 @@
     "specs": {
       "loa": {
         "m": 18.28,
-        "ft": 60.0
+        "ft": 60
       },
       "draft": {
         "m": 4.5,
@@ -23950,49 +24071,6 @@
     "hidden": false
   },
   {
-    "title": "609m",
-    "slug": "609m-card",
-    "designNumber": "609m",
-    "name": "Open 60 (IMOCA)",
-    "year": 2005,
-    "category": [
-      "Racing"
-    ],
-    "classification": null,
-    "designRule": null,
-    "designType": "Racing",
-    "specs": {
-      "loa": {
-        "m": null,
-        "ft": 60.0
-      }
-    },
-    "description": null,
-    "shortDescription": "Open 60 (IMOCA)",
-    "shortSummary": null,
-    "builder": "Beyou (J\u00e9r\u00e9mie Beyou)",
-    "owner": null,
-    "rigType": null,
-    "rigMaterial": null,
-    "keelType": null,
-    "hullConstruction": null,
-    "hullsBuilt": null,
-    "inProduction": null,
-    "isArchived": null,
-    "images": null,
-    "drawings": null,
-    "vppFile": null,
-    "drupalAlias": null,
-    "nid": null,
-    "tier": 2,
-    "planStatus": "request_from_shed",
-    "hasCardPDF": true,
-    "cardDrawingCount": 39,
-    "cardDrawingsAvailable": null,
-    "hidden": false,
-    "yearEstimated": false
-  },
-  {
     "title": "613",
     "slug": "613",
     "designNumber": "613",
@@ -24005,7 +24083,7 @@
     "specs": {
       "loa": {
         "m": 11.18,
-        "ft": 36.0
+        "ft": 36
       },
       "beam": {
         "m": 3.281,
@@ -24016,12 +24094,12 @@
         "ft": 8.86
       },
       "displacement": {
-        "kg": 2400.0,
-        "lbs": 5300.0
+        "kg": 2400,
+        "lbs": 5300
       },
       "ballast": {
-        "kg": 1090.0,
-        "lbs": 2400.0
+        "kg": 1090,
+        "lbs": 2400
       },
       "mainHoist": {
         "m": 15.22,
@@ -24082,7 +24160,7 @@
     "specs": {
       "loa": {
         "m": 33.6,
-        "ft": 110.0
+        "ft": 110
       },
       "lwl": {
         "m": 29.8,
@@ -24097,12 +24175,12 @@
         "ft": 13.78
       },
       "displacement": {
-        "kg": 77700.0,
-        "lbs": 171299.0
+        "kg": 77700,
+        "lbs": 171299
       },
       "ballast": {
-        "kg": 32200.0,
-        "lbs": 70989.0
+        "kg": 32200,
+        "lbs": 70989
       }
     },
     "description": "'<p style=\\\"text-align: justify\\\">The SW 110 is the fifth design from Farr Yacht Design for Southern Wind Shipyard.&nbsp; The basis for the concept of the SW 110 can be found in the hugely successful SW 100",
@@ -24147,7 +24225,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 43.0
+        "ft": 43
       }
     },
     "description": "'<p style=\\\"text-align: justify\\\">The concept for design 620 can be described as a racer/cruiser that sits comfortably between custom and semi-custom yachts designed primarily for IRC racing (Farr 42",
@@ -24192,12 +24270,12 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 35.0
+        "ft": 35
       }
     },
     "description": "'<p>&nbsp;</p><p>The BENETEAU First 35 (Design 622",
     "shortDescription": "35 Cruiser/Racer",
-    "shortSummary": "Design 622 will fulfill the club racer\u2019s desire for a versatile and competitive cruiser/racer at a popular size and price. ",
+    "shortSummary": "Design 622 will fulfill the club racer’s desire for a versatile and competitive cruiser/racer at a popular size and price. ",
     "builder": "BENETEAU",
     "owner": null,
     "rigType": null,
@@ -24239,7 +24317,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 70.0
+        "ft": 70
       }
     },
     "description": null,
@@ -24280,7 +24358,7 @@
     "specs": {
       "loa": {
         "m": 21.5,
-        "ft": 70.0
+        "ft": 70
       },
       "beam": {
         "m": 5.7,
@@ -24291,7 +24369,7 @@
         "ft": 14.76
       },
       "displacement": {
-        "kg": 14000.0,
+        "kg": 14000,
         "lbs": 30871.003307607498
       }
     },
@@ -24337,7 +24415,7 @@
     "specs": {
       "loa": {
         "m": 21.5,
-        "ft": 70.0
+        "ft": 70
       },
       "beam": {
         "m": 5.7,
@@ -24348,7 +24426,7 @@
         "ft": 14.76
       },
       "displacement": {
-        "kg": 14000.0,
+        "kg": 14000,
         "lbs": 30871.003307607498
       }
     },
@@ -24394,7 +24472,7 @@
     "specs": {
       "loa": {
         "m": 12.8,
-        "ft": 42.0
+        "ft": 42
       },
       "draft": {
         "m": 2.6,
@@ -24463,7 +24541,7 @@
     "specs": {
       "loa": {
         "m": 12.8,
-        "ft": 42.0
+        "ft": 42
       },
       "draft": {
         "m": 2.6,
@@ -24534,7 +24612,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 55.0
+        "ft": 55
       }
     },
     "description": "'<p>Farr Yacht Design&rsquo;s latest offering",
@@ -24579,7 +24657,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 55.0
+        "ft": 55
       }
     },
     "description": "'<p align=\\\"justify\\\" style=\\\"font-family: Verdana",
@@ -24626,7 +24704,7 @@
     "specs": {
       "loa": {
         "m": 7.62,
-        "ft": 25.0
+        "ft": 25
       },
       "lwl": {
         "m": 6.96,
@@ -24641,12 +24719,12 @@
         "ft": 5.91
       },
       "displacement": {
-        "kg": 930.0,
-        "lbs": 2046.0
+        "kg": 930,
+        "lbs": 2046
       },
       "ballast": {
-        "kg": 453.0,
-        "lbs": 997.0
+        "kg": 453,
+        "lbs": 997
       },
       "mainHoist": {
         "m": 9.5,
@@ -24695,42 +24773,6 @@
     "hidden": false
   },
   {
-    "nid": 5471,
-    "title": "667 - Farr 25OD",
-    "slug": "667-farr-25od",
-    "designNumber": "Farr 25OD",
-    "name": null,
-    "year": 2008,
-    "category": [],
-    "classification": null,
-    "designRule": null,
-    "designType": null,
-    "specs": null,
-    "description": null,
-    "shortDescription": null,
-    "shortSummary": null,
-    "builder": null,
-    "owner": null,
-    "rigType": null,
-    "rigMaterial": null,
-    "keelType": null,
-    "hullConstruction": null,
-    "hullsBuilt": null,
-    "inProduction": null,
-    "isArchived": null,
-    "images": null,
-    "drawings": null,
-    "vppFile": null,
-    "drupalAlias": "designs/667-farr-25od",
-    "tier": 3,
-    "planStatus": "coming_soon",
-    "hasCardPDF": false,
-    "cardDrawingCount": null,
-    "cardDrawingsAvailable": null,
-    "hidden": false,
-    "yearEstimated": true
-  },
-  {
     "title": "668",
     "slug": "668",
     "designNumber": "668",
@@ -24745,7 +24787,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 80.0
+        "ft": 80
       }
     },
     "description": "'<p>Farr Yacht Design&rsquo;s latest launch is the new BEAU GESTE",
@@ -24792,7 +24834,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 55.0
+        "ft": 55
       }
     },
     "description": "'<p>Farr Yacht Design&rsquo;s goal in partnership with Bavaria is to create better boats.&nbsp; At FYD we recognize that better design",
@@ -24825,48 +24867,6 @@
     "hidden": false
   },
   {
-    "nid": 18503,
-    "title": "673M",
-    "slug": "673m",
-    "designNumber": "Bavaria Cruiser 56",
-    "name": null,
-    "year": 2012,
-    "category": [],
-    "classification": null,
-    "designRule": null,
-    "designType": "Cruising Yacht",
-    "specs": {
-      "loa": {
-        "m": 16.75,
-        "ft": 55.0
-      }
-    },
-    "description": null,
-    "shortDescription": "56' Cruising Yacht",
-    "shortSummary": null,
-    "builder": "Bavaria Yachtbau",
-    "owner": null,
-    "rigType": null,
-    "rigMaterial": null,
-    "keelType": null,
-    "hullConstruction": null,
-    "hullsBuilt": null,
-    "inProduction": null,
-    "isArchived": null,
-    "images": {
-      "main": "bys_6312.jpg"
-    },
-    "drawings": null,
-    "vppFile": null,
-    "drupalAlias": "designs/673m",
-    "tier": 3,
-    "planStatus": "coming_soon",
-    "hasCardPDF": false,
-    "cardDrawingCount": null,
-    "cardDrawingsAvailable": null,
-    "hidden": false
-  },
-  {
     "title": "675",
     "slug": "675",
     "designNumber": "675",
@@ -24879,7 +24879,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 32.0
+        "ft": 32
       }
     },
     "description": "'<p align=\\\"justify\\\" style=\\\"font-family: Verdana",
@@ -24979,7 +24979,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 34.0
+        "ft": 34
       }
     },
     "description": null,
@@ -25019,7 +25019,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 47.0
+        "ft": 47
       }
     },
     "description": null,
@@ -25059,7 +25059,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 50.0
+        "ft": 50
       }
     },
     "description": "'<p align=\\\"justify\\\" style=\\\"font-family: Verdana",
@@ -25104,7 +25104,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 40.0
+        "ft": 40
       }
     },
     "description": "'<p><span style=\\\"color: rgb(51",
@@ -25149,7 +25149,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 102.0
+        "ft": 102
       }
     },
     "description": "'<p>The Southern Wind 102 is the latest collaboration between Farr Yacht Design",
@@ -25194,7 +25194,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 45.0
+        "ft": 45
       }
     },
     "description": "'<p>&nbsp;</p><p>After the completion of Bavaria&rsquo;s flagship",
@@ -25239,7 +25239,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 46.0
+        "ft": 46
       }
     },
     "description": null,
@@ -25281,7 +25281,7 @@
     "specs": {
       "loa": {
         "m": 21.5,
-        "ft": 70.0
+        "ft": 70
       },
       "beam": {
         "m": 5.7,
@@ -25292,15 +25292,15 @@
         "ft": 14.7
       },
       "displacement": {
-        "kg": 14000.0,
-        "lbs": 30865.0
+        "kg": 14000,
+        "lbs": 30865
       },
       "ballast": {
-        "kg": 7400.0,
-        "lbs": 16314.0
+        "kg": 7400,
+        "lbs": 16314
       },
       "mainHoist": {
-        "m": 28.0,
+        "m": 28,
         "ft": 91.8
       },
       "mainFoot": {
@@ -25362,7 +25362,7 @@
     "specs": {
       "loa": {
         "m": 12.35,
-        "ft": 40.0
+        "ft": 40
       },
       "lwl": {
         "m": 10.75,
@@ -25377,12 +25377,12 @@
         "ft": 6.73
       },
       "displacement": {
-        "kg": 8680.0,
-        "lbs": 19136.0
+        "kg": 8680,
+        "lbs": 19136
       },
       "ballast": {
-        "kg": 2736.0,
-        "lbs": 6031.0
+        "kg": 2736,
+        "lbs": 6031
       },
       "mainHoist": {
         "m": null,
@@ -25435,7 +25435,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 40.0
+        "ft": 40
       }
     },
     "description": "'<p>&nbsp;</p><p>Utilizing the principal Cruiser 40 concept",
@@ -25477,7 +25477,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 40.0
+        "ft": 40
       }
     },
     "description": null,
@@ -25517,7 +25517,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 40.0
+        "ft": 40
       }
     },
     "description": null,
@@ -25557,7 +25557,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 52.0
+        "ft": 52
       }
     },
     "description": null,
@@ -25635,7 +25635,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 40.0
+        "ft": 40
       }
     },
     "description": "'<p>The design objectives for the FARR 400 are to produce a fun",
@@ -25714,12 +25714,12 @@
     "designType": "Cruising Yacht",
     "specs": {
       "loa": {
-        "m": 10.0,
+        "m": 10,
         "ft": 36.2
       },
       "draft": {
         "m": null,
-        "ft": 12.0
+        "ft": 12
       },
       "draftDown": {
         "m": null,
@@ -25731,7 +25731,7 @@
       },
       "mainHoist": {
         "m": null,
-        "ft": 182.0
+        "ft": 182
       },
       "headsailHoist": {
         "m": null,
@@ -25793,7 +25793,7 @@
       },
       "ballast": {
         "kg": null,
-        "lbs": 4586.0
+        "lbs": 4586
       },
       "mainHoist": {
         "m": null,
@@ -25859,7 +25859,7 @@
       },
       "ballast": {
         "kg": null,
-        "lbs": 15578.0
+        "lbs": 15578
       },
       "mainHoist": {
         "m": null,
@@ -25921,7 +25921,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 24.0
+        "ft": 24
       }
     },
     "description": null,
@@ -26038,7 +26038,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 42.0
+        "ft": 42
       }
     },
     "description": "'<p align=\\\"justify\\\" style=\\\"font-family: Verdana",
@@ -26080,7 +26080,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 51.0
+        "ft": 51
       }
     },
     "description": null,
@@ -26120,7 +26120,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 14.0
+        "ft": 14
       }
     },
     "description": null,
@@ -26166,7 +26166,7 @@
       },
       "ballast": {
         "kg": null,
-        "lbs": 749.0
+        "lbs": 749
       },
       "mainHoist": {
         "m": null,
@@ -26224,7 +26224,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 70.0
+        "ft": 70
       }
     },
     "description": "'<p align=\\\"justify\\\" style=\\\"font-family: Verdana",
@@ -26299,7 +26299,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 39.0
+        "ft": 39
       }
     },
     "description": null,
@@ -26339,7 +26339,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 55.0
+        "ft": 55
       }
     },
     "description": null,
@@ -26379,7 +26379,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 145.0
+        "ft": 145
       }
     },
     "description": null,
@@ -26419,7 +26419,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 44.0
+        "ft": 44
       }
     },
     "description": null,
@@ -26494,7 +26494,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 96.0
+        "ft": 96
       }
     },
     "description": null,
@@ -26534,7 +26534,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 110.0
+        "ft": 110
       }
     },
     "description": null,
@@ -26574,7 +26574,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 27.0
+        "ft": 27
       }
     },
     "description": null,
@@ -26654,7 +26654,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 38.0
+        "ft": 38
       }
     },
     "description": null,
@@ -26694,7 +26694,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 42.0
+        "ft": 42
       }
     },
     "description": null,
@@ -26734,7 +26734,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 47.0
+        "ft": 47
       }
     },
     "description": null,
@@ -26774,7 +26774,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 52.0
+        "ft": 52
       }
     },
     "description": null,
@@ -26814,7 +26814,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 57.0
+        "ft": 57
       }
     },
     "description": null,
@@ -26854,7 +26854,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 105.0
+        "ft": 105
       }
     },
     "description": null,
@@ -26894,7 +26894,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 53.0
+        "ft": 53
       }
     },
     "description": null,
@@ -26934,7 +26934,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 40.0
+        "ft": 40
       }
     },
     "description": null,
@@ -26974,7 +26974,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 42.0
+        "ft": 42
       }
     },
     "description": null,
@@ -27014,7 +27014,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 65.0
+        "ft": 65
       }
     },
     "description": null,
@@ -27054,7 +27054,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 42.0
+        "ft": 42
       }
     },
     "description": null,
@@ -27094,7 +27094,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 60.0
+        "ft": 60
       }
     },
     "description": null,
@@ -27169,7 +27169,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 135.0
+        "ft": 135
       }
     },
     "description": null,
@@ -27209,7 +27209,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 65.0
+        "ft": 65
       }
     },
     "description": null,
@@ -27249,7 +27249,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 142.0
+        "ft": 142
       }
     },
     "description": null,
@@ -27394,7 +27394,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 54.0
+        "ft": 54
       }
     },
     "description": null,
@@ -27679,7 +27679,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 40.0
+        "ft": 40
       }
     },
     "description": null,
@@ -27719,7 +27719,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 60.0
+        "ft": 60
       }
     },
     "description": null,
@@ -27794,7 +27794,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 120.0
+        "ft": 120
       }
     },
     "description": null,
@@ -27974,7 +27974,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 47.0
+        "ft": 47
       }
     },
     "description": null,
@@ -28014,7 +28014,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 56.0
+        "ft": 56
       }
     },
     "description": null,
@@ -28054,7 +28054,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 43.0
+        "ft": 43
       }
     },
     "description": null,
@@ -28199,7 +28199,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 39.0
+        "ft": 39
       }
     },
     "description": null,
@@ -28379,7 +28379,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 85.0
+        "ft": 85
       }
     },
     "description": null,
@@ -28489,7 +28489,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 36.0
+        "ft": 36
       }
     },
     "description": null,
@@ -28564,7 +28564,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 20.0
+        "ft": 20
       }
     },
     "description": null,
@@ -28674,7 +28674,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 30.0
+        "ft": 30
       }
     },
     "description": null,
@@ -28819,7 +28819,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 40.0
+        "ft": 40
       }
     },
     "description": null,
@@ -28859,7 +28859,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 45.0
+        "ft": 45
       }
     },
     "description": null,
@@ -29004,7 +29004,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 40.0
+        "ft": 40
       }
     },
     "description": null,
@@ -29044,7 +29044,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 55.0
+        "ft": 55
       }
     },
     "description": null,
@@ -29239,7 +29239,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 9.0
+        "ft": 9
       }
     },
     "description": null,
@@ -29279,7 +29279,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 11.0
+        "ft": 11
       }
     },
     "description": null,
@@ -29319,7 +29319,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 43.0
+        "ft": 43
       }
     },
     "description": null,
@@ -29394,7 +29394,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 23.0
+        "ft": 23
       }
     },
     "description": null,
@@ -29474,7 +29474,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 100.0
+        "ft": 100
       }
     },
     "description": null,
@@ -29514,7 +29514,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 30.0
+        "ft": 30
       }
     },
     "description": null,
@@ -29589,7 +29589,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 101.0
+        "ft": 101
       }
     },
     "description": null,
@@ -29664,7 +29664,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 65.0
+        "ft": 65
       }
     },
     "description": null,
@@ -29704,7 +29704,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 42.0
+        "ft": 42
       }
     },
     "description": null,
@@ -29744,7 +29744,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 108.0
+        "ft": 108
       }
     },
     "description": null,
@@ -29863,7 +29863,7 @@
     "designType": "Powerboat",
     "specs": {
       "loa": {
-        "m": 9.0,
+        "m": 9,
         "ft": null
       }
     },
@@ -29941,7 +29941,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 84.0
+        "ft": 84
       }
     },
     "description": null,
@@ -29981,7 +29981,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 60.0
+        "ft": 60
       }
     },
     "description": null,
@@ -30091,7 +30091,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 100.0
+        "ft": 100
       }
     },
     "description": null,
@@ -30131,7 +30131,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 68.0
+        "ft": 68
       }
     },
     "description": null,
@@ -30206,7 +30206,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 40.0
+        "ft": 40
       }
     },
     "description": null,
@@ -30246,7 +30246,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 80.0
+        "ft": 80
       }
     },
     "description": null,
@@ -30286,7 +30286,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 100.0
+        "ft": 100
       }
     },
     "description": null,
@@ -30326,7 +30326,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 120.0
+        "ft": 120
       }
     },
     "description": null,
@@ -30366,7 +30366,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 36.0
+        "ft": 36
       }
     },
     "description": null,
@@ -30406,7 +30406,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 100.0
+        "ft": 100
       }
     },
     "description": null,
@@ -30446,7 +30446,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 42.0
+        "ft": 42
       }
     },
     "description": null,
@@ -30486,7 +30486,7 @@
     "specs": {
       "loa": {
         "m": null,
-        "ft": 33.0
+        "ft": 33
       }
     },
     "description": null,
@@ -30512,5 +30512,55 @@
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
     "hidden": false
+  },
+  {
+    "designNumber": "999",
+    "name": "TEST YACHT",
+    "title": "999",
+    "slug": "999",
+    "year": 2026,
+    "tier": 1,
+    "planStatus": "coming_soon",
+    "hidden": false,
+    "hasCardPDF": false,
+    "category": [
+      "Grand Prix",
+      "Offshore"
+    ],
+    "designType": "Racing Yacht",
+    "designRule": "ORC",
+    "classification": "DNV",
+    "builder": "Test Boatworks",
+    "owner": "KJ Farley",
+    "hullConstruction": "Composite",
+    "keelType": "Fixed",
+    "rigType": "Sloop",
+    "rigMaterial": null,
+    "hullsBuilt": 3,
+    "description": "The Test Yacht is a purpose-built 40-footer optimized for IRC racing with a carbon composite hull, fixed keel, and fractional sloop rig. Designed in 2026 as a test entry for the admin portal catalog editor.",
+    "shortDescription": "High-performance 40ft racer designed for IRC competition",
+    "shortSummary": null,
+    "specs": null,
+    "images": {
+      "main": "999_main.jpg",
+      "featured": [
+        "999_main.jpg"
+      ]
+    },
+    "nid": null,
+    "drupalAlias": null,
+    "inProduction": null,
+    "isArchived": null,
+    "drawings": null,
+    "vppFile": null,
+    "planId": "test-yacht-999-full",
+    "stripePriceEnv": "STRIPE_PRICE_TEST999",
+    "planPrice": null,
+    "planDescription": null,
+    "planContents": [
+      "Complete plan set including all drawings and specifications"
+    ],
+    "cardDrawingCount": null,
+    "cardDrawingsAvailable": null
   }
 ]
