@@ -196,13 +196,18 @@ def build_yacht_page(boat):
     if meta_line and year:
         meta_line += f" | {year}"
 
-    # Image
+    # Image — check images.main from boats.json first, then fall back to slug
     has_image = False
-    for ext in [".jpg", ".jpeg", ".png", ".gif"]:
-        if f"{slug}{ext}" in existing_images:
-            has_image = True
-            break
     image_url = f"/images/{slug}.jpg"
+    img_main = (boat.get("images") or {}).get("main", "")
+    if img_main and img_main.lower() in existing_images:
+        has_image = True
+        image_url = f"/images/{img_main}"
+    else:
+        for ext in [".jpg", ".jpeg", ".png", ".gif"]:
+            if f"{slug}{ext}" in existing_images:
+                has_image = True
+                break
 
     img_tbc = ""
     if not has_image:
@@ -384,8 +389,14 @@ def build_portfolio_page():
             loa = specs_obj.get("loa", {}) if isinstance(specs_obj, dict) else {}
             loa_ft = loa.get("ft") if isinstance(loa, dict) else None
 
-            has_img = f"{slug}.jpg" in existing_images
-            img_url = f"/images/{slug}.jpg"
+            # Check images.main first, then fall back to slug
+            card_img_main = (boat.get("images") or {}).get("main", "")
+            if card_img_main and card_img_main.lower() in existing_images:
+                has_img = True
+                img_url = f"/images/{card_img_main}"
+            else:
+                has_img = f"{slug}.jpg" in existing_images
+                img_url = f"/images/{slug}.jpg"
 
             meta_parts = []
             if loa_ft:
