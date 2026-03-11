@@ -30303,25 +30303,27 @@
     "hidden": true
   },
   {
-    "title": "880",
+    "title": "Kiboko 4 (SW108)",
     "slug": "880",
     "designNumber": "880",
-    "name": "108ft SuperYacht",
+    "name": "Kiboko 4",
     "year": 2021,
-    "category": [],
+    "category": [
+      "Superyacht"
+    ],
     "classification": null,
     "designRule": null,
-    "designType": null,
+    "designType": "Superyacht",
     "specs": {
       "loa": {
-        "m": null,
+        "m": 33.0,
         "ft": 108
       }
     },
     "description": null,
-    "shortDescription": "Southern Wind 108",
-    "shortSummary": null,
-    "builder": null,
+    "shortDescription": "Southern Wind SW108 Superyacht",
+    "shortSummary": "Award-winning 108ft sailing superyacht. Sailing Yacht of the Year 2025.",
+    "builder": "Southern Wind",
     "owner": null,
     "rigType": null,
     "rigMaterial": null,
