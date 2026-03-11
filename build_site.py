@@ -504,21 +504,8 @@ def build_design_plans_page():
 
     plans_json = json.dumps(plans_data, ensure_ascii=False)
 
-    # Read the existing design-plans.html as base (it has the full nav/footer)
-    dp_path = os.path.join(WWW, "design-plans.html")
-    with open(dp_path) as f:
-        dp_html = f.read()
-
-    # We'll replace the <main> content entirely
-    # Find <main id="main"> ... </main>
-    main_start = dp_html.find('<main id="main">')
-    main_end = dp_html.find('</main>') + len('</main>')
-
-    if main_start == -1 or main_end == -1:
-        print("WARNING: Could not find <main> in design-plans.html, skipping hub page update")
-        return dp_html
-
-    new_main = '''<main id="main">
+    # Build the main content (same as yacht/portfolio pages — use base_html template)
+    content = '''
 
     <div class="feature-hero">
       <div class="feature-hero-inner">
@@ -639,24 +626,11 @@ def build_design_plans_page():
       </div>
     </section>
 
-  </main>'''
+'''
 
-    # Replace the script section too — insert new JS before </body>
-    script_start = dp_html.find('<script>', main_end)
-    if script_start == -1:
-        script_start = dp_html.find('</body>')
-
-    # Build new page: everything before main + new main + everything after main's script
-    body_end = dp_html.find('</body>')
-
-    new_page = dp_html[:main_start] + new_main + '''
-
+    # Build the page-specific script block
+    dp_script = '''
   <script>
-    function toggleMobileNav(){var n=document.getElementById('mobileNav'),h=document.querySelector('.nav-hamburger');n.classList.toggle('active');h.classList.toggle('active');}
-    function closeMobileNav(){var n=document.getElementById('mobileNav'),h=document.querySelector('.nav-hamburger');n.classList.remove('active');h.classList.remove('active');}
-    document.querySelectorAll('.nav-dropdown-toggle').forEach(function(t){t.addEventListener('click',function(){var m=this.nextElementSibling,e=this.getAttribute('aria-expanded')==='true';this.setAttribute('aria-expanded',!e);if(m)m.style.display=e?'none':'block';});});
-    document.addEventListener('click',function(e){if(!e.target.closest('.nav-dropdown')){document.querySelectorAll('.nav-dropdown-menu').forEach(function(m){m.style.display='none';});document.querySelectorAll('.nav-dropdown-toggle').forEach(function(t){t.setAttribute('aria-expanded','false');});}});
-
     /* ── Design Plans Hub: client-side filtering ── */
     var ALL_PLANS = ''' + plans_json + ''';
 
@@ -824,10 +798,18 @@ def build_design_plans_page():
       if (main && main.firstChild) main.insertBefore(banner, main.firstChild);
       history.replaceState(null, '', 'design-plans.html');
     }
-  </script>
-''' + dp_html[body_end:]
+  </script>'''
 
-    return new_page
+    # Use base template (same as yacht/portfolio pages)
+    page_title = "Design Plans &mdash; Farr Yacht Design"
+    full_html = base_html.replace("{{ pageTitle }} &mdash; Farr Yacht Design", page_title)
+    full_html = full_html.replace("{{ content | safe }}", content)
+    full_html = full_html.replace("{% block head %}{% endblock %}", "")
+
+    # Inject the design-plans script before </body>
+    full_html = full_html.replace("</body>", dp_script + "\n</body>")
+
+    return full_html
 
 
 # ─── Load base template ───
