@@ -92,5 +92,30 @@
     document.querySelectorAll('.nav-dropdown-toggle').forEach(function(t){t.addEventListener('click',function(){var m=this.nextElementSibling,e=this.getAttribute('aria-expanded')==='true';this.setAttribute('aria-expanded',!e);if(m)m.style.display=e?'none':'block';});});
     document.addEventListener('click',function(e){if(!e.target.closest('.nav-dropdown')){document.querySelectorAll('.nav-dropdown-menu').forEach(function(m){m.style.display='none';});document.querySelectorAll('.nav-dropdown-toggle').forEach(function(t){t.setAttribute('aria-expanded','false');});}});
   </script>
+  <script>
+    /* ── Stripe Checkout (Sprint 5C) ── */
+    function initCheckout(planId) {
+      var btn = event && event.target;
+      if (btn) { btn.disabled = true; btn.textContent = 'Processing\u2026'; }
+      fetch('/.netlify/functions/create-checkout', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ planId: planId })
+      })
+      .then(function(r) { return r.json(); })
+      .then(function(data) {
+        if (data.url) {
+          window.location.href = data.url;
+        } else {
+          alert('Checkout error: ' + (data.error || 'Unknown error'));
+          if (btn) { btn.disabled = false; btn.textContent = 'Purchase & Download'; }
+        }
+      })
+      .catch(function(err) {
+        alert('Connection error. Please try again.');
+        if (btn) { btn.disabled = false; btn.textContent = 'Purchase & Download'; }
+      });
+    }
+  </script>
 </body>
 </html>

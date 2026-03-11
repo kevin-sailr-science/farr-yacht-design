@@ -29,6 +29,25 @@ boats = [b for b in all_boats if not b.get("hidden")]
 
 print(f"Loaded {len(all_boats)} boats from boats.json ({len(boats)} visible, {len(all_boats)-len(boats)} hidden)")
 
+# ─── Generate plan_catalog.json for checkout function (Sprint 5C) ───
+
+plan_catalog = {}
+for boat in all_boats:
+    plan_id = boat.get('planId')
+    if plan_id and boat.get('planStatus') == 'available':
+        plan_catalog[plan_id] = {
+            'designNumber': boat.get('designNumber'),
+            'name': f"{boat.get('name') or boat.get('title', '')} — Full Plan Set",
+            'stripePriceEnv': boat.get('stripePriceEnv'),
+            'price': boat.get('planPrice'),
+            'description': boat.get('planDescription', ''),
+        }
+
+plan_catalog_path = os.path.join(SCRIPT_DIR, "_data", "plan_catalog.json")
+with open(plan_catalog_path, 'w') as f:
+    json.dump(plan_catalog, f, indent=2, ensure_ascii=False)
+print(f"Generated plan_catalog.json ({len(plan_catalog)} purchasable plans)")
+
 # ─── Helper functions ───
 
 def decade(year):
@@ -100,9 +119,36 @@ def build_plan_section(boat):
     drawing_count = boat.get("cardDrawingCount")
     drawings_available = boat.get("cardDrawingsAvailable")
     design_num = boat.get("designNumber", "")
+    plan_id = boat.get("planId")
+    plan_price = boat.get("planPrice")
+    plan_desc = boat.get("planDescription", "")
 
-    # ─── TIER 1 WITH CARD PDF: "Plans Available" + purchase flow ───
-    if tier == 1 and has_card:
+    # ─── PURCHASABLE: Tier 1 + card + planId + price → direct Stripe checkout ───
+    if tier == 1 and has_card and plan_id and plan_price:
+        drawing_info = ""
+        if drawing_count:
+            drawing_info = f'<p style="font-size:0.82rem;color:var(--text-muted);margin:0.5rem 0 0;">{drawing_count} original drawings in this plan set'
+            if drawings_available and drawings_available != drawing_count:
+                drawing_info += f' ({drawings_available} available)'
+            drawing_info += '</p>'
+
+        desc_html = f'<p style="font-size:0.88rem;color:var(--text-secondary);line-height:1.6;margin-bottom:0.75rem;">{esc(plan_desc)}</p>' if plan_desc else '<p style="font-size:0.88rem;color:var(--text-secondary);line-height:1.6;margin-bottom:0.75rem;">Original design drawings from the Farr archive available as PDF download.</p>'
+
+        return f'''
+          <div class="purchase-card">
+            <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:0.5rem;">
+              <h3 style="margin:0;">Design Plans</h3>
+              <span class="availability-badge availability-badge--available">Available</span>
+            </div>
+            {desc_html}
+            {drawing_info}
+            <div style="margin-top:1rem;">
+              <button class="btn-purchase" onclick="initCheckout('{esc(plan_id)}')">Purchase &amp; Download &mdash; ${plan_price}</button>
+            </div>
+          </div>'''
+
+    # ─── TIER 1 WITH CARD PDF (no planId): "Plans Available" link to hub ───
+    elif tier == 1 and has_card:
         drawing_info = ""
         if drawing_count:
             drawing_info = f'<p style="font-size:0.82rem;color:var(--text-muted);margin:0.5rem 0 0;">{drawing_count} original drawings in this plan set'
@@ -502,7 +548,7 @@ def build_design_plans_page():
     plans_data = []
     for boat in boats:
         name = boat.get("name") or boat.get("title", "")
-        plans_data.append({
+        entry = {
             "slug": boat.get("slug", ""),
             "dn": boat.get("designNumber", ""),
             "name": str(name) if name else "",
@@ -511,7 +557,13 @@ def build_design_plans_page():
             "status": boat.get("planStatus", "coming_soon"),
             "dwgs": boat.get("cardDrawingCount"),
             "cat": (boat.get("category") or [""])[0] if boat.get("category") else "",
-        })
+        }
+        # Include e-commerce fields if present (Sprint 5C)
+        if boat.get("planId"):
+            entry["planId"] = boat["planId"]
+        if boat.get("planPrice"):
+            entry["price"] = boat["planPrice"]
+        plans_data.append(entry)
 
     plans_json = json.dumps(plans_data, ensure_ascii=False)
 
@@ -705,8 +757,11 @@ def build_design_plans_page():
         var yearStr = p.year ? ' &middot; ' + p.year : '';
         var catStr = p.cat ? '<div style="font-size:0.75rem;color:var(--text-muted);margin-top:0.25rem;">' + escHtml(p.cat) + '</div>' : '';
         var dwgStr = p.dwgs ? '<div style="font-size:0.72rem;color:var(--text-muted);margin-top:0.35rem;">' + p.dwgs + ' drawings</div>' : '';
+        var priceStr = p.price ? ' &mdash; $' + p.price : '';
         var action = '';
-        if (p.status === 'available') {
+        if (p.status === 'available' && p.planId) {
+          action = '<button class="btn-buy" style="font-size:0.78rem;padding:0.5rem 1rem;" onclick="initCheckout(\\''+escHtml(p.planId)+'\\')">Purchase'+priceStr+'</button>';
+        } else if (p.status === 'available') {
           action = '<a href="/yacht/'+p.slug+'.html" class="btn-buy" style="font-size:0.78rem;padding:0.5rem 1rem;text-decoration:none;">View Plans</a>';
         } else if (p.status === 'request_from_shed') {
           action = '<a href="#waitlist-form" class="btn-waitlist" style="font-size:0.78rem;padding:0.5rem 1rem;text-decoration:none;color:#d97706;border-color:#d97706;" onclick="prefillDesign(\\''+escHtml(p.dn)+'\\')">Request</a>';

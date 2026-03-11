@@ -6676,7 +6676,12 @@
     "hasCardPDF": true,
     "cardDrawingCount": 13,
     "cardDrawingsAvailable": 13,
-    "hidden": false
+    "hidden": false,
+    "planId": "farr-740-sport-full",
+    "stripePriceEnv": "STRIPE_PRICE_FARR740",
+    "planPrice": 295,
+    "planDescription": "Brochure and sail plan.",
+    "planContents": ""
   },
   {
     "title": "102",
@@ -6914,7 +6919,12 @@
     "hasCardPDF": true,
     "cardDrawingCount": 9,
     "cardDrawingsAvailable": 9,
-    "hidden": false
+    "hidden": false,
+    "planId": "noelex-30-full",
+    "stripePriceEnv": "STRIPE_PRICE_NOELEX30",
+    "planPrice": 350,
+    "planDescription": "Two brochures (original + Noelex edition) and sail plan.",
+    "planContents": ""
   },
   {
     "title": "121",
@@ -6975,7 +6985,12 @@
     "hasCardPDF": true,
     "cardDrawingCount": 9,
     "cardDrawingsAvailable": 9,
-    "hidden": false
+    "hidden": false,
+    "planId": "farr-1020-full",
+    "stripePriceEnv": "STRIPE_PRICE_FARR1020",
+    "planPrice": 350,
+    "planDescription": "Brochure, design comments, deck layout, sail plan.",
+    "planContents": ""
   },
   {
     "title": "121M",
@@ -15759,7 +15774,12 @@
     "hasCardPDF": true,
     "cardDrawingCount": 49,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": false,
+    "planId": "farr-63-kiwi-spirit-full",
+    "stripePriceEnv": "STRIPE_PRICE_FARR63KS",
+    "planPrice": 350,
+    "planDescription": "Promotional drawing package and specifications.",
+    "planContents": ""
   },
   {
     "title": "321",
@@ -17038,7 +17058,12 @@
     "hasCardPDF": true,
     "cardDrawingCount": 24,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": false,
+    "planId": "beneteau-first-407-full",
+    "stripePriceEnv": "STRIPE_PRICE_BEN407",
+    "planPrice": 295,
+    "planDescription": "Interior layout and profile drawing.",
+    "planContents": ""
   },
   {
     "title": "356",
@@ -17893,7 +17918,12 @@
     "hasCardPDF": true,
     "cardDrawingCount": 28,
     "cardDrawingsAvailable": 28,
-    "hidden": false
+    "hidden": false,
+    "planId": "farr-40-full",
+    "stripePriceEnv": "STRIPE_PRICE_FARR40",
+    "planPrice": 350,
+    "planDescription": "Sail plan, lines drawing, deck layout, rig specification, appendage detail.",
+    "planContents": ""
   },
   {
     "title": "375",
@@ -24145,7 +24175,12 @@
     "hasCardPDF": true,
     "cardDrawingCount": 29,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": false,
+    "planId": "farr-11s-full",
+    "stripePriceEnv": "STRIPE_PRICE_FARR11S",
+    "planPrice": 350,
+    "planDescription": "Brochure, deck layout, sail plan.",
+    "planContents": ""
   },
   {
     "title": "615",
@@ -30512,55 +30547,5 @@
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
     "hidden": false
-  },
-  {
-    "designNumber": "999",
-    "name": "TEST YACHT",
-    "title": "999",
-    "slug": "999",
-    "year": 2026,
-    "tier": 1,
-    "planStatus": "coming_soon",
-    "hidden": false,
-    "hasCardPDF": false,
-    "category": [
-      "Grand Prix",
-      "Offshore"
-    ],
-    "designType": "Racing Yacht",
-    "designRule": "ORC",
-    "classification": "DNV",
-    "builder": "Test Boatworks",
-    "owner": "KJ Farley",
-    "hullConstruction": "Composite",
-    "keelType": "Fixed",
-    "rigType": "Sloop",
-    "rigMaterial": null,
-    "hullsBuilt": 3,
-    "description": "The Test Yacht is a purpose-built 40-footer optimized for IRC racing with a carbon composite hull, fixed keel, and fractional sloop rig. Designed in 2026 as a test entry for the admin portal catalog editor.",
-    "shortDescription": "High-performance 40ft racer designed for IRC competition",
-    "shortSummary": null,
-    "specs": null,
-    "images": {
-      "main": "999_main.jpg",
-      "featured": [
-        "999_main.jpg"
-      ]
-    },
-    "nid": null,
-    "drupalAlias": null,
-    "inProduction": null,
-    "isArchived": null,
-    "drawings": null,
-    "vppFile": null,
-    "planId": "test-yacht-999-full",
-    "stripePriceEnv": "STRIPE_PRICE_TEST999",
-    "planPrice": null,
-    "planDescription": null,
-    "planContents": [
-      "Complete plan set including all drawings and specifications"
-    ],
-    "cardDrawingCount": null,
-    "cardDrawingsAvailable": null
   }
 ]
