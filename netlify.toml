@@ -10,6 +10,7 @@
 # Node version for functions
 [functions]
   node_bundler = "esbuild"
+  included_files = ["_data/plan_catalog.json"]
 
 # Required: Stripe npm package bundled with functions
 # Run: npm install stripe in the functions directory before deploy
