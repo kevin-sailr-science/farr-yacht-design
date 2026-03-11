@@ -105,7 +105,7 @@ exports.handler = async function (event) {
     console.error('Stripe error:', err.message);
     return {
       statusCode: 500,
-      body: JSON.stringify({ error: 'Checkout creation failed. Please try again.' })
+      body: JSON.stringify({ error: 'Checkout creation failed: ' + err.message })
     };
   }
 };
