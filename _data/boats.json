@@ -6681,7 +6681,7 @@
     "stripePriceEnv": "STRIPE_PRICE_FARR740",
     "planPrice": 295,
     "planDescription": "Brochure and sail plan.",
-    "planContents": ""
+    "planContents": "Lines, sections & offsets, deck geometry, full size shape details, hull construction, internal liner, deck construction, internal arrangement, sail plan & deck layout, keel details, rudder details, fittings, mast fittings (13 drawings)"
   },
   {
     "title": "102",
@@ -6924,7 +6924,7 @@
     "stripePriceEnv": "STRIPE_PRICE_NOELEX30",
     "planPrice": 350,
     "planDescription": "Two brochures (original + Noelex edition) and sail plan.",
-    "planContents": ""
+    "planContents": "Lines, sections & offsets, hull construction, deck construction, liner construction, interior arrangement, deck layout, sail plan & rig details, fittings, keel details, rudder details, major fittings (12 drawings)"
   },
   {
     "title": "121",
@@ -6990,7 +6990,7 @@
     "stripePriceEnv": "STRIPE_PRICE_FARR1020",
     "planPrice": 350,
     "planDescription": "Brochure, design comments, deck layout, sail plan.",
-    "planContents": ""
+    "planContents": "Preliminary study, deck geometry, deck layout, sail plan, keel foils (3 sheets), rudder geometry, keel geometry & construction, full size keel sections, IMS interior (9 drawings)"
   },
   {
     "title": "121M",
@@ -15779,7 +15779,7 @@
     "stripePriceEnv": "STRIPE_PRICE_FARR63KS",
     "planPrice": 350,
     "planDescription": "Promotional drawing package and specifications.",
-    "planContents": ""
+    "planContents": "Lines, full size hull patterns, deck geometry, hull construction, internal structure layout, deck construction, construction sections, construction details, interior arrangement, internal structure details, machinery & tankage layout, deck layout, sail plan, keel stub geometry, keel stub foil sections, rudder geometry & construction, rudder full size sections, keel geometry & construction, keel fin full size foils, keel wings, fittings, full size deck patterns, fabricated fittings, full size bulkhead patterns, optional hull construction (Devold laminates), optional deck construction (Devold laminates), forestay/bow roller fitting, wing keel buttocks, stem pattern, chainplates, sail plan (63' variant), bulb stations, plus preliminary drawings (49 drawings)"
   },
   {
     "title": "321",
@@ -17063,7 +17063,7 @@
     "stripePriceEnv": "STRIPE_PRICE_BEN407",
     "planPrice": 295,
     "planDescription": "Interior layout and profile drawing.",
-    "planContents": ""
+    "planContents": "Lines plan, full size hull patterns, deck geometry, hull laminate, internal structure, construction sections, interior arrangement, preliminary deck layout, sail plan, rudder geometry & construction, racing keel geometry & construction (final with bulb), racing keel foils, racing keel bulb sections, cruising keel geometry & construction, cruising keel foils, cruising bulb sections, custom rudder stock, carbon sailplan (24 drawings)"
   },
   {
     "title": "356",
@@ -17923,7 +17923,7 @@
     "stripePriceEnv": "STRIPE_PRICE_FARR40",
     "planPrice": 350,
     "planDescription": "Sail plan, lines drawing, deck layout, rig specification, appendage detail.",
-    "planContents": ""
+    "planContents": "Lines plan, full size hull patterns, deck geometry, hull construction, internal structure layout, deck construction, construction sections, construction details, interior arrangement, deck layout, sail plan, forestay fittings, rudder geometry & construction, keel geometry & construction, keel foils, bulb sections, full size deck patterns, measurement sailplan, plus preliminary drawings (lines, deck geometry, interior, deck layout, sailplan, rudder geometry, keel geometry) and promotional drawings (28 drawings)"
   },
   {
     "title": "375",
@@ -24180,7 +24180,7 @@
     "stripePriceEnv": "STRIPE_PRICE_FARR11S",
     "planPrice": 350,
     "planDescription": "Brochure, deck layout, sail plan.",
-    "planContents": ""
+    "planContents": "Lines plan, hull patterns, deck geometry, hull construction, internal structure, deck construction, construction sections, hull details, interior GA, deck layout, sailplan, rudder, keel, steering system layout, hull dillet geometry, backstay winch support, fixed forestay, chainplate fittings, deck construction details, aft water ballast tank, keel canting system, forestay fitting & sprit support, canard, canard case construction, keel canting support structure, plus Stage 5 revisions (rudder geometry, inboard rudder steering, deck layout, basic geometry) (29 drawings)"
   },
   {
     "title": "615",
