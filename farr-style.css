@@ -946,8 +946,8 @@ footer div[style*="border-top"] { border-top-color: rgba(255,255,255,0.15) !impo
 
 /* =============== 21. TEAM PAGE =============== */
 .team-grid {
-  max-width: 1100px; margin: 0 auto; padding: 2.5rem 2rem 3rem;
-  display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;
+  max-width: 800px; margin: 0 auto; padding: 2.5rem 2rem 3rem;
+  display: grid; grid-template-columns: 1fr; gap: 2rem;
 }
 .team-card {
   background: var(--bg-secondary); border: 1px solid var(--border);
@@ -1011,7 +1011,7 @@ footer div[style*="border-top"] { border-top-color: rgba(255,255,255,0.15) !impo
   line-height: 1.6; margin: 0 0 1rem;
 }
 @media (max-width: 768px) {
-  .team-grid { grid-template-columns: 1fr; max-width: 400px; }
+  .team-grid { grid-template-columns: 1fr; }
   .team-cta-grid { grid-template-columns: 1fr; max-width: 400px; margin: 0 auto; }
 }
 @media (max-width: 560px) {
