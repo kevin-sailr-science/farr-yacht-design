@@ -94,9 +94,14 @@
 
 # Cache static assets
 [[headers]]
-  for = "/farr-style.css"
+  for = "/farr-style.min.css"
   [headers.values]
     Cache-Control = "public, max-age=86400"
+
+[[headers]]
+  for = "/fonts/*.woff2"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
 
 # --- Environment Variables (set in Netlify UI, NOT here) ---
 # STRIPE_SECRET_KEY         sk_live_... or sk_test_... (use sk_test_ for testing)
