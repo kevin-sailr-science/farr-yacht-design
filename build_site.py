@@ -383,13 +383,26 @@ def build_yacht_page(boat):
     # OG meta tags for link previews (iMessage, WhatsApp, Slack, etc.)
     og_image_url = f"{SITE_URL}{image_url}" if has_image else f"{SITE_URL}/images/og-default.png"
     og_desc = display_desc[:200] if len(display_desc) > 200 else display_desc
-    og_tags = f'''<meta property="og:type" content="website" />
+    # Get actual image dimensions for OG tags (crawlers reject mismatched sizes)
+    og_img_w, og_img_h = 1200, 630  # default for og-default.png
+    if has_image:
+        try:
+            from PIL import Image as PILImage
+            with PILImage.open(os.path.join(WWW, image_url.lstrip("/"))) as pil_img:
+                og_img_w, og_img_h = pil_img.size
+        except Exception:
+            og_img_w, og_img_h = 0, 0  # omit dimensions if unreadable
+    og_size_tags = ""
+    if og_img_w and og_img_h:
+        og_size_tags = f'''
+  <meta property="og:image:width" content="{og_img_w}" />
+  <meta property="og:image:height" content="{og_img_h}" />'''
+    og_tags = f'''<meta name="description" content="{esc(og_desc)}" />
+  <meta property="og:type" content="website" />
   <meta property="og:url" content="{SITE_URL}/yacht/{slug}.html" />
   <meta property="og:title" content="{esc(display_name)} — Farr Yacht Design" />
   <meta property="og:description" content="{esc(og_desc)}" />
-  <meta property="og:image" content="{og_image_url}" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
+  <meta property="og:image" content="{og_image_url}" />{og_size_tags}
   <meta name="twitter:card" content="summary_large_image" />'''
 
     full_html = base_html.replace("{{ pageTitle }} &mdash; Farr Yacht Design", page_title)
