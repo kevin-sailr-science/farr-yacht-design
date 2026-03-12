@@ -358,7 +358,9 @@
     "hullsBuilt": null,
     "inProduction": null,
     "isArchived": null,
-    "images": null,
+    "images": {
+      "main": "026_01.jpg"
+    },
     "drawings": null,
     "vppFile": null,
     "drupalAlias": null,
@@ -461,7 +463,9 @@
     "hullsBuilt": null,
     "inProduction": null,
     "isArchived": null,
-    "images": null,
+    "images": {
+      "main": "027_titus.jpg"
+    },
     "drawings": null,
     "vppFile": null,
     "drupalAlias": null,
@@ -519,7 +523,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "028.jpg",
+      "main": "028_bootlegger_01.jpg",
       "featured": [
         "028_01.jpg",
         "028_bacchante_01.jpg",
@@ -573,7 +577,9 @@
     "hullsBuilt": null,
     "inProduction": null,
     "isArchived": null,
-    "images": null,
+    "images": {
+      "main": "028_bootlegger_01.jpg"
+    },
     "drawings": null,
     "vppFile": null,
     "drupalAlias": null,
@@ -671,7 +677,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "029.jpg",
+      "main": "029_yy_dec2011.jpg",
       "featured": [
         "029_01.jpg",
         "029_yy_dec2011.jpg"
@@ -718,7 +724,9 @@
     "hullsBuilt": null,
     "inProduction": null,
     "isArchived": null,
-    "images": null,
+    "images": {
+      "main": "029_yy_dec2011.jpg"
+    },
     "drawings": null,
     "vppFile": null,
     "drupalAlias": null,
@@ -1391,7 +1399,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "037.jpg",
+      "main": "37-u361042-fr.jpg",
       "featured": [
         "037_01.jpg",
         "037_02.jpg",
@@ -1440,7 +1448,9 @@
     "hullsBuilt": null,
     "inProduction": null,
     "isArchived": null,
-    "images": null,
+    "images": {
+      "main": "37-u361042-fr.jpg"
+    },
     "drawings": null,
     "vppFile": null,
     "drupalAlias": null,
@@ -1485,7 +1495,9 @@
     "hullsBuilt": null,
     "inProduction": null,
     "isArchived": null,
-    "images": null,
+    "images": {
+      "main": "037m_45degsouthii.jpg"
+    },
     "drawings": null,
     "vppFile": null,
     "drupalAlias": "designs/37m",
@@ -1530,7 +1542,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "38-center-console.jpg"
+      "main": "038.jpg"
     },
     "drawings": null,
     "vppFile": null,
@@ -1573,7 +1585,9 @@
     "hullsBuilt": null,
     "inProduction": null,
     "isArchived": null,
-    "images": null,
+    "images": {
+      "main": "038.jpg"
+    },
     "drawings": null,
     "vppFile": null,
     "drupalAlias": null,
@@ -1677,7 +1691,9 @@
     "hullsBuilt": null,
     "inProduction": null,
     "isArchived": null,
-    "images": null,
+    "images": {
+      "main": "039_01.jpg"
+    },
     "drawings": null,
     "vppFile": null,
     "drupalAlias": null,
@@ -1887,7 +1903,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "42-cruiser-gerontius.jpg",
+      "main": "042_01.jpg",
       "featured": [
         "042_01.jpg"
       ]
@@ -1933,7 +1949,9 @@
     "hullsBuilt": null,
     "inProduction": null,
     "isArchived": null,
-    "images": null,
+    "images": {
+      "main": "042_01.jpg"
+    },
     "drawings": null,
     "vppFile": null,
     "drupalAlias": null,
@@ -2392,7 +2410,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "048.jpg",
+      "main": "048_03.jpg",
       "featured": [
         "048_01.jpg",
         "048_02.jpg",
@@ -2443,7 +2461,9 @@
     "hullsBuilt": null,
     "inProduction": null,
     "isArchived": null,
-    "images": null,
+    "images": {
+      "main": "048_03.jpg"
+    },
     "drawings": null,
     "vppFile": null,
     "drupalAlias": null,
@@ -2666,7 +2686,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "051.jpg",
+      "main": "051_header.jpg",
       "featured": [
         "051_02_jiminy.jpg",
         "051c_red_cloud.jpg",
@@ -2718,7 +2738,9 @@
     "hullsBuilt": null,
     "inProduction": null,
     "isArchived": null,
-    "images": null,
+    "images": {
+      "main": "051_header.jpg"
+    },
     "drawings": null,
     "vppFile": null,
     "drupalAlias": null,
@@ -2901,7 +2923,9 @@
     "hullsBuilt": null,
     "inProduction": null,
     "isArchived": null,
-    "images": null,
+    "images": {
+      "main": "052_01.jpg"
+    },
     "drawings": null,
     "vppFile": null,
     "drupalAlias": null,
@@ -3061,7 +3085,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "054.jpg",
+      "main": "054_heaer.jpg",
       "featured": [
         "054_01.jpg",
         "054_02.jpg",
@@ -3110,7 +3134,9 @@
     "hullsBuilt": null,
     "inProduction": null,
     "isArchived": null,
-    "images": null,
+    "images": {
+      "main": "054_heaer.jpg"
+    },
     "drawings": null,
     "vppFile": null,
     "drupalAlias": null,
@@ -3330,7 +3356,9 @@
     "hullsBuilt": null,
     "inProduction": null,
     "isArchived": null,
-    "images": null,
+    "images": {
+      "main": "056_01.jpg"
+    },
     "drawings": null,
     "vppFile": null,
     "drupalAlias": null,
@@ -3442,7 +3470,9 @@
     "hullsBuilt": null,
     "inProduction": null,
     "isArchived": null,
-    "images": null,
+    "images": {
+      "main": "057_01.jpg"
+    },
     "drawings": null,
     "vppFile": null,
     "drupalAlias": null,
@@ -4009,7 +4039,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "064.jpg",
+      "main": "064_header.jpg",
       "featured": [
         "064_05.jpg",
         "064_02.jpg",
@@ -4058,7 +4088,9 @@
     "hullsBuilt": null,
     "inProduction": null,
     "isArchived": null,
-    "images": null,
+    "images": {
+      "main": "064_header.jpg"
+    },
     "drawings": null,
     "vppFile": null,
     "drupalAlias": null,
@@ -4114,7 +4146,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "065.jpg",
+      "main": "065_04_orginal.jpg",
       "featured": [
         "065_03.jpg",
         "065_02.jpg",
@@ -4163,7 +4195,9 @@
     "hullsBuilt": null,
     "inProduction": null,
     "isArchived": null,
-    "images": null,
+    "images": {
+      "main": "065_04_orginal.jpg"
+    },
     "drawings": null,
     "vppFile": null,
     "drupalAlias": null,
@@ -4250,7 +4284,9 @@
     "hullsBuilt": null,
     "inProduction": null,
     "isArchived": null,
-    "images": null,
+    "images": {
+      "main": "066-2.jpg"
+    },
     "drawings": null,
     "vppFile": null,
     "drupalAlias": null,
@@ -4308,7 +4344,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "067.jpg",
+      "main": "67_monique.jpg",
       "featured": [
         "067_04.jpg",
         "67_monique.jpg"
@@ -4355,7 +4391,9 @@
     "hullsBuilt": null,
     "inProduction": null,
     "isArchived": null,
-    "images": null,
+    "images": {
+      "main": "67_monique.jpg"
+    },
     "drawings": null,
     "vppFile": null,
     "drupalAlias": null,
@@ -4578,7 +4616,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "072.jpg",
+      "main": "072_header.jpg",
       "featured": [
         "072_01.jpg",
         "72_2_photo_cover.jpg"
@@ -4712,7 +4750,9 @@
     "hullsBuilt": null,
     "inProduction": null,
     "isArchived": null,
-    "images": null,
+    "images": {
+      "main": "072_header.jpg"
+    },
     "drawings": null,
     "vppFile": null,
     "drupalAlias": null,
@@ -4983,7 +5023,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "074.jpg",
+      "main": "074_header.jpg",
       "featured": [
         "074_01.jpg"
       ]
@@ -5029,7 +5069,9 @@
     "hullsBuilt": null,
     "inProduction": null,
     "isArchived": null,
-    "images": null,
+    "images": {
+      "main": "074_header.jpg"
+    },
     "drawings": null,
     "vppFile": null,
     "drupalAlias": null,
@@ -5141,7 +5183,9 @@
     "hullsBuilt": null,
     "inProduction": null,
     "isArchived": null,
-    "images": null,
+    "images": {
+      "main": "076_header.jpg"
+    },
     "drawings": null,
     "vppFile": null,
     "drupalAlias": null,
@@ -5245,7 +5289,9 @@
     "hullsBuilt": null,
     "inProduction": null,
     "isArchived": null,
-    "images": null,
+    "images": {
+      "main": "078_ethereal_virtue.jpg"
+    },
     "drawings": null,
     "vppFile": null,
     "drupalAlias": null,
@@ -5446,7 +5492,9 @@
     "hullsBuilt": null,
     "inProduction": null,
     "isArchived": null,
-    "images": null,
+    "images": {
+      "main": "080_01.jpg"
+    },
     "drawings": null,
     "vppFile": null,
     "drupalAlias": null,
@@ -5591,7 +5639,9 @@
     "hullsBuilt": null,
     "inProduction": null,
     "isArchived": null,
-    "images": null,
+    "images": {
+      "main": "081_01.jpg"
+    },
     "drawings": null,
     "vppFile": null,
     "drupalAlias": null,
@@ -5749,7 +5799,9 @@
     "hullsBuilt": null,
     "inProduction": null,
     "isArchived": null,
-    "images": null,
+    "images": {
+      "main": "082_01.jpg"
+    },
     "drawings": null,
     "vppFile": null,
     "drupalAlias": null,
@@ -6024,7 +6076,9 @@
     "hullsBuilt": null,
     "inProduction": null,
     "isArchived": null,
-    "images": null,
+    "images": {
+      "main": "084_01.jpg"
+    },
     "drawings": null,
     "vppFile": null,
     "drupalAlias": null,
@@ -6169,7 +6223,9 @@
     "hullsBuilt": null,
     "inProduction": null,
     "isArchived": null,
-    "images": null,
+    "images": {
+      "main": "084m_special_effect600x400.jpg"
+    },
     "drawings": null,
     "vppFile": null,
     "drupalAlias": "designs/84m",
@@ -6226,7 +6282,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "085.jpg",
+      "main": "85_header.jpg",
       "featured": [
         "085_01.jpg",
         "085_02.jpg",
@@ -6281,7 +6337,9 @@
     "hullsBuilt": null,
     "inProduction": null,
     "isArchived": null,
-    "images": null,
+    "images": {
+      "main": "85_header.jpg"
+    },
     "drawings": null,
     "vppFile": null,
     "drupalAlias": null,
@@ -6386,7 +6444,9 @@
     "hullsBuilt": null,
     "inProduction": null,
     "isArchived": null,
-    "images": null,
+    "images": {
+      "main": "086_01.jpg"
+    },
     "drawings": null,
     "vppFile": null,
     "drupalAlias": null,
@@ -6498,7 +6558,9 @@
     "hullsBuilt": null,
     "inProduction": null,
     "isArchived": null,
-    "images": null,
+    "images": {
+      "main": "087_01_th.jpg"
+    },
     "drawings": null,
     "vppFile": null,
     "drupalAlias": null,
@@ -6702,7 +6764,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "090.jpg",
+      "main": "90_header.jpg",
       "featured": [
         "090_02.jpg",
         "090_01.jpg",
@@ -6751,7 +6813,9 @@
     "hullsBuilt": null,
     "inProduction": null,
     "isArchived": null,
-    "images": null,
+    "images": {
+      "main": "90_header.jpg"
+    },
     "drawings": null,
     "vppFile": null,
     "drupalAlias": null,
@@ -6866,7 +6930,9 @@
     "hullsBuilt": null,
     "inProduction": null,
     "isArchived": null,
-    "images": null,
+    "images": {
+      "main": "091_01.jpg"
+    },
     "drawings": null,
     "vppFile": null,
     "drupalAlias": null,
@@ -7252,7 +7318,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "097.jpg",
+      "main": "97_header.jpg",
       "featured": [
         "097_03.jpg",
         "097_02.jpg",
@@ -7301,7 +7367,9 @@
     "hullsBuilt": null,
     "inProduction": null,
     "isArchived": null,
-    "images": null,
+    "images": {
+      "main": "97_header.jpg"
+    },
     "drawings": null,
     "vppFile": null,
     "drupalAlias": null,
@@ -7367,7 +7435,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "099.jpg",
+      "main": "099_03.jpg",
       "featured": [
         "099_01.jpg",
         "099_02.jpg",
@@ -7421,7 +7489,9 @@
     "hullsBuilt": null,
     "inProduction": null,
     "isArchived": null,
-    "images": null,
+    "images": {
+      "main": "099_03.jpg"
+    },
     "drawings": null,
     "vppFile": null,
     "drupalAlias": null,
@@ -7985,7 +8055,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "",
+      "main": "121m_photo1.jpg",
       "featured": [
         "121m_photo1.jpg"
       ]
@@ -19217,7 +19287,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "",
+      "main": "373m_03.jpg",
       "featured": [
         "373m_03.jpg"
       ]
@@ -20962,7 +21032,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "",
+      "main": "421m_deck_&_interior.jpg",
       "featured": [
         "421m_01.jpg"
       ]
