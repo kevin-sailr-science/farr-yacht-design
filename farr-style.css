@@ -645,7 +645,7 @@ footer div[style*="border-top"] { border-top-color: rgba(255,255,255,0.15) !impo
 .yacht-detail-header .yacht-number { font-family: var(--font-mono); font-size: 0.82rem; color: var(--accent); font-weight: 600; letter-spacing: 0.04em; }
 .yacht-detail-header .yacht-meta-line { font-size: 0.88rem; color: var(--text-muted); margin-top: 0.35rem; }
 .yacht-detail-body { display: grid; grid-template-columns: 1.4fr 1fr; gap: 2.5rem; align-items: start; }
-.yacht-detail-image { background: linear-gradient(135deg, var(--bg-secondary), var(--bg-primary)); border: 1px solid var(--border); border-radius: 10px; height: 320px; display: flex; align-items: center; justify-content: center; color: var(--text-muted); font-size: 0.82rem; overflow: hidden; }
+.yacht-detail-image { background: linear-gradient(135deg, var(--bg-secondary), var(--bg-primary)); border: 1px solid var(--border); border-radius: 10px; height: 320px; display: flex; align-items: center; justify-content: center; color: var(--text-muted); font-size: 0.82rem; overflow: hidden; position: relative; }
 .yacht-detail-image img { width: 100%; height: 100%; object-fit: cover; }
 .yacht-detail-sidebar { display: flex; flex-direction: column; gap: 0; }
 @media (max-width: 768px) {
@@ -1910,20 +1910,7 @@ footer div[style*="border-top"] { border-top-color: rgba(255,255,255,0.15) !impo
   display: none;
 }
 
-/* Dark overlay on hero slot for text legibility
-   (only when image is present) */
-.yacht-detail-image[style*="background-image"]::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(7, 18, 32, 0.15) 0%,
-    rgba(7, 18, 32, 0.45) 100%
-  );
-  pointer-events: none;
-  border-radius: inherit;
-}
+/* Dark overlay on hero slot removed — yacht photos now display clean */
 
 /* Ensure .img-tbc-label comment is hidden when image present */
 .yacht-detail-image[style*="background-image"] > span,
