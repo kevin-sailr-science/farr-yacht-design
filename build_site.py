@@ -18,6 +18,7 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 WWW = SCRIPT_DIR  # build_site.py is in www/, which IS the deploy root
 SITE = WWW
 DATA = os.path.join(SCRIPT_DIR, "_data", "boats.json")
+SITE_URL = "https://farr-designs.sailr.science"
 
 # ─── Load data ───
 
@@ -378,9 +379,22 @@ def build_yacht_page(boat):
 
     # Wrap in base template
     page_title = f"{esc(display_name)} &mdash; Farr Yacht Design"
+
+    # OG meta tags for link previews (iMessage, WhatsApp, Slack, etc.)
+    og_image_url = f"{SITE_URL}{image_url}" if has_image else f"{SITE_URL}/images/og-default.png"
+    og_desc = display_desc[:200] if len(display_desc) > 200 else display_desc
+    og_tags = f'''<meta property="og:type" content="website" />
+  <meta property="og:url" content="{SITE_URL}/yacht/{slug}.html" />
+  <meta property="og:title" content="{esc(display_name)} — Farr Yacht Design" />
+  <meta property="og:description" content="{esc(og_desc)}" />
+  <meta property="og:image" content="{og_image_url}" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />'''
+
     full_html = base_html.replace("{{ pageTitle }} &mdash; Farr Yacht Design", page_title)
     full_html = full_html.replace("{{ content | safe }}", content)
-    full_html = full_html.replace("{% block head %}{% endblock %}", "")
+    full_html = full_html.replace("{% block head %}{% endblock %}", og_tags)
 
     return full_html
 
