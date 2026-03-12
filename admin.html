@@ -951,6 +951,15 @@
       document.getElementById('login-error').style.display = 'block';
     });
 
+    /* Handle password recovery token from email link */
+    if (window.location.hash && window.location.hash.match(/^#recovery_token=/)) {
+      netlifyIdentity.open();
+    }
+    /* Handle invite token from email link */
+    if (window.location.hash && window.location.hash.match(/^#invite_token=/)) {
+      netlifyIdentity.open();
+    }
+
     /* ---- Inventory (loaded from Netlify Blobs via get-inventory function) ---- */
     var INVENTORY = [];
     var _identityToken = null; /* Set after Netlify Identity login */

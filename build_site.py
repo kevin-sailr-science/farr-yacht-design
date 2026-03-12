@@ -169,6 +169,71 @@ def build_plan_section(boat):
             </div>
           </div>'''
 
+    # ─── SCANNED PLANS: individual PDFs available for browsing/purchase ───
+    plan_files = boat.get("planFiles", [])
+    misc_files = boat.get("miscFiles", [])
+    if plan_status == "scanned_available" and (plan_files or misc_files):
+        slug = boat.get("slug", design_num)
+        # Drawing list
+        drawings_html = ""
+        if plan_files:
+            items = ""
+            for pf in plan_files:
+                fname = pf.get("filename", "")
+                label = pf.get("label", fname)
+                href = f"/plans/{design_num.zfill(3)}/{fname}"
+                items += f'''
+                <li style="display:flex;align-items:center;gap:0.5rem;padding:0.5rem 0;border-bottom:1px solid var(--border);">
+                  <span style="font-size:0.85rem;color:var(--text-secondary);flex:1;">{esc(label)}</span>
+                  <a href="{href}" target="_blank" style="font-size:0.75rem;color:var(--accent);white-space:nowrap;">View PDF</a>
+                </li>'''
+            drawings_html = f'''
+            <div style="margin-top:0.75rem;">
+              <p style="font-size:0.82rem;color:var(--text-muted);font-weight:500;margin-bottom:0.25rem;">{len(plan_files)} drawings available</p>
+              <ul style="list-style:none;padding:0;margin:0;">{items}
+              </ul>
+            </div>'''
+
+        # Free misc downloads
+        misc_html = ""
+        if misc_files:
+            misc_items = ""
+            for mf in misc_files:
+                fname = mf.get("filename", "")
+                label = mf.get("label", fname)
+                href = f"/plans/{design_num.zfill(3)}/{fname}"
+                misc_items += f'''
+                <li style="display:flex;align-items:center;gap:0.5rem;padding:0.4rem 0;border-bottom:1px solid var(--border);">
+                  <span style="font-size:0.85rem;color:var(--text-secondary);flex:1;">{esc(label)}</span>
+                  <a href="{href}" target="_blank" style="font-size:0.75rem;color:#3dba72;white-space:nowrap;">Free Download</a>
+                </li>'''
+            misc_html = f'''
+            <div style="margin-top:1.25rem;padding-top:1rem;border-top:2px solid var(--border);">
+              <p style="font-size:0.82rem;color:var(--text-muted);font-weight:500;margin-bottom:0.25rem;">Free Downloads</p>
+              <ul style="list-style:none;padding:0;margin:0;">{misc_items}
+              </ul>
+            </div>'''
+
+        # Purchase button (price TBD — placeholder until Britt sets pricing)
+        purchase_html = ""
+        if plan_id and plan_price:
+            purchase_html = f'''
+            <div style="margin-top:1rem;">
+              <button class="btn-purchase" onclick="initCheckout('{esc(plan_id)}')">Purchase Full Plan Set &mdash; ${plan_price}</button>
+            </div>'''
+
+        return f'''
+          <div class="purchase-card">
+            <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:0.5rem;">
+              <h3 style="margin:0;">Design Plans</h3>
+              <span class="availability-badge availability-badge--available">Scanned Plans</span>
+            </div>
+            <p style="font-size:0.88rem;color:var(--text-secondary);line-height:1.6;margin-bottom:0.5rem;">Original scanned design drawings from the Farr archive.</p>
+            {drawings_html}
+            {misc_html}
+            {purchase_html}
+          </div>'''
+
     # ─── NOT YET DIGITIZED: waitlist ───
     if plan_status in ("coming_soon", "not_digitized"):
         return f'''
@@ -665,7 +730,7 @@ def build_portfolio_page():
           if (d.ys) meta.push(d.ys);
           var metaStr = meta.join(' | ');
           var dot = '';
-          if (d.ps === 'available') dot = '<span style="width:7px;height:7px;border-radius:50%;background:#3dba72;flex-shrink:0;" title="Plans available"></span>';
+          if (d.ps === 'available' || d.ps === 'scanned_available') dot = '<span style="width:7px;height:7px;border-radius:50%;background:#3dba72;flex-shrink:0;" title="Plans available"></span>';
           else if (d.ps === 'request_from_shed') dot = '<span style="width:7px;height:7px;border-radius:50%;background:#d97706;flex-shrink:0;" title="Archive request"></span>';
 
           var imgStyle = d.hi ? ' style="background-image:url(\\''+d.iu+'\\');"' : '';
@@ -818,6 +883,9 @@ def build_design_plans_page():
             entry["planId"] = boat["planId"]
         if boat.get("planPrice"):
             entry["price"] = boat["planPrice"]
+        # Include scanned plan count (Sprint 11)
+        if boat.get("planFiles"):
+            entry["dwgs"] = len(boat["planFiles"])
         plans_data.append(entry)
 
     plans_json = json.dumps(plans_data, ensure_ascii=False)
@@ -959,6 +1027,7 @@ def build_design_plans_page():
 
     function statusBadge(status) {
       if (status === 'available') return '<span class="plan-badge plan-badge--available">Available</span>';
+      if (status === 'scanned_available') return '<span class="plan-badge plan-badge--available">Scanned Plans</span>';
       if (status === 'request_from_shed') return '<span class="plan-badge" style="color:#d97706;background:rgba(245,158,11,0.08);border:1px solid rgba(245,158,11,0.25);display:inline-flex;align-items:center;font-family:var(--font-mono);font-size:0.65rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;padding:0.25rem 0.65rem;border-radius:100px;">Archive</span>';
       if (status === 'not_digitized') return '<span class="plan-badge plan-badge--digitizing">Digitizing</span>';
       return '<span class="plan-badge" style="color:var(--text-muted);background:rgba(85,96,112,0.08);border:1px solid rgba(85,96,112,0.2);display:inline-flex;align-items:center;font-family:var(--font-mono);font-size:0.65rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;padding:0.25rem 0.65rem;border-radius:100px;">Coming Soon</span>';
@@ -966,6 +1035,7 @@ def build_design_plans_page():
 
     function statusLabel(status) {
       if (status === 'available') return 'Purchase Plan Set';
+      if (status === 'scanned_available') return 'View Plans';
       if (status === 'request_from_shed') return 'Request This Plan';
       if (status === 'not_digitized') return 'Join Waitlist';
       return '';
@@ -973,13 +1043,18 @@ def build_design_plans_page():
 
     function statusClass(status) {
       if (status === 'available') return 'plan-card--available';
+      if (status === 'scanned_available') return 'plan-card--available';
       if (status === 'request_from_shed') return '';
       return 'plan-card--digitizing';
     }
 
     function renderHub() {
       var filtered = ALL_PLANS.filter(function(p) {
-        if (currentFilter !== 'all' && p.status !== currentFilter) return false;
+        if (currentFilter !== 'all') {
+          if (currentFilter === 'available') {
+            if (p.status !== 'available' && p.status !== 'scanned_available') return false;
+          } else if (p.status !== currentFilter) return false;
+        }
         if (searchTerm) {
           var q = searchTerm.toLowerCase();
           var dn = String(p.dn).toLowerCase();
@@ -991,7 +1066,7 @@ def build_design_plans_page():
 
       // Update counts
       var cAll = ALL_PLANS.length;
-      var cAvail = ALL_PLANS.filter(function(p){return p.status==='available';}).length;
+      var cAvail = ALL_PLANS.filter(function(p){return p.status==='available'||p.status==='scanned_available';}).length;
       var cArchive = ALL_PLANS.filter(function(p){return p.status==='request_from_shed';}).length;
       var cDigit = ALL_PLANS.filter(function(p){return p.status==='not_digitized';}).length;
       document.getElementById('dp-count-all').textContent = '('+cAll+')';
@@ -1016,7 +1091,7 @@ def build_design_plans_page():
         var action = '';
         if (p.status === 'available' && p.planId) {
           action = '<button class="btn-buy" style="font-size:0.78rem;padding:0.5rem 1rem;" onclick="initCheckout(\\''+escHtml(p.planId)+'\\')">Purchase'+priceStr+'</button>';
-        } else if (p.status === 'available') {
+        } else if (p.status === 'available' || p.status === 'scanned_available') {
           action = '<a href="/yacht/'+p.slug+'.html" class="btn-buy" style="font-size:0.78rem;padding:0.5rem 1rem;text-decoration:none;">View Plans</a>';
         } else if (p.status === 'request_from_shed') {
           action = '<a href="#waitlist-form" class="btn-waitlist" style="font-size:0.78rem;padding:0.5rem 1rem;text-decoration:none;color:#d97706;border-color:#d97706;" onclick="prefillDesign(\\''+escHtml(p.dn)+'\\')">Request</a>';

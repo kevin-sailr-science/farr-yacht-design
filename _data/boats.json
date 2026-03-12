@@ -4589,11 +4589,100 @@
     "drupalAlias": "designs/072",
     "nid": 8694,
     "tier": 1,
-    "planStatus": "not_digitized",
+    "planStatus": "scanned_available",
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": false,
+    "planFiles": [
+      {
+        "filename": "072 Binks Farr 38 Liner Grid Fibreglass Layup.pdf",
+        "label": "Binks Farr 38 Liner Grid Fibreglass Layup",
+        "category": "drawing"
+      },
+      {
+        "filename": "72_2_10_MastFittings.pdf",
+        "label": "Mast Fittings",
+        "category": "drawing"
+      },
+      {
+        "filename": "72_2_11_SparExtrusionDetails.pdf",
+        "label": "Spar Extrusion Details",
+        "category": "drawing"
+      },
+      {
+        "filename": "72_2_1E_Lines.pdf",
+        "label": "Lines",
+        "category": "drawing"
+      },
+      {
+        "filename": "72_2_21B_Keel_Geometry_and_Construction_A0.pdf",
+        "label": "Keel Geometry and Construction",
+        "category": "drawing"
+      },
+      {
+        "filename": "72_2_2_Sections_and_Offsets.pdf",
+        "label": "Sections and Offsets",
+        "category": "drawing"
+      },
+      {
+        "filename": "72_2_4B_GRP_Construction.pdf",
+        "label": "GRP Construction",
+        "category": "drawing"
+      },
+      {
+        "filename": "72_2_5A_GRP_Construction_Details.pdf",
+        "label": "GRP Construction Details",
+        "category": "drawing"
+      },
+      {
+        "filename": "72_2_6A_InteriorArrangement.pdf",
+        "label": "Interior Arrangement",
+        "category": "drawing"
+      },
+      {
+        "filename": "72_2_7C_DeckLayout.pdf",
+        "label": "Deck Layout",
+        "category": "drawing"
+      },
+      {
+        "filename": "72_2_8A_Sailplan.pdf",
+        "label": "Sailplan",
+        "category": "drawing"
+      },
+      {
+        "filename": "72_2_9C_Fittings.pdf",
+        "label": "Fittings",
+        "category": "drawing"
+      }
+    ],
+    "miscFiles": [
+      {
+        "filename": "misc/072_Promo.pdf",
+        "label": "Promo",
+        "category": "free"
+      },
+      {
+        "filename": "misc/72-2 Mast Setup Details.pdf",
+        "label": "Mast Setup Details",
+        "category": "free"
+      },
+      {
+        "filename": "misc/72-2 Tuning Guide.pdf",
+        "label": "Tuning Guide",
+        "category": "free"
+      },
+      {
+        "filename": "misc/72-2 VPP.pdf",
+        "label": "VPP",
+        "category": "free"
+      },
+      {
+        "filename": "misc/Farr 38 Brochure.pdf",
+        "label": "Farr 38 Brochure",
+        "category": "free"
+      }
+    ]
   },
   {
     "title": "72",
@@ -4628,11 +4717,100 @@
     "vppFile": null,
     "drupalAlias": null,
     "tier": 2,
-    "planStatus": "coming_soon",
+    "planStatus": "scanned_available",
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": false,
+    "planFiles": [
+      {
+        "filename": "072 Binks Farr 38 Liner Grid Fibreglass Layup.pdf",
+        "label": "Binks Farr 38 Liner Grid Fibreglass Layup",
+        "category": "drawing"
+      },
+      {
+        "filename": "72_2_10_MastFittings.pdf",
+        "label": "Mast Fittings",
+        "category": "drawing"
+      },
+      {
+        "filename": "72_2_11_SparExtrusionDetails.pdf",
+        "label": "Spar Extrusion Details",
+        "category": "drawing"
+      },
+      {
+        "filename": "72_2_1E_Lines.pdf",
+        "label": "Lines",
+        "category": "drawing"
+      },
+      {
+        "filename": "72_2_21B_Keel_Geometry_and_Construction_A0.pdf",
+        "label": "Keel Geometry and Construction",
+        "category": "drawing"
+      },
+      {
+        "filename": "72_2_2_Sections_and_Offsets.pdf",
+        "label": "Sections and Offsets",
+        "category": "drawing"
+      },
+      {
+        "filename": "72_2_4B_GRP_Construction.pdf",
+        "label": "GRP Construction",
+        "category": "drawing"
+      },
+      {
+        "filename": "72_2_5A_GRP_Construction_Details.pdf",
+        "label": "GRP Construction Details",
+        "category": "drawing"
+      },
+      {
+        "filename": "72_2_6A_InteriorArrangement.pdf",
+        "label": "Interior Arrangement",
+        "category": "drawing"
+      },
+      {
+        "filename": "72_2_7C_DeckLayout.pdf",
+        "label": "Deck Layout",
+        "category": "drawing"
+      },
+      {
+        "filename": "72_2_8A_Sailplan.pdf",
+        "label": "Sailplan",
+        "category": "drawing"
+      },
+      {
+        "filename": "72_2_9C_Fittings.pdf",
+        "label": "Fittings",
+        "category": "drawing"
+      }
+    ],
+    "miscFiles": [
+      {
+        "filename": "misc/072_Promo.pdf",
+        "label": "Promo",
+        "category": "free"
+      },
+      {
+        "filename": "misc/72-2 Mast Setup Details.pdf",
+        "label": "Mast Setup Details",
+        "category": "free"
+      },
+      {
+        "filename": "misc/72-2 Tuning Guide.pdf",
+        "label": "Tuning Guide",
+        "category": "free"
+      },
+      {
+        "filename": "misc/72-2 VPP.pdf",
+        "label": "VPP",
+        "category": "free"
+      },
+      {
+        "filename": "misc/Farr 38 Brochure.pdf",
+        "label": "Farr 38 Brochure",
+        "category": "free"
+      }
+    ]
   },
   {
     "title": "72_2",
@@ -5334,11 +5512,54 @@
     "drupalAlias": "designs/081",
     "nid": 8686,
     "tier": 1,
-    "planStatus": "not_digitized",
+    "planStatus": "scanned_available",
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": false,
+    "planFiles": [
+      {
+        "filename": "081_1A_LINES_A0.pdf",
+        "label": "Lines",
+        "category": "drawing"
+      },
+      {
+        "filename": "081_2B_SECTIONS_OFFSETS_A0.pdf",
+        "label": "Sections Offsets",
+        "category": "drawing"
+      },
+      {
+        "filename": "081_3_INTERIOR_ARRANGEMENT_1_A0.pdf",
+        "label": "Interior Arrangement 1",
+        "category": "drawing"
+      },
+      {
+        "filename": "081_3_INTERIOR_ARRANGEMENT_2_A0.pdf",
+        "label": "Interior Arrangement 2",
+        "category": "drawing"
+      },
+      {
+        "filename": "081_4_ARRANGEMENT_2_A0.pdf",
+        "label": "Arrangement 2",
+        "category": "drawing"
+      },
+      {
+        "filename": "081_5_DECK_GEOMETRY_AND_LAYOUT_A0.pdf",
+        "label": "Deck Geometry and Layout",
+        "category": "drawing"
+      },
+      {
+        "filename": "081_6A_SAILPLAN_A0.pdf",
+        "label": "Sailplan",
+        "category": "drawing"
+      },
+      {
+        "filename": "081_7_RUDDER_GEOMETRY_CONSTRUCTION_A0.pdf",
+        "label": "Rudder Geometry Construction",
+        "category": "drawing"
+      }
+    ],
+    "miscFiles": []
   },
   {
     "title": "81",
@@ -5376,12 +5597,55 @@
     "drupalAlias": null,
     "nid": null,
     "tier": 2,
-    "planStatus": "request_from_shed",
+    "planStatus": "scanned_available",
     "hasCardPDF": true,
     "cardDrawingCount": 8,
     "cardDrawingsAvailable": 8,
     "hidden": false,
-    "yearEstimated": false
+    "yearEstimated": false,
+    "planFiles": [
+      {
+        "filename": "081_1A_LINES_A0.pdf",
+        "label": "Lines",
+        "category": "drawing"
+      },
+      {
+        "filename": "081_2B_SECTIONS_OFFSETS_A0.pdf",
+        "label": "Sections Offsets",
+        "category": "drawing"
+      },
+      {
+        "filename": "081_3_INTERIOR_ARRANGEMENT_1_A0.pdf",
+        "label": "Interior Arrangement 1",
+        "category": "drawing"
+      },
+      {
+        "filename": "081_3_INTERIOR_ARRANGEMENT_2_A0.pdf",
+        "label": "Interior Arrangement 2",
+        "category": "drawing"
+      },
+      {
+        "filename": "081_4_ARRANGEMENT_2_A0.pdf",
+        "label": "Arrangement 2",
+        "category": "drawing"
+      },
+      {
+        "filename": "081_5_DECK_GEOMETRY_AND_LAYOUT_A0.pdf",
+        "label": "Deck Geometry and Layout",
+        "category": "drawing"
+      },
+      {
+        "filename": "081_6A_SAILPLAN_A0.pdf",
+        "label": "Sailplan",
+        "category": "drawing"
+      },
+      {
+        "filename": "081_7_RUDDER_GEOMETRY_CONSTRUCTION_A0.pdf",
+        "label": "Rudder Geometry Construction",
+        "category": "drawing"
+      }
+    ],
+    "miscFiles": []
   },
   {
     "title": "082",
@@ -5640,11 +5904,95 @@
     "drupalAlias": "designs/084",
     "nid": 8748,
     "tier": 1,
-    "planStatus": "not_digitized",
+    "planStatus": "scanned_available",
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": false,
+    "planFiles": [
+      {
+        "filename": "84_1B_Lines.pdf",
+        "label": "Lines (B)",
+        "category": "drawing"
+      },
+      {
+        "filename": "84_1_Lines.pdf",
+        "label": "Lines",
+        "category": "drawing"
+      },
+      {
+        "filename": "84_2A_Sections_and_Offsets.pdf",
+        "label": "Sections and Offsets",
+        "category": "drawing"
+      },
+      {
+        "filename": "84_3A_Construction_Wood.pdf",
+        "label": "Construction (Wood)",
+        "category": "drawing"
+      },
+      {
+        "filename": "84_3_Construction_GRP-Foam_Sandwich.pdf",
+        "label": "Construction (GRP-Foam Sandwich)",
+        "category": "drawing"
+      },
+      {
+        "filename": "84_4_Construction_Details_GRP-Foam_Sandwich.pdf",
+        "label": "Construction Details (GRP-Foam Sandwich)",
+        "category": "drawing"
+      },
+      {
+        "filename": "84_4_General_Construction_Wood.pdf",
+        "label": "General Construction (Wood)",
+        "category": "drawing"
+      },
+      {
+        "filename": "84_5_Internal_Arrangement.pdf",
+        "label": "Internal Arrangement",
+        "category": "drawing"
+      },
+      {
+        "filename": "84_6_Deck_Layout.pdf",
+        "label": "Deck Layout",
+        "category": "drawing"
+      },
+      {
+        "filename": "84_7A_Sailplan_and_Rig.pdf",
+        "label": "Sailplan and Rig",
+        "category": "drawing"
+      },
+      {
+        "filename": "84_8_Fittings.pdf",
+        "label": "Fittings",
+        "category": "drawing"
+      },
+      {
+        "filename": "84_9_Mast_Fittings.pdf",
+        "label": "Mast Fittings",
+        "category": "drawing"
+      },
+      {
+        "filename": "Design_Study.pdf",
+        "label": "Design Study",
+        "category": "drawing"
+      },
+      {
+        "filename": "Study_Plan.pdf",
+        "label": "Study Plan",
+        "category": "drawing"
+      }
+    ],
+    "miscFiles": [
+      {
+        "filename": "misc/84 Design Comments.pdf",
+        "label": "Design Comments",
+        "category": "free"
+      },
+      {
+        "filename": "misc/Stability Booklet.pdf",
+        "label": "Stability Booklet",
+        "category": "free"
+      }
+    ]
   },
   {
     "title": "84",
@@ -5682,12 +6030,96 @@
     "drupalAlias": null,
     "nid": null,
     "tier": 2,
-    "planStatus": "request_from_shed",
+    "planStatus": "scanned_available",
     "hasCardPDF": true,
     "cardDrawingCount": 9,
     "cardDrawingsAvailable": 9,
     "hidden": false,
-    "yearEstimated": false
+    "yearEstimated": false,
+    "planFiles": [
+      {
+        "filename": "84_1B_Lines.pdf",
+        "label": "Lines (B)",
+        "category": "drawing"
+      },
+      {
+        "filename": "84_1_Lines.pdf",
+        "label": "Lines",
+        "category": "drawing"
+      },
+      {
+        "filename": "84_2A_Sections_and_Offsets.pdf",
+        "label": "Sections and Offsets",
+        "category": "drawing"
+      },
+      {
+        "filename": "84_3A_Construction_Wood.pdf",
+        "label": "Construction (Wood)",
+        "category": "drawing"
+      },
+      {
+        "filename": "84_3_Construction_GRP-Foam_Sandwich.pdf",
+        "label": "Construction (GRP-Foam Sandwich)",
+        "category": "drawing"
+      },
+      {
+        "filename": "84_4_Construction_Details_GRP-Foam_Sandwich.pdf",
+        "label": "Construction Details (GRP-Foam Sandwich)",
+        "category": "drawing"
+      },
+      {
+        "filename": "84_4_General_Construction_Wood.pdf",
+        "label": "General Construction (Wood)",
+        "category": "drawing"
+      },
+      {
+        "filename": "84_5_Internal_Arrangement.pdf",
+        "label": "Internal Arrangement",
+        "category": "drawing"
+      },
+      {
+        "filename": "84_6_Deck_Layout.pdf",
+        "label": "Deck Layout",
+        "category": "drawing"
+      },
+      {
+        "filename": "84_7A_Sailplan_and_Rig.pdf",
+        "label": "Sailplan and Rig",
+        "category": "drawing"
+      },
+      {
+        "filename": "84_8_Fittings.pdf",
+        "label": "Fittings",
+        "category": "drawing"
+      },
+      {
+        "filename": "84_9_Mast_Fittings.pdf",
+        "label": "Mast Fittings",
+        "category": "drawing"
+      },
+      {
+        "filename": "Design_Study.pdf",
+        "label": "Design Study",
+        "category": "drawing"
+      },
+      {
+        "filename": "Study_Plan.pdf",
+        "label": "Study Plan",
+        "category": "drawing"
+      }
+    ],
+    "miscFiles": [
+      {
+        "filename": "misc/84 Design Comments.pdf",
+        "label": "Design Comments",
+        "category": "free"
+      },
+      {
+        "filename": "misc/Stability Booklet.pdf",
+        "label": "Stability Booklet",
+        "category": "free"
+      }
+    ]
   },
   {
     "title": "84M",
@@ -10554,11 +10986,24 @@
     "drupalAlias": "designs/181",
     "nid": 8613,
     "tier": 1,
-    "planStatus": "available",
+    "planStatus": "scanned_available",
     "hasCardPDF": true,
     "cardDrawingCount": 16,
     "cardDrawingsAvailable": 16,
-    "hidden": false
+    "hidden": false,
+    "planFiles": [
+      {
+        "filename": "181 Deck Layout 9B.pdf",
+        "label": "Deck Layout",
+        "category": "drawing"
+      },
+      {
+        "filename": "181 Sailplan 8B.pdf",
+        "label": "Sailplan",
+        "category": "drawing"
+      }
+    ],
+    "miscFiles": []
   },
   {
     "title": "182",
@@ -10659,11 +11104,164 @@
     "drupalAlias": "designs/183",
     "nid": 8611,
     "tier": 1,
-    "planStatus": "not_digitized",
+    "planStatus": "scanned_available",
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": false,
+    "planFiles": [
+      {
+        "filename": "183_10_Sailplan.pdf",
+        "label": "Sailplan",
+        "category": "drawing"
+      },
+      {
+        "filename": "183_11B Keel Details & Construction.pdf",
+        "label": "Keel Details & Construction",
+        "category": "drawing"
+      },
+      {
+        "filename": "183_13_Rudder_Geometry_Construction.pdf",
+        "label": "Rudder Geometry Construction",
+        "category": "drawing"
+      },
+      {
+        "filename": "183_14_Full_Size_Rudder_Sect..pdf",
+        "label": "Full Size Rudder Sect.",
+        "category": "drawing"
+      },
+      {
+        "filename": "183_15_Steering_Schematic.pdf",
+        "label": "Steering Schematic",
+        "category": "drawing"
+      },
+      {
+        "filename": "183_16A_Fittings.pdf",
+        "label": "Fittings",
+        "category": "drawing"
+      },
+      {
+        "filename": "183_16B_Fittings_SSMOD.pdf",
+        "label": "Fittings SS Mod",
+        "category": "drawing"
+      },
+      {
+        "filename": "183_17_Stays.pdf",
+        "label": "Stays",
+        "category": "drawing"
+      },
+      {
+        "filename": "183_18A_Headstay_Backstay_Fittings.pdf",
+        "label": "Headstay Backstay Fittings",
+        "category": "drawing"
+      },
+      {
+        "filename": "183_19_Mast_Taper_Detail.pdf",
+        "label": "Mast Taper Detail",
+        "category": "drawing"
+      },
+      {
+        "filename": "183_1_Lines.pdf",
+        "label": "Lines",
+        "category": "drawing"
+      },
+      {
+        "filename": "183_20_Mast_Section.pdf",
+        "label": "Mast Section",
+        "category": "drawing"
+      },
+      {
+        "filename": "183_21_Bulb_Sections.pdf",
+        "label": "Bulb Sections",
+        "category": "drawing"
+      },
+      {
+        "filename": "183_23_Masthead_Crane.pdf",
+        "label": "Masthead Crane",
+        "category": "drawing"
+      },
+      {
+        "filename": "183_25_Top_Keel_Section.pdf",
+        "label": "Top Keel Section",
+        "category": "drawing"
+      },
+      {
+        "filename": "183_28_Bump_+_Measurement_Details.pdf",
+        "label": "Bump + Measurement Details",
+        "category": "drawing"
+      },
+      {
+        "filename": "183_29.pdf",
+        "label": "Drawing 29",
+        "category": "drawing"
+      },
+      {
+        "filename": "183_2A_Deck_Geometry.pdf",
+        "label": "Deck Geometry",
+        "category": "drawing"
+      },
+      {
+        "filename": "183_30_Rating_Sections.pdf",
+        "label": "Rating Sections",
+        "category": "drawing"
+      },
+      {
+        "filename": "183_31A_Skeg_Details_Construction.pdf",
+        "label": "Skeg Details Construction",
+        "category": "drawing"
+      },
+      {
+        "filename": "183_32_Tang_Fittings.pdf",
+        "label": "Tang Fittings",
+        "category": "drawing"
+      },
+      {
+        "filename": "183_3D Hull Construction.pdf",
+        "label": "Hull Construction",
+        "category": "drawing"
+      },
+      {
+        "filename": "183_40 Ketch Sailplan.pdf",
+        "label": "Ketch Sailplan",
+        "category": "drawing"
+      },
+      {
+        "filename": "183_4A Internal Structure Details.pdf",
+        "label": "Internal Structure Details",
+        "category": "drawing"
+      },
+      {
+        "filename": "183_5A_Deck_Construction.pdf",
+        "label": "Deck Construction",
+        "category": "drawing"
+      },
+      {
+        "filename": "183_6_Deck_Construction_Details.pdf",
+        "label": "Deck Construction Details",
+        "category": "drawing"
+      },
+      {
+        "filename": "183_7D Construction Sections.pdf",
+        "label": "Construction Sections",
+        "category": "drawing"
+      },
+      {
+        "filename": "183_8_Interior_Arrangement.pdf",
+        "label": "Interior Arrangement",
+        "category": "drawing"
+      },
+      {
+        "filename": "183_9A_Deck_Layout.pdf",
+        "label": "Deck Layout",
+        "category": "drawing"
+      },
+      {
+        "filename": "183_S5_16B_SS_CHAINPLATE-A0.pdf",
+        "label": "SS Chainplate",
+        "category": "drawing"
+      }
+    ],
+    "miscFiles": []
   },
   {
     "title": "184",
@@ -11090,11 +11688,49 @@
     "drupalAlias": "designs/190",
     "nid": 8604,
     "tier": 1,
-    "planStatus": "available",
+    "planStatus": "scanned_available",
     "hasCardPDF": true,
     "cardDrawingCount": 12,
     "cardDrawingsAvailable": 12,
-    "hidden": false
+    "hidden": false,
+    "planFiles": [
+      {
+        "filename": "190_11_Keel_Geometry_Construction_A0.pdf",
+        "label": "Keel Geometry Construction",
+        "category": "drawing"
+      },
+      {
+        "filename": "190_13_Rudder_Geometry_Construction_A0.pdf",
+        "label": "Rudder Geometry Construction",
+        "category": "drawing"
+      },
+      {
+        "filename": "190_1A_Lines_Plan_A0.pdf",
+        "label": "Lines Plan",
+        "category": "drawing"
+      },
+      {
+        "filename": "190_42_Final_Bulb_Geometry_A0.pdf",
+        "label": "Final Bulb Geometry",
+        "category": "drawing"
+      },
+      {
+        "filename": "190_9_Deck_Layout_AO.pdf",
+        "label": "Deck Layout",
+        "category": "drawing"
+      },
+      {
+        "filename": "190_Interior_AO.pdf",
+        "label": "Interior",
+        "category": "drawing"
+      },
+      {
+        "filename": "190_Sailplan_AO.pdf",
+        "label": "Sailplan",
+        "category": "drawing"
+      }
+    ],
+    "miscFiles": []
   },
   {
     "title": "191",
@@ -16596,10 +17232,10 @@
         "ft": 86.45
       }
     },
-    "description": "Design 323, SAYONARA, is a ilc maxi designed by Farr Yacht Design in 1995. She has an overall length of 70 feet (24.1m). Built by Mr. Larry Ellison.",
+    "description": "Design 323, SAYONARA, is a ilc maxi designed by Farr Yacht Design in 1995. She has an overall length of 70 feet (24.1m). Built by Cookson Boats.",
     "shortDescription": "ILC Maxi",
     "shortSummary": "",
-    "builder": "Mr. Larry Ellison",
+    "builder": "Cookson Boats",
     "owner": null,
     "rigType": "",
     "rigMaterial": "",
@@ -22620,9 +23256,7 @@
     "hullsBuilt": null,
     "inProduction": null,
     "isArchived": null,
-    "images": {
-      "main": "493m.jpg"
-    },
+    "images": null,
     "drawings": null,
     "vppFile": null,
     "drupalAlias": "designs/493m",
@@ -31641,16 +32275,24 @@
       "loa": {
         "m": 33.0,
         "ft": 108
+      },
+      "draft": {
+        "m": 6.2,
+        "ft": 20.3
+      },
+      "draftUp": {
+        "m": 4.0,
+        "ft": 13.1
       }
     },
-    "description": "Design 880, Kiboko 4, is a superyacht designed by Farr Yacht Design in 2021. She has an overall length of 108 feet (33.0m). Built by Southern Wind.",
+    "description": "The very experienced owner of Kiboko 4, a Southern Wind 108, expects their yacht to improve upon the style and performance of Kiboko 3, a Southern Wind 105, also with naval architecture furnished by Farr Yacht Design. Fast passage-making in comfort and safety with ease of handling and the potential to win superyacht racing events all in a stunning, exceptionally beautiful yacht is the expectation.\n\nStarting with the Southern Wind 108 platform, Farr Yacht Design refined the rig, sailplan and appendages for the chosen standard propulsion system with the goal of optimizing the performance envelope for typical Mediterranean conditions and the occasional racing under the ORCsy measurement and handicapping system. Two important design features of Kiboko 4 are generous sail area (607m² upwind, 1288m² downwind, 3.57 SA/WS upwind, 70.7 SA/DISP downwind) for the potential not only to effectively race in light winds but the maneuverability and acceleration to excel in those conditions and high stability (6.2m tapered planform lifting keel, total yacht VCG 0.2m below the DWL).\n\nThe requirements for the hull are first for it to be an item of beauty and style but contained within it the optimized hydrodynamic parameters to achieve the best speeds. The beam-to-draft has been kept low (6.0) to keep the wetted surface (and thereby the sailplan area) down. The prismatic coefficient (Cp) of 0.555 is maintained from 0° through 15° of heel with a slight reduction to 0.54 at 25° with a precisely designed longitudinal volume distribution. Target stability levels are achieved with a ballast (keel fin and bulb) ratio of 33%. The wide transom is designed with aggressive lift outboard to finely tune the longitudinal trim with heel to maximize effective sailing length, avoid excessive bow down trim and promote good handling in a wide range of wind and sea conditions.\n\nThe twin rudder arrangement allows Kiboko 4 to be pushed to high heel angles (27° optimum) with exceptional controllability and speed for upwind and reaching while racing. As those same high heel angles are not desirable while cruising the sailplan is flexible and easily depowered with a furling staysail at 55% of the all-purpose headsail sized and the usual multiple mainsail reefs. The full all-purpose jib with single main reef or full main with staysail sail combinations are both well-balanced first steps in sail area reduction and permit the crew a choice depending on the weather conditions.\n\nLastly the owner is moving from a low aspect ratio, fixed keel (4.5m draft) on the previous boat to a high-aspect ratio, lifting keel with a draft range of 6.2 to 4.0m. Not only does the keel design improve performance and efficiency but the 0.5m draft difference will open up many more harbors and cruising destinations.",
     "shortDescription": "Southern Wind SW108 Superyacht",
     "shortSummary": "Award-winning 108ft sailing superyacht. Sailing Yacht of the Year 2025.",
     "builder": "Southern Wind",
     "owner": null,
     "rigType": null,
     "rigMaterial": null,
-    "keelType": null,
+    "keelType": "Lifting keel",
     "hullConstruction": null,
     "hullsBuilt": null,
     "inProduction": null,
