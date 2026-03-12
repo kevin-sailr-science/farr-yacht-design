@@ -18,7 +18,7 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 WWW = SCRIPT_DIR  # build_site.py is in www/, which IS the deploy root
 SITE = WWW
 DATA = os.path.join(SCRIPT_DIR, "_data", "boats.json")
-SITE_URL = "https://farr-designs.sailr.science"
+SITE_URL = "https://www.farrdesign.com"
 
 # ─── Load data ───
 
@@ -1294,6 +1294,55 @@ if os.path.exists(netlify_toml_path):
     toml_content = toml_content.replace('publish = "."', 'publish = "."')
     with open(netlify_toml_path, "w") as f:
         f.write(toml_content)
+
+# 8. Generate sitemap.xml (Sprint 13)
+from datetime import datetime
+sitemap_urls = []
+today = datetime.now().strftime('%Y-%m-%d')
+
+# Static pages (high priority)
+static_pages = [
+    ('/', '1.0'),
+    ('/portfolio.html', '0.9'),
+    ('/design-plans.html', '0.8'),
+    ('/services.html', '0.7'),
+    ('/about.html', '0.7'),
+    ('/racing.html', '0.6'),
+    ('/contact.html', '0.6'),
+    ('/team.html', '0.5'),
+    ('/partners.html', '0.5'),
+    ('/news.html', '0.5'),
+    ('/awards.html', '0.5'),
+    ('/press-kit.html', '0.4'),
+    ('/kiboko-4.html', '0.6'),
+    ('/volvo-ocean-race.html', '0.6'),
+    ('/whitbread-heritage.html', '0.6'),
+    ('/tp52-heritage.html', '0.6'),
+    ('/americas-cup.html', '0.6'),
+    ('/superyachts.html', '0.6'),
+]
+
+for path, priority in static_pages:
+    sitemap_urls.append(f'  <url>\n    <loc>{SITE_URL}{path}</loc>\n    <lastmod>{today}</lastmod>\n    <priority>{priority}</priority>\n  </url>')
+
+# Yacht detail pages (medium priority)
+for boat in boats:
+    slug = boat.get("slug", "")
+    if not slug:
+        continue
+    year = boat.get("year")
+    lastmod = f"{int(year)}-01-01" if year and int(year) >= 1964 else "2024-01-01"
+    sitemap_urls.append(f'  <url>\n    <loc>{SITE_URL}/yacht/{slug}.html</loc>\n    <lastmod>{lastmod}</lastmod>\n    <priority>0.5</priority>\n  </url>')
+
+sitemap_xml = f'''<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{chr(10).join(sitemap_urls)}
+</urlset>
+'''
+
+with open(os.path.join(SITE, "sitemap.xml"), 'w') as f:
+    f.write(sitemap_xml)
+print(f"Generated sitemap.xml ({len(sitemap_urls)} URLs)")
 
 # ─── Summary ───
 

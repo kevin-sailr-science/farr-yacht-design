@@ -9,21 +9,21 @@
 @font-face {
   font-family: 'Jost';
   src: url('/fonts/Jost-VariableFont_wght.ttf') format('truetype');
-  font-weight: 100 900;
+  font-weight: 300 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Jost';
   src: url('/fonts/Jost-Italic-VariableFont_wght.ttf') format('truetype');
-  font-weight: 100 900;
+  font-weight: 300 700;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: 'Kumbh Sans';
   src: url('/fonts/KumbhSans-VariableFont_YOPQ,wght.ttf') format('truetype');
-  font-weight: 100 900;
+  font-weight: 300 700;
   font-style: normal;
   font-display: swap;
 }
@@ -72,6 +72,14 @@
   --font-body:      'Kumbh Sans', system-ui, sans-serif;
   --font-mono:      'Nunito Sans', system-ui, sans-serif;
   --font-sans:      'Kumbh Sans', system-ui, sans-serif;
+
+  /* Surface aliases (Sprint 13 - CSS audit) */
+  --bg:             #f8f9fc;   /* body background                       */
+  --bg-primary:     #ffffff;   /* primary surface (alias for --panel)   */
+  --bg-secondary:   #edf0f5;   /* secondary surface (alias for --farr-surface) */
+  --surface:        #edf0f5;   /* surface (alias for --farr-surface)    */
+  --farr-dark:      #00267F;   /* dark variant (alias for --farr-deep)  */
+  --accent-hover:   #003a99;   /* darker blue for hover states          */
 }
 
 /* =============== 2. ACCESSIBILITY =============== */
@@ -148,11 +156,7 @@ nav {
   border-radius: 8px; padding: 0.5rem 0; min-width: 180px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
 }
-.nav-dropdown-menu-inner {
-  background: var(--panel); border: 1px solid var(--border);
-  border-radius: 8px; padding: 0.5rem 0; min-width: 180px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
-}
+/* .nav-dropdown-menu-inner removed (Sprint 13 CSS audit - was redundant duplicate of .nav-dropdown-menu) */
 .nav-dropdown-menu a {
   display: block; padding: 0.5rem 1rem !important;
   font-size: 0.83rem !important; color: var(--text-secondary) !important;
@@ -293,7 +297,7 @@ nav {
 }
 .feature-hero--photo .photo-credit {
   position: relative; z-index: 2; font-size: 0.65rem;
-  color: rgba(255, 255, 255, 0.35); margin-top: 2rem;
+  color: rgba(255, 255, 255, 0.75); margin-top: 2rem;
 }
 
 .breadcrumb { font-size: 0.8rem; color: var(--text-muted); margin-bottom: 2rem; }
@@ -323,7 +327,7 @@ section {
 .content-section { padding: 3rem 2rem; max-width: 1200px; margin: 0 auto; }
 .section-label {
   font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent);
-  text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;
+  text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.5rem;
 }
 .content-section h2 {
   font-family: var(--font-display); font-size: 1.8rem; margin-bottom: 1rem;
@@ -2072,5 +2076,16 @@ footer div[style*="border-top"] { border-top-color: rgba(255,255,255,0.15) !impo
 }
 .yacht-card-image[style*="background-image"] {
   transition: background-size 0.4s ease;
+}
+
+/* =============== ACCESSIBILITY: Reduced Motion =============== */
+/* Sprint 13 - Disable animations/transitions for users with vestibular disorders */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 

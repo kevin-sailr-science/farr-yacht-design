@@ -27,4 +27,4 @@ Allow: /
 User-agent: TelegramBot
 Allow: /
 
-Sitemap: https://farr-designs.sailr.science/sitemap.xml
+Sitemap: https://www.farrdesign.com/sitemap.xml
