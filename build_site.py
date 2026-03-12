@@ -113,20 +113,23 @@ if os.path.isdir(images_dir):
 # ─── Tier-specific plan section HTML ───
 
 def build_plan_section(boat):
-    """Generate the plan section HTML based on design tier and plan status."""
-    tier = boat.get("tier", 3)
-    plan_status = boat.get("planStatus", "coming_soon")
-    has_card = boat.get("hasCardPDF", False)
-    drawing_count = boat.get("cardDrawingCount")
-    drawings_available = boat.get("cardDrawingsAvailable")
+    """Generate the plan section HTML based on boats.json plan fields.
+
+    Single purchase path: if planId + planPrice exist → Stripe checkout.
+    Everything else is a non-purchase state (waitlist / archive / coming soon).
+    """
     design_num = boat.get("designNumber", "")
     plan_id = boat.get("planId")
     plan_price = boat.get("planPrice")
     plan_desc = boat.get("planDescription", "")
     plan_contents = boat.get("planContents", "")
+    plan_status = boat.get("planStatus", "coming_soon")
+    drawing_count = boat.get("cardDrawingCount")
+    drawings_available = boat.get("cardDrawingsAvailable")
+    tier = boat.get("tier", 3)
 
-    # ─── PURCHASABLE: Tier 1 + card + planId + price → direct Stripe checkout ───
-    if tier == 1 and has_card and plan_id and plan_price:
+    # ─── PURCHASABLE: planId + planPrice in boats.json → Stripe checkout ───
+    if plan_id and plan_price:
         drawing_info = ""
         if drawing_count:
             drawing_info = f'<p style="font-size:0.82rem;color:var(--text-muted);margin:0.5rem 0 0;">{drawing_count} original drawings in this plan set'
@@ -158,30 +161,8 @@ def build_plan_section(boat):
             </div>
           </div>'''
 
-    # ─── TIER 1 WITH CARD PDF (no planId): "Plans Available" link to hub ───
-    elif tier == 1 and has_card:
-        drawing_info = ""
-        if drawing_count:
-            drawing_info = f'<p style="font-size:0.82rem;color:var(--text-muted);margin:0.5rem 0 0;">{drawing_count} original drawings in this plan set'
-            if drawings_available and drawings_available != drawing_count:
-                drawing_info += f' ({drawings_available} available)'
-            drawing_info += '</p>'
-
-        return f'''
-          <div class="purchase-card">
-            <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:0.5rem;">
-              <h3 style="margin:0;">Design Plans</h3>
-              <span class="availability-badge availability-badge--available">Available</span>
-            </div>
-            <p style="font-size:0.88rem;color:var(--text-secondary);line-height:1.6;margin-bottom:0.75rem;">Original design drawings from the Farr archive are available for this design. Plan set includes sail plans, lines drawings, and specifications as PDF download.</p>
-            {drawing_info}
-            <div style="margin-top:1rem;">
-              <a href="/design-plans.html?design={esc(design_num)}" class="btn-purchase" style="text-decoration:none;">Purchase Plan Set</a>
-            </div>
-          </div>'''
-
-    # ─── TIER 1 WITHOUT CARD PDF: "Plans not yet digitized" ───
-    elif tier == 1 and not has_card:
+    # ─── NOT YET DIGITIZED: waitlist ───
+    if plan_status in ("coming_soon", "not_digitized"):
         return f'''
           <div class="purchase-card purchase-card--waitlist">
             <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:0.5rem;">
@@ -192,8 +173,8 @@ def build_plan_section(boat):
             <button class="btn-waitlist" onclick="window.location.href='/design-plans.html?design={esc(design_num)}'">Join Waitlist</button>
           </div>'''
 
-    # ─── TIER 2: "Request from the Shed" ───
-    elif tier == 2:
+    # ─── PHYSICAL ARCHIVE: request from the shed ───
+    if plan_status == "request_from_shed":
         drawing_info = ""
         if drawing_count:
             drawing_info = f'<p style="font-size:0.82rem;color:var(--text-muted);margin:0.5rem 0 0;">{drawing_count} drawings in physical archive</p>'
@@ -211,9 +192,8 @@ def build_plan_section(boat):
             </div>
           </div>'''
 
-    # ─── TIER 3: "Coming Soon" ───
-    else:
-        return f'''
+    # ─── FALLBACK: Coming Soon ───
+    return f'''
           <div class="purchase-card purchase-card--waitlist" style="opacity:0.7;">
             <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:0.5rem;">
               <h3 style="margin:0;">Design Plans</h3>
