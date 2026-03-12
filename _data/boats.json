@@ -308,7 +308,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "026_01.jpg",
+      "main": "026.jpg",
       "featured": [
         "026_01.jpg"
       ]
@@ -412,7 +412,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "027_titus.jpg",
+      "main": "027.jpg",
       "featured": [
         "027_titus.jpg"
       ]
@@ -515,7 +515,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "028_01.jpg",
+      "main": "028.jpg",
       "featured": [
         "028_01.jpg"
       ]
@@ -659,7 +659,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "029_01.jpg",
+      "main": "029.jpg",
       "featured": [
         "029_01.jpg"
       ]
@@ -1378,7 +1378,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "037_01.jpg",
+      "main": "037.jpg",
       "featured": [
         "037_01.jpg"
       ]
@@ -1513,7 +1513,9 @@
     "hullsBuilt": null,
     "inProduction": null,
     "isArchived": null,
-    "images": null,
+    "images": {
+      "main": "38-center-console.jpg"
+    },
     "drawings": null,
     "vppFile": null,
     "drupalAlias": "designs/038",
@@ -1613,7 +1615,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "039_01.jpg",
+      "main": "039.jpg",
       "featured": [
         "039_01.jpg"
       ]
@@ -1869,7 +1871,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "042_01.jpg",
+      "main": "42-cruiser-gerontius.jpg",
       "featured": [
         "042_01.jpg"
       ]
@@ -2372,7 +2374,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "048_01.jpg",
+      "main": "048.jpg",
       "featured": [
         "048_01.jpg"
       ]
@@ -2641,7 +2643,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "051_02_jiminy.jpg",
+      "main": "051.jpg",
       "featured": [
         "051_02_jiminy.jpg"
       ]
@@ -2823,7 +2825,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "052_01.jpg",
+      "main": "052.jpg",
       "featured": [
         "052_01.jpg"
       ]
@@ -3025,7 +3027,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "054_01.jpg",
+      "main": "054.jpg",
       "featured": [
         "054_01.jpg"
       ]
@@ -3245,7 +3247,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "056_01.jpg",
+      "main": "056.jpg",
       "featured": [
         "056_01.jpg"
       ]
@@ -3357,7 +3359,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "057_01.jpg",
+      "main": "057.jpg",
       "featured": [
         "057_01.jpg"
       ]
@@ -3966,7 +3968,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "064_05.jpg",
+      "main": "064.jpg",
       "featured": [
         "064_05.jpg"
       ]
@@ -4066,7 +4068,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "065_03.jpg",
+      "main": "065.jpg",
       "featured": [
         "065_03.jpg"
       ]
@@ -4252,7 +4254,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "067_04.jpg",
+      "main": "067.jpg",
       "featured": [
         "067_04.jpg"
       ]
@@ -4521,7 +4523,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "072_01.jpg",
+      "main": "072.jpg",
       "featured": [
         "072_01.jpg"
       ]
@@ -4747,7 +4749,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "074_01.jpg",
+      "main": "074.jpg",
       "featured": [
         "074_01.jpg"
       ]
@@ -4859,7 +4861,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "076_01.jpg",
+      "main": "076.jpg",
       "featured": [
         "076_01.jpg"
       ]
@@ -5163,7 +5165,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "720_100804_bavaria_303.jpg",
+      "main": "080.jpg",
       "featured": [
         "720_100804_bavaria_303.jpg"
       ]
@@ -5263,7 +5265,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "081_01.jpg",
+      "main": "81_01.jpg",
       "featured": [
         "081_01.jpg"
       ]
@@ -5379,7 +5381,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "082_01.jpg",
+      "main": "082.jpg",
       "featured": [
         "082_01.jpg"
       ]
@@ -5724,7 +5726,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "085_01.jpg",
+      "main": "085.jpg",
       "featured": [
         "085_01.jpg"
       ]
@@ -5827,7 +5829,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "316_pricup07d2-0086resized.jpg",
+      "main": "086.jpg",
       "featured": [
         "316_pricup07d2-0086resized.jpg"
       ]
@@ -5939,7 +5941,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "087_01.jpg",
+      "main": "087.jpg",
       "featured": [
         "087_01.jpg"
       ]
@@ -6185,7 +6187,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "090_02.jpg",
+      "main": "090.jpg",
       "featured": [
         "090_02.jpg"
       ]
@@ -6301,7 +6303,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "091_01.jpg",
+      "main": "091.jpg",
       "featured": [
         "091_01.jpg"
       ]
@@ -6724,7 +6726,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "097_03.jpg",
+      "main": "097.jpg",
       "featured": [
         "097_03.jpg"
       ]
@@ -6836,7 +6838,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "099_01.jpg",
+      "main": "099.jpg",
       "featured": [
         "099_01.jpg"
       ]
@@ -6940,7 +6942,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "720_100804_bavaria_303.jpg",
+      "main": "",
       "featured": [
         "720_100804_bavaria_303.jpg"
       ]
@@ -7052,7 +7054,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "101_02.jpg",
+      "main": "101.jpg",
       "featured": [
         "101_02.jpg"
       ]
@@ -7167,7 +7169,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "103_01.jpg",
+      "main": "103.jpg",
       "featured": [
         "103_01.jpg"
       ]
@@ -7296,7 +7298,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "112_01.jpg",
+      "main": "112.jpg",
       "featured": [
         "112_01.jpg"
       ]
@@ -7363,7 +7365,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "121m_photo1.jpg",
+      "main": "121.jpg",
       "featured": [
         "121m_photo1.jpg"
       ]
@@ -7434,7 +7436,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "121m_photo1.jpg",
+      "main": "",
       "featured": [
         "121m_photo1.jpg"
       ]
@@ -7507,7 +7509,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "122_01.jpg",
+      "main": "122.jpg",
       "featured": [
         "122_01.jpg"
       ]
@@ -7568,7 +7570,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "123_01.jpg",
+      "main": "123.jpg",
       "featured": [
         "123_01.jpg"
       ]
@@ -7672,7 +7674,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "124_02.jpg",
+      "main": "124.jpg",
       "featured": [
         "124_02.jpg"
       ]
@@ -7841,7 +7843,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "128_01.jpg",
+      "main": "128.jpg",
       "featured": [
         "128_01.jpg"
       ]
@@ -7914,7 +7916,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "129_01.jpg",
+      "main": "129.jpg",
       "featured": [
         "129_01.jpg"
       ]
@@ -8015,7 +8017,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "131_ubsswitzerland.jpg",
+      "main": "131.jpg",
       "featured": [
         "131_ubsswitzerland.jpg"
       ]
@@ -8084,7 +8086,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "134_opni_02.jpg",
+      "main": "134.jpg",
       "featured": [
         "134_opni_02.jpg"
       ]
@@ -8161,7 +8163,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "136_03.jpg",
+      "main": "136.jpg",
       "featured": [
         "136_03.jpg"
       ]
@@ -8222,7 +8224,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "137_01.jpg",
+      "main": "137.jpg",
       "featured": [
         "137_01.jpg"
       ]
@@ -8403,7 +8405,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "143_01.jpg",
+      "main": "143.jpg",
       "featured": [
         "143_01.jpg"
       ]
@@ -8464,7 +8466,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "144_02.jpg",
+      "main": "144.jpg",
       "featured": [
         "144_02.jpg"
       ]
@@ -8521,7 +8523,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "145_03.jpg",
+      "main": "145.jpg",
       "featured": [
         "145_03.jpg"
       ]
@@ -8750,7 +8752,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "151_03.jpg",
+      "main": "151.jpg",
       "featured": [
         "151_03.jpg"
       ]
@@ -8823,7 +8825,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "152_01.jpg",
+      "main": "152.jpg",
       "featured": [
         "152_01.jpg"
       ]
@@ -8966,7 +8968,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "154_01.jpg",
+      "main": "154.jpg",
       "featured": [
         "154_01.jpg"
       ]
@@ -9033,7 +9035,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "3.jpg"
+      "main": "155.jpg"
     },
     "drawings": null,
     "vppFile": null,
@@ -9223,7 +9225,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "158_01.jpg",
+      "main": "158.jpg",
       "featured": [
         "158_01.jpg"
       ]
@@ -9536,7 +9538,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "165_01.jpg",
+      "main": "165.jpg",
       "featured": [
         "165_01.jpg"
       ]
@@ -9691,7 +9693,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "167_01.jpg",
+      "main": "167.jpg",
       "featured": [
         "167_01.jpg"
       ]
@@ -9935,7 +9937,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "172_01.jpg",
+      "main": "172.jpg",
       "featured": [
         "172_01.jpg"
       ]
@@ -10087,7 +10089,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "175_04.jpg",
+      "main": "175.jpg",
       "featured": [
         "175_04.jpg"
       ]
@@ -10156,7 +10158,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "176_01.jpg",
+      "main": "176.jpg",
       "featured": [
         "176_01.jpg"
       ]
@@ -10269,7 +10271,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "178_01.jpg",
+      "main": "178.jpg",
       "featured": [
         "178_01.jpg"
       ]
@@ -10338,7 +10340,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "179_01.jpg",
+      "main": "179.jpg",
       "featured": [
         "179_01.jpg"
       ]
@@ -10479,7 +10481,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "183_photo1.jpg",
+      "main": "183.jpg",
       "featured": [
         "183_photo1.jpg"
       ]
@@ -10588,7 +10590,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "185_03.jpg",
+      "main": "185.jpg",
       "featured": [
         "185_03.jpg"
       ]
@@ -10775,7 +10777,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "188_01.jpg",
+      "main": "188.jpg",
       "featured": [
         "188_01.jpg"
       ]
@@ -10844,7 +10846,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "189_02.jpg",
+      "main": "189.jpg",
       "featured": [
         "189_02.jpg"
       ]
@@ -10905,7 +10907,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "190_01.jpg",
+      "main": "190.jpg",
       "featured": [
         "190_01.jpg"
       ]
@@ -10966,7 +10968,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "191_01.jpg",
+      "main": "191.jpg",
       "featured": [
         "191_01.jpg"
       ]
@@ -11073,7 +11075,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "193_02.jpg",
+      "main": "193.jpg",
       "featured": [
         "193_02.jpg"
       ]
@@ -11177,7 +11179,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "195_01.jpg",
+      "main": "195.jpg",
       "featured": [
         "195_01.jpg"
       ]
@@ -11226,7 +11228,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "196_kz1_sm.jpg",
+      "main": "196.jpg",
       "featured": [
         "196_kz1_sm.jpg"
       ]
@@ -11283,7 +11285,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "197_mirabella40_1.jpg",
+      "main": "197.jpg",
       "featured": [
         "197_mirabella40_1.jpg"
       ]
@@ -11466,7 +11468,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "603_estrelladamm_ny_bcn_2010.jpg",
+      "main": "201.jpg",
       "featured": [
         "603_estrelladamm_ny_bcn_2010.jpg"
       ]
@@ -11543,7 +11545,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "202_01.jpg",
+      "main": "202.jpg",
       "featured": [
         "202_01.jpg"
       ]
@@ -11652,7 +11654,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "203_01.jpg",
+      "main": "203.jpg",
       "featured": [
         "203_01.jpg"
       ]
@@ -11769,7 +11771,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "205_01.jpg",
+      "main": "205.jpg",
       "featured": [
         "205_01.jpg"
       ]
@@ -11878,7 +11880,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "207_01.jpg",
+      "main": "207.jpg",
       "featured": [
         "207_01.jpg"
       ]
@@ -12175,7 +12177,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "218_01.jpg",
+      "main": "218.jpg",
       "featured": [
         "218_01.jpg"
       ]
@@ -12252,7 +12254,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "219_01.jpg",
+      "main": "219.jpg",
       "featured": [
         "219_01.jpg"
       ]
@@ -12365,7 +12367,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "220_01.jpg",
+      "main": "220.jpg",
       "featured": [
         "220_01.jpg"
       ]
@@ -12434,7 +12436,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "223_01.jpg",
+      "main": "223.jpg",
       "featured": [
         "223_01.jpg"
       ]
@@ -12503,7 +12505,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "224_01.jpg",
+      "main": "224.jpg",
       "featured": [
         "224_01.jpg"
       ]
@@ -12620,7 +12622,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "225_01.jpg",
+      "main": "225.jpg",
       "featured": [
         "225_01.jpg"
       ]
@@ -12767,7 +12769,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "227_01.jpg",
+      "main": "227.jpg",
       "featured": [
         "227_01.jpg"
       ]
@@ -12836,7 +12838,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "229_01.jpg",
+      "main": "229.jpg",
       "featured": [
         "229_01.jpg"
       ]
@@ -13109,7 +13111,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "237_nzl20.jpg",
+      "main": "237.jpg",
       "featured": [
         "237_nzl20.jpg"
       ]
@@ -13218,7 +13220,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "242_01.jpg",
+      "main": "242.jpg",
       "featured": [
         "242_01.jpg"
       ]
@@ -13587,7 +13589,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "253_01.jpg",
+      "main": "253.jpg",
       "featured": [
         "253_01.jpg"
       ]
@@ -13776,7 +13778,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "260_01.jpg",
+      "main": "260.jpg",
       "featured": [
         "260_01.jpg"
       ]
@@ -13931,7 +13933,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "266_01.jpg",
+      "main": "266.jpg",
       "featured": [
         "266_01.jpg"
       ]
@@ -14043,7 +14045,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "267_01.jpg",
+      "main": "267.jpg",
       "featured": [
         "267_01.jpg"
       ]
@@ -14112,7 +14114,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "268_01.jpg",
+      "main": "268.jpg",
       "featured": [
         "268_01.jpg"
       ]
@@ -14169,7 +14171,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "269_01.jpg",
+      "main": "269.jpg",
       "featured": [
         "269_01.jpg"
       ]
@@ -14264,7 +14266,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "273_01.jpg",
+      "main": "273.jpg",
       "featured": [
         "273_01.jpg"
       ]
@@ -14321,7 +14323,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "274_nzendeavour_01.jpg",
+      "main": "274.jpg",
       "featured": [
         "274_nzendeavour_01.jpg"
       ]
@@ -14434,7 +14436,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "277_01.jpg",
+      "main": "277.jpg",
       "featured": [
         "277_01.jpg"
       ]
@@ -14495,7 +14497,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "278_02.jpg",
+      "main": "278.jpg",
       "featured": [
         "278_02.jpg"
       ]
@@ -14640,7 +14642,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "282_yamaha.jpg",
+      "main": "282.jpg",
       "featured": [
         "282_yamaha.jpg"
       ]
@@ -14908,7 +14910,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "288_01.jpg",
+      "main": "288.jpg",
       "featured": [
         "288_01.jpg"
       ]
@@ -14981,7 +14983,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "289_hotflash_02.jpg",
+      "main": "289.jpg",
       "featured": [
         "289_hotflash_02.jpg"
       ]
@@ -15167,7 +15169,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "293_01.jpg",
+      "main": "293.jpg",
       "featured": [
         "293_01.jpg"
       ]
@@ -15232,7 +15234,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "294_01.jpg",
+      "main": "294.jpg",
       "featured": [
         "294_01.jpg"
       ]
@@ -15332,7 +15334,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "296_01.jpg",
+      "main": "296.jpg",
       "featured": [
         "296_01.jpg"
       ]
@@ -15405,7 +15407,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "297_01.jpg",
+      "main": "297.jpg",
       "featured": [
         "297_01.jpg"
       ]
@@ -15480,7 +15482,7 @@
     "inProduction": false,
     "isArchived": true,
     "images": {
-      "main": "299_llegada_a_ayora.jpg"
+      "main": "299.jpg"
     },
     "drawings": null,
     "vppFile": "299_vpp.pdf",
@@ -15658,7 +15660,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "309_08.jpg",
+      "main": "309.jpg",
       "featured": [
         "309_08.jpg"
       ]
@@ -15811,7 +15813,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "314_01.jpg",
+      "main": "314.jpg",
       "featured": [
         "314_01.jpg"
       ]
@@ -15967,7 +15969,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "316_photo3.jpg",
+      "main": "316.jpg",
       "featured": [
         "316_pricup07d2-0086resized.jpg"
       ]
@@ -16040,7 +16042,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "317_01.jpg",
+      "main": "317.jpg",
       "featured": [
         "317_01.jpg"
       ]
@@ -16153,7 +16155,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "320_01.jpg",
+      "main": "320.jpg",
       "featured": [
         "320_01.jpg"
       ]
@@ -16232,7 +16234,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "321_01.jpg",
+      "main": "321.jpg",
       "featured": [
         "321_01.jpg"
       ]
@@ -16348,7 +16350,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "323_01.jpg",
+      "main": "323.jpg",
       "featured": [
         "323_01.jpg"
       ]
@@ -16501,7 +16503,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "326_01.jpg",
+      "main": "326.jpg",
       "featured": [
         "326_01.jpg"
       ]
@@ -16614,7 +16616,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "328_01.jpg",
+      "main": "328.jpg",
       "featured": [
         "328_01.jpg"
       ]
@@ -16687,7 +16689,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "329_01.jpg",
+      "main": "329.jpg",
       "featured": [
         "329_01.jpg"
       ]
@@ -16840,7 +16842,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "333_01.jpg",
+      "main": "333.jpg",
       "featured": [
         "333_01.jpg"
       ]
@@ -16913,7 +16915,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "336_01.jpg",
+      "main": "336.jpg",
       "featured": [
         "336_01.jpg"
       ]
@@ -17098,7 +17100,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "339_01.jpg",
+      "main": "339.jpg",
       "featured": [
         "339_01.jpg"
       ]
@@ -17219,7 +17221,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "343_nzl39.jpg",
+      "main": "343.jpg",
       "featured": [
         "343_nzl39.jpg"
       ]
@@ -17292,7 +17294,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "344_01.jpg",
+      "main": "344.jpg",
       "featured": [
         "344_01.jpg"
       ]
@@ -17365,7 +17367,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "353_09.jpg",
+      "main": "353.jpg",
       "featured": [
         "353_09.jpg"
       ]
@@ -17640,7 +17642,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "360_01.jpg",
+      "main": "360.jpg",
       "featured": [
         "360_01.jpg"
       ]
@@ -17753,7 +17755,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "362_01.jpg",
+      "main": "362.jpg",
       "featured": [
         "362_01.jpg"
       ]
@@ -17826,7 +17828,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "363_01.jpg",
+      "main": "363.jpg",
       "featured": [
         "363_01.jpg"
       ]
@@ -17903,7 +17905,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "366_01_dharma.jpg",
+      "main": "366.jpg",
       "featured": [
         "366_01_dharma.jpg"
       ]
@@ -17976,7 +17978,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "368_01.jpg",
+      "main": "368.jpg",
       "featured": [
         "368_01.jpg"
       ]
@@ -18049,7 +18051,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "369cr_02.jpg",
+      "main": "369.jpg",
       "featured": [
         "369cr_02.jpg"
       ]
@@ -18193,7 +18195,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "373m_03.jpg",
+      "main": "373.jpg",
       "featured": [
         "373m_03.jpg"
       ]
@@ -18254,7 +18256,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "373m_03.jpg",
+      "main": "",
       "featured": [
         "373m_03.jpg"
       ]
@@ -18299,7 +18301,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "374_02.jpg",
+      "main": "374.jpg",
       "featured": [
         "374_02.jpg"
       ]
@@ -18448,7 +18450,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "378_eflanguage_01.jpg",
+      "main": "378.jpg",
       "featured": [
         "378_eflanguage_01.jpg"
       ]
@@ -18548,7 +18550,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "382_toshiba_02.jpg",
+      "main": "382.jpg",
       "featured": [
         "382_toshiba_02.jpg"
       ]
@@ -18645,7 +18647,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "386_chessie_03.jpg",
+      "main": "386.jpg",
       "featured": [
         "386_chessie_03.jpg"
       ]
@@ -18785,7 +18787,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "390_meritcup_02.jpg",
+      "main": "390.jpg",
       "featured": [
         "390_meritcup_02.jpg"
       ]
@@ -18842,7 +18844,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "392_kvaernerinnovation_03.jpg",
+      "main": "392.jpg",
       "featured": [
         "392_kvaernerinnovation_03.jpg"
       ]
@@ -18899,7 +18901,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "394_swedishmatch_02.jpg",
+      "main": "394.jpg",
       "featured": [
         "394_swedishmatch_02.jpg"
       ]
@@ -18999,7 +19001,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "396_silkcut_01.jpg",
+      "main": "396.jpg",
       "featured": [
         "396_silkcut_01.jpg"
       ]
@@ -19312,7 +19314,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "411_01.jpg",
+      "main": "411.jpg",
       "featured": [
         "411_01.jpg"
       ]
@@ -19357,7 +19359,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "412_01.jpg",
+      "main": "412.jpg",
       "featured": [
         "412_01.jpg"
       ]
@@ -19434,7 +19436,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "414_wally_08.jpg",
+      "main": "414.jpg",
       "featured": [
         "414_wally_08.jpg"
       ]
@@ -19479,7 +19481,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "415_01.jpg",
+      "main": "415.jpg",
       "featured": [
         "415_01.jpg"
       ]
@@ -19524,7 +19526,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "416_01.jpg",
+      "main": "416.jpg",
       "featured": [
         "416_01.jpg"
       ]
@@ -19597,7 +19599,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "417_06.jpg",
+      "main": "417.jpg",
       "featured": [
         "417_03.jpg"
       ]
@@ -19642,7 +19644,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "418deckside.gif",
+      "main": "418.gif",
       "featured": [
         "418deckside.gif"
       ]
@@ -19759,7 +19761,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "420_bg.jpg",
+      "main": "420.jpg",
       "featured": [
         "420_bg.jpg"
       ]
@@ -19828,7 +19830,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "421m_01.jpg",
+      "main": "421.jpg",
       "featured": [
         "421m_01.jpg"
       ]
@@ -19889,7 +19891,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "421m_01.jpg",
+      "main": "",
       "featured": [
         "421m_01.jpg"
       ]
@@ -19966,7 +19968,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "422_01.jpg",
+      "main": "422.jpg",
       "featured": [
         "422_01.jpg"
       ]
@@ -20043,7 +20045,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "425_06.jpg",
+      "main": "425.jpg",
       "featured": [
         "425_06.jpg"
       ]
@@ -20174,7 +20176,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "428_bravaq8.jpg",
+      "main": "428.jpg",
       "featured": [
         "428deckside.gif"
       ]
@@ -20251,7 +20253,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "sirius_upwind.jpg",
+      "main": "429.jpg",
       "featured": [
         "429_01.jpg"
       ]
@@ -20402,7 +20404,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "435_indio_03.jpg",
+      "main": "435.jpg",
       "featured": [
         "435_indio_03.jpg"
       ]
@@ -20479,7 +20481,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "img_0013.jpg",
+      "main": "441.jpg",
       "featured": [
         "441_01.jpg"
       ]
@@ -20524,7 +20526,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "442_soj04.jpg",
+      "main": "442.jpg",
       "featured": [
         "442_soj04.jpg"
       ]
@@ -20601,7 +20603,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "ck2pics005.jpg",
+      "main": "443.jpg",
       "featured": [
         "443_01.jpg"
       ]
@@ -20646,7 +20648,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "farr52fullspeed.jpg",
+      "main": "444.jpg",
       "featured": [
         "444m2_01.jpg"
       ]
@@ -20734,7 +20736,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "444m2_01.jpg",
+      "main": "444m2.jpg",
       "featured": [
         "444m2_01.jpg"
       ]
@@ -21063,7 +21065,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "cr26.jpg",
+      "main": "466.jpg",
       "featured": [
         "466_01.jpg"
       ]
@@ -21108,7 +21110,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "tau_ceramica_ims_europeans_p2.jpg"
+      "main": "466m.jpg"
     },
     "drawings": null,
     "vppFile": null,
@@ -21150,7 +21152,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "467_04.jpg",
+      "main": "467.jpg",
       "featured": [
         "467_04.jpg"
       ]
@@ -21195,7 +21197,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "468promo1.jpg",
+      "main": "468.jpg",
       "featured": [
         "468promo1.jpg"
       ]
@@ -21256,7 +21258,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "471_01.jpg",
+      "main": "471.jpg",
       "featured": [
         "471_01.jpg"
       ]
@@ -21317,7 +21319,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "472_01.jpg",
+      "main": "472.jpg",
       "featured": [
         "472_01.jpg"
       ]
@@ -21378,7 +21380,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "473_04.jpg",
+      "main": "473.jpg",
       "featured": [
         "473_04.jpg"
       ]
@@ -21439,7 +21441,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "474_01.jpg",
+      "main": "474.jpg",
       "featured": [
         "474_01.jpg"
       ]
@@ -21484,7 +21486,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "476_nc_02.jpg",
+      "main": "476.jpg",
       "featured": [
         "476_nc_02.jpg"
       ]
@@ -21600,7 +21602,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "486_04.jpg",
+      "main": "486.jpg",
       "featured": [
         "486_04.jpg"
       ]
@@ -21677,7 +21679,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "487_mistera_02.jpg",
+      "main": "487.jpg",
       "featured": [
         "487_mistera_02.jpg"
       ]
@@ -21722,7 +21724,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "488_fram_01.jpg",
+      "main": "488.jpg",
       "featured": [
         "488.gif"
       ]
@@ -21842,7 +21844,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "490_07.jpg",
+      "main": "490.jpg",
       "featured": [
         "490_07.jpg"
       ]
@@ -21887,7 +21889,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "491_01.jpg",
+      "main": "491.jpg",
       "featured": [
         "491deckside.gif"
       ]
@@ -21932,7 +21934,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "492_tazo_01.jpg",
+      "main": "492.jpg",
       "featured": [
         "492_tazo_01.jpg"
       ]
@@ -21977,7 +21979,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "azur_breitling.jpg"
+      "main": "493.jpg"
     },
     "drawings": null,
     "vppFile": null,
@@ -22019,7 +22021,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "3.jpg"
+      "main": "493m.jpg"
     },
     "drawings": null,
     "vppFile": null,
@@ -22061,7 +22063,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "495_apollo.jpg",
+      "main": "495.jpg",
       "featured": [
         "495_apollo.jpg"
       ]
@@ -22106,7 +22108,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "496_44_7_sail_over.jpg",
+      "main": "496.jpg",
       "featured": [
         "496_44_7_sail_over.jpg"
       ]
@@ -22424,7 +22426,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "533_lucky_midsearace.jpg",
+      "main": "533.jpg",
       "featured": [
         "533_lucky_midsearace.jpg"
       ]
@@ -22469,7 +22471,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "534sailplan.jpg",
+      "main": "534.jpg",
       "featured": [
         "534sailplan.jpg"
       ]
@@ -22514,7 +22516,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "535_05.jpg",
+      "main": "535.jpg",
       "featured": [
         "535_05.jpg"
       ]
@@ -22638,7 +22640,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "539_02.jpg",
+      "main": "539.jpg",
       "featured": [
         "539_02.jpg"
       ]
@@ -22683,7 +22685,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "540promo2.jpg",
+      "main": "540.jpg",
       "featured": [
         "540promo2.jpg"
       ]
@@ -22728,7 +22730,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "541_03.jpg",
+      "main": "541.jpg",
       "featured": [
         "541_03.jpg"
       ]
@@ -22793,7 +22795,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "542_01.jpg",
+      "main": "542.jpg",
       "featured": [
         "542_01.jpg"
       ]
@@ -22870,7 +22872,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "543_02.jpg",
+      "main": "543.jpg",
       "featured": [
         "543_02.jpg"
       ]
@@ -22939,7 +22941,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "545_pirates_01.jpg",
+      "main": "545.jpg",
       "featured": [
         "545_pirates_01.jpg"
       ]
@@ -23113,7 +23115,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "services.jpg",
+      "main": "546.jpg",
       "featured": [
         "services.jpg"
       ]
@@ -23182,7 +23184,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "550_04.jpg",
+      "main": "550.jpg",
       "featured": [
         "550_04.jpg"
       ]
@@ -23227,7 +23229,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "bmw-16june-007.jpg"
+      "main": "560.jpg"
     },
     "drawings": null,
     "vppFile": null,
@@ -23269,7 +23271,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "585_rush_01.jpg",
+      "main": "585.jpg",
       "featured": [
         "585_rush_01.jpg"
       ]
@@ -23443,7 +23445,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "img_9988.jpg",
+      "main": "586.jpg",
       "featured": [
         "585_01.jpg"
       ]
@@ -23567,7 +23569,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "588_evolutionracing.jpg",
+      "main": "588.jpg",
       "featured": [
         "588_evolutionracing.jpg"
       ]
@@ -23648,7 +23650,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "588m_sue_02.jpg",
+      "main": "588m.jpg",
       "featured": [
         "588m_sue_02.jpg"
       ]
@@ -23725,7 +23727,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "590_01.jpg",
+      "main": "590.jpg",
       "featured": [
         "590_01.jpg"
       ]
@@ -23786,7 +23788,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "591_01.jpg",
+      "main": "591.jpg",
       "featured": [
         "591_01.jpg"
       ]
@@ -23867,7 +23869,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "597_01.jpg",
+      "main": "597.jpg",
       "featured": [
         "597_01.jpg"
       ]
@@ -23916,7 +23918,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "602_01.jpg",
+      "main": "602.jpg",
       "featured": [
         "602_01.jpg"
       ]
@@ -23965,7 +23967,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "602_foncia_05.jpg",
+      "main": "",
       "featured": [
         "602_foncia_05.jpg"
       ]
@@ -24014,7 +24016,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "603_19.jpg",
+      "main": "603.jpg",
       "featured": [
         "603_19.jpg"
       ]
@@ -24059,7 +24061,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "603_estrelladamm_ny_bcn_2010.jpg",
+      "main": "",
       "featured": [
         "603_estrelladamm_ny_bcn_2010.jpg"
       ]
@@ -24136,7 +24138,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "604_03.jpg",
+      "main": "604.jpg",
       "featured": [
         "604_03.jpg"
       ]
@@ -24205,7 +24207,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "605_roma_01.jpg",
+      "main": "605.jpg",
       "featured": [
         "605_roma_01.jpg"
       ]
@@ -24266,7 +24268,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "606_07.jpg",
+      "main": "606.jpg",
       "featured": [
         "606_07.jpg"
       ]
@@ -24337,7 +24339,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "608_04.jpg",
+      "main": "608.jpg",
       "featured": [
         "608_04.jpg"
       ]
@@ -24386,7 +24388,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "609_13.jpg",
+      "main": "609.jpg",
       "featured": [
         "609_13.jpg"
       ]
@@ -24437,7 +24439,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "boss.jpg",
+      "main": "609m.jpg",
       "featured": [
         "boss.jpg"
       ]
@@ -24514,7 +24516,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "613_tazo_01.jpg",
+      "main": "613.jpg",
       "featured": [
         "613_tazo_01.jpg"
       ]
@@ -24585,7 +24587,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "615_thalima_sailing3.jpg",
+      "main": "615.jpg",
       "featured": [
         "615_thalima_sailing3.jpg"
       ]
@@ -24630,7 +24632,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "620_04.jpg",
+      "main": "620.jpg",
       "featured": [
         "620_04.jpg"
       ]
@@ -24675,7 +24677,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "622_beneteau_first_35._600x400jpg.jpg",
+      "main": "622.jpg",
       "featured": [
         "622_beneteau_first_35._600x400jpg.jpg"
       ]
@@ -24775,7 +24777,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "634-635_01.jpg",
+      "main": "634.jpg",
       "featured": [
         "634-635_01.jpg"
       ]
@@ -24832,7 +24834,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "635_01.jpg",
+      "main": "635.jpg",
       "featured": [
         "635_01.jpg"
       ]
@@ -24901,7 +24903,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "640_05_400x600.jpg",
+      "main": "640.jpg",
       "featured": [
         "640_05_400x600.jpg"
       ]
@@ -24970,7 +24972,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "641_20.jpg",
+      "main": "641.jpg",
       "featured": [
         "641_20.jpg"
       ]
@@ -25017,7 +25019,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "642_01.jpg",
+      "main": "642.jpg",
       "featured": [
         "642_01.jpg"
       ]
@@ -25062,7 +25064,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "642m_01.jpg",
+      "main": "642m.jpg",
       "featured": [
         "642m_01.jpg"
       ]
@@ -25145,7 +25147,7 @@
     "inProduction": true,
     "isArchived": false,
     "images": {
-      "main": "667_01.jpg",
+      "main": "667.jpg",
       "featured": [
         "667_01.jpg"
       ]
@@ -25192,7 +25194,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "beau_geste_2010_caribbean_2010.jpg",
+      "main": "668.jpg",
       "featured": [
         "668_img_4403.jpg"
       ]
@@ -25239,7 +25241,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "673_02.jpg",
+      "main": "673.jpg",
       "featured": [
         "673_02.jpg"
       ]
@@ -25284,7 +25286,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "nc32_1_142.jpg"
+      "main": "675.jpg"
     },
     "drawings": null,
     "vppFile": null,
@@ -25342,7 +25344,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "675m_cr33_aussen-0251.jpg"
+      "main": ""
     },
     "drawings": null,
     "vppFile": null,
@@ -25464,7 +25466,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "680_cruiser50.png",
+      "main": "680.png",
       "featured": [
         "680_cruiser50.png"
       ]
@@ -25509,7 +25511,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "685_bd16.jpg",
+      "main": "685.jpg",
       "featured": [
         "685_bd16.jpg"
       ]
@@ -25554,7 +25556,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "sw102_mr.jpg",
+      "main": "691.jpg",
       "featured": [
         "sw102_mr.jpg"
       ]
@@ -25599,7 +25601,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "695_sail_mag.jpg",
+      "main": "695.jpg",
       "featured": [
         "695_sail_mag.jpg"
       ]
@@ -25722,7 +25724,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "715_azzam_photo2.jpg",
+      "main": "",
       "featured": [
         "715_azzam_photo2.jpg"
       ]
@@ -25795,7 +25797,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "720_100804_bavaria_303.jpg",
+      "main": "",
       "featured": [
         "720_100804_bavaria_303.jpg"
       ]
@@ -25840,7 +25842,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "dsc_0457.jpg"
+      "main": "720m.jpg"
     },
     "drawings": null,
     "vppFile": null,
@@ -26040,7 +26042,7 @@
     "inProduction": true,
     "isArchived": false,
     "images": {
-      "main": "_ren5363.jpg",
+      "main": "724.jpg",
       "featured": [
         "724_f400_press6.jpg"
       ]
@@ -26152,7 +26154,7 @@
     "inProduction": true,
     "isArchived": false,
     "images": {
-      "main": "Outside2.jpg"
+      "main": ""
     },
     "drawings": null,
     "vppFile": null,
@@ -26210,7 +26212,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "cr37-aussen01.jpg"
+      "main": "726m.jpg"
     },
     "drawings": null,
     "vppFile": null,
@@ -26284,7 +26286,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "727_110112cnst-6670.jpg"
+      "main": "727.jpg"
     },
     "drawings": null,
     "vppFile": null,
@@ -26405,7 +26407,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "bys_9284.jpg"
+      "main": "733.jpg"
     },
     "drawings": null,
     "vppFile": null,
@@ -26482,7 +26484,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "vision42_aft-view-no-water.jpg"
+      "main": "739.jpg"
     },
     "drawings": null,
     "vppFile": null,
@@ -26704,7 +26706,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "bys_1492.jpg"
+      "main": "750.jpg"
     },
     "drawings": null,
     "vppFile": null,
@@ -29019,7 +29021,9 @@
     "hullsBuilt": null,
     "inProduction": null,
     "isArchived": null,
-    "images": null,
+    "images": {
+      "main": "826_fwd_ISO_1a_mounted_800x600.png"
+    },
     "drawings": null,
     "vppFile": null,
     "drupalAlias": null,
@@ -29094,7 +29098,9 @@
     "hullsBuilt": null,
     "inProduction": null,
     "isArchived": null,
-    "images": null,
+    "images": {
+      "main": "828-bow-iso-view-1-mounted-scaled.png"
+    },
     "drawings": null,
     "vppFile": null,
     "drupalAlias": null,
@@ -31116,7 +31122,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "main": "bys_6312.jpg"
+      "main": ""
     },
     "drawings": null,
     "vppFile": null,
