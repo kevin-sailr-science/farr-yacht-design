@@ -7856,7 +7856,9 @@
     "hullsBuilt": null,
     "inProduction": null,
     "isArchived": null,
-    "images": null,
+    "images": {
+      "main": "125_icarus.jpg"
+    },
     "drawings": null,
     "vppFile": null,
     "drupalAlias": "designs/125",
@@ -13904,7 +13906,9 @@
     "hullsBuilt": null,
     "inProduction": null,
     "isArchived": null,
-    "images": null,
+    "images": {
+      "main": "bribon_castelleon-2006.jpg"
+    },
     "drawings": null,
     "vppFile": null,
     "drupalAlias": "designs/258",
@@ -27894,7 +27898,9 @@
     "hullsBuilt": null,
     "inProduction": null,
     "isArchived": null,
-    "images": null,
+    "images": {
+      "main": "749_horizon_f14.jpg"
+    },
     "drawings": null,
     "vppFile": null,
     "drupalAlias": null,
@@ -28006,7 +28012,9 @@
     "hullsBuilt": null,
     "inProduction": null,
     "isArchived": null,
-    "images": null,
+    "images": {
+      "main": "757_vo65_banner.jpg"
+    },
     "drawings": null,
     "vppFile": null,
     "drupalAlias": "designs/757",
@@ -28778,7 +28786,9 @@
     "hullsBuilt": null,
     "inProduction": null,
     "isArchived": null,
-    "images": null,
+    "images": {
+      "main": "781_13m_irc.jpg"
+    },
     "drawings": null,
     "vppFile": null,
     "drupalAlias": null,
@@ -28898,7 +28908,9 @@
     "hullsBuilt": null,
     "inProduction": null,
     "isArchived": null,
-    "images": null,
+    "images": {
+      "main": "784_60ft_dss.jpg"
+    },
     "drawings": null,
     "vppFile": null,
     "drupalAlias": null,
