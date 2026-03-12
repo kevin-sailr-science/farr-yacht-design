@@ -648,14 +648,18 @@ footer div[style*="border-top"] { border-top-color: rgba(255,255,255,0.15) !impo
 .yacht-detail-image { background: linear-gradient(135deg, var(--bg-secondary), var(--bg-primary)); border: 1px solid var(--border); border-radius: 10px; height: 320px; display: flex; align-items: center; justify-content: center; color: var(--text-muted); font-size: 0.82rem; overflow: hidden; position: relative; }
 .yacht-detail-image img { width: 100%; height: 100%; object-fit: cover; }
 .yacht-detail-sidebar { display: flex; flex-direction: column; gap: 0; }
+/* No-image placeholder: compact on all screens */
+.yacht-detail-image:not([style*="background-image"]) { height: 120px; }
 @media (max-width: 768px) {
   .yacht-detail-body { grid-template-columns: 1fr; }
   .yacht-detail-image { height: 240px; }
+  .yacht-detail-image:not([style*="background-image"]) { height: 100px; }
 }
 @media (max-width: 560px) {
   .yacht-detail-header h1 { font-size: 1.5rem; }
   .yacht-detail-layout { padding: 1.5rem 1.25rem 0.5rem; }
   .yacht-detail-image { height: 200px; }
+  .yacht-detail-image:not([style*="background-image"]) { height: 80px; }
 }
 
 .era-label { font-family: var(--font-mono); font-size: 0.6rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; padding: 0.2rem 0.6rem; border-radius: 4px; background: var(--farr-mid); color: var(--text-muted); border: 1px solid var(--border); }
