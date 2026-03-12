@@ -616,6 +616,117 @@ footer div[style*="border-top"] { border-top-color: rgba(255,255,255,0.15) !impo
 .portfolio-search input::placeholder { color: var(--text-muted); }
 .portfolio-search input:focus { outline: none; border-color: var(--accent); }
 
+/* =============== SPRINT 9: Portfolio UX — Search, Sort, Filter, Views =============== */
+
+/* Search row */
+.pf-search-row { margin-bottom: 1rem; }
+.pf-search-row input {
+  width: 100%; background: var(--panel); border: 1px solid var(--border);
+  border-radius: 8px; padding: 0.65rem 1rem; font-family: var(--font-body);
+  font-size: 0.9rem; color: var(--text-primary); transition: border-color 0.2s;
+}
+.pf-search-row input::placeholder { color: var(--text-muted); }
+.pf-search-row input:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-glow); }
+
+/* Controls bar */
+.pf-controls {
+  display: flex; justify-content: space-between; align-items: center;
+  flex-wrap: wrap; gap: 0.75rem; margin-bottom: 1rem;
+  padding: 0.75rem 0; border-bottom: 1px solid var(--border);
+}
+.pf-filters { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+.pf-select {
+  font-family: var(--font-mono); font-size: 0.75rem; font-weight: 500;
+  padding: 0.35rem 0.6rem; border: 1px solid var(--border); border-radius: 6px;
+  background: var(--panel); color: var(--text-secondary); cursor: pointer;
+  transition: border-color 0.2s; appearance: auto;
+}
+.pf-select:focus { outline: none; border-color: var(--accent); }
+.pf-select:not([value=""]) { border-color: var(--accent); color: var(--accent); }
+
+.pf-right { display: flex; gap: 1rem; align-items: center; }
+.pf-sort { display: flex; gap: 0.35rem; align-items: center; }
+.pf-sort-label {
+  font-family: var(--font-mono); font-size: 0.68rem; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-muted);
+  margin-right: 0.2rem;
+}
+/* sort-btn already defined above — reusing existing styles */
+
+.pf-view-toggle { display: flex; gap: 0.25rem; }
+.pf-view-btn {
+  padding: 0.35rem 0.5rem; border: 1px solid var(--border); border-radius: 6px;
+  background: transparent; color: var(--text-muted); cursor: pointer;
+  transition: all 0.2s; display: flex; align-items: center;
+}
+.pf-view-btn:hover { border-color: var(--accent); color: var(--accent); }
+.pf-view-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+/* Status row */
+.pf-status {
+  display: flex; align-items: center; gap: 0.75rem;
+  margin-bottom: 1.25rem; padding-top: 0.5rem;
+}
+.pf-clear-btn {
+  font-family: var(--font-mono); font-size: 0.7rem; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.04em;
+  padding: 0.25rem 0.65rem; border: 1px solid var(--red-flag); border-radius: 6px;
+  background: transparent; color: var(--red-flag); cursor: pointer;
+  transition: all 0.2s;
+}
+.pf-clear-btn:hover { background: var(--red-flag); color: #fff; }
+
+/* Grid view */
+.pf-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+/* List view / table */
+.pf-list { overflow-x: auto; }
+.pf-table {
+  width: 100%; border-collapse: collapse; font-size: 0.85rem;
+}
+.pf-table thead th {
+  font-family: var(--font-mono); font-size: 0.68rem; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent);
+  text-align: left; padding: 0.6rem 0.75rem;
+  border-bottom: 2px solid var(--border); background: var(--farr-mid);
+  position: sticky; top: 0; z-index: 1;
+}
+.pf-table tbody td {
+  padding: 0.5rem 0.75rem; border-bottom: 1px solid var(--border);
+  color: var(--text-secondary); white-space: nowrap;
+}
+.pf-table tbody td:first-child {
+  font-family: var(--font-mono); font-weight: 600; color: var(--accent);
+  font-size: 0.8rem;
+}
+.pf-table tbody td:nth-child(2) {
+  font-weight: 500; color: var(--text-primary); white-space: normal; min-width: 140px;
+}
+.pf-table tbody tr:hover td { background: var(--accent-soft); }
+.pf-table a { color: inherit; text-decoration: none; }
+.pf-table a:hover { color: var(--accent); text-decoration: underline; }
+
+/* Responsive portfolio */
+@media (max-width: 768px) {
+  .pf-controls { flex-direction: column; align-items: stretch; }
+  .pf-right { justify-content: space-between; }
+  .pf-filters { flex-wrap: wrap; }
+  .pf-select { flex: 1; min-width: 100px; }
+  .pf-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 1rem; }
+}
+@media (max-width: 560px) {
+  .pf-sort { flex-wrap: wrap; }
+  .pf-grid { grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+  .pf-hide-mobile { display: none; }
+  .pf-table { font-size: 0.8rem; }
+  .pf-table tbody td { padding: 0.4rem 0.5rem; }
+}
+
+/* =============== END SPRINT 9 =============== */
+
 .spec-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; }
 .spec-table th { font-family: var(--font-mono); font-size: 0.68rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent); text-align: left; padding: 0.75rem; border-bottom: 2px solid var(--border); background: var(--farr-mid); }
 .spec-table td { padding: 0.6rem 0.75rem; border-bottom: 1px solid var(--border); font-size: 0.85rem; }

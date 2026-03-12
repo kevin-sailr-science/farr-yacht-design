@@ -411,113 +411,361 @@ def build_yacht_page(boat):
 
     return full_html
 
-# ─── Build portfolio page ───
+# ─── Type consolidation mapping (Sprint 9) ───
+
+TYPE_GROUPS = {
+    'Racing': ['Racing Yacht', 'Racing', 'Racing Yacht (1 Ton)', 'Racing Yacht (Maxi)',
+               'Grand Prix Racing Yacht', 'IRC Racing Yacht', 'Ocean Racer', 'Ocean Racing Yacht'],
+    'Cruising': ['Cruising Yacht', 'Cruising Sloop', 'Fast Cruising Yacht', 'High Performance Cruiser',
+                 'Fast Cruiser', 'Charter Yacht', 'Keel Yacht', 'Sailing Yacht', 'Yacht', 'Cruiser'],
+    'Racer/Cruiser': ['Racing/Cruising', 'Cruiser/Racer', 'Racer/Cruiser', 'Racing/Cruising Yacht',
+                      'Ocean Racer/Cruiser', 'Cruising/Racing Yacht', 'Production Cruiser-Racer',
+                      'Production Cruiser/Racer', 'Production', 'IMS Cruiser/Racer',
+                      'IMS Racer/Cruiser', 'IMS Racing/Cruising Yacht'],
+    'IMS/ILC': ['IMS Racer', 'ILC Racer', 'IMS Racing Yacht', 'ILC 40 Racer',
+                'ILC Maxi', 'One Design IMS'],
+    'One Design': ['One Design', 'One Design Racer', 'One-Design', 'One Design Racing Yacht'],
+    'Offshore': ['Volvo Ocean Race', 'IMOCA Open 60', "America's Cup"],
+    'Dinghy & Small': ['Dinghy', 'Trailer Sailer', 'Sharpie'],
+    'Power': ['Powerboat', 'Power Yacht'],
+    'Superyacht': ['Superyacht'],
+    'Other': ['Multihull', 'Unknown', 'Tank Testing/Research', 'Other'],
+}
+
+# Build reverse lookup: raw type → group name
+TYPE_TO_GROUP = {}
+for group, raw_types in TYPE_GROUPS.items():
+    for rt in raw_types:
+        TYPE_TO_GROUP[rt] = group
+
+def get_type_group(raw_type):
+    """Map a raw designType to its consolidated group."""
+    if not raw_type:
+        return ''
+    return TYPE_TO_GROUP.get(raw_type, 'Other')
+
+
+# ─── Build portfolio page (Sprint 9: interactive sort/filter/views) ───
 
 def build_portfolio_page():
-    """Generate portfolio.html with all boats grouped by decade, with tier badges."""
-    by_decade = {}
-    for boat in boats:
-        dec = decade(boat.get("year"))
-        by_decade.setdefault(dec, []).append(boat)
+    """Generate portfolio.html with client-side search, sort, filter, and grid/list views."""
 
-    sorted_decades = sorted(
-        [d for d in by_decade.keys() if d != "Unknown"],
-        reverse=True
-    )
-    if "Unknown" in by_decade:
-        sorted_decades.append("Unknown")
+    # Build JSON data for client-side interactivity
+    portfolio_data = []
+    for boat in boats:
+        slug = boat.get("slug", "")
+        name = boat.get("name") or boat.get("title", slug)
+        year_val = boat.get("year")
+        year_int = int(year_val) if year_val and isinstance(year_val, (int, float)) else 0
+        year_str = str(year_int) if year_int else ""
+        dec = decade(year_val)
+        categories = boat.get("category") or []
+        cat = categories[0] if categories else ""
+        raw_type = boat.get("designType", "")
+        type_group = get_type_group(raw_type)
+        specs_obj = boat.get("specs") or {}
+        loa = specs_obj.get("loa", {}) if isinstance(specs_obj, dict) else {}
+        loa_ft = loa.get("ft") if isinstance(loa, dict) else None
+        loa_m = loa.get("m") if isinstance(loa, dict) else None
+        builder = boat.get("builder", "")
+        design_num = boat.get("designNumber", "")
+        plan_status = boat.get("planStatus", "coming_soon")
+
+        # Resolve image
+        card_img_main = (boat.get("images") or {}).get("main", "")
+        if card_img_main and card_img_main.lower() in existing_images:
+            has_img = True
+            img_url = f"/images/{card_img_main}"
+        else:
+            has_img = f"{slug}.jpg" in existing_images
+            img_url = f"/images/{slug}.jpg"
+
+        # Numeric sort key for design number
+        dn_num = 0
+        if design_num:
+            m = re.match(r'(\d+)', str(design_num))
+            if m:
+                dn_num = int(m.group(1))
+
+        portfolio_data.append({
+            's': slug,           # slug
+            'n': str(name) if name else '',  # name
+            'dn': str(design_num),  # design number
+            'dnn': dn_num,       # design number numeric
+            'y': year_int,       # year (int)
+            'ys': year_str,      # year (string)
+            'd': dec,            # decade
+            'tg': type_group,    # type group (consolidated)
+            'tr': raw_type,      # type raw
+            'b': str(builder) if builder else '',  # builder
+            'lf': loa_ft,        # LOA feet
+            'lm': loa_m,         # LOA meters
+            'hi': has_img,       # has image
+            'iu': img_url,       # image url
+            'ps': plan_status,   # plan status
+            'c': cat,            # category
+        })
+
+    portfolio_json = json.dumps(portfolio_data, ensure_ascii=False, separators=(',', ':'))
+
+    # Collect unique values for filter dropdowns
+    type_groups_used = sorted(set(d['tg'] for d in portfolio_data if d['tg']))
+    decades_list = sorted(set(d['d'] for d in portfolio_data if d['d'] != 'Unknown'), reverse=True)
+    if any(d['d'] == 'Unknown' for d in portfolio_data):
+        decades_list.append('Unknown')
+    builders_list = sorted(set(d['b'] for d in portfolio_data if d['b']))
 
     total = len(boats)
+
+    # Build type group options
+    type_options = ''.join(f'<option value="{esc(tg)}">{esc(tg)}</option>' for tg in type_groups_used)
+    decade_options = ''.join(f'<option value="{esc(d)}">{esc(d)}</option>' for d in decades_list)
+    builder_options = ''.join(f'<option value="{esc(b)}">{esc(b)}</option>' for b in builders_list)
 
     content = f'''
     <div class="content-section" style="padding-top:2rem;">
       <h1 style="font-family:var(--font-heading);font-size:2.2rem;margin-bottom:0.5rem;">Portfolio</h1>
-      <p style="color:var(--text-secondary);font-size:1rem;margin-bottom:2rem;">{total} designs spanning six decades of yacht design innovation.</p>
+      <p style="color:var(--text-secondary);font-size:1rem;margin-bottom:1.5rem;">{total} designs spanning six decades of yacht design innovation.</p>
 
-      <div style="display:flex;gap:0.75rem;flex-wrap:wrap;margin-bottom:2.5rem;">
-        {"".join(f'<a href="#d{d}" style="padding:0.4rem 1rem;border:1px solid var(--border);border-radius:99px;font-size:0.8rem;color:var(--text-secondary);text-decoration:none;">{d} ({len(by_decade[d])})</a>' for d in sorted_decades)}
+      <!-- Search -->
+      <div class="pf-search-row">
+        <input type="text" id="pf-search" placeholder="Search by name, design number, or builder\u2026" autocomplete="off" />
       </div>
-'''
 
-    for dec_label in sorted_decades:
-        dec_boats = sorted(by_decade[dec_label], key=lambda b: b.get("title", ""))
-        content += f'''
-      <div id="d{dec_label}" style="margin-bottom:3rem;">
-        <h2 style="font-family:var(--font-heading);font-size:1.5rem;margin-bottom:1.25rem;padding-bottom:0.5rem;border-bottom:1px solid var(--border);">{dec_label}</h2>
-        <div class="detail-grid" style="grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1.5rem;">
-'''
-        for boat in dec_boats:
-            slug = boat.get("slug", "")
-            name = boat.get("name") or boat.get("title", slug)
-            year_str = str(int(boat["year"])) if boat.get("year") and isinstance(boat["year"], (int, float)) else ""
-            categories = boat.get("category") or []
-            cat = categories[0] if categories else ""
-            specs_obj = boat.get("specs") or {}
-            loa = specs_obj.get("loa", {}) if isinstance(specs_obj, dict) else {}
-            loa_ft = loa.get("ft") if isinstance(loa, dict) else None
-
-            # Check images.main first, then fall back to slug
-            card_img_main = (boat.get("images") or {}).get("main", "")
-            if card_img_main and card_img_main.lower() in existing_images:
-                has_img = True
-                img_url = f"/images/{card_img_main}"
-            else:
-                has_img = f"{slug}.jpg" in existing_images
-                img_url = f"/images/{slug}.jpg"
-
-            meta_parts = []
-            if loa_ft:
-                meta_parts.append(f"{loa_ft}&prime;")
-            if cat:
-                meta_parts.append(cat)
-            if year_str:
-                meta_parts.append(year_str)
-            meta_str = " | ".join(meta_parts) if meta_parts else ""
-
-            design_num = boat.get("designNumber", "")
-            num_display = f"#{esc(design_num)}" if design_num else f"#{esc(boat.get('title', ''))}"
-
-            # Tier dot: green = plans available (Tier 1 + card), amber = archive (Tier 2)
-            plan_status = boat.get("planStatus", "coming_soon")
-            if plan_status == "available":
-                tier_dot = '<span style="width:7px;height:7px;border-radius:50%;background:#3dba72;flex-shrink:0;" title="Plans available"></span>'
-            elif plan_status == "request_from_shed":
-                tier_dot = '<span style="width:7px;height:7px;border-radius:50%;background:#d97706;flex-shrink:0;" title="Archive request"></span>'
-            else:
-                tier_dot = ''
-
-            img_tbc = ""
-            if not has_img:
-                img_tbc = '<span class="img-tbc"><svg class="img-tbc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="7" width="18" height="14" rx="2"/><path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2"/><circle cx="12" cy="14" r="3"/></svg><span class="img-tbc-label">Photo coming soon</span></span>'
-
-            card_img_style = f' style="background-image:url(\'{img_url}\')"' if has_img else ""
-
-            content += f'''
-          <a href="/yacht/{slug}.html" class="yacht-card" style="text-decoration:none;">
-            <div class="yacht-card-image"{card_img_style}>
-              {img_tbc}
-            </div>
-            <div class="yacht-card-body">
-              <div style="display:flex;align-items:center;gap:0.4rem;">
-                <div class="yacht-card-number">{num_display}</div>
-                {tier_dot}
-              </div>
-              <div class="yacht-card-name">{esc(name)}</div>
-              {f'<div class="yacht-card-meta">{meta_str}</div>' if meta_str else ''}
-            </div>
-          </a>'''
-
-        content += '''
+      <!-- Controls bar -->
+      <div class="pf-controls">
+        <div class="pf-filters">
+          <select id="pf-type" class="pf-select"><option value="">All Types</option>{type_options}</select>
+          <select id="pf-decade" class="pf-select"><option value="">All Decades</option>{decade_options}</select>
+          <select id="pf-builder" class="pf-select"><option value="">All Builders</option>{builder_options}</select>
         </div>
-      </div>'''
+        <div class="pf-right">
+          <div class="pf-sort">
+            <span class="pf-sort-label">Sort:</span>
+            <button class="sort-btn active" data-sort="dn" data-dir="asc">Design #</button>
+            <button class="sort-btn" data-sort="y" data-dir="desc">Year</button>
+            <button class="sort-btn" data-sort="n" data-dir="asc">Name</button>
+            <button class="sort-btn" data-sort="lf" data-dir="desc">Size</button>
+          </div>
+          <div class="pf-view-toggle">
+            <button class="pf-view-btn active" data-view="grid" title="Grid view">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><rect x="1" y="1" width="6" height="6" rx="1"/><rect x="9" y="1" width="6" height="6" rx="1"/><rect x="1" y="9" width="6" height="6" rx="1"/><rect x="9" y="9" width="6" height="6" rx="1"/></svg>
+            </button>
+            <button class="pf-view-btn" data-view="list" title="List view">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><rect x="1" y="1" width="14" height="3" rx="1"/><rect x="1" y="6.5" width="14" height="3" rx="1"/><rect x="1" y="12" width="14" height="3" rx="1"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
 
-    content += '''
+      <!-- Results count -->
+      <div class="pf-status">
+        <span id="pf-count" class="portfolio-count">{total} designs</span>
+        <button id="pf-clear" class="pf-clear-btn" style="display:none;">Clear filters</button>
+      </div>
+
+      <!-- Grid container (cards rendered by JS) -->
+      <div id="pf-grid" class="pf-grid"></div>
+
+      <!-- List container (table rendered by JS) -->
+      <div id="pf-list" class="pf-list" style="display:none;">
+        <table class="pf-table">
+          <thead>
+            <tr>
+              <th>Design #</th>
+              <th>Name</th>
+              <th>Year</th>
+              <th>Type</th>
+              <th class="pf-hide-mobile">LOA</th>
+              <th class="pf-hide-mobile">Builder</th>
+            </tr>
+          </thead>
+          <tbody id="pf-tbody"></tbody>
+        </table>
+      </div>
+
     </div>
+
     <div class="cta-band" style="text-align:center;padding:3rem 2rem;">
       <p style="font-family:var(--font-heading);font-size:1.15rem;color:var(--text-primary);margin-bottom:0.5rem;">Looking for something specific?</p>
       <p style="color:var(--text-secondary);font-size:0.9rem;max-width:500px;margin:0.5rem auto 1.25rem;">Get in touch and we&rsquo;ll help you find the right design.</p>
       <a href="/contact.html" class="hero-cta" style="text-decoration:none;">Get in Touch</a>
-    </div>'''
+    </div>
+
+    <script>
+    (function() {{
+      'use strict';
+      var DATA = {portfolio_json};
+
+      // ── State ──
+      var state = {{
+        sort: 'dn', dir: 'asc', view: 'grid',
+        search: '', type: '', decade: '', builder: ''
+      }};
+
+      // ── DOM refs ──
+      var $search = document.getElementById('pf-search');
+      var $type = document.getElementById('pf-type');
+      var $decade = document.getElementById('pf-decade');
+      var $builder = document.getElementById('pf-builder');
+      var $count = document.getElementById('pf-count');
+      var $clear = document.getElementById('pf-clear');
+      var $grid = document.getElementById('pf-grid');
+      var $list = document.getElementById('pf-list');
+      var $tbody = document.getElementById('pf-tbody');
+
+      // ── Filter + Sort ──
+      function filterAndSort() {{
+        var q = state.search.toLowerCase();
+        var filtered = DATA.filter(function(d) {{
+          if (q && d.n.toLowerCase().indexOf(q) === -1 &&
+              d.dn.toLowerCase().indexOf(q) === -1 &&
+              d.b.toLowerCase().indexOf(q) === -1) return false;
+          if (state.type && d.tg !== state.type) return false;
+          if (state.decade && d.d !== state.decade) return false;
+          if (state.builder && d.b !== state.builder) return false;
+          return true;
+        }});
+
+        var sortKey = state.sort;
+        var dir = state.dir === 'asc' ? 1 : -1;
+        filtered.sort(function(a, b) {{
+          var va, vb;
+          if (sortKey === 'dn') {{ va = a.dnn; vb = b.dnn; }}
+          else if (sortKey === 'y') {{ va = a.y || 0; vb = b.y || 0; }}
+          else if (sortKey === 'n') {{ va = (a.n || '').toLowerCase(); vb = (b.n || '').toLowerCase(); }}
+          else if (sortKey === 'lf') {{ va = a.lf || 0; vb = b.lf || 0; }}
+          else {{ va = a.dnn; vb = b.dnn; }}
+          if (va < vb) return -1 * dir;
+          if (va > vb) return 1 * dir;
+          return 0;
+        }});
+
+        return filtered;
+      }}
+
+      // ── Render ──
+      function escH(s) {{ var d = document.createElement('div'); d.textContent = s; return d.innerHTML; }}
+
+      function renderGrid(items) {{
+        var html = '';
+        for (var i = 0; i < items.length; i++) {{
+          var d = items[i];
+          var numDisp = d.dn ? '#' + escH(d.dn) : '#' + escH(d.s);
+          var meta = [];
+          if (d.lf) meta.push(d.lf + '&prime;');
+          if (d.c) meta.push(escH(d.c));
+          if (d.ys) meta.push(d.ys);
+          var metaStr = meta.join(' | ');
+          var dot = '';
+          if (d.ps === 'available') dot = '<span style="width:7px;height:7px;border-radius:50%;background:#3dba72;flex-shrink:0;" title="Plans available"></span>';
+          else if (d.ps === 'request_from_shed') dot = '<span style="width:7px;height:7px;border-radius:50%;background:#d97706;flex-shrink:0;" title="Archive request"></span>';
+
+          var imgStyle = d.hi ? ' style="background-image:url(\\''+d.iu+'\\');"' : '';
+          var tbc = d.hi ? '' : '<span class="img-tbc"><svg class="img-tbc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="7" width="18" height="14" rx="2"/><path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2"/><circle cx="12" cy="14" r="3"/></svg><span class="img-tbc-label">Photo coming soon</span></span>';
+
+          html += '<a href="/yacht/' + d.s + '.html" class="yacht-card" style="text-decoration:none;">' +
+            '<div class="yacht-card-image"' + imgStyle + '>' + tbc + '</div>' +
+            '<div class="yacht-card-body">' +
+              '<div style="display:flex;align-items:center;gap:0.4rem;">' +
+                '<div class="yacht-card-number">' + numDisp + '</div>' + dot +
+              '</div>' +
+              '<div class="yacht-card-name">' + escH(d.n) + '</div>' +
+              (metaStr ? '<div class="yacht-card-meta">' + metaStr + '</div>' : '') +
+            '</div></a>';
+        }}
+        $grid.innerHTML = html;
+      }}
+
+      function renderList(items) {{
+        var html = '';
+        for (var i = 0; i < items.length; i++) {{
+          var d = items[i];
+          var loaStr = '';
+          if (d.lf) loaStr = d.lf + ' ft';
+          else if (d.lm) loaStr = d.lm + ' m';
+          html += '<tr>' +
+            '<td><a href="/yacht/' + d.s + '.html">' + escH(d.dn || d.s) + '</a></td>' +
+            '<td><a href="/yacht/' + d.s + '.html">' + escH(d.n) + '</a></td>' +
+            '<td>' + (d.ys || '') + '</td>' +
+            '<td>' + escH(d.tg || d.tr) + '</td>' +
+            '<td class="pf-hide-mobile">' + loaStr + '</td>' +
+            '<td class="pf-hide-mobile">' + escH(d.b) + '</td>' +
+          '</tr>';
+        }}
+        $tbody.innerHTML = html;
+      }}
+
+      function render() {{
+        var items = filterAndSort();
+        $count.textContent = items.length + ' design' + (items.length !== 1 ? 's' : '');
+        var hasFilters = state.search || state.type || state.decade || state.builder;
+        $clear.style.display = hasFilters ? 'inline-block' : 'none';
+
+        if (state.view === 'grid') {{
+          $grid.style.display = '';
+          $list.style.display = 'none';
+          renderGrid(items);
+        }} else {{
+          $grid.style.display = 'none';
+          $list.style.display = '';
+          renderList(items);
+        }}
+      }}
+
+      // ── Event handlers ──
+      var debounceTimer;
+      $search.addEventListener('input', function() {{
+        clearTimeout(debounceTimer);
+        debounceTimer = setTimeout(function() {{
+          state.search = $search.value.trim();
+          render();
+        }}, 200);
+      }});
+
+      $type.addEventListener('change', function() {{ state.type = this.value; render(); }});
+      $decade.addEventListener('change', function() {{ state.decade = this.value; render(); }});
+      $builder.addEventListener('change', function() {{ state.builder = this.value; render(); }});
+
+      $clear.addEventListener('click', function() {{
+        state.search = ''; state.type = ''; state.decade = ''; state.builder = '';
+        $search.value = ''; $type.value = ''; $decade.value = ''; $builder.value = '';
+        render();
+      }});
+
+      // Sort buttons
+      document.querySelectorAll('.sort-btn').forEach(function(btn) {{
+        btn.addEventListener('click', function() {{
+          var key = this.getAttribute('data-sort');
+          if (state.sort === key) {{
+            state.dir = state.dir === 'asc' ? 'desc' : 'asc';
+          }} else {{
+            state.sort = key;
+            state.dir = this.getAttribute('data-dir') || 'asc';
+          }}
+          document.querySelectorAll('.sort-btn').forEach(function(b) {{ b.classList.remove('active'); }});
+          this.classList.add('active');
+          // Update arrow indicator
+          this.setAttribute('data-dir', state.dir);
+          render();
+        }});
+      }});
+
+      // View toggle
+      document.querySelectorAll('.pf-view-btn').forEach(function(btn) {{
+        btn.addEventListener('click', function() {{
+          state.view = this.getAttribute('data-view');
+          document.querySelectorAll('.pf-view-btn').forEach(function(b) {{ b.classList.remove('active'); }});
+          this.classList.add('active');
+          render();
+        }});
+      }});
+
+      // Initial render
+      render();
+    }})();
+    </script>
+'''
 
     page_title = "Portfolio &mdash; Farr Yacht Design"
     full_html = base_html.replace("{{ pageTitle }} &mdash; Farr Yacht Design", page_title)
