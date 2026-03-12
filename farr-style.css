@@ -601,7 +601,26 @@ footer div[style*="border-top"] { border-top-color: rgba(255,255,255,0.15) !impo
 
 .yacht-card { background: var(--panel); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; text-decoration: none; color: inherit; display: flex; flex-direction: column; transition: border-color 0.25s, transform 0.2s, box-shadow 0.25s; }
 .yacht-card:hover { border-color: var(--accent); transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3); text-decoration: none; }
-.yacht-card-image { aspect-ratio: 16 / 10; overflow: hidden; background: var(--farr-mid); }
+.yacht-card-image { aspect-ratio: 16 / 10; overflow: hidden; background: var(--farr-mid); position: relative; }
+
+/* Type tag overlay on portfolio cards (Sprint 14A) */
+.yacht-card-type-tag {
+  position: absolute; top: 0.5rem; left: 0.5rem; z-index: 1;
+  font-family: var(--font-mono); font-size: 0.6rem; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.06em;
+  padding: 0.2rem 0.5rem; border-radius: 4px;
+  color: #fff; background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px);
+  line-height: 1.2;
+}
+.yacht-card-type-racing { background: rgba(180, 40, 40, 0.8); }
+.yacht-card-type-cruising { background: rgba(30, 100, 160, 0.8); }
+.yacht-card-type-production { background: rgba(40, 130, 80, 0.8); }
+.yacht-card-type-offshore { background: rgba(160, 80, 20, 0.8); }
+.yacht-card-type-dinghy---small { background: rgba(100, 80, 150, 0.8); }
+.yacht-card-type-power { background: rgba(60, 60, 60, 0.8); }
+.yacht-card-type-superyacht { background: rgba(140, 120, 50, 0.8); }
+.yacht-card-type-other { background: rgba(80, 80, 80, 0.7); }
 .yacht-card-image img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s; }
 .yacht-card:hover .yacht-card-image img { transform: scale(1.04); }
 .yacht-card-body { padding: 1rem 1.25rem 1.25rem; flex-grow: 1; display: flex; flex-direction: column; }

@@ -733,16 +733,25 @@ def build_portfolio_page():
           if (d.ps === 'available' || d.ps === 'scanned_available') dot = '<span style="width:7px;height:7px;border-radius:50%;background:#3dba72;flex-shrink:0;" title="Plans available"></span>';
           else if (d.ps === 'request_from_shed') dot = '<span style="width:7px;height:7px;border-radius:50%;background:#d97706;flex-shrink:0;" title="Archive request"></span>';
 
-          var imgStyle = d.hi ? ' style="background-image:url(\\''+d.iu+'\\');"' : '';
+          var imgAttr = d.hi ? ' data-bg="'+d.iu+'"' : '';
           var tbc = d.hi ? '' : '<span class="img-tbc"><svg class="img-tbc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="7" width="18" height="14" rx="2"/><path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2"/><circle cx="12" cy="14" r="3"/></svg><span class="img-tbc-label">Photo coming soon</span></span>';
 
+          // Type tag overlay on card image
+          var typeTag = '';
+          if (d.tg) typeTag = '<span class="yacht-card-type-tag yacht-card-type-' + d.tg.toLowerCase().replace(/[^a-z]/g, '-') + '">' + escH(d.tg) + '</span>';
+
+          // Improved title: "Type - Name" or just Name
+          var titleText = d.n;
+          if (d.tr && d.n && d.tr !== d.n && d.c !== d.tr) titleText = escH(d.tr) + ' - ' + escH(d.n);
+          else titleText = escH(d.n);
+
           html += '<a href="/yacht/' + d.s + '.html" class="yacht-card" style="text-decoration:none;">' +
-            '<div class="yacht-card-image"' + imgStyle + '>' + tbc + '</div>' +
+            '<div class="yacht-card-image"' + imgAttr + '>' + typeTag + tbc + '</div>' +
             '<div class="yacht-card-body">' +
               '<div style="display:flex;align-items:center;gap:0.4rem;">' +
                 '<div class="yacht-card-number">' + numDisp + '</div>' + dot +
               '</div>' +
-              '<div class="yacht-card-name">' + escH(d.n) + '</div>' +
+              '<div class="yacht-card-name">' + titleText + '</div>' +
               (metaStr ? '<div class="yacht-card-meta">' + metaStr + '</div>' : '') +
             '</div></a>';
         }}
@@ -768,6 +777,32 @@ def build_portfolio_page():
         $tbody.innerHTML = html;
       }}
 
+      // Lazy-load background images via IntersectionObserver (Sprint 14D)
+      var lazyObserver = ('IntersectionObserver' in window)
+        ? new IntersectionObserver(function(entries) {{
+            entries.forEach(function(entry) {{
+              if (entry.isIntersecting) {{
+                var el = entry.target;
+                var bg = el.getAttribute('data-bg');
+                if (bg) {{ el.style.backgroundImage = 'url(' + bg + ')'; el.removeAttribute('data-bg'); }}
+                lazyObserver.unobserve(el);
+              }}
+            }});
+          }}, {{ rootMargin: '200px 0px' }})
+        : null;
+
+      function observeLazy() {{
+        if (!lazyObserver) {{
+          // Fallback: load all images immediately
+          $grid.querySelectorAll('[data-bg]').forEach(function(el) {{
+            el.style.backgroundImage = 'url(' + el.getAttribute('data-bg') + ')';
+            el.removeAttribute('data-bg');
+          }});
+          return;
+        }}
+        $grid.querySelectorAll('[data-bg]').forEach(function(el) {{ lazyObserver.observe(el); }});
+      }}
+
       function render() {{
         var items = filterAndSort();
         $count.textContent = items.length + ' design' + (items.length !== 1 ? 's' : '');
@@ -778,6 +813,7 @@ def build_portfolio_page():
           $grid.style.display = '';
           $list.style.display = 'none';
           renderGrid(items);
+          observeLazy();
         }} else {{
           $grid.style.display = 'none';
           $list.style.display = '';
