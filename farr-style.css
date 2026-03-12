@@ -655,6 +655,7 @@ footer div[style*="border-top"] { border-top-color: rgba(255,255,255,0.15) !impo
 @media (max-width: 560px) {
   .yacht-detail-header h1 { font-size: 1.5rem; }
   .yacht-detail-layout { padding: 1.5rem 1.25rem 0.5rem; }
+  .yacht-detail-image { height: 200px; }
 }
 
 .era-label { font-family: var(--font-mono); font-size: 0.6rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; padding: 0.2rem 0.6rem; border-radius: 4px; background: var(--farr-mid); color: var(--text-muted); border: 1px solid var(--border); }
@@ -1960,10 +1961,12 @@ footer div[style*="border-top"] { border-top-color: rgba(255,255,255,0.15) !impo
   opacity: 0.7;
 }
 
-/* Card hover: subtle zoom when bg-image present */
-.yacht-card:hover .yacht-card-image[style*="background-image"] {
-  background-size: 104%;
-  transition: background-size 0.4s ease;
+/* Card hover: subtle zoom when bg-image present (desktop only) */
+@media (hover: hover) {
+  .yacht-card:hover .yacht-card-image[style*="background-image"] {
+    background-size: 104%;
+    transition: background-size 0.4s ease;
+  }
 }
 .yacht-card-image[style*="background-image"] {
   transition: background-size 0.4s ease;

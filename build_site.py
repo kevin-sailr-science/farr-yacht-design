@@ -356,6 +356,9 @@ def build_yacht_page(boat):
     # Plan section — tier-specific (Sprint 2)
     plan_section = build_plan_section(boat)
 
+    # Build image style attribute (only when image exists)
+    detail_img_style = f''' style="background-image:url('{image_url}')"''' if has_image else ""
+
     # Build page content (inside <main>)
     content = f'''
     <div class="yacht-detail-layout">
@@ -369,7 +372,7 @@ def build_yacht_page(boat):
       </div>
       <div class="yacht-detail-body">
         <div>
-          <div class="yacht-detail-image" style="background-image:url('{image_url}')">
+          <div class="yacht-detail-image"{detail_img_style}>
             {img_tbc}
           </div>
           <div style="margin-top:1.5rem;">
@@ -480,9 +483,11 @@ def build_portfolio_page():
             if not has_img:
                 img_tbc = '<span class="img-tbc"><svg class="img-tbc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="7" width="18" height="14" rx="2"/><path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2"/><circle cx="12" cy="14" r="3"/></svg><span class="img-tbc-label">Photo coming soon</span></span>'
 
+            card_img_style = f' style="background-image:url(\'{img_url}\')"' if has_img else ""
+
             content += f'''
           <a href="/yacht/{slug}.html" class="yacht-card" style="text-decoration:none;">
-            <div class="yacht-card-image" style="background-image:url('{img_url}')">
+            <div class="yacht-card-image"{card_img_style}>
               {img_tbc}
             </div>
             <div class="yacht-card-body">
@@ -540,14 +545,147 @@ def build_redirects():
 
     lines.append("")
     lines.append("# Legacy numbered HTML pages")
+    # Skip titles that have explicit overrides in named_redirects below
+    numbered_skip = {"495"}
     for boat in boats:
         title = boat.get("title", "")
         slug = boat.get("slug", "")
+        if title in numbered_skip:
+            continue
         if re.match(r'^\d+[mM]?$', title):
             lines.append(f"/{title}.html /yacht/{slug}.html 301")
         # Also handle underscore variants (e.g., 92_2 → was 92/2)
         if '_' in title and re.match(r'^\d+_', title):
             lines.append(f"/{title}.html /yacht/{slug}.html 301")
+
+    # ─── Legacy root-level page redirects (Session 39 cleanup) ───
+    # These cover old Drupal/MUSE pages that were deleted from root.
+    # Static files took priority over _redirects; now that files are gone,
+    # these rules catch any bookmarked/indexed URLs.
+    lines.append("")
+    lines.append("# Legacy root-level page redirects (old Drupal/MUSE exports)")
+
+    # Named page redirects
+    named_redirects = {
+        # Old staff pages
+        "jim.html": "/team.html",
+        "patrick.html": "/team.html",
+        "chris.html": "/team.html",
+        "keith.html": "/team.html",
+        "luke.html": "/team.html",
+        # Page variants
+        "americascup.html": "/americas-cup.html",
+        "volvooceanrace.html": "/volvo-ocean-race.html",
+        "volvooceanrace-results.html": "/volvo-ocean-race.html",
+        # Design listings
+        "designs.html": "/portfolio.html",
+        "designs-length.html": "/portfolio.html",
+        "designs-length-list.html": "/portfolio.html",
+        "designs-number.html": "/portfolio.html",
+        "designs-number-list.html": "/portfolio.html",
+        "concepts.html": "/portfolio.html",
+        # Content pages
+        "blog.html": "/news.html",
+        "press.html": "/press-kit.html",
+        "stories.html": "/news.html",
+        "environment.html": "/about.html",
+        "students.html": "/about.html",
+        "page-moved.html": "/index.html",
+        # Race results
+        "race-results.html": "/racing.html",
+        "results.html": "/racing.html",
+        "results-2016.html": "/racing.html",
+        "results-2017.html": "/racing.html",
+        "results-2017-copy.html": "/racing.html",
+        # TP52 / 495 variants
+        "495.html": "/tp52-heritage.html",
+        "495-2.html": "/tp52-heritage.html",
+        "495-3.html": "/tp52-heritage.html",
+        "495-4.html": "/tp52-heritage.html",
+        "495results.html": "/tp52-heritage.html",
+        # News articles
+        "horizon-f14-paddleboard-wins-first-race.html": "/news.html",
+        "new-beneteau-10r-rudder-design.html": "/news.html",
+        "new-beneteau-first-407-rudder-design.html": "/news.html",
+        "new-farr-395-rudder-design.html": "/news.html",
+        "new-first-40-rudder-design.html": "/news.html",
+        "news-our-new-fast-40.html": "/news.html",
+        "rudder-re-design.html": "/news.html",
+        "sw82-ammonite-launched.html": "/news.html",
+        # Misc
+        "untitled-227.html": "/index.html",
+        "untitled-228.html": "/index.html",
+        "farr30bowsprit.html": "/yacht/030.html",
+        "1988nzchallenge.html": "/americas-cup.html",
+    }
+    for src, dst in sorted(named_redirects.items()):
+        lines.append(f"/{src} {dst} 301")
+
+    # Numbered variant/results/photos pages → yacht pages
+    # Format: /NNNresults.html, /NNN-2.html, /NNNphotos.html etc.
+    lines.append("")
+    lines.append("# Legacy numbered variant pages (results, photos, suffixed)")
+    variant_redirects = [
+        # Results pages
+        ("028results.html", "/yacht/028.html"),
+        ("279results.html", "/yacht/279.html"),
+        ("281results.html", "/yacht/281.html"),
+        ("294results.html", "/yacht/294.html"),
+        ("299results.html", "/yacht/299.html"),
+        ("316results.html", "/yacht/316.html"),
+        ("336results.html", "/yacht/336.html"),
+        ("338results.html", "/yacht/338.html"),
+        ("354results.html", "/yacht/354.html"),
+        ("369results.html", "/yacht/369.html"),
+        ("369CRresults.html", "/yacht/369.html"),
+        ("374results.html", "/yacht/374.html"),
+        ("414results.html", "/yacht/414.html"),
+        ("414wallyresults.html", "/yacht/414.html"),
+        ("421results.html", "/yacht/421.html"),
+        ("422results.html", "/yacht/422.html"),
+        ("444results.html", "/yacht/444.html"),
+        ("446results.html", "/yacht/446.html"),
+        ("486results.html", "/yacht/486.html"),
+        ("492results.html", "/yacht/492.html"),
+        ("496results.html", "/yacht/496.html"),
+        ("498results.html", "/yacht/498.html"),
+        ("602results.html", "/yacht/602.html"),
+        ("602_Fonciaresults.html", "/yacht/602.html"),
+        ("603_2results.html", "/yacht/603.html"),
+        ("622results.html", "/yacht/622.html"),
+        ("634results.html", "/yacht/634.html"),
+        ("673results.html", "/yacht/673.html"),
+        ("720Mresults.html", "/yacht/720M.html"),
+        # Photos/reviews pages
+        ("281photos.html", "/yacht/281.html"),
+        ("498photos.html", "/yacht/498.html"),
+        ("673Mphotos.html", "/yacht/673M.html"),
+        ("673Mreviews.html", "/yacht/673M.html"),
+        ("739photos.html", "/yacht/739.html"),
+        # Suffixed variants (-2, -3 etc.)
+        ("196-12m.html", "/yacht/196.html"),
+        ("219oc.html", "/yacht/219_oc.html"),
+        ("279-2.html", "/yacht/279.html"),
+        ("281-2.html", "/yacht/281.html"),
+        ("428-2.html", "/yacht/428.html"),
+        ("467-2.html", "/yacht/467.html"),
+        ("491-2.html", "/yacht/491.html"),
+        ("634-635.html", "/yacht/634.html"),
+        ("673-2.html", "/yacht/673.html"),
+        ("675-2.html", "/yacht/675.html"),
+        ("680-2.html", "/yacht/680.html"),
+        ("720-2.html", "/yacht/720.html"),
+        ("720M-2.html", "/yacht/720M.html"),
+        ("726-2.html", "/yacht/726.html"),
+        ("733-2.html", "/yacht/733.html"),
+        ("739-2.html", "/yacht/739.html"),
+        ("78-79.html", "/yacht/78.html"),
+        # Special slug mappings
+        ("266.html", "/yacht/266_0001.html"),
+        ("667.html", "/yacht/667-farr-25od.html"),
+    ]
+    for src, dst in variant_redirects:
+        lines.append(f"/{src} {dst} 301")
 
     return "\n".join(lines) + "\n"
 
