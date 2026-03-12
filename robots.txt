@@ -1,4 +1,5 @@
-# DEMO SITE — block all crawlers
-# Remove this file (or replace contents) for production launch
+# Farr Yacht Design
 User-agent: *
-Disallow: /
+Allow: /
+
+Sitemap: https://farr-designs.sailr.science/sitemap.xml
