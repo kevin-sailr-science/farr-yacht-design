@@ -72,17 +72,24 @@ def clean_html(s):
     s = re.sub(r'\s+', ' ', s).strip()
     return s
 
+def _fmt_num(v):
+    """Round a numeric value to 2 decimals; drop trailing zeros."""
+    if v is None:
+        return None
+    r = round(float(v), 2)
+    return int(r) if r == int(r) else r
+
 def spec_cell(spec_obj):
     """Format a spec value with both imperial and metric units."""
     if not spec_obj or not isinstance(spec_obj, dict):
         return None
     parts = []
-    ft = spec_obj.get('ft')
-    m = spec_obj.get('m')
+    ft = _fmt_num(spec_obj.get('ft'))
+    m = _fmt_num(spec_obj.get('m'))
     lbs = spec_obj.get('lbs')
     kg = spec_obj.get('kg')
-    sqft = spec_obj.get('sqft')
-    sqm = spec_obj.get('sqm')
+    sqft = _fmt_num(spec_obj.get('sqft'))
+    sqm = _fmt_num(spec_obj.get('sqm'))
     if ft is not None:
         parts.append(f"{ft} ft")
     if lbs is not None and ft is None:
@@ -226,7 +233,7 @@ def build_yacht_page(boat):
         meta_parts.append(category)
     if design_rule:
         meta_parts.append(design_rule)
-    if design_type and design_type != design_rule:
+    if design_type and design_type != design_rule and design_type != category:
         meta_parts.append(design_type)
     meta_line = " | ".join(meta_parts)
     if not meta_line and year:
@@ -285,7 +292,7 @@ def build_yacht_page(boat):
         spec_rows.append(("Type", esc(category)))
     if design_rule:
         spec_rows.append(("Rule", esc(design_rule)))
-    if design_type and design_type != design_rule:
+    if design_type and design_type != design_rule and design_type != category:
         spec_rows.append(("Design Type", esc(design_type)))
     if classification:
         spec_rows.append(("Classification", esc(classification)))
