@@ -80,7 +80,7 @@ html { scroll-behavior: smooth; }
 .skip-link {
   position: absolute; top: -100%; left: 1rem; z-index: 9999;
   padding: 0.75rem 1.5rem; background: var(--accent);
-  color: var(--farr-deep); font-weight: 600; font-size: 0.9rem;
+  color: #ffffff; font-weight: 600; font-size: 0.9rem;
   border-radius: 0 0 8px 8px; text-decoration: none; transition: top 0.2s;
 }
 .skip-link:focus { top: 0; outline: none; }
@@ -609,7 +609,7 @@ footer div[style*="border-top"] { border-top-color: rgba(255,255,255,0.15) !impo
 .portfolio-filters { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem; padding: 1rem 0; border-bottom: 1px solid var(--border); }
 .filter-btn { font-family: var(--font-mono); font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; padding: 0.4rem 0.9rem; border: 1px solid var(--border); border-radius: 100px; background: transparent; color: var(--text-secondary); cursor: pointer; transition: all 0.2s; }
 .filter-btn:hover { border-color: var(--accent); color: var(--accent); }
-.filter-btn.active { background: var(--accent); border-color: var(--accent); color: var(--farr-deep); }
+.filter-btn.active { background: var(--accent); border-color: var(--accent); color: #ffffff; }
 
 .portfolio-search { display: flex; gap: 0.75rem; margin-bottom: 1rem; }
 .portfolio-search input { flex: 1; background: var(--panel); border: 1px solid var(--border); border-radius: 8px; padding: 0.6rem 1rem; font-family: var(--font-body); font-size: 0.88rem; color: var(--text-primary); transition: border-color 0.2s; }
@@ -627,8 +627,8 @@ footer div[style*="border-top"] { border-top-color: rgba(255,255,255,0.15) !impo
 .purchase-card h3 { font-family: var(--font-display); font-size: 1.15rem; margin-bottom: 0.75rem; color: var(--text-primary); }
 .purchase-card .purchase-price { font-family: var(--font-mono); font-size: 1.6rem; font-weight: 700; color: var(--accent); margin-bottom: 0.5rem; }
 .purchase-card .purchase-format { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 1rem; }
-.purchase-card .btn-purchase { display: inline-block; background: var(--accent); color: var(--farr-deep); padding: 0.7rem 1.5rem; border-radius: 8px; font-weight: 600; font-size: 0.9rem; text-decoration: none; transition: opacity 0.2s, transform 0.15s; border: none; cursor: pointer; }
-.purchase-card .btn-purchase:hover { opacity: 0.88; transform: translateY(-1px); }
+.purchase-card .btn-purchase { display: inline-block; background: var(--cta); color: #ffffff; padding: 0.7rem 1.5rem; border-radius: 8px; font-weight: 600; font-size: 0.9rem; text-decoration: none; transition: background 0.2s, transform 0.15s; border: none; cursor: pointer; }
+.purchase-card .btn-purchase:hover { background: var(--cta-hover); transform: translateY(-1px); }
 
 .availability-badge { display: inline-flex; align-items: center; gap: 0.35rem; font-family: var(--font-mono); font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; padding: 0.25rem 0.65rem; border-radius: 100px; border: 1px solid; }
 .availability-badge--available { color: var(--green-ok); background: rgba(61, 186, 114, 0.08); border-color: rgba(61, 186, 114, 0.25); }
@@ -638,7 +638,7 @@ footer div[style*="border-top"] { border-top-color: rgba(255,255,255,0.15) !impo
 .purchase-card--waitlist { background: var(--bg-secondary); border-color: var(--border); }
 .purchase-card--waitlist .purchase-waitlist-note { font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem; }
 .purchase-card--waitlist .btn-waitlist { display: inline-block; background: transparent; color: var(--accent); padding: 0.65rem 1.5rem; border-radius: 8px; font-weight: 600; font-size: 0.88rem; text-decoration: none; border: 1.5px solid var(--accent); cursor: pointer; transition: background 0.2s, color 0.2s; }
-.purchase-card--waitlist .btn-waitlist:hover { background: var(--accent); color: var(--farr-deep); }
+.purchase-card--waitlist .btn-waitlist:hover { background: var(--accent); color: #ffffff; }
 .yacht-detail-layout { max-width: 1000px; margin: 0 auto; padding: 2rem 2rem 1rem; }
 .yacht-detail-header { margin-bottom: 1.5rem; }
 .yacht-detail-header h1 { font-family: var(--font-heading); font-size: 2rem; color: var(--text-primary); margin: 0 0 0.25rem; }
@@ -1939,7 +1939,7 @@ footer div[style*="border-top"] { border-top-color: rgba(255,255,255,0.15) !impo
 }
 .dp-filter-btn.dp-filter-active {
   background: var(--accent);
-  color: var(--farr-deep);
+  color: #ffffff;
   border-color: var(--accent);
   font-weight: 600;
 }
