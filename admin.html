@@ -84,7 +84,7 @@
         <!-- Toolbar -->
         <div style="display:flex;flex-wrap:wrap;gap:0.75rem;align-items:center;margin-top:1.5rem;">
           <div style="flex:1;min-width:220px;">
-            <input type="text" id="cat-search" placeholder="Search by design number, name, or builder&hellip;" style="width:100%;padding:0.55rem 1rem;border:1px solid var(--border);border-radius:8px;background:var(--panel);color:var(--text-primary);font-size:0.85rem;">
+            <input type="text" id="cat-search" placeholder="Search by design number, name, builder, or owner&hellip;" style="width:100%;padding:0.55rem 1rem;border:1px solid var(--border);border-radius:8px;background:var(--panel);color:var(--text-primary);font-size:0.85rem;">
           </div>
           <select id="cat-tier-filter" style="padding:0.55rem 0.75rem;border:1px solid var(--border);border-radius:8px;background:var(--panel);color:var(--text-primary);font-size:0.82rem;">
             <option value="all">All Tiers</option>
@@ -127,11 +127,12 @@
                 <th>Tier</th>
                 <th>Status</th>
                 <th>Builder</th>
+                <th>Owner</th>
                 <th style="width:60px;">Edit</th>
               </tr>
             </thead>
             <tbody id="catalog-tbody">
-              <tr><td colspan="7" style="text-align:center;color:var(--text-muted);padding:2rem;">Loading catalog&hellip;</td></tr>
+              <tr><td colspan="8" style="text-align:center;color:var(--text-muted);padding:2rem;">Loading catalog&hellip;</td></tr>
             </tbody>
           </table>
         </div>
@@ -581,8 +582,9 @@
           var dn = String(b.designNumber || '').toLowerCase();
           var nm = String(b.name || '').toLowerCase();
           var bl = String(b.builder || '').toLowerCase();
+          var ow = String(b.owner || '').toLowerCase();
           var ti = String(b.title || '').toLowerCase();
-          if (dn.indexOf(search) === -1 && nm.indexOf(search) === -1 && bl.indexOf(search) === -1 && ti.indexOf(search) === -1) return false;
+          if (dn.indexOf(search) === -1 && nm.indexOf(search) === -1 && bl.indexOf(search) === -1 && ow.indexOf(search) === -1 && ti.indexOf(search) === -1) return false;
         }
         return true;
       });
@@ -619,6 +621,7 @@
             +'<td><span style="font-family:var(--font-mono);font-size:0.72rem;font-weight:700;color:' + tierColor + ';">' + tierLabel + '</span></td>'
             +'<td>' + statusBadge + '</td>'
             +'<td style="font-size:0.82rem;color:var(--text-muted);">' + escHtml(b.builder || '--') + '</td>'
+            +'<td style="font-size:0.82rem;color:var(--text-muted);">' + escHtml(b.owner || '--') + '</td>'
             +'<td><button class="btn-waitlist" style="font-size:0.72rem;padding:0.2rem 0.6rem;" onclick="event.stopPropagation();editCatalogDesign(\'' + escHtml(String(b.designNumber)) + '\')">Edit</button></td>'
             +'</tr>';
         }).join('');

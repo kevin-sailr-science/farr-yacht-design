@@ -390,8 +390,7 @@ def build_yacht_page(boat):
         spec_rows.append(("Hull Construction", esc(boat["hullConstruction"])))
     if boat.get("builder"):
         spec_rows.append(("Builder", esc(boat["builder"])))
-    if boat.get("owner"):
-        spec_rows.append(("Owner", esc(boat["owner"])))
+    # Owner is admin-only (not public-facing per Britt's request)
     hulls = boat.get("hullsBuilt")
     if hulls and hulls > 0:
         spec_rows.append(("Hulls Built", str(hulls)))
