@@ -86,7 +86,9 @@
   --farr-dark:      #00267F;   /* dark variant (alias for --farr-deep)  */
   --accent-hover:   #003a99;   /* darker blue for hover states          */
 
-  /* Type scale (Sprint 14C - major third ~1.25 ratio) */
+  /* Type scale (Sprint 14C - major third ~1.25 ratio, Sprint 20 sub-scale) */
+  --text-3xs:       0.6rem;    /* 9.6px  - tiny badges, pill labels     */
+  --text-2xs:       0.65rem;   /* 10.4px - mono labels, card numbers    */
   --text-xs:        0.72rem;   /* 11.5px - fine print, badges           */
   --text-sm:        0.82rem;   /* 13px   - captions, meta               */
   --text-base:      0.92rem;   /* 14.7px - body text                    */
@@ -180,7 +182,7 @@ nav {
 /* Dropdown nav */
 .nav-dropdown { position: relative; }
 .nav-dropdown-toggle { cursor: pointer; display: flex; align-items: center; gap: 0.3rem; }
-.nav-dropdown-arrow { font-size: 0.65rem; opacity: 0.6; }
+.nav-dropdown-arrow { font-size: var(--text-2xs); opacity: 0.6; }
 .nav-dropdown-menu {
   display: none; position: absolute; top: 100%; left: 50%;
   transform: translateX(-50%); padding-top: var(--space-sm); z-index: 100;
@@ -202,7 +204,7 @@ nav {
 
 /* Mobile nav */
 .nav-mobile-group {
-  font-family: var(--font-mono); font-size: 0.7rem; font-weight: 600;
+  font-family: var(--font-mono); font-size: var(--text-xs); font-weight: 600;
   text-transform: uppercase; letter-spacing: 0.1em;
   color: var(--text-muted); padding: var(--space-sm) 0 0.25rem; margin-top: var(--space-sm);
 }
@@ -258,7 +260,7 @@ nav {
   display: inline-flex; align-items: center; gap: var(--space-sm);
   padding: 0.3rem 0.9rem; background: var(--accent-glow);
   border: 1px solid rgba(0, 38, 127, 0.20); border-radius: 100px;
-  font-size: 0.7rem; color: var(--accent); font-weight: 600;
+  font-size: var(--text-xs); color: var(--accent); font-weight: 600;
   letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: var(--space-md);
 }
 .hero-badge::before {
@@ -328,7 +330,7 @@ nav {
   font-weight: 300; max-width: 600px; margin-left: auto; margin-right: auto;
 }
 .feature-hero--photo .photo-credit {
-  position: relative; z-index: 2; font-size: 0.65rem;
+  position: relative; z-index: 2; font-size: var(--text-2xs);
   color: rgba(255, 255, 255, 0.75); margin-top: var(--space-xl);
 }
 
@@ -448,7 +450,7 @@ section {
 /* =============== 10. TABLES =============== */
 .detail-table { width: 100%; border-collapse: collapse; margin-top: var(--space-md); font-size: var(--text-sm); }
 .detail-table th {
-  font-family: var(--font-mono); font-size: 0.7rem; font-weight: 600;
+  font-family: var(--font-mono); font-size: var(--text-xs); font-weight: 600;
   text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-muted);
   text-align: left; padding: 0.6rem var(--space-sm-md); border-bottom: 2px solid var(--border);
 }
@@ -470,11 +472,11 @@ section {
 .callout p { margin: 0; font-size: var(--text-base); }
 
 .badge {
-  font-family: var(--font-mono); font-size: 0.65rem; font-weight: 600;
+  font-family: var(--font-mono); font-size: var(--text-2xs); font-weight: 600;
   padding: 0.2rem var(--space-sm); border-radius: 4px;
 }
 .tier-label {
-  font-family: var(--font-mono); font-size: 0.6rem; font-weight: 700;
+  font-family: var(--font-mono); font-size: var(--text-3xs); font-weight: 700;
   text-transform: uppercase; letter-spacing: 0.12em; color: var(--accent);
   background: var(--accent-soft); border: 1px solid rgba(0, 38, 127, 0.20);
   padding: var(--space-xs) 0.75rem; border-radius: 100px;
@@ -509,7 +511,7 @@ section {
 }
 .step-body h3 { font-family: var(--font-display); font-size: var(--text-md); margin-bottom: var(--space-xs); }
 .step-subtitle {
-  font-family: var(--font-mono); font-size: 0.65rem; font-weight: 600;
+  font-family: var(--font-mono); font-size: var(--text-2xs); font-weight: 600;
   text-transform: uppercase; letter-spacing: 0.08em;
   color: var(--text-muted); margin-bottom: 0.5rem;
 }
@@ -563,7 +565,7 @@ details.ref-block summary {
 }
 details.ref-block summary::-webkit-details-marker { display: none; }
 details.ref-block summary::after {
-  content: '\25B6'; font-size: 0.7rem; color: var(--text-muted);
+  content: '\25B6'; font-size: var(--text-xs); color: var(--text-muted);
   transition: transform 0.2s;
 }
 details.ref-block[open] summary::after { transform: rotate(90deg); }
@@ -577,7 +579,7 @@ details.ref-block .ref-content { padding: 0 1.25rem 1.25rem; }
   padding: 1.25rem var(--space-lg); margin: 1.25rem 0;
 }
 .formula-block .formula-label {
-  font-family: var(--font-mono); font-size: 0.65rem; font-weight: 600;
+  font-family: var(--font-mono); font-size: var(--text-2xs); font-weight: 600;
   text-transform: uppercase; letter-spacing: 0.08em;
   color: var(--accent); margin-bottom: 0.5rem;
 }
@@ -638,7 +640,7 @@ footer div[style*="border-top"] { border-top-color: rgba(255,255,255,0.15) !impo
 /* Type tag overlay on portfolio cards (Sprint 14A) */
 .yacht-card-type-tag {
   position: absolute; top: 0.5rem; left: 0.5rem; z-index: 1;
-  font-family: var(--font-mono); font-size: 0.6rem; font-weight: 600;
+  font-family: var(--font-mono); font-size: var(--text-3xs); font-weight: 600;
   text-transform: uppercase; letter-spacing: 0.06em;
   padding: 0.2rem var(--space-sm); border-radius: 4px;
   color: #fff; background: rgba(0, 0, 0, 0.6);
@@ -656,7 +658,7 @@ footer div[style*="border-top"] { border-top-color: rgba(255,255,255,0.15) !impo
 .yacht-card-image img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s; }
 .yacht-card:hover .yacht-card-image img { transform: scale(1.04); }
 .yacht-card-body { padding: var(--space-md) 1.25rem 1.25rem; flex-grow: 1; display: flex; flex-direction: column; }
-.yacht-card-number { font-family: var(--font-mono); font-size: 0.68rem; font-weight: 600; color: var(--accent); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: var(--space-xs); }
+.yacht-card-number { font-family: var(--font-mono); font-size: var(--text-2xs); font-weight: 600; color: var(--accent); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: var(--space-xs); }
 .yacht-card-name { font-family: var(--font-display); font-size: var(--text-md); color: var(--text-primary); margin-bottom: 0.35rem; }
 .yacht-card-meta { font-size: var(--text-sm); color: var(--text-muted); display: flex; gap: var(--space-sm-md); flex-wrap: wrap; margin-top: auto; }
 
@@ -702,7 +704,7 @@ footer div[style*="border-top"] { border-top-color: rgba(255,255,255,0.15) !impo
 .pf-right { display: flex; gap: var(--space-md); align-items: center; }
 .pf-sort { display: flex; gap: 0.35rem; align-items: center; }
 .pf-sort-label {
-  font-family: var(--font-mono); font-size: 0.68rem; font-weight: 600;
+  font-family: var(--font-mono); font-size: var(--text-2xs); font-weight: 600;
   text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-muted);
   margin-right: 0.2rem;
 }
@@ -723,7 +725,7 @@ footer div[style*="border-top"] { border-top-color: rgba(255,255,255,0.15) !impo
   margin-bottom: 1.25rem; padding-top: var(--space-sm);
 }
 .pf-clear-btn {
-  font-family: var(--font-mono); font-size: 0.7rem; font-weight: 600;
+  font-family: var(--font-mono); font-size: var(--text-xs); font-weight: 600;
   text-transform: uppercase; letter-spacing: 0.04em;
   padding: var(--space-xs) 0.65rem; border: 1px solid var(--red-flag); border-radius: 6px;
   background: transparent; color: var(--red-flag); cursor: pointer;
@@ -743,7 +745,7 @@ footer div[style*="border-top"] { border-top-color: rgba(255,255,255,0.15) !impo
   width: 100%; border-collapse: collapse; font-size: var(--text-sm);
 }
 .pf-table thead th {
-  font-family: var(--font-mono); font-size: 0.68rem; font-weight: 600;
+  font-family: var(--font-mono); font-size: var(--text-2xs); font-weight: 600;
   text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent);
   text-align: left; padding: 0.6rem var(--space-sm-md);
   border-bottom: 2px solid var(--border); background: var(--farr-mid);
@@ -783,7 +785,7 @@ footer div[style*="border-top"] { border-top-color: rgba(255,255,255,0.15) !impo
 /* =============== END SPRINT 9 =============== */
 
 .spec-table { width: 100%; border-collapse: collapse; margin: var(--space-lg) 0; }
-.spec-table th { font-family: var(--font-mono); font-size: 0.68rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent); text-align: left; padding: var(--space-sm-md); border-bottom: 2px solid var(--border); background: var(--farr-mid); }
+.spec-table th { font-family: var(--font-mono); font-size: var(--text-2xs); font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent); text-align: left; padding: var(--space-sm-md); border-bottom: 2px solid var(--border); background: var(--farr-mid); }
 .spec-table td { padding: 0.6rem var(--space-sm-md); border-bottom: 1px solid var(--border); font-size: var(--text-sm); }
 .spec-table td:first-child { font-weight: 500; color: var(--text-primary); width: 40%; }
 .spec-table td:last-child { font-family: var(--font-mono); font-size: var(--text-sm); color: var(--text-secondary); }
@@ -796,7 +798,7 @@ footer div[style*="border-top"] { border-top-color: rgba(255,255,255,0.15) !impo
 .purchase-card .btn-purchase { display: inline-block; background: var(--cta); color: #ffffff; padding: 0.7rem var(--space-lg); border-radius: 8px; font-weight: 600; font-size: var(--text-base); text-decoration: none; transition: background 0.2s, transform 0.15s; border: none; cursor: pointer; }
 .purchase-card .btn-purchase:hover { background: var(--cta-hover); transform: translateY(-1px); }
 
-.availability-badge { display: inline-flex; align-items: center; gap: 0.35rem; font-family: var(--font-mono); font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; padding: var(--space-xs) 0.65rem; border-radius: 100px; border: 1px solid; }
+.availability-badge { display: inline-flex; align-items: center; gap: 0.35rem; font-family: var(--font-mono); font-size: var(--text-2xs); font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; padding: var(--space-xs) 0.65rem; border-radius: 100px; border: 1px solid; }
 .availability-badge--available { color: var(--green-ok); background: rgba(61, 186, 114, 0.08); border-color: rgba(61, 186, 114, 0.25); }
 .availability-badge--available::before { content: ''; width: 5px; height: 5px; border-radius: 50%; background: var(--green-ok); }
 .availability-badge--coming { color: var(--accent); background: var(--accent-soft); border-color: rgba(0, 38, 127, 0.20); }
@@ -828,7 +830,7 @@ footer div[style*="border-top"] { border-top-color: rgba(255,255,255,0.15) !impo
   .yacht-detail-image:not([style*="background-image"]) { height: 80px; }
 }
 
-.era-label { font-family: var(--font-mono); font-size: 0.6rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; padding: 0.2rem 0.6rem; border-radius: 4px; background: var(--farr-mid); color: var(--text-muted); border: 1px solid var(--border); }
+.era-label { font-family: var(--font-mono); font-size: var(--text-3xs); font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; padding: 0.2rem 0.6rem; border-radius: 4px; background: var(--farr-mid); color: var(--text-muted); border: 1px solid var(--border); }
 .builder-badge { display: inline-flex; align-items: center; gap: 0.3rem; font-size: var(--text-xs); color: var(--text-secondary); background: var(--farr-mid); border: 1px solid var(--border); border-radius: 6px; padding: 0.2rem var(--space-sm); }
 
 .proof-bar { max-width: 960px; margin: 0 auto; padding: 0 2rem; }
@@ -848,7 +850,7 @@ footer div[style*="border-top"] { border-top-color: rgba(255,255,255,0.15) !impo
 .service-card .card-icon { width: 44px; height: 44px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: var(--text-lg); margin-bottom: var(--space-md); background: var(--accent-soft); }
 .service-card h3 { font-family: var(--font-display); font-size: var(--text-md); color: var(--text-primary); margin-bottom: var(--space-sm); }
 .service-card p { font-size: var(--text-sm); line-height: 1.55; color: var(--text-secondary); flex-grow: 1; }
-.service-card .card-link { display: inline-block; font-family: var(--font-mono); font-size: 0.7rem; font-weight: 600; color: var(--accent); margin-top: var(--space-md); }
+.service-card .card-link { display: inline-block; font-family: var(--font-mono); font-size: var(--text-xs); font-weight: 600; color: var(--accent); margin-top: var(--space-md); }
 
 /* =============== 16. HOMEPAGE OVERRIDES =============== */
 .homepage { min-height: 100vh; }
@@ -880,10 +882,10 @@ footer div[style*="border-top"] { border-top-color: rgba(255,255,255,0.15) !impo
 .homepage .card-icon { width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; margin-bottom: var(--space-md); }
 .homepage .card-icon.accent-bg { background: rgba(0, 38, 127, 0.08); }
 .homepage .card-icon.cta-bg { background: rgba(249, 119, 0, 0.08); }
-.homepage .card-link { display: inline-block; font-family: var(--font-mono); font-size: 0.7rem; font-weight: 600; color: var(--accent); margin-top: var(--space-md); }
+.homepage .card-link { display: inline-block; font-family: var(--font-mono); font-size: var(--text-xs); font-weight: 600; color: var(--accent); margin-top: var(--space-md); }
 .homepage .how-steps { display: flex; align-items: center; justify-content: center; gap: var(--space-sm-md); margin-top: var(--space-lg); flex-wrap: wrap; }
 .homepage .how-step { text-align: center; min-width: 160px; }
-.homepage .how-step .step-num { font-family: var(--font-mono); font-size: 0.65rem; color: var(--accent); font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; }
+.homepage .how-step .step-num { font-family: var(--font-mono); font-size: var(--text-2xs); color: var(--accent); font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; }
 .homepage .how-step h4 { font-family: var(--font-display); font-size: 1rem; }
 .homepage .how-step p { font-size: var(--text-sm); color: var(--text-secondary); }
 .homepage .how-arrow { font-size: 1.2rem; color: var(--accent); font-weight: 700; }
@@ -1325,7 +1327,7 @@ footer div[style*="border-top"] { border-top-color: rgba(255,255,255,0.15) !impo
   width: 80px; height: 80px; border-radius: 10px; flex-shrink: 0;
   background: var(--bg-primary); border: 1px solid var(--border);
   display: flex; align-items: center; justify-content: center;
-  color: var(--text-muted); font-size: 0.7rem; text-align: center;
+  color: var(--text-muted); font-size: var(--text-xs); text-align: center;
 }
 .builder-callout h4 {
   font-family: var(--font-heading); font-size: 1rem;
@@ -1362,7 +1364,7 @@ footer div[style*="border-top"] { border-top-color: rgba(255,255,255,0.15) !impo
   color: var(--accent); line-height: 1.1;
 }
 .proof-item-label {
-  font-family: var(--font-mono); font-size: 0.68rem; font-weight: 600;
+  font-family: var(--font-mono); font-size: var(--text-2xs); font-weight: 600;
   text-transform: uppercase; letter-spacing: 0.08em;
   color: var(--text-muted); margin-top: 0.25rem;
 }
@@ -1393,7 +1395,7 @@ footer div[style*="border-top"] { border-top-color: rgba(255,255,255,0.15) !impo
 .project-card-body { padding: 1.25rem 1.25rem var(--space-lg); flex-grow: 1; display: flex; flex-direction: column; }
 .project-card-badge {
   display: inline-flex; align-items: center; gap: 0.3rem;
-  font-size: 0.65rem; font-weight: 700; text-transform: uppercase;
+  font-size: var(--text-2xs); font-weight: 700; text-transform: uppercase;
   letter-spacing: 0.06em; color: var(--accent); margin-bottom: 0.5rem;
 }
 .project-card h3 {
@@ -1473,7 +1475,7 @@ footer div[style*="border-top"] { border-top-color: rgba(255,255,255,0.15) !impo
   font-size: var(--text-xs); color: var(--text-muted); margin-right: var(--space-xs);
 }
 .sort-btn {
-  font-family: var(--font-mono); font-size: 0.68rem; font-weight: 600;
+  font-family: var(--font-mono); font-size: var(--text-2xs); font-weight: 600;
   text-transform: uppercase; letter-spacing: 0.06em;
   padding: 0.3rem 0.7rem; border: 1px solid var(--border); border-radius: 6px;
   background: transparent; color: var(--text-secondary); cursor: pointer;
@@ -1512,7 +1514,7 @@ footer div[style*="border-top"] { border-top-color: rgba(255,255,255,0.15) !impo
 }
 .news-card:hover { border-color: var(--accent); transform: translateY(-2px); }
 .news-card-date {
-  font-family: var(--font-mono); font-size: 0.68rem; font-weight: 600;
+  font-family: var(--font-mono); font-size: var(--text-2xs); font-weight: 600;
   text-transform: uppercase; letter-spacing: 0.08em;
   color: var(--text-muted); margin-bottom: 0.6rem;
 }
@@ -1527,7 +1529,7 @@ footer div[style*="border-top"] { border-top-color: rgba(255,255,255,0.15) !impo
 .news-card .card-link { margin-top: var(--space-md); }
 .news-card-tag {
   display: inline-block; font-family: var(--font-mono);
-  font-size: 0.6rem; font-weight: 700; text-transform: uppercase;
+  font-size: var(--text-3xs); font-weight: 700; text-transform: uppercase;
   letter-spacing: 0.08em; padding: 0.15rem var(--space-sm);
   border-radius: 4px; background: var(--accent-soft); color: var(--accent);
   margin-bottom: var(--space-sm-md);
@@ -1536,7 +1538,7 @@ footer div[style*="border-top"] { border-top-color: rgba(255,255,255,0.15) !impo
   width: 64px; height: 64px; border-radius: 12px;
   background: var(--farr-mid); border: 1px solid var(--border);
   display: flex; align-items: center; justify-content: center;
-  font-family: var(--font-mono); font-size: 0.6rem; font-weight: 700;
+  font-family: var(--font-mono); font-size: var(--text-3xs); font-weight: 700;
   color: var(--text-muted); text-transform: uppercase;
   letter-spacing: 0.06em; margin-bottom: var(--space-md);
 }
@@ -1575,7 +1577,7 @@ footer div[style*="border-top"] { border-top-color: rgba(255,255,255,0.15) !impo
 .plan-badge {
   display: inline-block;
   font-family: var(--font-mono);
-  font-size: 0.62rem; font-weight: 700;
+  font-size: var(--text-3xs); font-weight: 700;
   text-transform: uppercase; letter-spacing: 0.09em;
   padding: 0.2rem 0.55rem; border-radius: 4px;
 }
@@ -1634,7 +1636,7 @@ footer div[style*="border-top"] { border-top-color: rgba(255,255,255,0.15) !impo
 }
 .plan-card-class {
   font-family: var(--font-mono);
-  font-size: 0.7rem;
+  font-size: var(--text-xs);
   color: var(--text-muted);
   text-transform: uppercase;
   letter-spacing: 0.07em;
@@ -1653,7 +1655,7 @@ footer div[style*="border-top"] { border-top-color: rgba(255,255,255,0.15) !impo
 }
 .plan-content-tag {
   font-family: var(--font-mono);
-  font-size: 0.6rem;
+  font-size: var(--text-3xs);
   color: var(--text-muted);
   background: var(--bg);
   border: 1px solid var(--border);
@@ -1736,7 +1738,7 @@ footer div[style*="border-top"] { border-top-color: rgba(255,255,255,0.15) !impo
 }
 .ecom-step-num {
   font-family: var(--font-mono);
-  font-size: 0.65rem;
+  font-size: var(--text-2xs);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -1771,7 +1773,7 @@ footer div[style*="border-top"] { border-top-color: rgba(255,255,255,0.15) !impo
 }
 .pricing-tile-label {
   font-family: var(--font-mono);
-  font-size: 0.62rem;
+  font-size: var(--text-3xs);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.09em;
@@ -1923,7 +1925,7 @@ footer div[style*="border-top"] { border-top-color: rgba(255,255,255,0.15) !impo
 }
 .admin-stat-label {
   font-family: var(--font-mono);
-  font-size: 0.62rem;
+  font-size: var(--text-3xs);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.09em;
@@ -1958,7 +1960,7 @@ footer div[style*="border-top"] { border-top-color: rgba(255,255,255,0.15) !impo
 }
 .admin-table th {
   font-family: var(--font-mono);
-  font-size: 0.62rem;
+  font-size: var(--text-3xs);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -2044,7 +2046,7 @@ footer div[style*="border-top"] { border-top-color: rgba(255,255,255,0.15) !impo
 }
 .img-tbc-label {
   font-family: var(--font-mono);
-  font-size: 0.68rem;
+  font-size: var(--text-2xs);
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--text-muted);
