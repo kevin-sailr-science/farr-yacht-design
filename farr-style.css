@@ -1183,15 +1183,15 @@ footer div[style*="border-top"] { border-top-color: rgba(255,255,255,0.15) !impo
   display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-xl);
 }
 .team-cta-card {
-  background: var(--bg-secondary); border: 1px solid var(--border);
+  background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);
   border-radius: 10px; padding: var(--space-xl); text-align: center;
 }
 .team-cta-card h3 {
   font-family: var(--font-heading); font-size: var(--text-md);
-  color: var(--text-primary); margin: 0 0 0.5rem;
+  color: #ffffff; margin: 0 0 0.5rem;
 }
 .team-cta-card p {
-  font-size: var(--text-base); color: var(--text-secondary);
+  font-size: var(--text-base); color: rgba(255,255,255,0.75);
   line-height: 1.6; margin: 0 0 1rem;
 }
 @media (max-width: 768px) {
