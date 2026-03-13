@@ -12478,7 +12478,10 @@
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": false,
+    "tags": [
+      "Production"
+    ]
   },
   {
     "title": "202_OC",
@@ -13196,7 +13199,10 @@
     "hasCardPDF": true,
     "cardDrawingCount": 23,
     "cardDrawingsAvailable": 10,
-    "hidden": false
+    "hidden": false,
+    "tags": [
+      "Production"
+    ]
   },
   {
     "title": "219_OC",
@@ -14397,7 +14403,10 @@
     "hasCardPDF": true,
     "cardDrawingCount": 17,
     "cardDrawingsAvailable": 12,
-    "hidden": false
+    "hidden": false,
+    "tags": [
+      "Production"
+    ]
   },
   {
     "title": "250",
@@ -14437,7 +14446,10 @@
     "hasCardPDF": true,
     "cardDrawingCount": 1,
     "cardDrawingsAvailable": 1,
-    "hidden": false
+    "hidden": false,
+    "tags": [
+      "Production"
+    ]
   },
   {
     "title": "252",
@@ -15976,7 +15988,10 @@
     "hasCardPDF": true,
     "cardDrawingCount": 32,
     "cardDrawingsAvailable": 29,
-    "hidden": false
+    "hidden": false,
+    "tags": [
+      "Production"
+    ]
   },
   {
     "title": "290",
@@ -16227,7 +16242,10 @@
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": false,
+    "tags": [
+      "Production"
+    ]
   },
   {
     "title": "295",
@@ -16977,7 +16995,10 @@
     "hasCardPDF": true,
     "cardDrawingCount": 14,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": false,
+    "tags": [
+      "Production"
+    ]
   },
   {
     "title": "317",
@@ -17179,7 +17200,10 @@
     "planPrice": 350,
     "planDescription": "Promotional drawing package and specifications.",
     "planContents": "Lines, full size hull patterns, deck geometry, hull construction, internal structure layout, deck construction, construction sections, construction details, interior arrangement, internal structure details, machinery & tankage layout, deck layout, sail plan, keel stub geometry, keel stub foil sections, rudder geometry & construction, rudder full size sections, keel geometry & construction, keel fin full size foils, keel wings, fittings, full size deck patterns, fabricated fittings, full size bulkhead patterns, optional hull construction (Devold laminates), optional deck construction (Devold laminates), forestay/bow roller fitting, wing keel buttocks, stem pattern, chainplates, sail plan (63' variant), bulb stations, plus preliminary drawings (49 drawings)",
-    "stripePriceId": "price_1T9qrkEezmLvxWBBpTqdtX6n"
+    "stripePriceId": "price_1T9qrkEezmLvxWBBpTqdtX6n",
+    "tags": [
+      "Production"
+    ]
   },
   {
     "title": "321",
@@ -18064,7 +18088,10 @@
     "hasCardPDF": true,
     "cardDrawingCount": 20,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": false,
+    "tags": [
+      "Production"
+    ]
   },
   {
     "title": "339",
@@ -18499,7 +18526,10 @@
     "planPrice": 295,
     "planDescription": "Interior layout and profile drawing.",
     "planContents": "Lines plan, full size hull patterns, deck geometry, hull laminate, internal structure, construction sections, interior arrangement, preliminary deck layout, sail plan, rudder geometry & construction, racing keel geometry & construction (final with bulb), racing keel foils, racing keel bulb sections, cruising keel geometry & construction, cruising keel foils, cruising bulb sections, custom rudder stock, carbon sailplan (24 drawings)",
-    "stripePriceId": "price_1T9qrkEezmLvxWBBpTqdtX6n"
+    "stripePriceId": "price_1T9qrkEezmLvxWBBpTqdtX6n",
+    "tags": [
+      "Production"
+    ]
   },
   {
     "title": "356",
@@ -19132,7 +19162,10 @@
     "hasCardPDF": true,
     "cardDrawingCount": 25,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": false,
+    "tags": [
+      "Production"
+    ]
   },
   {
     "title": "369_CR",
@@ -19290,7 +19323,10 @@
     "hasCardPDF": true,
     "cardDrawingCount": 38,
     "cardDrawingsAvailable": 38,
-    "hidden": false
+    "hidden": false,
+    "tags": [
+      "Production"
+    ]
   },
   {
     "title": "373M",
@@ -19406,7 +19442,10 @@
     "planPrice": 350,
     "planDescription": "Sail plan, lines drawing, deck layout, rig specification, appendage detail.",
     "planContents": "Lines plan, full size hull patterns, deck geometry, hull construction, internal structure layout, deck construction, construction sections, construction details, interior arrangement, deck layout, sail plan, forestay fittings, rudder geometry & construction, keel geometry & construction, keel foils, bulb sections, full size deck patterns, measurement sailplan, plus preliminary drawings (lines, deck geometry, interior, deck layout, sailplan, rudder geometry, keel geometry) and promotional drawings (28 drawings)",
-    "stripePriceId": "price_1T9qrkEezmLvxWBBpTqdtX6n"
+    "stripePriceId": "price_1T9qrkEezmLvxWBBpTqdtX6n",
+    "tags": [
+      "Production"
+    ]
   },
   {
     "title": "375",
@@ -20518,7 +20557,7 @@
     "title": "414",
     "slug": "414",
     "designNumber": "414",
-    "name": "WALLY 60",
+    "name": "Carroll Marine 60",
     "year": 1997,
     "category": [],
     "classification": "",
@@ -20606,7 +20645,10 @@
     "hasCardPDF": true,
     "cardDrawingCount": 42,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": false,
+    "tags": [
+      "Production"
+    ]
   },
   {
     "title": "415",
@@ -21173,7 +21215,10 @@
     "hasCardPDF": true,
     "cardDrawingCount": 34,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": false,
+    "tags": [
+      "Production"
+    ]
   },
   {
     "title": "425",
@@ -21255,7 +21300,10 @@
     "hasCardPDF": true,
     "cardDrawingCount": 37,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": false,
+    "tags": [
+      "Production"
+    ]
   },
   {
     "title": "425M",
@@ -21313,7 +21361,7 @@
     ],
     "classification": null,
     "designRule": null,
-    "designType": "Cruising Yacht",
+    "designType": "Concept",
     "specs": {
       "loa": {
         "m": null,
@@ -21343,7 +21391,10 @@
     "cardDrawingCount": 5,
     "cardDrawingsAvailable": null,
     "hidden": false,
-    "yearEstimated": false
+    "yearEstimated": false,
+    "tags": [
+      "Concept"
+    ]
   },
   {
     "title": "428",
@@ -22057,7 +22108,10 @@
     "hasCardPDF": true,
     "cardDrawingCount": 22,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": false,
+    "tags": [
+      "Production"
+    ]
   },
   {
     "title": "447",
@@ -22486,7 +22540,10 @@
     "hasCardPDF": true,
     "cardDrawingCount": 23,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": false,
+    "tags": [
+      "Production"
+    ]
   },
   {
     "title": "471",
@@ -22913,7 +22970,10 @@
     "hasCardPDF": true,
     "cardDrawingCount": 24,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": false,
+    "tags": [
+      "Production"
+    ]
   },
   {
     "title": "487",
@@ -23483,7 +23543,10 @@
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": false,
+    "tags": [
+      "Production"
+    ]
   },
   {
     "title": "498",
@@ -24367,7 +24430,10 @@
     "hasCardPDF": true,
     "cardDrawingCount": 18,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": false,
+    "tags": [
+      "Production"
+    ]
   },
   {
     "title": "545",
@@ -26066,7 +26132,10 @@
     "hasCardPDF": true,
     "cardDrawingCount": 24,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": false,
+    "tags": [
+      "Production"
+    ]
   },
   {
     "title": "609",
@@ -26511,7 +26580,10 @@
     "hasCardPDF": true,
     "cardDrawingCount": 9,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": false,
+    "tags": [
+      "Production"
+    ]
   },
   {
     "title": "632",
@@ -27041,7 +27113,10 @@
     "hasCardPDF": true,
     "cardDrawingCount": 22,
     "cardDrawingsAvailable": null,
-    "hidden": true
+    "hidden": true,
+    "tags": [
+      "Production"
+    ]
   },
   {
     "title": "668",
@@ -27155,7 +27230,10 @@
     "hasCardPDF": true,
     "cardDrawingCount": 13,
     "cardDrawingsAvailable": 13,
-    "hidden": false
+    "hidden": false,
+    "tags": [
+      "Production"
+    ]
   },
   {
     "title": "675",
@@ -27212,7 +27290,10 @@
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": false,
+    "tags": [
+      "Production"
+    ]
   },
   {
     "title": "675M",
@@ -27400,7 +27481,10 @@
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": false,
+    "tags": [
+      "Production"
+    ]
   },
   {
     "title": "685",
@@ -27562,7 +27646,10 @@
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": false,
+    "tags": [
+      "Production"
+    ]
   },
   {
     "title": "695M",
@@ -27772,7 +27859,10 @@
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": false,
+    "tags": [
+      "Production"
+    ]
   },
   {
     "title": "720M",
@@ -27997,7 +28087,7 @@
     "description": "'<p>The design objectives for the FARR 400 are to produce a fun",
     "shortDescription": "40 One Design",
     "shortSummary": "'The FARR 400 is an all new",
-    "builder": "BAVARIA",
+    "builder": "Premier Composite Technologies",
     "owner": "Shel Shellhorse",
     "rigType": "Sloop",
     "rigMaterial": "Carbon",
@@ -28044,7 +28134,10 @@
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": false,
+    "tags": [
+      "Production"
+    ]
   },
   {
     "title": "725",
@@ -28168,7 +28261,10 @@
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": false,
+    "tags": [
+      "Production"
+    ]
   },
   {
     "title": "726M",
@@ -28391,7 +28487,10 @@
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": false,
+    "tags": [
+      "Production"
+    ]
   },
   {
     "title": "733",
@@ -28438,7 +28537,10 @@
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": false,
+    "tags": [
+      "Production"
+    ]
   },
   {
     "title": "735",
@@ -28526,7 +28628,10 @@
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": false,
+    "tags": [
+      "Production"
+    ]
   },
   {
     "title": "740",
@@ -28648,7 +28753,11 @@
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": false,
+    "tags": [
+      "Production",
+      "Concept"
+    ]
   },
   {
     "title": "749",
@@ -28762,7 +28871,10 @@
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": false,
+    "tags": [
+      "Production"
+    ]
   },
   {
     "title": "757",
@@ -28879,7 +28991,11 @@
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": false,
+    "tags": [
+      "Production",
+      "Concept"
+    ]
   },
   {
     "title": "764",
@@ -29198,7 +29314,11 @@
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": false,
+    "tags": [
+      "Production",
+      "Concept"
+    ]
   },
   {
     "title": "773",
@@ -29238,7 +29358,11 @@
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": false,
+    "tags": [
+      "Production",
+      "Concept"
+    ]
   },
   {
     "title": "774",
@@ -29278,7 +29402,11 @@
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": false,
+    "tags": [
+      "Production",
+      "Concept"
+    ]
   },
   {
     "title": "775",
@@ -29318,7 +29446,11 @@
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": false,
+    "tags": [
+      "Production",
+      "Concept"
+    ]
   },
   {
     "title": "776",
@@ -29358,7 +29490,11 @@
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": false,
+    "tags": [
+      "Production",
+      "Concept"
+    ]
   },
   {
     "title": "777",
@@ -29398,7 +29534,11 @@
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": false,
+    "tags": [
+      "Production",
+      "Concept"
+    ]
   },
   {
     "title": "778",
@@ -30598,7 +30738,7 @@
     "category": [],
     "classification": null,
     "designRule": null,
-    "designType": null,
+    "designType": "Powerboat",
     "specs": {
       "loa": {
         "m": null,
@@ -30627,7 +30767,10 @@
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": false,
+    "tags": [
+      "Power"
+    ]
   },
   {
     "title": "814",
@@ -30861,7 +31004,10 @@
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": false,
+    "tags": [
+      "Production"
+    ]
   },
   {
     "title": "820",
@@ -31496,7 +31642,13 @@
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": false,
+    "tags": [
+      "Concept",
+      "Multihull",
+      "Power",
+      "Sail"
+    ]
   },
   {
     "title": "837",
@@ -31872,8 +32024,8 @@
     "designType": "Powerboat",
     "specs": {
       "loa": {
-        "m": null,
-        "ft": 8.5
+        "m": 8.5,
+        "ft": 27.9
       }
     },
     "description": "Design 848, Whiskey Alpha, is a powerboat designed by Farr Yacht Design in 2019. She has an overall length of 8 feet.",
@@ -31898,7 +32050,11 @@
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": false,
+    "tags": [
+      "Military",
+      "Power"
+    ]
   },
   {
     "title": "848M",
@@ -31952,8 +32108,8 @@
     "designType": "Powerboat",
     "specs": {
       "loa": {
-        "m": null,
-        "ft": 11
+        "m": 11,
+        "ft": 36.1
       }
     },
     "description": "Design 849, Whiskey Bravo, is a powerboat designed by Farr Yacht Design in 2021. She has an overall length of 11 feet.",
@@ -31978,7 +32134,11 @@
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": false,
+    "tags": [
+      "Military",
+      "Power"
+    ]
   },
   {
     "title": "850",
@@ -32464,7 +32624,7 @@
     "category": [],
     "classification": null,
     "designRule": null,
-    "designType": null,
+    "designType": "Powerboat",
     "specs": {
       "loa": {
         "m": null,
@@ -32493,7 +32653,10 @@
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": false,
+    "tags": [
+      "Power"
+    ]
   },
   {
     "title": "881M",
@@ -32891,7 +33054,7 @@
     "category": [],
     "classification": null,
     "designRule": null,
-    "designType": null,
+    "designType": "Powerboat",
     "specs": {
       "loa": {
         "m": null,
@@ -32920,7 +33083,13 @@
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": false,
+    "tags": [
+      "Commercial",
+      "Military",
+      "Multihull",
+      "Power"
+    ]
   },
   {
     "title": "895",
@@ -33171,7 +33340,7 @@
     "category": [],
     "classification": null,
     "designRule": null,
-    "designType": "Multihull",
+    "designType": "Powerboat",
     "specs": {
       "loa": {
         "m": null,
@@ -33200,7 +33369,12 @@
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": false,
+    "tags": [
+      "Commercial",
+      "Multihull",
+      "Power"
+    ]
   },
   {
     "nid": 18503,
@@ -33279,5 +33453,102 @@
     "cardDrawingsAvailable": null,
     "hidden": false,
     "yearEstimated": true
+  },
+  {
+    "title": "414_Wally",
+    "slug": "414_Wally",
+    "designNumber": "414",
+    "name": "WALLY 60",
+    "year": 1997,
+    "category": [],
+    "classification": "",
+    "designRule": "",
+    "designType": "Racing Yacht",
+    "specs": {
+      "loa": {
+        "m": 18.46,
+        "ft": 60
+      },
+      "lwl": {
+        "m": 15.91,
+        "ft": 52.2
+      },
+      "beam": {
+        "m": 4.95,
+        "ft": 16.24
+      },
+      "draft": {
+        "m": 4,
+        "ft": 13.12
+      },
+      "displacement": {
+        "kg": 17000,
+        "lbs": 37479
+      },
+      "ballast": {
+        "kg": 6500,
+        "lbs": 14330
+      },
+      "mainHoist": {
+        "m": 24.8,
+        "ft": 81.35
+      },
+      "mainFoot": {
+        "m": 8.89,
+        "ft": 29.17
+      },
+      "headsailHoist": {
+        "m": 23.73,
+        "ft": 77.85
+      }
+    },
+    "description": "Design 414, WALLY 60, is a racing yacht designed by Farr Yacht Design in 1997. She has an overall length of 60 feet (18.5m). Built by Carroll Marine.",
+    "shortDescription": "62/63",
+    "shortSummary": "",
+    "builder": "Carroll Marine",
+    "owner": null,
+    "rigType": "",
+    "rigMaterial": "",
+    "keelType": "",
+    "hullConstruction": "",
+    "hullsBuilt": null,
+    "inProduction": null,
+    "isArchived": null,
+    "images": {
+      "main": "414.jpg",
+      "featured": [
+        "414_wally_08.jpg",
+        "414_venomous.jpg",
+        "414_wally_01.jpg",
+        "414_wally_02.jpg",
+        "414_wally_02sm.jpg",
+        "414_wally_03.jpg",
+        "414_wally_04.jpg",
+        "414_wally_05.jpg",
+        "414_wally_06.jpg",
+        "414_wally_07.jpg",
+        "414_wally_09.jpg",
+        "414_wally_10.jpg",
+        "414_wally_11.jpg",
+        "414_wally_12.jpg",
+        "414promo.jpg",
+        "414wallypromo1.jpg",
+        "414wallypromo2.jpg",
+        "414wallypromo3.jpg"
+      ]
+    },
+    "drawings": null,
+    "vppFile": null,
+    "drupalAlias": "designs/414-0",
+    "nid": 8476,
+    "tier": 1,
+    "planStatus": "available",
+    "hasCardPDF": true,
+    "cardDrawingCount": 42,
+    "cardDrawingsAvailable": null,
+    "hidden": false,
+    "tags": [
+      "Production"
+    ]
   }
 ]

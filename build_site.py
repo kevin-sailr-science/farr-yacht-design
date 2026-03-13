@@ -488,20 +488,21 @@ def build_yacht_page(boat):
 
 TYPE_GROUPS = {
     'Racing': ['Racing Yacht', 'Racing', 'Racing Yacht (1 Ton)', 'Racing Yacht (Maxi)',
-               'Grand Prix Racing Yacht', 'IRC Racing Yacht', 'Ocean Racer', 'Ocean Racing Yacht'],
+               'Grand Prix Racing Yacht', 'IRC Racing Yacht', 'Ocean Racer', 'Ocean Racing Yacht',
+               'IMS Racer', 'ILC Racer', 'IMS Racing Yacht', 'ILC 40 Racer',
+               'ILC Maxi', 'One Design IMS'],
     'Cruising': ['Cruising Yacht', 'Cruising Sloop', 'Fast Cruising Yacht', 'High Performance Cruiser',
                  'Fast Cruiser', 'Charter Yacht', 'Keel Yacht', 'Sailing Yacht', 'Yacht', 'Cruiser'],
     'Racer/Cruiser': ['Racing/Cruising', 'Cruiser/Racer', 'Racer/Cruiser', 'Racing/Cruising Yacht',
                       'Ocean Racer/Cruiser', 'Cruising/Racing Yacht', 'Production Cruiser-Racer',
                       'Production Cruiser/Racer', 'Production', 'IMS Cruiser/Racer',
                       'IMS Racer/Cruiser', 'IMS Racing/Cruising Yacht'],
-    'IMS/ILC': ['IMS Racer', 'ILC Racer', 'IMS Racing Yacht', 'ILC 40 Racer',
-                'ILC Maxi', 'One Design IMS'],
     'One Design': ['One Design', 'One Design Racer', 'One-Design', 'One Design Racing Yacht'],
     'Offshore': ['Volvo Ocean Race', 'IMOCA Open 60', "America's Cup"],
     'Dinghy & Small': ['Dinghy', 'Trailer Sailer', 'Sharpie'],
     'Power': ['Powerboat', 'Power Yacht'],
     'Superyacht': ['Superyacht'],
+    'Concept': ['Concept'],
     'Other': ['Multihull', 'Unknown', 'Tank Testing/Research', 'Other'],
 }
 
@@ -542,6 +543,7 @@ def build_portfolio_page():
         loa_m = loa.get("m") if isinstance(loa, dict) else None
         builder = boat.get("builder", "")
         design_num = boat.get("designNumber", "")
+        tags = boat.get("tags", [])
         plan_status = boat.get("planStatus", "coming_soon")
 
         # Resolve image
@@ -577,6 +579,7 @@ def build_portfolio_page():
             'iu': img_url,       # image url
             'ps': plan_status,   # plan status
             'c': cat,            # category
+            'tags': tags,        # tags (Production, Concept, Military, Commercial)
         })
 
     portfolio_json = json.dumps(portfolio_data, ensure_ascii=False, separators=(',', ':'))
@@ -586,14 +589,15 @@ def build_portfolio_page():
     decades_list = sorted(set(d['d'] for d in portfolio_data if d['d'] != 'Unknown'), reverse=True)
     if any(d['d'] == 'Unknown' for d in portfolio_data):
         decades_list.append('Unknown')
-    builders_list = sorted(set(d['b'] for d in portfolio_data if d['b']))
+    # Collect unique tags for filter dropdown
+    tags_used = sorted(set(t for d in portfolio_data for t in d.get('tags', [])))
 
     total = len(boats)
 
     # Build type group options
     type_options = ''.join(f'<option value="{esc(tg)}">{esc(tg)}</option>' for tg in type_groups_used)
     decade_options = ''.join(f'<option value="{esc(d)}">{esc(d)}</option>' for d in decades_list)
-    builder_options = ''.join(f'<option value="{esc(b)}">{esc(b)}</option>' for b in builders_list)
+    tag_options = ''.join(f'<option value="{esc(t)}">{esc(t)}</option>' for t in tags_used)
 
     content = f'''
     <div class="content-section" style="padding-top:2rem;">
@@ -610,7 +614,7 @@ def build_portfolio_page():
         <div class="pf-filters">
           <select id="pf-type" class="pf-select" aria-label="Filter by type"><option value="">All Types</option>{type_options}</select>
           <select id="pf-decade" class="pf-select" aria-label="Filter by decade"><option value="">All Decades</option>{decade_options}</select>
-          <select id="pf-builder" class="pf-select" aria-label="Filter by builder"><option value="">All Builders</option>{builder_options}</select>
+          <select id="pf-tag" class="pf-select" aria-label="Filter by tag"><option value="">All Tags</option>{tag_options}</select>
         </div>
         <div class="pf-right">
           <div class="pf-sort">
@@ -650,7 +654,6 @@ def build_portfolio_page():
               <th>Year</th>
               <th>Type</th>
               <th class="pf-hide-mobile">LOA</th>
-              <th class="pf-hide-mobile">Builder</th>
             </tr>
           </thead>
           <tbody id="pf-tbody"></tbody>
@@ -673,14 +676,14 @@ def build_portfolio_page():
       // ── State ──
       var state = {{
         sort: 'dn', dir: 'asc', view: 'grid',
-        search: '', type: '', decade: '', builder: ''
+        search: '', type: '', decade: '', tag: ''
       }};
 
       // ── DOM refs ──
       var $search = document.getElementById('pf-search');
       var $type = document.getElementById('pf-type');
       var $decade = document.getElementById('pf-decade');
-      var $builder = document.getElementById('pf-builder');
+      var $tag = document.getElementById('pf-tag');
       var $count = document.getElementById('pf-count');
       var $clear = document.getElementById('pf-clear');
       var $grid = document.getElementById('pf-grid');
@@ -696,7 +699,7 @@ def build_portfolio_page():
               d.b.toLowerCase().indexOf(q) === -1) return false;
           if (state.type && d.tg !== state.type) return false;
           if (state.decade && d.d !== state.decade) return false;
-          if (state.builder && d.b !== state.builder) return false;
+          if (state.tag && (!d.tags || d.tags.indexOf(state.tag) === -1)) return false;
           return true;
         }});
 
@@ -772,7 +775,6 @@ def build_portfolio_page():
             '<td>' + (d.ys || '') + '</td>' +
             '<td>' + escH(d.tg || d.tr) + '</td>' +
             '<td class="pf-hide-mobile">' + loaStr + '</td>' +
-            '<td class="pf-hide-mobile">' + escH(d.b) + '</td>' +
           '</tr>';
         }}
         $tbody.innerHTML = html;
@@ -807,7 +809,7 @@ def build_portfolio_page():
       function render() {{
         var items = filterAndSort();
         $count.textContent = items.length + ' design' + (items.length !== 1 ? 's' : '');
-        var hasFilters = state.search || state.type || state.decade || state.builder;
+        var hasFilters = state.search || state.type || state.decade || state.tag;
         $clear.style.display = hasFilters ? 'inline-block' : 'none';
 
         if (state.view === 'grid') {{
@@ -834,11 +836,11 @@ def build_portfolio_page():
 
       $type.addEventListener('change', function() {{ state.type = this.value; render(); }});
       $decade.addEventListener('change', function() {{ state.decade = this.value; render(); }});
-      $builder.addEventListener('change', function() {{ state.builder = this.value; render(); }});
+      $tag.addEventListener('change', function() {{ state.tag = this.value; render(); }});
 
       $clear.addEventListener('click', function() {{
-        state.search = ''; state.type = ''; state.decade = ''; state.builder = '';
-        $search.value = ''; $type.value = ''; $decade.value = ''; $builder.value = '';
+        state.search = ''; state.type = ''; state.decade = ''; state.tag = '';
+        $search.value = ''; $type.value = ''; $decade.value = ''; $tag.value = '';
         render();
       }});
 
