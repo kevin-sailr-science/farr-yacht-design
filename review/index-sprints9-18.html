@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Farr Yacht Design — Sprints 9–18 Status Update</title>
+
+  <!-- Open Graph / iMessage / SMS preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://farr-designs.sailr.science/review/" />
+  <meta property="og:title" content="Sprints 9–18 Complete — 10 Sprints Since Last Update" />
+  <meta property="og:description" content="353 images (62%) · Portfolio UX · SEO live · Scanned plans pipeline · Images optimized 54%" />
+  <meta property="og:image" content="https://farr-designs.sailr.science/review/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Sprints 9–18 Complete — 10 Sprints Since Last Update" />
+  <meta name="twitter:description" content="353 images (62%) · Portfolio UX · SEO live · Scanned plans pipeline · Images optimized 54%" />
+  <meta name="twitter:image" content="https://farr-designs.sailr.science/review/og-image.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #f8f9fc; font-family: 'Inter', system-ui, -apple-system, sans-serif; -webkit-font-smoothing: antialiased; }
+    #root { min-height: 100vh; }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.9/babel.min.js"></script>
+
+  <script type="text/babel">
+    const { useState } = React;
+
+    const FarrBlue = "#00267F";
+    const FarrOrange = "#F97700";
+    const FarrBronze = "#C0A280";
+
+    const StatCard = ({ number, label, sub }) => (
+      <div style={{
+        background: "#fff", borderRadius: 12, padding: "28px 20px",
+        textAlign: "center", border: "1px solid #e8ecf2", flex: "1 1 140px", minWidth: 140,
+      }}>
+        <div style={{ fontSize: 42, fontWeight: 700, color: FarrBlue, lineHeight: 1 }}>{number}</div>
+        <div style={{ fontSize: 14, fontWeight: 600, color: "#4a5568", marginTop: 8 }}>{label}</div>
+        {sub && <div style={{ fontSize: 12, color: "#8896a8", marginTop: 4 }}>{sub}</div>}
+      </div>
+    );
+
+    const StatusBadge = ({ status }) => {
+      const colors = {
+        live: { bg: "#e6f9ed", text: "#1a7a3a", label: "Live" },
+        new: { bg: "#dbeafe", text: "#1e40af", label: "New" },
+        ready: { bg: "#e8f0fe", text: FarrBlue, label: "Ready" },
+        tested: { bg: "#e6f9ed", text: "#1a7a3a", label: "Tested" },
+        done: { bg: "#e6f9ed", text: "#1a7a3a", label: "Done" },
+        fixed: { bg: "#e6f9ed", text: "#1a7a3a", label: "Fixed" },
+        pending: { bg: "#fff4e5", text: "#b45309", label: "Pending" },
+        next: { bg: "#f3e8ff", text: "#7c3aed", label: "Next Up" },
+        improved: { bg: "#dbeafe", text: "#1e40af", label: "Improved" },
+      };
+      const c = colors[status] || colors.ready;
+      return (
+        <span style={{
+          display: "inline-block", padding: "3px 10px", borderRadius: 20,
+          fontSize: 11, fontWeight: 600, letterSpacing: "0.03em", background: c.bg, color: c.text,
+        }}>{c.label}</span>
+      );
+    };
+
+    const Section = ({ title, children }) => (
+      <div style={{ marginBottom: 32 }}>
+        <h3 style={{
+          fontSize: 13, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em",
+          color: FarrBronze, marginBottom: 16, paddingBottom: 8,
+          borderBottom: `2px solid ${FarrBronze}33`,
+        }}>{title}</h3>
+        {children}
+      </div>
+    );
+
+    const Row = ({ label, value, status }) => (
+      <div style={{
+        display: "flex", justifyContent: "space-between", alignItems: "center",
+        padding: "10px 0", borderBottom: "1px solid #f0f2f5",
+      }}>
+        <div style={{ flex: 1 }}>
+          <span style={{ fontSize: 14, color: "#1a1f2e", fontWeight: 500 }}>{label}</span>
+          {typeof value === "string" && (
+            <span style={{ fontSize: 13, color: "#7a8599", marginLeft: 8 }}
+              dangerouslySetInnerHTML={{ __html: value }} />
+          )}
+        </div>
+        {status && <StatusBadge status={status} />}
+      </div>
+    );
+
+    const FeatureCard = ({ icon, title, desc, items }) => (
+      <div style={{
+        background: "#fff", borderRadius: 12, padding: 24,
+        border: "1px solid #e8ecf2", marginBottom: 16,
+      }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 12 }}>
+          <div style={{
+            width: 40, height: 40, borderRadius: 10,
+            background: `${FarrBlue}10`, color: FarrBlue,
+            display: "flex", alignItems: "center", justifyContent: "center", fontSize: 20,
+          }} dangerouslySetInnerHTML={{ __html: icon }} />
+          <div style={{ fontSize: 16, fontWeight: 700, color: FarrBlue }}>{title}</div>
+        </div>
+        <div style={{ fontSize: 13, color: "#4a5568", lineHeight: 1.7, marginBottom: items ? 16 : 0 }}>{desc}</div>
+        {items && (
+          <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
+            {items.map((item, i) => (
+              <div key={i} style={{ display: "flex", alignItems: "center", gap: 8, fontSize: 13, color: "#4a5568" }}>
+                <span style={{ color: "#1a7a3a", fontSize: 14, flexShrink: 0 }}>&#10003;</span>
+                {item}
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+    );
+
+    function SprintUpdate() {
+      const [activeTab, setActiveTab] = useState("overview");
+
+      return (
+        <div style={{
+          fontFamily: "'Inter', system-ui, -apple-system, sans-serif",
+          maxWidth: 680, margin: "0 auto", background: "#f8f9fc",
+          minHeight: "100vh", padding: "0 0 40px",
+        }}>
+          {/* Header */}
+          <div style={{
+            background: `linear-gradient(135deg, ${FarrBlue} 0%, #001a5c 100%)`,
+            padding: "40px 36px 32px", borderRadius: "0 0 20px 20px",
+          }}>
+            <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 24 }}>
+              <img src="https://farr-designs.sailr.science/images/farr-yacht-design-logo-white.png"
+                alt="Farr Yacht Design"
+                style={{ width: 40, height: 40, borderRadius: 10, objectFit: "contain" }} />
+              <div>
+                <div style={{ color: "#fff", fontSize: 18, fontWeight: 700, letterSpacing: "-0.01em" }}>Farr Yacht Design</div>
+                <div style={{ color: "rgba(255,255,255,0.55)", fontSize: 12, fontWeight: 500 }}>farr-designs.sailr.science</div>
+              </div>
+            </div>
+            <h1 style={{
+              color: "#fff", fontSize: 28, fontWeight: 800,
+              lineHeight: 1.2, margin: 0, letterSpacing: "-0.02em",
+            }}>
+              Sprints 9&ndash;18 Complete<br />
+              <span style={{ color: FarrOrange }}>10 Sprints Since Last Update</span>
+            </h1>
+            <div style={{ color: "rgba(255,255,255,0.5)", fontSize: 13, marginTop: 12 }}>
+              March 12, 2026 &mdash; 19 commits pushed to production
+            </div>
+          </div>
+
+          {/* Stats Strip */}
+          <div style={{ display: "flex", gap: 12, padding: "0 24px", marginTop: -20, flexWrap: "wrap" }}>
+            <StatCard number="353" label="Images" sub="was 236 &middot; now 62% coverage" />
+            <StatCard number="64MB" label="Images Dir" sub="was 140MB &middot; 54% smaller" />
+            <StatCard number="9" label="Open Items" sub="was 28 &middot; 19 closed" />
+          </div>
+
+          {/* Tabs */}
+          <div style={{ display: "flex", gap: 4, padding: "24px 24px 0", marginBottom: 24, flexWrap: "wrap" }}>
+            {[
+              { id: "overview", label: "Overview" },
+              { id: "portfolio", label: "Portfolio UX" },
+              { id: "images", label: "Images & Perf" },
+              { id: "admin", label: "Admin Portal" },
+              { id: "next", label: "What\u2019s Next" },
+            ].map(tab => (
+              <button key={tab.id} onClick={() => setActiveTab(tab.id)}
+                style={{
+                  padding: "8px 16px", borderRadius: 8, border: "none", fontSize: 13, fontWeight: 600, cursor: "pointer",
+                  background: activeTab === tab.id ? FarrBlue : "#e8ecf2",
+                  color: activeTab === tab.id ? "#fff" : "#6b7280",
+                  transition: "all 0.15s ease",
+                }}>{tab.label}</button>
+            ))}
+          </div>
+
+          <div style={{ padding: "0 24px" }}>
+
+            {/* ============ OVERVIEW TAB ============ */}
+            {activeTab === "overview" && (<>
+              <Section title="What Happened Since Last Update">
+                <div style={{
+                  background: "#fff", borderRadius: 12, padding: 24,
+                  border: "1px solid #e8ecf2", marginBottom: 16,
+                }}>
+                  <div style={{ fontSize: 15, fontWeight: 600, color: FarrBlue, marginBottom: 12 }}>
+                    Ten Sprints Completed
+                  </div>
+                  <div style={{ fontSize: 13, color: "#4a5568", lineHeight: 1.7, marginBottom: 16 }}>
+                    Since the Sprint 5&ndash;8 update, we&rsquo;ve completed Sprints 9 through 18: full portfolio search/sort/filter,
+                    117 new images, SEO overhaul so Google can find the site, scanned plans pipeline, portfolio card enhancements,
+                    CSS design tokens, image optimization (140MB &rarr; 64MB), and history page fact-checking. 19 commits pushed.
+                  </div>
+                  <div style={{ display: "flex", gap: 6, flexWrap: "wrap" }}>
+                    {[
+                      { label: "9", desc: "Portfolio UX" },
+                      { label: "10", desc: "Data & Images" },
+                      { label: "11", desc: "Bugs & Plans" },
+                      { label: "12", desc: "MUSE Images" },
+                      { label: "13", desc: "SEO" },
+                      { label: "14", desc: "Cards & CSS" },
+                      { label: "15", desc: "Image Audit" },
+                      { label: "16", desc: "CSS Tokens" },
+                      { label: "17", desc: "Optimization" },
+                      { label: "18", desc: "History Fix" },
+                    ].map((s, i) => (
+                      <div key={i} style={{
+                        background: "#e6f9ed", borderRadius: 8, padding: "6px 10px",
+                        fontSize: 11, fontWeight: 600, color: "#1a7a3a",
+                      }}>
+                        <span style={{ fontWeight: 700 }}>S{s.label}</span>
+                        <span style={{ fontWeight: 400, marginLeft: 4 }}>{s.desc}</span>
+                        <span style={{ marginLeft: 4 }}>&#10003;</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </Section>
+
+              <Section title="Completed Sprints">
+                <div style={{ position: "relative" }}>
+                  <div style={{ position: "absolute", left: 13, top: 0, bottom: 0, width: 2, background: "#e8ecf2" }} />
+                  {[
+                    { num: "9", title: "Portfolio UX &mdash; search, sort, filter, grid/list views" },
+                    { num: "10", title: "Data Completeness &mdash; 498 descriptions, 44 new images, 6 LOA values" },
+                    { num: "11", title: "Bug Fixes &mdash; Kiboko 4 content, scanned plans pipeline (89 PDFs, 6 designs)" },
+                    { num: "12", title: "MUSE Image Extraction &mdash; 38 new images, 17 quality upgrades" },
+                    { num: "13", title: "SEO &mdash; sitemap, OG tags, JSON-LD, noindex removed (Google can find us)" },
+                    { num: "14", title: "Portfolio Cards &mdash; type tag overlays, better titles, lazy loading, owner admin field, CSS Phase 2" },
+                    { num: "15", title: "Image Gap Audit &mdash; 41 new images from old site archives (49% &rarr; 62%)" },
+                    { num: "16", title: "CSS Phase 3 &mdash; design token migration (140 font-size + 219 spacing refs)" },
+                    { num: "17", title: "Image Optimization &mdash; 133 images compressed, 140MB &rarr; 64MB" },
+                    { num: "18", title: "History Page &mdash; fact-checked against V3BW, 6 inaccuracies corrected" },
+                  ].map((s, i) => (
+                    <div key={i} style={{ display: "flex", alignItems: "center", gap: 14, padding: "8px 0", position: "relative" }}>
+                      <div style={{
+                        width: 28, height: 28, borderRadius: "50%", flexShrink: 0,
+                        background: "#1a7a3a", color: "#fff", fontSize: 11, fontWeight: 700,
+                        display: "flex", alignItems: "center", justifyContent: "center",
+                        border: "3px solid #f8f9fc", zIndex: 1,
+                      }}>&#10003;</div>
+                      <div style={{ flex: 1, fontSize: 13, color: "#1a1f2e", fontWeight: 500 }}
+                        dangerouslySetInnerHTML={{ __html: `<strong style="color:${FarrBlue}">Sprint ${s.num}</strong> &mdash; ${s.title}` }} />
+                    </div>
+                  ))}
+                </div>
+              </Section>
+
+              <Section title="Updated Data Coverage">
+                <div style={{ display: "flex", flexDirection: "column", gap: 8, marginTop: 8 }}>
+                  {[
+                    { field: "Year", pct: 99, count: "641 / 642", prev: "99%" },
+                    { field: "Short Description", pct: 97, count: "629 / 642", prev: "94%" },
+                    { field: "Full Description", pct: 87, count: "564 / 642", prev: "new" },
+                    { field: "LOA", pct: 86, count: "557 / 642", prev: "85%" },
+                    { field: "Design Type", pct: 83, count: "538 / 642", prev: "83%" },
+                    { field: "Images", pct: 62, count: "353 / 563 visible", prev: "36%" },
+                    { field: "Builder", pct: 52, count: "337 / 642", prev: "52%" },
+                  ].map((d, i) => (
+                    <div key={i} style={{
+                      display: "flex", alignItems: "center", gap: 12,
+                      background: "#fff", borderRadius: 8, padding: "10px 14px", border: "1px solid #e8ecf2",
+                    }}>
+                      <div style={{ fontSize: 13, fontWeight: 600, color: "#1a1f2e", width: 120 }}>{d.field}</div>
+                      <div style={{ flex: 1, height: 8, background: "#e8ecf2", borderRadius: 4, overflow: "hidden" }}>
+                        <div style={{
+                          width: `${d.pct}%`, height: "100%", borderRadius: 4,
+                          background: d.pct >= 90 ? "#1a7a3a" : d.pct >= 70 ? FarrBlue : FarrOrange,
+                        }} />
+                      </div>
+                      <div style={{ fontSize: 12, fontWeight: 600, color: "#4a5568", width: 44, textAlign: "right" }}>{d.pct}%</div>
+                      <div style={{ fontSize: 11, color: d.prev !== d.pct+"%" ? FarrOrange : "#8896a8", fontWeight: d.prev !== d.pct+"%" ? 600 : 400, width: 50 }}>
+                        {d.prev !== d.pct+"%" && d.prev !== "new" ? `was ${d.prev}` : d.prev === "new" ? "new" : ""}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </Section>
+            </>)}
+
+            {/* ============ PORTFOLIO UX TAB ============ */}
+            {activeTab === "portfolio" && (<>
+              <Section title="Portfolio Search & Filter (Sprint 9)">
+                <div style={{
+                  background: "#fff", borderRadius: 12, padding: 20,
+                  border: "1px solid #e8ecf2", marginBottom: 16,
+                  fontSize: 13, color: "#4a5568", lineHeight: 1.7,
+                }}>
+                  This was the big one you asked for &mdash; &ldquo;different ways to filter/search designs&rdquo; and
+                  &ldquo;sort by design number, year or length.&rdquo; All live now.
+                </div>
+                <Row label="Search" value="Type-ahead search by name, number, builder, or type" status="live" />
+                <Row label="Sort by" value="Design number, year, name, or length &mdash; ascending/descending" status="live" />
+                <Row label="Filter by type" value="Production, AC, Volvo, Cruising, Racing, Superyacht, Power, etc." status="live" />
+                <Row label="View toggle" value="Grid thumbnails or compact list view" status="live" />
+              </Section>
+
+              <Section title="Portfolio Card Enhancements (Sprint 14)">
+                <div style={{
+                  background: "#fff", borderRadius: 12, padding: 20,
+                  border: "1px solid #e8ecf2", marginBottom: 16,
+                  fontSize: 13, color: "#4a5568", lineHeight: 1.7,
+                }}>
+                  You asked for &ldquo;Boat Type and then Class Name or Boat Name&rdquo; on thumbnails, and
+                  &ldquo;overlay an icon or tag on the thumbnail.&rdquo; Done.
+                </div>
+                <Row label="Thumbnail titles" value="Now show Boat Type + Class/Boat Name" status="live" />
+                <Row label="Type tag overlays" value="Visual tags on each portfolio card" status="live" />
+                <Row label="Lazy loading" value="Images load on scroll, faster initial page load" status="live" />
+                <Row label="Legacy cleanup" value="20 stale copy files removed from repository" status="done" />
+              </Section>
+
+              <Section title="SEO & Discoverability (Sprint 13)">
+                <FeatureCard
+                  icon="&#128270;"
+                  title="Google Can Now Find the Site"
+                  desc="The site was previously blocking all search engines with noindex/nofollow tags and a restrictive robots.txt. All fixed."
+                  items={[
+                    "Removed noindex/nofollow from all pages",
+                    "robots.txt now allows all crawlers",
+                    "sitemap.xml generated with all 563 visible yacht pages",
+                    "Open Graph tags on every page (link previews in iMessage, Slack, etc.)",
+                    "JSON-LD structured data for Google rich results",
+                  ]}
+                />
+              </Section>
+            </>)}
+
+            {/* ============ IMAGES & PERFORMANCE TAB ============ */}
+            {activeTab === "images" && (<>
+              <Section title="Image Coverage: 36% &rarr; 62%">
+                <div style={{
+                  background: "#fff", borderRadius: 12, padding: 20,
+                  border: "1px solid #e8ecf2", marginBottom: 16,
+                  fontSize: 13, color: "#4a5568", lineHeight: 1.7,
+                }}>
+                  Across Sprints 10, 12, and 15 we added 117 new images from three sources: the MUSE design pages,
+                  the old FYD site archives, and manual extraction. Coverage went from 236 images (36%) to 353 (62% of visible designs).
+                </div>
+                <Row label="Sprint 10" value="44 new images (MUSE + old site crawl)" status="done" />
+                <Row label="Sprint 12" value="38 new images, 17 quality upgrades (MUSE archives)" status="done" />
+                <Row label="Sprint 15" value="41 new images from old Drupal site (1,175 pages audited)" status="done" />
+                <Row label="Total added" value="117 new images + 17 quality upgrades" status="done" />
+                <Row label="Remaining gap" value="210 visible designs still need photos" status="pending" />
+                <div style={{
+                  background: "#fff4e5", borderRadius: 8, padding: 14, marginTop: 12,
+                  fontSize: 12, color: "#92690d", lineHeight: 1.6,
+                }}>
+                  We&rsquo;ve exhausted both the MUSE archive and old site &mdash; the remaining 210 designs need new photos from you. Even a phone snapshot of a model or drawing helps.
+                </div>
+              </Section>
+
+              <Section title="Image Optimization (Sprint 17)">
+                <Row label="Images resized" value="133 images to max 1600px wide" status="done" />
+                <Row label="Directory size" value="140MB &rarr; 64MB (54% reduction)" status="done" />
+                <Row label="Files over 5MB" value="4 &rarr; 0" status="done" />
+                <Row label="Compression" value="JPEG quality 85, PNG optimized in-place" status="done" />
+              </Section>
+
+              <Section title="CSS & Performance">
+                <Row label="CSS Phase 2 (Sprint 14C)" value="6 breakpoints &rarr; 2 standard" status="done" />
+                <Row label="CSS Phase 3 (Sprint 16)" value="140 font-size + 219 spacing refs tokenized" status="done" />
+                <Row label="Token coverage" value="68% of declarations use design tokens" status="live" />
+                <Row label="Lazy loading" value="All below-fold images load on scroll" status="live" />
+              </Section>
+
+              <Section title="Scanned Plans Pipeline (Sprint 11)">
+                <Row label="Plans processed" value="89 PDFs across 6 designs" status="live" />
+                <Row label="Designs with plans" value="072, 081, 084, 181, 183, 190" status="live" />
+                <Row label="Free downloads (misc)" value="7 files on 2 designs (confirmed free per your email)" status="live" />
+                <Row label="Checkout" value="Stripe sandbox tested end-to-end" status="tested" />
+              </Section>
+            </>)}
+
+            {/* ============ ADMIN PORTAL TAB ============ */}
+            {activeTab === "admin" && (<>
+              <Section title="Admin Portal &mdash; Try Again">
+                <div style={{
+                  background: `linear-gradient(135deg, ${FarrBlue}08, ${FarrOrange}08)`,
+                  borderRadius: 12, padding: 24,
+                  border: `2px solid ${FarrOrange}40`, marginBottom: 20,
+                }}>
+                  <div style={{ fontSize: 18, fontWeight: 700, color: FarrBlue, marginBottom: 8 }}>
+                    <a href="https://farr-designs.sailr.science/admin.html"
+                      style={{ color: FarrBlue, textDecoration: "underline" }}>
+                      farr-designs.sailr.science/admin.html
+                    </a>
+                  </div>
+                  <div style={{ fontSize: 14, color: "#4a5568", lineHeight: 1.7, marginBottom: 16 }}>
+                    You mentioned last time that clicking the password reset link didn&rsquo;t redirect back to the admin page.
+                    That issue has been fixed (Sprint 11). Please give it another try &mdash; the flow should now work correctly.
+                  </div>
+                  <div style={{
+                    background: "#e6f9ed", borderRadius: 8, padding: 16, border: "1px solid #c3e8d0",
+                  }}>
+                    <div style={{ fontSize: 13, fontWeight: 700, color: "#1a7a3a", marginBottom: 6 }}>
+                      &#10003; Login Flow Fixed
+                    </div>
+                    <div style={{ fontSize: 13, color: "#1a6332", lineHeight: 1.9 }}>
+                      <strong>1.</strong> Go to <a href="https://farr-designs.sailr.science/admin.html" style={{ color: "#1a6332", fontWeight: 600 }}>farr-designs.sailr.science/admin.html</a><br />
+                      <strong>2.</strong> Click <strong>&ldquo;Reset Password&rdquo;</strong><br />
+                      <strong>3.</strong> Check your email and click the link to set your password<br />
+                      <strong>4.</strong> You&rsquo;ll be redirected back into the admin portal<br />
+                      <strong>5.</strong> After setup, just log in normally going forward
+                    </div>
+                  </div>
+                </div>
+              </Section>
+
+              <Section title="What's New in Admin">
+                <Row label="Owner field" value="New column in catalog table, searchable (admin-only, not public)" status="new" />
+                <Row label="Search" value="Now searches across owner field too" status="improved" />
+                <Row label="Password reset" value="Redirect flow fixed" status="fixed" />
+              </Section>
+
+              <Section title="History Page &mdash; Fact-Checked (Sprint 18)">
+                <div style={{
+                  background: "#fff", borderRadius: 12, padding: 20,
+                  border: "1px solid #e8ecf2", marginBottom: 16,
+                  fontSize: 13, color: "#4a5568", lineHeight: 1.7,
+                }}>
+                  You mentioned &ldquo;a bunch of inaccuracies&rdquo; on the history page. We cross-referenced the page against
+                  your V3BW document and external sources. Found and corrected 6 specific issues:
+                </div>
+                <Row label="World championships" value='Changed "43" to "40+" per your V3BW doc' status="fixed" />
+                <Row label="ABN AMRO" value='Was "1-2 finish" &mdash; corrected to ONE won 6 of 7 legs (TWO was 4th)' status="fixed" />
+                <Row label="Whitbread/VOR wins" value='Changed "seven consecutive" to "five editions"' status="fixed" />
+                <Row label="Britt&rsquo;s title" value='Changed "President" to "Principal" per V3BW' status="fixed" />
+                <Row label="Founding date" value='Changed "1972" to "1973" (full-time design start)' status="fixed" />
+                <Row label="Kiboko 4" value='Corrected from "Baltic 142" to "Southern Wind SW108"' status="fixed" />
+                <Row label="Russell Bowler" value="Added as co-founder throughout timeline (was missing)" status="fixed" />
+                <div style={{
+                  background: "#f5f7fa", borderRadius: 8, padding: 14, marginTop: 12,
+                  fontSize: 12, color: "#6b7280", lineHeight: 1.6,
+                }}>
+                  There may still be inaccuracies only you or Maureen would know. If either of you can mark up the page we&rsquo;ll fix whatever&rsquo;s left.
+                </div>
+              </Section>
+            </>)}
+
+            {/* ============ WHAT'S NEXT TAB ============ */}
+            {activeTab === "next" && (<>
+              <Section title="Items Needing Your Input (9 remaining)">
+                <div style={{
+                  background: "#fff", borderRadius: 12, padding: 20,
+                  border: "1px solid #e8ecf2", marginBottom: 16,
+                  fontSize: 13, color: "#4a5568", lineHeight: 1.7,
+                }}>
+                  We&rsquo;ve resolved 28 of the original 37 tracked items. The remaining 9 all need your input &mdash;
+                  none can be resolved without you. Grouped by priority below.
+                </div>
+              </Section>
+
+              <Section title="Priority 1 &mdash; Quick Decisions">
+                <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+                  {[
+                    {
+                      id: "A2",
+                      text: "Duplicate design pairs (D.026 vs D.26 etc.) \u2014 we built a spreadsheet with all 68 pairs. 9 are safe to merge automatically, 59 need your review. Can we send it over?",
+                    },
+                    {
+                      id: "A1",
+                      text: 'D.266 \u2014 you said "duplicate or needs renaming." It\u2019s a real IMS 44 with 60 card drawings and 5 named builds. Suggest naming it "IMS 44." Confirm?',
+                    },
+                    {
+                      id: "D1",
+                      text: "GA4 tracking \u2014 the site has a placeholder ID. You or your son need to create a GA4 property in Google Analytics and share the G-XXXXXXX ID. Then we swap it in.",
+                    },
+                  ].map((q, i) => (
+                    <div key={i} style={{
+                      background: "#fff", borderRadius: 8, padding: "12px 16px",
+                      border: "1px solid #e8ecf2", fontSize: 13, color: "#4a5568", lineHeight: 1.5,
+                      display: "flex", gap: 10, alignItems: "flex-start",
+                    }}>
+                      <span style={{
+                        flexShrink: 0, width: 28, height: 22, borderRadius: 6,
+                        background: "#fff4e5", color: "#b45309",
+                        display: "flex", alignItems: "center", justifyContent: "center",
+                        fontSize: 11, fontWeight: 700,
+                      }}>{q.id}</span>
+                      {q.text}
+                    </div>
+                  ))}
+                </div>
+              </Section>
+
+              <Section title="Priority 2 &mdash; E-Commerce">
+                <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+                  {[
+                    {
+                      id: "C1",
+                      text: "Plan pricing \u2014 what\u2019s the pricing structure for scanned plans? Per-design flat rate, or variable by number of drawings?",
+                    },
+                    {
+                      id: "C2",
+                      text: "Sell individual drawings or only complete plan sets?",
+                    },
+                  ].map((q, i) => (
+                    <div key={i} style={{
+                      background: "#fff", borderRadius: 8, padding: "12px 16px",
+                      border: "1px solid #e8ecf2", fontSize: 13, color: "#4a5568", lineHeight: 1.5,
+                      display: "flex", gap: 10, alignItems: "flex-start",
+                    }}>
+                      <span style={{
+                        flexShrink: 0, width: 28, height: 22, borderRadius: 6,
+                        background: "#e8f0fe", color: FarrBlue,
+                        display: "flex", alignItems: "center", justifyContent: "center",
+                        fontSize: 11, fontWeight: 700,
+                      }}>{q.id}</span>
+                      {q.text}
+                    </div>
+                  ))}
+                </div>
+              </Section>
+
+              <Section title="Priority 3 &mdash; Content (Maureen Can Own)">
+                <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+                  {[
+                    {
+                      id: "B1",
+                      text: "History page \u2014 we fixed 6 factual errors, but there may be more. Can you or Maureen mark up what\u2019s left?",
+                    },
+                    {
+                      id: "B2",
+                      text: "Maureen\u2019s story/timeline edits \u2014 any update? We can swap in new content anytime.",
+                    },
+                    {
+                      id: "A4",
+                      text: "D.493 Orlanda \u2014 currently showing placeholder. Do you have the actual photo?",
+                    },
+                    {
+                      id: "B3",
+                      text: 'Ideal design page layout \u2014 you mentioned wanting to sketch one. Have you started? We can prep a current-state page anatomy to start the discussion.',
+                    },
+                    {
+                      id: "B4",
+                      text: "Jennifer \u2014 should she be on the team page? (Name, title, bio, photo needed if yes.)",
+                    },
+                  ].map((q, i) => (
+                    <div key={i} style={{
+                      background: "#fff", borderRadius: 8, padding: "12px 16px",
+                      border: "1px solid #e8ecf2", fontSize: 13, color: "#4a5568", lineHeight: 1.5,
+                      display: "flex", gap: 10, alignItems: "flex-start",
+                    }}>
+                      <span style={{
+                        flexShrink: 0, width: 28, height: 22, borderRadius: 6,
+                        background: "#f5f7fa", color: "#6b7280",
+                        display: "flex", alignItems: "center", justifyContent: "center",
+                        fontSize: 11, fontWeight: 700,
+                      }}>{q.id}</span>
+                      {q.text}
+                    </div>
+                  ))}
+                </div>
+              </Section>
+
+              <Section title="DNS Reminder">
+                <div style={{
+                  background: "#fff4e5", borderRadius: 8, padding: 14,
+                  fontSize: 12, color: "#92690d", lineHeight: 1.6, border: "1px solid #fde4c1",
+                }}>
+                  <strong>farrdesign.com</strong> still points to the old WordPress site. When you&rsquo;re ready to switch, we&rsquo;ll provide the Netlify DNS values. This is the step that makes the new site live at the real domain.
+                </div>
+              </Section>
+
+              <Section title="Sprint Candidates (No Input Needed)">
+                <Row label="Performance" value="CSS minification, font subsetting, lazy font loading" status="next" />
+                <Row label="CSS Phase 4" value="65 remaining hardcoded font-sizes (sub-scale badges)" status="next" />
+                <Row label="Cleanup" value="Remove dead image backup, deduplicate Steinlager images" status="next" />
+              </Section>
+            </>)}
+          </div>
+
+          {/* Footer */}
+          <div style={{
+            margin: "32px 24px 0", padding: "20px 24px",
+            background: "#fff", borderRadius: 12, border: "1px solid #e8ecf2",
+            display: "flex", justifyContent: "space-between", alignItems: "center",
+          }}>
+            <div>
+              <div style={{ fontSize: 12, color: "#8896a8", marginBottom: 2 }}>Prepared by</div>
+              <div style={{ fontSize: 14, fontWeight: 600, color: FarrBlue }}>SailrScience</div>
+            </div>
+            <div style={{ textAlign: "right" }}>
+              <div style={{ fontSize: 12, color: "#8896a8", marginBottom: 2 }}>Session 53</div>
+              <div style={{ fontSize: 14, fontWeight: 600, color: "#4a5568" }}>March 12, 2026</div>
+            </div>
+          </div>
+        </div>
+      );
+    }
+
+    ReactDOM.createRoot(document.getElementById("root")).render(<SprintUpdate />);
+  </script>
+</body>
+</html>
