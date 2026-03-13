@@ -1357,6 +1357,9 @@ static_pages = [
     ('/tp52-heritage.html', '0.6'),
     ('/americas-cup.html', '0.6'),
     ('/superyachts.html', '0.6'),
+    ('/consulting.html', '0.6'),
+    ('/farr-40.html', '0.6'),
+    ('/gelliceaux.html', '0.6'),
 ]
 
 for path, priority in static_pages:
