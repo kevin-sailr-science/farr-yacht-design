@@ -1455,3 +1455,93 @@ for t in sorted(tier_stats.keys()):
 print(f"Plan status distribution:")
 for s, c in sorted(status_stats.items()):
     print(f"  {s}: {c}")
+
+# ─── POST-BUILD QA: Semantic Link Audit ───
+# Scans all static HTML pages for yacht-card links and verifies destinations.
+# Catches: broken yacht links, circular self-links, wrong-destination links to
+# generic pages (portfolio.html, superyachts.html) when a yacht page exists.
+
+print(f"\n{'='*50}")
+print("POST-BUILD QA: Link Audit")
+print(f"{'='*50}")
+
+# Build set of all generated yacht pages + known feature pages
+yacht_pages_set = set()
+for fname in os.listdir(os.path.join(SITE, "yacht")):
+    if fname.endswith(".html"):
+        yacht_pages_set.add(f"yacht/{fname}")
+
+# Known feature pages that are valid link targets
+feature_pages = {"kiboko-4.html", "gelliceaux.html", "americas-cup.html",
+                 "whitbread-heritage.html", "volvo-ocean-race.html"}
+
+# All valid slug set from boats.json
+valid_slugs = {b['slug'] for b in all_boats}
+
+# Scan static HTML files for yacht-card links
+_card_link_re = re.compile(r'<a\s+href="([^"]+)"\s+class="yacht-card[^"]*"', re.IGNORECASE)
+_any_yacht_link_re = re.compile(r'href="(yacht/[^"]+\.html)"')
+_self_link_re = re.compile(r'class="yacht-card[^"]*"')
+
+qa_errors = []
+qa_warnings = []
+static_htmls = [f for f in os.listdir(SITE) if f.endswith('.html')
+                and f not in ('portfolio.html',)]  # portfolio is generated, skip
+
+for html_file in sorted(static_htmls):
+    filepath = os.path.join(SITE, html_file)
+    with open(filepath, 'r', encoding='utf-8') as fh:
+        content = fh.read()
+
+    # Find all yacht-card links
+    for m in _card_link_re.finditer(content):
+        href = m.group(1)
+        line_num = content[:m.start()].count('\n') + 1
+
+        # Check for circular self-links
+        if href == html_file:
+            qa_errors.append(f"  CIRCULAR: {html_file}:{line_num} → {href}")
+            continue
+
+        # Check yacht/ links point to existing pages
+        if href.startswith("yacht/"):
+            if href not in yacht_pages_set:
+                qa_errors.append(f"  BROKEN: {html_file}:{line_num} → {href} (page not found)")
+            continue
+
+        # Check for yacht-card links to generic pages (likely wrong destination)
+        if href in ("portfolio.html", "superyachts.html", "racing.html", "partners.html"):
+            # Extract design number from nearby content
+            context = content[m.start():m.start()+500]
+            dn_match = re.search(r'yacht-card-number[^>]*>#?(\d+)', context)
+            if dn_match:
+                dn = dn_match.group(1)
+                expected = f"yacht/{dn}.html"
+                if expected in yacht_pages_set:
+                    qa_errors.append(f"  WRONG DEST: {html_file}:{line_num} → {href} "
+                                     f"(card #{dn} should link to {expected})")
+                else:
+                    qa_warnings.append(f"  NO YACHT PAGE: {html_file}:{line_num} → {href} "
+                                       f"(card #{dn} has no yacht page)")
+
+    # Check all yacht/ hrefs (not just yacht-card links)
+    for m in _any_yacht_link_re.finditer(content):
+        href = m.group(1)
+        if href not in yacht_pages_set:
+            line_num = content[:m.start()].count('\n') + 1
+            qa_errors.append(f"  BROKEN: {html_file}:{line_num} → {href} (page not found)")
+
+if qa_errors:
+    print(f"\n  ERRORS ({len(qa_errors)}):")
+    for e in qa_errors:
+        print(e)
+if qa_warnings:
+    print(f"\n  WARNINGS ({len(qa_warnings)}):")
+    for w in qa_warnings:
+        print(w)
+if not qa_errors and not qa_warnings:
+    print("  All links verified. 0 errors, 0 warnings.")
+else:
+    print(f"\n  Summary: {len(qa_errors)} errors, {len(qa_warnings)} warnings")
+    if qa_errors:
+        print("  *** FIX ERRORS BEFORE DEPLOYING ***")
