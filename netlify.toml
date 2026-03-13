@@ -74,6 +74,123 @@
   status = 200
   force = true
 
+# --- Vanity yacht URL redirects ---
+
+[[redirects]]
+  from = "/yacht/whitbread-maxi-steinlager-ii.html"
+  to = "/yacht/190.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/tp52.html"
+  to = "/tp52-heritage.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/baltic-custom-142.html"
+  to = "/yacht/788.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/cookson-50.html"
+  to = "/yacht/541.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/farr-100-leopard-3.html"
+  to = "/yacht/591.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/farr-115-sojana.html"
+  to = "/yacht/442.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/farr-25-one-design.html"
+  to = "/yacht/667.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/farr-30-one-design.html"
+  to = "/yacht/054.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/platu-25.html"
+  to = "/racing.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/southern-wind-102.html"
+  to = "/yacht/691.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/southern-wind-105.html"
+  to = "/yacht/778.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/southern-wind-110.html"
+  to = "/yacht/615.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/southern-wind-82.html"
+  to = "/superyachts.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/southern-wind-96.html"
+  to = "/yacht/768.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/stp65-rosebud.html"
+  to = "/superyachts.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/volvo-ocean-60-illbruck-challenge.html"
+  to = "/yacht/471.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/volvo-ocean-65.html"
+  to = "/yacht/757.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/volvo-open-70-azzam.html"
+  to = "/yacht/545-regata.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/wally-80.html"
+  to = "/yacht/435.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/whitbread-60-ef-language-ef-education.html"
+  to = "/yacht/378.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/whitbread-60-new-zealand-endeavour.html"
+  to = "/yacht/274.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/whitbread-maxi-ceramco-new-zealand.html"
+  to = "/yacht/090.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/whitbread-maxi-ubs-switzerland.html"
+  to = "/yacht/131.html"
+  status = 301
+
 # --- Security Headers ---
 
 [[headers]]
