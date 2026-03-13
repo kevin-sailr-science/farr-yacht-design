@@ -18,7 +18,7 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 WWW = SCRIPT_DIR  # build_site.py is in www/, which IS the deploy root
 SITE = WWW
 DATA = os.path.join(SCRIPT_DIR, "_data", "boats.json")
-SITE_URL = "https://www.farrdesign.com"
+SITE_URL = "https://farr-designs.sailr.science"
 
 # ─── Load data ───
 
@@ -468,7 +468,8 @@ def build_yacht_page(boat):
     if og_img_w and og_img_h:
         og_size_tags = f'''
   <meta property="og:image:width" content="{og_img_w}" />
-  <meta property="og:image:height" content="{og_img_h}" />'''
+  <meta property="og:image:height" content="{og_img_h}" />
+  <meta property="og:image:type" content="image/png" />'''
     og_tags = f'''<meta name="description" content="{esc(og_desc)}" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="{SITE_URL}/yacht/{slug}.html" />
