@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80" fill="none">
+  <rect width="200" height="80" rx="6" fill="#ffffff"/>
+  <rect x="0.5" y="0.5" width="199" height="79" rx="5.5" stroke="#d5dce6"/>
+  <!-- Dynamic swoosh mark with sail element -->
+  <!-- Vertical sail/spinnaker -->
+  <path d="M96 14 L94 42 L98 42 Z" fill="#9ca3af" opacity="0.7"/>
+  <!-- Orbital swoosh - black -->
+  <path d="M72 34 Q88 22 108 28 Q128 34 132 38 Q128 40 108 36 Q88 32 72 34Z" fill="#1a1f2e"/>
+  <!-- Red accent curve -->
+  <path d="M95 30 Q108 26 120 32 Q112 30 100 32Z" fill="#c0392b"/>
+  <!-- Wordmark -->
+  <text x="100" y="58" text-anchor="middle" font-family="'Jost', system-ui, sans-serif" font-weight="600" font-size="11" fill="#1a1f2e" letter-spacing="0.12em">COOKSON BOATS</text>
+  <!-- Location -->
+  <text x="100" y="70" text-anchor="middle" font-family="'Kumbh Sans', system-ui, sans-serif" font-weight="400" font-size="5" fill="#8a9bb5" letter-spacing="0.16em">AUCKLAND, NEW ZEALAND</text>
+</svg>

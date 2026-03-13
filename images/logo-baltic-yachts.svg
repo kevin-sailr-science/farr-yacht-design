@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80" fill="none">
+  <rect width="200" height="80" rx="6" fill="#0f1b2d"/>
+  <!-- Stylized tulip/sail icon in circle -->
+  <circle cx="52" cy="36" r="12" stroke="#ffffff" stroke-width="0.8" fill="none" opacity="0.7"/>
+  <path d="M52 26 C52 26 49 32 49 36 C49 39 50.5 41 52 41 C53.5 41 55 39 55 36 C55 32 52 26 52 26Z" fill="#ffffff" opacity="0.85"/>
+  <!-- Hand-scripted style wordmark -->
+  <text x="72" y="34" font-family="'Georgia', 'Times New Roman', serif" font-style="italic" font-weight="400" font-size="16" fill="#ffffff" letter-spacing="0.01em">Baltic</text>
+  <text x="114" y="34" font-family="'Georgia', 'Times New Roman', serif" font-style="italic" font-weight="400" font-size="16" fill="#ffffff" letter-spacing="0.01em">Yachts</text>
+  <!-- Tagline -->
+  <text x="112" y="48" text-anchor="middle" font-family="'Kumbh Sans', system-ui, sans-serif" font-weight="400" font-size="5" fill="#8a9bb5" letter-spacing="0.2em">LIGHTER, STIFFER, FASTER</text>
+  <!-- Subtle wave line -->
+  <line x1="40" y1="60" x2="170" y2="60" stroke="#ffffff" stroke-width="0.3" opacity="0.2"/>
+</svg>

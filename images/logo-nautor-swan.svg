@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80" fill="none">
+  <rect width="200" height="80" rx="6" fill="#ffffff"/>
+  <rect x="0.5" y="0.5" width="199" height="79" rx="5.5" stroke="#d5dce6"/>
+  <!-- Stylized swan symbol — flowing curves -->
+  <path d="M90 18 C90 18 95 14 100 14 C105 14 108 17 108 20 C108 23 105 25 102 25 C99 25 97 23 97 23" stroke="#1a5091" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  <path d="M97 23 C97 23 92 27 92 30 C92 33 95 35 100 35 C105 35 110 33 112 30" stroke="#1a5091" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  <!-- NAUTOR SWAN wordmark -->
+  <text x="100" y="50" text-anchor="middle" font-family="'Jost', system-ui, sans-serif" font-weight="600" font-size="12" fill="#1a5091" letter-spacing="0.14em">NAUTOR SWAN</text>
+  <!-- Tagline -->
+  <text x="100" y="63" text-anchor="middle" font-family="'Kumbh Sans', system-ui, sans-serif" font-weight="400" font-size="5" fill="#8a9bb5" letter-spacing="0.18em">SAILING FORWARD SINCE 1966</text>
+</svg>

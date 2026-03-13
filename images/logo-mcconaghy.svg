@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80" fill="none">
+  <rect width="200" height="80" rx="6" fill="#c94040"/>
+  <!-- McCONAGHY wordmark — thin modern sans-serif, white on red -->
+  <text x="100" y="36" text-anchor="middle" font-family="'Jost', system-ui, sans-serif" font-weight="300" font-size="20" fill="#ffffff" letter-spacing="0.04em">McCONAGHY</text>
+  <!-- Subtle divider -->
+  <line x1="60" y1="44" x2="140" y2="44" stroke="#ffffff" stroke-width="0.4" opacity="0.4"/>
+  <!-- Subtitle -->
+  <text x="100" y="55" text-anchor="middle" font-family="'Kumbh Sans', system-ui, sans-serif" font-weight="400" font-size="6" fill="#ffffff" letter-spacing="0.2em" opacity="0.8">BOATS</text>
+  <!-- Tagline -->
+  <text x="100" y="68" text-anchor="middle" font-family="'Kumbh Sans', system-ui, sans-serif" font-weight="300" font-size="4.5" fill="#ffffff" letter-spacing="0.12em" opacity="0.6">THE LEADING EDGE OF COMPOSITE EXPERTISE</text>
+</svg>

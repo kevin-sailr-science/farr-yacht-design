@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80" fill="none">
+  <rect width="200" height="80" rx="6" fill="#ffffff"/>
+  <rect x="0.5" y="0.5" width="199" height="79" rx="5.5" stroke="#d5dce6"/>
+  <!-- Clean typographic treatment — classic American boatbuilder -->
+  <text x="100" y="30" text-anchor="middle" font-family="'Jost', system-ui, sans-serif" font-weight="300" font-size="10" fill="#1a1f2e" letter-spacing="0.2em">CARROLL</text>
+  <text x="100" y="46" text-anchor="middle" font-family="'Jost', system-ui, sans-serif" font-weight="600" font-size="13" fill="#1a1f2e" letter-spacing="0.12em">MARINE</text>
+  <!-- Founding info -->
+  <line x1="70" y1="55" x2="130" y2="55" stroke="#d5dce6" stroke-width="0.6"/>
+  <text x="100" y="64" text-anchor="middle" font-family="'Kumbh Sans', system-ui, sans-serif" font-weight="400" font-size="5.5" fill="#8a9bb5" letter-spacing="0.16em">BRISTOL, RHODE ISLAND</text>
+  <text x="100" y="73" text-anchor="middle" font-family="'Kumbh Sans', system-ui, sans-serif" font-weight="400" font-size="5" fill="#b0bccc" letter-spacing="0.1em">EST. 1984</text>
+</svg>
