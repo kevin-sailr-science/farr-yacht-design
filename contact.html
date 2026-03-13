@@ -29,33 +29,32 @@
   <a href="#main" class="skip-link">Skip to content</a>
 
   <!-- ============ NAVIGATION ============ -->
-  <nav>
+  <nav aria-label="Main">
     <a href="index.html" class="nav-logo">Farr <span>Yacht Design</span></a>
     <div class="nav-links">
       <a href="portfolio.html">Portfolio</a>
       <a href="services.html">Services</a>
       <a href="design-plans.html">Design Plans</a>
       <div class="nav-dropdown">
-        <span class="nav-dropdown-toggle nav-links a" tabindex="0" role="button" aria-expanded="false" aria-haspopup="true">About <span class="nav-arrow">&#9662;</span></span>
-        <div class="nav-dropdown-menu">
-          <a href="about.html">Our Story</a>
-          <a href="team.html">Team</a>
-          <a href="racing.html">Racing Heritage</a>
-          <a href="awards.html">Awards</a>
-          <a href="partners.html">Partners</a>
-          <a href="news.html">News</a>
+        <button class="nav-dropdown-toggle nav-links a" aria-expanded="false" aria-haspopup="true">About <span class="nav-arrow">&#9662;</span></button>
+        <div class="nav-dropdown-menu" role="menu">
+          <a href="about.html" role="menuitem">Our Story</a>
+          <a href="team.html" role="menuitem">Team</a>
+          <a href="racing.html" role="menuitem">Racing Heritage</a>
+          <a href="awards.html" role="menuitem">Awards</a>
+          <a href="partners.html" role="menuitem">Partners</a>
+          <a href="news.html" role="menuitem">News</a>
         </div>
       </div>
       <a href="contact.html" class="nav-cta">Contact</a>
     </div>
-    <!-- Hamburger -->
-    <div class="nav-hamburger" onclick="toggleMobileNav()" aria-label="Toggle navigation">
+    <button class="nav-hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobileNav">
       <span></span><span></span><span></span>
-    </div>
+    </button>
   </nav>
 
   <!-- Mobile nav -->
-  <div class="nav-mobile" id="mobileNav">
+  <nav class="nav-mobile" id="mobileNav" aria-label="Mobile">
     <a href="portfolio.html" onclick="closeMobileNav()">Portfolio</a>
     <a href="services.html" onclick="closeMobileNav()">Services</a>
     <a href="design-plans.html" onclick="closeMobileNav()">Design Plans</a>
@@ -70,7 +69,7 @@
     <a href="partners.html" onclick="closeMobileNav()">Partners</a>
     <a href="news.html" onclick="closeMobileNav()">News</a>
     <a href="contact.html" onclick="closeMobileNav()">Contact</a>
-  </div>
+  </nav>
 
   <!-- ============ HERO ============ -->
   <main id="main">
@@ -129,13 +128,13 @@
             <p class="form-note">We typically respond within one business day.</p>
 
             <!-- Success state -->
-            <div id="formSuccess" style="display:none; padding:1.5rem; background:var(--bg-card); border:1px solid #2d6a4f; border-radius:8px; margin-top:1rem; text-align:center;">
+            <div id="formSuccess" role="alert" style="display:none; padding:1.5rem; background:var(--bg-card); border:1px solid #2d6a4f; border-radius:8px; margin-top:1rem; text-align:center;">
               <p style="font-size:1.1rem; font-weight:600; color:#2d6a4f; margin-bottom:0.5rem;">Message Sent</p>
               <p style="color:var(--text-secondary); font-size:0.9rem;">Thank you &mdash; we&rsquo;ll be in touch within one business day.</p>
             </div>
 
             <!-- Error state -->
-            <div id="formError" style="display:none; padding:1.5rem; background:var(--bg-card); border:1px solid #c1121f; border-radius:8px; margin-top:1rem; text-align:center;">
+            <div id="formError" role="alert" style="display:none; padding:1.5rem; background:var(--bg-card); border:1px solid #c1121f; border-radius:8px; margin-top:1rem; text-align:center;">
               <p style="font-size:1.1rem; font-weight:600; color:#c1121f; margin-bottom:0.5rem;">Something went wrong</p>
               <p style="color:var(--text-secondary); font-size:0.9rem;">Please try again, or email us directly at <a href="mailto:info@farrdesign.com">info@farrdesign.com</a>.</p>
             </div>
@@ -249,15 +248,18 @@
     function toggleMobileNav() {
       var nav = document.getElementById('mobileNav');
       var hamburger = document.querySelector('.nav-hamburger');
-      nav.classList.toggle('active');
+      var open = nav.classList.toggle('active');
       hamburger.classList.toggle('active');
+      hamburger.setAttribute('aria-expanded', open);
     }
     function closeMobileNav() {
       var nav = document.getElementById('mobileNav');
       var hamburger = document.querySelector('.nav-hamburger');
       nav.classList.remove('active');
       hamburger.classList.remove('active');
+      hamburger.setAttribute('aria-expanded', 'false');
     }
+    document.querySelector('.nav-hamburger').addEventListener('click', toggleMobileNav);
 
     /* Dropdown nav */
     document.querySelectorAll('.nav-dropdown-toggle').forEach(function(toggle) {
@@ -269,9 +271,16 @@
       });
     });
 
-    /* Close dropdown on outside click */
+    /* Close dropdown on outside click / Escape */
     document.addEventListener('click', function(e) {
       if (!e.target.closest('.nav-dropdown')) {
+        document.querySelectorAll('.nav-dropdown-menu').forEach(function(m) { m.style.display = 'none'; });
+        document.querySelectorAll('.nav-dropdown-toggle').forEach(function(t) { t.setAttribute('aria-expanded', 'false'); });
+      }
+    });
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        closeMobileNav();
         document.querySelectorAll('.nav-dropdown-menu').forEach(function(m) { m.style.display = 'none'; });
         document.querySelectorAll('.nav-dropdown-toggle').forEach(function(t) { t.setAttribute('aria-expanded', 'false'); });
       }

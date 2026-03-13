@@ -408,8 +408,9 @@ def build_yacht_page(boat):
     # Plan section — tier-specific (Sprint 2)
     plan_section = build_plan_section(boat)
 
-    # Build image style attribute (only when image exists)
+    # Build image style + ARIA attributes (only when image exists)
     detail_img_style = f''' style="background-image:url('{image_url}')"''' if has_image else ""
+    detail_img_aria = f''' role="img" aria-label="{esc(display_name)}"''' if has_image else ""
 
     # Build page content (inside <main>)
     content = f'''
@@ -424,7 +425,7 @@ def build_yacht_page(boat):
       </div>
       <div class="yacht-detail-body">
         <div>
-          <div class="yacht-detail-image"{detail_img_style}>
+          <div class="yacht-detail-image"{detail_img_style}{detail_img_aria}>
             {img_tbc}
           </div>
           <div style="margin-top:1.5rem;">
@@ -600,15 +601,15 @@ def build_portfolio_page():
 
       <!-- Search -->
       <div class="pf-search-row">
-        <input type="text" id="pf-search" placeholder="Search by name, design number, or builder\u2026" autocomplete="off" />
+        <input type="text" id="pf-search" placeholder="Search by name, design number, or builder\u2026" autocomplete="off" aria-label="Search designs" />
       </div>
 
       <!-- Controls bar -->
       <div class="pf-controls">
         <div class="pf-filters">
-          <select id="pf-type" class="pf-select"><option value="">All Types</option>{type_options}</select>
-          <select id="pf-decade" class="pf-select"><option value="">All Decades</option>{decade_options}</select>
-          <select id="pf-builder" class="pf-select"><option value="">All Builders</option>{builder_options}</select>
+          <select id="pf-type" class="pf-select" aria-label="Filter by type"><option value="">All Types</option>{type_options}</select>
+          <select id="pf-decade" class="pf-select" aria-label="Filter by decade"><option value="">All Decades</option>{decade_options}</select>
+          <select id="pf-builder" class="pf-select" aria-label="Filter by builder"><option value="">All Builders</option>{builder_options}</select>
         </div>
         <div class="pf-right">
           <div class="pf-sort">
@@ -619,11 +620,11 @@ def build_portfolio_page():
             <button class="sort-btn" data-sort="lf" data-dir="desc">Size</button>
           </div>
           <div class="pf-view-toggle">
-            <button class="pf-view-btn active" data-view="grid" title="Grid view">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><rect x="1" y="1" width="6" height="6" rx="1"/><rect x="9" y="1" width="6" height="6" rx="1"/><rect x="1" y="9" width="6" height="6" rx="1"/><rect x="9" y="9" width="6" height="6" rx="1"/></svg>
+            <button class="pf-view-btn active" data-view="grid" title="Grid view" aria-label="Grid view">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><rect x="1" y="1" width="6" height="6" rx="1"/><rect x="9" y="1" width="6" height="6" rx="1"/><rect x="1" y="9" width="6" height="6" rx="1"/><rect x="9" y="9" width="6" height="6" rx="1"/></svg>
             </button>
-            <button class="pf-view-btn" data-view="list" title="List view">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><rect x="1" y="1" width="14" height="3" rx="1"/><rect x="1" y="6.5" width="14" height="3" rx="1"/><rect x="1" y="12" width="14" height="3" rx="1"/></svg>
+            <button class="pf-view-btn" data-view="list" title="List view" aria-label="List view">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><rect x="1" y="1" width="14" height="3" rx="1"/><rect x="1" y="6.5" width="14" height="3" rx="1"/><rect x="1" y="12" width="14" height="3" rx="1"/></svg>
             </button>
           </div>
         </div>
@@ -631,7 +632,7 @@ def build_portfolio_page():
 
       <!-- Results count -->
       <div class="pf-status">
-        <span id="pf-count" class="portfolio-count">{total} designs</span>
+        <span id="pf-count" class="portfolio-count" aria-live="polite">{total} designs</span>
         <button id="pf-clear" class="pf-clear-btn" style="display:none;">Clear filters</button>
       </div>
 
@@ -732,8 +733,8 @@ def build_portfolio_page():
           if (d.ps === 'available' || d.ps === 'scanned_available') dot = '<span style="width:7px;height:7px;border-radius:50%;background:#3dba72;flex-shrink:0;" title="Plans available"></span>';
           else if (d.ps === 'request_from_shed') dot = '<span style="width:7px;height:7px;border-radius:50%;background:#d97706;flex-shrink:0;" title="Archive request"></span>';
 
-          var imgAttr = d.hi ? ' data-bg="'+d.iu+'"' : '';
-          var tbc = d.hi ? '' : '<span class="img-tbc"><svg class="img-tbc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="7" width="18" height="14" rx="2"/><path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2"/><circle cx="12" cy="14" r="3"/></svg><span class="img-tbc-label">Photo coming soon</span></span>';
+          var imgAttr = d.hi ? ' data-bg="'+d.iu+'" role="img" aria-label="'+escH(d.n)+'"' : '';
+          var tbc = d.hi ? '' : '<span class="img-tbc"><svg class="img-tbc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="7" width="18" height="14" rx="2"/><path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2"/><circle cx="12" cy="14" r="3"/></svg><span class="img-tbc-label">Photo coming soon</span></span>';
 
           // Type tag overlay on card image
           var typeTag = '';

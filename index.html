@@ -45,33 +45,32 @@
   <a href="#main" class="skip-link">Skip to content</a>
 
   <!-- ============ NAVIGATION ============ -->
-  <nav>
+  <nav aria-label="Main">
     <a href="index.html" class="nav-logo">Farr <span>Yacht Design</span></a>
     <div class="nav-links">
       <a href="portfolio.html">Portfolio</a>
       <a href="services.html">Services</a>
       <a href="design-plans.html">Design Plans</a>
       <div class="nav-dropdown">
-        <span class="nav-dropdown-toggle nav-links a" tabindex="0" role="button" aria-expanded="false" aria-haspopup="true">About <span class="nav-arrow">&#9662;</span></span>
-        <div class="nav-dropdown-menu">
-          <a href="about.html">Our Story</a>
-          <a href="team.html">Team</a>
-          <a href="racing.html">Racing Heritage</a>
-          <a href="awards.html">Awards</a>
-          <a href="partners.html">Partners</a>
-          <a href="news.html">News</a>
+        <button class="nav-dropdown-toggle nav-links a" aria-expanded="false" aria-haspopup="true">About <span class="nav-arrow">&#9662;</span></button>
+        <div class="nav-dropdown-menu" role="menu">
+          <a href="about.html" role="menuitem">Our Story</a>
+          <a href="team.html" role="menuitem">Team</a>
+          <a href="racing.html" role="menuitem">Racing Heritage</a>
+          <a href="awards.html" role="menuitem">Awards</a>
+          <a href="partners.html" role="menuitem">Partners</a>
+          <a href="news.html" role="menuitem">News</a>
         </div>
       </div>
       <a href="contact.html" class="nav-cta">Contact</a>
     </div>
-    <!-- Hamburger -->
-    <div class="nav-hamburger" onclick="toggleMobileNav()" aria-label="Toggle navigation">
+    <button class="nav-hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobileNav">
       <span></span><span></span><span></span>
-    </div>
+    </button>
   </nav>
 
   <!-- Mobile nav -->
-  <div class="nav-mobile" id="mobileNav">
+  <nav class="nav-mobile" id="mobileNav" aria-label="Mobile">
     <a href="portfolio.html" onclick="closeMobileNav()">Portfolio</a>
     <a href="services.html" onclick="closeMobileNav()">Services</a>
     <a href="design-plans.html" onclick="closeMobileNav()">Design Plans</a>
@@ -86,7 +85,7 @@
     <a href="partners.html" onclick="closeMobileNav()">Partners</a>
     <a href="news.html" onclick="closeMobileNav()">News</a>
     <a href="contact.html" onclick="closeMobileNav()">Contact</a>
-  </div>
+  </nav>
 
   <!-- ============ HERO ============ -->
   <main id="main">
@@ -104,7 +103,7 @@
         </div>
       </div>
 
-      <div class="hero-rotator" id="heroRotator" style="max-width:1000px; margin:3rem auto 0; border-radius:12px; overflow:hidden; border:1px solid var(--border); height:400px; background-image:linear-gradient(to bottom, rgba(10,25,47,0.15), rgba(10,25,47,0.4)), url('images/Kiboko4-1.webp'); background-size:cover; background-position:center; transition:background-image 0.6s ease;">
+      <div class="hero-rotator" id="heroRotator" role="img" aria-label="Featured yacht — Kiboko 4" style="max-width:1000px; margin:3rem auto 0; border-radius:12px; overflow:hidden; border:1px solid var(--border); height:400px; background-image:linear-gradient(to bottom, rgba(10,25,47,0.15), rgba(10,25,47,0.4)), url('images/Kiboko4-1.webp'); background-size:cover; background-position:center; transition:background-image 0.6s ease;">
       </div>
     </div>
 
@@ -131,7 +130,7 @@
 
         <!-- Project Card 1: Kiboko 4 -->
         <a href="kiboko-4.html" class="project-card" style="text-decoration:none;">
-          <div class="project-card-image" style="background-image:url('images/Kiboko4-1.webp');background-size:cover;background-position:center;"></div>
+          <div class="project-card-image" role="img" aria-label="Kiboko 4" style="background-image:url('images/Kiboko4-1.webp');background-size:cover;background-position:center;"></div>
           <div class="project-card-body">
             <div class="project-card-badge">&#9733; Sailing Yacht of the Year 2025</div>
             <h3>Kiboko 4</h3>
@@ -143,7 +142,7 @@
 
         <!-- Project Card 2: Gelliceaux (SW108) -->
         <a href="gelliceaux.html" class="project-card" style="text-decoration:none;">
-          <div class="project-card-image" style="background-image:url('images/SW10802_AIR-12_resize.webp');background-size:cover;background-position:center;"></div>
+          <div class="project-card-image" role="img" aria-label="Gelliceaux" style="background-image:url('images/SW10802_AIR-12_resize.webp');background-size:cover;background-position:center;"></div>
           <div class="project-card-body">
             <div class="project-card-badge">&#9733; St. Barths Bucket Winner 2024</div>
             <h3>Gelliceaux</h3>
@@ -155,7 +154,7 @@
 
         <!-- Project Card 3: American Magic AC37 -->
         <a href="americas-cup.html" class="project-card" style="text-decoration:none;">
-          <div class="project-card-image" style="background-image:url('images/bg-racing-bow.jpg');background-size:cover;background-position:center;"></div>
+          <div class="project-card-image" role="img" aria-label="American Magic AC75" style="background-image:url('images/bg-racing-bow.jpg');background-size:cover;background-position:center;"></div>
           <div class="project-card-body">
             <div class="project-card-badge">America&rsquo;s Cup 37</div>
             <h3>American Magic</h3>
@@ -309,15 +308,18 @@
     function toggleMobileNav() {
       var nav = document.getElementById('mobileNav');
       var hamburger = document.querySelector('.nav-hamburger');
-      nav.classList.toggle('active');
+      var open = nav.classList.toggle('active');
       hamburger.classList.toggle('active');
+      hamburger.setAttribute('aria-expanded', open);
     }
     function closeMobileNav() {
       var nav = document.getElementById('mobileNav');
       var hamburger = document.querySelector('.nav-hamburger');
       nav.classList.remove('active');
       hamburger.classList.remove('active');
+      hamburger.setAttribute('aria-expanded', 'false');
     }
+    document.querySelector('.nav-hamburger').addEventListener('click', toggleMobileNav);
 
     /* Dropdown nav */
     document.querySelectorAll('.nav-dropdown-toggle').forEach(function(toggle) {
@@ -329,28 +331,43 @@
       });
     });
 
-    /* Close dropdown on outside click */
+    /* Close dropdown on outside click / Escape */
     document.addEventListener('click', function(e) {
       if (!e.target.closest('.nav-dropdown')) {
         document.querySelectorAll('.nav-dropdown-menu').forEach(function(m) { m.style.display = 'none'; });
         document.querySelectorAll('.nav-dropdown-toggle').forEach(function(t) { t.setAttribute('aria-expanded', 'false'); });
       }
     });
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        closeMobileNav();
+        document.querySelectorAll('.nav-dropdown-menu').forEach(function(m) { m.style.display = 'none'; });
+        document.querySelectorAll('.nav-dropdown-toggle').forEach(function(t) { t.setAttribute('aria-expanded', 'false'); });
+      }
+    });
 
-    /* Hero image rotator */
+    /* Hero image rotator — pauses on hover/focus (WCAG 2.2.2) */
     (function() {
       var slides = [
-        'images/Kiboko4-1.webp',
-        'images/SW10802_AIR-12_resize.webp',
-        'images/bg-offshore-fleet.jpg'
+        { src: 'images/Kiboko4-1.webp', label: 'Featured yacht — Kiboko 4' },
+        { src: 'images/SW10802_AIR-12_resize.webp', label: 'Featured yacht — Gelliceaux' },
+        { src: 'images/bg-offshore-fleet.jpg', label: 'Offshore racing fleet' }
       ];
-      var idx = 0;
+      var idx = 0, paused = false, timer;
       var el = document.getElementById('heroRotator');
       if (el) {
-        setInterval(function() {
+        function advance() {
           idx = (idx + 1) % slides.length;
-          el.style.backgroundImage = "linear-gradient(to bottom, rgba(10,25,47,0.15), rgba(10,25,47,0.4)), url('" + slides[idx] + "')";
-        }, 5000);
+          el.style.backgroundImage = "linear-gradient(to bottom, rgba(10,25,47,0.15), rgba(10,25,47,0.4)), url('" + slides[idx].src + "')";
+          el.setAttribute('aria-label', slides[idx].label);
+        }
+        function start() { if (!timer) timer = setInterval(advance, 5000); }
+        function stop() { clearInterval(timer); timer = null; }
+        el.addEventListener('mouseenter', stop);
+        el.addEventListener('mouseleave', start);
+        el.addEventListener('focusin', stop);
+        el.addEventListener('focusout', start);
+        start();
       }
     })();
   </script>

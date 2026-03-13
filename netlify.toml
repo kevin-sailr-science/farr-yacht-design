@@ -84,13 +84,15 @@
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
     Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self'"
 
-# Stricter CSP for admin page
+# Admin page: stricter cache + expanded CSP for Netlify Identity
 [[headers]]
   for = "/admin.html"
   [headers.values]
     Cache-Control = "no-store, no-cache, must-revalidate"
     X-Frame-Options = "DENY"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://identity.netlify.com; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://*.netlify.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self'"
 
 # Cache static assets
 [[headers]]

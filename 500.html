@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Server Error &mdash; Farr Yacht Design</title>
+  <link rel="preload" href="/fonts/Jost-VariableFont_wght.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/KumbhSans-VariableFont_YOPQ,wght.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/farr-style.min.css">
+  <meta name="robots" content="noindex">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+  <nav aria-label="Main">
+    <a href="/index.html" class="nav-logo">Farr <span>Yacht Design</span></a>
+    <div class="nav-links">
+      <a href="/portfolio.html">Portfolio</a>
+      <a href="/services.html">Services</a>
+      <a href="/design-plans.html">Design Plans</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle nav-links a" aria-expanded="false" aria-haspopup="true">About <span class="nav-arrow">&#9662;</span></button>
+        <div class="nav-dropdown-menu" role="menu">
+          <a href="/about.html" role="menuitem">Our Story</a>
+          <a href="/team.html" role="menuitem">Team</a>
+          <a href="/racing.html" role="menuitem">Racing Heritage</a>
+          <a href="/awards.html" role="menuitem">Awards</a>
+          <a href="/partners.html" role="menuitem">Partners</a>
+          <a href="/news.html" role="menuitem">News</a>
+        </div>
+      </div>
+      <a href="/contact.html" class="nav-cta">Contact</a>
+    </div>
+    <button class="nav-hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobileNav">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <nav class="nav-mobile" id="mobileNav" aria-label="Mobile">
+    <a href="/portfolio.html" onclick="closeMobileNav()">Portfolio</a>
+    <a href="/services.html" onclick="closeMobileNav()">Services</a>
+    <a href="/design-plans.html" onclick="closeMobileNav()">Design Plans</a>
+    <div class="nav-mobile-group">
+      <a href="/about.html" onclick="closeMobileNav()">Our Story</a>
+      <a href="/team.html" onclick="closeMobileNav()">Team</a>
+      <a href="/racing.html" onclick="closeMobileNav()">Racing Heritage</a>
+      <a href="/awards.html" onclick="closeMobileNav()">Awards</a>
+      <a href="/americas-cup.html" onclick="closeMobileNav()">America&rsquo;s Cup</a>
+      <a href="/volvo-ocean-race.html" onclick="closeMobileNav()">Volvo Ocean Race</a>
+    </div>
+    <a href="/partners.html" onclick="closeMobileNav()">Partners</a>
+    <a href="/news.html" onclick="closeMobileNav()">News</a>
+    <a href="/contact.html" onclick="closeMobileNav()">Contact</a>
+  </nav>
+
+  <main id="main">
+    <div style="text-align:center; padding:6rem 2rem 4rem; max-width:600px; margin:0 auto;">
+      <div style="font-family:var(--font-heading); font-size:5rem; font-weight:700; color:var(--accent); line-height:1; margin-bottom:1rem;">500</div>
+      <h1 style="font-family:var(--font-heading); font-size:1.6rem; margin-bottom:1rem;">Something Went Wrong</h1>
+      <p style="color:var(--text-secondary); font-size:1rem; line-height:1.7; margin-bottom:2rem;">
+        We&rsquo;re experiencing a temporary issue. Please try again in a few moments,
+        or reach out to us directly if the problem persists.
+      </p>
+      <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+        <a href="/index.html" class="hero-cta" style="text-decoration:none;">Go Home</a>
+        <a href="/contact.html" class="hero-secondary" style="text-decoration:none;">Contact Us</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-grid" style="max-width:1100px; margin:0 auto; padding:3rem 2rem 1.5rem; display:grid; grid-template-columns:repeat(4,1fr); gap:2rem;">
+      <div>
+        <h4 style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--text-muted); margin-bottom:0.75rem;">Portfolio</h4>
+        <div style="display:flex; flex-direction:column; gap:0.4rem;">
+          <a href="/portfolio.html" style="font-size:0.85rem; color:var(--text-secondary);">All Designs</a>
+          <a href="/superyachts.html" style="font-size:0.85rem; color:var(--text-secondary);">Superyachts</a>
+          <a href="/racing.html" style="font-size:0.85rem; color:var(--text-secondary);">Racing</a>
+        </div>
+      </div>
+      <div>
+        <h4 style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--text-muted); margin-bottom:0.75rem;">Services</h4>
+        <div style="display:flex; flex-direction:column; gap:0.4rem;">
+          <a href="/services.html" style="font-size:0.85rem; color:var(--text-secondary);">Naval Architecture</a>
+          <a href="/consulting.html" style="font-size:0.85rem; color:var(--text-secondary);">Consulting</a>
+        </div>
+      </div>
+      <div>
+        <h4 style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--text-muted); margin-bottom:0.75rem;">About</h4>
+        <div style="display:flex; flex-direction:column; gap:0.4rem;">
+          <a href="/about.html" style="font-size:0.85rem; color:var(--text-secondary);">Our Story</a>
+          <a href="/team.html" style="font-size:0.85rem; color:var(--text-secondary);">Team</a>
+          <a href="/racing.html" style="font-size:0.85rem; color:var(--text-secondary);">Racing Heritage</a>
+          <a href="/partners.html" style="font-size:0.85rem; color:var(--text-secondary);">Partners</a>
+        </div>
+      </div>
+      <div>
+        <h4 style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--text-muted); margin-bottom:0.75rem;">Get Started</h4>
+        <div style="display:flex; flex-direction:column; gap:0.4rem;">
+          <a href="/contact.html" style="font-size:0.85rem; color:var(--text-secondary);">Contact</a>
+          <a href="/design-plans.html" style="font-size:0.85rem; color:var(--text-secondary);">Design Plans</a>
+        </div>
+      </div>
+    </div>
+    <div style="max-width:1100px; margin:0 auto; padding:1.5rem 2rem; border-top:1px solid var(--border); display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
+      <div class="nav-logo" style="font-size:1rem;">Farr <span>Yacht Design</span></div>
+      <p style="font-size:0.75rem; color:var(--text-muted); margin:0;">&copy; 2026 Farr Yacht Design &middot; Annapolis, MD &middot; &ldquo;Designed to Perform&rdquo;</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMobileNav() {
+      var nav = document.getElementById('mobileNav');
+      var hamburger = document.querySelector('.nav-hamburger');
+      var open = nav.classList.toggle('active');
+      hamburger.classList.toggle('active');
+      hamburger.setAttribute('aria-expanded', open);
+    }
+    function closeMobileNav() {
+      var nav = document.getElementById('mobileNav');
+      var hamburger = document.querySelector('.nav-hamburger');
+      nav.classList.remove('active');
+      hamburger.classList.remove('active');
+      hamburger.setAttribute('aria-expanded', 'false');
+    }
+    document.querySelector('.nav-hamburger').addEventListener('click', toggleMobileNav);
+    document.querySelectorAll('.nav-dropdown-toggle').forEach(function(toggle) {
+      toggle.addEventListener('click', function() {
+        var menu = this.nextElementSibling;
+        var expanded = this.getAttribute('aria-expanded') === 'true';
+        this.setAttribute('aria-expanded', !expanded);
+        if (menu) menu.style.display = expanded ? 'none' : 'block';
+      });
+    });
+    document.addEventListener('click', function(e) {
+      if (!e.target.closest('.nav-dropdown')) {
+        document.querySelectorAll('.nav-dropdown-menu').forEach(function(m) { m.style.display = 'none'; });
+        document.querySelectorAll('.nav-dropdown-toggle').forEach(function(t) { t.setAttribute('aria-expanded', 'false'); });
+      }
+    });
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        closeMobileNav();
+        document.querySelectorAll('.nav-dropdown-menu').forEach(function(m) { m.style.display = 'none'; });
+        document.querySelectorAll('.nav-dropdown-toggle').forEach(function(t) { t.setAttribute('aria-expanded', 'false'); });
+      }
+    });
+  </script>
+</body>
+</html>

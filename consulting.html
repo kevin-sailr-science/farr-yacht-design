@@ -16,30 +16,30 @@
 <script src="farr-analytics.js" defer></script></head>
 <body>
   <a href="#main" class="skip-link">Skip to content</a>
-  <nav>
+  <nav aria-label="Main">
     <a href="index.html" class="nav-logo">Farr <span>Yacht Design</span></a>
     <div class="nav-links">
       <a href="portfolio.html">Portfolio</a>
       <a href="services.html">Services</a>
       <a href="design-plans.html">Design Plans</a>
       <div class="nav-dropdown">
-        <span class="nav-dropdown-toggle nav-links a" tabindex="0" role="button" aria-expanded="false" aria-haspopup="true">About <span class="nav-arrow">&#9662;</span></span>
-        <div class="nav-dropdown-menu">
-          <a href="about.html">Our Story</a>
-          <a href="team.html">Team</a>
-          <a href="racing.html">Racing Heritage</a>
-          <a href="awards.html">Awards</a>
-          <a href="partners.html">Partners</a>
-          <a href="news.html">News</a>
+        <button class="nav-dropdown-toggle nav-links a" aria-expanded="false" aria-haspopup="true">About <span class="nav-arrow">&#9662;</span></button>
+        <div class="nav-dropdown-menu" role="menu">
+          <a href="about.html" role="menuitem">Our Story</a>
+          <a href="team.html" role="menuitem">Team</a>
+          <a href="racing.html" role="menuitem">Racing Heritage</a>
+          <a href="awards.html" role="menuitem">Awards</a>
+          <a href="partners.html" role="menuitem">Partners</a>
+          <a href="news.html" role="menuitem">News</a>
         </div>
       </div>
       <a href="contact.html" class="nav-cta">Contact</a>
     </div>
-    <div class="nav-hamburger" onclick="toggleMobileNav()" aria-label="Toggle navigation">
+    <button class="nav-hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobileNav">
       <span></span><span></span><span></span>
-    </div>
+    </button>
   </nav>
-  <div class="nav-mobile" id="mobileNav">
+  <nav class="nav-mobile" id="mobileNav" aria-label="Mobile">
     <a href="portfolio.html" onclick="closeMobileNav()">Portfolio</a>
     <a href="services.html" onclick="closeMobileNav()">Services</a>
     <a href="design-plans.html" onclick="closeMobileNav()">Design Plans</a>
@@ -54,7 +54,7 @@
     <a href="partners.html" onclick="closeMobileNav()">Partners</a>
     <a href="news.html" onclick="closeMobileNav()">News</a>
     <a href="contact.html" onclick="closeMobileNav()">Contact</a>
-  </div>
+  </nav>
   <main id="main">
     <div class="feature-hero" style="padding:4rem 2rem;text-align:center;">
       <div style="max-width:700px;margin:0 auto;">
