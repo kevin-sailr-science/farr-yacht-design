@@ -1315,6 +1315,11 @@ footer div[style*="border-top"] { border-top-color: rgba(255,255,255,0.15) !impo
   color: var(--text-muted); text-transform: uppercase;
   letter-spacing: 0.06em; margin-bottom: var(--space-md);
 }
+.partner-card { overflow: hidden; }
+.partner-card-img {
+  width: 100%; height: 180px; object-fit: cover;
+  border-radius: 8px 8px 0 0; display: block;
+}
 @media (max-width: 560px) {
   .news-grid { grid-template-columns: 1fr; }
 }
