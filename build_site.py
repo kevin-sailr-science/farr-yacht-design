@@ -125,7 +125,14 @@ def build_plan_section(boat):
 
     Single purchase path: if planId + planPrice exist → Stripe checkout.
     Everything else is a non-purchase state (waitlist / archive / coming soon).
+    Concept designs have no plans to sell — skip entirely.
     """
+    # Concept designs have no drawings to digitize or sell
+    design_type = boat.get("designType", "")
+    tags = boat.get("tags", [])
+    if design_type == "Concept" or "Concept" in tags:
+        return ""
+
     design_num = boat.get("designNumber", "")
     plan_id = boat.get("planId")
     plan_price = boat.get("planPrice")
@@ -599,10 +606,44 @@ def build_portfolio_page():
     decade_options = ''.join(f'<option value="{esc(d)}">{esc(d)}</option>' for d in decades_list)
     tag_options = ''.join(f'<option value="{esc(t)}">{esc(t)}</option>' for t in tags_used)
 
+    # Pick featured design: most recent visible design with image and description
+    featured_html = ''
+    featured_candidates = sorted(
+        [d for d in portfolio_data if d['hi'] and d['y'] > 0],
+        key=lambda d: d['y'], reverse=True
+    )
+    if featured_candidates:
+        import random
+        # Use day-of-year as seed for daily rotation
+        import datetime
+        seed = datetime.date.today().timetuple().tm_yday
+        random.seed(seed)
+        pool = featured_candidates[:20]  # top 20 most recent with images
+        fd = random.choice(pool)
+        fd_boat = next((b for b in boats if b.get('slug') == fd['s']), None)
+        fd_desc = ''
+        if fd_boat:
+            fd_desc = fd_boat.get('shortDescription') or ''
+        featured_html = f'''
+      <div style="margin-bottom:2rem;">
+        <p class="section-label" style="margin-bottom:0.5rem;">Featured Design</p>
+        <a href="/yacht/{esc(fd['s'])}.html" style="display:grid;grid-template-columns:280px 1fr;gap:1.5rem;background:var(--surface);border:1px solid var(--border);border-radius:8px;overflow:hidden;text-decoration:none;transition:border-color 0.2s;" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--border)'">
+          <div style="background-image:url('{fd['iu']}');background-size:cover;background-position:center;min-height:180px;"></div>
+          <div style="padding:1.25rem 1.25rem 1.25rem 0;display:flex;flex-direction:column;justify-content:center;">
+            <div style="font-size:0.75rem;color:var(--accent);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:0.25rem;">#{esc(fd['dn'] or fd['s'])}</div>
+            <div style="font-family:var(--font-heading);font-size:1.3rem;color:var(--text-primary);margin-bottom:0.4rem;">{esc(fd['n'])}</div>
+            <div style="font-size:0.85rem;color:var(--text-secondary);margin-bottom:0.5rem;">{esc(fd_desc)}</div>
+            <div style="font-size:0.8rem;color:var(--text-muted);">{fd['ys']}{' | ' + esc(fd['tg']) if fd['tg'] else ''}</div>
+          </div>
+        </a>
+      </div>'''
+
     content = f'''
     <div class="content-section" style="padding-top:2rem;">
       <h1 style="font-family:var(--font-heading);font-size:2.2rem;margin-bottom:0.5rem;">Portfolio</h1>
       <p style="color:var(--text-secondary);font-size:1rem;margin-bottom:1.5rem;">{total} designs spanning six decades of yacht design innovation.</p>
+
+      {featured_html}
 
       <!-- Search -->
       <div class="pf-search-row">

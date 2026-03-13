@@ -27113,10 +27113,11 @@
     "hasCardPDF": true,
     "cardDrawingCount": 22,
     "cardDrawingsAvailable": null,
-    "hidden": true,
+    "hidden": false,
     "tags": [
       "Production"
-    ]
+    ],
+    "visible": true
   },
   {
     "title": "668",
@@ -33380,8 +33381,8 @@
     "nid": 18503,
     "title": "673M",
     "slug": "673m",
-    "designNumber": "Bavaria Cruiser 56",
-    "name": null,
+    "designNumber": "673M",
+    "name": "Bavaria Cruiser 56",
     "year": 2012,
     "category": [],
     "classification": null,
@@ -33422,8 +33423,8 @@
     "nid": 5471,
     "title": "667 - Farr 25OD",
     "slug": "667-farr-25od",
-    "designNumber": "Farr 25OD",
-    "name": null,
+    "designNumber": "667",
+    "name": "Farr 25OD",
     "year": 2008,
     "category": [],
     "classification": null,
@@ -33451,8 +33452,9 @@
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false,
-    "yearEstimated": true
+    "hidden": true,
+    "yearEstimated": true,
+    "visible": false
   },
   {
     "title": "414_Wally",
