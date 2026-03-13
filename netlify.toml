@@ -319,3 +319,400 @@
 # RESEND_API_KEY            re_... (optional, for email delivery)
 # WAITLIST_NOTIFY_EMAIL     britton@farrdesign.com (optional admin notification)
 # Note: Stripe Price IDs are stored in boats.json (stripePriceId field), not as env vars
+
+# Leading-zero design slug redirects (Sprint 36 consolidation)
+[[redirects]]
+  from = "/yacht/021.html"
+  to = "/yacht/21.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/022.html"
+  to = "/yacht/22.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/023.html"
+  to = "/yacht/23.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/024.html"
+  to = "/yacht/24.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/025.html"
+  to = "/yacht/25.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/026.html"
+  to = "/yacht/26.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/027.html"
+  to = "/yacht/27.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/028.html"
+  to = "/yacht/28.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/029.html"
+  to = "/yacht/29.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/030.html"
+  to = "/yacht/30.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/031.html"
+  to = "/yacht/31.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/032.html"
+  to = "/yacht/32.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/033.html"
+  to = "/yacht/33.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/034.html"
+  to = "/yacht/34.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/035.html"
+  to = "/yacht/35.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/036.html"
+  to = "/yacht/36.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/037.html"
+  to = "/yacht/37.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/038.html"
+  to = "/yacht/38.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/039.html"
+  to = "/yacht/39.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/040.html"
+  to = "/yacht/40.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/041.html"
+  to = "/yacht/41.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/042.html"
+  to = "/yacht/42.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/043.html"
+  to = "/yacht/43.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/044.html"
+  to = "/yacht/44.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/045.html"
+  to = "/yacht/45.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/046.html"
+  to = "/yacht/46.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/047.html"
+  to = "/yacht/47.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/048.html"
+  to = "/yacht/48.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/049.html"
+  to = "/yacht/49.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/050.html"
+  to = "/yacht/50.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/051.html"
+  to = "/yacht/51.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/052.html"
+  to = "/yacht/52.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/053.html"
+  to = "/yacht/53.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/054.html"
+  to = "/yacht/54.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/055.html"
+  to = "/yacht/55.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/056.html"
+  to = "/yacht/56.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/057.html"
+  to = "/yacht/57.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/058.html"
+  to = "/yacht/58.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/059.html"
+  to = "/yacht/59.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/060.html"
+  to = "/yacht/60.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/061.html"
+  to = "/yacht/61.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/062.html"
+  to = "/yacht/62.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/063.html"
+  to = "/yacht/63.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/064.html"
+  to = "/yacht/64.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/065.html"
+  to = "/yacht/65.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/066.html"
+  to = "/yacht/66.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/067.html"
+  to = "/yacht/67.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/068.html"
+  to = "/yacht/68.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/069.html"
+  to = "/yacht/69.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/070.html"
+  to = "/yacht/70.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/071.html"
+  to = "/yacht/71.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/072.html"
+  to = "/yacht/72.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/073.html"
+  to = "/yacht/73.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/074.html"
+  to = "/yacht/74.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/075.html"
+  to = "/yacht/75.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/076.html"
+  to = "/yacht/76.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/077.html"
+  to = "/yacht/77.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/078.html"
+  to = "/yacht/78.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/079.html"
+  to = "/yacht/79.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/080.html"
+  to = "/yacht/80.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/081.html"
+  to = "/yacht/81.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/082.html"
+  to = "/yacht/82.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/083.html"
+  to = "/yacht/83.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/084.html"
+  to = "/yacht/84.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/085.html"
+  to = "/yacht/85.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/086.html"
+  to = "/yacht/86.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/087.html"
+  to = "/yacht/87.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/088.html"
+  to = "/yacht/88.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/089.html"
+  to = "/yacht/89.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/090.html"
+  to = "/yacht/90.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/091.html"
+  to = "/yacht/91.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/092.html"
+  to = "/yacht/92.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/093.html"
+  to = "/yacht/93.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/094.html"
+  to = "/yacht/94.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/095.html"
+  to = "/yacht/95.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/096.html"
+  to = "/yacht/96.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/097.html"
+  to = "/yacht/97.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/098.html"
+  to = "/yacht/98.html"
+  status = 301
+
+[[redirects]]
+  from = "/yacht/099.html"
+  to = "/yacht/99.html"
+  status = 301
+

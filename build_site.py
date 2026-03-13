@@ -977,7 +977,7 @@ def build_design_plans_page():
       <div class="feature-hero-inner">
         <p class="section-label">Design Plans</p>
         <h1>Original Farr Design Plans</h1>
-        <p class="hero-sub">Purchase and download original design drawings from the Farr Yacht Design archive &mdash; sail plans, lines drawings, deck layouts, and rig specifications spanning six decades.</p>
+        <p class="hero-sub">Purchase and download high-resolution design drawing PDFs from our archives for your personal use &mdash; for display at home or to support maintenance and repair. Buy the full set or only the drawing you need.</p>
       </div>
     </div>
 
@@ -1087,7 +1087,7 @@ def build_design_plans_page():
         <div class="callout-box">
           <p class="section-label">About the Archive</p>
           <h3>Over 900 Designs Since 1969</h3>
-          <p>The Farr Yacht Design archive spans the full history of the studio &mdash; from early production one-designs to America&rsquo;s Cup campaigns, ocean racers, and superyachts. Original drawings are held in Annapolis. Digitization is an ongoing program; new plan sets are added regularly. All plans are sold for personal use only. Commercial use or reproduction requires a separate licensing agreement &mdash; <a href="contact.html">contact us</a> to discuss.</p>
+          <p>The Farr Yacht Design archive spans the full history of the studio &mdash; from early production one-designs to America&rsquo;s Cup campaigns, ocean racers, and superyachts. Original drawings are held in Annapolis. Digitization is an ongoing program; new plan sets are added regularly. All plan purchases require acceptance of a usage agreement. Plans are sold for personal use only &mdash; display, maintenance, and repair. Construction of a new boat or replacement components requires a separate licensing agreement &mdash; <a href="contact.html">contact us</a> to discuss.</p>
         </div>
       </div>
     </section>

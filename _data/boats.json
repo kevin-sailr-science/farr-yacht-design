@@ -125,14 +125,14 @@
   },
   {
     "title": "024",
-    "slug": "024",
-    "designNumber": "024",
+    "slug": "24",
+    "designNumber": "24",
     "name": null,
     "year": 1971,
     "category": [],
     "classification": "",
     "designRule": "",
-    "designType": null,
+    "designType": "Dinghy",
     "specs": {
       "loa": {
         "m": null,
@@ -195,18 +195,18 @@
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": true
   },
   {
     "title": "025",
-    "slug": "025",
-    "designNumber": "025",
+    "slug": "25",
+    "designNumber": "25",
     "name": null,
     "year": 1971,
     "category": [],
     "classification": "",
     "designRule": "",
-    "designType": null,
+    "designType": "Dinghy",
     "specs": {
       "loa": {
         "m": null,
@@ -269,12 +269,12 @@
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": true
   },
   {
     "title": "026",
-    "slug": "026",
-    "designNumber": "026",
+    "slug": "26",
+    "designNumber": "26",
     "name": "MOONMAN",
     "year": 1971,
     "category": [],
@@ -299,10 +299,10 @@
         "ft": 16.25
       }
     },
-    "description": "Design 026, MOONMAN, is a dinghy designed by Farr Yacht Design in 1971. She has an overall length of 10 feet (3.0m).",
+    "description": "Design 26, General Purpose Rowing/Sailing Dinghy, is a dinghy designed by Farr Yacht Design in 1971. She has an overall length of 10 feet. Built by Moonman.",
     "shortDescription": "10 Dinghy",
     "shortSummary": "",
-    "builder": null,
+    "builder": "Moonman",
     "owner": null,
     "rigType": "",
     "rigMaterial": "",
@@ -370,13 +370,13 @@
     "hasCardPDF": true,
     "cardDrawingCount": 3,
     "cardDrawingsAvailable": 3,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
     "title": "027",
-    "slug": "027",
-    "designNumber": "027",
+    "slug": "27",
+    "designNumber": "27",
     "name": "TITUS CANBY",
     "year": 1971,
     "category": [],
@@ -405,10 +405,10 @@
         "lbs": 1740
       }
     },
-    "description": "Design 027, TITUS CANBY, is a cruising yacht designed by Farr Yacht Design in 1971. She has an overall length of 26 feet (8.1m).",
+    "description": "Design 27, 1/2 Ton, is a racing yacht designed by Farr Yacht Design in 1971. She has an overall length of 26 feet. Built by Titus Canby.",
     "shortDescription": "268\" Cruiser",
     "shortSummary": "",
-    "builder": null,
+    "builder": "Titus Canby",
     "owner": null,
     "rigType": "",
     "rigMaterial": "",
@@ -475,13 +475,13 @@
     "hasCardPDF": true,
     "cardDrawingCount": 19,
     "cardDrawingsAvailable": 19,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
     "title": "028",
-    "slug": "028",
-    "designNumber": "028",
+    "slug": "28",
+    "designNumber": "28",
     "name": "MOONSHINE",
     "year": 1971,
     "category": [],
@@ -510,10 +510,10 @@
         "lbs": 3300
       }
     },
-    "description": "Design 028, MOONSHINE, is a cruising yacht designed by Farr Yacht Design in 1971. She has an overall length of 33 feet (10.1m).",
+    "description": "Design 28, Plywood Keel Yacht, is a keel yacht designed by Farr Yacht Design in 1971. She has an overall length of 33 feet. Built by Bob Farrell.",
     "shortDescription": "33ft 3\" Cruiser",
     "shortSummary": "",
-    "builder": null,
+    "builder": "Bob Farrell",
     "owner": null,
     "rigType": "",
     "rigMaterial": "",
@@ -589,7 +589,7 @@
     "hasCardPDF": true,
     "cardDrawingCount": 12,
     "cardDrawingsAvailable": 11,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
@@ -636,14 +636,14 @@
   },
   {
     "title": "029",
-    "slug": "029",
-    "designNumber": "029",
+    "slug": "29",
+    "designNumber": "29",
     "name": 3.7,
     "year": 1973,
     "category": [],
     "classification": null,
     "designRule": null,
-    "designType": null,
+    "designType": "Dinghy",
     "specs": {
       "loa": {
         "m": 3.7,
@@ -666,10 +666,10 @@
         "sqft": 95
       }
     },
-    "description": "'<p style=\\\"text-align: justify\\\">The 3.7 offers the obvious excitement of single handed trapezing",
+    "description": "Design 29, 3.7 Metre Single-Handed Trapeze Yacht, is a dinghy designed by Farr Yacht Design in 1973. She has an overall length of 3.7 metres. Built by 3.7 Owners Assoc / John Elliot.",
     "shortDescription": "3.7M Singlehanded",
     "shortSummary": "'Single-handed trapeze centreboarder",
-    "builder": null,
+    "builder": "3.7 Owners Assoc / John Elliot",
     "owner": null,
     "rigType": null,
     "rigMaterial": null,
@@ -738,19 +738,19 @@
     "hasCardPDF": true,
     "cardDrawingCount": 5,
     "cardDrawingsAvailable": 5,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
     "title": "030",
-    "slug": "030",
-    "designNumber": "030",
+    "slug": "30",
+    "designNumber": "30",
     "name": null,
     "year": 1971,
     "category": [],
     "classification": "",
     "designRule": "",
-    "designType": null,
+    "designType": "Dinghy",
     "specs": {
       "loa": {
         "m": null,
@@ -817,12 +817,12 @@
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": true
   },
   {
     "title": "031",
-    "slug": "031",
-    "designNumber": "031",
+    "slug": "31",
+    "designNumber": "31",
     "name": null,
     "year": 1971,
     "category": [],
@@ -895,7 +895,7 @@
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": true
   },
   {
     "title": "31B",
@@ -942,14 +942,14 @@
   },
   {
     "title": "032",
-    "slug": "032",
-    "designNumber": "032",
-    "name": null,
+    "slug": "32",
+    "designNumber": "32",
+    "name": "Javelin",
     "year": 1971,
     "category": [],
     "classification": "",
     "designRule": "",
-    "designType": null,
+    "designType": "Dinghy",
     "specs": {
       "loa": {
         "m": null,
@@ -960,10 +960,10 @@
         "lbs": 0
       }
     },
-    "description": "Design 032 was created by Farr Yacht Design in 1971. She has an overall length of 12 feet.",
+    "description": "Design 32, Javelin, is a dinghy designed by Farr Yacht Design in 1971. Built by Javelin Class Squadron Auckland.",
     "shortDescription": "Javelin",
     "shortSummary": "",
-    "builder": null,
+    "builder": "Javelin Class Squadron Auckland",
     "owner": null,
     "rigType": "",
     "rigMaterial": "",
@@ -1019,19 +1019,19 @@
     "hasCardPDF": true,
     "cardDrawingCount": 6,
     "cardDrawingsAvailable": 6,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
     "title": "033",
-    "slug": "033",
-    "designNumber": "033",
+    "slug": "33",
+    "designNumber": "33",
     "name": "JOSHUA & AFFAKAZE",
     "year": 1971,
     "category": [],
     "classification": "",
     "designRule": "",
-    "designType": null,
+    "designType": "Dinghy",
     "specs": {
       "loa": {
         "m": null,
@@ -1042,7 +1042,7 @@
         "lbs": 0
       }
     },
-    "description": "Design 033, JOSHUA & AFFAKAZE, was designed by Farr Yacht Design in 1971. She has an overall length of 12 feet.",
+    "description": "Design 33, International Moth Mark IV, is a dinghy designed by Farr Yacht Design in 1971. She has an overall length of 12 feet.",
     "shortDescription": "Q Class",
     "shortSummary": "",
     "builder": null,
@@ -1105,19 +1105,19 @@
     "hasCardPDF": true,
     "cardDrawingCount": 5,
     "cardDrawingsAvailable": 5,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
     "title": "034",
-    "slug": "034",
-    "designNumber": "034",
+    "slug": "34",
+    "designNumber": "34",
     "name": "INTL MOTH MARK IV",
     "year": 1972,
     "category": [],
     "classification": "",
     "designRule": "",
-    "designType": null,
+    "designType": "Dinghy",
     "specs": {
       "loa": {
         "m": null,
@@ -1184,12 +1184,12 @@
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": true
   },
   {
     "title": "035",
-    "slug": "035",
-    "designNumber": "035",
+    "slug": "35",
+    "designNumber": "35",
     "name": null,
     "year": 1972,
     "category": [],
@@ -1267,18 +1267,18 @@
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": true
   },
   {
     "title": "036",
-    "slug": "036",
-    "designNumber": "036",
-    "name": null,
+    "slug": "36",
+    "designNumber": "36",
+    "name": "18' Racing Yacht",
     "year": 1972,
     "category": [],
     "classification": "",
     "designRule": "",
-    "designType": null,
+    "designType": "Dinghy",
     "specs": {
       "loa": {
         "m": null,
@@ -1289,7 +1289,7 @@
         "lbs": 0
       }
     },
-    "description": "Design 036 was created by Farr Yacht Design in 1972. She has an overall length of 12 feet.",
+    "description": "Design 36, 18' Racing Yacht, is a dinghy designed by Farr Yacht Design in 1972. She has an overall length of 18 feet.",
     "shortDescription": "Centerboard",
     "shortSummary": "",
     "builder": null,
@@ -1353,13 +1353,13 @@
     "hasCardPDF": true,
     "cardDrawingCount": 5,
     "cardDrawingsAvailable": 5,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
     "title": "037",
-    "slug": "037",
-    "designNumber": "037",
+    "slug": "37",
+    "designNumber": "37",
     "name": "FANZIPANZ",
     "year": 1972,
     "category": [],
@@ -1388,10 +1388,10 @@
         "lbs": 900
       }
     },
-    "description": "Design 037, FANZIPANZ, is a cruising yacht designed by Farr Yacht Design in 1972. She has an overall length of 23 feet (6.9m).",
+    "description": "Design 37, Farr 727, is a racing yacht designed by Farr Yacht Design in 1972. She has an overall length of 23 feet (6.9m). Built by Robin Harris.",
     "shortDescription": "23 Cruising Sloop",
     "shortSummary": "",
-    "builder": null,
+    "builder": "Robin Harris",
     "owner": null,
     "rigType": "",
     "rigMaterial": "",
@@ -1462,7 +1462,7 @@
     "hasCardPDF": true,
     "cardDrawingCount": 21,
     "cardDrawingsAvailable": 21,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
@@ -1513,9 +1513,9 @@
   },
   {
     "title": "038",
-    "slug": "038",
-    "designNumber": "038",
-    "name": null,
+    "slug": "38",
+    "designNumber": "38",
+    "name": "Racing & Cruising Yacht",
     "year": 1972,
     "category": [],
     "classification": "",
@@ -1531,7 +1531,7 @@
         "lbs": 0
       }
     },
-    "description": "Design 038 is a racing/cruising designed by Farr Yacht Design in 1972. She has an overall length of 36 feet.",
+    "description": "Design 38, Racing & Cruising Yacht, is a racing yacht designed by Farr Yacht Design in 1972. She has an overall length of 36 feet.",
     "shortDescription": "36 R/C",
     "shortSummary": "",
     "builder": null,
@@ -1599,13 +1599,13 @@
     "hasCardPDF": true,
     "cardDrawingCount": 1,
     "cardDrawingsAvailable": 1,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
     "title": "039",
-    "slug": "039",
-    "designNumber": "039",
+    "slug": "39",
+    "designNumber": "39",
     "name": "GERONTIUS",
     "year": 1973,
     "category": [],
@@ -1634,10 +1634,10 @@
         "lbs": 6200
       }
     },
-    "description": "Design 039, GERONTIUS, is a cruising yacht designed by Farr Yacht Design in 1973. She has an overall length of 42 feet (12.8m).",
+    "description": "Design 39, Kailua - Sloop, is a racing yacht designed by Farr Yacht Design in 1973. She has an overall length of 42 feet (12.8m). Built by John Senior.",
     "shortDescription": "42 Cruiser",
     "shortSummary": "",
-    "builder": null,
+    "builder": "John Senior",
     "owner": null,
     "rigType": "",
     "rigMaterial": "",
@@ -1705,19 +1705,19 @@
     "hasCardPDF": true,
     "cardDrawingCount": 8,
     "cardDrawingsAvailable": 8,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
     "title": "040",
-    "slug": "040",
-    "designNumber": "040",
+    "slug": "40",
+    "designNumber": "40",
     "name": null,
     "year": 1973,
     "category": [],
     "classification": "",
     "designRule": "",
-    "designType": null,
+    "designType": "Dinghy",
     "specs": {
       "loa": {
         "m": null,
@@ -1783,19 +1783,19 @@
     "hasCardPDF": true,
     "cardDrawingCount": 5,
     "cardDrawingsAvailable": 5,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
     "title": "041",
-    "slug": "041",
-    "designNumber": "041",
+    "slug": "41",
+    "designNumber": "41",
     "name": null,
     "year": 1973,
     "category": [],
     "classification": "",
     "designRule": "",
-    "designType": null,
+    "designType": "Dinghy",
     "specs": {
       "loa": {
         "m": null,
@@ -1861,13 +1861,13 @@
     "hasCardPDF": true,
     "cardDrawingCount": 8,
     "cardDrawingsAvailable": 8,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
     "title": "042",
-    "slug": "042",
-    "designNumber": "042",
+    "slug": "42",
+    "designNumber": "42",
     "name": "TRAVELODGE",
     "year": 1973,
     "category": [],
@@ -1963,29 +1963,29 @@
     "hasCardPDF": true,
     "cardDrawingCount": 9,
     "cardDrawingsAvailable": 6,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
     "title": "043",
-    "slug": "043",
-    "designNumber": "043",
-    "name": null,
+    "slug": "43",
+    "designNumber": "43",
+    "name": "18 Footer",
     "year": 1973,
     "category": [],
     "classification": "",
     "designRule": "",
-    "designType": null,
+    "designType": "Dinghy",
     "specs": {
       "loa": {
         "m": null,
         "ft": 18
       }
     },
-    "description": "Design 043 was created by Farr Yacht Design in 1973. She has an overall length of 18 feet.",
+    "description": "Design 43, 18 Footer, is a dinghy designed by Farr Yacht Design in 1973. She has an overall length of 18 feet. Built by Travelodge (NZ/NSW/QLD).",
     "shortDescription": "18 Centerboard",
     "shortSummary": "",
-    "builder": null,
+    "builder": "Travelodge (NZ/NSW/QLD)",
     "owner": null,
     "rigType": "",
     "rigMaterial": "",
@@ -2046,14 +2046,14 @@
     "hasCardPDF": true,
     "cardDrawingCount": 18,
     "cardDrawingsAvailable": 18,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
     "title": "044",
-    "slug": "044",
-    "designNumber": "044",
-    "name": null,
+    "slug": "44",
+    "designNumber": "44",
+    "name": "12ft Skiff (Aus. Rules)",
     "year": 1973,
     "category": [],
     "classification": "",
@@ -2065,10 +2065,10 @@
         "ft": 12
       }
     },
-    "description": "Design 044 is a dinghy designed by Farr Yacht Design in 1973. She has an overall length of 12 feet.",
+    "description": "Design 44, 12ft Skiff (Aus. Rules), is a dinghy designed by Farr Yacht Design in 1973. She has an overall length of 12 feet. Built by David Riley.",
     "shortDescription": "12 Skiff",
     "shortSummary": "",
-    "builder": null,
+    "builder": "David Riley",
     "owner": null,
     "rigType": "",
     "rigMaterial": "",
@@ -2129,13 +2129,13 @@
     "hasCardPDF": true,
     "cardDrawingCount": 7,
     "cardDrawingsAvailable": 7,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
     "title": "045",
-    "slug": "045",
-    "designNumber": "045",
+    "slug": "45",
+    "designNumber": "45",
     "name": "RASTUZ",
     "year": 1973,
     "category": [],
@@ -2148,7 +2148,7 @@
         "ft": 33
       }
     },
-    "description": "Design 045, RASTUZ, is a racing yacht designed by Farr Yacht Design in 1973. She has an overall length of 33 feet.",
+    "description": "Design 45, 3/4 Ton Rastuz, is a racing yacht designed by Farr Yacht Design in 1973. She has an overall length of 10.0 metres.",
     "shortDescription": "3/4 Ton",
     "shortSummary": "",
     "builder": null,
@@ -2214,14 +2214,14 @@
     "hasCardPDF": true,
     "cardDrawingCount": 4,
     "cardDrawingsAvailable": 4,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
     "title": "046",
-    "slug": "046",
-    "designNumber": "046",
-    "name": null,
+    "slug": "46",
+    "designNumber": "46",
+    "name": "1/2 Ton Racing Yacht",
     "year": 1973,
     "category": [],
     "classification": "",
@@ -2233,7 +2233,7 @@
         "ft": 29
       }
     },
-    "description": "Design 046 is a racing yacht designed by Farr Yacht Design in 1973. She has an overall length of 29 feet.",
+    "description": "Design 46, 1/2 Ton Racing Yacht, is a racing yacht designed by Farr Yacht Design in 1973. She has an overall length of 9.1 metres.",
     "shortDescription": "29 Racer",
     "shortSummary": "",
     "builder": null,
@@ -2297,26 +2297,26 @@
     "hasCardPDF": true,
     "cardDrawingCount": 3,
     "cardDrawingsAvailable": 3,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
     "title": "047",
-    "slug": "047",
-    "designNumber": "047",
-    "name": null,
+    "slug": "47",
+    "designNumber": "47",
+    "name": "18ft Centre Board Yacht",
     "year": 1973,
     "category": [],
     "classification": "",
     "designRule": "",
-    "designType": null,
+    "designType": "Dinghy",
     "specs": {
       "loa": {
         "m": null,
         "ft": 18
       }
     },
-    "description": "Design 047 was created by Farr Yacht Design in 1973. She has an overall length of 18 feet.",
+    "description": "Design 47, 18ft Centre Board Yacht, is a dinghy designed by Farr Yacht Design in 1973. She has an overall length of 18 feet.",
     "shortDescription": "18 Centerboard",
     "shortSummary": "",
     "builder": null,
@@ -2380,14 +2380,14 @@
     "hasCardPDF": true,
     "cardDrawingCount": 2,
     "cardDrawingsAvailable": 2,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
     "title": "048",
-    "slug": "048",
-    "designNumber": "048",
-    "name": null,
+    "slug": "48",
+    "designNumber": "48",
+    "name": "12ft Cherub Class Yacht",
     "year": 1972,
     "category": [],
     "classification": "",
@@ -2399,10 +2399,10 @@
         "ft": 12
       }
     },
-    "description": "Design 048 is a dinghy designed by Farr Yacht Design in 1972. She has an overall length of 12 feet.",
+    "description": "Design 48, 12ft Cherub Class Yacht, is a dinghy designed by Farr Yacht Design in 1972. She has an overall length of 12 feet. Built by D.C. Rogers.",
     "shortDescription": "12 Cherub",
     "shortSummary": "",
-    "builder": null,
+    "builder": "D.C. Rogers",
     "owner": null,
     "rigType": "",
     "rigMaterial": "",
@@ -2475,14 +2475,14 @@
     "hasCardPDF": true,
     "cardDrawingCount": 5,
     "cardDrawingsAvailable": 5,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
     "title": "049",
-    "slug": "049",
-    "designNumber": "049",
-    "name": null,
+    "slug": "49",
+    "designNumber": "49",
+    "name": "Q Class Plans",
     "year": 1973,
     "category": [],
     "classification": "",
@@ -2494,7 +2494,7 @@
         "ft": 12
       }
     },
-    "description": "Design 049 is a dinghy designed by Farr Yacht Design in 1973. She has an overall length of 12 feet.",
+    "description": "Design 49, Q Class Plans, is a dinghy designed by Farr Yacht Design in 1973. She has an overall length of 12 feet.",
     "shortDescription": "12 Skiff",
     "shortSummary": "",
     "builder": null,
@@ -2557,29 +2557,29 @@
     "hasCardPDF": true,
     "cardDrawingCount": 3,
     "cardDrawingsAvailable": 3,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
     "title": "050",
-    "slug": "050",
-    "designNumber": "050",
-    "name": null,
+    "slug": "50",
+    "designNumber": "50",
+    "name": "18 Footer",
     "year": 1973,
     "category": [],
     "classification": "",
     "designRule": "",
-    "designType": null,
+    "designType": "Dinghy",
     "specs": {
       "loa": {
         "m": null,
         "ft": 18
       }
     },
-    "description": "Design 050 was created by Farr Yacht Design in 1973. She has an overall length of 18 feet.",
+    "description": "Design 50, 18 Footer, is a dinghy designed by Farr Yacht Design in 1973. She has an overall length of 18 feet. Built by KB/Kwikasair/Hellaby/Franklin Caravans/Ansett/Fielders/Century Battery/Faberge.",
     "shortDescription": "18 Centerboard",
     "shortSummary": "",
-    "builder": null,
+    "builder": "KB/Kwikasair/Hellaby/Franklin Caravans/Ansett/Fielders/Century Battery/Faberge",
     "owner": null,
     "rigType": "",
     "rigMaterial": "",
@@ -2640,13 +2640,13 @@
     "hasCardPDF": true,
     "cardDrawingCount": 19,
     "cardDrawingsAvailable": 19,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
     "title": "051",
-    "slug": "051",
-    "designNumber": "051",
+    "slug": "51",
+    "designNumber": "51",
     "name": "FARR 1104",
     "year": 1975,
     "category": [],
@@ -2675,10 +2675,10 @@
         "lbs": 3411
       }
     },
-    "description": "Design 051, FARR 1104, is a racing yacht designed by Farr Yacht Design in 1975. She has an overall length of 36 feet (11.0m).",
+    "description": "Design 51, One Ton Sloop, is a racing yacht designed by Farr Yacht Design in 1975. She has an overall length of 11.0 metres. Built by Glass Yachts Ltd.",
     "shortDescription": "1 Ton",
     "shortSummary": "",
-    "builder": null,
+    "builder": "Glass Yachts Ltd",
     "owner": null,
     "rigType": "",
     "rigMaterial": "",
@@ -2752,7 +2752,7 @@
     "hasCardPDF": true,
     "cardDrawingCount": 17,
     "cardDrawingsAvailable": 14,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
@@ -2847,9 +2847,9 @@
   },
   {
     "title": "052",
-    "slug": "052",
-    "designNumber": "052",
-    "name": null,
+    "slug": "52",
+    "designNumber": "52",
+    "name": "12ft Q Class",
     "year": 1973,
     "category": [],
     "classification": "",
@@ -2869,7 +2869,7 @@
         "ft": null
       }
     },
-    "description": "Design 052 is a dinghy designed by Farr Yacht Design in 1973. She has an overall length of 12 feet (3.7m).",
+    "description": "Design 52, 12ft Q Class, is a dinghy designed by Farr Yacht Design in 1973. She has an overall length of 12 feet.",
     "shortDescription": "12 Doublehanded Skiff",
     "shortSummary": "",
     "builder": null,
@@ -2941,14 +2941,14 @@
     "hasCardPDF": true,
     "cardDrawingCount": 7,
     "cardDrawingsAvailable": 7,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
     "title": "053",
-    "slug": "053",
-    "designNumber": "053",
-    "name": null,
+    "slug": "53",
+    "designNumber": "53",
+    "name": "Burmester 1/4 Ton",
     "year": 1975,
     "category": [],
     "classification": "",
@@ -2976,10 +2976,10 @@
         "lbs": 965
       }
     },
-    "description": "Design 053 is a racing yacht designed by Farr Yacht Design in 1975. She has an overall length of 24 feet (7.3m).",
+    "description": "Design 53, Burmester 1/4 Ton, is a racing yacht designed by Farr Yacht Design in 1975. She has an overall length of 24 feet. Built by Burmester.",
     "shortDescription": "1/4 Ton",
     "shortSummary": "",
-    "builder": null,
+    "builder": "Burmester",
     "owner": null,
     "rigType": "",
     "rigMaterial": "",
@@ -3043,13 +3043,13 @@
     "hasCardPDF": true,
     "cardDrawingCount": 6,
     "cardDrawingsAvailable": 6,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
     "title": "054",
-    "slug": "054",
-    "designNumber": "054",
+    "slug": "54",
+    "designNumber": "54",
     "name": "FARR 30/920",
     "year": 1976,
     "category": [],
@@ -3078,10 +3078,10 @@
         "lbs": 1909
       }
     },
-    "description": "Design 054, FARR 30/920, is a racing yacht designed by Farr Yacht Design in 1976. She has an overall length of 30 feet (9.1m).",
+    "description": "Design 54, 1/2 Ton Sloop, is a racing yacht designed by Farr Yacht Design in 1976. She has an overall length of 9.1 metres. Built by Jack Cassidy / Digby Knapp / Alpha Marine / North Star Yachts / Multiple.",
     "shortDescription": "1/2 Ton",
     "shortSummary": "",
-    "builder": null,
+    "builder": "Jack Cassidy / Digby Knapp / Alpha Marine / North Star Yachts / Multiple",
     "owner": null,
     "rigType": "",
     "rigMaterial": "",
@@ -3152,7 +3152,7 @@
     "hasCardPDF": true,
     "cardDrawingCount": 48,
     "cardDrawingsAvailable": 48,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
@@ -3197,9 +3197,9 @@
   },
   {
     "title": "055",
-    "slug": "055",
-    "designNumber": "055",
-    "name": null,
+    "slug": "55",
+    "designNumber": "55",
+    "name": "Dynamite",
     "year": 1976,
     "category": [],
     "classification": "",
@@ -3211,10 +3211,10 @@
         "ft": 30
       }
     },
-    "description": "Design 055 is a racing yacht designed by Farr Yacht Design in 1976. She has an overall length of 30 feet.",
+    "description": "Design 55, Dynamite, is a racing yacht designed by Farr Yacht Design in 1976. Built by Paul Smith, Adelaide.",
     "shortDescription": "2 Ton",
     "shortSummary": "",
-    "builder": null,
+    "builder": "Paul Smith, Adelaide",
     "owner": null,
     "rigType": "",
     "rigMaterial": "",
@@ -3270,13 +3270,13 @@
     "hasCardPDF": true,
     "cardDrawingCount": 7,
     "cardDrawingsAvailable": 5,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
     "title": "056",
-    "slug": "056",
-    "designNumber": "056",
+    "slug": "56",
+    "designNumber": "56",
     "name": "JOE LOUIS",
     "year": 1977,
     "category": [],
@@ -3305,10 +3305,10 @@
         "lbs": 2522
       }
     },
-    "description": "Design 056, JOE LOUIS, is a racing yacht designed by Farr Yacht Design in 1977. She has an overall length of 33 feet (10.2m).",
+    "description": "Design 56, 3/4 Ton Ocean Racing Yacht, is a racing yacht designed by Farr Yacht Design in 1977. She has an overall length of 33 feet (10.2m). Built by Eric Simian.",
     "shortDescription": "3/4 Ton",
     "shortSummary": "",
-    "builder": null,
+    "builder": "Eric Simian",
     "owner": null,
     "rigType": "",
     "rigMaterial": "",
@@ -3376,13 +3376,13 @@
     "hasCardPDF": true,
     "cardDrawingCount": 6,
     "cardDrawingsAvailable": 6,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
     "title": "057",
-    "slug": "057",
-    "designNumber": "057",
+    "slug": "57",
+    "designNumber": "57",
     "name": "FARR 6000",
     "year": 1977,
     "category": [],
@@ -3419,10 +3419,10 @@
         "lbs": 535
       }
     },
-    "description": "Design 057, FARR 6000, is a cruising yacht designed by Farr Yacht Design in 1977. She has an overall length of 20 feet (6.1m).",
+    "description": "Design 57, 6 Metre LOA Trailer Sailer, is a trailer sailer designed by Farr Yacht Design in 1977. She has an overall length of 6.0 metres. Built by Sea Nymph.",
     "shortDescription": "20 Cruiser",
     "shortSummary": "",
-    "builder": null,
+    "builder": "Sea Nymph",
     "owner": null,
     "rigType": "",
     "rigMaterial": "",
@@ -3490,14 +3490,14 @@
     "hasCardPDF": true,
     "cardDrawingCount": 9,
     "cardDrawingsAvailable": 9,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
     "title": "058",
-    "slug": "058",
-    "designNumber": "058",
-    "name": null,
+    "slug": "58",
+    "designNumber": "58",
+    "name": "Admirals Cup Ocean Racing Yacht - 2 Ton",
     "year": 1977,
     "category": [],
     "classification": "",
@@ -3509,10 +3509,10 @@
         "ft": 42
       }
     },
-    "description": "Design 058 is a racing yacht designed by Farr Yacht Design in 1977. She has an overall length of 42 feet.",
+    "description": "Design 58, Admirals Cup Ocean Racing Yacht - 2 Ton, is a racing yacht designed by Farr Yacht Design in 1977. She has an overall length of 42 feet. Built by Vinna Mara.",
     "shortDescription": "2 Ton",
     "shortSummary": "",
-    "builder": null,
+    "builder": "Vinna Mara",
     "owner": null,
     "rigType": "",
     "rigMaterial": "",
@@ -3572,14 +3572,14 @@
     "hasCardPDF": true,
     "cardDrawingCount": 16,
     "cardDrawingsAvailable": 16,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
     "title": "059",
-    "slug": "059",
-    "designNumber": "059",
-    "name": null,
+    "slug": "59",
+    "designNumber": "59",
+    "name": "One Ton Ocean Racing Yacht",
     "year": 1977,
     "category": [],
     "classification": "",
@@ -3591,10 +3591,10 @@
         "ft": 30
       }
     },
-    "description": "Design 059 is a racing yacht designed by Farr Yacht Design in 1977. She has an overall length of 30 feet.",
+    "description": "Design 59, One Ton Ocean Racing Yacht, is a racing yacht designed by Farr Yacht Design in 1977. She has an overall length of 30 feet. Built by Charles Davies.",
     "shortDescription": "1 Ton",
     "shortSummary": "",
-    "builder": null,
+    "builder": "Charles Davies",
     "owner": null,
     "rigType": "",
     "rigMaterial": "",
@@ -3654,13 +3654,13 @@
     "hasCardPDF": true,
     "cardDrawingCount": 14,
     "cardDrawingsAvailable": 14,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
     "title": "060",
-    "slug": "060",
-    "designNumber": "060",
+    "slug": "60",
+    "designNumber": "60",
     "name": "ZAMAZAAN",
     "year": 1977,
     "category": [],
@@ -3754,12 +3754,12 @@
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": true
   },
   {
     "title": "061",
-    "slug": "061",
-    "designNumber": "061",
+    "slug": "61",
+    "designNumber": "61",
     "name": "GRANNY APPLE",
     "year": 1977,
     "category": [],
@@ -3772,10 +3772,10 @@
         "ft": 38
       }
     },
-    "description": "Design 061, GRANNY APPLE, is a racing yacht designed by Farr Yacht Design in 1977. She has an overall length of 38 feet.",
+    "description": "Design 61, One Ton (Keel) Ocean Racing Yacht, is a racing yacht designed by Farr Yacht Design in 1977. She has an overall length of 38 feet. Built by Keeling & Wall.",
     "shortDescription": "1 Ton",
     "shortSummary": "",
-    "builder": null,
+    "builder": "Keeling & Wall",
     "owner": null,
     "rigType": "",
     "rigMaterial": "",
@@ -3835,13 +3835,13 @@
     "hasCardPDF": true,
     "cardDrawingCount": 9,
     "cardDrawingsAvailable": 9,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
     "title": "062",
-    "slug": "062",
-    "designNumber": "062",
+    "slug": "62",
+    "designNumber": "62",
     "name": "JENNY H",
     "year": 1977,
     "category": [],
@@ -3854,10 +3854,10 @@
         "ft": 38
       }
     },
-    "description": "Design 062, JENNY H, is a racing yacht designed by Farr Yacht Design in 1977. She has an overall length of 38 feet.",
+    "description": "Design 62, One Ton Ocean Racing Yacht - Jenny H, is a racing yacht designed by Farr Yacht Design in 1977. She has an overall length of 38 feet. Built by Ray Haslar.",
     "shortDescription": "1 Ton",
     "shortSummary": "",
-    "builder": null,
+    "builder": "Ray Haslar",
     "owner": null,
     "rigType": "",
     "rigMaterial": "",
@@ -3917,13 +3917,13 @@
     "hasCardPDF": true,
     "cardDrawingCount": 12,
     "cardDrawingsAvailable": 12,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
     "title": "063",
-    "slug": "063",
-    "designNumber": "063",
+    "slug": "63",
+    "designNumber": "63",
     "name": "SMIRNOFFAGEN",
     "year": 1977,
     "category": [],
@@ -3936,10 +3936,10 @@
         "ft": 30
       }
     },
-    "description": "Design 063, SMIRNOFFAGEN, is a racing yacht designed by Farr Yacht Design in 1977. She has an overall length of 30 feet.",
+    "description": "Design 63, One Ton Ocean Racing Yacht, is a racing yacht designed by Farr Yacht Design in 1977. She has an overall length of 30 feet. Built by Ron Lidgard.",
     "shortDescription": "1 Ton",
     "shortSummary": "",
-    "builder": null,
+    "builder": "Ron Lidgard",
     "owner": null,
     "rigType": "",
     "rigMaterial": "",
@@ -3999,13 +3999,13 @@
     "hasCardPDF": true,
     "cardDrawingCount": 12,
     "cardDrawingsAvailable": 12,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
     "title": "064",
-    "slug": "064",
-    "designNumber": "064",
+    "slug": "64",
+    "designNumber": "64",
     "name": "RED LION",
     "year": 1977,
     "category": [],
@@ -4107,12 +4107,12 @@
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": true
   },
   {
     "title": "065",
-    "slug": "065",
-    "designNumber": "065",
+    "slug": "65",
+    "designNumber": "65",
     "name": "GUNBOAT RANGIRIRI",
     "year": 1977,
     "category": [],
@@ -4141,10 +4141,10 @@
         "lbs": 2500
       }
     },
-    "description": "Design 065, GUNBOAT RANGIRIRI, is a racing yacht designed by Farr Yacht Design in 1977. She has an overall length of 31 feet (9.5m).",
+    "description": "Design 65, Half Ton Ocean Racing Yacht, is a racing yacht designed by Farr Yacht Design in 1977. She has an overall length of 31 feet (9.5m). Built by T.P.D. Willcox.",
     "shortDescription": "1/2 Ton",
     "shortSummary": "",
-    "builder": null,
+    "builder": "T.P.D. Willcox",
     "owner": null,
     "rigType": "",
     "rigMaterial": "",
@@ -4215,13 +4215,13 @@
     "hasCardPDF": true,
     "cardDrawingCount": 12,
     "cardDrawingsAvailable": 12,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
     "title": "066",
-    "slug": "066",
-    "designNumber": "066",
+    "slug": "66",
+    "designNumber": "66",
     "name": "MR JUMPA",
     "year": 1977,
     "category": [],
@@ -4234,10 +4234,10 @@
         "ft": 38
       }
     },
-    "description": "Design 066, MR JUMPA, is a racing yacht designed by Farr Yacht Design in 1977. She has an overall length of 38 feet.",
+    "description": "Design 66, One Ton Ocean Racing Yacht, is a racing yacht designed by Farr Yacht Design in 1977. She has an overall length of 38 feet. Built by Graham Woodroffe.",
     "shortDescription": "1 Ton",
     "shortSummary": "",
-    "builder": null,
+    "builder": "Graham Woodroffe",
     "owner": null,
     "rigType": "",
     "rigMaterial": "",
@@ -4304,14 +4304,14 @@
     "hasCardPDF": true,
     "cardDrawingCount": 15,
     "cardDrawingsAvailable": 15,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
     "title": "067",
-    "slug": "067",
-    "designNumber": "067",
-    "name": null,
+    "slug": "67",
+    "designNumber": "67",
+    "name": "13 Metre Ocean Racing Yacht",
     "year": 1977,
     "category": [],
     "classification": "",
@@ -4339,10 +4339,10 @@
         "lbs": 5291
       }
     },
-    "description": "Design 067 is a racing yacht designed by Farr Yacht Design in 1977. She has an overall length of 42 feet (12.9m).",
+    "description": "Design 67, 13 Metre Ocean Racing Yacht, is a racing yacht designed by Farr Yacht Design in 1977. She has an overall length of 13.0 metres. Built by Jim Powell.",
     "shortDescription": "2 Ton",
     "shortSummary": "",
-    "builder": null,
+    "builder": "Jim Powell",
     "owner": null,
     "rigType": "",
     "rigMaterial": "",
@@ -4411,14 +4411,14 @@
     "hasCardPDF": true,
     "cardDrawingCount": 13,
     "cardDrawingsAvailable": 13,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
     "title": "068",
-    "slug": "068",
-    "designNumber": "068",
-    "name": null,
+    "slug": "68",
+    "designNumber": "68",
+    "name": "13 Metre Ocean Racing Yacht",
     "year": 1977,
     "category": [],
     "classification": "",
@@ -4430,10 +4430,10 @@
         "ft": 42
       }
     },
-    "description": "Design 068 is a racing/cruising designed by Farr Yacht Design in 1977. She has an overall length of 42 feet.",
+    "description": "Design 68, 13 Metre Ocean Racing Yacht, is a racing yacht designed by Farr Yacht Design in 1977. She has an overall length of 13.0 metres. Built by Paul Smith / Ron Clemens.",
     "shortDescription": "42 R/C",
     "shortSummary": "",
-    "builder": null,
+    "builder": "Paul Smith / Ron Clemens",
     "owner": null,
     "rigType": "",
     "rigMaterial": "",
@@ -4494,14 +4494,14 @@
     "hasCardPDF": true,
     "cardDrawingCount": 13,
     "cardDrawingsAvailable": 13,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
     "title": "071",
-    "slug": "071",
-    "designNumber": "071",
-    "name": null,
+    "slug": "71",
+    "designNumber": "71",
+    "name": "One Ton (Keel) Ocean Racing Yacht",
     "year": 1978,
     "category": [],
     "classification": "",
@@ -4513,10 +4513,10 @@
         "ft": 37
       }
     },
-    "description": "Design 071 is a racing yacht designed by Farr Yacht Design in 1978. She has an overall length of 37 feet.",
+    "description": "Design 71, One Ton (Keel) Ocean Racing Yacht, is a racing yacht designed by Farr Yacht Design in 1978. She has an overall length of 37 feet. Built by Stan Best.",
     "shortDescription": "1 Ton",
     "shortSummary": "",
-    "builder": null,
+    "builder": "Stan Best",
     "owner": null,
     "rigType": "",
     "rigMaterial": "",
@@ -4576,13 +4576,13 @@
     "hasCardPDF": true,
     "cardDrawingCount": 9,
     "cardDrawingsAvailable": 9,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
     "title": "072",
-    "slug": "072",
-    "designNumber": "072",
+    "slug": "72",
+    "designNumber": "72",
     "name": "FARR 38",
     "year": 1978,
     "category": [],
@@ -4769,7 +4769,7 @@
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false,
+    "hidden": true,
     "planFiles": [
       {
         "filename": "072 Binks Farr 38 Liner Grid Fibreglass Layup.pdf",
@@ -4904,9 +4904,9 @@
   },
   {
     "title": "073",
-    "slug": "073",
-    "designNumber": "073",
-    "name": null,
+    "slug": "73",
+    "designNumber": "73",
+    "name": "Two Ton Ocean Racing Yacht",
     "year": 1978,
     "category": [],
     "classification": "",
@@ -4918,10 +4918,10 @@
         "ft": 38
       }
     },
-    "description": "Design 073 is a racing yacht designed by Farr Yacht Design in 1978. She has an overall length of 38 feet.",
+    "description": "Design 73, Two Ton Ocean Racing Yacht, is a racing yacht designed by Farr Yacht Design in 1978. Built by Bruce Campbell.",
     "shortDescription": "2 Ton",
     "shortSummary": "",
-    "builder": null,
+    "builder": "Bruce Campbell",
     "owner": null,
     "rigType": "",
     "rigMaterial": "",
@@ -4977,19 +4977,19 @@
     "hasCardPDF": true,
     "cardDrawingCount": 13,
     "cardDrawingsAvailable": 13,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
     "title": "074",
-    "slug": "074",
-    "designNumber": "074",
+    "slug": "74",
+    "designNumber": "74",
     "name": "FARR 5000",
     "year": 1978,
     "category": [],
     "classification": "",
     "designRule": "",
-    "designType": null,
+    "designType": "Trailer Sailer",
     "specs": {
       "loa": {
         "m": 5.09,
@@ -5020,10 +5020,10 @@
         "lbs": 397
       }
     },
-    "description": "Design 074, FARR 5000, was designed by Farr Yacht Design in 1978. She has an overall length of 17 feet (5.1m).",
+    "description": "Design 74, 5.0 Metre LOA Trailer Sailer, is a trailer sailer designed by Farr Yacht Design in 1978. She has an overall length of 5.0 metres. Built by Sea Nymph Boats Ltd.",
     "shortDescription": "17 Trailer Yacht",
     "shortSummary": "",
-    "builder": null,
+    "builder": "Sea Nymph Boats Ltd",
     "owner": null,
     "rigType": "",
     "rigMaterial": "",
@@ -5091,19 +5091,19 @@
     "hasCardPDF": true,
     "cardDrawingCount": 12,
     "cardDrawingsAvailable": 11,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
     "title": "076",
-    "slug": "076",
-    "designNumber": "076",
+    "slug": "76",
+    "designNumber": "76",
     "name": "FARR 7500",
     "year": 1978,
     "category": [],
     "classification": "",
     "designRule": "",
-    "designType": null,
+    "designType": "Trailer Sailer",
     "specs": {
       "loa": {
         "m": 7.548,
@@ -5134,10 +5134,10 @@
         "lbs": 770
       }
     },
-    "description": "Design 076, FARR 7500, was designed by Farr Yacht Design in 1978. She has an overall length of 25 feet (7.5m).",
+    "description": "Design 76, 7.5 Metre LOA Trailerable Yacht, is a trailer sailer designed by Farr Yacht Design in 1978. She has an overall length of 7.5 metres. Built by Sea Nymph Boats Ltd.",
     "shortDescription": "25 Trailer Yacht",
     "shortSummary": "",
-    "builder": null,
+    "builder": "Sea Nymph Boats Ltd",
     "owner": null,
     "rigType": "",
     "rigMaterial": "",
@@ -5205,14 +5205,14 @@
     "hasCardPDF": true,
     "cardDrawingCount": 14,
     "cardDrawingsAvailable": 14,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
     "title": "078",
-    "slug": "078",
-    "designNumber": "078",
-    "name": null,
+    "slug": "78",
+    "designNumber": "78",
+    "name": "One Ton Ocean Racing Yacht",
     "year": 1979,
     "category": [],
     "classification": "",
@@ -5244,10 +5244,10 @@
         "lbs": 3825
       }
     },
-    "description": "Design 078 is a racing yacht designed by Farr Yacht Design in 1979. She has an overall length of 36 feet (11.2m).",
+    "description": "Design 78, One Ton Ocean Racing Yacht, is a racing yacht designed by Farr Yacht Design in 1979. She has an overall length of 36 feet. Built by J. Hinkle / Tidewater USA.",
     "shortDescription": "1 Ton",
     "shortSummary": "",
-    "builder": null,
+    "builder": "J. Hinkle / Tidewater USA",
     "owner": null,
     "rigType": "",
     "rigMaterial": "",
@@ -5311,13 +5311,13 @@
     "hasCardPDF": true,
     "cardDrawingCount": 12,
     "cardDrawingsAvailable": 12,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
     "title": "079",
-    "slug": "079",
-    "designNumber": "079",
+    "slug": "79",
+    "designNumber": "79",
     "name": "EXPORT LION",
     "year": 1980,
     "category": [],
@@ -5350,10 +5350,10 @@
         "lbs": 3208
       }
     },
-    "description": "Design 079, EXPORT LION, is a racing yacht designed by Farr Yacht Design in 1980. She has an overall length of 37 feet (11.2m).",
+    "description": "Design 79, One Ton Ocean Racing Yacht, is a racing yacht designed by Farr Yacht Design in 1980. She has an overall length of 37 feet. Built by Stu. Brentnall, Auckland.",
     "shortDescription": "1 Ton",
     "shortSummary": "",
-    "builder": null,
+    "builder": "Stu. Brentnall, Auckland",
     "owner": null,
     "rigType": "",
     "rigMaterial": "",
@@ -5413,19 +5413,19 @@
     "hasCardPDF": true,
     "cardDrawingCount": 11,
     "cardDrawingsAvailable": 11,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
     "title": "080",
-    "slug": "080",
-    "designNumber": "080",
+    "slug": "80",
+    "designNumber": "80",
     "name": null,
     "year": 1980,
     "category": [],
     "classification": "",
     "designRule": "",
-    "designType": null,
+    "designType": "Dinghy",
     "specs": {
       "loa": {
         "m": 14,
@@ -5513,18 +5513,18 @@
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": true
   },
   {
     "title": "081",
-    "slug": "081",
-    "designNumber": "081",
+    "slug": "81",
+    "designNumber": "81",
     "name": "DISQUE DOR",
     "year": 1981,
     "category": [],
     "classification": "",
     "designRule": "",
-    "designType": null,
+    "designType": "Racing Yacht",
     "specs": {
       "loa": {
         "m": 17.78,
@@ -5547,10 +5547,10 @@
         "lbs": 13536
       }
     },
-    "description": "Design 081, DISQUE DOR, was designed by Farr Yacht Design in 1981. She has an overall length of 58 feet (17.8m).",
+    "description": "Design 81, 16.80 Metre Ocean Racing Yacht, is a racing yacht designed by Farr Yacht Design in 1981. She has an overall length of 16.8 metres. Built by Swiss Ocean Racing Club.",
     "shortDescription": "WRTWR Maxi",
     "shortSummary": "",
-    "builder": null,
+    "builder": "Swiss Ocean Racing Club",
     "owner": null,
     "rigType": "",
     "rigMaterial": "",
@@ -5661,7 +5661,7 @@
     "hasCardPDF": true,
     "cardDrawingCount": 8,
     "cardDrawingsAvailable": 8,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false,
     "planFiles": [
       {
@@ -5709,8 +5709,8 @@
   },
   {
     "title": "082",
-    "slug": "082",
-    "designNumber": "082",
+    "slug": "82",
+    "designNumber": "82",
     "name": "ROPE RUNNER",
     "year": 1979,
     "category": [],
@@ -5751,10 +5751,10 @@
         "ft": 45.416666666666664
       }
     },
-    "description": "Design 082, ROPE RUNNER, is a racing yacht designed by Farr Yacht Design in 1979. She has an overall length of 40 feet (12.0m).",
+    "description": "Design 82, Minimum Admirals Cup Yacht, is a racing yacht designed by Farr Yacht Design in 1979. She has an overall length of 40 feet. Built by Admiral Exporters Partnership.",
     "shortDescription": "IOR 40",
     "shortSummary": "",
-    "builder": null,
+    "builder": "Admiral Exporters Partnership",
     "owner": null,
     "rigType": "",
     "rigMaterial": "",
@@ -5821,14 +5821,14 @@
     "hasCardPDF": true,
     "cardDrawingCount": 15,
     "cardDrawingsAvailable": 15,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
     "title": "083",
-    "slug": "083",
-    "designNumber": "083",
-    "name": null,
+    "slug": "83",
+    "designNumber": "83",
+    "name": "18 Foot Racing Yacht",
     "year": 1979,
     "category": [],
     "classification": "",
@@ -5840,10 +5840,10 @@
         "ft": 18
       }
     },
-    "description": "Design 083 is a dinghy designed by Farr Yacht Design in 1979. She has an overall length of 18 feet.",
+    "description": "Design 83, 18 Foot Racing Yacht, is a racing yacht designed by Farr Yacht Design in 1979. She has an overall length of 18 feet. Built by K. & T. McDell.",
     "shortDescription": "18 Skiff",
     "shortSummary": "",
-    "builder": null,
+    "builder": "K. & T. McDell",
     "owner": null,
     "rigType": "",
     "rigMaterial": "",
@@ -5904,13 +5904,13 @@
     "hasCardPDF": true,
     "cardDrawingCount": 2,
     "cardDrawingsAvailable": 2,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
     "title": "084",
-    "slug": "084",
-    "designNumber": "084",
+    "slug": "84",
+    "designNumber": "84",
     "name": "FARR 35",
     "year": 1979,
     "category": [],
@@ -5939,10 +5939,10 @@
         "lbs": 3480
       }
     },
-    "description": "Design 084, FARR 35, is a cruising yacht designed by Farr Yacht Design in 1979. She has an overall length of 35 feet (10.6m).",
+    "description": "Design 84, 10.6m LOA Fast Cruising Yacht, is a cruising yacht designed by Farr Yacht Design in 1979. She has an overall length of 10.6 metres. Built by H. Takeda.",
     "shortDescription": "348\" Cruiser",
     "shortSummary": "",
-    "builder": null,
+    "builder": "H. Takeda",
     "owner": null,
     "rigType": "",
     "rigMaterial": "",
@@ -6098,7 +6098,7 @@
     "hasCardPDF": true,
     "cardDrawingCount": 9,
     "cardDrawingsAvailable": 9,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false,
     "planFiles": [
       {
@@ -6249,8 +6249,8 @@
   },
   {
     "title": "085",
-    "slug": "085",
-    "designNumber": "085",
+    "slug": "85",
+    "designNumber": "85",
     "name": "ESPADA",
     "year": 1978,
     "category": [],
@@ -6279,10 +6279,10 @@
         "lbs": 1230
       }
     },
-    "description": "Design 085, ESPADA, is a racing yacht designed by Farr Yacht Design in 1978. She has an overall length of 26 feet (7.7m).",
+    "description": "Design 85, 1/4 Ton, is a racing yacht designed by Farr Yacht Design in 1978. She has an overall length of 26 feet. Built by Multiple.",
     "shortDescription": "1/4 Ton",
     "shortSummary": "",
-    "builder": null,
+    "builder": "Multiple",
     "owner": null,
     "rigType": "",
     "rigMaterial": "",
@@ -6359,13 +6359,13 @@
     "hasCardPDF": true,
     "cardDrawingCount": 9,
     "cardDrawingsAvailable": 9,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
     "title": "086",
-    "slug": "086",
-    "designNumber": "086",
+    "slug": "86",
+    "designNumber": "86",
     "name": "FARR 55",
     "year": 1979,
     "category": [],
@@ -6394,10 +6394,10 @@
         "lbs": 9470
       }
     },
-    "description": "Design 086, FARR 55, is a cruising yacht designed by Farr Yacht Design in 1979. She has an overall length of 55 feet (16.7m).",
+    "description": "Design 86, 16.7 Metre Fast Cruising Sloop, is a cruising sloop designed by Farr Yacht Design in 1979. She has an overall length of 16.7 metres. Built by Peter Spencer, Auckland.",
     "shortDescription": "5410\" Cruiser",
     "shortSummary": "",
-    "builder": null,
+    "builder": "Peter Spencer, Auckland",
     "owner": null,
     "rigType": "",
     "rigMaterial": "",
@@ -6466,13 +6466,13 @@
     "hasCardPDF": true,
     "cardDrawingCount": 12,
     "cardDrawingsAvailable": 12,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
     "title": "087",
-    "slug": "087",
-    "designNumber": "087",
+    "slug": "87",
+    "designNumber": "87",
     "name": "FARR 30/9.2",
     "year": 1979,
     "category": [],
@@ -6509,10 +6509,10 @@
         "lbs": 1294
       }
     },
-    "description": "Design 087, FARR 30/9.2, is a cruising yacht designed by Farr Yacht Design in 1979. She has an overall length of 30 feet (9.2m).",
+    "description": "Design 87, 9.3m LOA Lift Keel Yacht, is a racing yacht designed by Farr Yacht Design in 1979. She has an overall length of 9.3 metres. Built by John Aune.",
     "shortDescription": "303\" Cruiser",
     "shortSummary": "",
-    "builder": null,
+    "builder": "John Aune",
     "owner": null,
     "rigType": "",
     "rigMaterial": "",
@@ -6580,13 +6580,13 @@
     "hasCardPDF": true,
     "cardDrawingCount": 13,
     "cardDrawingsAvailable": 13,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
     "title": "089",
-    "slug": "089",
-    "designNumber": "089",
+    "slug": "89",
+    "designNumber": "89",
     "name": "FARR 44",
     "year": 1982,
     "category": [],
@@ -6615,10 +6615,10 @@
         "lbs": 5710
       }
     },
-    "description": "Design 089, FARR 44, is a cruising yacht designed by Farr Yacht Design in 1982. She has an overall length of 44 feet (13.5m).",
+    "description": "Design 89, 13.5m Cruising Yacht, is a cruising yacht designed by Farr Yacht Design in 1982. She has an overall length of 13.5 metres. Built by Hank Schulte / Kingston.",
     "shortDescription": "443\" Cruiser",
     "shortSummary": "",
-    "builder": null,
+    "builder": "Hank Schulte / Kingston",
     "owner": null,
     "rigType": "",
     "rigMaterial": "",
@@ -6683,7 +6683,7 @@
     "hasCardPDF": true,
     "cardDrawingCount": 16,
     "cardDrawingsAvailable": 16,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
@@ -6733,14 +6733,14 @@
   },
   {
     "title": "090",
-    "slug": "090",
-    "designNumber": "090",
+    "slug": "90",
+    "designNumber": "90",
     "name": "CERAMCO NEW ZEALAND",
     "year": 1980,
     "category": [],
     "classification": "",
     "designRule": "",
-    "designType": null,
+    "designType": "Racing Yacht",
     "specs": {
       "loa": {
         "m": 20.9,
@@ -6763,10 +6763,10 @@
         "lbs": 17299
       }
     },
-    "description": "Design 090, CERAMCO NEW ZEALAND, was designed by Farr Yacht Design in 1980. She has an overall length of 68 feet (20.9m).",
+    "description": "Design 90, 20.4m Ocean Racing Yacht, is a racing yacht designed by Farr Yacht Design in 1980. She has an overall length of 20.4 metres. Built by NZ Round the World Challenge.",
     "shortDescription": "WRTWR Maxi",
     "shortSummary": "",
-    "builder": null,
+    "builder": "NZ Round the World Challenge",
     "owner": null,
     "rigType": "",
     "rigMaterial": "",
@@ -6837,13 +6837,13 @@
     "hasCardPDF": true,
     "cardDrawingCount": 17,
     "cardDrawingsAvailable": 17,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
     "title": "091",
-    "slug": "091",
-    "designNumber": "091",
+    "slug": "91",
+    "designNumber": "91",
     "name": "LASER 28",
     "year": 1980,
     "category": [],
@@ -6884,10 +6884,10 @@
         "ft": 31.1
       }
     },
-    "description": "Design 091, LASER 28, is a racing yacht designed by Farr Yacht Design in 1980. She has an overall length of 28 feet (8.7m).",
+    "description": "Design 91, Project 81, is a racing yacht designed by Farr Yacht Design in 1980. She has an overall length of 28 feet. Built by Bruce Farr.",
     "shortDescription": "28 Racer",
     "shortSummary": "",
-    "builder": null,
+    "builder": "Bruce Farr",
     "owner": null,
     "rigType": "",
     "rigMaterial": "",
@@ -6954,13 +6954,13 @@
     "hasCardPDF": true,
     "cardDrawingCount": 18,
     "cardDrawingsAvailable": 18,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
     "title": "092",
-    "slug": "092",
-    "designNumber": "092",
+    "slug": "92",
+    "designNumber": "92",
     "name": "FARR 46",
     "year": 1980,
     "category": [],
@@ -6997,10 +6997,10 @@
         "lbs": 6460
       }
     },
-    "description": "Design 092, FARR 46, is a cruising yacht designed by Farr Yacht Design in 1980. She has an overall length of 46 feet (14.0m).",
+    "description": "Design 92, Farr 46 (page 2 of 2), is a cruising yacht designed by Farr Yacht Design in 1980. She has an overall length of 14.0 metres. Built by See 092.pdf.",
     "shortDescription": "4511\" Cruiser",
     "shortSummary": "",
-    "builder": null,
+    "builder": "See 092.pdf",
     "owner": null,
     "rigType": "",
     "rigMaterial": "",
@@ -7065,7 +7065,7 @@
     "hasCardPDF": true,
     "cardDrawingCount": 6,
     "cardDrawingsAvailable": 6,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
@@ -7112,8 +7112,8 @@
   },
   {
     "title": "093",
-    "slug": "093",
-    "designNumber": "093",
+    "slug": "93",
+    "designNumber": "93",
     "name": null,
     "year": 1980,
     "category": [],
@@ -7207,13 +7207,13 @@
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": true
   },
   {
     "title": "094",
-    "slug": "094",
-    "designNumber": "094",
-    "name": null,
+    "slug": "94",
+    "designNumber": "94",
+    "name": "1/2 Ton Ocean Racing Yacht",
     "year": 1980,
     "category": [],
     "classification": "",
@@ -7225,10 +7225,10 @@
         "ft": 29
       }
     },
-    "description": "Design 094 is a racing yacht designed by Farr Yacht Design in 1980. She has an overall length of 29 feet.",
+    "description": "Design 94, 1/2 Ton Ocean Racing Yacht, is a racing yacht designed by Farr Yacht Design in 1980. Built by Jim Poole - Ireland.",
     "shortDescription": "1 Ton",
     "shortSummary": "",
-    "builder": null,
+    "builder": "Jim Poole - Ireland",
     "owner": null,
     "rigType": "",
     "rigMaterial": "",
@@ -7284,19 +7284,19 @@
     "hasCardPDF": true,
     "cardDrawingCount": 8,
     "cardDrawingsAvailable": 8,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
     "title": "097",
-    "slug": "097",
-    "designNumber": "097",
+    "slug": "97",
+    "designNumber": "97",
     "name": "FARRNETICANTE",
     "year": 1980,
     "category": [],
     "classification": "",
     "designRule": "",
-    "designType": null,
+    "designType": "Racing Yacht",
     "specs": {
       "loa": {
         "m": 13.45,
@@ -7319,10 +7319,10 @@
         "lbs": 1411
       }
     },
-    "description": "Design 097, FARRNETICANTE, was designed by Farr Yacht Design in 1980. She has an overall length of 44 feet (13.4m).",
+    "description": "Design 97, 13.45 Metre Racing Machine, is a racing yacht designed by Farr Yacht Design in 1980. She has an overall length of 13.4 metres. Built by Centomiglia - Lake Garda.",
     "shortDescription": "44.2 Libera Class",
     "shortSummary": "",
-    "builder": null,
+    "builder": "Centomiglia - Lake Garda",
     "owner": null,
     "rigType": "",
     "rigMaterial": "",
@@ -7393,13 +7393,13 @@
     "hasCardPDF": true,
     "cardDrawingCount": 16,
     "cardDrawingsAvailable": 16,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
     "title": "099",
-    "slug": "099",
-    "designNumber": "099",
+    "slug": "99",
+    "designNumber": "99",
     "name": "BINKS 30",
     "year": 1980,
     "category": [],
@@ -7436,10 +7436,10 @@
         "lbs": 1294
       }
     },
-    "description": "Design 099, BINKS 30, is a cruising yacht designed by Farr Yacht Design in 1980. She has an overall length of 30 feet (9.6m).",
+    "description": "Design 99, 30ft Trailerable Yacht, is a trailer sailer designed by Farr Yacht Design in 1980. She has an overall length of 30 feet. Built by Binks Yacht Construction.",
     "shortDescription": "30 Cruiser",
     "shortSummary": "",
-    "builder": null,
+    "builder": "Binks Yacht Construction",
     "owner": null,
     "rigType": "",
     "rigMaterial": "",
@@ -7515,7 +7515,7 @@
     "hasCardPDF": true,
     "cardDrawingCount": 4,
     "cardDrawingsAvailable": 4,
-    "hidden": false,
+    "hidden": true,
     "yearEstimated": false
   },
   {
