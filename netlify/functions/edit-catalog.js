@@ -89,6 +89,51 @@ async function writeBoatsJson(boats, sha, commitMessage) {
   return { conflict: false, newSha: data.content.sha };
 }
 
+/* ── Controlled Vocabulary Constants ── */
+
+const VALID_DESIGN_TYPES = ['Racing Yacht', 'Cruising Yacht', 'Dinghy', 'Powerboat', 'One Design', 'Superyacht', 'Research', 'Other'];
+const VALID_TAGS = ['Production', 'Concept', 'Military', 'Commercial', 'Power', 'Multihull', 'Multihull Power', 'Multihull Sail'];
+const VALID_DESIGN_RULES = ['IMS', 'IRC', 'ILC', 'ORC', 'CHS', 'One Design', 'Open', 'None'];
+const VALID_HULL_CONSTRUCTION = ['Composite', 'Carbon Composite', 'Aluminium', 'Steel', 'Wood', 'Fiberglass'];
+const VALID_KEEL_TYPES = ['Fixed', 'Canting', 'Lifting', 'Bulb', 'Daggerboard', 'Centerboard', 'Twin'];
+const VALID_RIG_TYPES = ['Sloop', 'Cutter', 'Ketch', 'Fractional', 'Masthead', 'Cat', 'None'];
+
+/**
+ * Validate controlled vocabulary fields.
+ * Returns { valid: true } or { valid: false, error: 'descriptive message' }
+ */
+function validateTaxonomy(fields) {
+  const checks = [
+    { field: 'designType', value: fields.designType, vocab: VALID_DESIGN_TYPES },
+    { field: 'designRule', value: fields.designRule, vocab: VALID_DESIGN_RULES },
+    { field: 'hullConstruction', value: fields.hullConstruction, vocab: VALID_HULL_CONSTRUCTION },
+    { field: 'keelType', value: fields.keelType, vocab: VALID_KEEL_TYPES },
+    { field: 'rigType', value: fields.rigType, vocab: VALID_RIG_TYPES },
+  ];
+
+  for (const { field, value, vocab } of checks) {
+    if (value !== undefined && value !== null && value !== '') {
+      if (!vocab.includes(value)) {
+        return { valid: false, error: `Invalid ${field}: '${value}'. Valid values: ${vocab.join(', ')}` };
+      }
+    }
+  }
+
+  /* Validate tags array */
+  if (fields.tags !== undefined) {
+    if (!Array.isArray(fields.tags)) {
+      return { valid: false, error: 'tags must be an array' };
+    }
+    for (const tag of fields.tags) {
+      if (!VALID_TAGS.includes(tag)) {
+        return { valid: false, error: `Invalid tag: '${tag}'. Valid tags: ${VALID_TAGS.join(', ')}` };
+      }
+    }
+  }
+
+  return { valid: true };
+}
+
 /* ── Compute catalog stats ── */
 
 function computeStats(boats) {
@@ -193,6 +238,16 @@ exports.handler = async function (event) {
         };
       }
 
+      /* Validate controlled vocabulary fields */
+      const vResult = validateTaxonomy(fields);
+      if (!vResult.valid) {
+        return {
+          statusCode: 400,
+          headers: CORS,
+          body: JSON.stringify({ error: vResult.error })
+        };
+      }
+
       /* Read current state from GitHub */
       const current = await readBoatsJson();
 
@@ -265,6 +320,16 @@ exports.handler = async function (event) {
           statusCode: 400,
           headers: CORS,
           body: JSON.stringify({ error: 'Required: sha, design (with designNumber)' })
+        };
+      }
+
+      /* Validate controlled vocabulary fields */
+      const vResult = validateTaxonomy(design);
+      if (!vResult.valid) {
+        return {
+          statusCode: 400,
+          headers: CORS,
+          body: JSON.stringify({ error: vResult.error })
         };
       }
 

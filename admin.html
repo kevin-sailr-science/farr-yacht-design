@@ -84,7 +84,7 @@
         <!-- Toolbar -->
         <div style="display:flex;flex-wrap:wrap;gap:0.75rem;align-items:center;margin-top:1.5rem;">
           <div style="flex:1;min-width:220px;">
-            <input type="text" id="cat-search" placeholder="Search by design number, name, builder, or owner&hellip;" style="width:100%;padding:0.55rem 1rem;border:1px solid var(--border);border-radius:8px;background:var(--panel);color:var(--text-primary);font-size:0.85rem;">
+            <input type="text" id="cat-search" placeholder="Search by design number, name, builder, owner, type, or tag&hellip;" style="width:100%;padding:0.55rem 1rem;border:1px solid var(--border);border-radius:8px;background:var(--panel);color:var(--text-primary);font-size:0.85rem;">
           </div>
           <select id="cat-tier-filter" style="padding:0.55rem 0.75rem;border:1px solid var(--border);border-radius:8px;background:var(--panel);color:var(--text-primary);font-size:0.82rem;">
             <option value="all">All Tiers</option>
@@ -98,6 +98,30 @@
             <option value="not_digitized">Not Digitized</option>
             <option value="request_from_shed">Archive</option>
             <option value="coming_soon">Coming Soon</option>
+          </select>
+          <select id="cat-type-filter" style="padding:0.55rem 0.75rem;border:1px solid var(--border);border-radius:8px;background:var(--panel);color:var(--text-primary);font-size:0.82rem;">
+            <option value="all">All Types</option>
+            <option value="Racing Yacht">Racing Yacht</option>
+            <option value="Cruising Yacht">Cruising Yacht</option>
+            <option value="Dinghy">Dinghy</option>
+            <option value="Powerboat">Powerboat</option>
+            <option value="One Design">One Design</option>
+            <option value="Superyacht">Superyacht</option>
+            <option value="Research">Research</option>
+            <option value="Other">Other</option>
+            <option value="_unclassified">(Unclassified)</option>
+          </select>
+          <select id="cat-tag-filter" style="padding:0.55rem 0.75rem;border:1px solid var(--border);border-radius:8px;background:var(--panel);color:var(--text-primary);font-size:0.82rem;">
+            <option value="all">All Tags</option>
+            <option value="Production">Production</option>
+            <option value="Concept">Concept</option>
+            <option value="Military">Military</option>
+            <option value="Commercial">Commercial</option>
+            <option value="Power">Power</option>
+            <option value="Multihull">Multihull</option>
+            <option value="Multihull Power">Multihull Power</option>
+            <option value="Multihull Sail">Multihull Sail</option>
+            <option value="_notags">(No Tags)</option>
           </select>
           <button class="btn-waitlist" style="font-size:0.78rem;padding:0.45rem 0.9rem;" onclick="loadCatalog()">&#8635; Refresh</button>
           <button class="btn-buy" style="font-size:0.78rem;padding:0.45rem 0.9rem;" onclick="showAddDesignForm()">+ Add Design</button>
@@ -126,13 +150,15 @@
                 <th>Year</th>
                 <th>Tier</th>
                 <th>Status</th>
+                <th>Type</th>
+                <th>Tags</th>
                 <th>Builder</th>
                 <th>Owner</th>
                 <th style="width:60px;">Edit</th>
               </tr>
             </thead>
             <tbody id="catalog-tbody">
-              <tr><td colspan="8" style="text-align:center;color:var(--text-muted);padding:2rem;">Loading catalog&hellip;</td></tr>
+              <tr><td colspan="10" style="text-align:center;color:var(--text-muted);padding:2rem;">Loading catalog&hellip;</td></tr>
             </tbody>
           </table>
         </div>
@@ -431,7 +457,7 @@
             </tr>
           </thead>
           <tbody id="inventory-tbody">
-            <tr><td colspan="7" style="text-align:center;color:var(--text-muted);padding:2rem;">Loading inventory&hellip;</td></tr>
+            <tr><td colspan="10" style="text-align:center;color:var(--text-muted);padding:2rem;">Loading inventory&hellip;</td></tr>
           </tbody>
         </table>
       </div>
@@ -579,6 +605,7 @@
     .admin-tab { padding:0.65rem 1.25rem;font-size:0.82rem;font-weight:600;color:var(--text-muted);background:none;border:none;border-bottom:2px solid transparent;cursor:pointer;margin-bottom:-2px;transition:color 0.15s,border-color 0.15s; }
     .admin-tab:hover { color:var(--text-primary); }
     .admin-tab--active { color:var(--accent);border-bottom-color:var(--accent); }
+    .admin-tag-pill { display:inline-block;font-size:0.62rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;padding:0.15rem 0.45rem;border-radius:100px;background:rgba(30,90,160,0.1);color:var(--accent);border:1px solid rgba(30,90,160,0.2);white-space:nowrap;line-height:1.2; }
   </style>
 
   <script>
@@ -601,7 +628,7 @@
 
     function loadCatalog() {
       var tbody = document.getElementById('catalog-tbody');
-      tbody.innerHTML = '<tr><td colspan="7" style="text-align:center;color:var(--text-muted);padding:2rem;">Loading catalog&hellip;</td></tr>';
+      tbody.innerHTML = '<tr><td colspan="10" style="text-align:center;color:var(--text-muted);padding:2rem;">Loading catalog&hellip;</td></tr>';
       document.getElementById('cat-results').textContent = 'Loading catalog\u2026';
 
       fetch('/.netlify/functions/edit-catalog')
@@ -614,12 +641,12 @@
             CATALOG_PAGE = 0;
             renderCatalog();
           } else {
-            tbody.innerHTML = '<tr><td colspan="7" style="color:#b91c1c;">Failed to load catalog: ' + (data.error||'unknown') + '</td></tr>';
+            tbody.innerHTML = '<tr><td colspan="10" style="color:#b91c1c;">Failed to load catalog: ' + (data.error||'unknown') + '</td></tr>';
           }
         })
         .catch(function(err){
           console.error('loadCatalog error:', err);
-          tbody.innerHTML = '<tr><td colspan="7" style="color:#b91c1c;">Network error loading catalog.</td></tr>';
+          tbody.innerHTML = '<tr><td colspan="10" style="color:#b91c1c;">Network error loading catalog.</td></tr>';
         });
     }
 
@@ -635,17 +662,38 @@
       var search = (document.getElementById('cat-search').value || '').toLowerCase();
       var tierFilter = document.getElementById('cat-tier-filter').value;
       var statusFilter = document.getElementById('cat-status-filter').value;
+      var typeFilter = document.getElementById('cat-type-filter').value;
+      var tagFilter = document.getElementById('cat-tag-filter').value;
 
       return CATALOG.filter(function(b) {
         if (tierFilter !== 'all' && String(b.tier) !== tierFilter) return false;
         if (statusFilter !== 'all' && b.planStatus !== statusFilter) return false;
+        /* Type filter — special handling for (Unclassified) */
+        if (typeFilter !== 'all') {
+          if (typeFilter === '_unclassified') {
+            if (b.designType) return false;
+          } else {
+            if (b.designType !== typeFilter) return false;
+          }
+        }
+        /* Tag filter — special handling for (No Tags) */
+        if (tagFilter !== 'all') {
+          var tags = Array.isArray(b.tags) ? b.tags : [];
+          if (tagFilter === '_notags') {
+            if (tags.length > 0) return false;
+          } else {
+            if (tags.indexOf(tagFilter) === -1) return false;
+          }
+        }
         if (search) {
           var dn = String(b.designNumber || '').toLowerCase();
           var nm = String(b.name || '').toLowerCase();
           var bl = String(b.builder || '').toLowerCase();
           var ow = String(b.owner || '').toLowerCase();
           var ti = String(b.title || '').toLowerCase();
-          if (dn.indexOf(search) === -1 && nm.indexOf(search) === -1 && bl.indexOf(search) === -1 && ow.indexOf(search) === -1 && ti.indexOf(search) === -1) return false;
+          var dt = String(b.designType || '').toLowerCase();
+          var tg = (Array.isArray(b.tags) ? b.tags : []).join(' ').toLowerCase();
+          if (dn.indexOf(search) === -1 && nm.indexOf(search) === -1 && bl.indexOf(search) === -1 && ow.indexOf(search) === -1 && ti.indexOf(search) === -1 && dt.indexOf(search) === -1 && tg.indexOf(search) === -1) return false;
         }
         return true;
       });
@@ -662,7 +710,7 @@
 
       var tbody = document.getElementById('catalog-tbody');
       if (page.length === 0) {
-        tbody.innerHTML = '<tr><td colspan="7" style="text-align:center;color:var(--text-muted);padding:2rem;">No designs match your filters.</td></tr>';
+        tbody.innerHTML = '<tr><td colspan="10" style="text-align:center;color:var(--text-muted);padding:2rem;">No designs match your filters.</td></tr>';
       } else {
         tbody.innerHTML = page.map(function(b) {
           var statusBadge = '';
@@ -681,6 +729,8 @@
             +'<td style="font-family:var(--font-mono);">' + (b.year || '--') + '</td>'
             +'<td><span style="font-family:var(--font-mono);font-size:0.72rem;font-weight:700;color:' + tierColor + ';">' + tierLabel + '</span></td>'
             +'<td>' + statusBadge + '</td>'
+            +'<td style="font-size:0.78rem;color:var(--text-secondary);">' + escHtml(b.designType || '\u2014') + '</td>'
+            +'<td>' + (Array.isArray(b.tags) && b.tags.length > 0 ? b.tags.map(function(t){ return '<span class="admin-tag-pill">' + escHtml(t) + '</span>'; }).join(' ') : '<span style="color:var(--text-muted);">\u2014</span>') + '</td>'
             +'<td style="font-size:0.82rem;color:var(--text-muted);">' + escHtml(b.builder || '--') + '</td>'
             +'<td style="font-size:0.82rem;color:var(--text-muted);">' + escHtml(b.owner || '--') + '</td>'
             +'<td><button class="btn-waitlist" style="font-size:0.72rem;padding:0.2rem 0.6rem;" onclick="event.stopPropagation();editCatalogDesign(\'' + escHtml(String(b.designNumber)) + '\')">Edit</button></td>'
@@ -704,6 +754,8 @@
     document.getElementById('cat-search').addEventListener('input', function(){ CATALOG_PAGE = 0; renderCatalog(); });
     document.getElementById('cat-tier-filter').addEventListener('change', function(){ CATALOG_PAGE = 0; renderCatalog(); });
     document.getElementById('cat-status-filter').addEventListener('change', function(){ CATALOG_PAGE = 0; renderCatalog(); });
+    document.getElementById('cat-type-filter').addEventListener('change', function(){ CATALOG_PAGE = 0; renderCatalog(); });
+    document.getElementById('cat-tag-filter').addEventListener('change', function(){ CATALOG_PAGE = 0; renderCatalog(); });
 
     /* ── Edit a design ── */
     function editCatalogDesign(dn) {
@@ -1043,7 +1095,7 @@
     /* Load inventory from Netlify Blobs on page ready */
     function loadInventoryFromBlob() {
       var tbody = document.getElementById('inventory-tbody');
-      if (tbody) tbody.innerHTML = '<tr><td colspan="7" style="text-align:center;color:var(--text-muted);padding:1.5rem;">Loading inventory&hellip;</td></tr>';
+      if (tbody) tbody.innerHTML = '<tr><td colspan="10" style="text-align:center;color:var(--text-muted);padding:1.5rem;">Loading inventory&hellip;</td></tr>';
       fetch('/.netlify/functions/get-inventory')
         .then(function(r){ return r.json(); })
         .then(function(data){
@@ -1051,12 +1103,12 @@
             INVENTORY = data.plans;
             renderInventory();
           } else {
-            if (tbody) tbody.innerHTML = '<tr><td colspan="7" style="color:#b91c1c;">Failed to load inventory.</td></tr>';
+            if (tbody) tbody.innerHTML = '<tr><td colspan="10" style="color:#b91c1c;">Failed to load inventory.</td></tr>';
           }
         })
         .catch(function(err){
           console.error('get-inventory error:', err);
-          if (tbody) tbody.innerHTML = '<tr><td colspan="7" style="color:#b91c1c;">Network error loading inventory.</td></tr>';
+          if (tbody) tbody.innerHTML = '<tr><td colspan="10" style="color:#b91c1c;">Network error loading inventory.</td></tr>';
         });
     }
 

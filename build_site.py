@@ -748,8 +748,8 @@ def build_portfolio_page():
       <div class="pf-controls">
         <div class="pf-filters">
           <select id="pf-type" class="pf-select" aria-label="Filter by type"><option value="">All Types</option>{type_options}</select>
-          <select id="pf-decade" class="pf-select" aria-label="Filter by decade"><option value="">All Decades</option>{decade_options}</select>
           <select id="pf-tag" class="pf-select" aria-label="Filter by tag"><option value="">All Tags</option>{tag_options}</select>
+          <select id="pf-decade" class="pf-select" aria-label="Filter by decade"><option value="">All Decades</option>{decade_options}</select>
         </div>
         <div class="pf-right">
           <div class="pf-sort">
