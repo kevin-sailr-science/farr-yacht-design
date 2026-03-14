@@ -4,843 +4,1026 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Farr Yacht Design — Complete Project Status</title>
-
-  <!-- Open Graph / iMessage / SMS preview -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://farr-designs.sailr.science/review/" />
   <meta property="og:title" content="Complete Project Status — 39 Sprints, Inception to Delivery" />
   <meta property="og:description" content="643 designs · 356 images · 39 sprints · WCAG AA · 0 broken links · Ready for launch" />
-  <meta property="og:image" content="https://farr-designs.sailr.science/review/og-image.png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:image:type" content="image/png" />
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Complete Project Status — 39 Sprints, Inception to Delivery" />
   <meta name="twitter:description" content="643 designs · 356 images · 39 sprints · WCAG AA · 0 broken links · Ready for launch" />
-  <meta name="twitter:image" content="https://farr-designs.sailr.science/review/og-image.png" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
-  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { background: #f8f9fc; font-family: 'Inter', system-ui, -apple-system, sans-serif; -webkit-font-smoothing: antialiased; }
+    body { background: #f8f9fc; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; -webkit-font-smoothing: antialiased; }
     button { font-family: inherit; }
-    #root { min-height: 100vh; }
+    .tab-btn {
+      padding: 9px 20px; border-radius: 8px; border: none; font-size: 13px;
+      font-weight: 600; cursor: pointer; transition: all 0.15s ease;
+      background: #e8ecf2; color: #6b7280;
+    }
+    .tab-btn.active { background: #00267F; color: #fff; }
+    .phase-header:hover { opacity: 0.95; }
   </style>
 </head>
 <body>
-<div id="root"></div>
-<script type="text/babel" data-presets="react">
-const { useState } = React;
+<div style="max-width:720px;margin:0 auto;padding:0 0 40px;min-height:100vh">
 
-// ═══════════════════════════════════════════════════════════════
-// Farr Yacht Design — Complete Project Status Package
-// Inception → Delivery | 68 Sessions | 39 Sprints | March 2026
-// ═══════════════════════════════════════════════════════════════
-
-const FarrBlue = "#00267F";
-const FarrOrange = "#F97700";
-const FarrBronze = "#C0A280";
-const SITE = "https://farr-designs.sailr.science";
-
-// ── Shared Components ──────────────────────────────────────────
-
-const StatCard = ({ number, label, sub, accent }) => (
-  <div style={{
-    background: "#fff", borderRadius: 12, padding: "24px 16px",
-    textAlign: "center", border: "1px solid #e8ecf2", flex: "1 1 120px", minWidth: 120,
-  }}>
-    <div style={{ fontSize: 36, fontWeight: 800, color: accent || FarrBlue, lineHeight: 1 }}>{number}</div>
-    <div style={{ fontSize: 13, fontWeight: 600, color: "#4a5568", marginTop: 6 }}>{label}</div>
-    {sub && <div style={{ fontSize: 11, color: "#8896a8", marginTop: 3 }}>{sub}</div>}
-  </div>
-);
-
-const Badge = ({ status }) => {
-  const c = {
-    complete: { bg: "#e6f9ed", text: "#1a7a3a", label: "Complete" },
-    live: { bg: "#e6f9ed", text: "#1a7a3a", label: "Live" },
-    ready: { bg: "#e8f0fe", text: FarrBlue, label: "Ready" },
-    pending: { bg: "#fff4e5", text: "#b45309", label: "Pending" },
-    blocked: { bg: "#fee2e2", text: "#b91c1c", label: "Blocked" },
-    next: { bg: "#f1f3f7", text: "#6b7280", label: "Next" },
-  }[status] || { bg: "#f1f3f7", text: "#6b7280", label: status };
-  return (
-    <span style={{
-      display: "inline-block", padding: "3px 10px", borderRadius: 20,
-      fontSize: 11, fontWeight: 600, letterSpacing: "0.03em", background: c.bg, color: c.text,
-    }}>{c.label}</span>
-  );
-};
-
-const Section = ({ title, children, style: s }) => (
-  <div style={{ marginBottom: 28, ...s }}>
-    <h3 style={{
-      fontSize: 12, fontWeight: 700, textTransform: "uppercase",
-      letterSpacing: "0.08em", color: FarrBronze, marginBottom: 14,
-      paddingBottom: 8, borderBottom: `2px solid ${FarrBronze}33`,
-    }}>{title}</h3>
-    {children}
-  </div>
-);
-
-const Row = ({ label, value, status }) => (
-  <div style={{
-    display: "flex", justifyContent: "space-between", alignItems: "center",
-    padding: "9px 0", borderBottom: "1px solid #f0f2f5",
-  }}>
-    <div style={{ flex: 1 }}>
-      <span style={{ fontSize: 13, color: "#1a1f2e", fontWeight: 500 }}>{label}</span>
-      {value && <span style={{ fontSize: 12, color: "#7a8599", marginLeft: 8 }}>{value}</span>}
-    </div>
-    {status && <Badge status={status} />}
-  </div>
-);
-
-const Card = ({ children, style: s }) => (
-  <div style={{
-    background: "#fff", borderRadius: 12, padding: 22,
-    border: "1px solid #e8ecf2", ...s,
-  }}>{children}</div>
-);
-
-const CalloutBox = ({ color, title, children }) => {
-  const colors = {
-    amber: { bg: "#fff4e5", border: "#fde4c1", title: "#b45309", text: "#92690d" },
-    green: { bg: "#e6f9ed", border: "#bbf0cc", title: "#1a7a3a", text: "#166534" },
-    blue: { bg: "#e8f0fe", border: "#bdd4fc", title: FarrBlue, text: "#1e40af" },
-    red: { bg: "#fee2e2", border: "#fecaca", title: "#b91c1c", text: "#991b1b" },
-  }[color] || { bg: "#f1f3f7", border: "#e2e8f0", title: "#374151", text: "#4b5563" };
-  return (
-    <div style={{
-      background: colors.bg, border: `1px solid ${colors.border}`,
-      borderRadius: 10, padding: "16px 20px", marginTop: 12,
-    }}>
-      {title && <div style={{ fontSize: 13, fontWeight: 700, color: colors.title, marginBottom: 4 }}>{title}</div>}
-      <div style={{ fontSize: 12, color: colors.text, lineHeight: 1.6 }}>{children}</div>
-    </div>
-  );
-};
-
-// ── Tab Button ─────────────────────────────────────────────────
-
-const TabBtn = ({ active, label, onClick }) => (
-  <button onClick={onClick} style={{
-    padding: "9px 20px", borderRadius: 8, border: "none", fontSize: 13,
-    fontWeight: 600, cursor: "pointer", transition: "all 0.15s ease",
-    background: active ? FarrBlue : "#e8ecf2",
-    color: active ? "#fff" : "#6b7280",
-  }}>{label}</button>
-);
-
-// ═══════════════════════════════════════════════════════════════
-// TAB 1: OVERVIEW
-// ═══════════════════════════════════════════════════════════════
-
-const OverviewTab = () => (
-  <>
-    {/* Hero summary */}
-    <Card style={{ marginBottom: 20 }}>
-      <div style={{ fontSize: 16, fontWeight: 700, color: FarrBlue, marginBottom: 10 }}>
-        Project Complete — Ready for Launch
-      </div>
-      <div style={{ fontSize: 13, color: "#4a5568", lineHeight: 1.7 }}>
-        The Farr Yacht Design website has been rebuilt from the ground up over 68 sessions and 39
-        sprints. Starting from a dated WordPress site with broken links, no search, and stale
-        news from 2018, the new site is a fully static, high-performance platform on Netlify with
-        643 yacht designs, interactive portfolio search, admin catalog editor, e-commerce with
-        Stripe checkout, WCAG 2.1 AA accessibility, comprehensive SEO, WebP image optimization,
-        and a full social media presence. Legacy files have been purged, duplicates consolidated,
-        and the site is live at staging and ready for DNS cutover to farrdesign.com.
-      </div>
-    </Card>
-
-    {/* Stats strip */}
-    <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginBottom: 24 }}>
-      <StatCard number="643" label="Designs" sub="496 visible · 147 hidden" />
-      <StatCard number="356" label="Images" sub="63% coverage · 32.8MB WebP" />
-      <StatCard number="496" label="Yacht Pages" sub="+ 21 static pages" />
-      <StatCard number="39" label="Sprints" sub="68 sessions" />
-      <StatCard number="0" label="Broken Links" sub="25,794 verified" />
-    </div>
-
-    <Section title="Deployment">
-      <Row label="Platform" value="Netlify — static site, CI/CD auto-deploy" status="live" />
-      <Row label="Build system" value="build_site.py generates 496 yacht pages from boats.json" status="live" />
-      <Row label="SSL / HTTPS" value="Automatic via Netlify" status="live" />
-      <Row label="Admin portal" value="Supabase auth — catalog editor, visibility toggle, owner field" status="live" />
-      <Row label="E-commerce" value="Stripe checkout — 7 plans + 9 scanned plan designs" status="live" />
-      <Row label="Custom domain" value="farrdesign.com — awaiting DNS switch from WordPress" status="pending" />
-      <Row label="GA4 Analytics" value="Placeholder ID — needs GA4 property created" status="pending" />
-    </Section>
-
-    <Section title="Quality Certifications">
-      <Row label="WCAG 2.1 AA" value="10 accessibility fixes, skip-nav, ARIA labels, contrast" status="complete" />
-      <Row label="Content Security Policy" value="CSP headers configured in netlify.toml" status="complete" />
-      <Row label="Link integrity" value="588 pages, 25,794 links — zero broken" status="complete" />
-      <Row label="Sitemap" value="584 entries (21 static + 563 yachts)" status="complete" />
-      <Row label="SEO" value="JSON-LD, Open Graph, meta descriptions on all pages" status="complete" />
-      <Row label="Legacy page cleanup" value="221 MUSE/Drupal files deleted, 9 legacy URL 301 redirects" status="complete" />
-      <Row label="Performance" value="WOFF2 fonts (82% smaller), minified CSS (58.5KB), lazy loading, WebP images (41% smaller)" status="complete" />
-      <Row label="Social links" value="LinkedIn, Facebook, Instagram, Threads in footer on all pages" status="complete" />
-      <Row label="Duplicate consolidation" value="68 leading-zero duplicates merged, 79 redirects for old URLs" status="complete" />
-      <Row label="Post-build QA gate" value="Semantic link audit catches broken/circular/wrong yacht-card links" status="complete" />
-      <Row label="Custom error pages" value="Branded 404 and 500 pages" status="complete" />
-    </Section>
-
-    <Section title="Brand Assets">
-      <Row label="Corporate identity" value="Farr Blue #00267F, Orange #F97700, Bronze #C0A280" status="live" />
-      <Row label="Typography" value="Jost, Kumbh Sans, Nunito Sans — WOFF2 self-hosted" status="live" />
-      <Row label="Logo" value="SVG + PNG, white variant, favicon" status="live" />
-      <Row label="Partner logos" value="6 SVG builder logo cards — Baltic, Cookson, SW, Knierim, Persico, McConaghy" status="live" />
-    </Section>
-  </>
-);
-
-// ═══════════════════════════════════════════════════════════════
-// TAB 2: RESEARCH
-// ═══════════════════════════════════════════════════════════════
-
-const ResearchTab = () => {
-  const [sub, setSub] = useState("audit");
-  return (
-    <>
-      <div style={{ display: "flex", gap: 6, marginBottom: 20, flexWrap: "wrap" }}>
-        {[
-          { id: "audit", label: "Content Audit" },
-          { id: "audiences", label: "Audiences" },
-          { id: "competitive", label: "Competitive Analysis" },
-        ].map(t => <TabBtn key={t.id} active={sub === t.id} label={t.label} onClick={() => setSub(t.id)} />)}
-      </div>
-
-      {sub === "audit" && (
-        <>
-          <CalloutBox color="blue" title="Executive Summary">
-            The legacy Farr Yacht Design website (WordPress + Elementor) contained extensive content
-            (90+ yacht designs, 6 service areas) but suffered from news dated 2018, broken internal
-            links, no design plan purchase flow, and no search or filtering on the portfolio. The
-            About Us page timed out, consulting was buried, and heritage pages were orphaned from navigation.
-          </CalloutBox>
-          <div style={{ marginTop: 20 }} />
-          <Section title="Issues Identified">
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
-              <Card>
-                <div style={{ fontSize: 13, fontWeight: 700, color: "#b91c1c", marginBottom: 8 }}>Critical Issues</div>
-                <div style={{ fontSize: 12, color: "#4a5568", lineHeight: 1.8 }}>
-                  Homepage news dated 2018 · About Us page timeout · Broken internal links ·
-                  No design plan purchase flow · No team bios or headshots · Google indexing blocked (noindex tags)
-                </div>
-              </Card>
-              <Card>
-                <div style={{ fontSize: 13, fontWeight: 700, color: "#b45309", marginBottom: 8 }}>UX Issues</div>
-                <div style={{ fontSize: 12, color: "#4a5568", lineHeight: 1.8 }}>
-                  No search or filtering on 90+ designs · No contact form (email only) ·
-                  Consulting buried, not in nav · Heritage pages orphaned · No mobile optimization
-                </div>
-              </Card>
-            </div>
-          </Section>
-          <Section title="Content Gaps Identified">
-            <Row label="Recent projects" value="No post-2018 content (Kiboko 4, Gelliceaux)" />
-            <Row label="Team bios / headshots" value="Critical credibility gap for superyacht buyers" />
-            <Row label="Press / media kit" value="No downloadable materials for journalists" />
-            <Row label="Design plan purchase flow" value="Key revenue stream — needed Stripe" />
-            <Row label="Racing results feed" value="No automated fresh content" />
-          </Section>
-          <CalloutBox color="green" title="Resolution Status">
-            All critical and UX issues have been resolved across Sprints 1–29. See the Journey tab for details.
-          </CalloutBox>
-        </>
-      )}
-
-      {sub === "audiences" && (
-        <>
-          <Section title="6 Target Audiences">
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 12 }}>
-              {[
-                { name: "Custom Racing Clients", budget: "$500K–$10M+", status: "Served" },
-                { name: "Existing Farr Owners", budget: "Recurring Revenue", status: "Served" },
-                { name: "Production Builders", budget: "B2B Partnership", status: "Served" },
-                { name: "Racing Teams", budget: "$10K–$100K", status: "Served" },
-                { name: "Superyacht Clients", budget: "$5M–$50M+", status: "Served" },
-                { name: "Enthusiasts / Press", budget: "Brand Awareness", status: "Partially" },
-              ].map((a, i) => (
-                <Card key={i} style={{ textAlign: "center", padding: 16 }}>
-                  <div style={{ fontSize: 14, fontWeight: 700, color: FarrBlue }}>{a.name}</div>
-                  <div style={{ fontSize: 11, color: "#7a8599", marginTop: 4 }}>{a.budget}</div>
-                  <div style={{ marginTop: 8 }}><Badge status={a.status === "Served" ? "complete" : "pending"} /></div>
-                </Card>
-              ))}
-            </div>
-          </Section>
-          <Section title="Conversion Goals">
-            <Row label="Custom Racing" value="Consultation request via contact form" status="live" />
-            <Row label="Existing Owners" value="Service inquiry, plan purchases" status="live" />
-            <Row label="Builders / Partners" value="Partnership inquiry via contact + partners page" status="live" />
-            <Row label="Racing Teams" value="Consulting request via dedicated consulting page" status="live" />
-            <Row label="Superyacht Clients" value="Private consultation via contact" status="live" />
-            <Row label="Enthusiasts / Press" value="Browse portfolio, share pages" status="live" />
-          </Section>
-          <Section title="Pain Points Resolved">
-            <Row label="No search/filter" value="Sprint 9 — interactive search, sort, filter, grid/list views" status="complete" />
-            <Row label="No team bios" value="Sprint 8B — Britt's full bio on team page" status="complete" />
-            <Row label="No purchase flow" value="Sprint 6 — Stripe checkout end-to-end" status="complete" />
-            <Row label="Heritage pages orphaned" value="Sprint 14A — nav integration, racing hub links" status="complete" />
-            <Row label="No consulting page" value="Sprint 5 — dedicated consulting page in primary nav" status="complete" />
-          </Section>
-        </>
-      )}
-
-      {sub === "competitive" && (
-        <>
-          <CalloutBox color="blue" title="Key Insight">
-            Owen Clarke Design had superior information architecture, but neither firm had modern UX.
-            The Farr rebuild leapfrogs both with interactive portfolio search, e-commerce, and
-            a performance-first static architecture.
-          </CalloutBox>
-          <div style={{ marginTop: 20 }} />
-          <Section title="Company Comparison">
-            <Row label="Founded" value="Farr: 1981 · Owen Clarke: 1991" />
-            <Row label="Location" value="Farr: Annapolis, MD · OCD: Dartmouth, UK + NZ + USA" />
-            <Row label="Positioning" value='Farr: "Designed to Perform" · OCD: "Fast, beautiful sailboats"' />
-            <Row label="Key stat" value="Farr: 43 world championships · OCD: 8 Vendee Globe IMOCA 60s" />
-            <Row label="Design range" value="Farr: 10ft–142ft · OCD: 6.5m–76m" />
-          </Section>
-          <Section title="Strategic Advantages Achieved">
-            <Row label="Racing pedigree" value="43 championships showcased across heritage pages" status="complete" />
-            <Row label="Revenue stream" value="Design plan sales via Stripe (7 plans + 9 scanned)" status="complete" />
-            <Row label="Modern UX" value="Interactive search, responsive design, lazy loading" status="complete" />
-            <Row label="Human stories" value="Team page, Our Story, awards page with gallery" status="complete" />
-            <Row label="SEO advantage" value="JSON-LD, sitemap, OG tags — OCD has none" status="complete" />
-          </Section>
-        </>
-      )}
-    </>
-  );
-};
-
-// ═══════════════════════════════════════════════════════════════
-// TAB 3: JOURNEY (Phases with expandable sprints)
-// ═══════════════════════════════════════════════════════════════
-
-const SprintRow = ({ id, name, detail }) => (
-  <div style={{
-    padding: "10px 16px", borderBottom: "1px solid #f0f2f5",
-    display: "flex", gap: 12, alignItems: "flex-start",
-  }}>
-    <span style={{
-      fontSize: 11, fontWeight: 700, color: FarrBlue, background: "#e8f0fe",
-      padding: "2px 8px", borderRadius: 4, flexShrink: 0, marginTop: 2,
-    }}>{id}</span>
-    <div>
-      <div style={{ fontSize: 13, fontWeight: 600, color: "#1a1f2e" }}>{name}</div>
-      <div style={{ fontSize: 12, color: "#7a8599", marginTop: 2, lineHeight: 1.5 }}>{detail}</div>
-    </div>
-  </div>
-);
-
-const Phase = ({ number, title, subtitle, color, sprints, defaultOpen }) => {
-  const [open, setOpen] = useState(defaultOpen || false);
-  return (
-    <div style={{ marginBottom: 16 }}>
-      <div
-        onClick={() => setOpen(!open)}
-        style={{
-          background: color, borderRadius: open ? "12px 12px 0 0" : 12,
-          padding: "18px 22px", cursor: "pointer", display: "flex",
-          justifyContent: "space-between", alignItems: "center",
-          transition: "border-radius 0.15s",
-        }}
-      >
-        <div>
-          <div style={{ fontSize: 11, fontWeight: 700, color: "rgba(255,255,255,0.6)", letterSpacing: "0.06em", textTransform: "uppercase" }}>
-            Phase {number}
-          </div>
-          <div style={{ fontSize: 17, fontWeight: 700, color: "#fff", marginTop: 2 }}>{title}</div>
-          <div style={{ fontSize: 12, color: "rgba(255,255,255,0.7)", marginTop: 4 }}>{subtitle}</div>
-        </div>
-        <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-          <Badge status="complete" />
-          <span style={{ color: "#fff", fontSize: 18, fontWeight: 700 }}>{open ? "−" : "+"}</span>
-        </div>
-      </div>
-      {open && (
-        <div style={{
-          background: "#fff", borderRadius: "0 0 12px 12px",
-          border: "1px solid #e8ecf2", borderTop: "none",
-        }}>
-          {sprints.map((s, i) => <SprintRow key={i} {...s} />)}
-        </div>
-      )}
-    </div>
-  );
-};
-
-const JourneyTab = () => (
-  <>
-    <CalloutBox color="blue" title="Full Project Timeline">
-      68 sessions across 39 sprints, from initial research and strategy through a production-ready
-      website with comprehensive polish. Click any phase to expand individual sprint details.
-    </CalloutBox>
-    <div style={{ marginTop: 20 }} />
-
-    <Phase
-      number="0" title="Research & Strategy" subtitle="Content audit · Competitive analysis · 6 audience personas · Sitemap architecture"
-      color="#64748b"
-      sprints={[
-        { id: "R1", name: "Content Audit", detail: "Inventoried 120+ pages on legacy WordPress site. Identified critical issues: 2018-dated news, broken links, no purchase flow, About page timeout." },
-        { id: "R2", name: "Audience & Journey Mapping", detail: "Defined 6 target audiences (superyacht buyers, plan buyers, racing teams, builders, press, enthusiasts) with conversion goals and user journeys." },
-        { id: "R3", name: "Competitive Analysis", detail: "Benchmarked against Owen Clarke Design. Found neither firm had modern UX — opportunity to leapfrog with interactive portfolio and e-commerce." },
-        { id: "R4", name: "Architecture & Wireframes", detail: "Designed sitemap (20 root pages + yacht pages), nav structure, wireframes for homepage, portfolio, consulting, superyacht, yacht detail pages." },
-      ]}
-    />
-
-    <Phase
-      number="1" title="Foundation" subtitle="Sprints 1–5A · Data import · Three-tier UX · Repo · Netlify · Farr brand"
-      color="#1e40af"
-      sprints={[
-        { id: "S1+2", name: "Data Import & Three-Tier UX", detail: "Imported 629 designs into boats.json. Built three-tier system: Tier 1 (Britt's master list), Tier 2 (card/MUSE), Tier 3 (orphan). 605 visible yacht pages generated." },
-        { id: "S3", name: "Export Fix & Gap Analysis", detail: "Fixed data export pipeline. Identified coverage gaps across all fields." },
-        { id: "S5A", name: "Repo Restructure & Netlify Pipeline", detail: "Restructured git repo. Set up CI/CD — every git push auto-deploys to Netlify in ~20 seconds. Full rebrand to Farr corporate identity: Blue #00267F, Orange, Bronze, WOFF2 brand fonts." },
-      ]}
-    />
-
-    <Phase
-      number="2" title="Content & Features" subtitle="Sprints 5B–12 · Admin portal · E-commerce · Web copy · MUSE data · Portfolio UX · Images"
-      color="#7c3aed"
-      sprints={[
-        { id: "S5B", name: "Admin Portal / Catalog Editor", detail: "Full catalog editor at /admin with Supabase auth. Search, filter, edit metadata, upload images, toggle visibility. Owner column (admin-only)." },
-        { id: "S5C", name: "E-Commerce Unification", detail: "Unified 7 of 10 design plans into purchase flow with collapsible drawing lists." },
-        { id: "S6", name: "Stabilize & Ship", detail: "planContents system, e-commerce refactor, Stripe checkout tested end-to-end. Sandbox mode working." },
-        { id: "S7", name: "MUSE Data Extraction", detail: "Scraped MUSE pages — 14 new designs, 9 descriptions, 26 LOA values. Conservative merge: only filled gaps. 643 total designs." },
-        { id: "S8A", name: "Data Cleanup", detail: "Hid 56 designs per Britt's list, fixed duplicate 609M. Removed Pat & Jim. 642 total, 563 visible." },
-        { id: "S8B", name: "Web Copy Integration", detail: "Integrated Britt's V3BW document: team page bio, Our Story (4 thematic sections), awards page (15 awards), homepage hero, press kit. Britt's title: Principal, Owner & Senior Naval Architect." },
-        { id: "S9", name: "Portfolio UX", detail: "Interactive search by name/number/builder, sort by design number/year/length, filter by type tags (Production, AC, Volvo, Cruising, etc.), grid/list toggle. Type tag overlays on thumbnails." },
-        { id: "S10", name: "Data Completeness & Image Pipeline", detail: "44 new images, 498 descriptions enriched, 6 LOA values added. Image coverage 36% → 43%." },
-        { id: "S11", name: "Bug Fixes, Kiboko 4, Scanned Plans", detail: "Kiboko 4 content corrected (was mixed with Canova). Scanned plans pipeline complete: 89 PDFs across 6 designs. Misc files as free downloads." },
-        { id: "S12", name: "MUSE Image Extraction", detail: "38 new images, 17 upgrades from MUSE archive. Image coverage 43% → 49% (276→314)." },
-      ]}
-    />
-
-    <Phase
-      number="3" title="Quality & SEO" subtitle="Sprints 13–18 · SEO · Accessibility groundwork · CSS tokens · Image optimization · History corrections"
-      color="#b45309"
-      sprints={[
-        { id: "S13", name: "SEO, Accessibility & CSS Hardening", detail: "Removed accidental noindex tags, added sitemap.xml, Open Graph tags on every page, JSON-LD structured data. CSS breakpoint consolidation (6→2), type scale, spacing tokens." },
-        { id: "S14A-E", name: "Portfolio Card Enhancements", detail: "Type tag overlays, improved titles, lazy loading, legacy cleanup. Owner field admin enhancement. CSS Phase 2 — design token system." },
-        { id: "S15", name: "Image Gap Audit", detail: "41 new images from old site archives. Coverage 49% → 62% (314→353). Exhausted both MUSE and Drupal archives." },
-        { id: "S16", name: "CSS Phase 3 — Design Token Migration", detail: "140 font-size + 219 spacing references tokenized. 68% design token coverage." },
-        { id: "S17", name: "Image Optimization", detail: "133 images compressed: 140MB → 64MB (54% reduction). All images max 1600px wide." },
-        { id: "S18", name: "History Page Corrections", detail: "Cross-referenced Our Story against V3BW document. Fixed 6 inaccuracies: ABN AMRO results, edition count, Britt's title, Russell Bowler as co-founder, founding date, Kiboko 4 hull." },
-      ]}
-    />
-
-    <Phase
-      number="4" title="Polish & Hardening" subtitle="Sprints 19–29 · Performance · WCAG AA · Partners · Awards · Builder logos · Link audit · Sitemap"
-      color="#059669"
-      sprints={[
-        { id: "S19", name: "Performance", detail: "WOFF2 fonts (82% size reduction), CSS minification (71KB→58.5KB, 19% reduction), font preloading. Noticeably faster first load." },
-        { id: "S20", name: "CSS Phase 4 — Sub-Scale Tokens", detail: "36 additional migrations, 85% total design token coverage across all font sizes and spacing." },
-        { id: "S21", name: "Cleanup", detail: "Removed duplicate files cluttering the repository." },
-        { id: "S22", name: "Accessibility, CSP & Error Pages", detail: "Full WCAG 2.1 AA audit — 10 fixes (focus indicators, contrast ratios, ARIA labels, skip-nav links). Content Security Policy headers. Custom branded 404 and 500 error pages." },
-        { id: "S23", name: "CSS Audit & Ghost Cleanup", detail: "Audited every CSS class — removed 79 'ghost' classes (defined but never used). 87% class utilization." },
-        { id: "S24", name: "Partners Page Images", detail: "Replaced 6 placeholder initials with real boat photography for each partner builder." },
-        { id: "S25", name: "Awards Page Images + Fatigue Audit", detail: "Photo hero and 6-card image gallery on awards page. Full 593-image fatigue audit to prevent overuse." },
-        { id: "S26", name: "Image Attribution Fixes", detail: "Corrected builder photo mismatches. Established Builder Attribution Rule: all images must match their builder." },
-        { id: "S27", name: "Cross-Page Fatigue Swaps", detail: "7 image swaps across 4 pages. High-fatigue image count: 9 → 3." },
-        { id: "S28", name: "Builder Logos + OG Fix + Link Audit", detail: "6 SVG builder logo cards with brand-authentic styling. Fixed OG mobile previews (domain, dimensions, type tags). Found and fixed 21 broken vanity links. Created 23 Netlify 301 redirects." },
-        { id: "S29", name: "Link & Sitemap Remediation", detail: "Full crawl: 588 pages, 25,794 links → 0 broken. Added 3 pages to sitemap (584 entries). 17 noindex header rules for 222 legacy files. All verified clean." },
-      ]}
-    />
-
-    <Phase
-      number="5" title="Punch List & Optimization" subtitle="Sprints 30–39 · Britt's feedback · Data fixes · Tags · Thumbnails · Duplicates · Legacy purge · WebP"
-      color="#dc2626"
-      defaultOpen={true}
-      sprints={[
-        { id: "S30", name: "Data Fixes & Type Tags", detail: "LOA corrections (D.848/849), builder fix (D.724), designType updates. Tags system with 53 designs tagged (Production, Concept, Military, Commercial). IMS/ILC→Racing merge. D.414 split into Carroll Marine 60 / WALLY 60. D.667/673M sort fixes." },
-        { id: "S31", name: "Portfolio UX Fixes", detail: "Numeric sort fix (was alphabetical). Featured design daily rotation from top 20 recent with images. Concept plan suppression. Tags filter replacing unreliable builder dropdown." },
-        { id: "S32A", name: "Image Corrections", detail: "Racing page VO65 image corrected. 4 thumbnails updated to dedicated named images (Cookson 50, Farr 40, Farr 25, Platu 25). Farr 25 link fixed. Partners page McConaghy photo corrected (TP52 Apollo → Leopard 3)." },
-        { id: "S32B", name: "Thumbnail System", detail: "Default crop position changed to center 40% (shows hulls/waterlines). cropHint field for per-image overrides. Yacht silhouette SVG placeholder. Click-to-expand lightbox on detail pages (CSP-safe, Escape to close)." },
-        { id: "S33A", name: "Partners Page Corrections", detail: "Nautor Swan removed. Carroll Marine + Cookson marked 'no longer in business.' Baltic description fixed (Kiboko 4 → Canova). Southern Wind description updated with specific SW108 names." },
-        { id: "S34A", name: "Volvo Ocean Race Corrections", detail: "Removed 3 non-Farr entries (Groupama 4, Ericsson 4, ABN AMRO). Stats corrected. ABN AMRO removed from about.html timeline." },
-        { id: "S34B", name: "Whitbread Heritage Expansion", detail: "MAIDEN callout (Tracy Edwards' all-female crew, 1989-90). Ceramco entry enhanced with Blake's Whitbread context. Skipper name fix. Whitbread 60 Class Winner badge. Whitbread→Volvo transition note." },
-        { id: "S35", name: "Superyachts Page Fix", detail: "7 wrong images fixed. STP65/Rosebud removed (not superyachts). Circular links fixed. Kiboko 4 relabeled." },
-        { id: "S36", name: "Contact & Misc Quick Fixes", detail: "Social links (LinkedIn, Facebook, Instagram, Threads) in footer on all pages. Contact page: 'Mailing Address' + PMB 110. Design plans text updated. 68 leading-zero duplicates consolidated with 79 Netlify redirects. 496 visible designs (was 564)." },
-        { id: "S38", name: "Legacy Page Deletion", detail: "Deleted 221 MUSE/Drupal files (6 directories + 12 HTML files, 61,187 lines removed). Replaced 17 noindex rules with 9 meaningful 301 redirects (6 yacht + 3 team pages). Repository fully cleaned." },
-        { id: "S39", name: "WebP Image Generation", detail: "Converted 567 JPEG/PNG images to WebP. 55.8MB → 32.8MB (41% reduction). Automatic browser format negotiation — ~97% of browsers get smaller files. Detection script, global helper, dynamic styling, lazy-loader and lightbox all WebP-aware." },
-      ]}
-    />
-  </>
-);
-
-// ═══════════════════════════════════════════════════════════════
-// TAB 4: BY THE NUMBERS
-// ═══════════════════════════════════════════════════════════════
-
-const MetricRow = ({ label, before, after, improvement }) => (
-  <div style={{
-    display: "grid", gridTemplateColumns: "2fr 1fr 1fr 1fr",
-    padding: "10px 0", borderBottom: "1px solid #f0f2f5", alignItems: "center",
-  }}>
-    <div style={{ fontSize: 13, fontWeight: 500, color: "#1a1f2e" }}>{label}</div>
-    <div style={{ fontSize: 12, color: "#b91c1c", textAlign: "center" }}>{before}</div>
-    <div style={{ fontSize: 12, color: "#1a7a3a", fontWeight: 600, textAlign: "center" }}>{after}</div>
-    <div style={{ fontSize: 11, color: FarrBlue, fontWeight: 600, textAlign: "center" }}>{improvement}</div>
-  </div>
-);
-
-const NumbersTab = () => (
-  <>
-    <Section title="Before & After">
-      <Card>
-        <div style={{
-          display: "grid", gridTemplateColumns: "2fr 1fr 1fr 1fr",
-          padding: "8px 0", borderBottom: "2px solid #e8ecf2", marginBottom: 4,
-        }}>
-          <div style={{ fontSize: 11, fontWeight: 700, color: "#6b7280", textTransform: "uppercase" }}>Metric</div>
-          <div style={{ fontSize: 11, fontWeight: 700, color: "#b91c1c", textAlign: "center", textTransform: "uppercase" }}>Before</div>
-          <div style={{ fontSize: 11, fontWeight: 700, color: "#1a7a3a", textAlign: "center", textTransform: "uppercase" }}>After</div>
-          <div style={{ fontSize: 11, fontWeight: 700, color: FarrBlue, textAlign: "center", textTransform: "uppercase" }}>Change</div>
-        </div>
-        <MetricRow label="Yacht designs in database" before="~90" after="643" improvement="+614%" />
-        <MetricRow label="Visible yacht pages" before="~90" after="496" improvement="+451%" />
-        <MetricRow label="Images" before="~50" after="356" improvement="+612%" />
-        <MetricRow label="Image file size (JPEG/PNG)" before="140 MB" after="64 MB" improvement="−54%" />
-        <MetricRow label="Image file size (WebP)" before="55.8 MB" after="32.8 MB" improvement="−41%" />
-        <MetricRow label="Portfolio search/filter" before="None" after="Search + sort + tags filter + grid/list" improvement="New" />
-        <MetricRow label="Design plan purchases" before="Email only" after="Stripe checkout (7+9 designs)" improvement="New" />
-        <MetricRow label="Admin portal" before="None" after="Full catalog editor with auth" improvement="New" />
-        <MetricRow label="Broken internal links" before="Multiple" after="0 of 25,794" improvement="100% fixed" />
-        <MetricRow label="Sitemap entries" before="None" after="584" improvement="New" />
-        <MetricRow label="Accessibility" before="Not tested" after="WCAG 2.1 AA" improvement="New" />
-        <MetricRow label="Font file size" before="Baseline" after="−82%" improvement="WOFF2" />
-        <MetricRow label="CSS size" before="71 KB" after="58.5 KB" improvement="−18%" />
-        <MetricRow label="CSS ghost classes" before="79 unused" after="0" improvement="87% utilization" />
-        <MetricRow label="Legacy files" before="222 noindexed" after="0 (deleted)" improvement="Purged" />
-        <MetricRow label="Duplicate designs" before="68 pairs" after="Consolidated" improvement="496 visible" />
-        <MetricRow label="Netlify redirects" before="23" after="111" improvement="79 legacy + 9 team" />
-        <MetricRow label="Deploy time" before="Manual FTP" after="~20s auto-deploy" improvement="CI/CD" />
-        <MetricRow label="Platform" before="WordPress" after="Static (Netlify)" improvement="Faster, cheaper, secure" />
-      </Card>
-    </Section>
-
-    <Section title="Data Coverage (643 designs)">
-      {[
-        { field: "Year", count: 642, pct: 99 },
-        { field: "Short description", count: 630, pct: 98 },
-        { field: "Full description", count: 565, pct: 88 },
-        { field: "LOA (specs)", count: 558, pct: 87 },
-        { field: "Design type", count: 539, pct: 84 },
-        { field: "Tags", count: 53, pct: 8 },
-        { field: "Images", count: 356, pct: 63 },
-        { field: "Builder", count: 338, pct: 53 },
-        { field: "Purchasable plans", count: 7, pct: 1 },
-        { field: "Scanned plans", count: 9, pct: 1.4 },
-      ].map((d, i) => (
-        <div key={i} style={{ display: "flex", alignItems: "center", gap: 12, padding: "7px 0", borderBottom: "1px solid #f0f2f5" }}>
-          <div style={{ width: 140, fontSize: 13, fontWeight: 500, color: "#1a1f2e" }}>{d.field}</div>
-          <div style={{ flex: 1, background: "#f0f2f5", borderRadius: 6, height: 20, overflow: "hidden" }}>
-            <div style={{
-              width: `${Math.min(d.pct, 100)}%`, height: "100%",
-              background: d.pct > 80 ? "#22c55e" : d.pct > 50 ? FarrOrange : "#ef4444",
-              borderRadius: 6, transition: "width 0.5s",
-            }} />
-          </div>
-          <div style={{ width: 80, fontSize: 12, color: "#4a5568", textAlign: "right" }}>{d.count} ({d.pct}%)</div>
-        </div>
-      ))}
-    </Section>
-
-    <Section title="Site Metrics">
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 12 }}>
-        <StatCard number="517" label="Core Pages" sub="496 yacht + 21 static" />
-        <StatCard number="584" label="Sitemap Entries" sub="21 static + 563 yachts" />
-        <StatCard number="25,794" label="Internal Links" sub="all verified" />
-        <StatCard number="111" label="Netlify Redirects" sub="vanity + legacy + duplicates" />
-        <StatCard number="567" label="WebP Images" sub="32.8MB total" />
-        <StatCard number="89" label="Scanned Plan PDFs" sub="6 designs" />
-      </div>
-    </Section>
-  </>
-);
-
-// ═══════════════════════════════════════════════════════════════
-// TAB 5: OPEN ITEMS
-// ═══════════════════════════════════════════════════════════════
-
-const OpenItemsTab = () => (
-  <>
-    <Section title="Waiting on Britt (9 items)">
-      {[
-        { id: "A1", label: "D.266 naming", detail: 'Suggested "IMS 44" — confirm name, unhide, merge 266_0001?', priority: "medium" },
-        { id: "A2", label: "Duplicate pairs review", detail: "Spreadsheet ready: 68 plain pairs + 50 suffix groups. 9 safe to auto-merge, 59 need Britt's review.", priority: "high" },
-        { id: "A4", label: "D.493 Orlanda photo", detail: "Wrong Cookson 50 photo removed. Currently shows placeholder. Need correct Orlanda photo.", priority: "low" },
-        { id: "B1", label: "History page inaccuracies", detail: "6 fixed in Sprint 18. May be more that only Britt or Maureen would catch.", priority: "medium" },
-        { id: "B2", label: "Maureen's story edits", detail: 'Britt said "I\'ll get Maureen into that." No updates received.', priority: "medium" },
-        { id: "B3", label: "Ideal design page layout", detail: "Britt wants to collaborate on an ideal yacht page layout. Ready when he is.", priority: "low" },
-        { id: "B4", label: "Jennifer — team page?", detail: "Who is Jennifer? Name, title, bio, photo needed if she should be on team page.", priority: "low" },
-        { id: "C1+C2", label: "Plan pricing & packaging", detail: "Blocks scanned plan sales going live. Flat rate vs variable pricing? Individual drawings vs full sets?", priority: "high" },
-        { id: "D1", label: "GA4 tracking ID", detail: "All pages have placeholder G-XXXXXXXXXX. Old UA property expired. Need GA4 property created.", priority: "medium" },
-      ].map((item, i) => (
-        <div key={i} style={{
-          display: "flex", gap: 14, padding: "12px 0",
-          borderBottom: "1px solid #f0f2f5", alignItems: "flex-start",
-        }}>
-          <span style={{
-            fontSize: 11, fontWeight: 700, flexShrink: 0, marginTop: 2,
-            padding: "2px 8px", borderRadius: 4,
-            background: item.priority === "high" ? "#fff4e5" : item.priority === "medium" ? "#e8f0fe" : "#f1f3f7",
-            color: item.priority === "high" ? "#b45309" : item.priority === "medium" ? FarrBlue : "#6b7280",
-          }}>{item.id}</span>
-          <div>
-            <div style={{ fontSize: 13, fontWeight: 600, color: "#1a1f2e" }}>{item.label}</div>
-            <div style={{ fontSize: 12, color: "#7a8599", marginTop: 2, lineHeight: 1.5 }}>{item.detail}</div>
-          </div>
-        </div>
-      ))}
-    </Section>
-
-    <Section title="Next Sprint Candidates (no Britt needed)">
-      {[
-        { label: "DNS cutover prep", detail: "Document steps for farrdesign.com WordPress → Netlify switch. Provide Netlify DNS values." },
-        { label: "GA4 setup", detail: "Create GA4 property (if Britt provides account access), replace placeholder tracking ID across all pages." },
-        { label: "Google Search Console", detail: "Set up property, submit sitemap, monitor indexing." },
-        { label: "Additional image sourcing", detail: "~140 visible designs still without images. Waiting on Britt's photos." },
-      ].map((item, i) => (
-        <div key={i} style={{
-          display: "flex", gap: 12, padding: "10px 0",
-          borderBottom: "1px solid #f0f2f5", alignItems: "flex-start",
-        }}>
-          <span style={{
-            width: 24, height: 24, borderRadius: 6, flexShrink: 0,
-            background: "#e8f0fe", color: FarrBlue, display: "flex",
-            alignItems: "center", justifyContent: "center",
-            fontSize: 12, fontWeight: 700,
-          }}>{i + 1}</span>
-          <div>
-            <div style={{ fontSize: 13, fontWeight: 600, color: "#1a1f2e" }}>{item.label}</div>
-            <div style={{ fontSize: 12, color: "#7a8599", marginTop: 2, lineHeight: 1.5 }}>{item.detail}</div>
-          </div>
-        </div>
-      ))}
-    </Section>
-
-    <Section title="DNS — Final Launch Step">
-      <CalloutBox color="amber" title="farrdesign.com still points to old WordPress">
-        When Britt is ready to flip the switch, we provide the Netlify DNS values and the domain
-        goes live. SSL is automatic. This is the last step before the real domain is serving the new site.
-      </CalloutBox>
-    </Section>
-  </>
-);
-
-// ═══════════════════════════════════════════════════════════════
-// TAB 6: MINI TOUR
-// ═══════════════════════════════════════════════════════════════
-
-const TourStop = ({ title, slug, description, features, status }) => (
-  <Card style={{ marginBottom: 12 }}>
-    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
+  <!-- Header -->
+  <div style="background:linear-gradient(135deg,#00267F 0%,#001a5c 100%);padding:36px 32px 28px;border-radius:0 0 20px 20px">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start">
       <div>
-        <div style={{ fontSize: 15, fontWeight: 700, color: FarrBlue }}>{title}</div>
-        <div style={{ fontSize: 11, color: "#7a8599", fontFamily: "monospace", marginTop: 2 }}>{SITE}/{slug}</div>
+        <div style="color:#fff;font-size:20px;font-weight:800;letter-spacing:-0.01em">Farr Yacht Design</div>
+        <div style="color:rgba(255,255,255,0.5);font-size:12px;font-weight:500;margin-top:2px">farr-designs.sailr.science</div>
       </div>
-      <Badge status={status} />
-    </div>
-    <div style={{ fontSize: 13, color: "#4a5568", lineHeight: 1.6, marginTop: 10 }}>{description}</div>
-    {features && (
-      <div style={{ display: "flex", gap: 6, flexWrap: "wrap", marginTop: 10 }}>
-        {features.map((f, i) => (
-          <span key={i} style={{
-            fontSize: 11, fontWeight: 500, padding: "3px 10px", borderRadius: 6,
-            background: "#f5f7fa", color: "#4a5568",
-          }}>{f}</span>
-        ))}
-      </div>
-    )}
-  </Card>
-);
-
-const TourTab = () => (
-  <>
-    <CalloutBox color="blue" title="Live Site Tour">
-      Every page below is live and navigable at {SITE}. Use a desktop browser for the full experience.
-    </CalloutBox>
-    <div style={{ marginTop: 16 }} />
-
-    <Section title="Core Pages">
-      <TourStop title="Homepage" slug="" status="live"
-        description="Full-bleed hero, proof bar (43 world championships, 800+ designs), three featured design cards (Kiboko 4, Gelliceaux, American Magic), services overview, CTA bands for Design Plans and Contact."
-        features={["Hero rotation", "Proof bar", "Featured cards", "Services grid", "CTA bands"]} />
-      <TourStop title="Portfolio" slug="portfolio" status="live"
-        description="Interactive grid of 496 visible designs with real-time search by name/number/builder, sort by design number/year/length, filter by type tags, and grid/list toggle. Type tag overlays on thumbnails. Featured design rotates daily. WebP-optimized images."
-        features={["Search", "Sort", "Tags filter", "Grid/list toggle", "Lazy loading", "Daily featured", "WebP"]} />
-      <TourStop title="Yacht Detail (generated)" slug="yacht/880-02.html" status="live"
-        description="496 yacht pages auto-generated from boats.json by build_site.py. Design number badge, breadcrumb, description, spec table, purchase card (available/waitlist/digitizing), related designs. Click-to-expand lightbox on images. Yacht silhouette placeholder for designs without photos."
-        features={["Auto-generated", "Spec table", "Purchase card", "Related designs", "OG tags", "Lightbox", "WebP"]} />
-    </Section>
-
-    <Section title="Content Pages">
-      <TourStop title="Our Story" slug="about.html" status="live"
-        description="Company history from Britt's V3BW document. Four thematic sections: Our Approach, Cruising Excellence, Superyacht Innovation, Our Commitment. History timeline with balanced images."
-        features={["V3BW integrated", "Timeline", "4 sections"]} />
-      <TourStop title="Team" slug="team.html" status="live"
-        description="Britt's full bio with four sections (Fremantle to Annapolis, Building on a Legacy, Leading Innovation). Single column, photo, title: Principal, Owner & Senior Naval Architect."
-        features={["Bio", "Photo", "Leadership focus"]} />
-      <TourStop title="Partners" slug="partners.html" status="live"
-        description="5 active builder partners with real boat photos + brand-authentic SVG logo cards: Baltic, Southern Wind, Knierim, Persico, McConaghy. Cookson and Carroll Marine marked as no longer in business. Nautor Swan removed per Britt."
-        features={["Boat photos", "SVG logos", "Brand-authentic", "Defunct badges"]} />
-      <TourStop title="Awards" slug="awards.html" status="live"
-        description="Photo hero, 6-card image gallery with fatigue-aware selections, 15 awards from 2008–2026."
-        features={["Photo hero", "Gallery", "15 awards"]} />
-    </Section>
-
-    <Section title="Racing Heritage">
-      <TourStop title="Racing Hub" slug="racing.html" status="live"
-        description="Hub connecting four heritage sections with section cards and navigation."
-        features={["Whitbread", "Volvo Ocean Race", "TP52", "America's Cup"]} />
-      <TourStop title="America's Cup" slug="americas-cup.html" status="live"
-        description="Full campaign history with hero photography." features={["In About dropdown nav"]} />
-      <TourStop title="Volvo Ocean Race" slug="volvo-ocean-race.html" status="live"
-        description="Complete VOR/Whitbread campaign timeline." features={["In About dropdown nav"]} />
-    </Section>
-
-    <Section title="Commerce & Admin">
-      <TourStop title="Design Plans" slug="design-plans.html" status="live"
-        description="Browse plan catalog with purchase cards. 7 active plans + 9 scanned plan designs. Stripe checkout in sandbox mode."
-        features={["Stripe checkout", "7 plans", "9 scanned", "89 PDFs"]} />
-      <TourStop title="Admin Portal" slug="admin.html" status="live"
-        description="Supabase auth, full catalog editor. Search, filter, edit metadata, upload images, toggle visibility, owner field (admin-only)."
-        features={["Auth", "Catalog editor", "Visibility toggle", "Owner field"]} />
-      <TourStop title="Consulting" slug="consulting.html" status="live"
-        description="Dedicated consulting page in primary navigation. Service descriptions and contact CTA."
-        features={["Primary nav", "Service packages", "Contact CTA"]} />
-    </Section>
-
-    <Section title="Infrastructure">
-      <TourStop title="Custom 404" slug="404.html" status="live"
-        description="Branded error page with navigation back to portfolio. Shows when visitors hit a bad URL."
-        features={["Branded", "Navigation links"]} />
-      <TourStop title="Sitemap" slug="sitemap.xml" status="live"
-        description="584 entries: 21 static pages + 563 visible yacht pages. Auto-generated by build_site.py."
-        features={["584 entries", "Auto-generated"]} />
-    </Section>
-  </>
-);
-
-// ═══════════════════════════════════════════════════════════════
-// MAIN APP
-// ═══════════════════════════════════════════════════════════════
-
-const FYDProjectStatus = () {
-  const [tab, setTab] = useState("overview");
-
-  const tabs = [
-    { id: "overview", label: "Overview" },
-    { id: "research", label: "Research" },
-    { id: "journey", label: "Journey" },
-    { id: "numbers", label: "By the Numbers" },
-    { id: "open", label: "Open Items" },
-    { id: "tour", label: "Site Tour" },
-  ];
-
-  return (
-    <div style={{
-      fontFamily: "'Inter', system-ui, -apple-system, sans-serif",
-      maxWidth: 720, margin: "0 auto", background: "#f8f9fc",
-      minHeight: "100vh", padding: "0 0 40px",
-    }}>
-      {/* Header */}
-      <div style={{
-        background: `linear-gradient(135deg, ${FarrBlue} 0%, #001a5c 100%)`,
-        padding: "36px 32px 28px", borderRadius: "0 0 20px 20px",
-      }}>
-        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
-          <div>
-            <div style={{ color: "#fff", fontSize: 20, fontWeight: 800, letterSpacing: "-0.01em" }}>
-              Farr Yacht Design
-            </div>
-            <div style={{ color: "rgba(255,255,255,0.5)", fontSize: 12, fontWeight: 500, marginTop: 2 }}>
-              farr-designs.sailr.science
-            </div>
-          </div>
-          <div style={{ textAlign: "right" }}>
-            <div style={{ color: "rgba(255,255,255,0.5)", fontSize: 11 }}>Prepared by</div>
-            <div style={{ color: "#fff", fontSize: 13, fontWeight: 600 }}>SailrScience</div>
-          </div>
-        </div>
-        <h1 style={{
-          color: "#fff", fontSize: 26, fontWeight: 800, lineHeight: 1.2,
-          margin: "20px 0 0", letterSpacing: "-0.02em",
-        }}>
-          Website Rebuild<br />
-          <span style={{ color: FarrOrange }}>Complete Project Status</span>
-        </h1>
-        <div style={{ color: "rgba(255,255,255,0.45)", fontSize: 12, marginTop: 10 }}>
-          March 14, 2026 — 68 Sessions · 39 Sprints · Inception to Delivery
-        </div>
-      </div>
-
-      {/* Stats strip */}
-      <div style={{ display: "flex", gap: 8, padding: "0 20px", marginTop: -18, flexWrap: "wrap" }}>
-        <StatCard number="643" label="Designs" sub="496 visible" />
-        <StatCard number="356" label="Images" sub="63% coverage" />
-        <StatCard number="39" label="Sprints" sub="all complete" accent={FarrOrange} />
-        <StatCard number="0" label="Broken Links" sub="25,794 checked" accent="#22c55e" />
-      </div>
-
-      {/* Tabs */}
-      <div style={{
-        display: "flex", gap: 4, padding: "20px 20px 0",
-        overflowX: "auto", flexWrap: "wrap",
-      }}>
-        {tabs.map(t => (
-          <TabBtn key={t.id} active={tab === t.id} label={t.label} onClick={() => setTab(t.id)} />
-        ))}
-      </div>
-
-      {/* Content */}
-      <div style={{ padding: "20px 20px 0" }}>
-        {tab === "overview" && <OverviewTab />}
-        {tab === "research" && <ResearchTab />}
-        {tab === "journey" && <JourneyTab />}
-        {tab === "numbers" && <NumbersTab />}
-        {tab === "open" && <OpenItemsTab />}
-        {tab === "tour" && <TourTab />}
-      </div>
-
-      {/* Footer */}
-      <div style={{
-        margin: "28px 20px 0", padding: "18px 22px",
-        background: "#fff", borderRadius: 12, border: "1px solid #e8ecf2",
-        display: "flex", justifyContent: "space-between", alignItems: "center",
-      }}>
-        <div>
-          <div style={{ fontSize: 11, color: "#8896a8", marginBottom: 2 }}>Prepared by</div>
-          <div style={{ fontSize: 14, fontWeight: 600, color: FarrBlue }}>SailrScience</div>
-        </div>
-        <div style={{ textAlign: "center" }}>
-          <div style={{ fontSize: 11, color: "#8896a8", marginBottom: 2 }}>Live Site</div>
-          <div style={{ fontSize: 12, fontWeight: 500, color: FarrBlue, fontFamily: "monospace" }}>farr-designs.sailr.science</div>
-        </div>
-        <div style={{ textAlign: "right" }}>
-          <div style={{ fontSize: 11, color: "#8896a8", marginBottom: 2 }}>Session 68</div>
-          <div style={{ fontSize: 13, fontWeight: 600, color: "#4a5568" }}>March 14, 2026</div>
-        </div>
+      <div style="text-align:right">
+        <div style="color:rgba(255,255,255,0.5);font-size:11px">Prepared by</div>
+        <div style="color:#fff;font-size:13px;font-weight:600">SailrScience</div>
       </div>
     </div>
-  );
-}
+    <h1 style="color:#fff;font-size:26px;font-weight:800;line-height:1.2;margin:20px 0 0;letter-spacing:-0.02em">
+      Website Rebuild<br><span style="color:#F97700">Complete Project Status</span>
+    </h1>
+    <div style="color:rgba(255,255,255,0.45);font-size:12px;margin-top:10px">
+      March 14, 2026 — 68 Sessions · 39 Sprints · Inception to Delivery
+    </div>
+  </div>
 
+  <!-- Hero stats -->
+  <div style="display:flex;gap:8px;padding:0 20px;margin-top:-18px;flex-wrap:wrap"><div style="background:#fff;border-radius:12px;padding:24px 16px;text-align:center;border:1px solid #e8ecf2;flex:1 1 120px;min-width:120px">
+  <div style="font-size:36px;font-weight:800;color:#00267F;line-height:1">643</div>
+  <div style="font-size:13px;font-weight:600;color:#4a5568;margin-top:6px">Designs</div>
+  <div style="font-size:11px;color:#8896a8;margin-top:3px">496 visible</div>
+</div><div style="background:#fff;border-radius:12px;padding:24px 16px;text-align:center;border:1px solid #e8ecf2;flex:1 1 120px;min-width:120px">
+  <div style="font-size:36px;font-weight:800;color:#00267F;line-height:1">356</div>
+  <div style="font-size:13px;font-weight:600;color:#4a5568;margin-top:6px">Images</div>
+  <div style="font-size:11px;color:#8896a8;margin-top:3px">63% coverage</div>
+</div><div style="background:#fff;border-radius:12px;padding:24px 16px;text-align:center;border:1px solid #e8ecf2;flex:1 1 120px;min-width:120px">
+  <div style="font-size:36px;font-weight:800;color:#F97700;line-height:1">39</div>
+  <div style="font-size:13px;font-weight:600;color:#4a5568;margin-top:6px">Sprints</div>
+  <div style="font-size:11px;color:#8896a8;margin-top:3px">all complete</div>
+</div><div style="background:#fff;border-radius:12px;padding:24px 16px;text-align:center;border:1px solid #e8ecf2;flex:1 1 120px;min-width:120px">
+  <div style="font-size:36px;font-weight:800;color:#22c55e;line-height:1">0</div>
+  <div style="font-size:13px;font-weight:600;color:#4a5568;margin-top:6px">Broken Links</div>
+  <div style="font-size:11px;color:#8896a8;margin-top:3px">25,794 checked</div>
+</div></div>
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<FYDProjectStatus />);
+  <!-- Tabs -->
+  <div style="display:flex;gap:4px;padding:20px 20px 0;overflow-x:auto;flex-wrap:wrap">
+    <button class="tab-btn main-tab-btn active" data-tab="overview">Overview</button><button class="tab-btn main-tab-btn" data-tab="research">Research</button><button class="tab-btn main-tab-btn" data-tab="journey">Journey</button><button class="tab-btn main-tab-btn" data-tab="numbers">By the Numbers</button><button class="tab-btn main-tab-btn" data-tab="open">Open Items</button><button class="tab-btn main-tab-btn" data-tab="tour">Site Tour</button>
+  </div>
+
+  <!-- Tab content -->
+  <div style="padding:20px 20px 0">
+    <div class="tab-panel" id="panel-overview" style=""><div style="background:#fff;border-radius:12px;padding:22px;border:1px solid #e8ecf2;margin-bottom:20px">
+      <div style="font-size:16px;font-weight:700;color:#00267F;margin-bottom:10px">Project Complete — Ready for Launch</div>
+      <div style="font-size:13px;color:#4a5568;line-height:1.7">The Farr Yacht Design website has been rebuilt from the ground up over 68 sessions and 39 sprints. Starting from a dated WordPress site with broken links, no search, and stale news from 2018, the new site is a fully static, high-performance platform on Netlify with 643 yacht designs, interactive portfolio search, admin catalog editor, e-commerce with Stripe checkout, WCAG 2.1 AA accessibility, comprehensive SEO, WebP image optimization, and a full social media presence. Legacy files have been purged, duplicates consolidated, and the site is live at staging and ready for DNS cutover to farrdesign.com.</div>
+    </div><div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:24px"><div style="background:#fff;border-radius:12px;padding:24px 16px;text-align:center;border:1px solid #e8ecf2;flex:1 1 120px;min-width:120px">
+  <div style="font-size:36px;font-weight:800;color:#00267F;line-height:1">643</div>
+  <div style="font-size:13px;font-weight:600;color:#4a5568;margin-top:6px">Designs</div>
+  <div style="font-size:11px;color:#8896a8;margin-top:3px">496 visible · 147 hidden</div>
+</div><div style="background:#fff;border-radius:12px;padding:24px 16px;text-align:center;border:1px solid #e8ecf2;flex:1 1 120px;min-width:120px">
+  <div style="font-size:36px;font-weight:800;color:#00267F;line-height:1">356</div>
+  <div style="font-size:13px;font-weight:600;color:#4a5568;margin-top:6px">Images</div>
+  <div style="font-size:11px;color:#8896a8;margin-top:3px">63% coverage · 32.8MB WebP</div>
+</div><div style="background:#fff;border-radius:12px;padding:24px 16px;text-align:center;border:1px solid #e8ecf2;flex:1 1 120px;min-width:120px">
+  <div style="font-size:36px;font-weight:800;color:#00267F;line-height:1">496</div>
+  <div style="font-size:13px;font-weight:600;color:#4a5568;margin-top:6px">Yacht Pages</div>
+  <div style="font-size:11px;color:#8896a8;margin-top:3px">+ 21 static pages</div>
+</div><div style="background:#fff;border-radius:12px;padding:24px 16px;text-align:center;border:1px solid #e8ecf2;flex:1 1 120px;min-width:120px">
+  <div style="font-size:36px;font-weight:800;color:#00267F;line-height:1">39</div>
+  <div style="font-size:13px;font-weight:600;color:#4a5568;margin-top:6px">Sprints</div>
+  <div style="font-size:11px;color:#8896a8;margin-top:3px">68 sessions</div>
+</div><div style="background:#fff;border-radius:12px;padding:24px 16px;text-align:center;border:1px solid #e8ecf2;flex:1 1 120px;min-width:120px">
+  <div style="font-size:36px;font-weight:800;color:#00267F;line-height:1">0</div>
+  <div style="font-size:13px;font-weight:600;color:#4a5568;margin-top:6px">Broken Links</div>
+  <div style="font-size:11px;color:#8896a8;margin-top:3px">25,794 verified</div>
+</div></div><div style="margin-bottom:28px">
+  <h3 style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#C0A280;margin-bottom:14px;padding-bottom:8px;border-bottom:2px solid #C0A28033">Deployment</h3>
+  <div style="display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid #f0f2f5">
+  <div style="flex:1"><span style="font-size:13px;color:#1a1f2e;font-weight:500">Platform</span><span style="font-size:12px;color:#7a8599;margin-left:8px">Netlify — static site, CI/CD auto-deploy</span></div>
+  <span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:0.03em;background:#e6f9ed;color:#1a7a3a">Live</span>
+</div><div style="display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid #f0f2f5">
+  <div style="flex:1"><span style="font-size:13px;color:#1a1f2e;font-weight:500">Build system</span><span style="font-size:12px;color:#7a8599;margin-left:8px">build_site.py generates 496 yacht pages from boats.json</span></div>
+  <span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:0.03em;background:#e6f9ed;color:#1a7a3a">Live</span>
+</div><div style="display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid #f0f2f5">
+  <div style="flex:1"><span style="font-size:13px;color:#1a1f2e;font-weight:500">SSL / HTTPS</span><span style="font-size:12px;color:#7a8599;margin-left:8px">Automatic via Netlify</span></div>
+  <span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:0.03em;background:#e6f9ed;color:#1a7a3a">Live</span>
+</div><div style="display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid #f0f2f5">
+  <div style="flex:1"><span style="font-size:13px;color:#1a1f2e;font-weight:500">Admin portal</span><span style="font-size:12px;color:#7a8599;margin-left:8px">Supabase auth — catalog editor, visibility toggle, owner field</span></div>
+  <span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:0.03em;background:#e6f9ed;color:#1a7a3a">Live</span>
+</div><div style="display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid #f0f2f5">
+  <div style="flex:1"><span style="font-size:13px;color:#1a1f2e;font-weight:500">E-commerce</span><span style="font-size:12px;color:#7a8599;margin-left:8px">Stripe checkout — 7 plans + 9 scanned plan designs</span></div>
+  <span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:0.03em;background:#e6f9ed;color:#1a7a3a">Live</span>
+</div><div style="display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid #f0f2f5">
+  <div style="flex:1"><span style="font-size:13px;color:#1a1f2e;font-weight:500">Custom domain</span><span style="font-size:12px;color:#7a8599;margin-left:8px">farrdesign.com — awaiting DNS switch from WordPress</span></div>
+  <span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:0.03em;background:#fff4e5;color:#b45309">Pending</span>
+</div><div style="display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid #f0f2f5">
+  <div style="flex:1"><span style="font-size:13px;color:#1a1f2e;font-weight:500">GA4 Analytics</span><span style="font-size:12px;color:#7a8599;margin-left:8px">Placeholder ID — needs GA4 property created</span></div>
+  <span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:0.03em;background:#fff4e5;color:#b45309">Pending</span>
+</div>
+</div><div style="margin-bottom:28px">
+  <h3 style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#C0A280;margin-bottom:14px;padding-bottom:8px;border-bottom:2px solid #C0A28033">Quality Certifications</h3>
+  <div style="display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid #f0f2f5">
+  <div style="flex:1"><span style="font-size:13px;color:#1a1f2e;font-weight:500">WCAG 2.1 AA</span><span style="font-size:12px;color:#7a8599;margin-left:8px">10 accessibility fixes, skip-nav, ARIA labels, contrast</span></div>
+  <span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:0.03em;background:#e6f9ed;color:#1a7a3a">Complete</span>
+</div><div style="display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid #f0f2f5">
+  <div style="flex:1"><span style="font-size:13px;color:#1a1f2e;font-weight:500">Content Security Policy</span><span style="font-size:12px;color:#7a8599;margin-left:8px">CSP headers configured in netlify.toml</span></div>
+  <span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:0.03em;background:#e6f9ed;color:#1a7a3a">Complete</span>
+</div><div style="display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid #f0f2f5">
+  <div style="flex:1"><span style="font-size:13px;color:#1a1f2e;font-weight:500">Link integrity</span><span style="font-size:12px;color:#7a8599;margin-left:8px">588 pages, 25,794 links — zero broken</span></div>
+  <span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:0.03em;background:#e6f9ed;color:#1a7a3a">Complete</span>
+</div><div style="display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid #f0f2f5">
+  <div style="flex:1"><span style="font-size:13px;color:#1a1f2e;font-weight:500">Sitemap</span><span style="font-size:12px;color:#7a8599;margin-left:8px">584 entries (21 static + 563 yachts)</span></div>
+  <span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:0.03em;background:#e6f9ed;color:#1a7a3a">Complete</span>
+</div><div style="display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid #f0f2f5">
+  <div style="flex:1"><span style="font-size:13px;color:#1a1f2e;font-weight:500">SEO</span><span style="font-size:12px;color:#7a8599;margin-left:8px">JSON-LD, Open Graph, meta descriptions on all pages</span></div>
+  <span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:0.03em;background:#e6f9ed;color:#1a7a3a">Complete</span>
+</div><div style="display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid #f0f2f5">
+  <div style="flex:1"><span style="font-size:13px;color:#1a1f2e;font-weight:500">Legacy page cleanup</span><span style="font-size:12px;color:#7a8599;margin-left:8px">221 MUSE/Drupal files deleted, 9 legacy URL 301 redirects</span></div>
+  <span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:0.03em;background:#e6f9ed;color:#1a7a3a">Complete</span>
+</div><div style="display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid #f0f2f5">
+  <div style="flex:1"><span style="font-size:13px;color:#1a1f2e;font-weight:500">Performance</span><span style="font-size:12px;color:#7a8599;margin-left:8px">WOFF2 fonts (82% smaller), minified CSS (58.5KB), lazy loading, WebP images (41% smaller)</span></div>
+  <span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:0.03em;background:#e6f9ed;color:#1a7a3a">Complete</span>
+</div><div style="display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid #f0f2f5">
+  <div style="flex:1"><span style="font-size:13px;color:#1a1f2e;font-weight:500">Social links</span><span style="font-size:12px;color:#7a8599;margin-left:8px">LinkedIn, Facebook, Instagram, Threads in footer on all pages</span></div>
+  <span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:0.03em;background:#e6f9ed;color:#1a7a3a">Complete</span>
+</div><div style="display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid #f0f2f5">
+  <div style="flex:1"><span style="font-size:13px;color:#1a1f2e;font-weight:500">Duplicate consolidation</span><span style="font-size:12px;color:#7a8599;margin-left:8px">68 leading-zero duplicates merged, 79 redirects for old URLs</span></div>
+  <span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:0.03em;background:#e6f9ed;color:#1a7a3a">Complete</span>
+</div><div style="display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid #f0f2f5">
+  <div style="flex:1"><span style="font-size:13px;color:#1a1f2e;font-weight:500">Post-build QA gate</span><span style="font-size:12px;color:#7a8599;margin-left:8px">Semantic link audit catches broken/circular/wrong yacht-card links</span></div>
+  <span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:0.03em;background:#e6f9ed;color:#1a7a3a">Complete</span>
+</div><div style="display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid #f0f2f5">
+  <div style="flex:1"><span style="font-size:13px;color:#1a1f2e;font-weight:500">Custom error pages</span><span style="font-size:12px;color:#7a8599;margin-left:8px">Branded 404 and 500 pages</span></div>
+  <span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:0.03em;background:#e6f9ed;color:#1a7a3a">Complete</span>
+</div>
+</div><div style="margin-bottom:28px">
+  <h3 style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#C0A280;margin-bottom:14px;padding-bottom:8px;border-bottom:2px solid #C0A28033">Brand Assets</h3>
+  <div style="display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid #f0f2f5">
+  <div style="flex:1"><span style="font-size:13px;color:#1a1f2e;font-weight:500">Corporate identity</span><span style="font-size:12px;color:#7a8599;margin-left:8px">Farr Blue #00267F, Orange #F97700, Bronze #C0A280</span></div>
+  <span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:0.03em;background:#e6f9ed;color:#1a7a3a">Live</span>
+</div><div style="display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid #f0f2f5">
+  <div style="flex:1"><span style="font-size:13px;color:#1a1f2e;font-weight:500">Typography</span><span style="font-size:12px;color:#7a8599;margin-left:8px">Jost, Kumbh Sans, Nunito Sans — WOFF2 self-hosted</span></div>
+  <span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:0.03em;background:#e6f9ed;color:#1a7a3a">Live</span>
+</div><div style="display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid #f0f2f5">
+  <div style="flex:1"><span style="font-size:13px;color:#1a1f2e;font-weight:500">Logo</span><span style="font-size:12px;color:#7a8599;margin-left:8px">SVG + PNG, white variant, favicon</span></div>
+  <span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:0.03em;background:#e6f9ed;color:#1a7a3a">Live</span>
+</div><div style="display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid #f0f2f5">
+  <div style="flex:1"><span style="font-size:13px;color:#1a1f2e;font-weight:500">Partner logos</span><span style="font-size:12px;color:#7a8599;margin-left:8px">6 SVG builder logo cards — Baltic, Cookson, SW, Knierim, Persico, McConaghy</span></div>
+  <span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:0.03em;background:#e6f9ed;color:#1a7a3a">Live</span>
+</div>
+</div></div><div class="tab-panel" id="panel-research" style="display:none">
+    <div style="display:flex;gap:6px;margin-bottom:20px;flex-wrap:wrap">
+      <button class="tab-btn research-tab-btn active" data-research-tab="audit">Content Audit</button>
+      <button class="tab-btn research-tab-btn" data-research-tab="audiences">Audiences</button>
+      <button class="tab-btn research-tab-btn" data-research-tab="competitive">Competitive Analysis</button>
+    </div>
+    <div class="research-panel" id="research-audit"><div style="background:#e8f0fe;border:1px solid #bdd4fc;border-radius:10px;padding:16px 20px;margin-top:12px"><div style="font-size:13px;font-weight:700;color:#00267F;margin-bottom:4px">Executive Summary</div><div style="font-size:12px;color:#1e40af;line-height:1.6">The legacy Farr Yacht Design website (WordPress + Elementor) contained extensive content (90+ yacht designs, 6 service areas) but suffered from news dated 2018, broken internal links, no design plan purchase flow, and no search or filtering on the portfolio. The About Us page timed out, consulting was buried, and heritage pages were orphaned from navigation.</div></div><div style="margin-top:20px"></div><div style="margin-bottom:28px">
+  <h3 style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#C0A280;margin-bottom:14px;padding-bottom:8px;border-bottom:2px solid #C0A28033">Issues Identified</h3>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+      <div style="background:#fff;border-radius:12px;padding:22px;border:1px solid #e8ecf2;"><div style="font-size:13px;font-weight:700;color:#b91c1c;margin-bottom:8px">Critical Issues</div><div style="font-size:12px;color:#4a5568;line-height:1.8">Homepage news dated 2018 · About Us page timeout · Broken internal links · No design plan purchase flow · No team bios or headshots · Google indexing blocked (noindex tags)</div></div>
+      <div style="background:#fff;border-radius:12px;padding:22px;border:1px solid #e8ecf2;"><div style="font-size:13px;font-weight:700;color:#b45309;margin-bottom:8px">UX Issues</div><div style="font-size:12px;color:#4a5568;line-height:1.8">No search or filtering on 90+ designs · No contact form (email only) · Consulting buried, not in nav · Heritage pages orphaned · No mobile optimization</div></div>
+    </div>
+</div><div style="margin-bottom:28px">
+  <h3 style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#C0A280;margin-bottom:14px;padding-bottom:8px;border-bottom:2px solid #C0A28033">Content Gaps Identified</h3>
+  <div style="display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid #f0f2f5">
+  <div style="flex:1"><span style="font-size:13px;color:#1a1f2e;font-weight:500">Recent projects</span><span style="font-size:12px;color:#7a8599;margin-left:8px">No post-2018 content (Kiboko 4, Gelliceaux)</span></div>
+  
+</div><div style="display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid #f0f2f5">
+  <div style="flex:1"><span style="font-size:13px;color:#1a1f2e;font-weight:500">Team bios / headshots</span><span style="font-size:12px;color:#7a8599;margin-left:8px">Critical credibility gap for superyacht buyers</span></div>
+  
+</div><div style="display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid #f0f2f5">
+  <div style="flex:1"><span style="font-size:13px;color:#1a1f2e;font-weight:500">Press / media kit</span><span style="font-size:12px;color:#7a8599;margin-left:8px">No downloadable materials for journalists</span></div>
+  
+</div><div style="display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid #f0f2f5">
+  <div style="flex:1"><span style="font-size:13px;color:#1a1f2e;font-weight:500">Design plan purchase flow</span><span style="font-size:12px;color:#7a8599;margin-left:8px">Key revenue stream — needed Stripe</span></div>
+  
+</div><div style="display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid #f0f2f5">
+  <div style="flex:1"><span style="font-size:13px;color:#1a1f2e;font-weight:500">Racing results feed</span><span style="font-size:12px;color:#7a8599;margin-left:8px">No automated fresh content</span></div>
+  
+</div>
+</div><div style="background:#e6f9ed;border:1px solid #bbf0cc;border-radius:10px;padding:16px 20px;margin-top:12px"><div style="font-size:13px;font-weight:700;color:#1a7a3a;margin-bottom:4px">Resolution Status</div><div style="font-size:12px;color:#166534;line-height:1.6">All critical and UX issues have been resolved across Sprints 1–39. See the Journey tab for details.</div></div></div>
+    <div class="research-panel" id="research-audiences" style="display:none"><div style="margin-bottom:28px">
+  <h3 style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#C0A280;margin-bottom:14px;padding-bottom:8px;border-bottom:2px solid #C0A28033">6 Target Audiences</h3>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px"><div style="background:#fff;border-radius:12px;padding:22px;border:1px solid #e8ecf2;padding:16px"><div style="text-align:center;padding:0"><div style="font-size:14px;font-weight:700;color:#00267F">Custom Racing Clients</div><div style="font-size:11px;color:#7a8599;margin-top:4px">$500K–$10M+</div><div style="margin-top:8px"><span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:0.03em;background:#e6f9ed;color:#1a7a3a">Complete</span></div></div></div><div style="background:#fff;border-radius:12px;padding:22px;border:1px solid #e8ecf2;padding:16px"><div style="text-align:center;padding:0"><div style="font-size:14px;font-weight:700;color:#00267F">Existing Farr Owners</div><div style="font-size:11px;color:#7a8599;margin-top:4px">Recurring Revenue</div><div style="margin-top:8px"><span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:0.03em;background:#e6f9ed;color:#1a7a3a">Complete</span></div></div></div><div style="background:#fff;border-radius:12px;padding:22px;border:1px solid #e8ecf2;padding:16px"><div style="text-align:center;padding:0"><div style="font-size:14px;font-weight:700;color:#00267F">Production Builders</div><div style="font-size:11px;color:#7a8599;margin-top:4px">B2B Partnership</div><div style="margin-top:8px"><span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:0.03em;background:#e6f9ed;color:#1a7a3a">Complete</span></div></div></div><div style="background:#fff;border-radius:12px;padding:22px;border:1px solid #e8ecf2;padding:16px"><div style="text-align:center;padding:0"><div style="font-size:14px;font-weight:700;color:#00267F">Racing Teams</div><div style="font-size:11px;color:#7a8599;margin-top:4px">$10K–$100K</div><div style="margin-top:8px"><span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:0.03em;background:#e6f9ed;color:#1a7a3a">Complete</span></div></div></div><div style="background:#fff;border-radius:12px;padding:22px;border:1px solid #e8ecf2;padding:16px"><div style="text-align:center;padding:0"><div style="font-size:14px;font-weight:700;color:#00267F">Superyacht Clients</div><div style="font-size:11px;color:#7a8599;margin-top:4px">$5M–$50M+</div><div style="margin-top:8px"><span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:0.03em;background:#e6f9ed;color:#1a7a3a">Complete</span></div></div></div><div style="background:#fff;border-radius:12px;padding:22px;border:1px solid #e8ecf2;padding:16px"><div style="text-align:center;padding:0"><div style="font-size:14px;font-weight:700;color:#00267F">Enthusiasts / Press</div><div style="font-size:11px;color:#7a8599;margin-top:4px">Brand Awareness</div><div style="margin-top:8px"><span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:0.03em;background:#fff4e5;color:#b45309">Pending</span></div></div></div></div>
+</div><div style="margin-bottom:28px">
+  <h3 style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#C0A280;margin-bottom:14px;padding-bottom:8px;border-bottom:2px solid #C0A28033">Conversion Goals</h3>
+  <div style="display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid #f0f2f5">
+  <div style="flex:1"><span style="font-size:13px;color:#1a1f2e;font-weight:500">Custom Racing</span><span style="font-size:12px;color:#7a8599;margin-left:8px">Consultation request via contact form</span></div>
+  <span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:0.03em;background:#e6f9ed;color:#1a7a3a">Live</span>
+</div><div style="display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid #f0f2f5">
+  <div style="flex:1"><span style="font-size:13px;color:#1a1f2e;font-weight:500">Existing Owners</span><span style="font-size:12px;color:#7a8599;margin-left:8px">Service inquiry, plan purchases</span></div>
+  <span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:0.03em;background:#e6f9ed;color:#1a7a3a">Live</span>
+</div><div style="display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid #f0f2f5">
+  <div style="flex:1"><span style="font-size:13px;color:#1a1f2e;font-weight:500">Builders / Partners</span><span style="font-size:12px;color:#7a8599;margin-left:8px">Partnership inquiry via contact + partners page</span></div>
+  <span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:0.03em;background:#e6f9ed;color:#1a7a3a">Live</span>
+</div><div style="display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid #f0f2f5">
+  <div style="flex:1"><span style="font-size:13px;color:#1a1f2e;font-weight:500">Racing Teams</span><span style="font-size:12px;color:#7a8599;margin-left:8px">Consulting request via dedicated consulting page</span></div>
+  <span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:0.03em;background:#e6f9ed;color:#1a7a3a">Live</span>
+</div><div style="display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid #f0f2f5">
+  <div style="flex:1"><span style="font-size:13px;color:#1a1f2e;font-weight:500">Superyacht Clients</span><span style="font-size:12px;color:#7a8599;margin-left:8px">Private consultation via contact</span></div>
+  <span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:0.03em;background:#e6f9ed;color:#1a7a3a">Live</span>
+</div><div style="display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid #f0f2f5">
+  <div style="flex:1"><span style="font-size:13px;color:#1a1f2e;font-weight:500">Enthusiasts / Press</span><span style="font-size:12px;color:#7a8599;margin-left:8px">Browse portfolio, share pages</span></div>
+  <span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:0.03em;background:#e6f9ed;color:#1a7a3a">Live</span>
+</div>
+</div><div style="margin-bottom:28px">
+  <h3 style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#C0A280;margin-bottom:14px;padding-bottom:8px;border-bottom:2px solid #C0A28033">Pain Points Resolved</h3>
+  <div style="display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid #f0f2f5">
+  <div style="flex:1"><span style="font-size:13px;color:#1a1f2e;font-weight:500">No search/filter</span><span style="font-size:12px;color:#7a8599;margin-left:8px">Sprint 9 — interactive search, sort, filter, grid/list views</span></div>
+  <span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:0.03em;background:#e6f9ed;color:#1a7a3a">Complete</span>
+</div><div style="display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid #f0f2f5">
+  <div style="flex:1"><span style="font-size:13px;color:#1a1f2e;font-weight:500">No team bios</span><span style="font-size:12px;color:#7a8599;margin-left:8px">Sprint 8B — Britt&#x27;s full bio on team page</span></div>
+  <span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:0.03em;background:#e6f9ed;color:#1a7a3a">Complete</span>
+</div><div style="display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid #f0f2f5">
+  <div style="flex:1"><span style="font-size:13px;color:#1a1f2e;font-weight:500">No purchase flow</span><span style="font-size:12px;color:#7a8599;margin-left:8px">Sprint 6 — Stripe checkout end-to-end</span></div>
+  <span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:0.03em;background:#e6f9ed;color:#1a7a3a">Complete</span>
+</div><div style="display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid #f0f2f5">
+  <div style="flex:1"><span style="font-size:13px;color:#1a1f2e;font-weight:500">Heritage pages orphaned</span><span style="font-size:12px;color:#7a8599;margin-left:8px">Sprint 14A — nav integration, racing hub links</span></div>
+  <span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:0.03em;background:#e6f9ed;color:#1a7a3a">Complete</span>
+</div><div style="display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid #f0f2f5">
+  <div style="flex:1"><span style="font-size:13px;color:#1a1f2e;font-weight:500">No consulting page</span><span style="font-size:12px;color:#7a8599;margin-left:8px">Sprint 5 — dedicated consulting page in primary nav</span></div>
+  <span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:0.03em;background:#e6f9ed;color:#1a7a3a">Complete</span>
+</div>
+</div></div>
+    <div class="research-panel" id="research-competitive" style="display:none"><div style="background:#e8f0fe;border:1px solid #bdd4fc;border-radius:10px;padding:16px 20px;margin-top:12px"><div style="font-size:13px;font-weight:700;color:#00267F;margin-bottom:4px">Key Insight</div><div style="font-size:12px;color:#1e40af;line-height:1.6">Owen Clarke Design had superior information architecture, but neither firm had modern UX. The Farr rebuild leapfrogs both with interactive portfolio search, e-commerce, and a performance-first static architecture.</div></div><div style="margin-top:20px"></div><div style="margin-bottom:28px">
+  <h3 style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#C0A280;margin-bottom:14px;padding-bottom:8px;border-bottom:2px solid #C0A28033">Company Comparison</h3>
+  <div style="display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid #f0f2f5">
+  <div style="flex:1"><span style="font-size:13px;color:#1a1f2e;font-weight:500">Founded</span><span style="font-size:12px;color:#7a8599;margin-left:8px">Farr: 1981 · Owen Clarke: 1991</span></div>
+  
+</div><div style="display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid #f0f2f5">
+  <div style="flex:1"><span style="font-size:13px;color:#1a1f2e;font-weight:500">Location</span><span style="font-size:12px;color:#7a8599;margin-left:8px">Farr: Annapolis, MD · OCD: Dartmouth, UK + NZ + USA</span></div>
+  
+</div><div style="display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid #f0f2f5">
+  <div style="flex:1"><span style="font-size:13px;color:#1a1f2e;font-weight:500">Positioning</span><span style="font-size:12px;color:#7a8599;margin-left:8px">Farr: &quot;Designed to Perform&quot; · OCD: &quot;Fast, beautiful sailboats&quot;</span></div>
+  
+</div><div style="display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid #f0f2f5">
+  <div style="flex:1"><span style="font-size:13px;color:#1a1f2e;font-weight:500">Key stat</span><span style="font-size:12px;color:#7a8599;margin-left:8px">Farr: 43 world championships · OCD: 8 Vendee Globe IMOCA 60s</span></div>
+  
+</div><div style="display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid #f0f2f5">
+  <div style="flex:1"><span style="font-size:13px;color:#1a1f2e;font-weight:500">Design range</span><span style="font-size:12px;color:#7a8599;margin-left:8px">Farr: 10ft–142ft · OCD: 6.5m–76m</span></div>
+  
+</div>
+</div><div style="margin-bottom:28px">
+  <h3 style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#C0A280;margin-bottom:14px;padding-bottom:8px;border-bottom:2px solid #C0A28033">Strategic Advantages Achieved</h3>
+  <div style="display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid #f0f2f5">
+  <div style="flex:1"><span style="font-size:13px;color:#1a1f2e;font-weight:500">Racing pedigree</span><span style="font-size:12px;color:#7a8599;margin-left:8px">43 championships showcased across heritage pages</span></div>
+  <span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:0.03em;background:#e6f9ed;color:#1a7a3a">Complete</span>
+</div><div style="display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid #f0f2f5">
+  <div style="flex:1"><span style="font-size:13px;color:#1a1f2e;font-weight:500">Revenue stream</span><span style="font-size:12px;color:#7a8599;margin-left:8px">Design plan sales via Stripe (7 plans + 9 scanned)</span></div>
+  <span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:0.03em;background:#e6f9ed;color:#1a7a3a">Complete</span>
+</div><div style="display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid #f0f2f5">
+  <div style="flex:1"><span style="font-size:13px;color:#1a1f2e;font-weight:500">Modern UX</span><span style="font-size:12px;color:#7a8599;margin-left:8px">Interactive search, responsive design, lazy loading</span></div>
+  <span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:0.03em;background:#e6f9ed;color:#1a7a3a">Complete</span>
+</div><div style="display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid #f0f2f5">
+  <div style="flex:1"><span style="font-size:13px;color:#1a1f2e;font-weight:500">Human stories</span><span style="font-size:12px;color:#7a8599;margin-left:8px">Team page, Our Story, awards page with gallery</span></div>
+  <span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:0.03em;background:#e6f9ed;color:#1a7a3a">Complete</span>
+</div><div style="display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid #f0f2f5">
+  <div style="flex:1"><span style="font-size:13px;color:#1a1f2e;font-weight:500">SEO advantage</span><span style="font-size:12px;color:#7a8599;margin-left:8px">JSON-LD, sitemap, OG tags — OCD has none</span></div>
+  <span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:0.03em;background:#e6f9ed;color:#1a7a3a">Complete</span>
+</div>
+</div></div>
+    </div><div class="tab-panel" id="panel-journey" style="display:none"><div style="background:#e8f0fe;border:1px solid #bdd4fc;border-radius:10px;padding:16px 20px;margin-top:12px"><div style="font-size:13px;font-weight:700;color:#00267F;margin-bottom:4px">Full Project Timeline</div><div style="font-size:12px;color:#1e40af;line-height:1.6">68 sessions across 39 sprints, from initial research and strategy through a production-ready website with comprehensive polish. Click any phase to expand individual sprint details.</div></div><div style="margin-top:20px"></div><div class="phase" style="margin-bottom:16px">
+  <div class="phase-header" style="background:#64748b;border-radius:12px;padding:18px 22px;cursor:pointer;display:flex;justify-content:space-between;align-items:center">
+    <div>
+      <div style="font-size:11px;font-weight:700;color:rgba(255,255,255,0.6);letter-spacing:0.06em;text-transform:uppercase">Phase 0</div>
+      <div style="font-size:17px;font-weight:700;color:#fff;margin-top:2px">Research &amp; Strategy</div>
+      <div style="font-size:12px;color:rgba(255,255,255,0.7);margin-top:4px">Content audit · Competitive analysis · 6 audience personas · Sitemap architecture</div>
+    </div>
+    <div style="display:flex;align-items:center;gap:10px">
+      <span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:0.03em;background:#e6f9ed;color:#1a7a3a">Complete</span>
+      <span class="phase-arrow" style="color:#fff;font-size:18px;font-weight:700">+</span>
+    </div>
+  </div>
+  <div class="phase-body" style="display:none;background:#fff;border-radius:0 0 12px 12px;border:1px solid #e8ecf2;border-top:none">
+    <div style="padding:10px 16px;border-bottom:1px solid #f0f2f5;display:flex;gap:12px;align-items:flex-start">
+  <span style="font-size:11px;font-weight:700;color:#00267F;background:#e8f0fe;padding:2px 8px;border-radius:4px;flex-shrink:0;margin-top:2px">R1</span>
+  <div><div style="font-size:13px;font-weight:600;color:#1a1f2e">Content Audit</div>
+  <div style="font-size:12px;color:#7a8599;margin-top:2px;line-height:1.5">Inventoried 120+ pages on legacy WordPress site. Identified critical issues: 2018-dated news, broken links, no purchase flow, About page timeout.</div></div>
+</div><div style="padding:10px 16px;border-bottom:1px solid #f0f2f5;display:flex;gap:12px;align-items:flex-start">
+  <span style="font-size:11px;font-weight:700;color:#00267F;background:#e8f0fe;padding:2px 8px;border-radius:4px;flex-shrink:0;margin-top:2px">R2</span>
+  <div><div style="font-size:13px;font-weight:600;color:#1a1f2e">Audience &amp; Journey Mapping</div>
+  <div style="font-size:12px;color:#7a8599;margin-top:2px;line-height:1.5">Defined 6 target audiences (superyacht buyers, plan buyers, racing teams, builders, press, enthusiasts) with conversion goals and user journeys.</div></div>
+</div><div style="padding:10px 16px;border-bottom:1px solid #f0f2f5;display:flex;gap:12px;align-items:flex-start">
+  <span style="font-size:11px;font-weight:700;color:#00267F;background:#e8f0fe;padding:2px 8px;border-radius:4px;flex-shrink:0;margin-top:2px">R3</span>
+  <div><div style="font-size:13px;font-weight:600;color:#1a1f2e">Competitive Analysis</div>
+  <div style="font-size:12px;color:#7a8599;margin-top:2px;line-height:1.5">Benchmarked against Owen Clarke Design. Found neither firm had modern UX — opportunity to leapfrog with interactive portfolio and e-commerce.</div></div>
+</div><div style="padding:10px 16px;border-bottom:1px solid #f0f2f5;display:flex;gap:12px;align-items:flex-start">
+  <span style="font-size:11px;font-weight:700;color:#00267F;background:#e8f0fe;padding:2px 8px;border-radius:4px;flex-shrink:0;margin-top:2px">R4</span>
+  <div><div style="font-size:13px;font-weight:600;color:#1a1f2e">Architecture &amp; Wireframes</div>
+  <div style="font-size:12px;color:#7a8599;margin-top:2px;line-height:1.5">Designed sitemap (20 root pages + yacht pages), nav structure, wireframes for homepage, portfolio, consulting, superyacht, yacht detail pages.</div></div>
+</div>
+  </div>
+</div><div class="phase" style="margin-bottom:16px">
+  <div class="phase-header" style="background:#1e40af;border-radius:12px;padding:18px 22px;cursor:pointer;display:flex;justify-content:space-between;align-items:center">
+    <div>
+      <div style="font-size:11px;font-weight:700;color:rgba(255,255,255,0.6);letter-spacing:0.06em;text-transform:uppercase">Phase 1</div>
+      <div style="font-size:17px;font-weight:700;color:#fff;margin-top:2px">Foundation</div>
+      <div style="font-size:12px;color:rgba(255,255,255,0.7);margin-top:4px">Sprints 1–5A · Data import · Three-tier UX · Repo · Netlify · Farr brand</div>
+    </div>
+    <div style="display:flex;align-items:center;gap:10px">
+      <span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:0.03em;background:#e6f9ed;color:#1a7a3a">Complete</span>
+      <span class="phase-arrow" style="color:#fff;font-size:18px;font-weight:700">+</span>
+    </div>
+  </div>
+  <div class="phase-body" style="display:none;background:#fff;border-radius:0 0 12px 12px;border:1px solid #e8ecf2;border-top:none">
+    <div style="padding:10px 16px;border-bottom:1px solid #f0f2f5;display:flex;gap:12px;align-items:flex-start">
+  <span style="font-size:11px;font-weight:700;color:#00267F;background:#e8f0fe;padding:2px 8px;border-radius:4px;flex-shrink:0;margin-top:2px">S1+2</span>
+  <div><div style="font-size:13px;font-weight:600;color:#1a1f2e">Data Import &amp; Three-Tier UX</div>
+  <div style="font-size:12px;color:#7a8599;margin-top:2px;line-height:1.5">Imported 629 designs into boats.json. Built three-tier system: Tier 1 (Britt&#x27;s master list), Tier 2 (card/MUSE), Tier 3 (orphan). 605 visible yacht pages generated.</div></div>
+</div><div style="padding:10px 16px;border-bottom:1px solid #f0f2f5;display:flex;gap:12px;align-items:flex-start">
+  <span style="font-size:11px;font-weight:700;color:#00267F;background:#e8f0fe;padding:2px 8px;border-radius:4px;flex-shrink:0;margin-top:2px">S3</span>
+  <div><div style="font-size:13px;font-weight:600;color:#1a1f2e">Export Fix &amp; Gap Analysis</div>
+  <div style="font-size:12px;color:#7a8599;margin-top:2px;line-height:1.5">Fixed data export pipeline. Identified coverage gaps across all fields.</div></div>
+</div><div style="padding:10px 16px;border-bottom:1px solid #f0f2f5;display:flex;gap:12px;align-items:flex-start">
+  <span style="font-size:11px;font-weight:700;color:#00267F;background:#e8f0fe;padding:2px 8px;border-radius:4px;flex-shrink:0;margin-top:2px">S5A</span>
+  <div><div style="font-size:13px;font-weight:600;color:#1a1f2e">Repo Restructure &amp; Netlify Pipeline</div>
+  <div style="font-size:12px;color:#7a8599;margin-top:2px;line-height:1.5">Restructured git repo. Set up CI/CD — every git push auto-deploys to Netlify in ~20 seconds. Full rebrand to Farr corporate identity: Blue #00267F, Orange, Bronze, WOFF2 brand fonts.</div></div>
+</div>
+  </div>
+</div><div class="phase" style="margin-bottom:16px">
+  <div class="phase-header" style="background:#7c3aed;border-radius:12px;padding:18px 22px;cursor:pointer;display:flex;justify-content:space-between;align-items:center">
+    <div>
+      <div style="font-size:11px;font-weight:700;color:rgba(255,255,255,0.6);letter-spacing:0.06em;text-transform:uppercase">Phase 2</div>
+      <div style="font-size:17px;font-weight:700;color:#fff;margin-top:2px">Content &amp; Features</div>
+      <div style="font-size:12px;color:rgba(255,255,255,0.7);margin-top:4px">Sprints 5B–12 · Admin portal · E-commerce · Web copy · MUSE data · Portfolio UX · Images</div>
+    </div>
+    <div style="display:flex;align-items:center;gap:10px">
+      <span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:0.03em;background:#e6f9ed;color:#1a7a3a">Complete</span>
+      <span class="phase-arrow" style="color:#fff;font-size:18px;font-weight:700">+</span>
+    </div>
+  </div>
+  <div class="phase-body" style="display:none;background:#fff;border-radius:0 0 12px 12px;border:1px solid #e8ecf2;border-top:none">
+    <div style="padding:10px 16px;border-bottom:1px solid #f0f2f5;display:flex;gap:12px;align-items:flex-start">
+  <span style="font-size:11px;font-weight:700;color:#00267F;background:#e8f0fe;padding:2px 8px;border-radius:4px;flex-shrink:0;margin-top:2px">S5B</span>
+  <div><div style="font-size:13px;font-weight:600;color:#1a1f2e">Admin Portal / Catalog Editor</div>
+  <div style="font-size:12px;color:#7a8599;margin-top:2px;line-height:1.5">Full catalog editor at /admin with Supabase auth. Search, filter, edit metadata, upload images, toggle visibility. Owner column (admin-only).</div></div>
+</div><div style="padding:10px 16px;border-bottom:1px solid #f0f2f5;display:flex;gap:12px;align-items:flex-start">
+  <span style="font-size:11px;font-weight:700;color:#00267F;background:#e8f0fe;padding:2px 8px;border-radius:4px;flex-shrink:0;margin-top:2px">S5C</span>
+  <div><div style="font-size:13px;font-weight:600;color:#1a1f2e">E-Commerce Unification</div>
+  <div style="font-size:12px;color:#7a8599;margin-top:2px;line-height:1.5">Unified 7 of 10 design plans into purchase flow with collapsible drawing lists.</div></div>
+</div><div style="padding:10px 16px;border-bottom:1px solid #f0f2f5;display:flex;gap:12px;align-items:flex-start">
+  <span style="font-size:11px;font-weight:700;color:#00267F;background:#e8f0fe;padding:2px 8px;border-radius:4px;flex-shrink:0;margin-top:2px">S6</span>
+  <div><div style="font-size:13px;font-weight:600;color:#1a1f2e">Stabilize &amp; Ship</div>
+  <div style="font-size:12px;color:#7a8599;margin-top:2px;line-height:1.5">planContents system, e-commerce refactor, Stripe checkout tested end-to-end. Sandbox mode working.</div></div>
+</div><div style="padding:10px 16px;border-bottom:1px solid #f0f2f5;display:flex;gap:12px;align-items:flex-start">
+  <span style="font-size:11px;font-weight:700;color:#00267F;background:#e8f0fe;padding:2px 8px;border-radius:4px;flex-shrink:0;margin-top:2px">S7</span>
+  <div><div style="font-size:13px;font-weight:600;color:#1a1f2e">MUSE Data Extraction</div>
+  <div style="font-size:12px;color:#7a8599;margin-top:2px;line-height:1.5">Scraped MUSE pages — 14 new designs, 9 descriptions, 26 LOA values. Conservative merge: only filled gaps. 643 total designs.</div></div>
+</div><div style="padding:10px 16px;border-bottom:1px solid #f0f2f5;display:flex;gap:12px;align-items:flex-start">
+  <span style="font-size:11px;font-weight:700;color:#00267F;background:#e8f0fe;padding:2px 8px;border-radius:4px;flex-shrink:0;margin-top:2px">S8A</span>
+  <div><div style="font-size:13px;font-weight:600;color:#1a1f2e">Data Cleanup</div>
+  <div style="font-size:12px;color:#7a8599;margin-top:2px;line-height:1.5">Hid 56 designs per Britt&#x27;s list, fixed duplicate 609M. Removed Pat &amp; Jim. 642 total, 563 visible.</div></div>
+</div><div style="padding:10px 16px;border-bottom:1px solid #f0f2f5;display:flex;gap:12px;align-items:flex-start">
+  <span style="font-size:11px;font-weight:700;color:#00267F;background:#e8f0fe;padding:2px 8px;border-radius:4px;flex-shrink:0;margin-top:2px">S8B</span>
+  <div><div style="font-size:13px;font-weight:600;color:#1a1f2e">Web Copy Integration</div>
+  <div style="font-size:12px;color:#7a8599;margin-top:2px;line-height:1.5">Integrated Britt&#x27;s V3BW document: team page bio, Our Story (4 thematic sections), awards page (15 awards), homepage hero, press kit. Britt&#x27;s title: Principal, Owner &amp; Senior Naval Architect.</div></div>
+</div><div style="padding:10px 16px;border-bottom:1px solid #f0f2f5;display:flex;gap:12px;align-items:flex-start">
+  <span style="font-size:11px;font-weight:700;color:#00267F;background:#e8f0fe;padding:2px 8px;border-radius:4px;flex-shrink:0;margin-top:2px">S9</span>
+  <div><div style="font-size:13px;font-weight:600;color:#1a1f2e">Portfolio UX</div>
+  <div style="font-size:12px;color:#7a8599;margin-top:2px;line-height:1.5">Interactive search by name/number/builder, sort by design number/year/length, filter by type tags (Production, AC, Volvo, Cruising, etc.), grid/list toggle. Type tag overlays on thumbnails.</div></div>
+</div><div style="padding:10px 16px;border-bottom:1px solid #f0f2f5;display:flex;gap:12px;align-items:flex-start">
+  <span style="font-size:11px;font-weight:700;color:#00267F;background:#e8f0fe;padding:2px 8px;border-radius:4px;flex-shrink:0;margin-top:2px">S10</span>
+  <div><div style="font-size:13px;font-weight:600;color:#1a1f2e">Data Completeness &amp; Image Pipeline</div>
+  <div style="font-size:12px;color:#7a8599;margin-top:2px;line-height:1.5">44 new images, 498 descriptions enriched, 6 LOA values added. Image coverage 36% → 43%.</div></div>
+</div><div style="padding:10px 16px;border-bottom:1px solid #f0f2f5;display:flex;gap:12px;align-items:flex-start">
+  <span style="font-size:11px;font-weight:700;color:#00267F;background:#e8f0fe;padding:2px 8px;border-radius:4px;flex-shrink:0;margin-top:2px">S11</span>
+  <div><div style="font-size:13px;font-weight:600;color:#1a1f2e">Bug Fixes, Kiboko 4, Scanned Plans</div>
+  <div style="font-size:12px;color:#7a8599;margin-top:2px;line-height:1.5">Kiboko 4 content corrected (was mixed with Canova). Scanned plans pipeline complete: 89 PDFs across 6 designs. Misc files as free downloads.</div></div>
+</div><div style="padding:10px 16px;border-bottom:1px solid #f0f2f5;display:flex;gap:12px;align-items:flex-start">
+  <span style="font-size:11px;font-weight:700;color:#00267F;background:#e8f0fe;padding:2px 8px;border-radius:4px;flex-shrink:0;margin-top:2px">S12</span>
+  <div><div style="font-size:13px;font-weight:600;color:#1a1f2e">MUSE Image Extraction</div>
+  <div style="font-size:12px;color:#7a8599;margin-top:2px;line-height:1.5">38 new images, 17 upgrades from MUSE archive. Image coverage 43% → 49% (276→314).</div></div>
+</div>
+  </div>
+</div><div class="phase" style="margin-bottom:16px">
+  <div class="phase-header" style="background:#b45309;border-radius:12px;padding:18px 22px;cursor:pointer;display:flex;justify-content:space-between;align-items:center">
+    <div>
+      <div style="font-size:11px;font-weight:700;color:rgba(255,255,255,0.6);letter-spacing:0.06em;text-transform:uppercase">Phase 3</div>
+      <div style="font-size:17px;font-weight:700;color:#fff;margin-top:2px">Quality &amp; SEO</div>
+      <div style="font-size:12px;color:rgba(255,255,255,0.7);margin-top:4px">Sprints 13–18 · SEO · Accessibility groundwork · CSS tokens · Image optimization · History corrections</div>
+    </div>
+    <div style="display:flex;align-items:center;gap:10px">
+      <span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:0.03em;background:#e6f9ed;color:#1a7a3a">Complete</span>
+      <span class="phase-arrow" style="color:#fff;font-size:18px;font-weight:700">+</span>
+    </div>
+  </div>
+  <div class="phase-body" style="display:none;background:#fff;border-radius:0 0 12px 12px;border:1px solid #e8ecf2;border-top:none">
+    <div style="padding:10px 16px;border-bottom:1px solid #f0f2f5;display:flex;gap:12px;align-items:flex-start">
+  <span style="font-size:11px;font-weight:700;color:#00267F;background:#e8f0fe;padding:2px 8px;border-radius:4px;flex-shrink:0;margin-top:2px">S13</span>
+  <div><div style="font-size:13px;font-weight:600;color:#1a1f2e">SEO, Accessibility &amp; CSS Hardening</div>
+  <div style="font-size:12px;color:#7a8599;margin-top:2px;line-height:1.5">Removed accidental noindex tags, added sitemap.xml, Open Graph tags on every page, JSON-LD structured data. CSS breakpoint consolidation (6→2), type scale, spacing tokens.</div></div>
+</div><div style="padding:10px 16px;border-bottom:1px solid #f0f2f5;display:flex;gap:12px;align-items:flex-start">
+  <span style="font-size:11px;font-weight:700;color:#00267F;background:#e8f0fe;padding:2px 8px;border-radius:4px;flex-shrink:0;margin-top:2px">S14A-E</span>
+  <div><div style="font-size:13px;font-weight:600;color:#1a1f2e">Portfolio Card Enhancements</div>
+  <div style="font-size:12px;color:#7a8599;margin-top:2px;line-height:1.5">Type tag overlays, improved titles, lazy loading, legacy cleanup. Owner field admin enhancement. CSS Phase 2 — design token system.</div></div>
+</div><div style="padding:10px 16px;border-bottom:1px solid #f0f2f5;display:flex;gap:12px;align-items:flex-start">
+  <span style="font-size:11px;font-weight:700;color:#00267F;background:#e8f0fe;padding:2px 8px;border-radius:4px;flex-shrink:0;margin-top:2px">S15</span>
+  <div><div style="font-size:13px;font-weight:600;color:#1a1f2e">Image Gap Audit</div>
+  <div style="font-size:12px;color:#7a8599;margin-top:2px;line-height:1.5">41 new images from old site archives. Coverage 49% → 62% (314→353). Exhausted both MUSE and Drupal archives.</div></div>
+</div><div style="padding:10px 16px;border-bottom:1px solid #f0f2f5;display:flex;gap:12px;align-items:flex-start">
+  <span style="font-size:11px;font-weight:700;color:#00267F;background:#e8f0fe;padding:2px 8px;border-radius:4px;flex-shrink:0;margin-top:2px">S16</span>
+  <div><div style="font-size:13px;font-weight:600;color:#1a1f2e">CSS Phase 3 — Design Token Migration</div>
+  <div style="font-size:12px;color:#7a8599;margin-top:2px;line-height:1.5">140 font-size + 219 spacing references tokenized. 68% design token coverage.</div></div>
+</div><div style="padding:10px 16px;border-bottom:1px solid #f0f2f5;display:flex;gap:12px;align-items:flex-start">
+  <span style="font-size:11px;font-weight:700;color:#00267F;background:#e8f0fe;padding:2px 8px;border-radius:4px;flex-shrink:0;margin-top:2px">S17</span>
+  <div><div style="font-size:13px;font-weight:600;color:#1a1f2e">Image Optimization</div>
+  <div style="font-size:12px;color:#7a8599;margin-top:2px;line-height:1.5">133 images compressed: 140MB → 64MB (54% reduction). All images max 1600px wide.</div></div>
+</div><div style="padding:10px 16px;border-bottom:1px solid #f0f2f5;display:flex;gap:12px;align-items:flex-start">
+  <span style="font-size:11px;font-weight:700;color:#00267F;background:#e8f0fe;padding:2px 8px;border-radius:4px;flex-shrink:0;margin-top:2px">S18</span>
+  <div><div style="font-size:13px;font-weight:600;color:#1a1f2e">History Page Corrections</div>
+  <div style="font-size:12px;color:#7a8599;margin-top:2px;line-height:1.5">Cross-referenced Our Story against V3BW document. Fixed 6 inaccuracies: ABN AMRO results, edition count, Britt&#x27;s title, Russell Bowler as co-founder, founding date, Kiboko 4 hull.</div></div>
+</div>
+  </div>
+</div><div class="phase" style="margin-bottom:16px">
+  <div class="phase-header" style="background:#059669;border-radius:12px;padding:18px 22px;cursor:pointer;display:flex;justify-content:space-between;align-items:center">
+    <div>
+      <div style="font-size:11px;font-weight:700;color:rgba(255,255,255,0.6);letter-spacing:0.06em;text-transform:uppercase">Phase 4</div>
+      <div style="font-size:17px;font-weight:700;color:#fff;margin-top:2px">Polish &amp; Hardening</div>
+      <div style="font-size:12px;color:rgba(255,255,255,0.7);margin-top:4px">Sprints 19–29 · Performance · WCAG AA · Partners · Awards · Builder logos · Link audit · Sitemap</div>
+    </div>
+    <div style="display:flex;align-items:center;gap:10px">
+      <span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:0.03em;background:#e6f9ed;color:#1a7a3a">Complete</span>
+      <span class="phase-arrow" style="color:#fff;font-size:18px;font-weight:700">+</span>
+    </div>
+  </div>
+  <div class="phase-body" style="display:none;background:#fff;border-radius:0 0 12px 12px;border:1px solid #e8ecf2;border-top:none">
+    <div style="padding:10px 16px;border-bottom:1px solid #f0f2f5;display:flex;gap:12px;align-items:flex-start">
+  <span style="font-size:11px;font-weight:700;color:#00267F;background:#e8f0fe;padding:2px 8px;border-radius:4px;flex-shrink:0;margin-top:2px">S19</span>
+  <div><div style="font-size:13px;font-weight:600;color:#1a1f2e">Performance</div>
+  <div style="font-size:12px;color:#7a8599;margin-top:2px;line-height:1.5">WOFF2 fonts (82% size reduction), CSS minification (71KB→58.5KB, 19% reduction), font preloading. Noticeably faster first load.</div></div>
+</div><div style="padding:10px 16px;border-bottom:1px solid #f0f2f5;display:flex;gap:12px;align-items:flex-start">
+  <span style="font-size:11px;font-weight:700;color:#00267F;background:#e8f0fe;padding:2px 8px;border-radius:4px;flex-shrink:0;margin-top:2px">S20</span>
+  <div><div style="font-size:13px;font-weight:600;color:#1a1f2e">CSS Phase 4 — Sub-Scale Tokens</div>
+  <div style="font-size:12px;color:#7a8599;margin-top:2px;line-height:1.5">36 additional migrations, 85% total design token coverage across all font sizes and spacing.</div></div>
+</div><div style="padding:10px 16px;border-bottom:1px solid #f0f2f5;display:flex;gap:12px;align-items:flex-start">
+  <span style="font-size:11px;font-weight:700;color:#00267F;background:#e8f0fe;padding:2px 8px;border-radius:4px;flex-shrink:0;margin-top:2px">S21</span>
+  <div><div style="font-size:13px;font-weight:600;color:#1a1f2e">Cleanup</div>
+  <div style="font-size:12px;color:#7a8599;margin-top:2px;line-height:1.5">Removed duplicate files cluttering the repository.</div></div>
+</div><div style="padding:10px 16px;border-bottom:1px solid #f0f2f5;display:flex;gap:12px;align-items:flex-start">
+  <span style="font-size:11px;font-weight:700;color:#00267F;background:#e8f0fe;padding:2px 8px;border-radius:4px;flex-shrink:0;margin-top:2px">S22</span>
+  <div><div style="font-size:13px;font-weight:600;color:#1a1f2e">Accessibility, CSP &amp; Error Pages</div>
+  <div style="font-size:12px;color:#7a8599;margin-top:2px;line-height:1.5">Full WCAG 2.1 AA audit — 10 fixes (focus indicators, contrast ratios, ARIA labels, skip-nav links). Content Security Policy headers. Custom branded 404 and 500 error pages.</div></div>
+</div><div style="padding:10px 16px;border-bottom:1px solid #f0f2f5;display:flex;gap:12px;align-items:flex-start">
+  <span style="font-size:11px;font-weight:700;color:#00267F;background:#e8f0fe;padding:2px 8px;border-radius:4px;flex-shrink:0;margin-top:2px">S23</span>
+  <div><div style="font-size:13px;font-weight:600;color:#1a1f2e">CSS Audit &amp; Ghost Cleanup</div>
+  <div style="font-size:12px;color:#7a8599;margin-top:2px;line-height:1.5">Audited every CSS class — removed 79 &#x27;ghost&#x27; classes (defined but never used). 87% class utilization.</div></div>
+</div><div style="padding:10px 16px;border-bottom:1px solid #f0f2f5;display:flex;gap:12px;align-items:flex-start">
+  <span style="font-size:11px;font-weight:700;color:#00267F;background:#e8f0fe;padding:2px 8px;border-radius:4px;flex-shrink:0;margin-top:2px">S24</span>
+  <div><div style="font-size:13px;font-weight:600;color:#1a1f2e">Partners Page Images</div>
+  <div style="font-size:12px;color:#7a8599;margin-top:2px;line-height:1.5">Replaced 6 placeholder initials with real boat photography for each partner builder.</div></div>
+</div><div style="padding:10px 16px;border-bottom:1px solid #f0f2f5;display:flex;gap:12px;align-items:flex-start">
+  <span style="font-size:11px;font-weight:700;color:#00267F;background:#e8f0fe;padding:2px 8px;border-radius:4px;flex-shrink:0;margin-top:2px">S25</span>
+  <div><div style="font-size:13px;font-weight:600;color:#1a1f2e">Awards Page Images + Fatigue Audit</div>
+  <div style="font-size:12px;color:#7a8599;margin-top:2px;line-height:1.5">Photo hero and 6-card image gallery on awards page. Full 593-image fatigue audit to prevent overuse.</div></div>
+</div><div style="padding:10px 16px;border-bottom:1px solid #f0f2f5;display:flex;gap:12px;align-items:flex-start">
+  <span style="font-size:11px;font-weight:700;color:#00267F;background:#e8f0fe;padding:2px 8px;border-radius:4px;flex-shrink:0;margin-top:2px">S26</span>
+  <div><div style="font-size:13px;font-weight:600;color:#1a1f2e">Image Attribution Fixes</div>
+  <div style="font-size:12px;color:#7a8599;margin-top:2px;line-height:1.5">Corrected builder photo mismatches. Established Builder Attribution Rule: all images must match their builder.</div></div>
+</div><div style="padding:10px 16px;border-bottom:1px solid #f0f2f5;display:flex;gap:12px;align-items:flex-start">
+  <span style="font-size:11px;font-weight:700;color:#00267F;background:#e8f0fe;padding:2px 8px;border-radius:4px;flex-shrink:0;margin-top:2px">S27</span>
+  <div><div style="font-size:13px;font-weight:600;color:#1a1f2e">Cross-Page Fatigue Swaps</div>
+  <div style="font-size:12px;color:#7a8599;margin-top:2px;line-height:1.5">7 image swaps across 4 pages. High-fatigue image count: 9 → 3.</div></div>
+</div><div style="padding:10px 16px;border-bottom:1px solid #f0f2f5;display:flex;gap:12px;align-items:flex-start">
+  <span style="font-size:11px;font-weight:700;color:#00267F;background:#e8f0fe;padding:2px 8px;border-radius:4px;flex-shrink:0;margin-top:2px">S28</span>
+  <div><div style="font-size:13px;font-weight:600;color:#1a1f2e">Builder Logos + OG Fix + Link Audit</div>
+  <div style="font-size:12px;color:#7a8599;margin-top:2px;line-height:1.5">6 SVG builder logo cards with brand-authentic styling. Fixed OG mobile previews (domain, dimensions, type tags). Found and fixed 21 broken vanity links. Created 23 Netlify 301 redirects.</div></div>
+</div><div style="padding:10px 16px;border-bottom:1px solid #f0f2f5;display:flex;gap:12px;align-items:flex-start">
+  <span style="font-size:11px;font-weight:700;color:#00267F;background:#e8f0fe;padding:2px 8px;border-radius:4px;flex-shrink:0;margin-top:2px">S29</span>
+  <div><div style="font-size:13px;font-weight:600;color:#1a1f2e">Link &amp; Sitemap Remediation</div>
+  <div style="font-size:12px;color:#7a8599;margin-top:2px;line-height:1.5">Full crawl: 588 pages, 25,794 links → 0 broken. Added 3 pages to sitemap (584 entries). 17 noindex header rules for 222 legacy files. All verified clean.</div></div>
+</div>
+  </div>
+</div><div class="phase" style="margin-bottom:16px">
+  <div class="phase-header" style="background:#dc2626;border-radius:12px 12px 0 0;padding:18px 22px;cursor:pointer;display:flex;justify-content:space-between;align-items:center">
+    <div>
+      <div style="font-size:11px;font-weight:700;color:rgba(255,255,255,0.6);letter-spacing:0.06em;text-transform:uppercase">Phase 5</div>
+      <div style="font-size:17px;font-weight:700;color:#fff;margin-top:2px">Punch List &amp; Optimization</div>
+      <div style="font-size:12px;color:rgba(255,255,255,0.7);margin-top:4px">Sprints 30–39 · Britt&#x27;s feedback · Data fixes · Tags · Thumbnails · Duplicates · Legacy purge · WebP</div>
+    </div>
+    <div style="display:flex;align-items:center;gap:10px">
+      <span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:0.03em;background:#e6f9ed;color:#1a7a3a">Complete</span>
+      <span class="phase-arrow" style="color:#fff;font-size:18px;font-weight:700">−</span>
+    </div>
+  </div>
+  <div class="phase-body" style="display:block;background:#fff;border-radius:0 0 12px 12px;border:1px solid #e8ecf2;border-top:none">
+    <div style="padding:10px 16px;border-bottom:1px solid #f0f2f5;display:flex;gap:12px;align-items:flex-start">
+  <span style="font-size:11px;font-weight:700;color:#00267F;background:#e8f0fe;padding:2px 8px;border-radius:4px;flex-shrink:0;margin-top:2px">S30</span>
+  <div><div style="font-size:13px;font-weight:600;color:#1a1f2e">Data Fixes &amp; Type Tags</div>
+  <div style="font-size:12px;color:#7a8599;margin-top:2px;line-height:1.5">LOA corrections (D.848/849), builder fix (D.724), designType updates. Tags system with 53 designs tagged (Production, Concept, Military, Commercial). IMS/ILC→Racing merge. D.414 split into Carroll Marine 60 / WALLY 60. D.667/673M sort fixes.</div></div>
+</div><div style="padding:10px 16px;border-bottom:1px solid #f0f2f5;display:flex;gap:12px;align-items:flex-start">
+  <span style="font-size:11px;font-weight:700;color:#00267F;background:#e8f0fe;padding:2px 8px;border-radius:4px;flex-shrink:0;margin-top:2px">S31</span>
+  <div><div style="font-size:13px;font-weight:600;color:#1a1f2e">Portfolio UX Fixes</div>
+  <div style="font-size:12px;color:#7a8599;margin-top:2px;line-height:1.5">Numeric sort fix (was alphabetical). Featured design daily rotation from top 20 recent with images. Concept plan suppression. Tags filter replacing unreliable builder dropdown.</div></div>
+</div><div style="padding:10px 16px;border-bottom:1px solid #f0f2f5;display:flex;gap:12px;align-items:flex-start">
+  <span style="font-size:11px;font-weight:700;color:#00267F;background:#e8f0fe;padding:2px 8px;border-radius:4px;flex-shrink:0;margin-top:2px">S32A</span>
+  <div><div style="font-size:13px;font-weight:600;color:#1a1f2e">Image Corrections</div>
+  <div style="font-size:12px;color:#7a8599;margin-top:2px;line-height:1.5">Racing page VO65 image corrected. 4 thumbnails updated to dedicated named images (Cookson 50, Farr 40, Farr 25, Platu 25). Farr 25 link fixed. Partners page McConaghy photo corrected (TP52 Apollo → Leopard 3).</div></div>
+</div><div style="padding:10px 16px;border-bottom:1px solid #f0f2f5;display:flex;gap:12px;align-items:flex-start">
+  <span style="font-size:11px;font-weight:700;color:#00267F;background:#e8f0fe;padding:2px 8px;border-radius:4px;flex-shrink:0;margin-top:2px">S32B</span>
+  <div><div style="font-size:13px;font-weight:600;color:#1a1f2e">Thumbnail System</div>
+  <div style="font-size:12px;color:#7a8599;margin-top:2px;line-height:1.5">Default crop position changed to center 40% (shows hulls/waterlines). cropHint field for per-image overrides. Yacht silhouette SVG placeholder. Click-to-expand lightbox on detail pages (CSP-safe, Escape to close).</div></div>
+</div><div style="padding:10px 16px;border-bottom:1px solid #f0f2f5;display:flex;gap:12px;align-items:flex-start">
+  <span style="font-size:11px;font-weight:700;color:#00267F;background:#e8f0fe;padding:2px 8px;border-radius:4px;flex-shrink:0;margin-top:2px">S33A</span>
+  <div><div style="font-size:13px;font-weight:600;color:#1a1f2e">Partners Page Corrections</div>
+  <div style="font-size:12px;color:#7a8599;margin-top:2px;line-height:1.5">Nautor Swan removed. Carroll Marine + Cookson marked &#x27;no longer in business.&#x27; Baltic description fixed (Kiboko 4 → Canova). Southern Wind description updated with specific SW108 names.</div></div>
+</div><div style="padding:10px 16px;border-bottom:1px solid #f0f2f5;display:flex;gap:12px;align-items:flex-start">
+  <span style="font-size:11px;font-weight:700;color:#00267F;background:#e8f0fe;padding:2px 8px;border-radius:4px;flex-shrink:0;margin-top:2px">S34A</span>
+  <div><div style="font-size:13px;font-weight:600;color:#1a1f2e">Volvo Ocean Race Corrections</div>
+  <div style="font-size:12px;color:#7a8599;margin-top:2px;line-height:1.5">Removed 3 non-Farr entries (Groupama 4, Ericsson 4, ABN AMRO). Stats corrected. ABN AMRO removed from about.html timeline.</div></div>
+</div><div style="padding:10px 16px;border-bottom:1px solid #f0f2f5;display:flex;gap:12px;align-items:flex-start">
+  <span style="font-size:11px;font-weight:700;color:#00267F;background:#e8f0fe;padding:2px 8px;border-radius:4px;flex-shrink:0;margin-top:2px">S34B</span>
+  <div><div style="font-size:13px;font-weight:600;color:#1a1f2e">Whitbread Heritage Expansion</div>
+  <div style="font-size:12px;color:#7a8599;margin-top:2px;line-height:1.5">MAIDEN callout (Tracy Edwards&#x27; all-female crew, 1989-90). Ceramco entry enhanced with Blake&#x27;s Whitbread context. Skipper name fix. Whitbread 60 Class Winner badge. Whitbread→Volvo transition note.</div></div>
+</div><div style="padding:10px 16px;border-bottom:1px solid #f0f2f5;display:flex;gap:12px;align-items:flex-start">
+  <span style="font-size:11px;font-weight:700;color:#00267F;background:#e8f0fe;padding:2px 8px;border-radius:4px;flex-shrink:0;margin-top:2px">S35</span>
+  <div><div style="font-size:13px;font-weight:600;color:#1a1f2e">Superyachts Page Fix</div>
+  <div style="font-size:12px;color:#7a8599;margin-top:2px;line-height:1.5">7 wrong images fixed. STP65/Rosebud removed (not superyachts). Circular links fixed. Kiboko 4 relabeled.</div></div>
+</div><div style="padding:10px 16px;border-bottom:1px solid #f0f2f5;display:flex;gap:12px;align-items:flex-start">
+  <span style="font-size:11px;font-weight:700;color:#00267F;background:#e8f0fe;padding:2px 8px;border-radius:4px;flex-shrink:0;margin-top:2px">S36</span>
+  <div><div style="font-size:13px;font-weight:600;color:#1a1f2e">Contact &amp; Misc Quick Fixes</div>
+  <div style="font-size:12px;color:#7a8599;margin-top:2px;line-height:1.5">Social links (LinkedIn, Facebook, Instagram, Threads) in footer on all pages. Contact page: &#x27;Mailing Address&#x27; + PMB 110. Design plans text updated. 68 leading-zero duplicates consolidated with 79 Netlify redirects. 496 visible designs (was 564).</div></div>
+</div><div style="padding:10px 16px;border-bottom:1px solid #f0f2f5;display:flex;gap:12px;align-items:flex-start">
+  <span style="font-size:11px;font-weight:700;color:#00267F;background:#e8f0fe;padding:2px 8px;border-radius:4px;flex-shrink:0;margin-top:2px">S38</span>
+  <div><div style="font-size:13px;font-weight:600;color:#1a1f2e">Legacy Page Deletion</div>
+  <div style="font-size:12px;color:#7a8599;margin-top:2px;line-height:1.5">Deleted 221 MUSE/Drupal files (6 directories + 12 HTML files, 61,187 lines removed). Replaced 17 noindex rules with 9 meaningful 301 redirects (6 yacht + 3 team pages). Repository fully cleaned.</div></div>
+</div><div style="padding:10px 16px;border-bottom:1px solid #f0f2f5;display:flex;gap:12px;align-items:flex-start">
+  <span style="font-size:11px;font-weight:700;color:#00267F;background:#e8f0fe;padding:2px 8px;border-radius:4px;flex-shrink:0;margin-top:2px">S39</span>
+  <div><div style="font-size:13px;font-weight:600;color:#1a1f2e">WebP Image Generation</div>
+  <div style="font-size:12px;color:#7a8599;margin-top:2px;line-height:1.5">Converted 567 JPEG/PNG images to WebP. 55.8MB → 32.8MB (41% reduction). Automatic browser format negotiation — ~97% of browsers get smaller files. Detection script, global helper, dynamic styling, lazy-loader and lightbox all WebP-aware.</div></div>
+</div>
+  </div>
+</div></div><div class="tab-panel" id="panel-numbers" style="display:none"><div style="margin-bottom:28px">
+  <h3 style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#C0A280;margin-bottom:14px;padding-bottom:8px;border-bottom:2px solid #C0A28033">Before &amp; After</h3>
+  <div style="background:#fff;border-radius:12px;padding:22px;border:1px solid #e8ecf2;"><div style="display:grid;grid-template-columns:2fr 1fr 1fr 1fr;padding:8px 0;border-bottom:2px solid #e8ecf2;margin-bottom:4px">
+  <div style="font-size:11px;font-weight:700;color:#6b7280;text-transform:uppercase">Metric</div>
+  <div style="font-size:11px;font-weight:700;color:#b91c1c;text-align:center;text-transform:uppercase">Before</div>
+  <div style="font-size:11px;font-weight:700;color:#1a7a3a;text-align:center;text-transform:uppercase">After</div>
+  <div style="font-size:11px;font-weight:700;color:#00267F;text-align:center;text-transform:uppercase">Change</div>
+</div><div style="display:grid;grid-template-columns:2fr 1fr 1fr 1fr;padding:10px 0;border-bottom:1px solid #f0f2f5;align-items:center">
+  <div style="font-size:13px;font-weight:500;color:#1a1f2e">Yacht designs in database</div>
+  <div style="font-size:12px;color:#b91c1c;text-align:center">~90</div>
+  <div style="font-size:12px;color:#1a7a3a;font-weight:600;text-align:center">643</div>
+  <div style="font-size:11px;color:#00267F;font-weight:600;text-align:center">+614%</div>
+</div><div style="display:grid;grid-template-columns:2fr 1fr 1fr 1fr;padding:10px 0;border-bottom:1px solid #f0f2f5;align-items:center">
+  <div style="font-size:13px;font-weight:500;color:#1a1f2e">Visible yacht pages</div>
+  <div style="font-size:12px;color:#b91c1c;text-align:center">~90</div>
+  <div style="font-size:12px;color:#1a7a3a;font-weight:600;text-align:center">496</div>
+  <div style="font-size:11px;color:#00267F;font-weight:600;text-align:center">+451%</div>
+</div><div style="display:grid;grid-template-columns:2fr 1fr 1fr 1fr;padding:10px 0;border-bottom:1px solid #f0f2f5;align-items:center">
+  <div style="font-size:13px;font-weight:500;color:#1a1f2e">Images</div>
+  <div style="font-size:12px;color:#b91c1c;text-align:center">~50</div>
+  <div style="font-size:12px;color:#1a7a3a;font-weight:600;text-align:center">356</div>
+  <div style="font-size:11px;color:#00267F;font-weight:600;text-align:center">+612%</div>
+</div><div style="display:grid;grid-template-columns:2fr 1fr 1fr 1fr;padding:10px 0;border-bottom:1px solid #f0f2f5;align-items:center">
+  <div style="font-size:13px;font-weight:500;color:#1a1f2e">Image file size (JPEG/PNG)</div>
+  <div style="font-size:12px;color:#b91c1c;text-align:center">140 MB</div>
+  <div style="font-size:12px;color:#1a7a3a;font-weight:600;text-align:center">64 MB</div>
+  <div style="font-size:11px;color:#00267F;font-weight:600;text-align:center">−54%</div>
+</div><div style="display:grid;grid-template-columns:2fr 1fr 1fr 1fr;padding:10px 0;border-bottom:1px solid #f0f2f5;align-items:center">
+  <div style="font-size:13px;font-weight:500;color:#1a1f2e">Image file size (WebP)</div>
+  <div style="font-size:12px;color:#b91c1c;text-align:center">55.8 MB</div>
+  <div style="font-size:12px;color:#1a7a3a;font-weight:600;text-align:center">32.8 MB</div>
+  <div style="font-size:11px;color:#00267F;font-weight:600;text-align:center">−41%</div>
+</div><div style="display:grid;grid-template-columns:2fr 1fr 1fr 1fr;padding:10px 0;border-bottom:1px solid #f0f2f5;align-items:center">
+  <div style="font-size:13px;font-weight:500;color:#1a1f2e">Portfolio search/filter</div>
+  <div style="font-size:12px;color:#b91c1c;text-align:center">None</div>
+  <div style="font-size:12px;color:#1a7a3a;font-weight:600;text-align:center">Search + sort + tags filter + grid/list</div>
+  <div style="font-size:11px;color:#00267F;font-weight:600;text-align:center">New</div>
+</div><div style="display:grid;grid-template-columns:2fr 1fr 1fr 1fr;padding:10px 0;border-bottom:1px solid #f0f2f5;align-items:center">
+  <div style="font-size:13px;font-weight:500;color:#1a1f2e">Design plan purchases</div>
+  <div style="font-size:12px;color:#b91c1c;text-align:center">Email only</div>
+  <div style="font-size:12px;color:#1a7a3a;font-weight:600;text-align:center">Stripe checkout (7+9 designs)</div>
+  <div style="font-size:11px;color:#00267F;font-weight:600;text-align:center">New</div>
+</div><div style="display:grid;grid-template-columns:2fr 1fr 1fr 1fr;padding:10px 0;border-bottom:1px solid #f0f2f5;align-items:center">
+  <div style="font-size:13px;font-weight:500;color:#1a1f2e">Admin portal</div>
+  <div style="font-size:12px;color:#b91c1c;text-align:center">None</div>
+  <div style="font-size:12px;color:#1a7a3a;font-weight:600;text-align:center">Full catalog editor with auth</div>
+  <div style="font-size:11px;color:#00267F;font-weight:600;text-align:center">New</div>
+</div><div style="display:grid;grid-template-columns:2fr 1fr 1fr 1fr;padding:10px 0;border-bottom:1px solid #f0f2f5;align-items:center">
+  <div style="font-size:13px;font-weight:500;color:#1a1f2e">Broken internal links</div>
+  <div style="font-size:12px;color:#b91c1c;text-align:center">Multiple</div>
+  <div style="font-size:12px;color:#1a7a3a;font-weight:600;text-align:center">0 of 25,794</div>
+  <div style="font-size:11px;color:#00267F;font-weight:600;text-align:center">100% fixed</div>
+</div><div style="display:grid;grid-template-columns:2fr 1fr 1fr 1fr;padding:10px 0;border-bottom:1px solid #f0f2f5;align-items:center">
+  <div style="font-size:13px;font-weight:500;color:#1a1f2e">Sitemap entries</div>
+  <div style="font-size:12px;color:#b91c1c;text-align:center">None</div>
+  <div style="font-size:12px;color:#1a7a3a;font-weight:600;text-align:center">584</div>
+  <div style="font-size:11px;color:#00267F;font-weight:600;text-align:center">New</div>
+</div><div style="display:grid;grid-template-columns:2fr 1fr 1fr 1fr;padding:10px 0;border-bottom:1px solid #f0f2f5;align-items:center">
+  <div style="font-size:13px;font-weight:500;color:#1a1f2e">Accessibility</div>
+  <div style="font-size:12px;color:#b91c1c;text-align:center">Not tested</div>
+  <div style="font-size:12px;color:#1a7a3a;font-weight:600;text-align:center">WCAG 2.1 AA</div>
+  <div style="font-size:11px;color:#00267F;font-weight:600;text-align:center">New</div>
+</div><div style="display:grid;grid-template-columns:2fr 1fr 1fr 1fr;padding:10px 0;border-bottom:1px solid #f0f2f5;align-items:center">
+  <div style="font-size:13px;font-weight:500;color:#1a1f2e">Font file size</div>
+  <div style="font-size:12px;color:#b91c1c;text-align:center">Baseline</div>
+  <div style="font-size:12px;color:#1a7a3a;font-weight:600;text-align:center">−82%</div>
+  <div style="font-size:11px;color:#00267F;font-weight:600;text-align:center">WOFF2</div>
+</div><div style="display:grid;grid-template-columns:2fr 1fr 1fr 1fr;padding:10px 0;border-bottom:1px solid #f0f2f5;align-items:center">
+  <div style="font-size:13px;font-weight:500;color:#1a1f2e">CSS size</div>
+  <div style="font-size:12px;color:#b91c1c;text-align:center">71 KB</div>
+  <div style="font-size:12px;color:#1a7a3a;font-weight:600;text-align:center">58.5 KB</div>
+  <div style="font-size:11px;color:#00267F;font-weight:600;text-align:center">−18%</div>
+</div><div style="display:grid;grid-template-columns:2fr 1fr 1fr 1fr;padding:10px 0;border-bottom:1px solid #f0f2f5;align-items:center">
+  <div style="font-size:13px;font-weight:500;color:#1a1f2e">CSS ghost classes</div>
+  <div style="font-size:12px;color:#b91c1c;text-align:center">79 unused</div>
+  <div style="font-size:12px;color:#1a7a3a;font-weight:600;text-align:center">0</div>
+  <div style="font-size:11px;color:#00267F;font-weight:600;text-align:center">87% utilization</div>
+</div><div style="display:grid;grid-template-columns:2fr 1fr 1fr 1fr;padding:10px 0;border-bottom:1px solid #f0f2f5;align-items:center">
+  <div style="font-size:13px;font-weight:500;color:#1a1f2e">Legacy files</div>
+  <div style="font-size:12px;color:#b91c1c;text-align:center">222 noindexed</div>
+  <div style="font-size:12px;color:#1a7a3a;font-weight:600;text-align:center">0 (deleted)</div>
+  <div style="font-size:11px;color:#00267F;font-weight:600;text-align:center">Purged</div>
+</div><div style="display:grid;grid-template-columns:2fr 1fr 1fr 1fr;padding:10px 0;border-bottom:1px solid #f0f2f5;align-items:center">
+  <div style="font-size:13px;font-weight:500;color:#1a1f2e">Duplicate designs</div>
+  <div style="font-size:12px;color:#b91c1c;text-align:center">68 pairs</div>
+  <div style="font-size:12px;color:#1a7a3a;font-weight:600;text-align:center">Consolidated</div>
+  <div style="font-size:11px;color:#00267F;font-weight:600;text-align:center">496 visible</div>
+</div><div style="display:grid;grid-template-columns:2fr 1fr 1fr 1fr;padding:10px 0;border-bottom:1px solid #f0f2f5;align-items:center">
+  <div style="font-size:13px;font-weight:500;color:#1a1f2e">Netlify redirects</div>
+  <div style="font-size:12px;color:#b91c1c;text-align:center">23</div>
+  <div style="font-size:12px;color:#1a7a3a;font-weight:600;text-align:center">111</div>
+  <div style="font-size:11px;color:#00267F;font-weight:600;text-align:center">79 legacy + 9 team</div>
+</div><div style="display:grid;grid-template-columns:2fr 1fr 1fr 1fr;padding:10px 0;border-bottom:1px solid #f0f2f5;align-items:center">
+  <div style="font-size:13px;font-weight:500;color:#1a1f2e">Deploy time</div>
+  <div style="font-size:12px;color:#b91c1c;text-align:center">Manual FTP</div>
+  <div style="font-size:12px;color:#1a7a3a;font-weight:600;text-align:center">~20s auto-deploy</div>
+  <div style="font-size:11px;color:#00267F;font-weight:600;text-align:center">CI/CD</div>
+</div><div style="display:grid;grid-template-columns:2fr 1fr 1fr 1fr;padding:10px 0;border-bottom:1px solid #f0f2f5;align-items:center">
+  <div style="font-size:13px;font-weight:500;color:#1a1f2e">Platform</div>
+  <div style="font-size:12px;color:#b91c1c;text-align:center">WordPress</div>
+  <div style="font-size:12px;color:#1a7a3a;font-weight:600;text-align:center">Static (Netlify)</div>
+  <div style="font-size:11px;color:#00267F;font-weight:600;text-align:center">Faster, cheaper, secure</div>
+</div></div>
+</div><div style="margin-bottom:28px">
+  <h3 style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#C0A280;margin-bottom:14px;padding-bottom:8px;border-bottom:2px solid #C0A28033">Data Coverage (643 designs)</h3>
+  <div style="display:flex;align-items:center;gap:12px;padding:7px 0;border-bottom:1px solid #f0f2f5">
+  <div style="width:140px;font-size:13px;font-weight:500;color:#1a1f2e">Year</div>
+  <div style="flex:1;background:#f0f2f5;border-radius:6px;height:20px;overflow:hidden">
+    <div style="width:99%;height:100%;background:#22c55e;border-radius:6px"></div>
+  </div>
+  <div style="width:80px;font-size:12px;color:#4a5568;text-align:right">642 (99%)</div>
+</div><div style="display:flex;align-items:center;gap:12px;padding:7px 0;border-bottom:1px solid #f0f2f5">
+  <div style="width:140px;font-size:13px;font-weight:500;color:#1a1f2e">Short description</div>
+  <div style="flex:1;background:#f0f2f5;border-radius:6px;height:20px;overflow:hidden">
+    <div style="width:98%;height:100%;background:#22c55e;border-radius:6px"></div>
+  </div>
+  <div style="width:80px;font-size:12px;color:#4a5568;text-align:right">630 (98%)</div>
+</div><div style="display:flex;align-items:center;gap:12px;padding:7px 0;border-bottom:1px solid #f0f2f5">
+  <div style="width:140px;font-size:13px;font-weight:500;color:#1a1f2e">Full description</div>
+  <div style="flex:1;background:#f0f2f5;border-radius:6px;height:20px;overflow:hidden">
+    <div style="width:88%;height:100%;background:#22c55e;border-radius:6px"></div>
+  </div>
+  <div style="width:80px;font-size:12px;color:#4a5568;text-align:right">565 (88%)</div>
+</div><div style="display:flex;align-items:center;gap:12px;padding:7px 0;border-bottom:1px solid #f0f2f5">
+  <div style="width:140px;font-size:13px;font-weight:500;color:#1a1f2e">LOA (specs)</div>
+  <div style="flex:1;background:#f0f2f5;border-radius:6px;height:20px;overflow:hidden">
+    <div style="width:87%;height:100%;background:#22c55e;border-radius:6px"></div>
+  </div>
+  <div style="width:80px;font-size:12px;color:#4a5568;text-align:right">558 (87%)</div>
+</div><div style="display:flex;align-items:center;gap:12px;padding:7px 0;border-bottom:1px solid #f0f2f5">
+  <div style="width:140px;font-size:13px;font-weight:500;color:#1a1f2e">Design type</div>
+  <div style="flex:1;background:#f0f2f5;border-radius:6px;height:20px;overflow:hidden">
+    <div style="width:84%;height:100%;background:#22c55e;border-radius:6px"></div>
+  </div>
+  <div style="width:80px;font-size:12px;color:#4a5568;text-align:right">539 (84%)</div>
+</div><div style="display:flex;align-items:center;gap:12px;padding:7px 0;border-bottom:1px solid #f0f2f5">
+  <div style="width:140px;font-size:13px;font-weight:500;color:#1a1f2e">Tags</div>
+  <div style="flex:1;background:#f0f2f5;border-radius:6px;height:20px;overflow:hidden">
+    <div style="width:8%;height:100%;background:#ef4444;border-radius:6px"></div>
+  </div>
+  <div style="width:80px;font-size:12px;color:#4a5568;text-align:right">53 (8%)</div>
+</div><div style="display:flex;align-items:center;gap:12px;padding:7px 0;border-bottom:1px solid #f0f2f5">
+  <div style="width:140px;font-size:13px;font-weight:500;color:#1a1f2e">Images</div>
+  <div style="flex:1;background:#f0f2f5;border-radius:6px;height:20px;overflow:hidden">
+    <div style="width:63%;height:100%;background:#F97700;border-radius:6px"></div>
+  </div>
+  <div style="width:80px;font-size:12px;color:#4a5568;text-align:right">356 (63%)</div>
+</div><div style="display:flex;align-items:center;gap:12px;padding:7px 0;border-bottom:1px solid #f0f2f5">
+  <div style="width:140px;font-size:13px;font-weight:500;color:#1a1f2e">Builder</div>
+  <div style="flex:1;background:#f0f2f5;border-radius:6px;height:20px;overflow:hidden">
+    <div style="width:53%;height:100%;background:#F97700;border-radius:6px"></div>
+  </div>
+  <div style="width:80px;font-size:12px;color:#4a5568;text-align:right">338 (53%)</div>
+</div><div style="display:flex;align-items:center;gap:12px;padding:7px 0;border-bottom:1px solid #f0f2f5">
+  <div style="width:140px;font-size:13px;font-weight:500;color:#1a1f2e">Purchasable plans</div>
+  <div style="flex:1;background:#f0f2f5;border-radius:6px;height:20px;overflow:hidden">
+    <div style="width:1%;height:100%;background:#ef4444;border-radius:6px"></div>
+  </div>
+  <div style="width:80px;font-size:12px;color:#4a5568;text-align:right">7 (1%)</div>
+</div><div style="display:flex;align-items:center;gap:12px;padding:7px 0;border-bottom:1px solid #f0f2f5">
+  <div style="width:140px;font-size:13px;font-weight:500;color:#1a1f2e">Scanned plans</div>
+  <div style="flex:1;background:#f0f2f5;border-radius:6px;height:20px;overflow:hidden">
+    <div style="width:1.4%;height:100%;background:#ef4444;border-radius:6px"></div>
+  </div>
+  <div style="width:80px;font-size:12px;color:#4a5568;text-align:right">9 (1.4%)</div>
+</div>
+</div><div style="margin-bottom:28px">
+  <h3 style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#C0A280;margin-bottom:14px;padding-bottom:8px;border-bottom:2px solid #C0A28033">Site Metrics</h3>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px"><div style="background:#fff;border-radius:12px;padding:24px 16px;text-align:center;border:1px solid #e8ecf2;flex:1 1 120px;min-width:120px">
+  <div style="font-size:36px;font-weight:800;color:#00267F;line-height:1">517</div>
+  <div style="font-size:13px;font-weight:600;color:#4a5568;margin-top:6px">Core Pages</div>
+  <div style="font-size:11px;color:#8896a8;margin-top:3px">496 yacht + 21 static</div>
+</div><div style="background:#fff;border-radius:12px;padding:24px 16px;text-align:center;border:1px solid #e8ecf2;flex:1 1 120px;min-width:120px">
+  <div style="font-size:36px;font-weight:800;color:#00267F;line-height:1">584</div>
+  <div style="font-size:13px;font-weight:600;color:#4a5568;margin-top:6px">Sitemap Entries</div>
+  <div style="font-size:11px;color:#8896a8;margin-top:3px">21 static + 563 yachts</div>
+</div><div style="background:#fff;border-radius:12px;padding:24px 16px;text-align:center;border:1px solid #e8ecf2;flex:1 1 120px;min-width:120px">
+  <div style="font-size:36px;font-weight:800;color:#00267F;line-height:1">25,794</div>
+  <div style="font-size:13px;font-weight:600;color:#4a5568;margin-top:6px">Internal Links</div>
+  <div style="font-size:11px;color:#8896a8;margin-top:3px">all verified</div>
+</div><div style="background:#fff;border-radius:12px;padding:24px 16px;text-align:center;border:1px solid #e8ecf2;flex:1 1 120px;min-width:120px">
+  <div style="font-size:36px;font-weight:800;color:#00267F;line-height:1">111</div>
+  <div style="font-size:13px;font-weight:600;color:#4a5568;margin-top:6px">Netlify Redirects</div>
+  <div style="font-size:11px;color:#8896a8;margin-top:3px">vanity + legacy + duplicates</div>
+</div><div style="background:#fff;border-radius:12px;padding:24px 16px;text-align:center;border:1px solid #e8ecf2;flex:1 1 120px;min-width:120px">
+  <div style="font-size:36px;font-weight:800;color:#00267F;line-height:1">567</div>
+  <div style="font-size:13px;font-weight:600;color:#4a5568;margin-top:6px">WebP Images</div>
+  <div style="font-size:11px;color:#8896a8;margin-top:3px">32.8MB total</div>
+</div><div style="background:#fff;border-radius:12px;padding:24px 16px;text-align:center;border:1px solid #e8ecf2;flex:1 1 120px;min-width:120px">
+  <div style="font-size:36px;font-weight:800;color:#00267F;line-height:1">89</div>
+  <div style="font-size:13px;font-weight:600;color:#4a5568;margin-top:6px">Scanned Plan PDFs</div>
+  <div style="font-size:11px;color:#8896a8;margin-top:3px">6 designs</div>
+</div></div>
+</div></div><div class="tab-panel" id="panel-open" style="display:none"><div style="margin-bottom:28px">
+  <h3 style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#C0A280;margin-bottom:14px;padding-bottom:8px;border-bottom:2px solid #C0A28033">Waiting on Britt (9 items)</h3>
+  <div style="display:flex;gap:14px;padding:12px 0;border-bottom:1px solid #f0f2f5;align-items:flex-start">
+  <span style="font-size:11px;font-weight:700;flex-shrink:0;margin-top:2px;padding:2px 8px;border-radius:4px;background:#e8f0fe;color:#00267F">A1</span>
+  <div><div style="font-size:13px;font-weight:600;color:#1a1f2e">D.266 naming</div>
+  <div style="font-size:12px;color:#7a8599;margin-top:2px;line-height:1.5">Suggested &quot;IMS 44&quot; — confirm name, unhide, merge 266_0001?</div></div>
+</div><div style="display:flex;gap:14px;padding:12px 0;border-bottom:1px solid #f0f2f5;align-items:flex-start">
+  <span style="font-size:11px;font-weight:700;flex-shrink:0;margin-top:2px;padding:2px 8px;border-radius:4px;background:#fff4e5;color:#b45309">A2</span>
+  <div><div style="font-size:13px;font-weight:600;color:#1a1f2e">Duplicate pairs review</div>
+  <div style="font-size:12px;color:#7a8599;margin-top:2px;line-height:1.5">Spreadsheet ready: 68 plain pairs + 50 suffix groups. 9 safe to auto-merge, 59 need Britt&#x27;s review.</div></div>
+</div><div style="display:flex;gap:14px;padding:12px 0;border-bottom:1px solid #f0f2f5;align-items:flex-start">
+  <span style="font-size:11px;font-weight:700;flex-shrink:0;margin-top:2px;padding:2px 8px;border-radius:4px;background:#f1f3f7;color:#6b7280">A4</span>
+  <div><div style="font-size:13px;font-weight:600;color:#1a1f2e">D.493 Orlanda photo</div>
+  <div style="font-size:12px;color:#7a8599;margin-top:2px;line-height:1.5">Wrong Cookson 50 photo removed. Currently shows placeholder. Need correct Orlanda photo.</div></div>
+</div><div style="display:flex;gap:14px;padding:12px 0;border-bottom:1px solid #f0f2f5;align-items:flex-start">
+  <span style="font-size:11px;font-weight:700;flex-shrink:0;margin-top:2px;padding:2px 8px;border-radius:4px;background:#e8f0fe;color:#00267F">B1</span>
+  <div><div style="font-size:13px;font-weight:600;color:#1a1f2e">History page inaccuracies</div>
+  <div style="font-size:12px;color:#7a8599;margin-top:2px;line-height:1.5">6 fixed in Sprint 18. May be more that only Britt or Maureen would catch.</div></div>
+</div><div style="display:flex;gap:14px;padding:12px 0;border-bottom:1px solid #f0f2f5;align-items:flex-start">
+  <span style="font-size:11px;font-weight:700;flex-shrink:0;margin-top:2px;padding:2px 8px;border-radius:4px;background:#e8f0fe;color:#00267F">B2</span>
+  <div><div style="font-size:13px;font-weight:600;color:#1a1f2e">Maureen&#x27;s story edits</div>
+  <div style="font-size:12px;color:#7a8599;margin-top:2px;line-height:1.5">Britt said &quot;I&#x27;ll get Maureen into that.&quot; No updates received.</div></div>
+</div><div style="display:flex;gap:14px;padding:12px 0;border-bottom:1px solid #f0f2f5;align-items:flex-start">
+  <span style="font-size:11px;font-weight:700;flex-shrink:0;margin-top:2px;padding:2px 8px;border-radius:4px;background:#f1f3f7;color:#6b7280">B3</span>
+  <div><div style="font-size:13px;font-weight:600;color:#1a1f2e">Ideal design page layout</div>
+  <div style="font-size:12px;color:#7a8599;margin-top:2px;line-height:1.5">Britt wants to collaborate on an ideal yacht page layout. Ready when he is.</div></div>
+</div><div style="display:flex;gap:14px;padding:12px 0;border-bottom:1px solid #f0f2f5;align-items:flex-start">
+  <span style="font-size:11px;font-weight:700;flex-shrink:0;margin-top:2px;padding:2px 8px;border-radius:4px;background:#f1f3f7;color:#6b7280">B4</span>
+  <div><div style="font-size:13px;font-weight:600;color:#1a1f2e">Jennifer — team page?</div>
+  <div style="font-size:12px;color:#7a8599;margin-top:2px;line-height:1.5">Who is Jennifer? Name, title, bio, photo needed if she should be on team page.</div></div>
+</div><div style="display:flex;gap:14px;padding:12px 0;border-bottom:1px solid #f0f2f5;align-items:flex-start">
+  <span style="font-size:11px;font-weight:700;flex-shrink:0;margin-top:2px;padding:2px 8px;border-radius:4px;background:#fff4e5;color:#b45309">C1+C2</span>
+  <div><div style="font-size:13px;font-weight:600;color:#1a1f2e">Plan pricing &amp; packaging</div>
+  <div style="font-size:12px;color:#7a8599;margin-top:2px;line-height:1.5">Blocks scanned plan sales going live. Flat rate vs variable pricing? Individual drawings vs full sets?</div></div>
+</div><div style="display:flex;gap:14px;padding:12px 0;border-bottom:1px solid #f0f2f5;align-items:flex-start">
+  <span style="font-size:11px;font-weight:700;flex-shrink:0;margin-top:2px;padding:2px 8px;border-radius:4px;background:#e8f0fe;color:#00267F">D1</span>
+  <div><div style="font-size:13px;font-weight:600;color:#1a1f2e">GA4 tracking ID</div>
+  <div style="font-size:12px;color:#7a8599;margin-top:2px;line-height:1.5">All pages have placeholder G-XXXXXXXXXX. Old UA property expired. Need GA4 property created.</div></div>
+</div>
+</div><div style="margin-bottom:28px">
+  <h3 style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#C0A280;margin-bottom:14px;padding-bottom:8px;border-bottom:2px solid #C0A28033">Next Sprint Candidates (no Britt needed)</h3>
+  <div style="display:flex;gap:12px;padding:10px 0;border-bottom:1px solid #f0f2f5;align-items:flex-start">
+  <span style="width:24px;height:24px;border-radius:6px;flex-shrink:0;background:#e8f0fe;color:#00267F;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700">1</span>
+  <div><div style="font-size:13px;font-weight:600;color:#1a1f2e">DNS cutover prep</div>
+  <div style="font-size:12px;color:#7a8599;margin-top:2px;line-height:1.5">Document steps for farrdesign.com WordPress → Netlify switch. Provide Netlify DNS values.</div></div>
+</div><div style="display:flex;gap:12px;padding:10px 0;border-bottom:1px solid #f0f2f5;align-items:flex-start">
+  <span style="width:24px;height:24px;border-radius:6px;flex-shrink:0;background:#e8f0fe;color:#00267F;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700">2</span>
+  <div><div style="font-size:13px;font-weight:600;color:#1a1f2e">GA4 setup</div>
+  <div style="font-size:12px;color:#7a8599;margin-top:2px;line-height:1.5">Create GA4 property (if Britt provides account access), replace placeholder tracking ID across all pages.</div></div>
+</div><div style="display:flex;gap:12px;padding:10px 0;border-bottom:1px solid #f0f2f5;align-items:flex-start">
+  <span style="width:24px;height:24px;border-radius:6px;flex-shrink:0;background:#e8f0fe;color:#00267F;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700">3</span>
+  <div><div style="font-size:13px;font-weight:600;color:#1a1f2e">Google Search Console</div>
+  <div style="font-size:12px;color:#7a8599;margin-top:2px;line-height:1.5">Set up property, submit sitemap, monitor indexing.</div></div>
+</div><div style="display:flex;gap:12px;padding:10px 0;border-bottom:1px solid #f0f2f5;align-items:flex-start">
+  <span style="width:24px;height:24px;border-radius:6px;flex-shrink:0;background:#e8f0fe;color:#00267F;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700">4</span>
+  <div><div style="font-size:13px;font-weight:600;color:#1a1f2e">Additional image sourcing</div>
+  <div style="font-size:12px;color:#7a8599;margin-top:2px;line-height:1.5">~140 visible designs still without images. Waiting on Britt&#x27;s photos.</div></div>
+</div>
+</div><div style="margin-bottom:28px">
+  <h3 style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#C0A280;margin-bottom:14px;padding-bottom:8px;border-bottom:2px solid #C0A28033">DNS — Final Launch Step</h3>
+  <div style="background:#fff4e5;border:1px solid #fde4c1;border-radius:10px;padding:16px 20px;margin-top:12px"><div style="font-size:13px;font-weight:700;color:#b45309;margin-bottom:4px">farrdesign.com still points to old WordPress</div><div style="font-size:12px;color:#92690d;line-height:1.6">When Britt is ready to flip the switch, we provide the Netlify DNS values and the domain goes live. SSL is automatic. This is the last step before the real domain is serving the new site.</div></div>
+</div></div><div class="tab-panel" id="panel-tour" style="display:none"><div style="background:#e8f0fe;border:1px solid #bdd4fc;border-radius:10px;padding:16px 20px;margin-top:12px"><div style="font-size:13px;font-weight:700;color:#00267F;margin-bottom:4px">Live Site Tour</div><div style="font-size:12px;color:#1e40af;line-height:1.6">Every page below is live and navigable at https://farr-designs.sailr.science. Use a desktop browser for the full experience.</div></div><div style="margin-top:16px"></div><div style="margin-bottom:28px">
+  <h3 style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#C0A280;margin-bottom:14px;padding-bottom:8px;border-bottom:2px solid #C0A28033">Core Pages</h3>
+  <div style="background:#fff;border-radius:12px;padding:22px;border:1px solid #e8ecf2;margin-bottom:12px">
+              <div style="display:flex;justify-content:space-between;align-items:flex-start">
+                <div>
+                  <div style="font-size:15px;font-weight:700;color:#00267F">Homepage</div>
+                  <div style="font-size:11px;color:#7a8599;font-family:monospace;margin-top:2px">https://farr-designs.sailr.science/</div>
+                </div>
+                <span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:0.03em;background:#e6f9ed;color:#1a7a3a">Live</span>
+              </div>
+              <div style="font-size:13px;color:#4a5568;line-height:1.6;margin-top:10px">Full-bleed hero, proof bar (43 world championships, 800+ designs), three featured design cards (Kiboko 4, Gelliceaux, American Magic), services overview, CTA bands for Design Plans and Contact.</div>
+              <div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:10px"><span style="font-size:11px;font-weight:500;padding:3px 10px;border-radius:6px;background:#f5f7fa;color:#4a5568">Hero rotation</span><span style="font-size:11px;font-weight:500;padding:3px 10px;border-radius:6px;background:#f5f7fa;color:#4a5568">Proof bar</span><span style="font-size:11px;font-weight:500;padding:3px 10px;border-radius:6px;background:#f5f7fa;color:#4a5568">Featured cards</span><span style="font-size:11px;font-weight:500;padding:3px 10px;border-radius:6px;background:#f5f7fa;color:#4a5568">Services grid</span><span style="font-size:11px;font-weight:500;padding:3px 10px;border-radius:6px;background:#f5f7fa;color:#4a5568">CTA bands</span></div>
+            </div><div style="background:#fff;border-radius:12px;padding:22px;border:1px solid #e8ecf2;margin-bottom:12px">
+              <div style="display:flex;justify-content:space-between;align-items:flex-start">
+                <div>
+                  <div style="font-size:15px;font-weight:700;color:#00267F">Portfolio</div>
+                  <div style="font-size:11px;color:#7a8599;font-family:monospace;margin-top:2px">https://farr-designs.sailr.science/portfolio</div>
+                </div>
+                <span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:0.03em;background:#e6f9ed;color:#1a7a3a">Live</span>
+              </div>
+              <div style="font-size:13px;color:#4a5568;line-height:1.6;margin-top:10px">Interactive grid of 496 visible designs with real-time search by name/number/builder, sort by design number/year/length, filter by type tags, and grid/list toggle. Type tag overlays on thumbnails. Featured design rotates daily. WebP-optimized images.</div>
+              <div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:10px"><span style="font-size:11px;font-weight:500;padding:3px 10px;border-radius:6px;background:#f5f7fa;color:#4a5568">Search</span><span style="font-size:11px;font-weight:500;padding:3px 10px;border-radius:6px;background:#f5f7fa;color:#4a5568">Sort</span><span style="font-size:11px;font-weight:500;padding:3px 10px;border-radius:6px;background:#f5f7fa;color:#4a5568">Tags filter</span><span style="font-size:11px;font-weight:500;padding:3px 10px;border-radius:6px;background:#f5f7fa;color:#4a5568">Grid/list toggle</span><span style="font-size:11px;font-weight:500;padding:3px 10px;border-radius:6px;background:#f5f7fa;color:#4a5568">Lazy loading</span><span style="font-size:11px;font-weight:500;padding:3px 10px;border-radius:6px;background:#f5f7fa;color:#4a5568">Daily featured</span><span style="font-size:11px;font-weight:500;padding:3px 10px;border-radius:6px;background:#f5f7fa;color:#4a5568">WebP</span></div>
+            </div><div style="background:#fff;border-radius:12px;padding:22px;border:1px solid #e8ecf2;margin-bottom:12px">
+              <div style="display:flex;justify-content:space-between;align-items:flex-start">
+                <div>
+                  <div style="font-size:15px;font-weight:700;color:#00267F">Yacht Detail (generated)</div>
+                  <div style="font-size:11px;color:#7a8599;font-family:monospace;margin-top:2px">https://farr-designs.sailr.science/yacht/880-02.html</div>
+                </div>
+                <span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:0.03em;background:#e6f9ed;color:#1a7a3a">Live</span>
+              </div>
+              <div style="font-size:13px;color:#4a5568;line-height:1.6;margin-top:10px">496 yacht pages auto-generated from boats.json by build_site.py. Design number badge, breadcrumb, description, spec table, purchase card (available/waitlist/digitizing), related designs. Click-to-expand lightbox on images. Yacht silhouette placeholder for designs without photos.</div>
+              <div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:10px"><span style="font-size:11px;font-weight:500;padding:3px 10px;border-radius:6px;background:#f5f7fa;color:#4a5568">Auto-generated</span><span style="font-size:11px;font-weight:500;padding:3px 10px;border-radius:6px;background:#f5f7fa;color:#4a5568">Spec table</span><span style="font-size:11px;font-weight:500;padding:3px 10px;border-radius:6px;background:#f5f7fa;color:#4a5568">Purchase card</span><span style="font-size:11px;font-weight:500;padding:3px 10px;border-radius:6px;background:#f5f7fa;color:#4a5568">Related designs</span><span style="font-size:11px;font-weight:500;padding:3px 10px;border-radius:6px;background:#f5f7fa;color:#4a5568">OG tags</span><span style="font-size:11px;font-weight:500;padding:3px 10px;border-radius:6px;background:#f5f7fa;color:#4a5568">Lightbox</span><span style="font-size:11px;font-weight:500;padding:3px 10px;border-radius:6px;background:#f5f7fa;color:#4a5568">WebP</span></div>
+            </div>
+</div><div style="margin-bottom:28px">
+  <h3 style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#C0A280;margin-bottom:14px;padding-bottom:8px;border-bottom:2px solid #C0A28033">Content Pages</h3>
+  <div style="background:#fff;border-radius:12px;padding:22px;border:1px solid #e8ecf2;margin-bottom:12px">
+              <div style="display:flex;justify-content:space-between;align-items:flex-start">
+                <div>
+                  <div style="font-size:15px;font-weight:700;color:#00267F">Our Story</div>
+                  <div style="font-size:11px;color:#7a8599;font-family:monospace;margin-top:2px">https://farr-designs.sailr.science/about.html</div>
+                </div>
+                <span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:0.03em;background:#e6f9ed;color:#1a7a3a">Live</span>
+              </div>
+              <div style="font-size:13px;color:#4a5568;line-height:1.6;margin-top:10px">Company history from Britt&#x27;s V3BW document. Four thematic sections: Our Approach, Cruising Excellence, Superyacht Innovation, Our Commitment. History timeline with balanced images.</div>
+              <div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:10px"><span style="font-size:11px;font-weight:500;padding:3px 10px;border-radius:6px;background:#f5f7fa;color:#4a5568">V3BW integrated</span><span style="font-size:11px;font-weight:500;padding:3px 10px;border-radius:6px;background:#f5f7fa;color:#4a5568">Timeline</span><span style="font-size:11px;font-weight:500;padding:3px 10px;border-radius:6px;background:#f5f7fa;color:#4a5568">4 sections</span></div>
+            </div><div style="background:#fff;border-radius:12px;padding:22px;border:1px solid #e8ecf2;margin-bottom:12px">
+              <div style="display:flex;justify-content:space-between;align-items:flex-start">
+                <div>
+                  <div style="font-size:15px;font-weight:700;color:#00267F">Team</div>
+                  <div style="font-size:11px;color:#7a8599;font-family:monospace;margin-top:2px">https://farr-designs.sailr.science/team.html</div>
+                </div>
+                <span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:0.03em;background:#e6f9ed;color:#1a7a3a">Live</span>
+              </div>
+              <div style="font-size:13px;color:#4a5568;line-height:1.6;margin-top:10px">Britt&#x27;s full bio with four sections (Fremantle to Annapolis, Building on a Legacy, Leading Innovation). Single column, photo, title: Principal, Owner &amp; Senior Naval Architect.</div>
+              <div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:10px"><span style="font-size:11px;font-weight:500;padding:3px 10px;border-radius:6px;background:#f5f7fa;color:#4a5568">Bio</span><span style="font-size:11px;font-weight:500;padding:3px 10px;border-radius:6px;background:#f5f7fa;color:#4a5568">Photo</span><span style="font-size:11px;font-weight:500;padding:3px 10px;border-radius:6px;background:#f5f7fa;color:#4a5568">Leadership focus</span></div>
+            </div><div style="background:#fff;border-radius:12px;padding:22px;border:1px solid #e8ecf2;margin-bottom:12px">
+              <div style="display:flex;justify-content:space-between;align-items:flex-start">
+                <div>
+                  <div style="font-size:15px;font-weight:700;color:#00267F">Partners</div>
+                  <div style="font-size:11px;color:#7a8599;font-family:monospace;margin-top:2px">https://farr-designs.sailr.science/partners.html</div>
+                </div>
+                <span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:0.03em;background:#e6f9ed;color:#1a7a3a">Live</span>
+              </div>
+              <div style="font-size:13px;color:#4a5568;line-height:1.6;margin-top:10px">5 active builder partners with real boat photos + brand-authentic SVG logo cards: Baltic, Southern Wind, Knierim, Persico, McConaghy. Cookson and Carroll Marine marked as no longer in business. Nautor Swan removed per Britt.</div>
+              <div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:10px"><span style="font-size:11px;font-weight:500;padding:3px 10px;border-radius:6px;background:#f5f7fa;color:#4a5568">Boat photos</span><span style="font-size:11px;font-weight:500;padding:3px 10px;border-radius:6px;background:#f5f7fa;color:#4a5568">SVG logos</span><span style="font-size:11px;font-weight:500;padding:3px 10px;border-radius:6px;background:#f5f7fa;color:#4a5568">Brand-authentic</span><span style="font-size:11px;font-weight:500;padding:3px 10px;border-radius:6px;background:#f5f7fa;color:#4a5568">Defunct badges</span></div>
+            </div><div style="background:#fff;border-radius:12px;padding:22px;border:1px solid #e8ecf2;margin-bottom:12px">
+              <div style="display:flex;justify-content:space-between;align-items:flex-start">
+                <div>
+                  <div style="font-size:15px;font-weight:700;color:#00267F">Awards</div>
+                  <div style="font-size:11px;color:#7a8599;font-family:monospace;margin-top:2px">https://farr-designs.sailr.science/awards.html</div>
+                </div>
+                <span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:0.03em;background:#e6f9ed;color:#1a7a3a">Live</span>
+              </div>
+              <div style="font-size:13px;color:#4a5568;line-height:1.6;margin-top:10px">Photo hero, 6-card image gallery with fatigue-aware selections, 15 awards from 2008–2026.</div>
+              <div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:10px"><span style="font-size:11px;font-weight:500;padding:3px 10px;border-radius:6px;background:#f5f7fa;color:#4a5568">Photo hero</span><span style="font-size:11px;font-weight:500;padding:3px 10px;border-radius:6px;background:#f5f7fa;color:#4a5568">Gallery</span><span style="font-size:11px;font-weight:500;padding:3px 10px;border-radius:6px;background:#f5f7fa;color:#4a5568">15 awards</span></div>
+            </div>
+</div><div style="margin-bottom:28px">
+  <h3 style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#C0A280;margin-bottom:14px;padding-bottom:8px;border-bottom:2px solid #C0A28033">Racing Heritage</h3>
+  <div style="background:#fff;border-radius:12px;padding:22px;border:1px solid #e8ecf2;margin-bottom:12px">
+              <div style="display:flex;justify-content:space-between;align-items:flex-start">
+                <div>
+                  <div style="font-size:15px;font-weight:700;color:#00267F">Racing Hub</div>
+                  <div style="font-size:11px;color:#7a8599;font-family:monospace;margin-top:2px">https://farr-designs.sailr.science/racing.html</div>
+                </div>
+                <span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:0.03em;background:#e6f9ed;color:#1a7a3a">Live</span>
+              </div>
+              <div style="font-size:13px;color:#4a5568;line-height:1.6;margin-top:10px">Hub connecting four heritage sections with section cards and navigation.</div>
+              <div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:10px"><span style="font-size:11px;font-weight:500;padding:3px 10px;border-radius:6px;background:#f5f7fa;color:#4a5568">Whitbread</span><span style="font-size:11px;font-weight:500;padding:3px 10px;border-radius:6px;background:#f5f7fa;color:#4a5568">Volvo Ocean Race</span><span style="font-size:11px;font-weight:500;padding:3px 10px;border-radius:6px;background:#f5f7fa;color:#4a5568">TP52</span><span style="font-size:11px;font-weight:500;padding:3px 10px;border-radius:6px;background:#f5f7fa;color:#4a5568">America&#x27;s Cup</span></div>
+            </div><div style="background:#fff;border-radius:12px;padding:22px;border:1px solid #e8ecf2;margin-bottom:12px">
+              <div style="display:flex;justify-content:space-between;align-items:flex-start">
+                <div>
+                  <div style="font-size:15px;font-weight:700;color:#00267F">America&#x27;s Cup</div>
+                  <div style="font-size:11px;color:#7a8599;font-family:monospace;margin-top:2px">https://farr-designs.sailr.science/americas-cup.html</div>
+                </div>
+                <span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:0.03em;background:#e6f9ed;color:#1a7a3a">Live</span>
+              </div>
+              <div style="font-size:13px;color:#4a5568;line-height:1.6;margin-top:10px">Full campaign history with hero photography.</div>
+              <div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:10px"><span style="font-size:11px;font-weight:500;padding:3px 10px;border-radius:6px;background:#f5f7fa;color:#4a5568">In About dropdown nav</span></div>
+            </div><div style="background:#fff;border-radius:12px;padding:22px;border:1px solid #e8ecf2;margin-bottom:12px">
+              <div style="display:flex;justify-content:space-between;align-items:flex-start">
+                <div>
+                  <div style="font-size:15px;font-weight:700;color:#00267F">Volvo Ocean Race</div>
+                  <div style="font-size:11px;color:#7a8599;font-family:monospace;margin-top:2px">https://farr-designs.sailr.science/volvo-ocean-race.html</div>
+                </div>
+                <span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:0.03em;background:#e6f9ed;color:#1a7a3a">Live</span>
+              </div>
+              <div style="font-size:13px;color:#4a5568;line-height:1.6;margin-top:10px">Complete VOR/Whitbread campaign timeline.</div>
+              <div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:10px"><span style="font-size:11px;font-weight:500;padding:3px 10px;border-radius:6px;background:#f5f7fa;color:#4a5568">In About dropdown nav</span></div>
+            </div>
+</div><div style="margin-bottom:28px">
+  <h3 style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#C0A280;margin-bottom:14px;padding-bottom:8px;border-bottom:2px solid #C0A28033">Commerce &amp; Admin</h3>
+  <div style="background:#fff;border-radius:12px;padding:22px;border:1px solid #e8ecf2;margin-bottom:12px">
+              <div style="display:flex;justify-content:space-between;align-items:flex-start">
+                <div>
+                  <div style="font-size:15px;font-weight:700;color:#00267F">Design Plans</div>
+                  <div style="font-size:11px;color:#7a8599;font-family:monospace;margin-top:2px">https://farr-designs.sailr.science/design-plans.html</div>
+                </div>
+                <span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:0.03em;background:#e6f9ed;color:#1a7a3a">Live</span>
+              </div>
+              <div style="font-size:13px;color:#4a5568;line-height:1.6;margin-top:10px">Browse plan catalog with purchase cards. 7 active plans + 9 scanned plan designs. Stripe checkout in sandbox mode.</div>
+              <div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:10px"><span style="font-size:11px;font-weight:500;padding:3px 10px;border-radius:6px;background:#f5f7fa;color:#4a5568">Stripe checkout</span><span style="font-size:11px;font-weight:500;padding:3px 10px;border-radius:6px;background:#f5f7fa;color:#4a5568">7 plans</span><span style="font-size:11px;font-weight:500;padding:3px 10px;border-radius:6px;background:#f5f7fa;color:#4a5568">9 scanned</span><span style="font-size:11px;font-weight:500;padding:3px 10px;border-radius:6px;background:#f5f7fa;color:#4a5568">89 PDFs</span></div>
+            </div><div style="background:#fff;border-radius:12px;padding:22px;border:1px solid #e8ecf2;margin-bottom:12px">
+              <div style="display:flex;justify-content:space-between;align-items:flex-start">
+                <div>
+                  <div style="font-size:15px;font-weight:700;color:#00267F">Admin Portal</div>
+                  <div style="font-size:11px;color:#7a8599;font-family:monospace;margin-top:2px">https://farr-designs.sailr.science/admin.html</div>
+                </div>
+                <span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:0.03em;background:#e6f9ed;color:#1a7a3a">Live</span>
+              </div>
+              <div style="font-size:13px;color:#4a5568;line-height:1.6;margin-top:10px">Supabase auth, full catalog editor. Search, filter, edit metadata, upload images, toggle visibility, owner field (admin-only).</div>
+              <div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:10px"><span style="font-size:11px;font-weight:500;padding:3px 10px;border-radius:6px;background:#f5f7fa;color:#4a5568">Auth</span><span style="font-size:11px;font-weight:500;padding:3px 10px;border-radius:6px;background:#f5f7fa;color:#4a5568">Catalog editor</span><span style="font-size:11px;font-weight:500;padding:3px 10px;border-radius:6px;background:#f5f7fa;color:#4a5568">Visibility toggle</span><span style="font-size:11px;font-weight:500;padding:3px 10px;border-radius:6px;background:#f5f7fa;color:#4a5568">Owner field</span></div>
+            </div><div style="background:#fff;border-radius:12px;padding:22px;border:1px solid #e8ecf2;margin-bottom:12px">
+              <div style="display:flex;justify-content:space-between;align-items:flex-start">
+                <div>
+                  <div style="font-size:15px;font-weight:700;color:#00267F">Consulting</div>
+                  <div style="font-size:11px;color:#7a8599;font-family:monospace;margin-top:2px">https://farr-designs.sailr.science/consulting.html</div>
+                </div>
+                <span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:0.03em;background:#e6f9ed;color:#1a7a3a">Live</span>
+              </div>
+              <div style="font-size:13px;color:#4a5568;line-height:1.6;margin-top:10px">Dedicated consulting page in primary navigation. Service descriptions and contact CTA.</div>
+              <div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:10px"><span style="font-size:11px;font-weight:500;padding:3px 10px;border-radius:6px;background:#f5f7fa;color:#4a5568">Primary nav</span><span style="font-size:11px;font-weight:500;padding:3px 10px;border-radius:6px;background:#f5f7fa;color:#4a5568">Service packages</span><span style="font-size:11px;font-weight:500;padding:3px 10px;border-radius:6px;background:#f5f7fa;color:#4a5568">Contact CTA</span></div>
+            </div>
+</div><div style="margin-bottom:28px">
+  <h3 style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#C0A280;margin-bottom:14px;padding-bottom:8px;border-bottom:2px solid #C0A28033">Infrastructure</h3>
+  <div style="background:#fff;border-radius:12px;padding:22px;border:1px solid #e8ecf2;margin-bottom:12px">
+              <div style="display:flex;justify-content:space-between;align-items:flex-start">
+                <div>
+                  <div style="font-size:15px;font-weight:700;color:#00267F">Custom 404</div>
+                  <div style="font-size:11px;color:#7a8599;font-family:monospace;margin-top:2px">https://farr-designs.sailr.science/404.html</div>
+                </div>
+                <span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:0.03em;background:#e6f9ed;color:#1a7a3a">Live</span>
+              </div>
+              <div style="font-size:13px;color:#4a5568;line-height:1.6;margin-top:10px">Branded error page with navigation back to portfolio. Shows when visitors hit a bad URL.</div>
+              <div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:10px"><span style="font-size:11px;font-weight:500;padding:3px 10px;border-radius:6px;background:#f5f7fa;color:#4a5568">Branded</span><span style="font-size:11px;font-weight:500;padding:3px 10px;border-radius:6px;background:#f5f7fa;color:#4a5568">Navigation links</span></div>
+            </div><div style="background:#fff;border-radius:12px;padding:22px;border:1px solid #e8ecf2;margin-bottom:12px">
+              <div style="display:flex;justify-content:space-between;align-items:flex-start">
+                <div>
+                  <div style="font-size:15px;font-weight:700;color:#00267F">Sitemap</div>
+                  <div style="font-size:11px;color:#7a8599;font-family:monospace;margin-top:2px">https://farr-designs.sailr.science/sitemap.xml</div>
+                </div>
+                <span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:0.03em;background:#e6f9ed;color:#1a7a3a">Live</span>
+              </div>
+              <div style="font-size:13px;color:#4a5568;line-height:1.6;margin-top:10px">584 entries: 21 static pages + 563 visible yacht pages. Auto-generated by build_site.py.</div>
+              <div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:10px"><span style="font-size:11px;font-weight:500;padding:3px 10px;border-radius:6px;background:#f5f7fa;color:#4a5568">584 entries</span><span style="font-size:11px;font-weight:500;padding:3px 10px;border-radius:6px;background:#f5f7fa;color:#4a5568">Auto-generated</span></div>
+            </div>
+</div></div>
+  </div>
+
+  <!-- Footer -->
+  <div style="margin:28px 20px 0;padding:18px 22px;background:#fff;border-radius:12px;border:1px solid #e8ecf2;display:flex;justify-content:space-between;align-items:center">
+    <div>
+      <div style="font-size:11px;color:#8896a8;margin-bottom:2px">Prepared by</div>
+      <div style="font-size:14px;font-weight:600;color:#00267F">SailrScience</div>
+    </div>
+    <div style="text-align:center">
+      <div style="font-size:11px;color:#8896a8;margin-bottom:2px">Live Site</div>
+      <div style="font-size:12px;font-weight:500;color:#00267F;font-family:monospace">farr-designs.sailr.science</div>
+    </div>
+    <div style="text-align:right">
+      <div style="font-size:11px;color:#8896a8;margin-bottom:2px">Session 69</div>
+      <div style="font-size:13px;font-weight:600;color:#4a5568">March 14, 2026</div>
+    </div>
+  </div>
+</div>
+
+<script>
+// Main tab switching
+document.querySelectorAll('.main-tab-btn').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('.main-tab-btn').forEach(function(b) { b.classList.remove('active'); });
+    btn.classList.add('active');
+    document.querySelectorAll('.tab-panel').forEach(function(p) { p.style.display = 'none'; });
+    document.getElementById('panel-' + btn.dataset.tab).style.display = '';
+  });
+});
+
+// Research sub-tab switching
+document.querySelectorAll('.research-tab-btn').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('.research-tab-btn').forEach(function(b) { b.classList.remove('active'); });
+    btn.classList.add('active');
+    document.querySelectorAll('.research-panel').forEach(function(p) { p.style.display = 'none'; });
+    document.getElementById('research-' + btn.dataset.researchTab).style.display = '';
+  });
+});
+
+// Phase accordion
+document.querySelectorAll('.phase-header').forEach(function(header) {
+  header.addEventListener('click', function() {
+    var phase = header.parentElement;
+    var body = phase.querySelector('.phase-body');
+    var arrow = phase.querySelector('.phase-arrow');
+    var isOpen = body.style.display !== 'none';
+    body.style.display = isOpen ? 'none' : '';
+    arrow.textContent = isOpen ? '+' : '−';
+    header.style.borderRadius = isOpen ? '12px' : '12px 12px 0 0';
+  });
+});
 </script>
 </body>
 </html>
