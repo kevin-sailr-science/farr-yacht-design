@@ -466,7 +466,7 @@ def build_yacht_page(boat):
       <img id="lightboxImg" src="" alt="">
     </div>
     <script>
-    function openLightbox(src,alt){{var lb=document.getElementById('yachtLightbox'),img=document.getElementById('lightboxImg');img.src=src;img.alt=alt;lb.classList.add('active');document.body.style.overflow='hidden';}}
+    function openLightbox(src,alt){{var lb=document.getElementById('yachtLightbox'),img=document.getElementById('lightboxImg');var _wi=window._wimg||function(u){{return u;}};img.src=_wi(src);img.alt=alt;lb.classList.add('active');document.body.style.overflow='hidden';}}
     function closeLightbox(){{var lb=document.getElementById('yachtLightbox');lb.classList.remove('active');document.body.style.overflow='';}}
     document.addEventListener('keydown',function(e){{if(e.key==='Escape')closeLightbox();}});
     </script>'''
@@ -838,13 +838,16 @@ def build_portfolio_page():
       }}
 
       // Lazy-load background images via IntersectionObserver (Sprint 14D)
+      // WebP-aware image URL helper (Sprint 39)
+      var _wi = window._wimg || function(u){{ return u; }};
+
       var lazyObserver = ('IntersectionObserver' in window)
         ? new IntersectionObserver(function(entries) {{
             entries.forEach(function(entry) {{
               if (entry.isIntersecting) {{
                 var el = entry.target;
                 var bg = el.getAttribute('data-bg');
-                if (bg) {{ el.style.backgroundImage = 'url(' + bg + ')'; var cp = el.getAttribute('data-crop'); if (cp) el.style.backgroundPosition = cp; el.removeAttribute('data-bg'); }}
+                if (bg) {{ el.style.backgroundImage = 'url(' + _wi(bg) + ')'; var cp = el.getAttribute('data-crop'); if (cp) el.style.backgroundPosition = cp; el.removeAttribute('data-bg'); }}
                 lazyObserver.unobserve(el);
               }}
             }});
@@ -855,7 +858,7 @@ def build_portfolio_page():
         if (!lazyObserver) {{
           // Fallback: load all images immediately
           $grid.querySelectorAll('[data-bg]').forEach(function(el) {{
-            el.style.backgroundImage = 'url(' + el.getAttribute('data-bg') + ')';
+            el.style.backgroundImage = 'url(' + _wi(el.getAttribute('data-bg')) + ')';
             var cp = el.getAttribute('data-crop'); if (cp) el.style.backgroundPosition = cp;
             el.removeAttribute('data-bg');
           }});

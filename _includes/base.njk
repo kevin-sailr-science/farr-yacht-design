@@ -7,12 +7,17 @@
   <title>{{ pageTitle }} &mdash; Farr Yacht Design</title>
   <link rel="preload" href="/fonts/Jost-VariableFont_wght.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/KumbhSans-VariableFont_YOPQ,wght.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="/farr-style.min.css?v=24">
+  <link rel="stylesheet" href="/farr-style.min.css?v=25">
   <!-- Google Analytics (GA4) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-XXXXXXXXXX");</script>
   <script src="/farr-analytics.js" defer></script>
   {% block head %}{% endblock %}
+  <script>
+  /* WebP detection — sets window._webp true/false (Sprint 39) */
+  (function(){var c=document.createElement('canvas');c.width=c.height=1;window._webp=c.toDataURL('image/webp').indexOf('data:image/webp')===0;
+  window._wimg=function(u){return window._webp?u.replace(/\.(jpe?g|png)$/i,'.webp'):u;};})();
+  </script>
 </head>
 <body>
   <a href="#main" class="skip-link">Skip to content</a>
@@ -111,6 +116,8 @@
     document.querySelectorAll('.nav-dropdown-toggle').forEach(function(t){t.addEventListener('click',function(){var m=this.nextElementSibling,e=this.getAttribute('aria-expanded')==='true';this.setAttribute('aria-expanded',!e);if(m)m.style.display=e?'none':'block';});});
     document.addEventListener('click',function(e){if(!e.target.closest('.nav-dropdown')){document.querySelectorAll('.nav-dropdown-menu').forEach(function(m){m.style.display='none';});document.querySelectorAll('.nav-dropdown-toggle').forEach(function(t){t.setAttribute('aria-expanded','false');});}});
     document.addEventListener('keydown',function(e){if(e.key==='Escape'){closeMobileNav();document.querySelectorAll('.nav-dropdown-menu').forEach(function(m){m.style.display='none';});document.querySelectorAll('.nav-dropdown-toggle').forEach(function(t){t.setAttribute('aria-expanded','false');});}});
+    /* WebP background-image rewriter (Sprint 39) — swaps .jpg/.png to .webp on all inline styles */
+    if(window._webp){document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('[style*="background-image"]').forEach(function(el){var s=el.style.backgroundImage;if(s&&/\/images\//.test(s)){el.style.backgroundImage=s.replace(/\.(jpe?g|png)/gi,'.webp');}});});}
   </script>
   <script>
     /* ── Stripe Checkout (Sprint 5C) ── */

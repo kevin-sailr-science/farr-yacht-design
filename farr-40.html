@@ -10,7 +10,7 @@
   <title>Farr 40 &mdash; Design #727 &mdash; Farr Yacht Design</title>
   <link rel="preload" href="/fonts/Jost-VariableFont_wght.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/KumbhSans-VariableFont_YOPQ,wght.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="farr-style.min.css?v=24">
+  <link rel="stylesheet" href="farr-style.min.css?v=25">
 <!-- Google Analytics (GA4) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-XXXXXXXXXX");</script>
@@ -25,6 +25,11 @@
   <meta property="og:image:height" content="630" />
   <meta property="og:image:type" content="image/png" />
   <meta name="twitter:card" content="summary_large_image" />
+  <script>
+  /* WebP detection (Sprint 39) */
+  (function(){var c=document.createElement('canvas');c.width=c.height=1;window._webp=c.toDataURL('image/webp').indexOf('data:image/webp')===0;
+  window._wimg=function(u){return window._webp?u.replace(/\.(jpe?g|png)$/i,'.webp'):u;};})();
+  </script>
 </head>
 <body>
 
@@ -363,5 +368,9 @@
     }
   </script>
 
+  <script>
+  /* WebP background-image rewriter (Sprint 39) */
+  if(window._webp){document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('[style*="background-image"]').forEach(function(el){var s=el.style.backgroundImage;if(s&&/\/images\//.test(s)){el.style.backgroundImage=s.replace(/\.(jpe?g|png)/gi,'.webp');}});});}
+  </script>
 </body>
 </html>
