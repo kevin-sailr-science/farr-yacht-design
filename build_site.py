@@ -466,11 +466,42 @@ def build_yacht_page(boat):
     # Plan section — tier-specific (Sprint 2)
     plan_section = build_plan_section(boat)
 
-    # Build image style + ARIA attributes (only when image exists)
-    detail_img_style = f''' style="background-image:url('{image_url}');{crop_style}"''' if has_image else ""
-    detail_img_aria = f''' role="img" aria-label="{esc(img_alt)}"''' if has_image else ""
-    # Lightbox click handler (only when image exists)
-    detail_img_click = f''' onclick="openLightbox('{image_url}','{esc(display_name)}')"''' if has_image else ""
+    # Gallery images (Sprint IMG-43)
+    images_data = boat.get("images") or {}
+    gallery_files = images_data.get("gallery") or []
+    gallery_items = []
+    for gf in gallery_files:
+        if gf and isinstance(gf, str) and gf.lower() in existing_images:
+            galt = img_alt  # reuse hero alt as base
+            gallery_items.append({"url": f"/images/{gf}", "alt": galt})
+    # Build gallery HTML (thumbnail strip below hero)
+    gallery_html = ""
+    if gallery_items:
+        thumbs = ""
+        for i, gi in enumerate(gallery_items):
+            thumbs += f'''<button class="gallery-thumb" onclick="swapHero('{gi["url"]}','{esc(gi["alt"])}')" aria-label="View photo {i+2}" style="background-image:url('{gi["url"]}');background-size:cover;background-position:center;"></button>\n'''
+        gallery_html = f'''
+          <div class="yacht-gallery" style="display:flex;gap:0.5rem;margin-top:0.75rem;overflow-x:auto;padding-bottom:0.5rem;">
+            <button class="gallery-thumb gallery-thumb--active" onclick="swapHero('{image_url}','{esc(img_alt)}')" aria-label="View main photo" style="background-image:url('{image_url}');background-size:cover;background-position:center;{f'background-position:{crop_hint};' if crop_hint else ''}"></button>
+            {thumbs}
+          </div>'''
+
+    # Build hero image as <picture> element (Sprint IMG-44)
+    crop_pos = f"object-position:{crop_hint};" if crop_hint else "object-position:center 40%;"
+    if has_image:
+        # Check if WebP sibling exists
+        webp_url = re.sub(r'\.(jpe?g|png)$', '.webp', image_url, flags=re.IGNORECASE)
+        webp_file = webp_url.lstrip('/').split('/')[-1]
+        has_webp = webp_file.lower() in existing_images
+        webp_source = f'<source srcset="{webp_url}" type="image/webp">' if has_webp and webp_url != image_url else ""
+        hero_img_html = f'''<picture>
+              {webp_source}
+              <img src="{image_url}" alt="{esc(img_alt)}" style="width:100%;height:100%;object-fit:cover;{crop_pos}" loading="eager">
+            </picture>'''
+        detail_img_click = f''' onclick="openLightbox('{image_url}','{esc(display_name)}')"'''
+    else:
+        hero_img_html = img_tbc
+        detail_img_click = ""
 
     # Build page content (inside <main>)
     content = f'''
@@ -485,9 +516,9 @@ def build_yacht_page(boat):
       </div>
       <div class="yacht-detail-body">
         <div>
-          <div class="yacht-detail-image"{detail_img_style}{detail_img_aria}{detail_img_click}>
-            {img_tbc}
-          </div>
+          <div class="yacht-detail-image"{detail_img_click}>
+            {hero_img_html}
+          </div>{gallery_html}
           <div style="margin-top:1.5rem;">
             <p style="color:var(--text-secondary);line-height:1.7;font-size:0.92rem;">{display_desc}</p>
           </div>
@@ -513,8 +544,9 @@ def build_yacht_page(boat):
       <img id="lightboxImg" src="" alt="">
     </div>
     <script>
-    function openLightbox(src,alt){{var lb=document.getElementById('yachtLightbox'),img=document.getElementById('lightboxImg');var _wi=window._wimg||function(u){{return u;}};img.src=_wi(src);img.alt=alt;lb.classList.add('active');document.body.style.overflow='hidden';}}
+    function openLightbox(src,alt){{var lb=document.getElementById('yachtLightbox'),img=document.getElementById('lightboxImg');img.src=src;img.alt=alt;lb.classList.add('active');document.body.style.overflow='hidden';}}
     function closeLightbox(){{var lb=document.getElementById('yachtLightbox');lb.classList.remove('active');document.body.style.overflow='';}}
+    function swapHero(src,alt){{var hero=document.querySelector('.yacht-detail-image');if(hero){{var img=hero.querySelector('img');if(img){{img.src=src;img.alt=alt;var source=hero.querySelector('source[type="image/webp"]');if(source)source.srcset=src.replace(/\\.(jpe?g|png)$/i,'.webp');}}hero.setAttribute('onclick',"openLightbox('"+src+"','"+alt+"')");}}document.querySelectorAll('.gallery-thumb').forEach(function(t){{t.classList.remove('gallery-thumb--active');}});if(event&&event.currentTarget)event.currentTarget.classList.add('gallery-thumb--active');}}
     document.addEventListener('keydown',function(e){{if(e.key==='Escape')closeLightbox();}});
     </script>'''
 
@@ -624,6 +656,12 @@ def build_portfolio_page():
         card_resolved = resolve_image(boat, context="card")
         has_img = card_resolved["has_image"]
         img_url = card_resolved["url"]
+        # Prefer WebP URL at build time (Sprint IMG-44)
+        if has_img:
+            webp_candidate = re.sub(r'\.(jpe?g|png)$', '.webp', img_url, flags=re.IGNORECASE)
+            webp_fname = webp_candidate.split('/')[-1]
+            if webp_fname.lower() in existing_images:
+                img_url = webp_candidate
 
         # Numeric sort key for design number
         dn_num = 0
@@ -886,8 +924,7 @@ def build_portfolio_page():
       }}
 
       // Lazy-load background images via IntersectionObserver (Sprint 14D)
-      // WebP-aware image URL helper (Sprint 39)
-      var _wi = window._wimg || function(u){{ return u; }};
+      // WebP URLs are now resolved at build time (Sprint IMG-44)
 
       var lazyObserver = ('IntersectionObserver' in window)
         ? new IntersectionObserver(function(entries) {{
@@ -895,7 +932,7 @@ def build_portfolio_page():
               if (entry.isIntersecting) {{
                 var el = entry.target;
                 var bg = el.getAttribute('data-bg');
-                if (bg) {{ el.style.backgroundImage = 'url(' + _wi(bg) + ')'; var cp = el.getAttribute('data-crop'); if (cp) el.style.backgroundPosition = cp; el.removeAttribute('data-bg'); }}
+                if (bg) {{ el.style.backgroundImage = 'url(' + bg + ')'; var cp = el.getAttribute('data-crop'); if (cp) el.style.backgroundPosition = cp; el.removeAttribute('data-bg'); }}
                 lazyObserver.unobserve(el);
               }}
             }});
@@ -906,7 +943,7 @@ def build_portfolio_page():
         if (!lazyObserver) {{
           // Fallback: load all images immediately
           $grid.querySelectorAll('[data-bg]').forEach(function(el) {{
-            el.style.backgroundImage = 'url(' + _wi(el.getAttribute('data-bg')) + ')';
+            el.style.backgroundImage = 'url(' + el.getAttribute('data-bg') + ')';
             var cp = el.getAttribute('data-crop'); if (cp) el.style.backgroundPosition = cp;
             el.removeAttribute('data-bg');
           }});
@@ -1541,6 +1578,207 @@ cards_path = os.path.join(SITE, "yacht_cards.json")
 with open(cards_path, 'w', encoding='utf-8') as f:
     json.dump(yacht_cards, f, ensure_ascii=False, separators=(',', ':'))
 print(f"Generated yacht_cards.json ({len(yacht_cards)} designs)")
+
+# ─── Build-time WebP conversion (Sprint IMG-44) ───
+# Generates .webp for all JPG/JPEG/PNG images that don't already have a WebP sibling.
+# Quality 80, max dimension 1600px.
+
+try:
+    from PIL import Image as PILImage
+    WEBP_QUALITY = 80
+    WEBP_MAX_DIM = 1600
+    images_dir = os.path.join(SITE, "images")
+    webp_created = 0
+    webp_skipped = 0
+    if os.path.isdir(images_dir):
+        existing_files = set(os.listdir(images_dir))
+        for img_file in sorted(existing_files):
+            name, ext = os.path.splitext(img_file)
+            if ext.lower() not in ('.jpg', '.jpeg', '.png'):
+                continue
+            webp_name = name + '.webp'
+            if webp_name in existing_files:
+                webp_skipped += 1
+                continue
+            src_path = os.path.join(images_dir, img_file)
+            dst_path = os.path.join(images_dir, webp_name)
+            try:
+                with PILImage.open(src_path) as pil_img:
+                    w, h = pil_img.size
+                    if max(w, h) > WEBP_MAX_DIM:
+                        ratio = WEBP_MAX_DIM / max(w, h)
+                        pil_img = pil_img.resize((int(w * ratio), int(h * ratio)), PILImage.LANCZOS)
+                    if pil_img.mode in ('RGBA', 'P'):
+                        pil_img = pil_img.convert('RGB')
+                    pil_img.save(dst_path, 'WEBP', quality=WEBP_QUALITY)
+                    webp_created += 1
+            except Exception as e:
+                print(f"  WebP conversion failed for {img_file}: {e}")
+    print(f"\nWebP conversion: {webp_created} created, {webp_skipped} already existed")
+except ImportError:
+    print("\nWebP conversion skipped (Pillow not available)")
+
+# ─── Image Coverage Report (Sprint IMG-44) ───
+# Generates image_coverage.json + image_coverage.html with gap/orphan analysis.
+
+images_dir_cov = os.path.join(SITE, "images")
+all_image_files = set()
+if os.path.isdir(images_dir_cov):
+    all_image_files = set(f for f in os.listdir(images_dir_cov)
+                         if os.path.isfile(os.path.join(images_dir_cov, f))
+                         and not f.startswith('.'))
+
+# Collect referenced images from all visible boats
+referenced_images = set()
+boats_with_hero = 0
+boats_without_hero = 0
+boats_with_gallery = 0
+gallery_total = 0
+missing_heroes = []
+broken_gallery_refs = []
+
+for boat in boats:
+    slug = boat.get("slug", "")
+    images_obj = boat.get("images") or {}
+    hero_resolved = resolve_image(boat, context="hero")
+
+    if hero_resolved["has_image"]:
+        boats_with_hero += 1
+        hero_fname = hero_resolved["url"].split("/")[-1]
+        referenced_images.add(hero_fname)
+    else:
+        boats_without_hero += 1
+        missing_heroes.append({"designNumber": boat.get("designNumber", "?"),
+                               "name": str(boat.get("name", "?")),
+                               "slug": slug})
+
+    gallery = images_obj.get("gallery") or []
+    valid_gallery = []
+    for gf in gallery:
+        if gf and isinstance(gf, str):
+            if gf.lower() in existing_images:
+                referenced_images.add(gf)
+                valid_gallery.append(gf)
+            else:
+                broken_gallery_refs.append({"designNumber": boat.get("designNumber", "?"),
+                                            "file": gf})
+    if valid_gallery:
+        boats_with_gallery += 1
+        gallery_total += len(valid_gallery)
+
+# Find orphan images (exist on disk but not referenced by any boat)
+orphan_images = []
+for f in sorted(all_image_files):
+    if f.endswith('.webp'):
+        continue  # WebP files are auto-generated siblings
+    if f.startswith('og-') or f.startswith('logo') or f.startswith('favicon'):
+        continue  # Site-level assets
+    if f not in referenced_images:
+        orphan_images.append(f)
+
+# Coverage stats
+total_visible = len(boats)
+hero_pct = round(100 * boats_with_hero / total_visible, 1) if total_visible else 0
+
+from datetime import datetime
+_now_iso = datetime.now().isoformat()
+
+coverage_data = {
+    "generated": _now_iso,
+    "totalVisibleDesigns": total_visible,
+    "heroImageCoverage": {"count": boats_with_hero, "missing": boats_without_hero,
+                          "percentage": hero_pct},
+    "galleryCoverage": {"designsWithGallery": boats_with_gallery,
+                        "totalGalleryImages": gallery_total},
+    "missingHeroes": missing_heroes[:50],
+    "brokenGalleryRefs": broken_gallery_refs[:50],
+    "orphanImages": orphan_images[:100],
+    "totalImagesOnDisk": len(all_image_files),
+    "totalReferencedImages": len(referenced_images),
+}
+
+# Write JSON
+cov_json_path = os.path.join(SITE, "image_coverage.json")
+with open(cov_json_path, "w") as f:
+    json.dump(coverage_data, f, indent=2)
+
+# Write HTML dashboard
+cov_html = f'''<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><title>Image Coverage Report</title>
+<style>body{{font-family:system-ui;max-width:900px;margin:2rem auto;padding:0 1rem;color:#e0e0e0;background:#0d1117;}}
+h1{{font-size:1.5rem;}}h2{{font-size:1.1rem;margin-top:2rem;border-bottom:1px solid #30363d;padding-bottom:0.5rem;}}
+.stat{{display:inline-block;background:#161b22;border:1px solid #30363d;border-radius:8px;padding:1rem 1.5rem;margin:0.5rem;text-align:center;}}
+.stat-num{{font-size:2rem;font-weight:700;color:#58a6ff;}}.stat-label{{font-size:0.8rem;color:#8b949e;}}
+table{{width:100%;border-collapse:collapse;margin-top:0.5rem;}}th,td{{text-align:left;padding:0.4rem 0.75rem;border-bottom:1px solid #21262d;font-size:0.85rem;}}
+th{{color:#8b949e;font-weight:600;}}tr:hover{{background:#161b22;}}
+.warn{{color:#d29922;}}.ok{{color:#3fb950;}}.bad{{color:#f85149;}}
+</style></head><body>
+<h1>Image Coverage Report</h1>
+<p style="color:#8b949e;">Generated: {_now_iso}</p>
+<div>
+<div class="stat"><div class="stat-num {'ok' if hero_pct > 80 else 'warn' if hero_pct > 50 else 'bad'}">{hero_pct}%</div><div class="stat-label">Hero Coverage</div></div>
+<div class="stat"><div class="stat-num">{boats_with_hero}</div><div class="stat-label">With Hero</div></div>
+<div class="stat"><div class="stat-num warn">{boats_without_hero}</div><div class="stat-label">Missing Hero</div></div>
+<div class="stat"><div class="stat-num">{boats_with_gallery}</div><div class="stat-label">With Gallery</div></div>
+<div class="stat"><div class="stat-num">{gallery_total}</div><div class="stat-label">Gallery Images</div></div>
+<div class="stat"><div class="stat-num">{len(all_image_files)}</div><div class="stat-label">Files on Disk</div></div>
+<div class="stat"><div class="stat-num">{len(orphan_images)}</div><div class="stat-label">Orphan Files</div></div>
+</div>
+'''
+if missing_heroes:
+    cov_html += '<h2>Missing Hero Images (top 50)</h2><table><tr><th>#</th><th>Name</th><th>Slug</th></tr>'
+    for m in missing_heroes[:50]:
+        cov_html += f'<tr><td>{m["designNumber"]}</td><td>{m["name"]}</td><td>{m["slug"]}</td></tr>'
+    cov_html += '</table>'
+
+if broken_gallery_refs:
+    cov_html += '<h2 class="bad">Broken Gallery References</h2><table><tr><th>#</th><th>Missing File</th></tr>'
+    for b in broken_gallery_refs[:50]:
+        cov_html += f'<tr><td>{b["designNumber"]}</td><td class="bad">{b["file"]}</td></tr>'
+    cov_html += '</table>'
+
+if orphan_images:
+    cov_html += f'<h2>Orphan Images ({len(orphan_images)} files not referenced by any design)</h2><table><tr><th>File</th></tr>'
+    for o in orphan_images[:100]:
+        cov_html += f'<tr><td>{o}</td></tr>'
+    cov_html += '</table>'
+
+cov_html += '</body></html>'
+
+cov_html_path = os.path.join(SITE, "image_coverage.html")
+with open(cov_html_path, "w") as f:
+    f.write(cov_html)
+
+print(f"\n{'='*50}")
+print(f"IMAGE COVERAGE REPORT")
+print(f"{'='*50}")
+print(f"  Hero coverage: {hero_pct}% ({boats_with_hero}/{total_visible} designs)")
+print(f"  Gallery: {boats_with_gallery} designs with {gallery_total} images")
+print(f"  Orphan files: {len(orphan_images)} unreferenced images")
+
+# Prominent build warnings
+_img_warnings = 0
+if broken_gallery_refs:
+    _img_warnings += len(broken_gallery_refs)
+    print(f"\n  ⚠ WARNING: {len(broken_gallery_refs)} broken gallery references:")
+    for b in broken_gallery_refs[:5]:
+        print(f"      #{b['designNumber']}: {b['file']}")
+    if len(broken_gallery_refs) > 5:
+        print(f"      ... and {len(broken_gallery_refs) - 5} more")
+
+# Warn about featured designs missing heroes
+featured_slugs = {'788', '768', '691', '442', '778', '615', '435', '591',
+                  '190', '131', '378', '757', '471', '533', '541'}
+featured_missing = [m for m in missing_heroes if m.get('slug') in featured_slugs]
+if featured_missing:
+    _img_warnings += len(featured_missing)
+    print(f"\n  ⚠ WARNING: {len(featured_missing)} featured designs missing hero images:")
+    for fm in featured_missing:
+        print(f"      #{fm['designNumber']} ({fm['name']})")
+
+if _img_warnings == 0:
+    print(f"\n  ✓ No image warnings")
+print(f"  Reports: image_coverage.json, image_coverage.html")
 
 # ─── Summary ───
 

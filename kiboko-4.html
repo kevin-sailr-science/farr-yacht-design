@@ -24,11 +24,6 @@
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:image:type" content="image/png" /><meta name="twitter:card" content="summary_large_image" />
-  <script>
-  /* WebP detection (Sprint 39) */
-  (function(){var c=document.createElement('canvas');c.width=c.height=1;window._webp=c.toDataURL('image/webp').indexOf('data:image/webp')===0;
-  window._wimg=function(u){return window._webp?u.replace(/\.(jpe?g|png)$/i,'.webp'):u;};})();
-  </script>
 </head>
 <body>
 
@@ -254,36 +249,14 @@
       <h2>More Superyachts</h2>
       <div class="detail-grid" style="grid-template-columns:repeat(auto-fill, minmax(220px, 1fr)); gap:1.5rem;">
 
-        <a href="yacht/788.html" class="yacht-card" style="text-decoration:none;">
-          <div class="yacht-card-image" style="background-image:url('images/788-hero.jpg');height:160px"></div>
-          <div class="yacht-card-body">
-            <div class="yacht-card-number">#788</div>
-            <div class="yacht-card-name">Baltic 142 Canova</div>
-            <div class="yacht-card-meta">142&rsquo; | Superyacht | 2017</div>
-          </div>
-        </a>
+        <a data-yacht-card="788" href="yacht/788.html" class="yacht-card" style="text-decoration:none;"
+           data-card-label="Baltic 142 Canova" data-card-meta="142' | Superyacht | 2017"></a>
 
-        <a href="yacht/768.html" class="yacht-card" style="text-decoration:none;">
-          <div class="yacht-card-image" style="background-image:url('images/yysw503237.jpg');height:160px">
+        <a data-yacht-card="768" href="yacht/768.html" class="yacht-card" style="text-decoration:none;"
+           data-card-label="Southern Wind 96" data-card-meta="96' | Superyacht | 2015"></a>
 
-          </div>
-          <div class="yacht-card-body">
-            <div class="yacht-card-number">#768</div>
-            <div class="yacht-card-name">Southern Wind 96</div>
-            <div class="yacht-card-meta">96&rsquo; | Superyacht | 2015</div>
-          </div>
-        </a>
-
-        <a href="yacht/691.html" class="yacht-card" style="text-decoration:none;">
-          <div class="yacht-card-image" style="background-image:url('images/sw10802-water-03-resize.webp');height:160px">
-
-          </div>
-          <div class="yacht-card-body">
-            <div class="yacht-card-number">#691</div>
-            <div class="yacht-card-name">Southern Wind 102</div>
-            <div class="yacht-card-meta">102&rsquo; | Superyacht | 2010</div>
-          </div>
-        </a>
+        <a data-yacht-card="691" href="yacht/691.html" class="yacht-card" style="text-decoration:none;"
+           data-card-label="Southern Wind 102" data-card-meta="102' | Superyacht | 2010"></a>
 
       </div>
     </section>
@@ -403,9 +376,6 @@
     }
   </script>
 
-  <script>
-  /* WebP background-image rewriter (Sprint 39) */
-  if(window._webp){document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('[style*="background-image"]').forEach(function(el){var s=el.style.backgroundImage;if(s&&/\/images\//.test(s)){el.style.backgroundImage=s.replace(/\.(jpe?g|png)/gi,'.webp');}});});}
-  </script>
+  <script src="/yacht-card.js"></script>
 </body>
 </html>

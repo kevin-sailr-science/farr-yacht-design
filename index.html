@@ -40,11 +40,6 @@
     "knowsAbout": ["Naval Architecture", "Yacht Design", "Structural Engineering", "Racing Yachts", "Superyachts"]
   }
   </script>
-  <script>
-  /* WebP detection (Sprint 39) */
-  (function(){var c=document.createElement('canvas');c.width=c.height=1;window._webp=c.toDataURL('image/webp').indexOf('data:image/webp')===0;
-  window._wimg=function(u){return window._webp?u.replace(/\.(jpe?g|png)$/i,'.webp'):u;};})();
-  </script>
 </head>
 <body class="homepage">
 
@@ -393,9 +388,5 @@
     })();
   </script>
 
-  <script>
-  /* WebP background-image rewriter (Sprint 39) */
-  if(window._webp){document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('[style*="background-image"]').forEach(function(el){var s=el.style.backgroundImage;if(s&&/\/images\//.test(s)){el.style.backgroundImage=s.replace(/\.(jpe?g|png)/gi,'.webp');}});});}
-  </script>
 </body>
 </html>

@@ -1,0 +1,571 @@
+{
+  "generated": "2026-03-14T09:57:04.919491",
+  "totalVisibleDesigns": 496,
+  "heroImageCoverage": {
+    "count": 317,
+    "missing": 179,
+    "percentage": 63.9
+  },
+  "galleryCoverage": {
+    "designsWithGallery": 37,
+    "totalGalleryImages": 47
+  },
+  "missingHeroes": [
+    {
+      "designNumber": "023",
+      "name": "None",
+      "slug": "023"
+    },
+    {
+      "designNumber": "24",
+      "name": "None",
+      "slug": "24"
+    },
+    {
+      "designNumber": "25",
+      "name": "None",
+      "slug": "25"
+    },
+    {
+      "designNumber": "30",
+      "name": "None",
+      "slug": "30"
+    },
+    {
+      "designNumber": "31",
+      "name": "None",
+      "slug": "31"
+    },
+    {
+      "designNumber": "31B",
+      "name": "12ft Cherub Class Yacht",
+      "slug": "31b"
+    },
+    {
+      "designNumber": "32",
+      "name": "Javelin",
+      "slug": "32"
+    },
+    {
+      "designNumber": "33",
+      "name": "JOSHUA & AFFAKAZE",
+      "slug": "33"
+    },
+    {
+      "designNumber": "34",
+      "name": "INTL MOTH MARK IV",
+      "slug": "34"
+    },
+    {
+      "designNumber": "35",
+      "name": "None",
+      "slug": "35"
+    },
+    {
+      "designNumber": "36",
+      "name": "18' Racing Yacht",
+      "slug": "36"
+    },
+    {
+      "designNumber": "40",
+      "name": "None",
+      "slug": "40"
+    },
+    {
+      "designNumber": "41",
+      "name": "None",
+      "slug": "41"
+    },
+    {
+      "designNumber": "43",
+      "name": "18 Footer",
+      "slug": "43"
+    },
+    {
+      "designNumber": "44",
+      "name": "12ft Skiff (Aus. Rules)",
+      "slug": "44"
+    },
+    {
+      "designNumber": "46",
+      "name": "1/2 Ton Racing Yacht",
+      "slug": "46"
+    },
+    {
+      "designNumber": "47",
+      "name": "18ft Centre Board Yacht",
+      "slug": "47"
+    },
+    {
+      "designNumber": "49",
+      "name": "Q Class Plans",
+      "slug": "49"
+    },
+    {
+      "designNumber": "50",
+      "name": "18 Footer",
+      "slug": "50"
+    },
+    {
+      "designNumber": "55",
+      "name": "Dynamite",
+      "slug": "55"
+    },
+    {
+      "designNumber": "58",
+      "name": "Admirals Cup Ocean Racing Yacht - 2 Ton",
+      "slug": "58"
+    },
+    {
+      "designNumber": "59",
+      "name": "One Ton Ocean Racing Yacht",
+      "slug": "59"
+    },
+    {
+      "designNumber": "61",
+      "name": "GRANNY APPLE",
+      "slug": "61"
+    },
+    {
+      "designNumber": "62",
+      "name": "JENNY H",
+      "slug": "62"
+    },
+    {
+      "designNumber": "63",
+      "name": "SMIRNOFFAGEN",
+      "slug": "63"
+    },
+    {
+      "designNumber": "68",
+      "name": "13 Metre Ocean Racing Yacht",
+      "slug": "68"
+    },
+    {
+      "designNumber": "71",
+      "name": "One Ton (Keel) Ocean Racing Yacht",
+      "slug": "71"
+    },
+    {
+      "designNumber": "73",
+      "name": "Two Ton Ocean Racing Yacht",
+      "slug": "73"
+    },
+    {
+      "designNumber": "79",
+      "name": "EXPORT LION",
+      "slug": "79"
+    },
+    {
+      "designNumber": "83",
+      "name": "18 Foot Racing Yacht",
+      "slug": "83"
+    },
+    {
+      "designNumber": "94",
+      "name": "1/2 Ton Ocean Racing Yacht",
+      "slug": "94"
+    },
+    {
+      "designNumber": "102",
+      "name": "None",
+      "slug": "102"
+    },
+    {
+      "designNumber": "104",
+      "name": "None",
+      "slug": "104"
+    },
+    {
+      "designNumber": "126",
+      "name": "None",
+      "slug": "126"
+    },
+    {
+      "designNumber": "139",
+      "name": "None",
+      "slug": "139"
+    },
+    {
+      "designNumber": "141",
+      "name": "None",
+      "slug": "141"
+    },
+    {
+      "designNumber": "146",
+      "name": "None",
+      "slug": "146"
+    },
+    {
+      "designNumber": "146M",
+      "name": "None",
+      "slug": "146m"
+    },
+    {
+      "designNumber": "147",
+      "name": "NZ1",
+      "slug": "147"
+    },
+    {
+      "designNumber": "150",
+      "name": "KIWI EXPRESS",
+      "slug": "150"
+    },
+    {
+      "designNumber": "153",
+      "name": "Development of D#138",
+      "slug": "153"
+    },
+    {
+      "designNumber": "156",
+      "name": "None",
+      "slug": "156"
+    },
+    {
+      "designNumber": "157",
+      "name": "LASER",
+      "slug": "157"
+    },
+    {
+      "designNumber": "159",
+      "name": "WILD OATS",
+      "slug": "159"
+    },
+    {
+      "designNumber": "159M",
+      "name": "ETOILE",
+      "slug": "159m"
+    },
+    {
+      "designNumber": "160",
+      "name": "None",
+      "slug": "160"
+    },
+    {
+      "designNumber": "161",
+      "name": "TALISMAN",
+      "slug": "161"
+    },
+    {
+      "designNumber": "162",
+      "name": "None",
+      "slug": "162"
+    },
+    {
+      "designNumber": "164",
+      "name": "110' Cruiser",
+      "slug": "164"
+    },
+    {
+      "designNumber": "166",
+      "name": "Maxi Model",
+      "slug": "166"
+    }
+  ],
+  "brokenGalleryRefs": [
+    {
+      "designNumber": "28",
+      "file": "028_01.jpg"
+    },
+    {
+      "designNumber": "28",
+      "file": "028_bacchante_01.jpg"
+    },
+    {
+      "designNumber": "28",
+      "file": "028_bacchante_02.jpg"
+    },
+    {
+      "designNumber": "28",
+      "file": "028_bacchante_03.jpg"
+    },
+    {
+      "designNumber": "28",
+      "file": "028_bacchante_04.jpg"
+    },
+    {
+      "designNumber": "28",
+      "file": "028_bacchante_05.jpg"
+    },
+    {
+      "designNumber": "28",
+      "file": "028_bacchante_06.jpg"
+    },
+    {
+      "designNumber": "28",
+      "file": "028_bacchante_07.jpg"
+    },
+    {
+      "designNumber": "29",
+      "file": "029_01.jpg"
+    },
+    {
+      "designNumber": "37",
+      "file": "037_01.jpg"
+    },
+    {
+      "designNumber": "37",
+      "file": "037_02.jpg"
+    },
+    {
+      "designNumber": "37",
+      "file": "037_03.jpg"
+    },
+    {
+      "designNumber": "37",
+      "file": "037_04.jpg"
+    },
+    {
+      "designNumber": "48",
+      "file": "048_01.jpg"
+    },
+    {
+      "designNumber": "48",
+      "file": "048_02.jpg"
+    },
+    {
+      "designNumber": "48",
+      "file": "048_04.jpg"
+    },
+    {
+      "designNumber": "48",
+      "file": "048_05.jpg"
+    },
+    {
+      "designNumber": "48",
+      "file": "048_06.jpg"
+    },
+    {
+      "designNumber": "51",
+      "file": "051_02_jiminy.jpg"
+    },
+    {
+      "designNumber": "51",
+      "file": "051c_red_cloud.jpg"
+    },
+    {
+      "designNumber": "51",
+      "file": "051_01_prospect.jpg"
+    },
+    {
+      "designNumber": "51",
+      "file": "051_03_jiminy.jpg"
+    },
+    {
+      "designNumber": "51",
+      "file": "051_04_jiminy.jpg"
+    },
+    {
+      "designNumber": "51",
+      "file": "051_05_farr1104.jpg"
+    },
+    {
+      "designNumber": "51",
+      "file": "051_06_thenumbers.jpg"
+    },
+    {
+      "designNumber": "52",
+      "file": "052_02.jpg"
+    },
+    {
+      "designNumber": "64",
+      "file": "064_05.jpg"
+    },
+    {
+      "designNumber": "64",
+      "file": "064_02.jpg"
+    },
+    {
+      "designNumber": "64",
+      "file": "064_03.jpg"
+    },
+    {
+      "designNumber": "64",
+      "file": "064_04.jpg"
+    },
+    {
+      "designNumber": "64",
+      "file": "064_06.jpg"
+    },
+    {
+      "designNumber": "64",
+      "file": "064_07.jpg"
+    },
+    {
+      "designNumber": "65",
+      "file": "065_03.jpg"
+    },
+    {
+      "designNumber": "65",
+      "file": "065_02.jpg"
+    },
+    {
+      "designNumber": "65",
+      "file": "065_04.jpg"
+    },
+    {
+      "designNumber": "67",
+      "file": "067_04.jpg"
+    },
+    {
+      "designNumber": "72",
+      "file": "072_01.jpg"
+    },
+    {
+      "designNumber": "72",
+      "file": "72_2_photo_cover.jpg"
+    },
+    {
+      "designNumber": "74",
+      "file": "074_01.jpg"
+    },
+    {
+      "designNumber": "76",
+      "file": "076_01.jpg"
+    },
+    {
+      "designNumber": "80",
+      "file": "720_100804_bavaria_303.jpg"
+    },
+    {
+      "designNumber": "84",
+      "file": "084m_hullprofile.jpg"
+    },
+    {
+      "designNumber": "84",
+      "file": "084m_interior01.jpg"
+    },
+    {
+      "designNumber": "84",
+      "file": "084m_interior02.jpg"
+    },
+    {
+      "designNumber": "84",
+      "file": "084m_special effect.jpg"
+    },
+    {
+      "designNumber": "84",
+      "file": "084m_special effect600x400.jpg"
+    },
+    {
+      "designNumber": "85",
+      "file": "085_01.jpg"
+    },
+    {
+      "designNumber": "85",
+      "file": "085_02.jpg"
+    },
+    {
+      "designNumber": "85",
+      "file": "085_03.jpg"
+    },
+    {
+      "designNumber": "85",
+      "file": "085_04.jpg"
+    }
+  ],
+  "orphanImages": [
+    "10-3-05m-general-purpose-rowing-sailing-dinghy.jpg",
+    "12-3-7m-single-handed-trapeze-racing-dinghy.jpg",
+    "12-cherub.jpg",
+    "12-doublehanded-skiff.jpg",
+    "13m-irc-daysailer.jpg",
+    "144-02-1-v1.jpg",
+    "14m-tender.jpg",
+    "195-01-00-crop-u545530-v1.jpg",
+    "2-credit-ainhoa-sanchez-abu-dhabi-ocean-racing-scaled.jpg",
+    "21.jpg",
+    "23-cruising-sloop-fanzipanz.jpg",
+    "266-hero.jpg",
+    "268-8-1m-cruising-sloop-v1.jpg",
+    "278-01-crop-u545521-1-v1.jpg",
+    "28-photo-v1.jpg",
+    "29-photo-v1.jpg",
+    "3-man-dinghy-travelodge.jpg",
+    "333-cruising-sloop-v1.jpg",
+    "36-ft-one-design-concept-v1.jpg",
+    "37-ft-club-racer-v3.jpg",
+    "37-photo-v1.jpg",
+    "38-center-console-v1.jpg",
+    "382-toshiba-02-crop-u545505-v1.jpg",
+    "3827-thumb.jpg",
+    "386-chessie-03-crop-u545489-v1.jpg",
+    "392-kvaernerinnovation-04-crop-u545478-v1.jpg",
+    "396-silkcut-01-crop-u545473-v1.jpg",
+    "42-cruiser-gerontius-v3.jpg",
+    "42-photo-v1.jpg",
+    "48-photo-v1.jpg",
+    "51-photo-v1.jpg",
+    "543-10r2-hi-res-crop-u421391-v1.jpg",
+    "55-ft-one-design-racer-concept-v1.jpg",
+    "550-movistar-01-v1.jpg",
+    "6022.jpg",
+    "604-dsc3343-1-v1.jpg",
+    "64-photo-v1.jpg",
+    "65-photo-v1.jpg",
+    "67-photo-v1.jpg",
+    "72-photo-v1.jpg",
+    "74-photo-v1.jpg",
+    "74-worldsqsjbphoto-v3.jpg",
+    "750-img-7180a-v1.jpg",
+    "76-header-v1.jpg",
+    "81-photo-v2.jpg",
+    "826-aft-iso-1a-mounted-800x600-v1.png",
+    "85-photo-v1.jpg",
+    "87-01-th-v1.jpg",
+    "97-photo-v1.jpg",
+    "99-photo-v1.jpg",
+    "abudusk.jpg",
+    "alvtrim.jpg",
+    "arw10-arw10-128-crop-u546032.jpg",
+    "aseb-20111209-scaled.jpg",
+    "bavaria-cruiser-36.jpg",
+    "beneteau-first-10r-first-34-7.jpg",
+    "beneteau-first-35.jpg",
+    "beneteau-first-40.jpg",
+    "beneteau-first-407.jpg",
+    "beneteau-first-45f5.jpg",
+    "beneteau-first-477.jpg",
+    "bg-annapolis-racing.jpg",
+    "bg-chesapeake-upwind.jpg",
+    "bg-offshore-action.jpg",
+    "bg-offshore-fleet.jpg",
+    "bg-racing-bow.jpg",
+    "bg-sailing-closeup.jpg",
+    "boatshot.jpg",
+    "britton-ward.jpg",
+    "cam-crop-u406647.jpg",
+    "ceramco1-scaled.jpg",
+    "content-photo-2012-09-25238-0-1-photo-f40w12ka-1369-crop-u546019.jpg",
+    "cookson-50.jpg",
+    "ddbib-0162-2-crop-u393585.jpg",
+    "delta-dore.jpg",
+    "despegamos-01-scaled.jpg",
+    "doll.jpg",
+    "download-5--scaled.jpg",
+    "download-missing-images.ps1",
+    "dsc-2886.jpg",
+    "dsc-5724.jpg",
+    "early-farr-design.jpg",
+    "ericsson-volvo-open-70.jpg",
+    "expedition-sailing-rowing-craft.jpg",
+    "farr-100-leopard-3.jpg",
+    "farr-1104.jpg",
+    "farr-115-sojana.jpg",
+    "farr-11s.jpg",
+    "farr-230.jpg",
+    "farr-25-one-design.jpg",
+    "farr-280-one-design.jpg",
+    "farr-30-one-design.jpg",
+    "farr-40-one-design.jpg",
+    "farr-40-racing.jpg",
+    "farr-43-cruiser-racer.jpg",
+    "farr-63-kiwi-spirit.jpg",
+    "farr-f-logo.svg",
+    "farr-ims-54-cam.jpg",
+    "farr-irc-42.jpg",
+    "farr-irc-46.jpg"
+  ],
+  "totalImagesOnDisk": 1188,
+  "totalReferencedImages": 348
+}

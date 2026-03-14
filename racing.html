@@ -24,11 +24,6 @@
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:image:type" content="image/png" /><meta name="twitter:card" content="summary_large_image" />
-  <script>
-  /* WebP detection (Sprint 39) */
-  (function(){var c=document.createElement('canvas');c.width=c.height=1;window._webp=c.toDataURL('image/webp').indexOf('data:image/webp')===0;
-  window._wimg=function(u){return window._webp?u.replace(/\.(jpe?g|png)$/i,'.webp'):u;};})();
-  </script>
 </head>
 <body>
 
@@ -134,31 +129,17 @@
       <h2 style="margin-top:0.25rem; margin-bottom:1.5rem;">The boats that made history</h2>
       <div class="featured-projects-grid" style="display:grid; grid-template-columns:repeat(auto-fill, minmax(300px, 1fr)); gap:1.5rem;">
 
-        <a href="yacht/757.html" class="yacht-card yacht-card--featured" style="text-decoration:none;">
-          <div class="yacht-card-image" style="background-image:url('images/azzam-vo65.jpg');height:200px;">
+        <a data-yacht-card="757" href="yacht/757.html" class="yacht-card" style="text-decoration:none;"
+           data-card-featured data-card-height="200"
+           data-card-label="Volvo Ocean 65" data-card-meta="65' | One-Design | 2014"
+           data-card-badge="All Entries 2014-18" data-card-badge-class="result-badge result-badge--fleet"
+           data-card-desc="Every boat in two Volvo Ocean Race editions was a Farr design. The ultimate validation of a one-design concept."></a>
 
-            <span class="result-badge result-badge--fleet" style="position:absolute; top:0.75rem; left:0.75rem;">All Entries 2014&ndash;18</span>
-          </div>
-          <div class="yacht-card-body">
-            <div class="yacht-card-number">One-Design Fleet</div>
-            <div class="yacht-card-name">Volvo Ocean 65</div>
-            <div class="yacht-card-meta">65&rsquo; | One-Design | 2014</div>
-            <p style="font-size:0.82rem; color:var(--text-secondary); margin-top:0.5rem;">Every boat in two Volvo Ocean Race editions was a Farr design. The ultimate validation of a one-design concept.</p>
-          </div>
-        </a>
-
-        <a href="yacht/190.html" class="yacht-card yacht-card--featured" style="text-decoration:none;">
-          <div class="yacht-card-image" style="background-image:url('images/190-steinlager-ii-crop-u545533-v1.jpg');height:200px;">
-            
-            <span class="result-badge result-badge--winner" style="position:absolute; top:0.75rem; left:0.75rem;">Won Every Leg</span>
-          </div>
-          <div class="yacht-card-body">
-            <div class="yacht-card-number">1989&ndash;90 Whitbread</div>
-            <div class="yacht-card-name">Steinlager II</div>
-            <div class="yacht-card-meta">84&rsquo; | Maxi | 1989</div>
-            <p style="font-size:0.82rem; color:var(--text-secondary); margin-top:0.5rem;">Peter Blake&rsquo;s perfect score &mdash; won all six legs of the 1989&ndash;90 Whitbread. Never matched.</p>
-          </div>
-        </a>
+        <a data-yacht-card="190" href="yacht/190.html" class="yacht-card" style="text-decoration:none;"
+           data-card-featured data-card-height="200"
+           data-card-label="Steinlager II" data-card-meta="84' | Maxi | 1989"
+           data-card-badge="Won Every Leg" data-card-badge-class="result-badge result-badge--winner"
+           data-card-desc="Peter Blake's perfect score - won all six legs of the 1989-90 Whitbread. Never matched."></a>
 
         <a href="tp52-heritage.html" class="yacht-card yacht-card--featured" style="text-decoration:none;">
           <div class="yacht-card-image" style="background-image:url('images/258-hero.jpg');height:200px;">
@@ -194,55 +175,20 @@
       <div class="portfolio-results" id="raceGrid" style="display:grid; grid-template-columns:repeat(auto-fill, minmax(220px, 1fr)); gap:1.25rem;">
 
         <!-- Ocean Racing -->
-        <a href="yacht/190.html" class="yacht-card" data-class="ocean" style="text-decoration:none;">
-          <div class="yacht-card-image" style="background-image:url('images/190-steinlager-ii-crop-u545533-v1.jpg');height:160px;">
-            </div>
-          <div class="yacht-card-body">
-            <div class="yacht-card-number">1989&ndash;90</div>
-            <div class="yacht-card-name">Steinlager II</div>
-            <div class="yacht-card-meta">84&rsquo; | Whitbread Maxi</div>
-          </div>
-        </a>
+        <a data-yacht-card="190" href="yacht/190.html" class="yacht-card" data-class="ocean" style="text-decoration:none;"
+           data-card-label="Steinlager II" data-card-meta="84' | Whitbread Maxi"></a>
 
-        <a href="yacht/378.html" class="yacht-card" data-class="ocean" style="text-decoration:none;">
-          <div class="yacht-card-image" style="background-image:url('images/378-eflanguage-01-crop-u545501-v1.jpg');height:160px;">
-            </div>
-          <div class="yacht-card-body">
-            <div class="yacht-card-number">1997&ndash;98</div>
-            <div class="yacht-card-name">EF Language</div>
-            <div class="yacht-card-meta">60&rsquo; | Whitbread 60</div>
-          </div>
-        </a>
+        <a data-yacht-card="378" href="yacht/378.html" class="yacht-card" data-class="ocean" style="text-decoration:none;"
+           data-card-label="EF Language" data-card-meta="60' | Whitbread 60"></a>
 
-        <a href="yacht/471.html" class="yacht-card" data-class="ocean" style="text-decoration:none;">
-          <div class="yacht-card-image" style="background-image:url('images/illbruck-leg5-rick-tomlinson-1.jpg');height:160px;">
-            </div>
-          <div class="yacht-card-body">
-            <div class="yacht-card-number">2001&ndash;02</div>
-            <div class="yacht-card-name">illbruck Challenge</div>
-            <div class="yacht-card-meta">60&rsquo; | Volvo Ocean 60</div>
-          </div>
-        </a>
+        <a data-yacht-card="471" href="yacht/471.html" class="yacht-card" data-class="ocean" style="text-decoration:none;"
+           data-card-label="illbruck Challenge" data-card-meta="60' | Volvo Ocean 60"></a>
 
-        <a href="yacht/545-regata.html" class="yacht-card" data-class="ocean" style="text-decoration:none;">
-          <div class="yacht-card-image" style="background-image:url('images/2-credit-ainhoa-sanchez-abu-dhabi-ocean-racing-scaled.jpg');height:160px;">
-            </div>
-          <div class="yacht-card-body">
-            <div class="yacht-card-number">2011&ndash;12</div>
-            <div class="yacht-card-name">Azzam</div>
-            <div class="yacht-card-meta">70&rsquo; | Volvo Open 70</div>
-          </div>
-        </a>
+        <a data-yacht-card="545-regata" href="yacht/545-regata.html" class="yacht-card" data-class="ocean" style="text-decoration:none;"
+           data-card-label="Azzam" data-card-meta="70' | Volvo Open 70"></a>
 
-        <a href="yacht/757.html" class="yacht-card" data-class="ocean" style="text-decoration:none;">
-          <div class="yacht-card-image" style="background-image:url('images/azzam-vo65.jpg');height:160px;">
-            </div>
-          <div class="yacht-card-body">
-            <div class="yacht-card-number">2014&ndash;18</div>
-            <div class="yacht-card-name">Volvo Ocean 65</div>
-            <div class="yacht-card-meta">65&rsquo; | One-Design Fleet</div>
-          </div>
-        </a>
+        <a data-yacht-card="757" href="yacht/757.html" class="yacht-card" data-class="ocean" style="text-decoration:none;"
+           data-card-label="Volvo Ocean 65" data-card-meta="65' | One-Design Fleet"></a>
 
         <!-- Grand Prix -->
         <a href="tp52-heritage.html" class="yacht-card" data-class="grand-prix" style="text-decoration:none;">
@@ -255,15 +201,8 @@
           </div>
         </a>
 
-        <a href="yacht/541.html" class="yacht-card" data-class="grand-prix" style="text-decoration:none;">
-          <div class="yacht-card-image" style="background-image:url('images/cookson-50.jpg');height:160px;">
-            </div>
-          <div class="yacht-card-body">
-            <div class="yacht-card-number">#541</div>
-            <div class="yacht-card-name">Cookson 50</div>
-            <div class="yacht-card-meta">50&rsquo; | Grand Prix Racing</div>
-          </div>
-        </a>
+        <a data-yacht-card="541" href="yacht/541.html" class="yacht-card" data-class="grand-prix" style="text-decoration:none;"
+           data-card-label="Cookson 50" data-card-meta="50' | Grand Prix Racing"></a>
 
         <!-- One-Design -->
         <a href="farr-40.html" class="yacht-card" data-class="one-design" style="text-decoration:none;">
@@ -276,35 +215,14 @@
           </div>
         </a>
 
-        <a href="yacht/54.html" class="yacht-card" data-class="one-design" style="text-decoration:none;">
-          <div class="yacht-card-image" style="background-image:url('images/prev11a.jpg');height:160px;">
-            </div>
-          <div class="yacht-card-body">
-            <div class="yacht-card-number">Mumm 30</div>
-            <div class="yacht-card-name">Farr 30</div>
-            <div class="yacht-card-meta">30&rsquo; | One-Design</div>
-          </div>
-        </a>
+        <a data-yacht-card="54" href="yacht/54.html" class="yacht-card" data-class="one-design" style="text-decoration:none;"
+           data-card-label="Farr 30" data-card-meta="30' | One-Design"></a>
 
-        <a href="yacht/667.html" class="yacht-card" data-class="one-design" style="text-decoration:none;">
-          <div class="yacht-card-image" style="background-image:url('images/farr-25-one-design.jpg');height:160px;">
-            </div>
-          <div class="yacht-card-body">
-            <div class="yacht-card-number">Farr 25</div>
-            <div class="yacht-card-name">Farr 25 One-Design</div>
-            <div class="yacht-card-meta">25&rsquo; | One-Design</div>
-          </div>
-        </a>
+        <a data-yacht-card="667" href="yacht/667.html" class="yacht-card" data-class="one-design" style="text-decoration:none;"
+           data-card-label="Farr 25 One-Design" data-card-meta="25' | One-Design"></a>
 
-        <a href="yacht/316.html" class="yacht-card" data-class="one-design" style="text-decoration:none;">
-          <div class="yacht-card-image" style="background-image:url('images/platu-25.jpg');height:160px;">
-            </div>
-          <div class="yacht-card-body">
-            <div class="yacht-card-number">200+ Hulls</div>
-            <div class="yacht-card-name">Platu 25</div>
-            <div class="yacht-card-meta">25&rsquo; | One-Design</div>
-          </div>
-        </a>
+        <a data-yacht-card="316" href="yacht/316.html" class="yacht-card" data-class="one-design" style="text-decoration:none;"
+           data-card-label="Platu 25" data-card-meta="25' | One-Design"></a>
 
       </div>
     </div>
@@ -415,9 +333,6 @@
     }
   </script>
 
-  <script>
-  /* WebP background-image rewriter (Sprint 39) */
-  if(window._webp){document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('[style*="background-image"]').forEach(function(el){var s=el.style.backgroundImage;if(s&&/\/images\//.test(s)){el.style.backgroundImage=s.replace(/\.(jpe?g|png)/gi,'.webp');}});});}
-  </script>
+  <script src="/yacht-card.js"></script>
 </body>
 </html>

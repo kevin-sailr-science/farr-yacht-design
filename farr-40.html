@@ -25,11 +25,6 @@
   <meta property="og:image:height" content="630" />
   <meta property="og:image:type" content="image/png" />
   <meta name="twitter:card" content="summary_large_image" />
-  <script>
-  /* WebP detection (Sprint 39) */
-  (function(){var c=document.createElement('canvas');c.width=c.height=1;window._webp=c.toDataURL('image/webp').indexOf('data:image/webp')===0;
-  window._wimg=function(u){return window._webp?u.replace(/\.(jpe?g|png)$/i,'.webp'):u;};})();
-  </script>
 </head>
 <body>
 
@@ -202,38 +197,14 @@
       <h2>More from the 2000s</h2>
       <div class="detail-grid" style="grid-template-columns:repeat(auto-fill, minmax(220px, 1fr)); gap:1.5rem;">
 
-        <a href="yacht/533.html" class="yacht-card" style="text-decoration:none;">
-          <div class="yacht-card-image" style="background-image:url('images/vor10865.jpg');height:160px;">
+        <a data-yacht-card="533" href="yacht/533.html" class="yacht-card" style="text-decoration:none;"
+           data-card-label="TP52" data-card-meta="52' | Grand Prix | 2002"></a>
 
-          </div>
-          <div class="yacht-card-body">
-            <div class="yacht-card-number">#533</div>
-            <div class="yacht-card-name">TP52</div>
-            <div class="yacht-card-meta">52&rsquo; | Grand Prix | 2002</div>
-          </div>
-        </a>
+        <a data-yacht-card="541" href="yacht/541.html" class="yacht-card" style="text-decoration:none;"
+           data-card-label="Cookson 50" data-card-meta="50' | Racing | 2003"></a>
 
-        <a href="yacht/541.html" class="yacht-card" style="text-decoration:none;">
-          <div class="yacht-card-image" style="background-image:url('images/vor10865.jpg');height:160px;">
-
-          </div>
-          <div class="yacht-card-body">
-            <div class="yacht-card-number">#541</div>
-            <div class="yacht-card-name">Cookson 50</div>
-            <div class="yacht-card-meta">50&rsquo; | Racing | 2003</div>
-          </div>
-        </a>
-
-        <a href="yacht/476.html" class="yacht-card" style="text-decoration:none;">
-          <div class="yacht-card-image" style="background-image:url('images/vor10865.jpg');height:160px;">
-
-          </div>
-          <div class="yacht-card-body">
-            <div class="yacht-card-number">#476</div>
-            <div class="yacht-card-name">Volvo Ocean 60</div>
-            <div class="yacht-card-meta">60&rsquo; | Ocean Racing | 2001</div>
-          </div>
-        </a>
+        <a data-yacht-card="476" href="yacht/476.html" class="yacht-card" style="text-decoration:none;"
+           data-card-label="Volvo Ocean 60" data-card-meta="60' | Ocean Racing | 2001"></a>
 
       </div>
     </section>
@@ -368,9 +339,6 @@
     }
   </script>
 
-  <script>
-  /* WebP background-image rewriter (Sprint 39) */
-  if(window._webp){document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('[style*="background-image"]').forEach(function(el){var s=el.style.backgroundImage;if(s&&/\/images\//.test(s)){el.style.backgroundImage=s.replace(/\.(jpe?g|png)/gi,'.webp');}});});}
-  </script>
+  <script src="/yacht-card.js"></script>
 </body>
 </html>

@@ -3565,10 +3565,7 @@
     "images": {
       "hero": "54-hero.jpg",
       "gallery": [
-        "054_01.jpg",
-        "054_02.jpg",
-        "054_03.jpg",
-        "054_04.jpg"
+        "54-photo-v1.jpg"
       ],
       "card": null,
       "cardCropHint": null,
@@ -3619,7 +3616,9 @@
     "isArchived": null,
     "images": {
       "hero": "54-hero.jpg",
-      "gallery": [],
+      "gallery": [
+        "54-photo-v1.jpg"
+      ],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -7673,10 +7672,7 @@
     "images": {
       "hero": "90-hero.jpg",
       "gallery": [
-        "090_02.jpg",
-        "090_01.jpg",
-        "090_03.jpg",
-        "090_04.jpg"
+        "90-photo-v1.jpg"
       ],
       "card": null,
       "cardCropHint": null,
@@ -7727,7 +7723,9 @@
     "isArchived": null,
     "images": {
       "hero": "90-hero.jpg",
-      "gallery": [],
+      "gallery": [
+        "90-photo-v1.jpg"
+      ],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -13243,8 +13241,9 @@
     "images": {
       "hero": "190-hero.jpg",
       "gallery": [
-        "190_01.jpg",
-        "190_02.jpg"
+        "190-steinlager-ii-crop-u545533-v1.jpg",
+        "190-01-scaled-v2.jpg",
+        "steinlager-ii.jpg"
       ],
       "card": null,
       "cardCropHint": null,
@@ -17180,8 +17179,7 @@
     "images": {
       "hero": "274-hero.jpg",
       "gallery": [
-        "274_nzendeavour_01.jpg",
-        "274_nze.jpg"
+        "274-nzendeavour-crop-u545513-v1.jpg"
       ],
       "card": null,
       "cardCropHint": null,
@@ -17292,10 +17290,10 @@
         "ft": 49.77
       }
     },
-    "description": "Design 277 is a ims racing yacht designed by Farr Yacht Design in 1992. She has an overall length of 40 feet (12.2m). Built by Galgani (Cookson), Basagaña (ADE/BWANA), Crawford (Cookson/ASSASSIN).",
+    "description": "Design 277 is a ims racing yacht designed by Farr Yacht Design in 1992. She has an overall length of 40 feet (12.2m). Built by Galgani (Cookson), Basaga\u00f1a (ADE/BWANA), Crawford (Cookson/ASSASSIN).",
     "shortDescription": "IMS 40",
     "shortSummary": "",
-    "builder": "Galgani (Cookson), Basagaña (ADE/BWANA), Crawford (Cookson/ASSASSIN)",
+    "builder": "Galgani (Cookson), Basaga\u00f1a (ADE/BWANA), Crawford (Cookson/ASSASSIN)",
     "owner": null,
     "rigType": "",
     "rigMaterial": "",
@@ -17983,7 +17981,7 @@
     "title": "290",
     "slug": "290",
     "designNumber": "290",
-    "name": "120ft Round the World Yacht — Peter Blake",
+    "name": "120ft Round the World Yacht \u2014 Peter Blake",
     "year": 1993,
     "category": [
       "Racing Yacht"
@@ -17998,7 +17996,7 @@
       }
     },
     "description": null,
-    "shortDescription": "120ft Round the World Yacht — Peter Blake",
+    "shortDescription": "120ft Round the World Yacht \u2014 Peter Blake",
     "shortSummary": null,
     "builder": "Peter Blake",
     "owner": null,
@@ -21945,16 +21943,8 @@
     "images": {
       "hero": "378-hero.jpg",
       "gallery": [
-        "378_eflanguage_01.jpg",
-        "378_eflanguage_01sm.jpg",
-        "378_eflanguage_02.jpg",
-        "378_eflanguage_03.jpg",
-        "378_eflanguage_04.jpg",
-        "378_eflanguage_05.jpg",
-        "378_eflanguage_06.jpg",
-        "378_eflanguage_07.jpg",
-        "378_eflanguage_08.jpg",
-        "378_eflanguage_09.jpg"
+        "378-eflanguage-01-crop-u545501-v1.jpg",
+        "whitbread-60-ef-language-ef-education.jpg"
       ],
       "card": null,
       "cardCropHint": null,
@@ -25300,10 +25290,9 @@
     "images": {
       "hero": "471-hero.jpg",
       "gallery": [
-        "471_01.jpg",
-        "471_02.jpg",
-        "471_03.jpg",
-        "471_03sm.jpg"
+        "471-reaching-crop-u545573-1-v1.jpg",
+        "illbruck-leg5-rick-tomlinson-1.jpg",
+        "volvo-ocean-60-illbruck-challenge.jpg"
       ],
       "card": null,
       "cardCropHint": null,
@@ -26055,7 +26044,7 @@
     },
     "description": "'<p>&nbsp;</p><p>Design 491 is poised to be a giant-killer on the Mediterranean IMS circuit.&nbsp; This design was commissioned by a Greek owner with the goal of winning in the large boat class.&nbsp; At 43&rsquo; LOA she will be one of the smallest boats in her class",
     "shortDescription": "IMS 43",
-    "shortSummary": "Design 491 is poised to be a giant-killer on the Mediterranean IMS circuit. While this design is sized to be at the small end of the big boat class it will be fast enough to sail in front of the 45’ cruiser/racers.  ",
+    "shortSummary": "Design 491 is poised to be a giant-killer on the Mediterranean IMS circuit. While this design is sized to be at the small end of the big boat class it will be fast enough to sail in front of the 45\u2019 cruiser/racers.  ",
     "builder": "G. Andreadis",
     "owner": null,
     "rigType": null,
@@ -26969,7 +26958,7 @@
         "ft": 20.77
       }
     },
-    "description": "'<p>&nbsp;</p><p align=\\\"left\\\">Design #539 was commissioned by CAM (Caja de Ahorros del Mediterráneo",
+    "description": "'<p>&nbsp;</p><p align=\\\"left\\\">Design #539 was commissioned by CAM (Caja de Ahorros del Mediterr\u00e1neo",
     "shortDescription": "2004 IMS Racing Yacht",
     "shortSummary": "This design was built in 2004 for competitive IMS racing in the Mediterranean IMS racing circuit.",
     "builder": "Mtorres",
@@ -29196,10 +29185,10 @@
         "ft": 14.76
       }
     },
-    "description": "Design 609, DELTA DORE, is a racing designed by Farr Yacht Design in 2005. She has an overall length of 60 feet (18.3m). Built by Beyou (Jérémie Beyou).",
+    "description": "Design 609, DELTA DORE, is a racing designed by Farr Yacht Design in 2005. She has an overall length of 60 feet (18.3m). Built by Beyou (J\u00e9r\u00e9mie Beyou).",
     "shortDescription": "Open 60",
     "shortSummary": null,
-    "builder": "Beyou (Jérémie Beyou)",
+    "builder": "Beyou (J\u00e9r\u00e9mie Beyou)",
     "owner": null,
     "rigType": null,
     "rigMaterial": null,
@@ -29278,10 +29267,10 @@
         "ft": 14.76
       }
     },
-    "description": "Design 609M, Open 60 (IMOCA), is a racing yacht designed by Farr Yacht Design in 2006. She has an overall length of 60 feet (18.3m). Built by Beyou (Jérémie Beyou).",
+    "description": "Design 609M, Open 60 (IMOCA), is a racing yacht designed by Farr Yacht Design in 2006. She has an overall length of 60 feet (18.3m). Built by Beyou (J\u00e9r\u00e9mie Beyou).",
     "shortDescription": "Open 60",
     "shortSummary": "IMOCA 60 specifically designed for shorthanded ocean racing.",
-    "builder": "Beyou (Jérémie Beyou)",
+    "builder": "Beyou (J\u00e9r\u00e9mie Beyou)",
     "owner": null,
     "rigType": null,
     "rigMaterial": null,
@@ -29605,7 +29594,7 @@
     },
     "description": "'<p>&nbsp;</p><p>The BENETEAU First 35 (Design 622",
     "shortDescription": "35 Cruiser/Racer",
-    "shortSummary": "Design 622 will fulfill the club racer’s desire for a versatile and competitive cruiser/racer at a popular size and price. ",
+    "shortSummary": "Design 622 will fulfill the club racer\u2019s desire for a versatile and competitive cruiser/racer at a popular size and price. ",
     "builder": "BENETEAU",
     "owner": null,
     "rigType": null,
@@ -30738,11 +30727,8 @@
     "images": {
       "hero": "691-hero.jpg",
       "gallery": [
-        "sw102_mr.jpg",
-        "691_almagores_327.jpg",
-        "691_almagores_409.jpg",
-        "691_almagores_ii.jpg",
-        "691_photo1.jpg"
+        "691-photo-v1.jpg",
+        "southern-wind-102.jpg"
       ],
       "card": null,
       "cardCropHint": null,
@@ -32215,7 +32201,10 @@
     "isArchived": null,
     "images": {
       "hero": "757-hero.jpg",
-      "gallery": [],
+      "gallery": [
+        "azzam-vo65.jpg",
+        "volvo-ocean-65.jpg"
+      ],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -32545,7 +32534,10 @@
     "isArchived": null,
     "images": {
       "hero": "768-hero.jpg",
-      "gallery": [],
+      "gallery": [
+        "sw96-01-sorceress-deck-20.jpg",
+        "southern-wind-96.jpg"
+      ],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -33003,7 +32995,7 @@
         "lbs": 145946.0
       }
     },
-    "description": "Farr Yacht Design is delighted to present our tenth design commission from Southern Wind shipyard. The new Southern Wind 105 is a stunning, thoroughly modern yacht designed for the sailor who expects cutting edge design and superb styling in a fast, safe, passage capable yacht equipped to contest any superyacht regatta.\n\nFYD was given a free hand to develop the naval architecture concept. With Southern Wind’s advanced construction technology and fanatical commitment to weight control, we were able to create a light, powerful masterpiece with aggressive hull styling, a highly advanced appendage package and a more than ample rig size. Twin rudders were chosen to best match both the lifting keel configuration and the wide, powerful transom.\n\nThe interior and deck styling are the product of Nauta Design and were developed in concert with the overall concept to be the \"new wave in the future of Southern Wind.\"",
+    "description": "Farr Yacht Design is delighted to present our tenth design commission from Southern Wind shipyard. The new Southern Wind 105 is a stunning, thoroughly modern yacht designed for the sailor who expects cutting edge design and superb styling in a fast, safe, passage capable yacht equipped to contest any superyacht regatta.\n\nFYD was given a free hand to develop the naval architecture concept. With Southern Wind\u2019s advanced construction technology and fanatical commitment to weight control, we were able to create a light, powerful masterpiece with aggressive hull styling, a highly advanced appendage package and a more than ample rig size. Twin rudders were chosen to best match both the lifting keel configuration and the wide, powerful transom.\n\nThe interior and deck styling are the product of Nauta Design and were developed in concert with the overall concept to be the \"new wave in the future of Southern Wind.\"",
     "shortDescription": "Southern Wind 105",
     "shortSummary": null,
     "builder": null,
@@ -33502,7 +33494,7 @@
         "tons": 48.7
       }
     },
-    "description": "The Baltic 142 Custom combines timeless, elegant looks with dramatic superstructure styling and a modern hull shape. Features include a plumb bow and maximum beam carried well aft to enhance performance and provide useful hull volume. The accommodation comprises a large amidships owner’s cabin to ensure maximum comfort while underway, an upper saloon with direct access to the cockpit and an additional six cabins, three for guests forward and three for crew aft.\n\nWith naval architecture by Farr Yacht Design, final styling by Lucio Micheletti and overall engineering by Baltic Yachts, the yacht will benefit from advanced carbon sandwich construction.\n\nThe final phase of mould tooling for this Farr Yacht Design performance cruiser was completed in the summer and hull lamination in pre-preg carbon is well advanced.\n\nProject manager Sören Jansson said that apart from the 9m long Dynamic Stability System foil being built into the yacht, the diesel electric propulsion system is also a key feature, the machinery room for which is being built in modular from outside the yacht.\n\n\"This not only enables us to gain some time in the overall build schedule but also allows the workers easier access for speed and accuracy\" said Sören.\n\nThe 142 will step a Rondal carbon rig, be fitted with in-boom furling, set a square top main and to gain full benefit from the keel in the up position (draft 3.8m), is designed with twin rudders. The yacht is scheduled to launch in Spring 2019.",
+    "description": "The Baltic 142 Custom combines timeless, elegant looks with dramatic superstructure styling and a modern hull shape. Features include a plumb bow and maximum beam carried well aft to enhance performance and provide useful hull volume. The accommodation comprises a large amidships owner\u2019s cabin to ensure maximum comfort while underway, an upper saloon with direct access to the cockpit and an additional six cabins, three for guests forward and three for crew aft.\n\nWith naval architecture by Farr Yacht Design, final styling by Lucio Micheletti and overall engineering by Baltic Yachts, the yacht will benefit from advanced carbon sandwich construction.\n\nThe final phase of mould tooling for this Farr Yacht Design performance cruiser was completed in the summer and hull lamination in pre-preg carbon is well advanced.\n\nProject manager S\u00f6ren Jansson said that apart from the 9m long Dynamic Stability System foil being built into the yacht, the diesel electric propulsion system is also a key feature, the machinery room for which is being built in modular from outside the yacht.\n\n\"This not only enables us to gain some time in the overall build schedule but also allows the workers easier access for speed and accuracy\" said S\u00f6ren.\n\nThe 142 will step a Rondal carbon rig, be fitted with in-boom furling, set a square top main and to gain full benefit from the keel in the up position (draft 3.8m), is designed with twin rudders. The yacht is scheduled to launch in Spring 2019.",
     "shortDescription": "Baltic 142",
     "shortSummary": null,
     "builder": null,
@@ -33516,7 +33508,11 @@
     "isArchived": null,
     "images": {
       "hero": "788-hero.jpg",
-      "gallery": [],
+      "gallery": [
+        "baltic142-canova-aerial.jpg",
+        "baltic142-canova-stern.jpg",
+        "baltic-custom-142.jpg"
+      ],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -34215,7 +34211,7 @@
         "ft": 164.0
       }
     },
-    "description": "Farr Yacht Design and Design Unlimited have partnered together to create this high performance racer cruiser that will establish a new class in competitive sailing superyachts.\n\nBreaking records, dominating the Superyacht Racing Circuit, and comfortable Mediterranean and Caribbean cruising round out the uncompromising design brief. Cutting days from trans-ocean records and finishing hours ahead of the closet competition in superyacht day races are all easily within the capabilities of this incredible yacht.\n\nThis 50m concept is pure power with a long, light hull of only 155 tons displacement, and a rig that stands 68m above the waterline. 2500 square meters of sail, twin daggerboards and rudders and a telescoping/canting keel allow this yacht to easily achieve speeds into the mid-20’s in moderate winds and well above 30 knots in strong winds. Advanced and proven sail handling systems provide the necessary flexibility and safety needed to confidently achieve those high speeds.",
+    "description": "Farr Yacht Design and Design Unlimited have partnered together to create this high performance racer cruiser that will establish a new class in competitive sailing superyachts.\n\nBreaking records, dominating the Superyacht Racing Circuit, and comfortable Mediterranean and Caribbean cruising round out the uncompromising design brief. Cutting days from trans-ocean records and finishing hours ahead of the closet competition in superyacht day races are all easily within the capabilities of this incredible yacht.\n\nThis 50m concept is pure power with a long, light hull of only 155 tons displacement, and a rig that stands 68m above the waterline. 2500 square meters of sail, twin daggerboards and rudders and a telescoping/canting keel allow this yacht to easily achieve speeds into the mid-20\u2019s in moderate winds and well above 30 knots in strong winds. Advanced and proven sail handling systems provide the necessary flexibility and safety needed to confidently achieve those high speeds.",
     "shortDescription": "Sherlock Superyacht",
     "shortSummary": null,
     "builder": null,
@@ -34683,7 +34679,7 @@
         "ft": 39
       }
     },
-    "description": "Our goal at Farr Yacht Design with the new Najad 395 was to look back at Najad Yacht’s history, as well as forward to their future, and to create two new 12m models that would help take important steps forward while remaining true Najads. The brand Najad has so much great heritage, that our steps as thoughtful designers had to be very carefully considered. The Najad 395 that we have created together is an artful blend of performance improvements and industrialization, with traditional values, sea worthiness, and good solid engineering. Both versions of the boat, center cockpit and aft cockpit, have been developed with the attention deserving of single focus models, and yet have achieved a level of industrialized integration which is a real testament to the team. We are confident that we have created new Najad 395’s that can stand the test of time, and be rewarding, and confidence inspiring yachts for her owners well into the future.",
+    "description": "Our goal at Farr Yacht Design with the new Najad 395 was to look back at Najad Yacht\u2019s history, as well as forward to their future, and to create two new 12m models that would help take important steps forward while remaining true Najads. The brand Najad has so much great heritage, that our steps as thoughtful designers had to be very carefully considered. The Najad 395 that we have created together is an artful blend of performance improvements and industrialization, with traditional values, sea worthiness, and good solid engineering. Both versions of the boat, center cockpit and aft cockpit, have been developed with the attention deserving of single focus models, and yet have achieved a level of industrialized integration which is a real testament to the team. We are confident that we have created new Najad 395\u2019s that can stand the test of time, and be rewarding, and confidence inspiring yachts for her owners well into the future.",
     "shortDescription": "Najad 395",
     "shortSummary": null,
     "builder": null,
@@ -35001,7 +34997,7 @@
         "ft": 14.7
       }
     },
-    "description": "Farr Yacht Design presents Design 826, a revolutionary new IMOCA 60 design that has been developed from a clean sheet of paper for the next era of offshore sailing. This design builds upon our extensive experience in IMOCA 60 design and leverages much of our ongoing Vendee Globe IMOCA 2020 concept developments. The boat is envisioned to be easily adaptable for singlehanded, doublehanded or crewed sailing with specific consideration for the Volvo Ocean Race courses and the implications of sailing with 5 crew and an onboard reporter.\n\nUnlike the existing IMOCA fleet, this design has been optimized from the outset to leverage the full power of hydrofoils. The forces generated by the foils increase the speed potential but also alter how the hydrodynamic forces are shared by the hull and the different appendages. Compared to conventional IMOCA designs, this results in significant changes in the optimal design parameters, hull form shape and dimensions, foil design, keel placement and incline angles as well as having significant sail design and aerodynamic considerations.\n\nThe advanced foil designs leverage FYD multi-year investment in the development of foil assisted designs, including our development of the world’s largest foil assisted monohull due to launch in Spring 2019. The higher speeds and increased impact loadings for foil assisted boats, coupled with the rule drivers to the minimum possible structural weight require a next generation of structural concept, one that minimizes weight without sacrificing strength or reliability and robustness. As with all FYD designs, the structural approach is always carefully considered in view of buildability and cost in order to insure the resulting product meets all of the team’s objectives.\n\nThe boat must be able to operate at peak efficiency, able to maintain high average speeds for the solo sailor while being robust enough to be pushed to the limit by a full crew. On a performance basis this emphasizes the need for a boat that is easily driven and as sea kindly as possible; able to achieve excellent speeds even when in non-optimal configurations. The deck and interior arrangements, rigging and deck hardware systems are ergonomically optimized with this in mind. As displayed, this design incorporates a deck and interior layout that has been developed to support crewed sailing with an emphasis on human helming, gear stacking, guest space and media inclusion. A design only focused on solo or doublehanded racing would likely result in a different cockpit, deck layout and interior.",
+    "description": "Farr Yacht Design presents Design 826, a revolutionary new IMOCA 60 design that has been developed from a clean sheet of paper for the next era of offshore sailing. This design builds upon our extensive experience in IMOCA 60 design and leverages much of our ongoing Vendee Globe IMOCA 2020 concept developments. The boat is envisioned to be easily adaptable for singlehanded, doublehanded or crewed sailing with specific consideration for the Volvo Ocean Race courses and the implications of sailing with 5 crew and an onboard reporter.\n\nUnlike the existing IMOCA fleet, this design has been optimized from the outset to leverage the full power of hydrofoils. The forces generated by the foils increase the speed potential but also alter how the hydrodynamic forces are shared by the hull and the different appendages. Compared to conventional IMOCA designs, this results in significant changes in the optimal design parameters, hull form shape and dimensions, foil design, keel placement and incline angles as well as having significant sail design and aerodynamic considerations.\n\nThe advanced foil designs leverage FYD multi-year investment in the development of foil assisted designs, including our development of the world\u2019s largest foil assisted monohull due to launch in Spring 2019. The higher speeds and increased impact loadings for foil assisted boats, coupled with the rule drivers to the minimum possible structural weight require a next generation of structural concept, one that minimizes weight without sacrificing strength or reliability and robustness. As with all FYD designs, the structural approach is always carefully considered in view of buildability and cost in order to insure the resulting product meets all of the team\u2019s objectives.\n\nThe boat must be able to operate at peak efficiency, able to maintain high average speeds for the solo sailor while being robust enough to be pushed to the limit by a full crew. On a performance basis this emphasizes the need for a boat that is easily driven and as sea kindly as possible; able to achieve excellent speeds even when in non-optimal configurations. The deck and interior arrangements, rigging and deck hardware systems are ergonomically optimized with this in mind. As displayed, this design incorporates a deck and interior layout that has been developed to support crewed sailing with an emphasis on human helming, gear stacking, guest space and media inclusion. A design only focused on solo or doublehanded racing would likely result in a different cockpit, deck layout and interior.",
     "shortDescription": "VOR IMOCA 60 OD",
     "shortSummary": null,
     "builder": null,
@@ -35682,7 +35678,7 @@
         "ft": 40
       }
     },
-    "description": "Around the world we are seeing a resurgence of interest in high performance race boats at the 40’ size. Originating in the UK, the Fast 40+ class has gone from strength to strength providing exceptionally close racing for well matched, high performance 40 footers. The dynamic performance of the Fast 40’s and their more accessible construction and operating costs have peaked the interest of sailors around the world. We are seeing a significant amount of interest in boats of this style from Australia, New Zealand, USA, and European owners with particular interest in boats that are not solely targeted at inshore style racing. Responding to this interest we have developed a brand new design that reflects the recent evolutions of the IRC and Fast 40+ rules, but is specifically optimised to a larger component of offshore sailing conditions; positioned to excel in both inshore regattas and in the offshore races.\n\n• Design parameters optimised to the 2018 FAST 40+ class rule and targeted to perform both inshore and offshore in dynamic conditions\n\n• An aggressive approach to maximize the benefit of moving crew weight both longitudinally and transversely\n\n• Refined, high stability/low drag hull shape integrated with advanced deck and structural design\n\n• Modern, open cockpit deck geometry designed to maximize efficient handling with minimized weight, windage and pitch gyradius\n\n• Maximum-performance high efficiency appendages for impressive downwind offshore performance and high lift in demanding conditions or racing in tight fleets\n\n• Easily re-modeable to optimise for inshore or offshore focused schedules\n\n• Light, reliable and efficient structural design integrated with deck and rig features\n\nThis design is developed to excel in coastal and offshore races where dynamic reaching performance is paramount while still providing excellent inshore performance in tight windward leeward regattas. Design 841 is a product of the latest in design technology and leverages 40 years of design experience. It features a fresh look at every element of the boat, leaving no stone unturned. It combines cutting-edge research with countless innovations and refinements that will define the next generation of FAST 40+.\n\nWe are in advanced discussions with Van Munster boats in Australia in preparation for a construction start that would see the first boat available for the Australian Summer. A full design presentation, proposed specification and pricing is available upon request.",
+    "description": "Around the world we are seeing a resurgence of interest in high performance race boats at the 40\u2019 size. Originating in the UK, the Fast 40+ class has gone from strength to strength providing exceptionally close racing for well matched, high performance 40 footers. The dynamic performance of the Fast 40\u2019s and their more accessible construction and operating costs have peaked the interest of sailors around the world. We are seeing a significant amount of interest in boats of this style from Australia, New Zealand, USA, and European owners with particular interest in boats that are not solely targeted at inshore style racing. Responding to this interest we have developed a brand new design that reflects the recent evolutions of the IRC and Fast 40+ rules, but is specifically optimised to a larger component of offshore sailing conditions; positioned to excel in both inshore regattas and in the offshore races.\n\n\u2022 Design parameters optimised to the 2018 FAST 40+ class rule and targeted to perform both inshore and offshore in dynamic conditions\n\n\u2022 An aggressive approach to maximize the benefit of moving crew weight both longitudinally and transversely\n\n\u2022 Refined, high stability/low drag hull shape integrated with advanced deck and structural design\n\n\u2022 Modern, open cockpit deck geometry designed to maximize efficient handling with minimized weight, windage and pitch gyradius\n\n\u2022 Maximum-performance high efficiency appendages for impressive downwind offshore performance and high lift in demanding conditions or racing in tight fleets\n\n\u2022 Easily re-modeable to optimise for inshore or offshore focused schedules\n\n\u2022 Light, reliable and efficient structural design integrated with deck and rig features\n\nThis design is developed to excel in coastal and offshore races where dynamic reaching performance is paramount while still providing excellent inshore performance in tight windward leeward regattas. Design 841 is a product of the latest in design technology and leverages 40 years of design experience. It features a fresh look at every element of the boat, leaving no stone unturned. It combines cutting-edge research with countless innovations and refinements that will define the next generation of FAST 40+.\n\nWe are in advanced discussions with Van Munster boats in Australia in preparation for a construction start that would see the first boat available for the Australian Summer. A full design presentation, proposed specification and pricing is available upon request.",
     "shortDescription": "Fast 40+ Van Munster",
     "shortSummary": null,
     "builder": "Van Munster Boats",
@@ -35837,7 +35833,7 @@
         "lbs": 13900.0
       }
     },
-    "description": "This design embodies Farr Yacht Design’s deep understanding of the IRC rule space, and our many years producing high level grand-prix and production racer and cruiser designs. The concept is positioned to provide exceptional performance in a wide range of conditions; able to perform in both the toughest offshore races and weekend club races and rewarding to sail by both Corinthian crews and professionals. While designed to achieve an exceptional IRC rating the boat is envisioned as an excellent all-purpose boat, able to perform under a range of handicap and rating systems including ORCi, PHRF and others. At 43’ the boat has been sized to fit within the burgeoning Super 12 Class in Australia to maximize racing opportunities.\n\nMany of the larger manufacturers have adjusted their focus to pure cruising and charter solutions meaning there have been very few high performance cruiser/racers developed in recent years. Many of our existing cruiser/racer designs have continued to perform well and place in major events around the world but there are very limited options for these owners to move up into. These owners are looking for a new boat that retains the dual purpose cruising and racing concept but takes advantage of the significant advancements in design and construction that have occurred in recent years.",
+    "description": "This design embodies Farr Yacht Design\u2019s deep understanding of the IRC rule space, and our many years producing high level grand-prix and production racer and cruiser designs. The concept is positioned to provide exceptional performance in a wide range of conditions; able to perform in both the toughest offshore races and weekend club races and rewarding to sail by both Corinthian crews and professionals. While designed to achieve an exceptional IRC rating the boat is envisioned as an excellent all-purpose boat, able to perform under a range of handicap and rating systems including ORCi, PHRF and others. At 43\u2019 the boat has been sized to fit within the burgeoning Super 12 Class in Australia to maximize racing opportunities.\n\nMany of the larger manufacturers have adjusted their focus to pure cruising and charter solutions meaning there have been very few high performance cruiser/racers developed in recent years. Many of our existing cruiser/racer designs have continued to perform well and place in major events around the world but there are very limited options for these owners to move up into. These owners are looking for a new boat that retains the dual purpose cruising and racing concept but takes advantage of the significant advancements in design and construction that have occurred in recent years.",
     "shortDescription": "13m IRC Cruiser/Racer",
     "shortSummary": null,
     "builder": null,
@@ -36608,7 +36604,7 @@
         "ft": 13.1
       }
     },
-    "description": "The very experienced owner of Kiboko 4, a Southern Wind 108, expects their yacht to improve upon the style and performance of Kiboko 3, a Southern Wind 105, also with naval architecture furnished by Farr Yacht Design. Fast passage-making in comfort and safety with ease of handling and the potential to win superyacht racing events all in a stunning, exceptionally beautiful yacht is the expectation.\n\nStarting with the Southern Wind 108 platform, Farr Yacht Design refined the rig, sailplan and appendages for the chosen standard propulsion system with the goal of optimizing the performance envelope for typical Mediterranean conditions and the occasional racing under the ORCsy measurement and handicapping system. Two important design features of Kiboko 4 are generous sail area (607m² upwind, 1288m² downwind, 3.57 SA/WS upwind, 70.7 SA/DISP downwind) for the potential not only to effectively race in light winds but the maneuverability and acceleration to excel in those conditions and high stability (6.2m tapered planform lifting keel, total yacht VCG 0.2m below the DWL).\n\nThe requirements for the hull are first for it to be an item of beauty and style but contained within it the optimized hydrodynamic parameters to achieve the best speeds. The beam-to-draft has been kept low (6.0) to keep the wetted surface (and thereby the sailplan area) down. The prismatic coefficient (Cp) of 0.555 is maintained from 0° through 15° of heel with a slight reduction to 0.54 at 25° with a precisely designed longitudinal volume distribution. Target stability levels are achieved with a ballast (keel fin and bulb) ratio of 33%. The wide transom is designed with aggressive lift outboard to finely tune the longitudinal trim with heel to maximize effective sailing length, avoid excessive bow down trim and promote good handling in a wide range of wind and sea conditions.\n\nThe twin rudder arrangement allows Kiboko 4 to be pushed to high heel angles (27° optimum) with exceptional controllability and speed for upwind and reaching while racing. As those same high heel angles are not desirable while cruising the sailplan is flexible and easily depowered with a furling staysail at 55% of the all-purpose headsail sized and the usual multiple mainsail reefs. The full all-purpose jib with single main reef or full main with staysail sail combinations are both well-balanced first steps in sail area reduction and permit the crew a choice depending on the weather conditions.\n\nLastly the owner is moving from a low aspect ratio, fixed keel (4.5m draft) on the previous boat to a high-aspect ratio, lifting keel with a draft range of 6.2 to 4.0m. Not only does the keel design improve performance and efficiency but the 0.5m draft difference will open up many more harbors and cruising destinations.",
+    "description": "The very experienced owner of Kiboko 4, a Southern Wind 108, expects their yacht to improve upon the style and performance of Kiboko 3, a Southern Wind 105, also with naval architecture furnished by Farr Yacht Design. Fast passage-making in comfort and safety with ease of handling and the potential to win superyacht racing events all in a stunning, exceptionally beautiful yacht is the expectation.\n\nStarting with the Southern Wind 108 platform, Farr Yacht Design refined the rig, sailplan and appendages for the chosen standard propulsion system with the goal of optimizing the performance envelope for typical Mediterranean conditions and the occasional racing under the ORCsy measurement and handicapping system. Two important design features of Kiboko 4 are generous sail area (607m\u00b2 upwind, 1288m\u00b2 downwind, 3.57 SA/WS upwind, 70.7 SA/DISP downwind) for the potential not only to effectively race in light winds but the maneuverability and acceleration to excel in those conditions and high stability (6.2m tapered planform lifting keel, total yacht VCG 0.2m below the DWL).\n\nThe requirements for the hull are first for it to be an item of beauty and style but contained within it the optimized hydrodynamic parameters to achieve the best speeds. The beam-to-draft has been kept low (6.0) to keep the wetted surface (and thereby the sailplan area) down. The prismatic coefficient (Cp) of 0.555 is maintained from 0\u00b0 through 15\u00b0 of heel with a slight reduction to 0.54 at 25\u00b0 with a precisely designed longitudinal volume distribution. Target stability levels are achieved with a ballast (keel fin and bulb) ratio of 33%. The wide transom is designed with aggressive lift outboard to finely tune the longitudinal trim with heel to maximize effective sailing length, avoid excessive bow down trim and promote good handling in a wide range of wind and sea conditions.\n\nThe twin rudder arrangement allows Kiboko 4 to be pushed to high heel angles (27\u00b0 optimum) with exceptional controllability and speed for upwind and reaching while racing. As those same high heel angles are not desirable while cruising the sailplan is flexible and easily depowered with a furling staysail at 55% of the all-purpose headsail sized and the usual multiple mainsail reefs. The full all-purpose jib with single main reef or full main with staysail sail combinations are both well-balanced first steps in sail area reduction and permit the crew a choice depending on the weather conditions.\n\nLastly the owner is moving from a low aspect ratio, fixed keel (4.5m draft) on the previous boat to a high-aspect ratio, lifting keel with a draft range of 6.2 to 4.0m. Not only does the keel design improve performance and efficiency but the 0.5m draft difference will open up many more harbors and cruising destinations.",
     "shortDescription": "Southern Wind SW108 Superyacht",
     "shortSummary": "Award-winning 108ft sailing superyacht. Sailing Yacht of the Year 2025.",
     "builder": "Southern Wind",

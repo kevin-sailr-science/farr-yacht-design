@@ -24,11 +24,6 @@
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:image:type" content="image/png" /><meta name="twitter:card" content="summary_large_image" />
-  <script>
-  /* WebP detection (Sprint 39) */
-  (function(){var c=document.createElement('canvas');c.width=c.height=1;window._webp=c.toDataURL('image/webp').indexOf('data:image/webp')===0;
-  window._wimg=function(u){return window._webp?u.replace(/\.(jpe?g|png)$/i,'.webp'):u;};})();
-  </script>
 </head>
 <body>
 
@@ -239,55 +234,20 @@
       <h2>The boats that defined the era</h2>
       <div class="detail-grid" style="grid-template-columns:repeat(auto-fill, minmax(220px, 1fr)); gap:1.5rem;">
 
-        <a href="yacht/190.html" class="yacht-card" style="text-decoration:none;">
-          <div class="yacht-card-image" style="background-image:url('images/190-steinlager-ii-crop-u545533-v1.jpg');height:160px;">
-          </div>
-          <div class="yacht-card-body">
-            <div class="yacht-card-number">1989&ndash;90</div>
-            <div class="yacht-card-name">Steinlager II</div>
-            <div class="yacht-card-meta">84&rsquo; | Whitbread Maxi | Won every leg</div>
-          </div>
-        </a>
+        <a data-yacht-card="190" href="yacht/190.html" class="yacht-card" style="text-decoration:none;"
+           data-card-label="Steinlager II" data-card-meta="84' | Whitbread Maxi | Won every leg"></a>
 
-        <a href="yacht/131.html" class="yacht-card" style="text-decoration:none;">
-          <div class="yacht-card-image" style="background-image:url('images/whitbread-maxi-ubs-switzerland.jpg');height:160px;">
-          </div>
-          <div class="yacht-card-body">
-            <div class="yacht-card-number">1985&ndash;86</div>
-            <div class="yacht-card-name">UBS Switzerland</div>
-            <div class="yacht-card-meta">Whitbread Maxi | Overall Winner</div>
-          </div>
-        </a>
+        <a data-yacht-card="131" href="yacht/131.html" class="yacht-card" style="text-decoration:none;"
+           data-card-label="UBS Switzerland" data-card-meta="Whitbread Maxi | Overall Winner"></a>
 
-        <a href="yacht/378.html" class="yacht-card" style="text-decoration:none;">
-          <div class="yacht-card-image" style="background-image:url('images/378-eflanguage-01-crop-u545501-v1.jpg');height:160px;">
-          </div>
-          <div class="yacht-card-body">
-            <div class="yacht-card-number">1997&ndash;98</div>
-            <div class="yacht-card-name">EF Language</div>
-            <div class="yacht-card-meta">Whitbread 60 | Overall Winner</div>
-          </div>
-        </a>
+        <a data-yacht-card="378" href="yacht/378.html" class="yacht-card" style="text-decoration:none;"
+           data-card-label="EF Language" data-card-meta="Whitbread 60 | Overall Winner"></a>
 
-        <a href="yacht/90.html" class="yacht-card" style="text-decoration:none;">
-          <div class="yacht-card-image" style="background-image:url('images/ceramco1-scaled.jpg');height:160px;">
-          </div>
-          <div class="yacht-card-body">
-            <div class="yacht-card-number">1981&ndash;82</div>
-            <div class="yacht-card-name">Ceramco New Zealand</div>
-            <div class="yacht-card-meta">Whitbread Maxi | Farr Debut</div>
-          </div>
-        </a>
+        <a data-yacht-card="90" href="yacht/90.html" class="yacht-card" style="text-decoration:none;"
+           data-card-label="Ceramco New Zealand" data-card-meta="Whitbread Maxi | Farr Debut"></a>
 
-        <a href="yacht/274.html" class="yacht-card" style="text-decoration:none;">
-          <div class="yacht-card-image" style="background-image:url('images/274-nzendeavour-crop-u545513-v1.jpg');height:160px;">
-          </div>
-          <div class="yacht-card-body">
-            <div class="yacht-card-number">1993&ndash;94</div>
-            <div class="yacht-card-name">NZ Endeavour</div>
-            <div class="yacht-card-meta">Whitbread 60 | Class Winner</div>
-          </div>
-        </a>
+        <a data-yacht-card="274" href="yacht/274.html" class="yacht-card" style="text-decoration:none;"
+           data-card-label="NZ Endeavour" data-card-meta="Whitbread 60 | Class Winner"></a>
 
         <a href="volvo-ocean-race.html" class="yacht-card" style="text-decoration:none;">
           <div class="yacht-card-image" style="background-image:url('images/azzam-vo65.jpg');background-color:#0a192f; height:160px; display:flex; align-items:center; justify-content:center;">
@@ -444,9 +404,6 @@
     });
   </script>
 
-  <script>
-  /* WebP background-image rewriter (Sprint 39) */
-  if(window._webp){document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('[style*="background-image"]').forEach(function(el){var s=el.style.backgroundImage;if(s&&/\/images\//.test(s)){el.style.backgroundImage=s.replace(/\.(jpe?g|png)/gi,'.webp');}});});}
-  </script>
+  <script src="/yacht-card.js"></script>
 </body>
 </html>

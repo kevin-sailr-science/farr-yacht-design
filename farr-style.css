@@ -636,17 +636,18 @@ footer div[style*="border-top"] { border-top-color: rgba(255,255,255,0.15) !impo
 .yacht-detail-image img { width: 100%; height: 100%; object-fit: cover; }
 .yacht-detail-sidebar { display: flex; flex-direction: column; gap: 0; }
 /* No-image placeholder: compact on all screens */
-.yacht-detail-image:not([style*="background-image"]) { height: 120px; }
+.yacht-detail-image:not(:has(picture)) { height: 120px; }
+.yacht-detail-image picture { display: contents; }
 @media (max-width: 768px) {
   .yacht-detail-body { grid-template-columns: 1fr; }
   .yacht-detail-image { height: 240px; }
-  .yacht-detail-image:not([style*="background-image"]) { height: 100px; }
+  .yacht-detail-image:not(:has(picture)) { height: 100px; }
 }
 @media (max-width: 560px) {
   .yacht-detail-header h1 { font-size: 1.5rem; }
   .yacht-detail-layout { padding: var(--space-lg) 1.25rem 0.5rem; }
   .yacht-detail-image { height: 200px; }
-  .yacht-detail-image:not([style*="background-image"]) { height: 80px; }
+  .yacht-detail-image:not(:has(picture)) { height: 80px; }
 }
 
 .era-label { font-family: var(--font-mono); font-size: var(--text-3xs); font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; padding: 0.2rem 0.6rem; border-radius: 4px; background: var(--farr-mid); color: var(--text-muted); border: 1px solid var(--border); }
@@ -1790,8 +1791,8 @@ footer div[style*="border-top"] { border-top-color: rgba(255,255,255,0.15) !impo
   background-position: center;
 }
 
-/* Auto-hide .img-tbc when a real bg-image is set */
-.yacht-detail-image[style*="background-image"] .img-tbc,
+/* Auto-hide .img-tbc when a real image is present */
+.yacht-detail-image:has(picture) .img-tbc,
 .yacht-card-image[style*="background-image"] .img-tbc,
 .project-card-image[style*="background-image"] .img-tbc,
 .hero-rotator[style*="background-image"] .img-tbc {
@@ -1801,7 +1802,7 @@ footer div[style*="border-top"] { border-top-color: rgba(255,255,255,0.15) !impo
 /* Dark overlay on hero slot removed - yacht photos now display clean */
 
 /* Ensure .img-tbc-label comment is hidden when image present */
-.yacht-detail-image[style*="background-image"] > span,
+.yacht-detail-image:has(picture) > span,
 .yacht-card-image[style*="background-image"] > span.img-tbc {
   display: none;
 }
@@ -1835,6 +1836,20 @@ footer div[style*="border-top"] { border-top-color: rgba(255,255,255,0.15) !impo
   font-size: var(--text-xs);
   opacity: 0.7;
 }
+
+/* ── Gallery thumbnails (Sprint IMG-43) ── */
+.yacht-gallery { scrollbar-width: thin; scrollbar-color: var(--border) transparent; }
+.yacht-gallery::-webkit-scrollbar { height: 6px; }
+.yacht-gallery::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+.gallery-thumb {
+  flex: 0 0 72px; height: 54px; border: 2px solid transparent;
+  border-radius: 6px; cursor: pointer; opacity: 0.6;
+  transition: opacity 0.2s, border-color 0.2s; background-color: var(--bg-secondary);
+  padding: 0; outline: none;
+}
+.gallery-thumb:hover { opacity: 0.9; }
+.gallery-thumb:focus-visible { outline: 2px solid var(--accent, #2a5c8a); outline-offset: 2px; }
+.gallery-thumb--active { opacity: 1; border-color: var(--accent, #2a5c8a); }
 
 /* ── Lightbox overlay (Sprint 32B) ── */
 .yacht-lightbox {

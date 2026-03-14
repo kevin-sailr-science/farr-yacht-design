@@ -24,11 +24,6 @@
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:image:type" content="image/png" /><meta name="twitter:card" content="summary_large_image" />
-  <script>
-  /* WebP detection (Sprint 39) */
-  (function(){var c=document.createElement('canvas');c.width=c.height=1;window._webp=c.toDataURL('image/webp').indexOf('data:image/webp')===0;
-  window._wimg=function(u){return window._webp?u.replace(/\.(jpe?g|png)$/i,'.webp'):u;};})();
-  </script>
 </head>
 <body>
 
@@ -218,25 +213,11 @@
       <h2>Explore the boats that made history</h2>
       <div class="detail-grid" style="grid-template-columns:repeat(auto-fill, minmax(220px, 1fr)); gap:1.5rem;">
 
-        <a href="yacht/757.html" class="yacht-card" style="text-decoration:none;">
-          <div class="yacht-card-image" style="background-image:url('images/azzam-vo65.jpg');height:160px;">
-          </div>
-          <div class="yacht-card-body">
-            <div class="yacht-card-number">VO65</div>
-            <div class="yacht-card-name">Volvo Ocean 65</div>
-            <div class="yacht-card-meta">65&rsquo; | One-Design | 2014&ndash;18</div>
-          </div>
-        </a>
+        <a data-yacht-card="757" href="yacht/757.html" class="yacht-card" style="text-decoration:none;"
+           data-card-label="Volvo Ocean 65" data-card-meta="65' | One-Design | 2014-18"></a>
 
-        <a href="yacht/471.html" class="yacht-card" style="text-decoration:none;">
-          <div class="yacht-card-image" style="background-image:url('images/illbruck-leg5-rick-tomlinson-1.jpg');height:160px;">
-          </div>
-          <div class="yacht-card-body">
-            <div class="yacht-card-number">2001&ndash;02</div>
-            <div class="yacht-card-name">illbruck Challenge</div>
-            <div class="yacht-card-meta">60&rsquo; | Volvo Ocean 60 | Winner</div>
-          </div>
-        </a>
+        <a data-yacht-card="471" href="yacht/471.html" class="yacht-card" style="text-decoration:none;"
+           data-card-label="illbruck Challenge" data-card-meta="60' | Volvo Ocean 60 | Winner"></a>
 
         <a href="whitbread-heritage.html" class="yacht-card" style="text-decoration:none;">
           <div class="yacht-card-image" style="background-image:url('images/whitbread-maxi-ceramco-new-zealand.jpg');height:160px;">
@@ -385,9 +366,6 @@
     });
   </script>
 
-  <script>
-  /* WebP background-image rewriter (Sprint 39) */
-  if(window._webp){document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('[style*="background-image"]').forEach(function(el){var s=el.style.backgroundImage;if(s&&/\/images\//.test(s)){el.style.backgroundImage=s.replace(/\.(jpe?g|png)/gi,'.webp');}});});}
-  </script>
+  <script src="/yacht-card.js"></script>
 </body>
 </html>
