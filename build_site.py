@@ -831,7 +831,9 @@ def build_portfolio_page():
         var filtered = DATA.filter(function(d) {{
           if (q && d.n.toLowerCase().indexOf(q) === -1 &&
               d.dn.toLowerCase().indexOf(q) === -1 &&
-              d.b.toLowerCase().indexOf(q) === -1) return false;
+              d.b.toLowerCase().indexOf(q) === -1 &&
+              (d.tr || '').toLowerCase().indexOf(q) === -1 &&
+              (d.tags || []).join(' ').toLowerCase().indexOf(q) === -1) return false;
           if (state.type && d.tg !== state.type) return false;
           if (state.decade && d.d !== state.decade) return false;
           if (state.tag && (!d.tags || d.tags.indexOf(state.tag) === -1)) return false;
