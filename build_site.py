@@ -184,9 +184,8 @@ def build_plan_section(boat):
     Concept designs have no plans to sell — skip entirely.
     """
     # Concept designs have no drawings to digitize or sell
-    design_type = boat.get("designType", "")
     tags = boat.get("tags", [])
-    if design_type == "Concept" or "Concept" in tags:
+    if "Concept" in tags:
         return ""
 
     design_num = boat.get("designNumber", "")
@@ -355,14 +354,15 @@ def build_yacht_page(boat):
     classification = boat.get("classification", "") or ""
     specs = boat.get("specs") or {}
 
-    # Meta line
+    # Tags (Sprint 46 taxonomy)
+    tags = boat.get("tags") or []
+
+    # Meta line — lead with canonical designType, then designRule
     meta_parts = []
-    if category:
-        meta_parts.append(category)
+    if design_type:
+        meta_parts.append(design_type)
     if design_rule:
         meta_parts.append(design_rule)
-    if design_type and design_type != design_rule and design_type != category:
-        meta_parts.append(design_type)
     meta_line = " | ".join(meta_parts)
     if not meta_line and year:
         meta_line = dec
@@ -397,8 +397,8 @@ def build_yacht_page(boat):
         display_desc = f"{esc(display_name)} is a Farr Yacht Design"
         if year:
             display_desc += f" from {year}"
-        if category:
-            display_desc += f", built for {category.lower() if isinstance(category, str) else category}"
+        if design_type:
+            display_desc += f" ({design_type.lower()})"
         display_desc += "."
 
     # Number display
@@ -407,16 +407,16 @@ def build_yacht_page(boat):
     else:
         number_html = f"#{esc(boat.get('title', slug))}"
 
-    # Spec rows
+    # Spec rows — taxonomy fields first (Sprint 46)
     spec_rows = []
     if year:
         spec_rows.append(("Year", str(int(year)) if isinstance(year, float) else str(year)))
-    if category:
-        spec_rows.append(("Type", esc(category)))
+    if design_type:
+        spec_rows.append(("Type", esc(design_type)))
     if design_rule:
         spec_rows.append(("Rule", esc(design_rule)))
-    if design_type and design_type != design_rule and design_type != category:
-        spec_rows.append(("Design Type", esc(design_type)))
+    if tags:
+        spec_rows.append(("Tags", ", ".join(esc(t) for t in tags)))
     if classification:
         spec_rows.append(("Classification", esc(classification)))
 
