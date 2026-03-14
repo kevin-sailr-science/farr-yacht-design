@@ -1018,6 +1018,15 @@ def build_portfolio_page():
         }});
       }});
 
+      // Handle URL query params (?search=Baltic+Yachts&tag=Production etc.)
+      var _qp = new URLSearchParams(window.location.search);
+      var _qs = _qp.get('search');
+      var _qt = _qp.get('tag');
+      var _qd = _qp.get('type');
+      if (_qs) {{ state.search = _qs; $search.value = _qs; }}
+      if (_qt && $tag) {{ state.tag = _qt; $tag.value = _qt; }}
+      if (_qd && $type) {{ state.type = _qd; $type.value = _qd; }}
+
       // Initial render
       render();
     }})();
