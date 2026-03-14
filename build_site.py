@@ -1517,6 +1517,7 @@ static_pages = [
     ('/consulting.html', '0.6'),
     ('/farr-40.html', '0.6'),
     ('/gelliceaux.html', '0.6'),
+    ('/privacy.html', '0.3'),
 ]
 
 for path, priority in static_pages:
