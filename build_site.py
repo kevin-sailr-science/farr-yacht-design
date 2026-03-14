@@ -1767,7 +1767,7 @@ if broken_gallery_refs:
         print(f"      ... and {len(broken_gallery_refs) - 5} more")
 
 # Warn about featured designs missing heroes
-featured_slugs = {'788', '768', '691', '442', '778', '615', '435', '591',
+featured_slugs = {'788', '768', '691', '442', '615', '435', '591',
                   '190', '131', '378', '757', '471', '533', '541'}
 featured_missing = [m for m in missing_heroes if m.get('slug') in featured_slugs]
 if featured_missing:

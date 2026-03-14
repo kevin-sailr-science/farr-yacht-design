@@ -599,14 +599,6 @@
     "images": {
       "hero": "28-hero.jpg",
       "gallery": [
-        "028_01.jpg",
-        "028_bacchante_01.jpg",
-        "028_bacchante_02.jpg",
-        "028_bacchante_03.jpg",
-        "028_bacchante_04.jpg",
-        "028_bacchante_05.jpg",
-        "028_bacchante_06.jpg",
-        "028_bacchante_07.jpg",
         "28-hero.jpg"
       ],
       "card": null,
@@ -772,7 +764,6 @@
     "images": {
       "hero": "29-hero.jpg",
       "gallery": [
-        "029_01.jpg",
         "29-hero.jpg"
       ],
       "card": null,
@@ -1624,12 +1615,7 @@
     "isArchived": null,
     "images": {
       "hero": "37-hero.jpg",
-      "gallery": [
-        "037_01.jpg",
-        "037_02.jpg",
-        "037_03.jpg",
-        "037_04.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -2797,12 +2783,7 @@
     "images": {
       "hero": "48-hero.jpg",
       "gallery": [
-        "048_01.jpg",
-        "048_02.jpg",
-        "48-hero.jpg",
-        "048_04.jpg",
-        "048_05.jpg",
-        "048_06.jpg"
+        "48-hero.jpg"
       ],
       "card": null,
       "cardCropHint": null,
@@ -3115,15 +3096,7 @@
     "isArchived": null,
     "images": {
       "hero": "51-hero.jpg",
-      "gallery": [
-        "051_02_jiminy.jpg",
-        "051c_red_cloud.jpg",
-        "051_01_prospect.jpg",
-        "051_03_jiminy.jpg",
-        "051_04_jiminy.jpg",
-        "051_05_farr1104.jpg",
-        "051_06_thenumbers.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -3333,8 +3306,7 @@
     "images": {
       "hero": "52-hero.jpg",
       "gallery": [
-        "52-01-v1.jpg",
-        "052_02.jpg"
+        "52-01-v1.jpg"
       ],
       "card": null,
       "cardCropHint": null,
@@ -4666,14 +4638,7 @@
     "isArchived": null,
     "images": {
       "hero": "64-hero.jpg",
-      "gallery": [
-        "064_05.jpg",
-        "064_02.jpg",
-        "064_03.jpg",
-        "064_04.jpg",
-        "064_06.jpg",
-        "064_07.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -4785,9 +4750,6 @@
     "images": {
       "hero": "65-hero.jpg",
       "gallery": [
-        "065_03.jpg",
-        "065_02.jpg",
-        "065_04.jpg",
         "65-hero.jpg"
       ],
       "card": null,
@@ -5005,7 +4967,6 @@
     "images": {
       "hero": "67-hero.jpg",
       "gallery": [
-        "067_04.jpg",
         "67-hero.jpg"
       ],
       "card": null,
@@ -5319,10 +5280,7 @@
     "isArchived": null,
     "images": {
       "hero": "72-hero.jpg",
-      "gallery": [
-        "072_01.jpg",
-        "72_2_photo_cover.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -5761,9 +5719,7 @@
     "isArchived": null,
     "images": {
       "hero": "74-hero.jpg",
-      "gallery": [
-        "074_01.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -5886,9 +5842,7 @@
     "isArchived": null,
     "images": {
       "hero": "76-hero.jpg",
-      "gallery": [
-        "076_01.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -6205,7 +6159,7 @@
     "designType": "Dinghy",
     "specs": {
       "loa": {
-        "m": 14,
+        "m": 4.27,
         "ft": 14
       },
       "lwl": {
@@ -6236,7 +6190,6 @@
     "images": {
       "hero": "80-hero.jpg",
       "gallery": [
-        "720_100804_bavaria_303.jpg",
         "80-01-v1.jpg"
       ],
       "card": null,
@@ -6779,13 +6732,7 @@
     "isArchived": null,
     "images": {
       "hero": "84-hero.jpg",
-      "gallery": [
-        "084m_hullprofile.jpg",
-        "084m_interior01.jpg",
-        "084m_interior02.jpg",
-        "084m_special effect.jpg",
-        "084m_special effect600x400.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -7136,19 +7083,7 @@
     "isArchived": null,
     "images": {
       "hero": "85-hero.jpg",
-      "gallery": [
-        "085_01.jpg",
-        "085_02.jpg",
-        "085_03.jpg",
-        "085_04.jpg",
-        "085_05.jpg",
-        "085_06.jpg",
-        "085_07.jpg",
-        "085_08.jpg",
-        "085_09.jpg",
-        "085_espada_2011.jpg",
-        "085_espada.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -7263,7 +7198,6 @@
     "images": {
       "hero": "86-hero.jpg",
       "gallery": [
-        "316_pricup07d2-0086resized.jpg",
         "86-01-v1.jpg"
       ],
       "card": null,
@@ -7388,9 +7322,7 @@
     "isArchived": null,
     "images": {
       "hero": "87-hero.jpg",
-      "gallery": [
-        "087_01.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -8294,12 +8226,7 @@
     "isArchived": null,
     "images": {
       "hero": "97-hero.jpg",
-      "gallery": [
-        "097_03.jpg",
-        "097_02.jpg",
-        "097_04.jpg",
-        "097_05.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -8423,15 +8350,7 @@
     "images": {
       "hero": "99-hero.jpg",
       "gallery": [
-        "099_01.jpg",
-        "099_02.jpg",
-        "099_02sm.jpg",
-        "99-hero.jpg",
-        "099_04.jpg",
-        "099_05.jpg",
-        "099_06.jpg",
-        "099_07.jpg",
-        "099_08.jpg"
+        "99-hero.jpg"
       ],
       "card": null,
       "cardCropHint": null,
@@ -8547,11 +8466,7 @@
     "isArchived": null,
     "images": {
       "hero": "100-hero.jpg",
-      "gallery": [
-        "720_100804_bavaria_303.jpg",
-        "100-2_03.jpg",
-        "100-2_04.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -8674,11 +8589,7 @@
     "isArchived": null,
     "images": {
       "hero": "101-hero.jpg",
-      "gallery": [
-        "101_02.jpg",
-        "101_01.jpg",
-        "101_03.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -8804,12 +8715,7 @@
     "isArchived": null,
     "images": {
       "hero": "103-hero.jpg",
-      "gallery": [
-        "103_01.jpg",
-        "103_02.jpg",
-        "103_03.jpg",
-        "103_04.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -8957,9 +8863,7 @@
     "isArchived": null,
     "images": {
       "hero": "112-hero.jpg",
-      "gallery": [
-        "112_01.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -9030,12 +8934,7 @@
     "images": {
       "hero": "121-hero.jpg",
       "gallery": [
-        "121-m-photo1-v1.jpg",
-        "121_04.jpg",
-        "121_05.jpg",
-        "121_06.jpg",
-        "121_07.jpg",
-        "121_08.jpg"
+        "121-m-photo1-v1.jpg"
       ],
       "card": null,
       "cardCropHint": null,
@@ -9188,9 +9087,7 @@
     "isArchived": null,
     "images": {
       "hero": "122-hero.jpg",
-      "gallery": [
-        "122_01.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -9254,9 +9151,7 @@
     "isArchived": null,
     "images": {
       "hero": "123-hero.jpg",
-      "gallery": [
-        "123_01.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -9371,14 +9266,7 @@
     "isArchived": null,
     "images": {
       "hero": "124-hero.jpg",
-      "gallery": [
-        "124_02.jpg",
-        "124_01.jpg",
-        "124_03.jpg",
-        "124_04.jpg",
-        "124_05.jpg",
-        "124_06.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -9566,10 +9454,7 @@
     "isArchived": null,
     "images": {
       "hero": "128-hero.jpg",
-      "gallery": [
-        "128_01.jpg",
-        "128_02.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -9645,9 +9530,7 @@
     "isArchived": null,
     "images": {
       "hero": "129-hero.jpg",
-      "gallery": [
-        "129_01.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -9759,9 +9642,7 @@
     "isArchived": null,
     "images": {
       "hero": "131-hero.jpg",
-      "gallery": [
-        "131_ubsswitzerland.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -9833,9 +9714,7 @@
     "isArchived": null,
     "images": {
       "hero": "134-hero.jpg",
-      "gallery": [
-        "134_opni_02.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -9915,16 +9794,7 @@
     "isArchived": null,
     "images": {
       "hero": "136-hero.jpg",
-      "gallery": [
-        "136_03.jpg",
-        "136_01.jpg",
-        "136_02.jpg",
-        "136_04.jpg",
-        "136_05.jpg",
-        "136_06.jpg",
-        "136_sagacious_iv.jpg",
-        "136_sagacious_iv_180x120.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -9988,9 +9858,7 @@
     "isArchived": null,
     "images": {
       "hero": "137-hero.jpg",
-      "gallery": [
-        "137_01.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -10198,16 +10066,7 @@
     "isArchived": null,
     "images": {
       "hero": "143-hero.jpg",
-      "gallery": [
-        "143_01.jpg",
-        "143wakawaka.jpg",
-        "143_01sm.jpg",
-        "143_02.jpg",
-        "143_03.jpg",
-        "143_04.jpg",
-        "143_05.jpg",
-        "143_06.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -10271,12 +10130,7 @@
     "isArchived": null,
     "images": {
       "hero": "144-hero.jpg",
-      "gallery": [
-        "144_02.jpg",
-        "144_02sm.jpg",
-        "144_03.jpg",
-        "144_04.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -10336,12 +10190,7 @@
     "isArchived": null,
     "images": {
       "hero": "145-hero.jpg",
-      "gallery": [
-        "145_03.jpg",
-        "145_01.jpg",
-        "145_02.jpg",
-        "145_04.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -10605,14 +10454,7 @@
     "isArchived": null,
     "images": {
       "hero": "151-hero.jpg",
-      "gallery": [
-        "151_03.jpg",
-        "151_01.jpg",
-        "151_02.jpg",
-        "151_05.jpg",
-        "151_06.jpg",
-        "151_07.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -10688,9 +10530,7 @@
     "isArchived": null,
     "images": {
       "hero": "152-hero.jpg",
-      "gallery": [
-        "152_01.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -10852,9 +10692,7 @@
     "isArchived": null,
     "images": {
       "hero": "154-hero.jpg",
-      "gallery": [
-        "154_01.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -11144,9 +10982,7 @@
     "isArchived": null,
     "images": {
       "hero": "158-hero.jpg",
-      "gallery": [
-        "158_01.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -11510,12 +11346,7 @@
     "isArchived": null,
     "images": {
       "hero": "165-hero.jpg",
-      "gallery": [
-        "165_01.jpg",
-        "165_02.jpg",
-        "165_1_photo.jpg",
-        "165_photo2.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -11689,9 +11520,7 @@
     "isArchived": null,
     "images": {
       "hero": "167-hero.jpg",
-      "gallery": [
-        "167_01.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -11970,9 +11799,7 @@
     "isArchived": null,
     "images": {
       "hero": "172-hero.jpg",
-      "gallery": [
-        "172_01.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -12143,15 +11970,7 @@
     "isArchived": null,
     "images": {
       "hero": "175-hero.jpg",
-      "gallery": [
-        "175_04.jpg",
-        "175_01.jpg",
-        "175_02.jpg",
-        "175_03.jpg",
-        "175_05.jpg",
-        "175_06.jpg",
-        "175_06sm.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -12223,10 +12042,7 @@
     "isArchived": null,
     "images": {
       "hero": "176-hero.jpg",
-      "gallery": [
-        "176_01.jpg",
-        "176_02.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -12350,11 +12166,7 @@
     "isArchived": null,
     "images": {
       "hero": "178-hero.jpg",
-      "gallery": [
-        "178_01.jpg",
-        "178_02.jpg",
-        "178_03.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -12426,9 +12238,7 @@
     "isArchived": null,
     "images": {
       "hero": "179-hero.jpg",
-      "gallery": [
-        "179_01.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -12601,13 +12411,7 @@
     "isArchived": null,
     "images": {
       "hero": "183-hero.jpg",
-      "gallery": [
-        "183_photo1.jpg",
-        "183_pfehlmann.jpg",
-        "183_photo2.jpg",
-        "183_photo3_ketch.jpg",
-        "183_photo4_sloop.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -12880,11 +12684,7 @@
     "isArchived": null,
     "images": {
       "hero": "185-hero.jpg",
-      "gallery": [
-        "185_03.jpg",
-        "185_01.jpg",
-        "185_02.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -13098,9 +12898,7 @@
     "isArchived": null,
     "images": {
       "hero": "188-hero.jpg",
-      "gallery": [
-        "188_01.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -13172,11 +12970,7 @@
     "isArchived": null,
     "images": {
       "hero": "189-hero.jpg",
-      "gallery": [
-        "189_02.jpg",
-        "189_01.jpg",
-        "189_03.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -13346,12 +13140,7 @@
     "isArchived": null,
     "images": {
       "hero": "191-hero.jpg",
-      "gallery": [
-        "191_01.jpg",
-        "191_02.jpg",
-        "191_03.jpg",
-        "191_04.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -13469,11 +13258,7 @@
     "isArchived": null,
     "images": {
       "hero": "193-hero.jpg",
-      "gallery": [
-        "193_02.jpg",
-        "193_01.jpg",
-        "193_03.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -13588,9 +13373,7 @@
     "isArchived": null,
     "images": {
       "hero": "195-hero.jpg",
-      "gallery": [
-        "195_01.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -13642,13 +13425,7 @@
     "isArchived": null,
     "images": {
       "hero": "196-hero.jpg",
-      "gallery": [
-        "196_kz1_sm.jpg",
-        "196_kz1.jpg",
-        "196_kz7.jpg",
-        "196_kz7_02.jpg",
-        "196_kz7_sm.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -13708,9 +13485,7 @@
     "isArchived": null,
     "images": {
       "hero": "197-hero.jpg",
-      "gallery": [
-        "197_mirabella40_1.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -13920,10 +13695,7 @@
     "isArchived": null,
     "images": {
       "hero": "201-hero.jpg",
-      "gallery": [
-        "603_estrelladamm_ny_bcn_2010.jpg",
-        "201_01.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -14003,9 +13775,7 @@
     "isArchived": null,
     "images": {
       "hero": "202-hero.jpg",
-      "gallery": [
-        "202_01.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -14128,9 +13898,7 @@
     "isArchived": null,
     "images": {
       "hero": "203-hero.jpg",
-      "gallery": [
-        "203_01.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -14258,11 +14026,7 @@
     "isArchived": null,
     "images": {
       "hero": "205-hero.jpg",
-      "gallery": [
-        "205_01.jpg",
-        "205_02.jpg",
-        "205_03.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -14382,9 +14146,7 @@
     "isArchived": null,
     "images": {
       "hero": "207-hero.jpg",
-      "gallery": [
-        "207_01.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -14732,9 +14494,7 @@
     "isArchived": null,
     "images": {
       "hero": "218-hero.jpg",
-      "gallery": [
-        "218_01.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -14814,10 +14574,7 @@
     "isArchived": null,
     "images": {
       "hero": "219-hero.jpg",
-      "gallery": [
-        "219_01.jpg",
-        "219_oc_photo1.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -14944,9 +14701,7 @@
     "isArchived": null,
     "images": {
       "hero": "220-hero.jpg",
-      "gallery": [
-        "220_01.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -15018,9 +14773,7 @@
     "isArchived": null,
     "images": {
       "hero": "223-hero.jpg",
-      "gallery": [
-        "223_01.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -15092,9 +14845,7 @@
     "isArchived": null,
     "images": {
       "hero": "224-hero.jpg",
-      "gallery": [
-        "224_01.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -15222,14 +14973,7 @@
     "isArchived": null,
     "images": {
       "hero": "225-hero.jpg",
-      "gallery": [
-        "225_01.jpg",
-        "225_02.jpg",
-        "225_03.jpg",
-        "225_04.jpg",
-        "225_05.jpg",
-        "225_06.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -15395,9 +15139,7 @@
     "isArchived": null,
     "images": {
       "hero": "227-hero.jpg",
-      "gallery": [
-        "227_01.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -15469,9 +15211,7 @@
     "isArchived": null,
     "images": {
       "hero": "229-hero.jpg",
-      "gallery": [
-        "229_01.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -15795,9 +15535,7 @@
     "isArchived": null,
     "images": {
       "hero": "237-hero.jpg",
-      "gallery": [
-        "237_nzl20.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -15917,9 +15655,7 @@
     "isArchived": null,
     "images": {
       "hero": "242-hero.jpg",
-      "gallery": [
-        "242_01.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -16353,9 +16089,7 @@
     "isArchived": null,
     "images": {
       "hero": "253-hero.jpg",
-      "gallery": [
-        "253_01.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -16571,9 +16305,7 @@
     "isArchived": null,
     "images": {
       "hero": "260-hero.jpg",
-      "gallery": [
-        "260_01.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -16747,9 +16479,7 @@
     "isArchived": null,
     "images": {
       "hero": "266-hero.jpg",
-      "gallery": [
-        "266_01.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -16872,9 +16602,7 @@
     "isArchived": null,
     "images": {
       "hero": "267-hero.jpg",
-      "gallery": [
-        "267_01.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -16946,9 +16674,7 @@
     "isArchived": null,
     "images": {
       "hero": "268-hero.jpg",
-      "gallery": [
-        "268_01.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -17008,9 +16734,7 @@
     "isArchived": null,
     "images": {
       "hero": "269-hero.jpg",
-      "gallery": [
-        "269_01.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -17116,9 +16840,7 @@
     "isArchived": null,
     "images": {
       "hero": "273-hero.jpg",
-      "gallery": [
-        "273_01.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -17290,10 +17012,10 @@
         "ft": 49.77
       }
     },
-    "description": "Design 277 is a ims racing yacht designed by Farr Yacht Design in 1992. She has an overall length of 40 feet (12.2m). Built by Galgani (Cookson), Basaga\u00f1a (ADE/BWANA), Crawford (Cookson/ASSASSIN).",
+    "description": "Design 277 is a ims racing yacht designed by Farr Yacht Design in 1992. She has an overall length of 40 feet (12.2m). Built by Galgani (Cookson), Basagaña (ADE/BWANA), Crawford (Cookson/ASSASSIN).",
     "shortDescription": "IMS 40",
     "shortSummary": "",
-    "builder": "Galgani (Cookson), Basaga\u00f1a (ADE/BWANA), Crawford (Cookson/ASSASSIN)",
+    "builder": "Galgani (Cookson), Basagaña (ADE/BWANA), Crawford (Cookson/ASSASSIN)",
     "owner": null,
     "rigType": "",
     "rigMaterial": "",
@@ -17304,18 +17026,7 @@
     "isArchived": null,
     "images": {
       "hero": "277-hero.jpg",
-      "gallery": [
-        "277_01.jpg",
-        "277_01sm.jpg",
-        "277_02.jpg",
-        "277_03.jpg",
-        "277_04.jpg",
-        "277_05.jpg",
-        "277_06.jpg",
-        "277_07.jpg",
-        "277_08.jpg",
-        "277_09.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -17379,15 +17090,7 @@
     "isArchived": null,
     "images": {
       "hero": "278-hero.jpg",
-      "gallery": [
-        "278_02.jpg",
-        "278_01.jpg",
-        "278_01sm.jpg",
-        "278_03.jpg",
-        "278_04.jpg",
-        "278_05.jpg",
-        "278_06.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -17435,13 +17138,7 @@
     "isArchived": null,
     "images": {
       "hero": "279-hero.jpg",
-      "gallery": [
-        "279-2.jpg",
-        "279-3.jpg",
-        "279-4.jpg",
-        "279-5.jpg",
-        "279-6.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -17489,10 +17186,7 @@
     "isArchived": null,
     "images": {
       "hero": "281-hero.jpg",
-      "gallery": [
-        "281_mm_2.jpg",
-        "281_mm_3.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -17560,9 +17254,7 @@
     "isArchived": null,
     "images": {
       "hero": "282-hero.jpg",
-      "gallery": [
-        "282_yamaha.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -17873,9 +17565,7 @@
     "isArchived": null,
     "images": {
       "hero": "288-hero.jpg",
-      "gallery": [
-        "288_01.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -17951,12 +17641,7 @@
     "isArchived": null,
     "images": {
       "hero": "289-hero.jpg",
-      "gallery": [
-        "289_hotflash_02.jpg",
-        "289_hotflash_01.jpg",
-        "289_hotflash_01sm.jpg",
-        "289_hotflash_03.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -17981,7 +17666,7 @@
     "title": "290",
     "slug": "290",
     "designNumber": "290",
-    "name": "120ft Round the World Yacht \u2014 Peter Blake",
+    "name": "120ft Round the World Yacht — Peter Blake",
     "year": 1993,
     "category": [
       "Racing Yacht"
@@ -17996,7 +17681,7 @@
       }
     },
     "description": null,
-    "shortDescription": "120ft Round the World Yacht \u2014 Peter Blake",
+    "shortDescription": "120ft Round the World Yacht — Peter Blake",
     "shortSummary": null,
     "builder": "Peter Blake",
     "owner": null,
@@ -18172,9 +17857,7 @@
     "isArchived": null,
     "images": {
       "hero": "293-hero.jpg",
-      "gallery": [
-        "293_01.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -18242,9 +17925,7 @@
     "isArchived": null,
     "images": {
       "hero": "294-hero.jpg",
-      "gallery": [
-        "294_01.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -18358,10 +18039,7 @@
     "isArchived": null,
     "images": {
       "hero": "296-hero.jpg",
-      "gallery": [
-        "296_01.jpg",
-        "296_02.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -18437,11 +18115,7 @@
     "isArchived": null,
     "images": {
       "hero": "297-hero.jpg",
-      "gallery": [
-        "297_01.jpg",
-        "297_02.jpg",
-        "297_03.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -18519,10 +18193,7 @@
     "isArchived": true,
     "images": {
       "hero": "299-hero.jpg",
-      "gallery": [
-        "299_llegada_a_ayora.jpg",
-        "299sailplan.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -18730,16 +18401,7 @@
     "isArchived": null,
     "images": {
       "hero": "309-hero.jpg",
-      "gallery": [
-        "309_08.jpg",
-        "309_01.jpg",
-        "309_02.jpg",
-        "309_03.jpg",
-        "309_04.jpg",
-        "309_05.jpg",
-        "309_06.jpg",
-        "309_07.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -18911,9 +18573,7 @@
     "isArchived": null,
     "images": {
       "hero": "314-hero.jpg",
-      "gallery": [
-        "314_01.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -19088,10 +18748,7 @@
     "isArchived": null,
     "images": {
       "hero": "316-hero.jpg",
-      "gallery": [
-        "316_pricup07d2-0086resized.jpg",
-        "316_01.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -19170,11 +18827,7 @@
     "isArchived": null,
     "images": {
       "hero": "317-hero.jpg",
-      "gallery": [
-        "317_01.jpg",
-        "317_02.jpg",
-        "317_03.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -19298,17 +18951,7 @@
     "isArchived": null,
     "images": {
       "hero": "320-hero.jpg",
-      "gallery": [
-        "320_01.jpg",
-        "320_02.jpg",
-        "320_03.jpg",
-        "320_04.jpg",
-        "320_05.jpg",
-        "320_06.jpg",
-        "320_farr63_01.jpg",
-        "320_farr63_02.jpg",
-        "320_farr63_03.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -19393,14 +19036,7 @@
     "isArchived": null,
     "images": {
       "hero": "321-hero.jpg",
-      "gallery": [
-        "321_01.jpg",
-        "321_02.jpg",
-        "321_03.jpg",
-        "321_04.jpg",
-        "321_05.jpg",
-        "321_06.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -19527,14 +19163,7 @@
     "isArchived": null,
     "images": {
       "hero": "323-hero.jpg",
-      "gallery": [
-        "323_01.jpg",
-        "323_02.jpg",
-        "323_03.jpg",
-        "323_04.jpg",
-        "323_05.jpg",
-        "323_06.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -19706,9 +19335,7 @@
     "isArchived": null,
     "images": {
       "hero": "326-hero.jpg",
-      "gallery": [
-        "326_01.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -19832,9 +19459,7 @@
     "isArchived": null,
     "images": {
       "hero": "328-hero.jpg",
-      "gallery": [
-        "328_01.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -19910,9 +19535,7 @@
     "isArchived": null,
     "images": {
       "hero": "329-hero.jpg",
-      "gallery": [
-        "329_01.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -20084,9 +19707,7 @@
     "isArchived": null,
     "images": {
       "hero": "333-hero.jpg",
-      "gallery": [
-        "333_01.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -20162,9 +19783,7 @@
     "isArchived": null,
     "images": {
       "hero": "336-hero.jpg",
-      "gallery": [
-        "336_01.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -20291,10 +19910,8 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "338-hero.gif",
-      "gallery": [
-        "338sailplan.jpg"
-      ],
+      "hero": "338-hero.jpg",
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -20373,9 +19990,7 @@
     "isArchived": null,
     "images": {
       "hero": "339-hero.jpg",
-      "gallery": [
-        "339_01.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -20515,9 +20130,7 @@
     "isArchived": null,
     "images": {
       "hero": "343-hero.jpg",
-      "gallery": [
-        "343_nzl39.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -20593,12 +20206,7 @@
     "isArchived": null,
     "images": {
       "hero": "344-hero.jpg",
-      "gallery": [
-        "344_01.jpg",
-        "344_02.jpg",
-        "344_03.jpg",
-        "344_04.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -20674,19 +20282,7 @@
     "isArchived": null,
     "images": {
       "hero": "353-hero.jpg",
-      "gallery": [
-        "353_09.jpg",
-        "353_01.jpg",
-        "353_02.jpg",
-        "353_03.jpg",
-        "353_04.jpg",
-        "353_05.jpg",
-        "353_06.jpg",
-        "353_07.jpg",
-        "353_08.jpg",
-        "353_10.jpg",
-        "353_10sm.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -20763,10 +20359,7 @@
     "images": {
       "hero": "354-hero.jpg",
       "gallery": [
-        "354-hero.jpg",
-        "354-2.jpg",
-        "354_first40_7_portia.jpg",
-        "354_portia.jpg"
+        "354-hero.jpg"
       ],
       "card": null,
       "cardCropHint": null,
@@ -20824,11 +20417,7 @@
     "isArchived": null,
     "images": {
       "hero": "356-hero.jpg",
-      "gallery": [
-        "356_megabyte_mids_6_388-1.jpg",
-        "356photo1.jpg",
-        "356photo2.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -21003,9 +20592,7 @@
     "isArchived": null,
     "images": {
       "hero": "360-hero.jpg",
-      "gallery": [
-        "360_01.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -21129,9 +20716,7 @@
     "isArchived": null,
     "images": {
       "hero": "362-hero.jpg",
-      "gallery": [
-        "362_01.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -21207,12 +20792,7 @@
     "isArchived": null,
     "images": {
       "hero": "363-hero.jpg",
-      "gallery": [
-        "363_01.jpg",
-        "363_01sm.jpg",
-        "363_02.jpg",
-        "363_03.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -21292,19 +20872,7 @@
     "isArchived": null,
     "images": {
       "hero": "366-hero.jpg",
-      "gallery": [
-        "366_01_dharma.jpg",
-        "366_02_dharma.jpg",
-        "366_03_dharma.jpg",
-        "366_04_dharma.jpg",
-        "366_05_dharma.jpg",
-        "366_06_ mayaray.jpg",
-        "366_07_ mayaray.jpg",
-        "366_08_ mayaray.jpg",
-        "366_09_ mayaray.jpg",
-        "366promo.jpg",
-        "366promo2.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -21380,9 +20948,7 @@
     "isArchived": null,
     "images": {
       "hero": "368-hero.jpg",
-      "gallery": [
-        "368_01.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -21458,17 +21024,7 @@
     "isArchived": null,
     "images": {
       "hero": "369-hero.jpg",
-      "gallery": [
-        "369cr_02.jpg",
-        "369cr_01.jpg",
-        "369cr_03.jpg",
-        "369_01.jpg",
-        "369_02.jpg",
-        "369_03.jpg",
-        "369_04.jpg",
-        "369_05.jpg",
-        "369_06.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -21635,19 +21191,7 @@
     "images": {
       "hero": "373-hero.jpg",
       "gallery": [
-        "373-m-03-v1.jpg",
-        "373m_01.jpg",
-        "373m_02.jpg",
-        "373m_04.jpg",
-        "373m_05.jpg",
-        "373m_06.jpg",
-        "373m_07.jpg",
-        "373_01.jpg",
-        "373_02.jpg",
-        "373_03.jpg",
-        "373_04.jpg",
-        "373_05.jpg",
-        "373_06.jpg"
+        "373-m-03-v1.jpg"
       ],
       "card": null,
       "cardCropHint": null,
@@ -21765,13 +21309,7 @@
     "isArchived": null,
     "images": {
       "hero": "374-hero.jpg",
-      "gallery": [
-        "374_02.jpg",
-        "374_01.jpg",
-        "374_barking_mad_photobyosmanugur.jpg",
-        "374_enfant_terrible_2012.jpeg",
-        "374_enfant_terrible.jpeg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -22056,13 +21594,7 @@
     "isArchived": null,
     "images": {
       "hero": "382-hero.jpg",
-      "gallery": [
-        "382_toshiba_02.jpg",
-        "382_toshiba_01.jpg",
-        "382_toshiba_02sm.jpg",
-        "382_toshiba_03.jpg",
-        "382_toshiba_04.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -22170,12 +21702,7 @@
     "isArchived": null,
     "images": {
       "hero": "386-hero.jpg",
-      "gallery": [
-        "386_chessie_03.jpg",
-        "386_chessie_01.jpg",
-        "386_chessie_01sm.jpg",
-        "386_chessie_02.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -22334,24 +21861,7 @@
     "isArchived": null,
     "images": {
       "hero": "390-hero.jpg",
-      "gallery": [
-        "390_meritcup_02.jpg",
-        "390_01sm.jpg",
-        "390_meritcup_01.jpg",
-        "390_meritcup_03.jpg",
-        "390_meritcup_04.jpg",
-        "390_meritcup_05.jpg",
-        "390_meritcup_06.jpg",
-        "390_meritcup_07.jpg",
-        "390_meritcup_08.jpg",
-        "390_meritcup_09.jpg",
-        "390_meritcup_10.jpg",
-        "390_meritcup_11.jpg",
-        "390_meritcup_12.jpg",
-        "390_meritcup_13.jpg",
-        "390_meritcup_14.jpg",
-        "390_meritcup_15.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -22411,14 +21921,7 @@
     "isArchived": null,
     "images": {
       "hero": "392-hero.jpg",
-      "gallery": [
-        "392_kvaernerinnovation_03.jpg",
-        "392_kvaernerinnovation_01.jpg",
-        "392_kvaernerinnovation_02.jpg",
-        "392_kvaernerinnovation_03sm.jpg",
-        "392_kvaernerinnovation_04.jpg",
-        "392_kvaernerinnovation_05.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -22478,12 +21981,7 @@
     "isArchived": null,
     "images": {
       "hero": "394-hero.jpg",
-      "gallery": [
-        "394_swedishmatch_02.jpg",
-        "394_swedishmatch_01.jpg",
-        "394_swedishmatch_01sm.jpg",
-        "394_swedishmatch_03.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -22594,14 +22092,7 @@
     "isArchived": null,
     "images": {
       "hero": "396-hero.jpg",
-      "gallery": [
-        "396_silkcut_01.jpg",
-        "396_silkcut_01sm.jpg",
-        "396_silkcut_02.jpg",
-        "396_silkcut_03.jpg",
-        "396_silkcut_04.jpg",
-        "396_silkcut_05.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -22973,17 +22464,7 @@
     "isArchived": null,
     "images": {
       "hero": "411-hero.jpg",
-      "gallery": [
-        "411_01.jpg",
-        "411_02.jpg",
-        "411_02sm.jpg",
-        "411_03.jpg",
-        "411_04.jpg",
-        "411_05.jpg",
-        "411_06.jpg",
-        "411_07.jpg",
-        "411_08.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -23031,9 +22512,7 @@
     "isArchived": null,
     "images": {
       "hero": "412-hero.jpg",
-      "gallery": [
-        "412_01.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -23113,26 +22592,7 @@
     "isArchived": null,
     "images": {
       "hero": "414-hero.jpg",
-      "gallery": [
-        "414_wally_08.jpg",
-        "414_venomous.jpg",
-        "414_wally_01.jpg",
-        "414_wally_02.jpg",
-        "414_wally_02sm.jpg",
-        "414_wally_03.jpg",
-        "414_wally_04.jpg",
-        "414_wally_05.jpg",
-        "414_wally_06.jpg",
-        "414_wally_07.jpg",
-        "414_wally_09.jpg",
-        "414_wally_10.jpg",
-        "414_wally_11.jpg",
-        "414_wally_12.jpg",
-        "414promo.jpg",
-        "414wallypromo1.jpg",
-        "414wallypromo2.jpg",
-        "414wallypromo3.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -23183,9 +22643,7 @@
     "isArchived": null,
     "images": {
       "hero": "415-hero.jpg",
-      "gallery": [
-        "415_01.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -23233,9 +22691,7 @@
     "isArchived": null,
     "images": {
       "hero": "416-hero.jpg",
-      "gallery": [
-        "416_01.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -23311,22 +22767,7 @@
     "isArchived": null,
     "images": {
       "hero": "417-hero.jpg",
-      "gallery": [
-        "417_03.jpg",
-        "417_01.jpg",
-        "417_01sm.jpg",
-        "417_02.jpg",
-        "417_04.jpg",
-        "417_05.jpg",
-        "417_06.jpg",
-        "417_07.jpg",
-        "417_08.jpg",
-        "417_09.jpg",
-        "417_10.jpg",
-        "417_11.jpg",
-        "417_12.jpg",
-        "417_13.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -23373,10 +22814,8 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "418-hero.gif",
-      "gallery": [
-        "418deckside.gif"
-      ],
+      "hero": "418-hero.jpg",
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -23504,10 +22943,7 @@
     "isArchived": null,
     "images": {
       "hero": "420-hero.jpg",
-      "gallery": [
-        "420_bg.jpg",
-        "420_01.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -23579,30 +23015,7 @@
     "isArchived": null,
     "images": {
       "hero": "421-hero.jpg",
-      "gallery": [
-        "421m_01.jpg",
-        "421m deck & interior.jpg",
-        "421m interiors.jpg",
-        "421m promo 1.jpg",
-        "421m_02.jpg",
-        "421m_03.jpg",
-        "421m_04.jpg",
-        "421m_05.jpg",
-        "421m_06.jpg",
-        "421m_07.jpg",
-        "421m_08.jpg",
-        "421m_09.jpg",
-        "421m_10.jpg",
-        "421m_11.jpg",
-        "421m_12.jpg",
-        "421m_13.jpg",
-        "421m_14.jpg",
-        "421m_15.jpg",
-        "421m_16.jpg",
-        "421m_17.jpg",
-        "421m_18.jpg",
-        "421_01.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -23666,9 +23079,7 @@
     "isArchived": null,
     "images": {
       "hero": "421M-hero.jpg",
-      "gallery": [
-        "421m_01.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -23748,9 +23159,7 @@
     "isArchived": null,
     "images": {
       "hero": "422-hero.jpg",
-      "gallery": [
-        "422_01.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -23833,14 +23242,7 @@
     "isArchived": null,
     "images": {
       "hero": "425-hero.jpg",
-      "gallery": [
-        "425_06.jpg",
-        "425_01.jpg",
-        "425_02.jpg",
-        "425_03.jpg",
-        "425_04.jpg",
-        "425_05.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -23996,9 +23398,7 @@
     "isArchived": null,
     "images": {
       "hero": "428-hero.jpg",
-      "gallery": [
-        "428deckside.gif"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -24078,9 +23478,7 @@
     "isArchived": null,
     "images": {
       "hero": "429-hero.jpg",
-      "gallery": [
-        "429_01.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -24250,42 +23648,7 @@
     "isArchived": null,
     "images": {
       "hero": "435-hero.jpg",
-      "gallery": [
-        "435_indio_03.jpg",
-        "435_aori_01.jpg",
-        "435_aori_02.jpg",
-        "435_aori_03.jpg",
-        "435_aori_04.jpg",
-        "435_aori_05.jpg",
-        "435_aori_06.jpg",
-        "435_aori_07.jpg",
-        "435_aori_08.jpg",
-        "435_dbf_01.jpg",
-        "435_dbf_02.jpg",
-        "435_dbf_03.jpg",
-        "435_dbf_03sm.jpg",
-        "435_dbf_04.jpg",
-        "435_dbf_05.jpg",
-        "435_dbf_06.jpg",
-        "435_dbf_07.jpg",
-        "435_dbf_08.jpg",
-        "435_inti_ryokan_2011_palmavela.jpg",
-        "435_inti_ryokan_2011_palmavela_350x250.jpg",
-        "435_indio_01.jpg",
-        "435_indio_02.jpg",
-        "435_indio_04.jpg",
-        "435_indio_05.jpg",
-        "435_indio_06.jpg",
-        "435_indio_07.jpg",
-        "435_indio_08.jpg",
-        "435_shaka_01.jpg",
-        "435promo1.jpg",
-        "435promo2.jpg",
-        "435promo3.jpg",
-        "435promo4.jpg",
-        "435promo5.jpg",
-        "435promo6.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -24365,9 +23728,7 @@
     "isArchived": null,
     "images": {
       "hero": "441-hero.jpg",
-      "gallery": [
-        "441_01.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -24415,18 +23776,7 @@
     "isArchived": null,
     "images": {
       "hero": "442-hero.jpg",
-      "gallery": [
-        "442_soj04.jpg",
-        "442 photo1.gif",
-        "442 photo2.gif",
-        "442 photo3.gif",
-        "442 photo4.gif",
-        "442 photo5.gif",
-        "442_photo2_600x400.gif",
-        "442master.jpg",
-        "442profile.jpg",
-        "442saloon.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -24506,9 +23856,7 @@
     "isArchived": null,
     "images": {
       "hero": "443-hero.jpg",
-      "gallery": [
-        "443_01.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -24556,29 +23904,7 @@
     "isArchived": null,
     "images": {
       "hero": "444-hero.jpg",
-      "gallery": [
-        "444m2_01.jpg",
-        "444m2 deck.jpg",
-        "444m2 interior.jpg",
-        "444m2 profile.jpg",
-        "444m2_02.jpg",
-        "444m2_03.jpg",
-        "444m2_04.jpg",
-        "444m2_05.jpg",
-        "444m2_06.jpg",
-        "444m2_07.jpg",
-        "444m2_08.jpg",
-        "444m2_09.jpg",
-        "444m2_10.jpg",
-        "444m2_11.jpg",
-        "444m2_12.jpg",
-        "444m2_13.jpg",
-        "444m2_14.jpg",
-        "444m2_15.jpg",
-        "444m2_16.jpg",
-        "444_bear_of_britain.jpg",
-        "444deck.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -24677,9 +24003,7 @@
     "isArchived": null,
     "images": {
       "hero": "444M2-hero.jpg",
-      "gallery": [
-        "444m2_01.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -25059,9 +24383,7 @@
     "isArchived": null,
     "images": {
       "hero": "466-hero.jpg",
-      "gallery": [
-        "466_01.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -25157,17 +24479,7 @@
     "isArchived": null,
     "images": {
       "hero": "467-hero.jpg",
-      "gallery": [
-        "467_04.jpg",
-        "467_03.jpg",
-        "467_05.jpg",
-        "467_06.jpg",
-        "467_07.jpg",
-        "467_08.jpg",
-        "467_09.jpg",
-        "467_10.jpg",
-        "467deckside.gif"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -25215,14 +24527,7 @@
     "isArchived": null,
     "images": {
       "hero": "468-hero.jpg",
-      "gallery": [
-        "468promo1.jpg",
-        "468_01.jpg",
-        "468_farr395_shales_1.jpg",
-        "468_farr395_shales_2.jpg",
-        "468_hales_cropped.jpg",
-        "468_upgrade_a2n_09_163.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -25357,12 +24662,7 @@
     "isArchived": null,
     "images": {
       "hero": "472-hero.jpg",
-      "gallery": [
-        "472_01.jpg",
-        "472_01sm.jpg",
-        "472_02.jpg",
-        "472_03.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -25426,13 +24726,7 @@
     "isArchived": null,
     "images": {
       "hero": "473-hero.jpg",
-      "gallery": [
-        "473_04.jpg",
-        "473_01.jpg",
-        "473_01sm.jpg",
-        "473_02.jpg",
-        "473_03.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -25496,12 +24790,7 @@
     "isArchived": null,
     "images": {
       "hero": "474-hero.jpg",
-      "gallery": [
-        "474_01.jpg",
-        "474_01sm.jpg",
-        "474_02.jpg",
-        "474_03.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -25549,12 +24838,7 @@
     "isArchived": null,
     "images": {
       "hero": "476-hero.jpg",
-      "gallery": [
-        "476_nc_02.jpg",
-        "476_nc_01.jpg",
-        "476_nc_03.jpg",
-        "476_nc_04.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -25681,15 +24965,7 @@
     "isArchived": null,
     "images": {
       "hero": "486-hero.jpg",
-      "gallery": [
-        "486_04.jpg",
-        "486_01.jpg",
-        "486_02.jpg",
-        "486_02sm.jpg",
-        "486_03.jpg",
-        "486_05.jpg",
-        "486_06.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -25772,35 +25048,7 @@
     "isArchived": null,
     "images": {
       "hero": "487-hero.jpg",
-      "gallery": [
-        "487_mistera_02.jpg",
-        "487_mistera_01.jpg",
-        "487_mistera_03.jpg",
-        "487_mistera_04.jpg",
-        "487_mistera_04small.jpg",
-        "487_mistera_05.jpg",
-        "487_mistera_06.jpg",
-        "487_mistera_07.jpg",
-        "487_mistera_08.jpg",
-        "487_mistera_09.jpg",
-        "487_mistera_10.jpg",
-        "487_mistera_11.jpg",
-        "487_mistera_12.jpg",
-        "487_mistera_13.jpg",
-        "487_mistera_14.jpg",
-        "487_mistera_15.jpg",
-        "487_mistera_16.jpg",
-        "487_mistera_17.jpg",
-        "487_mistera_18.jpg",
-        "487_mistera_19.jpg",
-        "487_mistera_20.jpg",
-        "487_mistera_21.jpg",
-        "487_mistera_22.jpg",
-        "487_mistera_23.jpg",
-        "487promo.jpg",
-        "487promo2.jpg",
-        "487promo3.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -25848,10 +25096,7 @@
     "isArchived": null,
     "images": {
       "hero": "488-hero.jpg",
-      "gallery": [
-        "488.gif",
-        "488deckside.gif"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -25930,23 +25175,7 @@
     "images": {
       "hero": "489-hero.jpg",
       "gallery": [
-        "489-hero.jpg",
-        "489m_fg_20130801_0037.jpg",
-        "489m_fg_20130801_0209.jpg",
-        "489m_yacht-82.02-int-img-2.jpg",
-        "489m_yacht-82.02-int-img-3.jpg",
-        "489m_yacht-82.02-int-img-4.jpg",
-        "489m_yacht-82.02-int-img-5.jpg",
-        "489m_yacht-82.02-nav-img-1.jpg",
-        "489m_yacht-82.02-nav-img-2.jpg",
-        "489m_yacht-82.02-nav-img-3.jpg",
-        "489m_yacht-82.02-nav-img-4.jpg",
-        "489m_yacht-82.02-nav-img-5.jpg",
-        "489interior1.jpg",
-        "489interior2.jpg",
-        "489interior3.jpg",
-        "489interior4.jpg",
-        "489m_yacht-82.02-int-img-1.jpg"
+        "489-hero.jpg"
       ],
       "card": null,
       "cardCropHint": null,
@@ -25995,20 +25224,7 @@
     "isArchived": null,
     "images": {
       "hero": "490-hero.jpg",
-      "gallery": [
-        "490_07.jpg",
-        "490 color promo.gif",
-        "490_01.jpg",
-        "490_04.jpg",
-        "490_08.jpg",
-        "490_12.jpg",
-        "490_14.jpg",
-        "490_15.jpg",
-        "490_16.jpg",
-        "490_17.jpg",
-        "490_18.jpg",
-        "490promo.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -26044,7 +25260,7 @@
     },
     "description": "'<p>&nbsp;</p><p>Design 491 is poised to be a giant-killer on the Mediterranean IMS circuit.&nbsp; This design was commissioned by a Greek owner with the goal of winning in the large boat class.&nbsp; At 43&rsquo; LOA she will be one of the smallest boats in her class",
     "shortDescription": "IMS 43",
-    "shortSummary": "Design 491 is poised to be a giant-killer on the Mediterranean IMS circuit. While this design is sized to be at the small end of the big boat class it will be fast enough to sail in front of the 45\u2019 cruiser/racers.  ",
+    "shortSummary": "Design 491 is poised to be a giant-killer on the Mediterranean IMS circuit. While this design is sized to be at the small end of the big boat class it will be fast enough to sail in front of the 45’ cruiser/racers.  ",
     "builder": "G. Andreadis",
     "owner": null,
     "rigType": null,
@@ -26056,9 +25272,7 @@
     "isArchived": null,
     "images": {
       "hero": "491-hero.jpg",
-      "gallery": [
-        "491deckside.gif"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -26106,18 +25320,7 @@
     "isArchived": null,
     "images": {
       "hero": "492-hero.jpg",
-      "gallery": [
-        "492_tazo_01.jpg",
-        "492_ballyhoo_last cruise0910b.jpg",
-        "492_ballyhoo_ostwest2010.jpg",
-        "492_meridian.jpg",
-        "492_tazo_02.jpg",
-        "492_tazo_03.jpg",
-        "492_tazo_04.jpg",
-        "492_tazo_05.jpg",
-        "492_tazo_06.jpg",
-        "492promo.gif"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -26261,11 +25464,7 @@
     "isArchived": null,
     "images": {
       "hero": "495-hero.jpg",
-      "gallery": [
-        "495_apollo.jpg",
-        "495_apollo_fas09-1102.jpg",
-        "495deckside.gif"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -26313,10 +25512,7 @@
     "isArchived": null,
     "images": {
       "hero": "496-hero.jpg",
-      "gallery": [
-        "496_44_7_sail_over.jpg",
-        "496rendering.gif"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -26368,13 +25564,7 @@
     "images": {
       "hero": "498-hero.jpg",
       "gallery": [
-        "498-hero.jpg",
-        "498-2.jpg",
-        "498-3.jpg",
-        "498-4.jpg",
-        "498-5.jpg",
-        "498-6.jpg",
-        "498photos.jpg"
+        "498-hero.jpg"
       ],
       "card": null,
       "cardCropHint": null,
@@ -26699,21 +25889,7 @@
     "isArchived": null,
     "images": {
       "hero": "533-hero.jpg",
-      "gallery": [
-        "533_lucky_midsearace.jpg",
-        "533evolutionracing_chinasearace2010.jpg",
-        "533_questis-still-the-best-credit-david-brogan.jpg",
-        "533_questis-still-the-best-credit-david-brogan_resized.jpg",
-        "533esmo1.jpg",
-        "533esmo2.jpg",
-        "533esmo3.jpg",
-        "533esmo4.jpg",
-        "533esmo5.jpg",
-        "533esmo6.jpg",
-        "533esmo7.jpg",
-        "533quest.jpg",
-        "533sailplan.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -26761,12 +25937,7 @@
     "isArchived": null,
     "images": {
       "hero": "534-hero.jpg",
-      "gallery": [
-        "534sailplan.jpg",
-        "534 deck.gif",
-        "534 interior.gif",
-        "534.gif"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -26814,30 +25985,7 @@
     "isArchived": null,
     "images": {
       "hero": "535-hero.jpg",
-      "gallery": [
-        "535_05.jpg",
-        "535_01.jpg",
-        "535_02.jpg",
-        "535_03.jpg",
-        "535_04.jpg",
-        "535_06.jpg",
-        "535_07.jpg",
-        "535_08.jpg",
-        "535_09.jpg",
-        "535_10.jpg",
-        "535_11.jpg",
-        "535_12.jpg",
-        "535_14.jpg",
-        "535_15.jpg",
-        "535_16.jpg",
-        "535_17.jpg",
-        "535_18.jpg",
-        "535_19.jpg",
-        "535_20.jpg",
-        "535_21.jpg",
-        "535deck.jpg",
-        "535side profile.gif"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -26958,7 +26106,7 @@
         "ft": 20.77
       }
     },
-    "description": "'<p>&nbsp;</p><p align=\\\"left\\\">Design #539 was commissioned by CAM (Caja de Ahorros del Mediterr\u00e1neo",
+    "description": "'<p>&nbsp;</p><p align=\\\"left\\\">Design #539 was commissioned by CAM (Caja de Ahorros del Mediterráneo",
     "shortDescription": "2004 IMS Racing Yacht",
     "shortSummary": "This design was built in 2004 for competitive IMS racing in the Mediterranean IMS racing circuit.",
     "builder": "Mtorres",
@@ -26972,14 +26120,7 @@
     "isArchived": null,
     "images": {
       "hero": "539-hero.jpg",
-      "gallery": [
-        "539_02.jpg",
-        "539_01.jpg",
-        "539_03.jpg",
-        "539color sailplan.gif",
-        "539promodeck.jpg",
-        "539promosail.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -27027,12 +26168,7 @@
     "isArchived": null,
     "images": {
       "hero": "540-hero.jpg",
-      "gallery": [
-        "540promo2.jpg",
-        "540promo.jpg",
-        "540promo3.jpg",
-        "540promo4.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -27080,30 +26216,7 @@
     "isArchived": null,
     "images": {
       "hero": "541-hero.jpg",
-      "gallery": [
-        "541_03.jpg",
-        "541_01.jpg",
-        "541_02.jpg",
-        "541_04.jpg",
-        "541_05.jpg",
-        "541_06.jpg",
-        "541_07.jpg",
-        "541_08.jpg",
-        "541_09.jpg",
-        "541_10.jpg",
-        "541_11.jpg",
-        "541_12.jpg",
-        "541_13.jpg",
-        "541_14.jpg",
-        "541_15.jpg",
-        "541_16.jpg",
-        "541_17.jpg",
-        "541_2013-rc600-privateer-tw.jpg",
-        "541_chieftain_01.jpg",
-        "541_jazz_.jpg",
-        "541_transatlantic2011-jazz.jpg",
-        "541promo.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -27171,47 +26284,7 @@
     "isArchived": null,
     "images": {
       "hero": "542-hero.jpg",
-      "gallery": [
-        "542_01.jpg",
-        "542_02.jpg",
-        "542_03.jpg",
-        "542_04.jpg",
-        "542_05.jpg",
-        "542_06.jpg",
-        "542_07.jpg",
-        "542_08.jpg",
-        "542_09.jpg",
-        "542_10.jpg",
-        "542_11.jpg",
-        "542_12.jpg",
-        "542_mrsseven_01.jpg",
-        "542_mrsseven_01sm.jpg",
-        "542_mrsseven_01sm2.jpg",
-        "542_mrsseven_02.jpg",
-        "542_mrsseven_03.jpg",
-        "542_mrsseven_04.jpg",
-        "542_mrsseven_05.jpg",
-        "542_mrsseven_06.jpg",
-        "542_mrsseven_07.jpg",
-        "542_mrsseven_08.jpg",
-        "542_mrsseven_09.jpg",
-        "542_mrsseven_10.jpg",
-        "542_mrsseven_11.jpg",
-        "542_mrsseven_12.jpg",
-        "542_mrsseven_13.jpg",
-        "542_mrsseven_front_guest.jpg",
-        "542_mrsseven_galley1.jpg",
-        "542_mrsseven_galley_2.jpg",
-        "542_mrsseven_guest_cabin_3.jpg",
-        "542_mrsseven_main_heads.jpg",
-        "542_mrsseven_master cabin 1ok.jpg",
-        "542_mrsseven_master_cabin_1ok.jpg",
-        "542_mrsseven_owners_cabin_2.jpg",
-        "542_mrsseven_saloon_1.jpg",
-        "542_mrsseven_saloon_2.jpg",
-        "542_mrsseven_saloon_3.jpg",
-        "542_mrsseven_saloon_corner.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -27291,20 +26364,7 @@
     "isArchived": null,
     "images": {
       "hero": "543-hero.jpg",
-      "gallery": [
-        "543_02.jpg",
-        "543_01.jpg",
-        "543_03.jpg",
-        "543_04.jpg",
-        "543_05.jpg",
-        "543_06.jpg",
-        "543_07.jpg",
-        "543_08.jpg",
-        "543_09.jpg",
-        "543_09sm.jpg",
-        "543_irc_magia_019.jpg",
-        "543_irc_magia_048.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -27379,14 +26439,7 @@
     "isArchived": null,
     "images": {
       "hero": "545-hero.jpg",
-      "gallery": [
-        "545_pirates_01.jpg",
-        "545_01.jpg",
-        "545_02.jpg",
-        "545_brasil_1.jpg",
-        "545_brasil_1_02.jpg",
-        "545_ericsson_01.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -27587,9 +26640,7 @@
     "isArchived": null,
     "images": {
       "hero": "546-hero.jpg",
-      "gallery": [
-        "services.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -27661,14 +26712,7 @@
     "isArchived": null,
     "images": {
       "hero": "550-hero.jpg",
-      "gallery": [
-        "550_04.jpg",
-        "550_01.jpg",
-        "550_02.jpg",
-        "550_03.jpg",
-        "550_05.jpg",
-        "550_06.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -27764,12 +26808,7 @@
     "isArchived": null,
     "images": {
       "hero": "585-hero.jpg",
-      "gallery": [
-        "585_rush_01.jpg",
-        "585_01.jpg",
-        "585_02.jpg",
-        "585_03.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -27970,9 +27009,7 @@
     "isArchived": null,
     "images": {
       "hero": "586-hero.jpg",
-      "gallery": [
-        "585_01.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -28107,32 +27144,7 @@
     "isArchived": null,
     "images": {
       "hero": "588-hero.jpg",
-      "gallery": [
-        "588_evolutionracing.jpg",
-        "588m_sue_01.jpg",
-        "588m_sue_02.jpg",
-        "588m_sue_03.jpg",
-        "588m_sue_04.jpg",
-        "588m_sue_05.jpg",
-        "588m_sue_06.jpg",
-        "588m_sue_07.jpg",
-        "588m_sue_08.jpg",
-        "588m_sue_09.jpg",
-        "588m_sue_10.jpg",
-        "588m_sue_11.jpg",
-        "588m_sue_12.jpg",
-        "588_01.jpg",
-        "588_02.jpg",
-        "588_03.jpg",
-        "588_laurelle_01.jpg",
-        "588_laurelle_02.jpg",
-        "588_laurelle_03.jpg",
-        "588_laurelle_04.jpg",
-        "588_laurelle_05.jpg",
-        "588_deck.jpg",
-        "588_interior.jpg",
-        "588_sailplan.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -28216,9 +27228,7 @@
     "isArchived": null,
     "images": {
       "hero": "588M-hero.jpg",
-      "gallery": [
-        "588m_sue_02.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -28298,21 +27308,7 @@
     "isArchived": null,
     "images": {
       "hero": "590-hero.jpg",
-      "gallery": [
-        "590_01.jpg",
-        "590_01sm.jpg",
-        "590_02.jpg",
-        "590_03.jpg",
-        "590_04.jpg",
-        "590_05.jpg",
-        "590_06.jpg",
-        "590_07.jpg",
-        "590_08.jpg",
-        "590_09.jpg",
-        "590_10.jpg",
-        "590_11.jpg",
-        "590_wolfpack.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -28376,41 +27372,7 @@
     "isArchived": null,
     "images": {
       "hero": "591-hero.jpg",
-      "gallery": [
-        "591_01.jpg",
-        "591_01sm.jpg",
-        "591_02.jpg",
-        "591_03.jpg",
-        "591_04.jpg",
-        "591_05.jpg",
-        "591_06.jpg",
-        "591_07.jpg",
-        "591_08.jpg",
-        "591_09.jpg",
-        "591_09fastnet.jpg",
-        "591_10.jpg",
-        "591_11.jpg",
-        "591_12.jpg",
-        "591_13.jpg",
-        "591_14.jpg",
-        "591_15.jpg",
-        "591_16.jpg",
-        "591_deck.jpg",
-        "591_interior.jpg",
-        "591_interior_01.jpg",
-        "591_interior_02.jpg",
-        "591_interior_03.jpg",
-        "591_interior_04.jpg",
-        "591_interior_05.jpg",
-        "591_interior_06.jpg",
-        "591_interior_07.jpg",
-        "591_interior_08.jpg",
-        "591_interior_09.jpg",
-        "591_ran_leopard.jpg",
-        "591_rendering_01.jpg",
-        "591_sailplan.jpg",
-        "591_six13-3582.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -28494,25 +27456,7 @@
     "isArchived": null,
     "images": {
       "hero": "597-hero.jpg",
-      "gallery": [
-        "597_01.jpg",
-        "597_01sm.jpg",
-        "597_02.jpg",
-        "597_03.jpg",
-        "597_04.jpg",
-        "597_05.jpg",
-        "597_10.jpg",
-        "597_34.jpg",
-        "597_35.jpg",
-        "597_38.jpg",
-        "597_39.jpg",
-        "597_40.jpg",
-        "597_41.jpg",
-        "597_42.jpg",
-        "597_43.jpg",
-        "597_44.jpg",
-        "597_45.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -28564,43 +27508,7 @@
     "isArchived": null,
     "images": {
       "hero": "602-hero.jpg",
-      "gallery": [
-        "602_01.jpg",
-        "602ma_01.jpg",
-        "602_02.jpg",
-        "602_03.jpg",
-        "602_04.jpg",
-        "602_05.jpg",
-        "602_06.jpg",
-        "602_07.jpg",
-        "602_08.jpg",
-        "602_09.jpg",
-        "602_10.jpg",
-        "602_11.jpg",
-        "602_12.jpg",
-        "602_13.jpg",
-        "602_14.jpg",
-        "602_15.jpg",
-        "602_16.jpg",
-        "602_17.jpg",
-        "602_18.jpg",
-        "602_19.jpg",
-        "602_20.jpg",
-        "602_21.jpg",
-        "602_22.jpg",
-        "602_23.jpg",
-        "602_24.jpg",
-        "602_25.jpg",
-        "602_26.jpg",
-        "602_foncia_01.jpg",
-        "602_foncia_01sm.jpg",
-        "602_foncia_02.jpg",
-        "602_foncia_03.jpg",
-        "602_foncia_04.jpg",
-        "602_foncia_05.jpg",
-        "602_foncia_vendee.jpg",
-        "602_mapfre.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -28652,9 +27560,7 @@
     "isArchived": null,
     "images": {
       "hero": "602_2-hero.jpg",
-      "gallery": [
-        "602_foncia_05.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -28706,34 +27612,7 @@
     "isArchived": null,
     "images": {
       "hero": "603-hero.jpg",
-      "gallery": [
-        "603_19.jpg",
-        "603-2_01.jpg",
-        "603_01.jpg",
-        "603_02.jpg",
-        "603_03.jpg",
-        "603_04.jpg",
-        "603_05.jpg",
-        "603_06.jpg",
-        "603_07.jpg",
-        "603_08.jpg",
-        "603_09.jpg",
-        "603_10.jpg",
-        "603_11.jpg",
-        "603_12.jpg",
-        "603_13.jpg",
-        "603_14.jpg",
-        "603_15.jpg",
-        "603_16.jpg",
-        "603_17.jpg",
-        "603_18.jpg",
-        "603_20.jpg",
-        "603_21.jpg",
-        "603_2_gitana.jpg",
-        "603_bwr_finish.jpg",
-        "603_estrelladamm_bwr_finish.jpg",
-        "603_estrelladamm_ny_bcn_2010.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -28781,9 +27660,7 @@
     "isArchived": null,
     "images": {
       "hero": "603_2-hero.jpg",
-      "gallery": [
-        "603_estrelladamm_ny_bcn_2010.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -28863,14 +27740,7 @@
     "isArchived": null,
     "images": {
       "hero": "604-hero.jpg",
-      "gallery": [
-        "604_03.jpg",
-        "604_01.jpg",
-        "604_02.jpg",
-        "604_03sm.jpg",
-        "604_03sm2.jpg",
-        "604_04.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -28942,25 +27812,7 @@
     "isArchived": null,
     "images": {
       "hero": "605-hero.jpg",
-      "gallery": [
-        "605_roma_01.jpg",
-        "605_01.jpg",
-        "605_02.jpg",
-        "605_03.jpg",
-        "605_04.jpg",
-        "605_05.jpg",
-        "605_06.jpg",
-        "605_07.jpg",
-        "605_08.jpg",
-        "605_roma_02.jpg",
-        "605_roma_03.jpg",
-        "605_roma_04.jpg",
-        "605_roma_05.jpg",
-        "605_roma_06.jpg",
-        "605_roma_07.jpg",
-        "605_roma_08.jpg",
-        "605_roma_09.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -29024,34 +27876,7 @@
     "isArchived": null,
     "images": {
       "hero": "606-hero.jpg",
-      "gallery": [
-        "606_07.jpg",
-        "606_01.jpg",
-        "606_02.jpg",
-        "606_03.jpg",
-        "606_04.jpg",
-        "606_05.jpg",
-        "606_06.jpg",
-        "606_08.jpg",
-        "606_09.jpg",
-        "606_10.jpg",
-        "606_11.jpg",
-        "606_12.jpg",
-        "606_13.jpg",
-        "606_14.jpg",
-        "606_15.jpg",
-        "606_16.jpg",
-        "606_17.jpg",
-        "606_18.jpg",
-        "606_19.jpg",
-        "606_20.jpg",
-        "606_21.jpg",
-        "606_22.jpg",
-        "606_23.jpg",
-        "606_24.jpg",
-        "606_rendering01.jpg",
-        "606_rendering02.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -29125,26 +27950,7 @@
     "isArchived": null,
     "images": {
       "hero": "608-hero.jpg",
-      "gallery": [
-        "608_04.jpg",
-        "608_01.jpg",
-        "608_01sm.jpg",
-        "608_02.jpg",
-        "608_03.jpg",
-        "608_2nr.jpg",
-        "608_koufu.jpg",
-        "608_laresponse.jpg",
-        "608_model_01.jpg",
-        "608_model_02.jpg",
-        "608_model_02_sm.jpg",
-        "608_model_03.jpg",
-        "608_rendering_01.jpg",
-        "608_rendering_02.jpg",
-        "608_rendering_02_sm.jpg",
-        "608_rendering_03.jpg",
-        "608_sayann.jpg",
-        "608_twotrue_df_600x464.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -29185,10 +27991,10 @@
         "ft": 14.76
       }
     },
-    "description": "Design 609, DELTA DORE, is a racing designed by Farr Yacht Design in 2005. She has an overall length of 60 feet (18.3m). Built by Beyou (J\u00e9r\u00e9mie Beyou).",
+    "description": "Design 609, DELTA DORE, is a racing designed by Farr Yacht Design in 2005. She has an overall length of 60 feet (18.3m). Built by Beyou (Jérémie Beyou).",
     "shortDescription": "Open 60",
     "shortSummary": null,
-    "builder": "Beyou (J\u00e9r\u00e9mie Beyou)",
+    "builder": "Beyou (Jérémie Beyou)",
     "owner": null,
     "rigType": null,
     "rigMaterial": null,
@@ -29199,35 +28005,7 @@
     "isArchived": null,
     "images": {
       "hero": "609-hero.jpg",
-      "gallery": [
-        "609_13.jpg",
-        "609m_hb_vg2012arrival022b.jpg",
-        "609m_veolia_12_470.jpg",
-        "609_01.jpg",
-        "609_02.jpg",
-        "609_03.jpg",
-        "609_04.jpg",
-        "609_05.jpg",
-        "609_06.jpg",
-        "609_07.jpg",
-        "609_08.jpg",
-        "609_09.jpg",
-        "609_10.jpg",
-        "609_11.jpg",
-        "609_12.jpg",
-        "609_14.jpg",
-        "609_15.jpg",
-        "609_16.jpg",
-        "609_17.jpg",
-        "609_18.jpg",
-        "609_renault.jpg",
-        "609m_bt_01.jpg",
-        "609m_bt_02.jpg",
-        "609m_bt_03.jpg",
-        "609m_bt_03sm.jpg",
-        "609m_bt_04.jpg",
-        "609m_hb.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -29267,10 +28045,10 @@
         "ft": 14.76
       }
     },
-    "description": "Design 609M, Open 60 (IMOCA), is a racing yacht designed by Farr Yacht Design in 2006. She has an overall length of 60 feet (18.3m). Built by Beyou (J\u00e9r\u00e9mie Beyou).",
+    "description": "Design 609M, Open 60 (IMOCA), is a racing yacht designed by Farr Yacht Design in 2006. She has an overall length of 60 feet (18.3m). Built by Beyou (Jérémie Beyou).",
     "shortDescription": "Open 60",
     "shortSummary": "IMOCA 60 specifically designed for shorthanded ocean racing.",
-    "builder": "Beyou (J\u00e9r\u00e9mie Beyou)",
+    "builder": "Beyou (Jérémie Beyou)",
     "owner": null,
     "rigType": null,
     "rigMaterial": null,
@@ -29281,9 +28059,7 @@
     "isArchived": null,
     "images": {
       "hero": "609M-hero.jpg",
-      "gallery": [
-        "boss.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -29363,31 +28139,7 @@
     "isArchived": null,
     "images": {
       "hero": "613-hero.jpg",
-      "gallery": [
-        "613_tazo_01.jpg",
-        "613_rendering_01.jpg",
-        "613_rendering_02.jpg",
-        "613_rendering_03.jpg",
-        "613_sailplan.jpg",
-        "613_straydog_01.jpg",
-        "613_straydog_02.jpg",
-        "613_straydog_03.jpg",
-        "613_straydog_04.jpg",
-        "613_straydog_05.jpg",
-        "613_straydog_06.jpg",
-        "613_straydog_07.jpg",
-        "613_straydog_08.jpg",
-        "613_straydog_09.jpg",
-        "613_straydog_10.jpg",
-        "613_straydog_11.jpg",
-        "613_straydog_12.jpg",
-        "613_straydog_13.jpg",
-        "613_straydog_14.jpg",
-        "613_straydog_15.jpg",
-        "613_tazo_01sm.jpg",
-        "613_tazo_02.jpg",
-        "613_tazo_03.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -29461,26 +28213,7 @@
     "isArchived": null,
     "images": {
       "hero": "615-hero.jpg",
-      "gallery": [
-        "615_thalima_sailing3.jpg",
-        "615_promos.jpg",
-        "615_rendering_01.jpg",
-        "615_rendering_01sm.jpg",
-        "615_rendering_02.jpg",
-        "615_rendering_03.jpg",
-        "615_rendering_04.jpg",
-        "615_rendering_05.jpg",
-        "615_rendering_06.jpg",
-        "615_rendering_07.jpg",
-        "615_rendering_08.jpg",
-        "615_rendering_09.jpg",
-        "615_rendering_10.jpg",
-        "615_sailplan.jpg",
-        "615_thalima_sailing1.jpg",
-        "615_thalima_sailing1400x200.jpg",
-        "615_thalima_sailing2.jpg",
-        "615_thalima_sailing4.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -29528,37 +28261,7 @@
     "isArchived": null,
     "images": {
       "hero": "620-hero.jpg",
-      "gallery": [
-        "620_04.jpg",
-        "620_01.jpg",
-        "620_01sm.jpg",
-        "620_02.jpg",
-        "620_03.jpg",
-        "620_05.jpg",
-        "620_construction_01.jpg",
-        "620_construction_02.jpg",
-        "620_construction_03.jpg",
-        "620_construction_04.jpg",
-        "620_construction_05.jpg",
-        "620_construction_06.jpg",
-        "620_construction_07.jpg",
-        "620_construction_08.jpg",
-        "620_construction_09.jpg",
-        "620_construction_11.jpg",
-        "620_construction_12.jpg",
-        "620_construction_13.jpg",
-        "620_construction_14.jpg",
-        "620_construction_15.jpg",
-        "620_construction_16.jpg",
-        "620_interior.jpg",
-        "620_rendering_01.jpg",
-        "620_rendering_02.jpg",
-        "620_rendering_06.jpg",
-        "620_rendering_07.jpg",
-        "620_rendering_08.jpg",
-        "620_rendering_08_sm.jpg",
-        "620_prelim_01.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -29594,7 +28297,7 @@
     },
     "description": "'<p>&nbsp;</p><p>The BENETEAU First 35 (Design 622",
     "shortDescription": "35 Cruiser/Racer",
-    "shortSummary": "Design 622 will fulfill the club racer\u2019s desire for a versatile and competitive cruiser/racer at a popular size and price. ",
+    "shortSummary": "Design 622 will fulfill the club racer’s desire for a versatile and competitive cruiser/racer at a popular size and price. ",
     "builder": "BENETEAU",
     "owner": null,
     "rigType": null,
@@ -29606,23 +28309,7 @@
     "isArchived": null,
     "images": {
       "hero": "622-hero.jpg",
-      "gallery": [
-        "622_beneteau_first_35._600x400jpg.jpg",
-        "622_photo_01.jpg",
-        "622_photo_02.jpg",
-        "622_photo_03.jpg",
-        "622_photo_04.jpg",
-        "622_photo_05.jpg",
-        "622_photo_06.jpg",
-        "622_photo_07.jpg",
-        "622_rebellion.jpg",
-        "622_rendering_01.jpg",
-        "622_rendering_01sm.jpg",
-        "622_rendering_02.jpg",
-        "622_rendering_03.jpg",
-        "622_rendering_03sm.jpg",
-        "622_beneteau_first_35.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -29736,13 +28423,7 @@
     "isArchived": null,
     "images": {
       "hero": "634-hero.jpg",
-      "gallery": [
-        "634-635_01.jpg",
-        "634-635_01sm.jpg",
-        "634-635_02.jpg",
-        "634_01.jpg",
-        "634_01sm.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -29802,9 +28483,7 @@
     "isArchived": null,
     "images": {
       "hero": "635-hero.jpg",
-      "gallery": [
-        "635_01.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -29876,15 +28555,7 @@
     "isArchived": null,
     "images": {
       "hero": "640-hero.jpg",
-      "gallery": [
-        "640_05_400x600.jpg",
-        "640_01.jpg",
-        "640_01sm.jpg",
-        "640_02.jpg",
-        "640_03.jpg",
-        "640_04.jpg",
-        "640_05.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -29956,33 +28627,7 @@
     "isArchived": null,
     "images": {
       "hero": "641-hero.jpg",
-      "gallery": [
-        "641_20.jpg",
-        "641_01.jpg",
-        "641_02.jpg",
-        "641_03.jpg",
-        "641_04.jpg",
-        "641_05.jpg",
-        "641_06.jpg",
-        "641_07.jpg",
-        "641_08.jpg",
-        "641_09.jpg",
-        "641_10.jpg",
-        "641_11.jpg",
-        "641_12.jpg",
-        "641_13.jpg",
-        "641_14.jpg",
-        "641_15.jpg",
-        "641_16.jpg",
-        "641_17.jpg",
-        "641_18.jpg",
-        "641_19.jpg",
-        "641_20sm.jpg",
-        "641_21.jpg",
-        "641_22.jpg",
-        "641_23.jpg",
-        "641_24.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -30032,35 +28677,7 @@
     "isArchived": null,
     "images": {
       "hero": "642-hero.jpg",
-      "gallery": [
-        "642_01.jpg",
-        "642_01lg.jpg",
-        "642_01sm.jpg",
-        "642_02.jpg",
-        "642_03.jpg",
-        "642_04.jpg",
-        "642_05.jpg",
-        "642_06.jpg",
-        "642_07.jpg",
-        "642_08.jpg",
-        "642_09.jpg",
-        "642_10.jpg",
-        "642_construction_01.jpg",
-        "642_construction_03.jpg",
-        "642_construction_04.jpg",
-        "642_construction_05.jpg",
-        "642_construction_06.jpg",
-        "642_construction_07.jpg",
-        "642_construction_08.jpg",
-        "642_construction_09.jpg",
-        "642_construction_10.jpg",
-        "642_pr_04.jpg",
-        "642_rendering_01.jpg",
-        "642_rendering_01sm.jpg",
-        "642_rendering_02.jpg",
-        "642_rendering_03.jpg",
-        "642m_01.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -30108,9 +28725,7 @@
     "isArchived": null,
     "images": {
       "hero": "642M-hero.jpg",
-      "gallery": [
-        "642m_01.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -30196,9 +28811,7 @@
     "isArchived": false,
     "images": {
       "hero": "667-hero.jpg",
-      "gallery": [
-        "667_01.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -30252,13 +28865,7 @@
     "isArchived": null,
     "images": {
       "hero": "668-hero.jpg",
-      "gallery": [
-        "668_img_4403.jpg",
-        "668_01.jpg",
-        "668_02.jpg",
-        "668_03.jpg",
-        "668_bg_pt_huron_2010.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -30308,25 +28915,7 @@
     "isArchived": null,
     "images": {
       "hero": "673-hero.jpg",
-      "gallery": [
-        "673_02.jpg",
-        "673m_cr56-int-22.jpg",
-        "673_01.jpg",
-        "673_03.jpg",
-        "673_04.jpg",
-        "673_05.jpg",
-        "673_06.jpg",
-        "673_07.jpg",
-        "673_08.jpg",
-        "673_09.jpg",
-        "673_10.jpg",
-        "673_11.jpg",
-        "673_rendering_01.jpg",
-        "673m_cr56-int-02.jpg",
-        "673m_cr56-int-09.jpg",
-        "673m_cr56_sailing-shot.jpg",
-        "673m_bys_6312.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -30377,21 +28966,7 @@
     "isArchived": null,
     "images": {
       "hero": "675-hero.jpg",
-      "gallery": [
-        "675mcr33-innen011200.jpg",
-        "675mcr33-innen0412.jpg",
-        "675mcr33-innen051200.jpg",
-        "675mcr33_aft-no-water1200.jpg",
-        "675mcr33_cabin-layout1200.jpg",
-        "675mcr33_plan1200.jpg",
-        "675_01.jpg",
-        "675_02.jpg",
-        "675_03.jpg",
-        "675_04.jpg",
-        "675_05.jpg",
-        "675_05_600x400.jpg",
-        "675m_cr33_aussen-0251.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -30602,12 +29177,7 @@
     "isArchived": null,
     "images": {
       "hero": "680-hero.png",
-      "gallery": [
-        "680_cruiser50.png",
-        "680_cr50a_3390_08_600x400.jpg",
-        "680_cruiser50_1.jpg",
-        "680_cruisingworld_sep2012.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -30658,27 +29228,7 @@
     "isArchived": null,
     "images": {
       "hero": "685-hero.jpg",
-      "gallery": [
-        "685_bd16.jpg",
-        "685elevation.jpg",
-        "685_bd15.jpg",
-        "685_bd_picture 9_2.jpg",
-        "685_bd_testsail.png",
-        "685_bodacious_dream.jpg",
-        "685_cruiser45_bowview.jpg",
-        "685_img_0076_2.jpg",
-        "685_img_0087_5.jpg",
-        "685_img_0146.jpg",
-        "685_kiwi40fca.jpg",
-        "685_kiwi40fccjpg.jpg",
-        "685_lapo_interview.png",
-        "685_photo_1.jpg",
-        "685_rendering_02.jpg",
-        "685_rendering_02_sm.jpg",
-        "685_rendering_v2.jpg",
-        "685_roaring_forty_2.jpg",
-        "685_roaring_forty_2_600x400.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -30777,14 +29327,7 @@
     "isArchived": null,
     "images": {
       "hero": "695-hero.jpg",
-      "gallery": [
-        "695_sail_mag.jpg",
-        "695_cruiser45_3cabin.jpg",
-        "695_cruiser45_side_rear.jpg",
-        "695_cruiser45_side_rear_600x400.jpg",
-        "695_cruiser45_birdseye.jpg",
-        "695_cruiser45_sideview.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -30921,18 +29464,7 @@
     "isArchived": null,
     "images": {
       "hero": "715-hero.jpg",
-      "gallery": [
-        "715_azzam_photo2.jpg",
-        "715_azzam_photo1.jpg",
-        "715_azzam_photo3.jpg",
-        "715_azzam_photo4.jpg",
-        "715_azzam_photo5.jpg",
-        "715_azzam_photo6.jpg",
-        "715_azzam_photo7.jpg",
-        "715_fastnet_2011.jpg",
-        "715_iberdrola_in_port.jpg",
-        "715_leaves_alicante.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -31008,12 +29540,7 @@
     "isArchived": null,
     "images": {
       "hero": "720-hero.jpg",
-      "gallery": [
-        "720_100804_bavaria_303.jpg",
-        "720_100804_bavaria_113.jpg",
-        "720_cr40neu_01_totale1_01.jpg",
-        "720m_0241.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -31302,32 +29829,7 @@
     "isArchived": false,
     "images": {
       "hero": "724-hero.jpg",
-      "gallery": [
-        "724_f400_press6.jpg",
-        "724_bbs_01.jpg",
-        "724_bbs_01_300x200.jpg",
-        "724_bbs_01_400.jpg",
-        "724_chessie.jpg",
-        "724_farr400_2.jpg",
-        "724_farr400_6.jpg",
-        "724_farr400_6_original.jpg",
-        "724_farr400_blade.jpg",
-        "724_farr400_pumpkin_regatta_2011.jpg",
-        "724_farr_400_trailer_7.jpg",
-        "724_ichiban.jpg",
-        "724_launch_large.jpg",
-        "724_launch_med.jpg",
-        "724_launch_small.jpg",
-        "724_logo_100x400.jpg",
-        "724_logo_80x280.jpg",
-        "724_mg_5550_200x133.jpg",
-        "724_mg_5732.jpg",
-        "724_mg_5732_200x133.jpg",
-        "724_mg_5732_400x200.jpg",
-        "724_rbbs2011-4803_resized.jpg",
-        "724_gallery1_img23.jpg",
-        "724_logo.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -31408,7 +29910,7 @@
     "designType": "Cruising Yacht",
     "specs": {
       "loa": {
-        "m": 10,
+        "m": 11.04,
         "ft": 36.2
       },
       "draft": {
@@ -31458,16 +29960,7 @@
     "isArchived": false,
     "images": {
       "hero": "726-hero.jpg",
-      "gallery": [
-        "726m_cr37-aussen-render02.jpg",
-        "726m_cr37-aussen01.jpg",
-        "726m_cr37-innen-render.jpg",
-        "726_cr36_2_cab-interior_06.jpg",
-        "726_cr36_3_cab-interior_06.jpg",
-        "726_cr36_bild1_05.jpg",
-        "726_exterior01.jpg",
-        "726m_cruiser37_600x400.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -31614,11 +30107,7 @@
     "isArchived": null,
     "images": {
       "hero": "727-hero.jpg",
-      "gallery": [
-        "727_110112cnst_6545.jpeg",
-        "727_110112cnst_6670.jpg",
-        "727_paris63.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -31714,11 +30203,7 @@
     "isArchived": null,
     "images": {
       "hero": "732-hero.jpg",
-      "gallery": [
-        "732-369-f-13.jpg",
-        "732-369-f-15-400.jpg",
-        "732_farr280_369-f-14.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -31768,11 +30253,7 @@
     "isArchived": null,
     "images": {
       "hero": "733-hero.jpg",
-      "gallery": [
-        "733_bys_9261.jpg",
-        "733_photo1.jpg",
-        "733_v46_bys_9254.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -31866,17 +30347,7 @@
     "isArchived": null,
     "images": {
       "hero": "739-hero.jpg",
-      "gallery": [
-        "739-v42-exterior3.jpg",
-        "739-v42_interior-cabin.jpg",
-        "739-vision42_aft-view-no-water.jpg",
-        "739-vision42_transom-el-full.jpg",
-        "739-vision42-innen02.jpg",
-        "739-vision42-innen06.jpg",
-        "739_01.jpg",
-        "739_01_original.jpg",
-        "739_v42-exterior4.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -32143,14 +30614,7 @@
     "isArchived": null,
     "images": {
       "hero": "750-hero.jpg",
-      "gallery": [
-        "750_bys_0805.jpg",
-        "750_bys_0805_400x265.jpg",
-        "750_bys_0805_600x400.jpg",
-        "750_img_7170_600x400.jpg",
-        "750_bone2.jpg",
-        "750_side_1.png"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,
@@ -32995,7 +31459,7 @@
         "lbs": 145946.0
       }
     },
-    "description": "Farr Yacht Design is delighted to present our tenth design commission from Southern Wind shipyard. The new Southern Wind 105 is a stunning, thoroughly modern yacht designed for the sailor who expects cutting edge design and superb styling in a fast, safe, passage capable yacht equipped to contest any superyacht regatta.\n\nFYD was given a free hand to develop the naval architecture concept. With Southern Wind\u2019s advanced construction technology and fanatical commitment to weight control, we were able to create a light, powerful masterpiece with aggressive hull styling, a highly advanced appendage package and a more than ample rig size. Twin rudders were chosen to best match both the lifting keel configuration and the wide, powerful transom.\n\nThe interior and deck styling are the product of Nauta Design and were developed in concert with the overall concept to be the \"new wave in the future of Southern Wind.\"",
+    "description": "Farr Yacht Design is delighted to present our tenth design commission from Southern Wind shipyard. The new Southern Wind 105 is a stunning, thoroughly modern yacht designed for the sailor who expects cutting edge design and superb styling in a fast, safe, passage capable yacht equipped to contest any superyacht regatta.\n\nFYD was given a free hand to develop the naval architecture concept. With Southern Wind’s advanced construction technology and fanatical commitment to weight control, we were able to create a light, powerful masterpiece with aggressive hull styling, a highly advanced appendage package and a more than ample rig size. Twin rudders were chosen to best match both the lifting keel configuration and the wide, powerful transom.\n\nThe interior and deck styling are the product of Nauta Design and were developed in concert with the overall concept to be the \"new wave in the future of Southern Wind.\"",
     "shortDescription": "Southern Wind 105",
     "shortSummary": null,
     "builder": null,
@@ -33494,7 +31958,7 @@
         "tons": 48.7
       }
     },
-    "description": "The Baltic 142 Custom combines timeless, elegant looks with dramatic superstructure styling and a modern hull shape. Features include a plumb bow and maximum beam carried well aft to enhance performance and provide useful hull volume. The accommodation comprises a large amidships owner\u2019s cabin to ensure maximum comfort while underway, an upper saloon with direct access to the cockpit and an additional six cabins, three for guests forward and three for crew aft.\n\nWith naval architecture by Farr Yacht Design, final styling by Lucio Micheletti and overall engineering by Baltic Yachts, the yacht will benefit from advanced carbon sandwich construction.\n\nThe final phase of mould tooling for this Farr Yacht Design performance cruiser was completed in the summer and hull lamination in pre-preg carbon is well advanced.\n\nProject manager S\u00f6ren Jansson said that apart from the 9m long Dynamic Stability System foil being built into the yacht, the diesel electric propulsion system is also a key feature, the machinery room for which is being built in modular from outside the yacht.\n\n\"This not only enables us to gain some time in the overall build schedule but also allows the workers easier access for speed and accuracy\" said S\u00f6ren.\n\nThe 142 will step a Rondal carbon rig, be fitted with in-boom furling, set a square top main and to gain full benefit from the keel in the up position (draft 3.8m), is designed with twin rudders. The yacht is scheduled to launch in Spring 2019.",
+    "description": "The Baltic 142 Custom combines timeless, elegant looks with dramatic superstructure styling and a modern hull shape. Features include a plumb bow and maximum beam carried well aft to enhance performance and provide useful hull volume. The accommodation comprises a large amidships owner’s cabin to ensure maximum comfort while underway, an upper saloon with direct access to the cockpit and an additional six cabins, three for guests forward and three for crew aft.\n\nWith naval architecture by Farr Yacht Design, final styling by Lucio Micheletti and overall engineering by Baltic Yachts, the yacht will benefit from advanced carbon sandwich construction.\n\nThe final phase of mould tooling for this Farr Yacht Design performance cruiser was completed in the summer and hull lamination in pre-preg carbon is well advanced.\n\nProject manager Sören Jansson said that apart from the 9m long Dynamic Stability System foil being built into the yacht, the diesel electric propulsion system is also a key feature, the machinery room for which is being built in modular from outside the yacht.\n\n\"This not only enables us to gain some time in the overall build schedule but also allows the workers easier access for speed and accuracy\" said Sören.\n\nThe 142 will step a Rondal carbon rig, be fitted with in-boom furling, set a square top main and to gain full benefit from the keel in the up position (draft 3.8m), is designed with twin rudders. The yacht is scheduled to launch in Spring 2019.",
     "shortDescription": "Baltic 142",
     "shortSummary": null,
     "builder": null,
@@ -34211,7 +32675,7 @@
         "ft": 164.0
       }
     },
-    "description": "Farr Yacht Design and Design Unlimited have partnered together to create this high performance racer cruiser that will establish a new class in competitive sailing superyachts.\n\nBreaking records, dominating the Superyacht Racing Circuit, and comfortable Mediterranean and Caribbean cruising round out the uncompromising design brief. Cutting days from trans-ocean records and finishing hours ahead of the closet competition in superyacht day races are all easily within the capabilities of this incredible yacht.\n\nThis 50m concept is pure power with a long, light hull of only 155 tons displacement, and a rig that stands 68m above the waterline. 2500 square meters of sail, twin daggerboards and rudders and a telescoping/canting keel allow this yacht to easily achieve speeds into the mid-20\u2019s in moderate winds and well above 30 knots in strong winds. Advanced and proven sail handling systems provide the necessary flexibility and safety needed to confidently achieve those high speeds.",
+    "description": "Farr Yacht Design and Design Unlimited have partnered together to create this high performance racer cruiser that will establish a new class in competitive sailing superyachts.\n\nBreaking records, dominating the Superyacht Racing Circuit, and comfortable Mediterranean and Caribbean cruising round out the uncompromising design brief. Cutting days from trans-ocean records and finishing hours ahead of the closet competition in superyacht day races are all easily within the capabilities of this incredible yacht.\n\nThis 50m concept is pure power with a long, light hull of only 155 tons displacement, and a rig that stands 68m above the waterline. 2500 square meters of sail, twin daggerboards and rudders and a telescoping/canting keel allow this yacht to easily achieve speeds into the mid-20’s in moderate winds and well above 30 knots in strong winds. Advanced and proven sail handling systems provide the necessary flexibility and safety needed to confidently achieve those high speeds.",
     "shortDescription": "Sherlock Superyacht",
     "shortSummary": null,
     "builder": null,
@@ -34679,7 +33143,7 @@
         "ft": 39
       }
     },
-    "description": "Our goal at Farr Yacht Design with the new Najad 395 was to look back at Najad Yacht\u2019s history, as well as forward to their future, and to create two new 12m models that would help take important steps forward while remaining true Najads. The brand Najad has so much great heritage, that our steps as thoughtful designers had to be very carefully considered. The Najad 395 that we have created together is an artful blend of performance improvements and industrialization, with traditional values, sea worthiness, and good solid engineering. Both versions of the boat, center cockpit and aft cockpit, have been developed with the attention deserving of single focus models, and yet have achieved a level of industrialized integration which is a real testament to the team. We are confident that we have created new Najad 395\u2019s that can stand the test of time, and be rewarding, and confidence inspiring yachts for her owners well into the future.",
+    "description": "Our goal at Farr Yacht Design with the new Najad 395 was to look back at Najad Yacht’s history, as well as forward to their future, and to create two new 12m models that would help take important steps forward while remaining true Najads. The brand Najad has so much great heritage, that our steps as thoughtful designers had to be very carefully considered. The Najad 395 that we have created together is an artful blend of performance improvements and industrialization, with traditional values, sea worthiness, and good solid engineering. Both versions of the boat, center cockpit and aft cockpit, have been developed with the attention deserving of single focus models, and yet have achieved a level of industrialized integration which is a real testament to the team. We are confident that we have created new Najad 395’s that can stand the test of time, and be rewarding, and confidence inspiring yachts for her owners well into the future.",
     "shortDescription": "Najad 395",
     "shortSummary": null,
     "builder": null,
@@ -34997,7 +33461,7 @@
         "ft": 14.7
       }
     },
-    "description": "Farr Yacht Design presents Design 826, a revolutionary new IMOCA 60 design that has been developed from a clean sheet of paper for the next era of offshore sailing. This design builds upon our extensive experience in IMOCA 60 design and leverages much of our ongoing Vendee Globe IMOCA 2020 concept developments. The boat is envisioned to be easily adaptable for singlehanded, doublehanded or crewed sailing with specific consideration for the Volvo Ocean Race courses and the implications of sailing with 5 crew and an onboard reporter.\n\nUnlike the existing IMOCA fleet, this design has been optimized from the outset to leverage the full power of hydrofoils. The forces generated by the foils increase the speed potential but also alter how the hydrodynamic forces are shared by the hull and the different appendages. Compared to conventional IMOCA designs, this results in significant changes in the optimal design parameters, hull form shape and dimensions, foil design, keel placement and incline angles as well as having significant sail design and aerodynamic considerations.\n\nThe advanced foil designs leverage FYD multi-year investment in the development of foil assisted designs, including our development of the world\u2019s largest foil assisted monohull due to launch in Spring 2019. The higher speeds and increased impact loadings for foil assisted boats, coupled with the rule drivers to the minimum possible structural weight require a next generation of structural concept, one that minimizes weight without sacrificing strength or reliability and robustness. As with all FYD designs, the structural approach is always carefully considered in view of buildability and cost in order to insure the resulting product meets all of the team\u2019s objectives.\n\nThe boat must be able to operate at peak efficiency, able to maintain high average speeds for the solo sailor while being robust enough to be pushed to the limit by a full crew. On a performance basis this emphasizes the need for a boat that is easily driven and as sea kindly as possible; able to achieve excellent speeds even when in non-optimal configurations. The deck and interior arrangements, rigging and deck hardware systems are ergonomically optimized with this in mind. As displayed, this design incorporates a deck and interior layout that has been developed to support crewed sailing with an emphasis on human helming, gear stacking, guest space and media inclusion. A design only focused on solo or doublehanded racing would likely result in a different cockpit, deck layout and interior.",
+    "description": "Farr Yacht Design presents Design 826, a revolutionary new IMOCA 60 design that has been developed from a clean sheet of paper for the next era of offshore sailing. This design builds upon our extensive experience in IMOCA 60 design and leverages much of our ongoing Vendee Globe IMOCA 2020 concept developments. The boat is envisioned to be easily adaptable for singlehanded, doublehanded or crewed sailing with specific consideration for the Volvo Ocean Race courses and the implications of sailing with 5 crew and an onboard reporter.\n\nUnlike the existing IMOCA fleet, this design has been optimized from the outset to leverage the full power of hydrofoils. The forces generated by the foils increase the speed potential but also alter how the hydrodynamic forces are shared by the hull and the different appendages. Compared to conventional IMOCA designs, this results in significant changes in the optimal design parameters, hull form shape and dimensions, foil design, keel placement and incline angles as well as having significant sail design and aerodynamic considerations.\n\nThe advanced foil designs leverage FYD multi-year investment in the development of foil assisted designs, including our development of the world’s largest foil assisted monohull due to launch in Spring 2019. The higher speeds and increased impact loadings for foil assisted boats, coupled with the rule drivers to the minimum possible structural weight require a next generation of structural concept, one that minimizes weight without sacrificing strength or reliability and robustness. As with all FYD designs, the structural approach is always carefully considered in view of buildability and cost in order to insure the resulting product meets all of the team’s objectives.\n\nThe boat must be able to operate at peak efficiency, able to maintain high average speeds for the solo sailor while being robust enough to be pushed to the limit by a full crew. On a performance basis this emphasizes the need for a boat that is easily driven and as sea kindly as possible; able to achieve excellent speeds even when in non-optimal configurations. The deck and interior arrangements, rigging and deck hardware systems are ergonomically optimized with this in mind. As displayed, this design incorporates a deck and interior layout that has been developed to support crewed sailing with an emphasis on human helming, gear stacking, guest space and media inclusion. A design only focused on solo or doublehanded racing would likely result in a different cockpit, deck layout and interior.",
     "shortDescription": "VOR IMOCA 60 OD",
     "shortSummary": null,
     "builder": null,
@@ -35678,7 +34142,7 @@
         "ft": 40
       }
     },
-    "description": "Around the world we are seeing a resurgence of interest in high performance race boats at the 40\u2019 size. Originating in the UK, the Fast 40+ class has gone from strength to strength providing exceptionally close racing for well matched, high performance 40 footers. The dynamic performance of the Fast 40\u2019s and their more accessible construction and operating costs have peaked the interest of sailors around the world. We are seeing a significant amount of interest in boats of this style from Australia, New Zealand, USA, and European owners with particular interest in boats that are not solely targeted at inshore style racing. Responding to this interest we have developed a brand new design that reflects the recent evolutions of the IRC and Fast 40+ rules, but is specifically optimised to a larger component of offshore sailing conditions; positioned to excel in both inshore regattas and in the offshore races.\n\n\u2022 Design parameters optimised to the 2018 FAST 40+ class rule and targeted to perform both inshore and offshore in dynamic conditions\n\n\u2022 An aggressive approach to maximize the benefit of moving crew weight both longitudinally and transversely\n\n\u2022 Refined, high stability/low drag hull shape integrated with advanced deck and structural design\n\n\u2022 Modern, open cockpit deck geometry designed to maximize efficient handling with minimized weight, windage and pitch gyradius\n\n\u2022 Maximum-performance high efficiency appendages for impressive downwind offshore performance and high lift in demanding conditions or racing in tight fleets\n\n\u2022 Easily re-modeable to optimise for inshore or offshore focused schedules\n\n\u2022 Light, reliable and efficient structural design integrated with deck and rig features\n\nThis design is developed to excel in coastal and offshore races where dynamic reaching performance is paramount while still providing excellent inshore performance in tight windward leeward regattas. Design 841 is a product of the latest in design technology and leverages 40 years of design experience. It features a fresh look at every element of the boat, leaving no stone unturned. It combines cutting-edge research with countless innovations and refinements that will define the next generation of FAST 40+.\n\nWe are in advanced discussions with Van Munster boats in Australia in preparation for a construction start that would see the first boat available for the Australian Summer. A full design presentation, proposed specification and pricing is available upon request.",
+    "description": "Around the world we are seeing a resurgence of interest in high performance race boats at the 40’ size. Originating in the UK, the Fast 40+ class has gone from strength to strength providing exceptionally close racing for well matched, high performance 40 footers. The dynamic performance of the Fast 40’s and their more accessible construction and operating costs have peaked the interest of sailors around the world. We are seeing a significant amount of interest in boats of this style from Australia, New Zealand, USA, and European owners with particular interest in boats that are not solely targeted at inshore style racing. Responding to this interest we have developed a brand new design that reflects the recent evolutions of the IRC and Fast 40+ rules, but is specifically optimised to a larger component of offshore sailing conditions; positioned to excel in both inshore regattas and in the offshore races.\n\n• Design parameters optimised to the 2018 FAST 40+ class rule and targeted to perform both inshore and offshore in dynamic conditions\n\n• An aggressive approach to maximize the benefit of moving crew weight both longitudinally and transversely\n\n• Refined, high stability/low drag hull shape integrated with advanced deck and structural design\n\n• Modern, open cockpit deck geometry designed to maximize efficient handling with minimized weight, windage and pitch gyradius\n\n• Maximum-performance high efficiency appendages for impressive downwind offshore performance and high lift in demanding conditions or racing in tight fleets\n\n• Easily re-modeable to optimise for inshore or offshore focused schedules\n\n• Light, reliable and efficient structural design integrated with deck and rig features\n\nThis design is developed to excel in coastal and offshore races where dynamic reaching performance is paramount while still providing excellent inshore performance in tight windward leeward regattas. Design 841 is a product of the latest in design technology and leverages 40 years of design experience. It features a fresh look at every element of the boat, leaving no stone unturned. It combines cutting-edge research with countless innovations and refinements that will define the next generation of FAST 40+.\n\nWe are in advanced discussions with Van Munster boats in Australia in preparation for a construction start that would see the first boat available for the Australian Summer. A full design presentation, proposed specification and pricing is available upon request.",
     "shortDescription": "Fast 40+ Van Munster",
     "shortSummary": null,
     "builder": "Van Munster Boats",
@@ -35814,7 +34278,7 @@
     "specs": {
       "loa": {
         "m": 13.1,
-        "ft": 13.1
+        "ft": 43.0
       },
       "lwl": {
         "m": 11.43,
@@ -35833,7 +34297,7 @@
         "lbs": 13900.0
       }
     },
-    "description": "This design embodies Farr Yacht Design\u2019s deep understanding of the IRC rule space, and our many years producing high level grand-prix and production racer and cruiser designs. The concept is positioned to provide exceptional performance in a wide range of conditions; able to perform in both the toughest offshore races and weekend club races and rewarding to sail by both Corinthian crews and professionals. While designed to achieve an exceptional IRC rating the boat is envisioned as an excellent all-purpose boat, able to perform under a range of handicap and rating systems including ORCi, PHRF and others. At 43\u2019 the boat has been sized to fit within the burgeoning Super 12 Class in Australia to maximize racing opportunities.\n\nMany of the larger manufacturers have adjusted their focus to pure cruising and charter solutions meaning there have been very few high performance cruiser/racers developed in recent years. Many of our existing cruiser/racer designs have continued to perform well and place in major events around the world but there are very limited options for these owners to move up into. These owners are looking for a new boat that retains the dual purpose cruising and racing concept but takes advantage of the significant advancements in design and construction that have occurred in recent years.",
+    "description": "This design embodies Farr Yacht Design’s deep understanding of the IRC rule space, and our many years producing high level grand-prix and production racer and cruiser designs. The concept is positioned to provide exceptional performance in a wide range of conditions; able to perform in both the toughest offshore races and weekend club races and rewarding to sail by both Corinthian crews and professionals. While designed to achieve an exceptional IRC rating the boat is envisioned as an excellent all-purpose boat, able to perform under a range of handicap and rating systems including ORCi, PHRF and others. At 43’ the boat has been sized to fit within the burgeoning Super 12 Class in Australia to maximize racing opportunities.\n\nMany of the larger manufacturers have adjusted their focus to pure cruising and charter solutions meaning there have been very few high performance cruiser/racers developed in recent years. Many of our existing cruiser/racer designs have continued to perform well and place in major events around the world but there are very limited options for these owners to move up into. These owners are looking for a new boat that retains the dual purpose cruising and racing concept but takes advantage of the significant advancements in design and construction that have occurred in recent years.",
     "shortDescription": "13m IRC Cruiser/Racer",
     "shortSummary": null,
     "builder": null,
@@ -36604,7 +35068,7 @@
         "ft": 13.1
       }
     },
-    "description": "The very experienced owner of Kiboko 4, a Southern Wind 108, expects their yacht to improve upon the style and performance of Kiboko 3, a Southern Wind 105, also with naval architecture furnished by Farr Yacht Design. Fast passage-making in comfort and safety with ease of handling and the potential to win superyacht racing events all in a stunning, exceptionally beautiful yacht is the expectation.\n\nStarting with the Southern Wind 108 platform, Farr Yacht Design refined the rig, sailplan and appendages for the chosen standard propulsion system with the goal of optimizing the performance envelope for typical Mediterranean conditions and the occasional racing under the ORCsy measurement and handicapping system. Two important design features of Kiboko 4 are generous sail area (607m\u00b2 upwind, 1288m\u00b2 downwind, 3.57 SA/WS upwind, 70.7 SA/DISP downwind) for the potential not only to effectively race in light winds but the maneuverability and acceleration to excel in those conditions and high stability (6.2m tapered planform lifting keel, total yacht VCG 0.2m below the DWL).\n\nThe requirements for the hull are first for it to be an item of beauty and style but contained within it the optimized hydrodynamic parameters to achieve the best speeds. The beam-to-draft has been kept low (6.0) to keep the wetted surface (and thereby the sailplan area) down. The prismatic coefficient (Cp) of 0.555 is maintained from 0\u00b0 through 15\u00b0 of heel with a slight reduction to 0.54 at 25\u00b0 with a precisely designed longitudinal volume distribution. Target stability levels are achieved with a ballast (keel fin and bulb) ratio of 33%. The wide transom is designed with aggressive lift outboard to finely tune the longitudinal trim with heel to maximize effective sailing length, avoid excessive bow down trim and promote good handling in a wide range of wind and sea conditions.\n\nThe twin rudder arrangement allows Kiboko 4 to be pushed to high heel angles (27\u00b0 optimum) with exceptional controllability and speed for upwind and reaching while racing. As those same high heel angles are not desirable while cruising the sailplan is flexible and easily depowered with a furling staysail at 55% of the all-purpose headsail sized and the usual multiple mainsail reefs. The full all-purpose jib with single main reef or full main with staysail sail combinations are both well-balanced first steps in sail area reduction and permit the crew a choice depending on the weather conditions.\n\nLastly the owner is moving from a low aspect ratio, fixed keel (4.5m draft) on the previous boat to a high-aspect ratio, lifting keel with a draft range of 6.2 to 4.0m. Not only does the keel design improve performance and efficiency but the 0.5m draft difference will open up many more harbors and cruising destinations.",
+    "description": "The very experienced owner of Kiboko 4, a Southern Wind 108, expects their yacht to improve upon the style and performance of Kiboko 3, a Southern Wind 105, also with naval architecture furnished by Farr Yacht Design. Fast passage-making in comfort and safety with ease of handling and the potential to win superyacht racing events all in a stunning, exceptionally beautiful yacht is the expectation.\n\nStarting with the Southern Wind 108 platform, Farr Yacht Design refined the rig, sailplan and appendages for the chosen standard propulsion system with the goal of optimizing the performance envelope for typical Mediterranean conditions and the occasional racing under the ORCsy measurement and handicapping system. Two important design features of Kiboko 4 are generous sail area (607m² upwind, 1288m² downwind, 3.57 SA/WS upwind, 70.7 SA/DISP downwind) for the potential not only to effectively race in light winds but the maneuverability and acceleration to excel in those conditions and high stability (6.2m tapered planform lifting keel, total yacht VCG 0.2m below the DWL).\n\nThe requirements for the hull are first for it to be an item of beauty and style but contained within it the optimized hydrodynamic parameters to achieve the best speeds. The beam-to-draft has been kept low (6.0) to keep the wetted surface (and thereby the sailplan area) down. The prismatic coefficient (Cp) of 0.555 is maintained from 0° through 15° of heel with a slight reduction to 0.54 at 25° with a precisely designed longitudinal volume distribution. Target stability levels are achieved with a ballast (keel fin and bulb) ratio of 33%. The wide transom is designed with aggressive lift outboard to finely tune the longitudinal trim with heel to maximize effective sailing length, avoid excessive bow down trim and promote good handling in a wide range of wind and sea conditions.\n\nThe twin rudder arrangement allows Kiboko 4 to be pushed to high heel angles (27° optimum) with exceptional controllability and speed for upwind and reaching while racing. As those same high heel angles are not desirable while cruising the sailplan is flexible and easily depowered with a furling staysail at 55% of the all-purpose headsail sized and the usual multiple mainsail reefs. The full all-purpose jib with single main reef or full main with staysail sail combinations are both well-balanced first steps in sail area reduction and permit the crew a choice depending on the weather conditions.\n\nLastly the owner is moving from a low aspect ratio, fixed keel (4.5m draft) on the previous boat to a high-aspect ratio, lifting keel with a draft range of 6.2 to 4.0m. Not only does the keel design improve performance and efficiency but the 0.5m draft difference will open up many more harbors and cruising destinations.",
     "shortDescription": "Southern Wind SW108 Superyacht",
     "shortSummary": "Award-winning 108ft sailing superyacht. Sailing Yacht of the Year 2025.",
     "builder": "Southern Wind",
@@ -37704,26 +36168,7 @@
     "isArchived": null,
     "images": {
       "hero": "414-hero.jpg",
-      "gallery": [
-        "414_wally_08.jpg",
-        "414_venomous.jpg",
-        "414_wally_01.jpg",
-        "414_wally_02.jpg",
-        "414_wally_02sm.jpg",
-        "414_wally_03.jpg",
-        "414_wally_04.jpg",
-        "414_wally_05.jpg",
-        "414_wally_06.jpg",
-        "414_wally_07.jpg",
-        "414_wally_09.jpg",
-        "414_wally_10.jpg",
-        "414_wally_11.jpg",
-        "414_wally_12.jpg",
-        "414promo.jpg",
-        "414wallypromo1.jpg",
-        "414wallypromo2.jpg",
-        "414wallypromo3.jpg"
-      ],
+      "gallery": [],
       "card": null,
       "cardCropHint": null,
       "credit": null,

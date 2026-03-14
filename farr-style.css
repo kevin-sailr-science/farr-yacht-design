@@ -54,11 +54,8 @@
   /* Farr Brand – light theme */
   --farr-deep:      #00267F;   /* Pantone 280C – Farr Blue              */
   --farr-mid:       #f5f7fa;   /* light neutral background band         */
-  --farr-surface:   #edf0f5;   /* slightly darker surface               */
   --panel:          #ffffff;   /* card / panel background               */
-  --panel-hover:    #f0f4f9;   /* panel hover state                     */
   --border:         #d5dce6;   /* borders                               */
-  --border-hover:   #b0bccc;   /* border hover                          */
   --text-primary:   #1a1f2e;   /* near-black text                       */
   --text-secondary: #4a5568;   /* secondary text                        */
   --text-muted:     #606b7d;   /* muted/caption text  (4.97:1 on white) */
@@ -67,11 +64,8 @@
   --accent-soft:    rgba(0, 38, 127, 0.06);
   --cta:            #F97700;   /* Farr Orange – call to action          */
   --cta-hover:      #e06900;   /* CTA hover                             */
-  --gold:           #C0A280;   /* Farr Bronze                           */
-  --silver:         #9aa8b8;   /* muted silver                          */
   --red-flag:       #e54d4d;
   --green-ok:       #3dba72;
-  --info:           #0f5f95;   /* Lighter blue from palette             */
   --font-display:   'Jost', system-ui, sans-serif;
   --font-heading:   'Jost', system-ui, sans-serif;
   --font-body:      'Kumbh Sans', system-ui, sans-serif;
@@ -96,7 +90,6 @@
   --text-lg:        1.25rem;   /* 20px   - section titles               */
   --text-xl:        1.6rem;    /* 25.6px - page subtitles               */
   --text-2xl:       2rem;      /* 32px   - page titles                  */
-  --text-3xl:       2.6rem;    /* 41.6px - hero headings                */
 
   /* Spacing tokens (Sprint 14C) */
   --space-xs:       0.25rem;   /* 4px                                   */
