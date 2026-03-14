@@ -118,6 +118,62 @@ if os.path.isdir(images_dir):
     for f in os.listdir(images_dir):
         existing_images.add(f.lower())
 
+# ─── Image resolution cascade (Sprint IMG-41) ───
+
+def resolve_image(boat, context="hero"):
+    """Resolve the image URL for a boat in any context.
+
+    Context: "hero" (detail page, OG tags), "card" (portfolio/feature cards)
+    Returns: dict with keys: url, has_image, crop_hint, alt
+    """
+    images = boat.get("images") or {}
+    slug = boat.get("slug", "")
+    name = boat.get("name", "") or boat.get("title", "") or ""
+    design_type = boat.get("designType", "") or ""
+
+    # Resolution cascade
+    img_file = None
+    if context == "card" and images.get("card"):
+        img_file = images["card"]
+    if not img_file and images.get("hero"):
+        img_file = images["hero"]
+
+    has_image = False
+    image_url = f"/images/{slug}.jpg"
+
+    if img_file and img_file.lower() in existing_images:
+        has_image = True
+        image_url = f"/images/{img_file}"
+    else:
+        # Slug-based fallback
+        for ext in [".webp", ".jpg", ".jpeg", ".png", ".gif"]:
+            if f"{slug}{ext}" in existing_images:
+                has_image = True
+                image_url = f"/images/{slug}{ext}"
+                break
+
+    # Crop hint
+    if context == "card" and images.get("cardCropHint"):
+        crop_hint = images["cardCropHint"]
+    elif images.get("cropHint"):
+        crop_hint = images["cropHint"]
+    else:
+        crop_hint = ""
+
+    # Alt text
+    alt = images.get("alt") or ""
+    if not alt and name:
+        alt = str(name)
+        if design_type:
+            alt += f" {str(design_type).lower()}"
+
+    return {
+        "url": image_url,
+        "has_image": has_image,
+        "crop_hint": crop_hint,
+        "alt": alt,
+    }
+
 # ─── Tier-specific plan section HTML ───
 
 def build_plan_section(boat):
@@ -313,22 +369,13 @@ def build_yacht_page(boat):
     if meta_line and year:
         meta_line += f" | {year}"
 
-    # Image — check images.main from boats.json first, then fall back to slug
-    has_image = False
-    image_url = f"/images/{slug}.jpg"
-    img_main = (boat.get("images") or {}).get("main", "")
-    if img_main and img_main.lower() in existing_images:
-        has_image = True
-        image_url = f"/images/{img_main}"
-    else:
-        for ext in [".jpg", ".jpeg", ".png", ".gif"]:
-            if f"{slug}{ext}" in existing_images:
-                has_image = True
-                break
-
-    # cropHint — per-image background-position override (Sprint 32B)
-    crop_hint = (boat.get("images") or {}).get("cropHint", "")
+    # Image — resolve via cascade (Sprint IMG-41)
+    img_resolved = resolve_image(boat, context="hero")
+    has_image = img_resolved["has_image"]
+    image_url = img_resolved["url"]
+    crop_hint = img_resolved["crop_hint"]
     crop_style = f" background-position:{crop_hint};" if crop_hint else ""
+    img_alt = img_resolved["alt"] or esc(display_name)
 
     img_tbc = ""
     if not has_image:
@@ -421,7 +468,7 @@ def build_yacht_page(boat):
 
     # Build image style + ARIA attributes (only when image exists)
     detail_img_style = f''' style="background-image:url('{image_url}');{crop_style}"''' if has_image else ""
-    detail_img_aria = f''' role="img" aria-label="{esc(display_name)}"''' if has_image else ""
+    detail_img_aria = f''' role="img" aria-label="{esc(img_alt)}"''' if has_image else ""
     # Lightbox click handler (only when image exists)
     detail_img_click = f''' onclick="openLightbox('{image_url}','{esc(display_name)}')"''' if has_image else ""
 
@@ -573,14 +620,10 @@ def build_portfolio_page():
         tags = boat.get("tags", [])
         plan_status = boat.get("planStatus", "coming_soon")
 
-        # Resolve image
-        card_img_main = (boat.get("images") or {}).get("main", "")
-        if card_img_main and card_img_main.lower() in existing_images:
-            has_img = True
-            img_url = f"/images/{card_img_main}"
-        else:
-            has_img = f"{slug}.jpg" in existing_images
-            img_url = f"/images/{slug}.jpg"
+        # Resolve image via cascade (Sprint IMG-41)
+        card_resolved = resolve_image(boat, context="card")
+        has_img = card_resolved["has_image"]
+        img_url = card_resolved["url"]
 
         # Numeric sort key for design number
         dn_num = 0
@@ -604,7 +647,7 @@ def build_portfolio_page():
             'lm': loa_m,         # LOA meters
             'hi': has_img,       # has image
             'iu': img_url,       # image url
-            'ch': (boat.get("images") or {}).get("cropHint", ""),  # cropHint
+            'ch': card_resolved["crop_hint"],  # cropHint
             'ps': plan_status,   # plan status
             'c': cat,            # category
             'tags': tags,        # tags (Production, Concept, Military, Commercial)
@@ -1451,6 +1494,53 @@ sitemap_xml = f'''<?xml version="1.0" encoding="UTF-8"?>
 with open(os.path.join(SITE, "sitemap.xml"), 'w') as f:
     f.write(sitemap_xml)
 print(f"Generated sitemap.xml ({len(sitemap_urls)} URLs)")
+
+# ─── Generate yacht_cards.json (Sprint IMG-41) ───
+# Pre-resolved image data for feature pages to consume
+
+yacht_cards = {}
+for boat in boats:
+    slug = boat.get("slug", "")
+    if not slug:
+        continue
+    name = boat.get("name", "") or boat.get("title", "")
+    design_num = boat.get("designNumber", "")
+    year = boat.get("year", "")
+    design_type = boat.get("designType", "")
+    builder = boat.get("builder", "")
+    specs_obj = boat.get("specs") or {}
+    loa = specs_obj.get("loa", {}) if isinstance(specs_obj, dict) else {}
+    loa_ft = loa.get("ft") if isinstance(loa, dict) else None
+
+    hero = resolve_image(boat, context="hero")
+    card = resolve_image(boat, context="card")
+
+    yacht_cards[slug] = {
+        "slug": slug,
+        "designNumber": str(design_num),
+        "name": str(name) if name else "",
+        "year": year,
+        "designType": design_type,
+        "builder": str(builder) if builder else "",
+        "loaFt": loa_ft,
+        "hero": {
+            "url": hero["url"],
+            "hasImage": hero["has_image"],
+            "cropHint": hero["crop_hint"],
+            "alt": hero["alt"],
+        },
+        "card": {
+            "url": card["url"],
+            "hasImage": card["has_image"],
+            "cropHint": card["crop_hint"],
+            "alt": card["alt"],
+        },
+    }
+
+cards_path = os.path.join(SITE, "yacht_cards.json")
+with open(cards_path, 'w', encoding='utf-8') as f:
+    json.dump(yacht_cards, f, ensure_ascii=False, separators=(',', ':'))
+print(f"Generated yacht_cards.json ({len(yacht_cards)} designs)")
 
 # ─── Summary ───
 
