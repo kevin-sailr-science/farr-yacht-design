@@ -865,7 +865,7 @@ def build_portfolio_page():
           var numDisp = d.dn ? '#' + escH(d.dn) : '#' + escH(d.s);
           var meta = [];
           if (d.lf) meta.push(d.lf + '&prime;');
-          if (d.c) meta.push(escH(d.c));
+          if (d.tg) meta.push(escH(d.tg));
           if (d.ys) meta.push(d.ys);
           var metaStr = meta.join(' | ');
           var dot = '';
@@ -879,10 +879,15 @@ def build_portfolio_page():
           var typeTag = '';
           if (d.tg) typeTag = '<span class="yacht-card-type-tag yacht-card-type-' + d.tg.toLowerCase().replace(/[^a-z]/g, '-') + '">' + escH(d.tg) + '</span>';
 
-          // Improved title: "Type - Name" or just Name
-          var titleText = d.n;
-          if (d.tr && d.n && d.tr !== d.n && d.c !== d.tr) titleText = escH(d.tr) + ' - ' + escH(d.n);
-          else titleText = escH(d.n);
+          // Tag pills (Production, Military, etc.)
+          var tagPills = '';
+          if (d.tags && d.tags.length) {{
+            tagPills = '<div class="yacht-card-tags">';
+            for (var ti = 0; ti < d.tags.length; ti++) {{
+              tagPills += '<span class="yacht-card-tag-pill">' + escH(d.tags[ti]) + '</span>';
+            }}
+            tagPills += '</div>';
+          }}
 
           html += '<a href="/yacht/' + d.s + '.html" class="yacht-card" style="text-decoration:none;">' +
             '<div class="yacht-card-image"' + imgAttr + '>' + typeTag + tbc + '</div>' +
@@ -890,8 +895,9 @@ def build_portfolio_page():
               '<div style="display:flex;align-items:center;gap:0.4rem;">' +
                 '<div class="yacht-card-number">' + numDisp + '</div>' + dot +
               '</div>' +
-              '<div class="yacht-card-name">' + titleText + '</div>' +
+              '<div class="yacht-card-name">' + escH(d.n) + '</div>' +
               (metaStr ? '<div class="yacht-card-meta">' + metaStr + '</div>' : '') +
+              tagPills +
             '</div></a>';
         }}
         $grid.innerHTML = html;
@@ -904,11 +910,13 @@ def build_portfolio_page():
           var loaStr = '';
           if (d.lf) loaStr = d.lf + ' ft';
           else if (d.lm) loaStr = d.lm + ' m';
+          var typeCell = escH(d.tg || d.tr);
+          if (d.tags && d.tags.length) typeCell += ' <span style="color:var(--text-muted);font-size:0.78em;">' + d.tags.map(escH).join(', ') + '</span>';
           html += '<tr>' +
             '<td><a href="/yacht/' + d.s + '.html">' + escH(d.dn || d.s) + '</a></td>' +
             '<td><a href="/yacht/' + d.s + '.html">' + escH(d.n) + '</a></td>' +
             '<td>' + (d.ys || '') + '</td>' +
-            '<td>' + escH(d.tg || d.tr) + '</td>' +
+            '<td>' + typeCell + '</td>' +
             '<td class="pf-hide-mobile">' + loaStr + '</td>' +
           '</tr>';
         }}

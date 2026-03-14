@@ -464,14 +464,23 @@ footer div[style*="border-top"] { border-top-color: rgba(255,255,255,0.15) !impo
   backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px);
   line-height: 1.2;
 }
+/* Type group colors — aligned to Sprint 46 taxonomy */
 .yacht-card-type-racing { background: rgba(180, 40, 40, 0.8); }
 .yacht-card-type-cruising { background: rgba(30, 100, 160, 0.8); }
-.yacht-card-type-production { background: rgba(40, 130, 80, 0.8); }
-.yacht-card-type-offshore { background: rgba(160, 80, 20, 0.8); }
+.yacht-card-type-one-design { background: rgba(40, 130, 80, 0.8); }
 .yacht-card-type-dinghy---small { background: rgba(100, 80, 150, 0.8); }
 .yacht-card-type-power { background: rgba(60, 60, 60, 0.8); }
 .yacht-card-type-superyacht { background: rgba(140, 120, 50, 0.8); }
+.yacht-card-type-research { background: rgba(80, 120, 140, 0.8); }
 .yacht-card-type-other { background: rgba(80, 80, 80, 0.7); }
+
+/* Tag pills on portfolio cards (Sprint 46 taxonomy) */
+.yacht-card-tags { display: flex; flex-wrap: wrap; gap: 0.25rem; margin-top: 0.35rem; }
+.yacht-card-tag-pill {
+  font-family: var(--font-mono); font-size: var(--text-3xs); font-weight: 500;
+  padding: 0.1rem 0.4rem; border-radius: 3px; line-height: 1.3;
+  background: var(--farr-surface); color: var(--text-muted); border: 1px solid var(--border);
+}
 .yacht-card-image img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s; }
 .yacht-card:hover .yacht-card-image img { transform: scale(1.04); }
 .yacht-card-body { padding: var(--space-md) 1.25rem 1.25rem; flex-grow: 1; display: flex; flex-direction: column; }
