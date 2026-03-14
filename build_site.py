@@ -958,15 +958,31 @@ def build_portfolio_page():
         var hasFilters = state.search || state.type || state.decade || state.tag;
         $clear.style.display = hasFilters ? 'inline-block' : 'none';
 
-        if (state.view === 'grid') {{
-          $grid.style.display = '';
-          $list.style.display = 'none';
-          renderGrid(items);
-          observeLazy();
-        }} else {{
+        /* UC-P80: Empty state when no results match filters */
+        var emptyEl = document.getElementById('pf-empty-state');
+        if (items.length === 0 && hasFilters) {{
+          if (!emptyEl) {{
+            emptyEl = document.createElement('div');
+            emptyEl.id = 'pf-empty-state';
+            emptyEl.style.cssText = 'text-align:center;padding:3rem 1rem;color:var(--text-muted);';
+            emptyEl.innerHTML = '<p style="font-size:1.1rem;margin-bottom:0.75rem;">No designs match your filters.</p><p style="font-size:0.85rem;">Try adjusting your criteria or <button onclick="document.getElementById(\\'pf-clear\\').click();" style="color:var(--accent);background:none;border:none;cursor:pointer;text-decoration:underline;font-size:0.85rem;">clear all filters</button>.</p>';
+            $grid.parentNode.insertBefore(emptyEl, $grid);
+          }}
+          emptyEl.style.display = '';
           $grid.style.display = 'none';
-          $list.style.display = '';
-          renderList(items);
+          $list.style.display = 'none';
+        }} else {{
+          if (emptyEl) emptyEl.style.display = 'none';
+          if (state.view === 'grid') {{
+            $grid.style.display = '';
+            $list.style.display = 'none';
+            renderGrid(items);
+            observeLazy();
+          }} else {{
+            $grid.style.display = 'none';
+            $list.style.display = '';
+            renderList(items);
+          }}
         }}
       }}
 
@@ -1562,12 +1578,14 @@ for boat in boats:
     hero = resolve_image(boat, context="hero")
     card = resolve_image(boat, context="card")
 
+    tags = boat.get("tags", []) or []
     yacht_cards[slug] = {
         "slug": slug,
         "designNumber": str(design_num),
         "name": str(name) if name else "",
         "year": year,
         "designType": design_type,
+        "tags": tags,
         "builder": str(builder) if builder else "",
         "loaFt": loa_ft,
         "hero": {
