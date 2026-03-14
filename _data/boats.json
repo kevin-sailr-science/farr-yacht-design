@@ -29049,7 +29049,10 @@
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": false,
+    "tags": [
+      "Production"
+    ]
   },
   {
     "title": "675M2",
@@ -29097,7 +29100,10 @@
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": false,
+    "tags": [
+      "Production"
+    ]
   },
   {
     "title": "678",
@@ -29394,7 +29400,10 @@
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": false,
+    "tags": [
+      "Production"
+    ]
   },
   {
     "title": "715",
@@ -29607,7 +29616,10 @@
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": false,
+    "tags": [
+      "Production"
+    ]
   },
   {
     "title": "720M2",
@@ -29655,7 +29667,10 @@
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": false,
+    "tags": [
+      "Production"
+    ]
   },
   {
     "title": "720M3",
@@ -29703,7 +29718,10 @@
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": false,
+    "tags": [
+      "Production"
+    ]
   },
   {
     "title": "722",
@@ -30043,7 +30061,10 @@
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": false,
+    "tags": [
+      "Production"
+    ]
   },
   {
     "title": "727",
@@ -34475,7 +34496,10 @@
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": false,
+    "tags": [
+      "Military"
+    ]
   },
   {
     "title": "849",
@@ -35197,7 +35221,11 @@
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": false,
+    "tags": [
+      "Military",
+      "Power"
+    ]
   },
   {
     "title": "882",
@@ -36059,7 +36087,10 @@
     "hasCardPDF": false,
     "cardDrawingCount": null,
     "cardDrawingsAvailable": null,
-    "hidden": false
+    "hidden": false,
+    "tags": [
+      "Production"
+    ]
   },
   {
     "nid": 5471,
