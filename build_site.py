@@ -488,10 +488,15 @@ def build_yacht_page(boat):
             og_img_w, og_img_h = 0, 0  # omit dimensions if unreadable
     og_size_tags = ""
     if og_img_w and og_img_h:
+        # Detect actual image content type from file extension
+        og_ext = os.path.splitext(og_image_url)[1].lower()
+        og_mime_map = {'.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.png': 'image/png',
+                       '.webp': 'image/webp', '.gif': 'image/gif', '.svg': 'image/svg+xml'}
+        og_content_type = og_mime_map.get(og_ext, 'image/jpeg')
         og_size_tags = f'''
   <meta property="og:image:width" content="{og_img_w}" />
   <meta property="og:image:height" content="{og_img_h}" />
-  <meta property="og:image:type" content="image/png" />'''
+  <meta property="og:image:type" content="{og_content_type}" />'''
     og_tags = f'''<meta name="description" content="{esc(og_desc)}" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="{SITE_URL}/yacht/{slug}.html" />
