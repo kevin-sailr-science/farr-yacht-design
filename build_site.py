@@ -326,9 +326,13 @@ def build_yacht_page(boat):
                 has_image = True
                 break
 
+    # cropHint — per-image background-position override (Sprint 32B)
+    crop_hint = (boat.get("images") or {}).get("cropHint", "")
+    crop_style = f" background-position:{crop_hint};" if crop_hint else ""
+
     img_tbc = ""
     if not has_image:
-        img_tbc = '''<span class="img-tbc"><svg class="img-tbc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="7" width="18" height="14" rx="2"/><path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2"/><circle cx="12" cy="14" r="3"/></svg><span class="img-tbc-label">Photo coming soon</span></span>'''
+        img_tbc = '''<span class="img-tbc"><svg class="img-tbc-icon" viewBox="0 0 100 60" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 45 Q20 42 30 44 Q50 35 70 40 Q80 38 90 42 L90 50 Q80 48 70 49 Q50 47 30 50 Q20 49 10 50 Z" fill="currentColor" opacity="0.15"/><path d="M50 10 L50 38 M50 10 L75 30 Q65 28 55 32 Z" stroke="currentColor" stroke-width="1" fill="currentColor" opacity="0.12"/><path d="M50 10 L42 28 Q46 26 50 30" stroke="currentColor" stroke-width="0.8" fill="none" opacity="0.1"/></svg><span class="img-tbc-label">Photo coming soon</span></span>'''
 
     # Description
     raw_desc = boat.get("description", "") or ""
@@ -416,8 +420,10 @@ def build_yacht_page(boat):
     plan_section = build_plan_section(boat)
 
     # Build image style + ARIA attributes (only when image exists)
-    detail_img_style = f''' style="background-image:url('{image_url}')"''' if has_image else ""
+    detail_img_style = f''' style="background-image:url('{image_url}');{crop_style}"''' if has_image else ""
     detail_img_aria = f''' role="img" aria-label="{esc(display_name)}"''' if has_image else ""
+    # Lightbox click handler (only when image exists)
+    detail_img_click = f''' onclick="openLightbox('{image_url}','{esc(display_name)}')"''' if has_image else ""
 
     # Build page content (inside <main>)
     content = f'''
@@ -432,7 +438,7 @@ def build_yacht_page(boat):
       </div>
       <div class="yacht-detail-body">
         <div>
-          <div class="yacht-detail-image"{detail_img_style}{detail_img_aria}>
+          <div class="yacht-detail-image"{detail_img_style}{detail_img_aria}{detail_img_click}>
             {img_tbc}
           </div>
           <div style="margin-top:1.5rem;">
@@ -454,7 +460,16 @@ def build_yacht_page(boat):
       <p style="font-family:var(--font-heading);font-size:1.15rem;color:var(--text-primary);margin-bottom:0.5rem;">Interested in a Farr design?</p>
       <p style="color:var(--text-secondary);font-size:0.9rem;max-width:500px;margin:0.5rem auto 1.25rem;">Whether you&rsquo;re looking for plans, consulting, or a new project &mdash; let&rsquo;s talk.</p>
       <a href="/contact.html" class="hero-cta" style="text-decoration:none;">Get in Touch</a>
-    </div>'''
+    </div>
+    <div class="yacht-lightbox" id="yachtLightbox" onclick="closeLightbox()">
+      <button class="yacht-lightbox-close" aria-label="Close">&times;</button>
+      <img id="lightboxImg" src="" alt="">
+    </div>
+    <script>
+    function openLightbox(src,alt){{var lb=document.getElementById('yachtLightbox'),img=document.getElementById('lightboxImg');img.src=src;img.alt=alt;lb.classList.add('active');document.body.style.overflow='hidden';}}
+    function closeLightbox(){{var lb=document.getElementById('yachtLightbox');lb.classList.remove('active');document.body.style.overflow='';}}
+    document.addEventListener('keydown',function(e){{if(e.key==='Escape')closeLightbox();}});
+    </script>'''
 
     # Wrap in base template
     page_title = f"{esc(display_name)} &mdash; Farr Yacht Design"
@@ -584,6 +599,7 @@ def build_portfolio_page():
             'lm': loa_m,         # LOA meters
             'hi': has_img,       # has image
             'iu': img_url,       # image url
+            'ch': (boat.get("images") or {}).get("cropHint", ""),  # cropHint
             'ps': plan_status,   # plan status
             'c': cat,            # category
             'tags': tags,        # tags (Production, Concept, Military, Commercial)
@@ -778,8 +794,8 @@ def build_portfolio_page():
           if (d.ps === 'available' || d.ps === 'scanned_available') dot = '<span style="width:7px;height:7px;border-radius:50%;background:#3dba72;flex-shrink:0;" title="Plans available"></span>';
           else if (d.ps === 'request_from_shed') dot = '<span style="width:7px;height:7px;border-radius:50%;background:#d97706;flex-shrink:0;" title="Archive request"></span>';
 
-          var imgAttr = d.hi ? ' data-bg="'+d.iu+'" role="img" aria-label="'+escH(d.n)+'"' : '';
-          var tbc = d.hi ? '' : '<span class="img-tbc"><svg class="img-tbc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="7" width="18" height="14" rx="2"/><path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2"/><circle cx="12" cy="14" r="3"/></svg><span class="img-tbc-label">Photo coming soon</span></span>';
+          var imgAttr = d.hi ? ' data-bg="'+d.iu+'"'+(d.ch ? ' data-crop="'+d.ch+'"' : '')+' role="img" aria-label="'+escH(d.n)+'"' : '';
+          var tbc = d.hi ? '' : '<span class="img-tbc"><svg class="img-tbc-icon" viewBox="0 0 100 60" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M10 45 Q20 42 30 44 Q50 35 70 40 Q80 38 90 42 L90 50 Q80 48 70 49 Q50 47 30 50 Q20 49 10 50 Z" fill="currentColor" opacity="0.15"/><path d="M50 10 L50 38 M50 10 L75 30 Q65 28 55 32 Z" stroke="currentColor" stroke-width="1" fill="currentColor" opacity="0.12"/><path d="M50 10 L42 28 Q46 26 50 30" stroke="currentColor" stroke-width="0.8" fill="none" opacity="0.1"/></svg><span class="img-tbc-label">Photo coming soon</span></span>';
 
           // Type tag overlay on card image
           var typeTag = '';
@@ -828,7 +844,7 @@ def build_portfolio_page():
               if (entry.isIntersecting) {{
                 var el = entry.target;
                 var bg = el.getAttribute('data-bg');
-                if (bg) {{ el.style.backgroundImage = 'url(' + bg + ')'; el.removeAttribute('data-bg'); }}
+                if (bg) {{ el.style.backgroundImage = 'url(' + bg + ')'; var cp = el.getAttribute('data-crop'); if (cp) el.style.backgroundPosition = cp; el.removeAttribute('data-bg'); }}
                 lazyObserver.unobserve(el);
               }}
             }});
@@ -840,6 +856,7 @@ def build_portfolio_page():
           // Fallback: load all images immediately
           $grid.querySelectorAll('[data-bg]').forEach(function(el) {{
             el.style.backgroundImage = 'url(' + el.getAttribute('data-bg') + ')';
+            var cp = el.getAttribute('data-crop'); if (cp) el.style.backgroundPosition = cp;
             el.removeAttribute('data-bg');
           }});
           return;
