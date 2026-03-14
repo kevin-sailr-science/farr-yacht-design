@@ -30206,11 +30206,31 @@
     "designType": "Racing Yacht",
     "specs": {
       "loa": {
-        "m": null,
-        "ft": 28.0
+        "m": 8.72,
+        "ft": 28.6
+      },
+      "lwl": {
+        "m": 8.02,
+        "ft": 26.3
+      },
+      "beam": {
+        "m": 2.87,
+        "ft": 9.4
+      },
+      "draft": {
+        "m": 2.1,
+        "ft": 6.89
+      },
+      "displacement": {
+        "kg": 1600,
+        "lbs": 3525
+      },
+      "ballast": {
+        "kg": 650,
+        "lbs": 1425
       }
     },
-    "description": "Design 732, FARR 280 ONE DESIGN, is a racing yacht designed by Farr Yacht Design in 2012. She has an overall length of 28 feet.",
+    "description": "The Farr 280 One Design is a production racing sailboat that delivers the excitement of grand prix racing to the under-30' one design arena. As a modern one design, it delivers contemporary grand prix features and style to a more achievable smaller boat package. The boat has dynamic performance on all points of sail, with a focus on inshore racing for a moderate crew size of five to six people. Bold hull shape with reverse stem, long chine, and wide beam. Clean flush deck layout with below-deck controls and a two-spreader carbon mast. Ready for offshore racing with optional package. ISO/CE Category B compliant.",
     "shortDescription": "28' One Design",
     "shortSummary": null,
     "builder": null,
@@ -30544,14 +30564,14 @@
     "category": [],
     "classification": null,
     "designRule": null,
-    "designType": null,
+    "designType": "Paddleboard",
     "specs": {
       "loa": {
         "m": null,
         "ft": 14
       }
     },
-    "description": "Design 749, HORIZON F14, was designed by Farr Yacht Design in 2011. She has an overall length of 14 feet.",
+    "description": "A 14ft paddleboard designed for flatwater and estuary races. Features a wave-piercing bow and subtle peak along the deck centerline, allowing the bow to quickly shed water and return to the surface. Volume distribution optimized for low wetted surface and wave drag. Gradual rails reflect hydrodynamic analysis. High-performance construction using female molds, carbon fiber, and EPS sandwich laminate — lighter and stiffer than traditional SUP construction.",
     "shortDescription": "14ft Standup Paddleboard",
     "shortSummary": null,
     "builder": null,
@@ -34290,7 +34310,7 @@
     "title": "844",
     "slug": "844",
     "designNumber": "844",
-    "name": "13m IRC Cruiser/Racer",
+    "name": "FARR 43",
     "year": 2018,
     "category": [],
     "classification": null,
@@ -34800,8 +34820,8 @@
     "designType": "Racing Yacht",
     "specs": {
       "loa": {
-        "m": null,
-        "ft": 30
+        "m": 9.14,
+        "ft": 30.0
       }
     },
     "description": "Design 857, Farr X2, is a racing yacht designed by Farr Yacht Design in 2020. She has an overall length of 30 feet.",
