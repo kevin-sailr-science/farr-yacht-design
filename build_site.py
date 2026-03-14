@@ -593,23 +593,15 @@ def build_yacht_page(boat):
 # ─── Type consolidation mapping (Sprint 9) ───
 
 TYPE_GROUPS = {
-    'Racing': ['Racing Yacht', 'Racing', 'Racing Yacht (1 Ton)', 'Racing Yacht (Maxi)',
-               'Grand Prix Racing Yacht', 'IRC Racing Yacht', 'Ocean Racer', 'Ocean Racing Yacht',
-               'IMS Racer', 'ILC Racer', 'IMS Racing Yacht', 'ILC 40 Racer',
-               'ILC Maxi', 'One Design IMS'],
-    'Cruising': ['Cruising Yacht', 'Cruising Sloop', 'Fast Cruising Yacht', 'High Performance Cruiser',
-                 'Fast Cruiser', 'Charter Yacht', 'Keel Yacht', 'Sailing Yacht', 'Yacht', 'Cruiser'],
-    'Racer/Cruiser': ['Racing/Cruising', 'Cruiser/Racer', 'Racer/Cruiser', 'Racing/Cruising Yacht',
-                      'Ocean Racer/Cruiser', 'Cruising/Racing Yacht', 'Production Cruiser-Racer',
-                      'Production Cruiser/Racer', 'Production', 'IMS Cruiser/Racer',
-                      'IMS Racer/Cruiser', 'IMS Racing/Cruising Yacht'],
-    'One Design': ['One Design', 'One Design Racer', 'One-Design', 'One Design Racing Yacht'],
-    'Offshore': ['Volvo Ocean Race', 'IMOCA Open 60', "America's Cup"],
-    'Dinghy & Small': ['Dinghy', 'Trailer Sailer', 'Sharpie'],
-    'Power': ['Powerboat', 'Power Yacht'],
+    # Canonical taxonomy values (Sprint 46)
+    'Racing': ['Racing Yacht'],
+    'Cruising': ['Cruising Yacht'],
+    'One Design': ['One Design'],
+    'Dinghy & Small': ['Dinghy'],
+    'Power': ['Powerboat'],
     'Superyacht': ['Superyacht'],
-    'Concept': ['Concept'],
-    'Other': ['Multihull', 'Unknown', 'Tank Testing/Research', 'Other'],
+    'Research': ['Research'],
+    'Other': ['Other'],
 }
 
 # Build reverse lookup: raw type → group name

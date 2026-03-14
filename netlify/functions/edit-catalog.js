@@ -298,6 +298,7 @@ exports.handler = async function (event) {
         hidden: design.hidden || false,
         hasCardPDF: design.hasCardPDF || false,
         category: design.category || [],
+        tags: design.tags || [],
         designType: design.designType || null,
         designRule: design.designRule || null,
         classification: design.classification || null,

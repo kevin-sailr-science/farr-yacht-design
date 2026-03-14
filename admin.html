@@ -192,19 +192,54 @@
               </div>
             </div>
 
-            <!-- Row 3: Design details -->
+            <!-- Row 3: Design details (controlled vocabulary picklists) -->
             <div class="waitlist-row">
               <div class="waitlist-field">
                 <label for="ce-designtype">Design Type</label>
-                <input type="text" id="ce-designtype" placeholder="e.g. Racing Yacht">
+                <select id="ce-designtype">
+                  <option value="">— Select —</option>
+                  <option value="Racing Yacht">Racing Yacht</option>
+                  <option value="Cruising Yacht">Cruising Yacht</option>
+                  <option value="Dinghy">Dinghy</option>
+                  <option value="Powerboat">Powerboat</option>
+                  <option value="One Design">One Design</option>
+                  <option value="Superyacht">Superyacht</option>
+                  <option value="Research">Research</option>
+                  <option value="Other">Other</option>
+                </select>
               </div>
               <div class="waitlist-field">
                 <label for="ce-designrule">Design Rule</label>
-                <input type="text" id="ce-designrule" placeholder="e.g. IMS, IRC, ORC">
+                <select id="ce-designrule">
+                  <option value="">— Select —</option>
+                  <option value="IMS">IMS</option>
+                  <option value="IRC">IRC</option>
+                  <option value="ILC">ILC</option>
+                  <option value="ORC">ORC</option>
+                  <option value="CHS">CHS</option>
+                  <option value="One Design">One Design</option>
+                  <option value="Open">Open</option>
+                  <option value="None">None</option>
+                </select>
               </div>
-              <div class="waitlist-field">
+              <div class="waitlist-field" style="display:none;">
                 <label for="ce-classification">Classification</label>
                 <input type="text" id="ce-classification" placeholder="e.g. DNV, ABS">
+              </div>
+            </div>
+
+            <!-- Row 3b: Tags (controlled vocabulary checkboxes) -->
+            <div class="waitlist-field" style="margin-top:0.25rem;">
+              <label>Tags</label>
+              <div id="ce-tag-group" style="display:flex;flex-wrap:wrap;gap:0.5rem 1.25rem;padding:0.5rem 0;">
+                <label style="font-size:0.82rem;display:flex;align-items:center;gap:0.3rem;cursor:pointer;"><input type="checkbox" class="ce-tag-cb" value="Production"> Production</label>
+                <label style="font-size:0.82rem;display:flex;align-items:center;gap:0.3rem;cursor:pointer;"><input type="checkbox" class="ce-tag-cb" value="Concept"> Concept</label>
+                <label style="font-size:0.82rem;display:flex;align-items:center;gap:0.3rem;cursor:pointer;"><input type="checkbox" class="ce-tag-cb" value="Military"> Military</label>
+                <label style="font-size:0.82rem;display:flex;align-items:center;gap:0.3rem;cursor:pointer;"><input type="checkbox" class="ce-tag-cb" value="Commercial"> Commercial</label>
+                <label style="font-size:0.82rem;display:flex;align-items:center;gap:0.3rem;cursor:pointer;"><input type="checkbox" class="ce-tag-cb" value="Power"> Power</label>
+                <label style="font-size:0.82rem;display:flex;align-items:center;gap:0.3rem;cursor:pointer;"><input type="checkbox" class="ce-tag-cb" value="Multihull"> Multihull</label>
+                <label style="font-size:0.82rem;display:flex;align-items:center;gap:0.3rem;cursor:pointer;"><input type="checkbox" class="ce-tag-cb" value="Multihull Power"> Multihull Power</label>
+                <label style="font-size:0.82rem;display:flex;align-items:center;gap:0.3rem;cursor:pointer;"><input type="checkbox" class="ce-tag-cb" value="Multihull Sail"> Multihull Sail</label>
               </div>
             </div>
 
@@ -224,19 +259,45 @@
               </div>
             </div>
 
-            <!-- Row 5: Construction -->
+            <!-- Row 5: Construction (controlled vocabulary picklists) -->
             <div class="waitlist-row">
               <div class="waitlist-field">
                 <label for="ce-hullconstruction">Hull Construction</label>
-                <input type="text" id="ce-hullconstruction" placeholder="e.g. Composite, Aluminium">
+                <select id="ce-hullconstruction">
+                  <option value="">— Select —</option>
+                  <option value="Composite">Composite</option>
+                  <option value="Carbon Composite">Carbon Composite</option>
+                  <option value="Aluminium">Aluminium</option>
+                  <option value="Steel">Steel</option>
+                  <option value="Wood">Wood</option>
+                  <option value="Fiberglass">Fiberglass</option>
+                </select>
               </div>
               <div class="waitlist-field">
                 <label for="ce-keeltype">Keel Type</label>
-                <input type="text" id="ce-keeltype" placeholder="e.g. Fixed, Canting">
+                <select id="ce-keeltype">
+                  <option value="">— Select —</option>
+                  <option value="Fixed">Fixed</option>
+                  <option value="Canting">Canting</option>
+                  <option value="Lifting">Lifting</option>
+                  <option value="Bulb">Bulb</option>
+                  <option value="Daggerboard">Daggerboard</option>
+                  <option value="Centerboard">Centerboard</option>
+                  <option value="Twin">Twin</option>
+                </select>
               </div>
               <div class="waitlist-field">
                 <label for="ce-rigtype">Rig Type</label>
-                <input type="text" id="ce-rigtype" placeholder="e.g. Sloop, Fractional">
+                <select id="ce-rigtype">
+                  <option value="">— Select —</option>
+                  <option value="Sloop">Sloop</option>
+                  <option value="Cutter">Cutter</option>
+                  <option value="Ketch">Ketch</option>
+                  <option value="Fractional">Fractional</option>
+                  <option value="Masthead">Masthead</option>
+                  <option value="Cat">Cat</option>
+                  <option value="None">None</option>
+                </select>
               </div>
             </div>
 
@@ -667,6 +728,11 @@
       document.getElementById('ce-keeltype').value = design.keelType || '';
       document.getElementById('ce-rigtype').value = design.rigType || '';
       document.getElementById('ce-category').value = Array.isArray(design.category) ? design.category.join(', ') : '';
+      /* Tags checkboxes */
+      var designTags = Array.isArray(design.tags) ? design.tags : [];
+      document.querySelectorAll('.ce-tag-cb').forEach(function(cb) {
+        cb.checked = designTags.indexOf(cb.value) !== -1;
+      });
       document.getElementById('ce-shortdesc').value = design.shortDescription || '';
       document.getElementById('ce-description').value = design.description || '';
       /* E-commerce */
@@ -705,6 +771,8 @@
       document.getElementById('ce-tier').value = '1';
       document.getElementById('ce-planstatus').value = 'coming_soon';
       document.getElementById('ce-hidden').value = 'false';
+      /* Clear tags checkboxes */
+      document.querySelectorAll('.ce-tag-cb').forEach(function(cb) { cb.checked = false; });
       document.getElementById('ce-dn').readOnly = false;
       document.getElementById('ce-save-btn').textContent = 'Add Design';
       /* Image */
@@ -805,21 +873,26 @@
       var dn = document.getElementById('ce-dn').value.trim();
       if (!dn) { alert('Design Number is required.'); return; }
 
+      /* Collect tags from checkboxes */
+      var tagValues = [];
+      document.querySelectorAll('.ce-tag-cb:checked').forEach(function(cb) { tagValues.push(cb.value); });
+
       var fields = {
         name: document.getElementById('ce-name').value.trim() || null,
         year: parseInt(document.getElementById('ce-year').value) || null,
         tier: parseInt(document.getElementById('ce-tier').value) || 1,
         planStatus: document.getElementById('ce-planstatus').value,
         hidden: document.getElementById('ce-hidden').value === 'true',
-        designType: document.getElementById('ce-designtype').value.trim() || null,
-        designRule: document.getElementById('ce-designrule').value.trim() || null,
+        designType: document.getElementById('ce-designtype').value || null,
+        designRule: document.getElementById('ce-designrule').value || null,
         classification: document.getElementById('ce-classification').value.trim() || null,
+        tags: tagValues,
         builder: document.getElementById('ce-builder').value.trim() || null,
         owner: document.getElementById('ce-owner').value.trim() || null,
         hullsBuilt: parseInt(document.getElementById('ce-hullsbuilt').value) || null,
-        hullConstruction: document.getElementById('ce-hullconstruction').value.trim() || null,
-        keelType: document.getElementById('ce-keeltype').value.trim() || null,
-        rigType: document.getElementById('ce-rigtype').value.trim() || null,
+        hullConstruction: document.getElementById('ce-hullconstruction').value || null,
+        keelType: document.getElementById('ce-keeltype').value || null,
+        rigType: document.getElementById('ce-rigtype').value || null,
         category: document.getElementById('ce-category').value.split(',').map(function(s){return s.trim();}).filter(Boolean),
         shortDescription: document.getElementById('ce-shortdesc').value.trim() || null,
         description: document.getElementById('ce-description').value.trim() || null,
