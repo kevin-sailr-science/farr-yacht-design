@@ -28,7 +28,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "021-hero.png",
+      "hero": "21.png",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -76,7 +76,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "022-hero.jpg",
+      "hero": "22.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -364,9 +364,9 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "26-hero.jpg",
+      "hero": "026.jpg",
       "gallery": [
-        "26-01-v1.jpg"
+        "026_01.jpg"
       ],
       "card": null,
       "cardCropHint": null,
@@ -416,7 +416,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "26-01-v1.jpg",
+      "hero": "026_01.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -481,9 +481,9 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "27-hero.jpg",
+      "hero": "027.jpg",
       "gallery": [
-        "27-titus-v1.jpg"
+        "027_titus.jpg"
       ],
       "card": null,
       "cardCropHint": null,
@@ -532,7 +532,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "27-titus-v1.jpg",
+      "hero": "027_titus.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -597,7 +597,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "28-hero.jpg",
+      "hero": "028_bootlegger_01.jpg",
       "gallery": [
         "028_01.jpg",
         "028_bacchante_01.jpg",
@@ -607,7 +607,7 @@
         "028_bacchante_05.jpg",
         "028_bacchante_06.jpg",
         "028_bacchante_07.jpg",
-        "28-hero.jpg"
+        "028_bootlegger_01.jpg"
       ],
       "card": null,
       "cardCropHint": null,
@@ -657,7 +657,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "28-hero.jpg",
+      "hero": "028_bootlegger_01.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -706,7 +706,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "28M-hero.jpg",
+      "hero": "28m.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -770,10 +770,10 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "29-hero.jpg",
+      "hero": "029_yy_dec2011.jpg",
       "gallery": [
         "029_01.jpg",
-        "29-hero.jpg"
+        "029_yy_dec2011.jpg"
       ],
       "card": null,
       "cardCropHint": null,
@@ -823,7 +823,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "29-hero.jpg",
+      "hero": "029_yy_dec2011.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -1623,7 +1623,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "37-hero.jpg",
+      "hero": "37-u361042-fr.jpg",
       "gallery": [
         "037_01.jpg",
         "037_02.jpg",
@@ -1678,7 +1678,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "37-hero.jpg",
+      "hero": "37-u361042-fr.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -1731,7 +1731,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "37M-hero.jpg",
+      "hero": "037m_45degsouthii.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -1783,7 +1783,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "38-hero.jpg",
+      "hero": "038.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -1833,7 +1833,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "38-hero.jpg",
+      "hero": "038.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -1898,9 +1898,9 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "39-hero.jpg",
+      "hero": "039.jpg",
       "gallery": [
-        "39-01-v1.jpg"
+        "039_01.jpg"
       ],
       "card": null,
       "cardCropHint": null,
@@ -1950,7 +1950,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "39-01-v1.jpg",
+      "hero": "039_01.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -2199,9 +2199,9 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "42-hero.jpg",
+      "hero": "042_01.jpg",
       "gallery": [
-        "42-hero.jpg"
+        "042_01.jpg"
       ],
       "card": null,
       "cardCropHint": null,
@@ -2251,7 +2251,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "42-hero.jpg",
+      "hero": "042_01.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -2498,7 +2498,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "45-hero.jpg",
+      "hero": "45degsouthii.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -2795,11 +2795,11 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "48-hero.jpg",
+      "hero": "048_03.jpg",
       "gallery": [
         "048_01.jpg",
         "048_02.jpg",
-        "48-hero.jpg",
+        "048_03.jpg",
         "048_04.jpg",
         "048_05.jpg",
         "048_06.jpg"
@@ -2852,7 +2852,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "48-hero.jpg",
+      "hero": "048_03.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -3114,7 +3114,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "51-hero.jpg",
+      "hero": "051_header.jpg",
       "gallery": [
         "051_02_jiminy.jpg",
         "051c_red_cloud.jpg",
@@ -3172,7 +3172,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "51-hero.jpg",
+      "hero": "051_header.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -3223,7 +3223,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "51B-hero.jpg",
+      "hero": "51b.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -3274,7 +3274,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "51C-hero.jpg",
+      "hero": "51c.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -3331,9 +3331,9 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "52-hero.jpg",
+      "hero": "052.jpg",
       "gallery": [
-        "52-01-v1.jpg",
+        "052_01.jpg",
         "052_02.jpg"
       ],
       "card": null,
@@ -3384,7 +3384,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "52-01-v1.jpg",
+      "hero": "052_01.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -3449,7 +3449,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "53-hero.jpg",
+      "hero": "53_01.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -3498,7 +3498,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "53-hero.jpg",
+      "hero": "53_01.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -3563,7 +3563,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "54-hero.jpg",
+      "hero": "054_heaer.jpg",
       "gallery": [
         "054_01.jpg",
         "054_02.jpg",
@@ -3618,7 +3618,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "54-hero.jpg",
+      "hero": "054_heaer.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -3664,7 +3664,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "54T-hero.jpg",
+      "hero": "54t.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -3823,9 +3823,9 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "56-hero.jpg",
+      "hero": "056.jpg",
       "gallery": [
-        "56-01-v1.jpg"
+        "056_01.jpg"
       ],
       "card": null,
       "cardCropHint": null,
@@ -3875,7 +3875,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "56-01-v1.jpg",
+      "hero": "056_01.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -3948,9 +3948,9 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "57-hero.jpg",
+      "hero": "057.jpg",
       "gallery": [
-        "57-01-v1.jpg"
+        "057_01.jpg"
       ],
       "card": null,
       "cardCropHint": null,
@@ -4000,7 +4000,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "57-01-v1.jpg",
+      "hero": "057_01.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -4261,7 +4261,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "60-hero.jpg",
+      "hero": "60_01.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -4309,7 +4309,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "60-hero.jpg",
+      "hero": "60_01.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -4666,7 +4666,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "64-hero.jpg",
+      "hero": "064_header.jpg",
       "gallery": [
         "064_05.jpg",
         "064_02.jpg",
@@ -4721,7 +4721,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "64-hero.jpg",
+      "hero": "064_header.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -4784,12 +4784,12 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "65-hero.jpg",
+      "hero": "065_04_orginal.jpg",
       "gallery": [
         "065_03.jpg",
         "065_02.jpg",
         "065_04.jpg",
-        "65-hero.jpg"
+        "065_04_orginal.jpg"
       ],
       "card": null,
       "cardCropHint": null,
@@ -4839,7 +4839,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "65-hero.jpg",
+      "hero": "065_04_orginal.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -4888,9 +4888,9 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "66-hero.jpg",
+      "hero": "066.jpg",
       "gallery": [
-        "66-2-v1.jpg"
+        "066-2.jpg"
       ],
       "card": null,
       "cardCropHint": null,
@@ -4939,7 +4939,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "66-2-v1.jpg",
+      "hero": "066-2.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -5004,10 +5004,10 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "67-hero.jpg",
+      "hero": "67_monique.jpg",
       "gallery": [
         "067_04.jpg",
-        "67-hero.jpg"
+        "67_monique.jpg"
       ],
       "card": null,
       "cardCropHint": null,
@@ -5057,7 +5057,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "67-hero.jpg",
+      "hero": "67_monique.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -5319,7 +5319,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "72-hero.jpg",
+      "hero": "072_header.jpg",
       "gallery": [
         "072_01.jpg",
         "72_2_photo_cover.jpg"
@@ -5459,7 +5459,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "72-hero.jpg",
+      "hero": "072_header.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -5595,7 +5595,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "72_2-hero.jpg",
+      "hero": "72_2.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -5761,7 +5761,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "74-hero.jpg",
+      "hero": "074_header.jpg",
       "gallery": [
         "074_01.jpg"
       ],
@@ -5813,7 +5813,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "74-hero.jpg",
+      "hero": "074_header.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -5886,7 +5886,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "76-hero.jpg",
+      "hero": "076.jpg",
       "gallery": [
         "076_01.jpg"
       ],
@@ -5938,7 +5938,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "76-header-v1.jpg",
+      "hero": "076_header.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -6007,7 +6007,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "78-hero.jpg",
+      "hero": "078_ethereal_virtue.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -6056,7 +6056,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "78-hero.jpg",
+      "hero": "078_ethereal_virtue.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -6235,10 +6235,10 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "80-hero.jpg",
+      "hero": "080.jpg",
       "gallery": [
         "720_100804_bavaria_303.jpg",
-        "80-01-v1.jpg"
+        "080_01.jpg"
       ],
       "card": null,
       "cardCropHint": null,
@@ -6286,7 +6286,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "80-01-v1.jpg",
+      "hero": "080_01.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -6349,9 +6349,9 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "81-hero.jpg",
+      "hero": "81_01.jpg",
       "gallery": [
-        "81-01-v1.jpg"
+        "081_01.jpg"
       ],
       "card": null,
       "cardCropHint": null,
@@ -6444,7 +6444,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "81-01-v1.jpg",
+      "hero": "081_01.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -6564,9 +6564,9 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "82-hero.jpg",
+      "hero": "082.jpg",
       "gallery": [
-        "82-01-v1.jpg"
+        "082_01.jpg"
       ],
       "card": null,
       "cardCropHint": null,
@@ -6615,7 +6615,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "82-01-v1.jpg",
+      "hero": "082_01.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -6779,7 +6779,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "84-hero.jpg",
+      "hero": "084_01.jpg",
       "gallery": [
         "084m_hullprofile.jpg",
         "084m_interior01.jpg",
@@ -6919,7 +6919,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "84-hero.jpg",
+      "hero": "084_01.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -7072,7 +7072,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "84M-hero.jpg",
+      "hero": "084m_special_effect600x400.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -7136,7 +7136,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "85-hero.jpg",
+      "hero": "85_header.jpg",
       "gallery": [
         "085_01.jpg",
         "085_02.jpg",
@@ -7197,7 +7197,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "85-hero.jpg",
+      "hero": "85_header.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -7262,10 +7262,10 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "86-hero.jpg",
+      "hero": "086.jpg",
       "gallery": [
         "316_pricup07d2-0086resized.jpg",
-        "86-01-v1.jpg"
+        "086_01.jpg"
       ],
       "card": null,
       "cardCropHint": null,
@@ -7315,7 +7315,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "86-01-v1.jpg",
+      "hero": "086_01.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -7388,7 +7388,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "87-hero.jpg",
+      "hero": "087.jpg",
       "gallery": [
         "087_01.jpg"
       ],
@@ -7440,7 +7440,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "87-01-th-v1.jpg",
+      "hero": "087_01_th.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -7505,7 +7505,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "89-hero.jpg",
+      "hero": "89_01.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -7555,7 +7555,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "89-hero.jpg",
+      "hero": "89_01.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -7606,7 +7606,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "89_1-hero.jpg",
+      "hero": "89_1.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -7671,7 +7671,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "90-hero.jpg",
+      "hero": "90_header.jpg",
       "gallery": [
         "090_02.jpg",
         "090_01.jpg",
@@ -7726,7 +7726,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "90-hero.jpg",
+      "hero": "90_header.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -7803,9 +7803,9 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "91-hero.jpg",
+      "hero": "091.jpg",
       "gallery": [
-        "91-01-v1.jpg"
+        "091_01.jpg"
       ],
       "card": null,
       "cardCropHint": null,
@@ -7854,7 +7854,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "91-01-v1.jpg",
+      "hero": "091_01.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -7927,7 +7927,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "92-hero.jpg",
+      "hero": "92_01.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -7977,7 +7977,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "92-hero.jpg",
+      "hero": "92_01.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -8026,7 +8026,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "92_2-hero.jpg",
+      "hero": "92_2.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -8090,7 +8090,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "93-hero.jpg",
+      "hero": "93_01.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -8138,7 +8138,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "93-hero.jpg",
+      "hero": "93_01.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -8295,7 +8295,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "97-hero.jpg",
+      "hero": "97_header.jpg",
       "gallery": [
         "097_03.jpg",
         "097_02.jpg",
@@ -8350,7 +8350,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "97-hero.jpg",
+      "hero": "97_header.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -8423,12 +8423,12 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "99-hero.jpg",
+      "hero": "099_03.jpg",
       "gallery": [
         "099_01.jpg",
         "099_02.jpg",
         "099_02sm.jpg",
-        "99-hero.jpg",
+        "099_03.jpg",
         "099_04.jpg",
         "099_05.jpg",
         "099_06.jpg",
@@ -8483,7 +8483,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "99-hero.jpg",
+      "hero": "099_03.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -8548,7 +8548,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "100-hero.jpg",
+      "hero": "100-2_02.jpg",
       "gallery": [
         "720_100804_bavaria_303.jpg",
         "100-2_03.jpg",
@@ -8602,7 +8602,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "100_2-hero.jpg",
+      "hero": "100_2.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -8675,7 +8675,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "101-hero.jpg",
+      "hero": "101.jpg",
       "gallery": [
         "101_02.jpg",
         "101_01.jpg",
@@ -8805,7 +8805,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "103-hero.jpg",
+      "hero": "103.jpg",
       "gallery": [
         "103_01.jpg",
         "103_02.jpg",
@@ -8858,7 +8858,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "103_1-hero.jpg",
+      "hero": "103_1.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -8958,7 +8958,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "112-hero.jpg",
+      "hero": "112.jpg",
       "gallery": [
         "112_01.jpg"
       ],
@@ -9030,9 +9030,9 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "121-hero.jpg",
+      "hero": "121.jpg",
       "gallery": [
-        "121-m-photo1-v1.jpg",
+        "121m_photo1.jpg",
         "121_04.jpg",
         "121_05.jpg",
         "121_06.jpg",
@@ -9111,9 +9111,9 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "121-m-photo1-v1.jpg",
+      "hero": "121m_photo1.jpg",
       "gallery": [
-        "121-m-photo1-v1.jpg"
+        "121m_photo1.jpg"
       ],
       "card": null,
       "cardCropHint": null,
@@ -9189,7 +9189,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "122-hero.jpg",
+      "hero": "122.jpg",
       "gallery": [
         "122_01.jpg"
       ],
@@ -9255,7 +9255,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "123-hero.jpg",
+      "hero": "123.jpg",
       "gallery": [
         "123_01.jpg"
       ],
@@ -9307,7 +9307,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "123_1-hero.jpg",
+      "hero": "123_1.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -9372,7 +9372,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "124-hero.jpg",
+      "hero": "124.jpg",
       "gallery": [
         "124_02.jpg",
         "124_01.jpg",
@@ -9443,7 +9443,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "125-hero.jpg",
+      "hero": "125_icarus.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -9567,7 +9567,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "128-hero.jpg",
+      "hero": "128.jpg",
       "gallery": [
         "128_01.jpg",
         "128_02.jpg"
@@ -9646,7 +9646,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "129-hero.jpg",
+      "hero": "129.jpg",
       "gallery": [
         "129_01.jpg"
       ],
@@ -9696,7 +9696,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "130-hero.jpg",
+      "hero": "130-3084.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -9760,7 +9760,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "131-hero.jpg",
+      "hero": "131.jpg",
       "gallery": [
         "131_ubsswitzerland.jpg"
       ],
@@ -9834,7 +9834,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "134-hero.jpg",
+      "hero": "134.jpg",
       "gallery": [
         "134_opni_02.jpg"
       ],
@@ -9916,7 +9916,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "136-hero.jpg",
+      "hero": "136.jpg",
       "gallery": [
         "136_03.jpg",
         "136_01.jpg",
@@ -9989,7 +9989,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "137-hero.jpg",
+      "hero": "137.jpg",
       "gallery": [
         "137_01.jpg"
       ],
@@ -10039,7 +10039,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "138-hero.jpg",
+      "hero": "138.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -10199,7 +10199,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "143-hero.jpg",
+      "hero": "143.jpg",
       "gallery": [
         "143_01.jpg",
         "143wakawaka.jpg",
@@ -10272,7 +10272,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "144-hero.jpg",
+      "hero": "144.jpg",
       "gallery": [
         "144_02.jpg",
         "144_02sm.jpg",
@@ -10337,7 +10337,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "145-hero.jpg",
+      "hero": "145.jpg",
       "gallery": [
         "145_03.jpg",
         "145_01.jpg",
@@ -10606,7 +10606,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "151-hero.jpg",
+      "hero": "151.jpg",
       "gallery": [
         "151_03.jpg",
         "151_01.jpg",
@@ -10689,7 +10689,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "152-hero.jpg",
+      "hero": "152.jpg",
       "gallery": [
         "152_01.jpg"
       ],
@@ -10739,7 +10739,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "152M-hero.jpg",
+      "hero": "152m.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -10853,7 +10853,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "154-hero.jpg",
+      "hero": "154.jpg",
       "gallery": [
         "154_01.jpg"
       ],
@@ -10925,7 +10925,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "155-hero.jpg",
+      "hero": "155.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -10973,7 +10973,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "155M-hero.jpg",
+      "hero": "155m.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -11145,7 +11145,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "158-hero.jpg",
+      "hero": "158.jpg",
       "gallery": [
         "158_01.jpg"
       ],
@@ -11511,7 +11511,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "165-hero.jpg",
+      "hero": "165.jpg",
       "gallery": [
         "165_01.jpg",
         "165_02.jpg",
@@ -11564,7 +11564,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "165I-hero.jpg",
+      "hero": "165i.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -11690,7 +11690,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "167-hero.jpg",
+      "hero": "167.jpg",
       "gallery": [
         "167_01.jpg"
       ],
@@ -11971,7 +11971,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "172-hero.jpg",
+      "hero": "172.jpg",
       "gallery": [
         "172_01.jpg"
       ],
@@ -12144,7 +12144,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "175-hero.jpg",
+      "hero": "175.jpg",
       "gallery": [
         "175_04.jpg",
         "175_01.jpg",
@@ -12224,7 +12224,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "176-hero.jpg",
+      "hero": "176.jpg",
       "gallery": [
         "176_01.jpg",
         "176_02.jpg"
@@ -12351,7 +12351,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "178-hero.jpg",
+      "hero": "178.jpg",
       "gallery": [
         "178_01.jpg",
         "178_02.jpg",
@@ -12427,7 +12427,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "179-hero.jpg",
+      "hero": "179.jpg",
       "gallery": [
         "179_01.jpg"
       ],
@@ -12602,7 +12602,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "183-hero.jpg",
+      "hero": "183.jpg",
       "gallery": [
         "183_photo1.jpg",
         "183_pfehlmann.jpg",
@@ -12881,7 +12881,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "185-hero.jpg",
+      "hero": "185.jpg",
       "gallery": [
         "185_03.jpg",
         "185_01.jpg",
@@ -12933,7 +12933,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "185_1-hero.jpg",
+      "hero": "185_1.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -13099,7 +13099,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "188-hero.jpg",
+      "hero": "188.jpg",
       "gallery": [
         "188_01.jpg"
       ],
@@ -13173,7 +13173,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "189-hero.jpg",
+      "hero": "189.jpg",
       "gallery": [
         "189_02.jpg",
         "189_01.jpg",
@@ -13241,7 +13241,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "190-hero.jpg",
+      "hero": "190.jpg",
       "gallery": [
         "190_01.jpg",
         "190_02.jpg"
@@ -13346,7 +13346,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "191-hero.jpg",
+      "hero": "191.jpg",
       "gallery": [
         "191_01.jpg",
         "191_02.jpg",
@@ -13469,7 +13469,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "193-hero.jpg",
+      "hero": "193.jpg",
       "gallery": [
         "193_02.jpg",
         "193_01.jpg",
@@ -13588,7 +13588,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "195-hero.jpg",
+      "hero": "195.jpg",
       "gallery": [
         "195_01.jpg"
       ],
@@ -13642,7 +13642,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "196-hero.jpg",
+      "hero": "196.jpg",
       "gallery": [
         "196_kz1_sm.jpg",
         "196_kz1.jpg",
@@ -13708,7 +13708,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "197-hero.jpg",
+      "hero": "197.jpg",
       "gallery": [
         "197_mirabella40_1.jpg"
       ],
@@ -13920,7 +13920,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "201-hero.jpg",
+      "hero": "201.jpg",
       "gallery": [
         "603_estrelladamm_ny_bcn_2010.jpg",
         "201_01.jpg"
@@ -14003,7 +14003,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "202-hero.jpg",
+      "hero": "202.jpg",
       "gallery": [
         "202_01.jpg"
       ],
@@ -14056,7 +14056,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "202_OC-hero.jpg",
+      "hero": "202_oc.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -14128,7 +14128,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "203-hero.jpg",
+      "hero": "203.jpg",
       "gallery": [
         "203_01.jpg"
       ],
@@ -14178,7 +14178,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "203M-hero.jpg",
+      "hero": "203m.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -14258,7 +14258,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "205-hero.jpg",
+      "hero": "205.jpg",
       "gallery": [
         "205_01.jpg",
         "205_02.jpg",
@@ -14382,7 +14382,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "207-hero.jpg",
+      "hero": "207.jpg",
       "gallery": [
         "207_01.jpg"
       ],
@@ -14672,7 +14672,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "216-hero.jpg",
+      "hero": "216-1627_img.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -14732,7 +14732,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "218-hero.jpg",
+      "hero": "218.jpg",
       "gallery": [
         "218_01.jpg"
       ],
@@ -14814,7 +14814,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "219-hero.jpg",
+      "hero": "219.jpg",
       "gallery": [
         "219_01.jpg",
         "219_oc_photo1.jpg"
@@ -14868,7 +14868,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "219_OC-hero.jpg",
+      "hero": "219_oc.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -14944,7 +14944,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "220-hero.jpg",
+      "hero": "220.jpg",
       "gallery": [
         "220_01.jpg"
       ],
@@ -15018,7 +15018,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "223-hero.jpg",
+      "hero": "223.jpg",
       "gallery": [
         "223_01.jpg"
       ],
@@ -15092,7 +15092,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "224-hero.jpg",
+      "hero": "224.jpg",
       "gallery": [
         "224_01.jpg"
       ],
@@ -15142,7 +15142,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "224M-hero.jpg",
+      "hero": "224m.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -15222,7 +15222,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "225-hero.jpg",
+      "hero": "225.jpg",
       "gallery": [
         "225_01.jpg",
         "225_02.jpg",
@@ -15277,7 +15277,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "225_TC-hero.jpg",
+      "hero": "225_tc.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -15395,7 +15395,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "227-hero.jpg",
+      "hero": "227.jpg",
       "gallery": [
         "227_01.jpg"
       ],
@@ -15469,7 +15469,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "229-hero.jpg",
+      "hero": "229.jpg",
       "gallery": [
         "229_01.jpg"
       ],
@@ -15795,7 +15795,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "237-hero.jpg",
+      "hero": "237.jpg",
       "gallery": [
         "237_nzl20.jpg"
       ],
@@ -15917,7 +15917,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "242-hero.jpg",
+      "hero": "242.jpg",
       "gallery": [
         "242_01.jpg"
       ],
@@ -15991,7 +15991,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "242M-hero.jpg",
+      "hero": "242m.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -16353,7 +16353,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "253-hero.jpg",
+      "hero": "253.jpg",
       "gallery": [
         "253_01.jpg"
       ],
@@ -16499,7 +16499,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "258-hero.jpg",
+      "hero": "bribon_castelleon-2006.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -16571,7 +16571,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "260-hero.jpg",
+      "hero": "260.jpg",
       "gallery": [
         "260_01.jpg"
       ],
@@ -16747,7 +16747,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "266-hero.jpg",
+      "hero": "266.jpg",
       "gallery": [
         "266_01.jpg"
       ],
@@ -16799,7 +16799,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "266_0001-hero.jpg",
+      "hero": "266_0001.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -16872,7 +16872,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "267-hero.jpg",
+      "hero": "267.jpg",
       "gallery": [
         "267_01.jpg"
       ],
@@ -16946,7 +16946,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "268-hero.jpg",
+      "hero": "268.jpg",
       "gallery": [
         "268_01.jpg"
       ],
@@ -17008,7 +17008,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "269-hero.jpg",
+      "hero": "269.jpg",
       "gallery": [
         "269_01.jpg"
       ],
@@ -17116,7 +17116,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "273-hero.jpg",
+      "hero": "273.jpg",
       "gallery": [
         "273_01.jpg"
       ],
@@ -17178,7 +17178,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "274-hero.jpg",
+      "hero": "274.jpg",
       "gallery": [
         "274_nzendeavour_01.jpg",
         "274_nze.jpg"
@@ -17305,7 +17305,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "277-hero.jpg",
+      "hero": "277.jpg",
       "gallery": [
         "277_01.jpg",
         "277_01sm.jpg",
@@ -17380,7 +17380,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "278-hero.jpg",
+      "hero": "278.jpg",
       "gallery": [
         "278_02.jpg",
         "278_01.jpg",
@@ -17436,7 +17436,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "279-hero.jpg",
+      "hero": "279-1.jpg",
       "gallery": [
         "279-2.jpg",
         "279-3.jpg",
@@ -17490,7 +17490,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "281-hero.jpg",
+      "hero": "281_mm_1.jpg",
       "gallery": [
         "281_mm_2.jpg",
         "281_mm_3.jpg"
@@ -17561,7 +17561,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "282-hero.jpg",
+      "hero": "282.jpg",
       "gallery": [
         "282_yamaha.jpg"
       ],
@@ -17874,7 +17874,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "288-hero.jpg",
+      "hero": "288.jpg",
       "gallery": [
         "288_01.jpg"
       ],
@@ -17952,7 +17952,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "289-hero.jpg",
+      "hero": "289.jpg",
       "gallery": [
         "289_hotflash_02.jpg",
         "289_hotflash_01.jpg",
@@ -18173,7 +18173,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "293-hero.jpg",
+      "hero": "293.jpg",
       "gallery": [
         "293_01.jpg"
       ],
@@ -18243,7 +18243,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "294-hero.jpg",
+      "hero": "294.jpg",
       "gallery": [
         "294_01.jpg"
       ],
@@ -18359,7 +18359,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "296-hero.jpg",
+      "hero": "296.jpg",
       "gallery": [
         "296_01.jpg",
         "296_02.jpg"
@@ -18438,7 +18438,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "297-hero.jpg",
+      "hero": "297.jpg",
       "gallery": [
         "297_01.jpg",
         "297_02.jpg",
@@ -18520,7 +18520,7 @@
     "inProduction": false,
     "isArchived": true,
     "images": {
-      "hero": "299-hero.jpg",
+      "hero": "299.jpg",
       "gallery": [
         "299_llegada_a_ayora.jpg",
         "299sailplan.jpg"
@@ -18731,7 +18731,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "309-hero.jpg",
+      "hero": "309.jpg",
       "gallery": [
         "309_08.jpg",
         "309_01.jpg",
@@ -18912,7 +18912,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "314-hero.jpg",
+      "hero": "314.jpg",
       "gallery": [
         "314_01.jpg"
       ],
@@ -19089,7 +19089,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "316-hero.jpg",
+      "hero": "316.jpg",
       "gallery": [
         "316_pricup07d2-0086resized.jpg",
         "316_01.jpg"
@@ -19171,7 +19171,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "317-hero.jpg",
+      "hero": "317.jpg",
       "gallery": [
         "317_01.jpg",
         "317_02.jpg",
@@ -19299,7 +19299,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "320-hero.jpg",
+      "hero": "320.jpg",
       "gallery": [
         "320_01.jpg",
         "320_02.jpg",
@@ -19394,7 +19394,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "321-hero.jpg",
+      "hero": "321.jpg",
       "gallery": [
         "321_01.jpg",
         "321_02.jpg",
@@ -19528,7 +19528,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "323-hero.jpg",
+      "hero": "323.jpg",
       "gallery": [
         "323_01.jpg",
         "323_02.jpg",
@@ -19707,7 +19707,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "326-hero.jpg",
+      "hero": "326.jpg",
       "gallery": [
         "326_01.jpg"
       ],
@@ -19757,7 +19757,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "326_I-hero.jpg",
+      "hero": "326_i.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -19833,7 +19833,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "328-hero.jpg",
+      "hero": "328.jpg",
       "gallery": [
         "328_01.jpg"
       ],
@@ -19911,7 +19911,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "329-hero.jpg",
+      "hero": "329.jpg",
       "gallery": [
         "329_01.jpg"
       ],
@@ -20085,7 +20085,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "333-hero.jpg",
+      "hero": "333.jpg",
       "gallery": [
         "333_01.jpg"
       ],
@@ -20163,7 +20163,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "336-hero.jpg",
+      "hero": "336.jpg",
       "gallery": [
         "336_01.jpg"
       ],
@@ -20213,7 +20213,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "336_CR-hero.jpg",
+      "hero": "336_cr.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -20293,7 +20293,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "338-hero.gif",
+      "hero": "338sailplan.gif",
       "gallery": [
         "338sailplan.jpg"
       ],
@@ -20374,7 +20374,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "339-hero.jpg",
+      "hero": "339.jpg",
       "gallery": [
         "339_01.jpg"
       ],
@@ -20516,7 +20516,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "343-hero.jpg",
+      "hero": "343.jpg",
       "gallery": [
         "343_nzl39.jpg"
       ],
@@ -20594,7 +20594,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "344-hero.jpg",
+      "hero": "344.jpg",
       "gallery": [
         "344_01.jpg",
         "344_02.jpg",
@@ -20675,7 +20675,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "353-hero.jpg",
+      "hero": "353.jpg",
       "gallery": [
         "353_09.jpg",
         "353_01.jpg",
@@ -20763,9 +20763,9 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "354-hero.jpg",
+      "hero": "354.jpg",
       "gallery": [
-        "354-hero.jpg",
+        "354.jpg",
         "354-2.jpg",
         "354_first40_7_portia.jpg",
         "354_portia.jpg"
@@ -20825,7 +20825,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "356-hero.jpg",
+      "hero": "356_megabyte_promo.jpg",
       "gallery": [
         "356_megabyte_mids_6_388-1.jpg",
         "356photo1.jpg",
@@ -21004,7 +21004,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "360-hero.jpg",
+      "hero": "360.jpg",
       "gallery": [
         "360_01.jpg"
       ],
@@ -21130,7 +21130,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "362-hero.jpg",
+      "hero": "362.jpg",
       "gallery": [
         "362_01.jpg"
       ],
@@ -21208,7 +21208,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "363-hero.jpg",
+      "hero": "363.jpg",
       "gallery": [
         "363_01.jpg",
         "363_01sm.jpg",
@@ -21293,7 +21293,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "366-hero.jpg",
+      "hero": "366.jpg",
       "gallery": [
         "366_01_dharma.jpg",
         "366_02_dharma.jpg",
@@ -21381,7 +21381,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "368-hero.jpg",
+      "hero": "368.jpg",
       "gallery": [
         "368_01.jpg"
       ],
@@ -21459,7 +21459,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "369-hero.jpg",
+      "hero": "369.jpg",
       "gallery": [
         "369cr_02.jpg",
         "369cr_01.jpg",
@@ -21520,7 +21520,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "369_CR-hero.jpg",
+      "hero": "369_cr.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -21635,9 +21635,9 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "373-hero.jpg",
+      "hero": "373.jpg",
       "gallery": [
-        "373-m-03-v1.jpg",
+        "373m_03.jpg",
         "373m_01.jpg",
         "373m_02.jpg",
         "373m_04.jpg",
@@ -21716,9 +21716,9 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "373-m-03-v1.jpg",
+      "hero": "373m_03.jpg",
       "gallery": [
-        "373-m-03-v1.jpg"
+        "373m_03.jpg"
       ],
       "card": null,
       "cardCropHint": null,
@@ -21766,7 +21766,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "374-hero.jpg",
+      "hero": "374.jpg",
       "gallery": [
         "374_02.jpg",
         "374_01.jpg",
@@ -21943,7 +21943,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "378-hero.jpg",
+      "hero": "378.jpg",
       "gallery": [
         "378_eflanguage_01.jpg",
         "378_eflanguage_01sm.jpg",
@@ -22065,7 +22065,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "382-hero.jpg",
+      "hero": "382.jpg",
       "gallery": [
         "382_toshiba_02.jpg",
         "382_toshiba_01.jpg",
@@ -22179,7 +22179,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "386-hero.jpg",
+      "hero": "386.jpg",
       "gallery": [
         "386_chessie_03.jpg",
         "386_chessie_01.jpg",
@@ -22343,7 +22343,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "390-hero.jpg",
+      "hero": "390.jpg",
       "gallery": [
         "390_meritcup_02.jpg",
         "390_01sm.jpg",
@@ -22420,7 +22420,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "392-hero.jpg",
+      "hero": "392.jpg",
       "gallery": [
         "392_kvaernerinnovation_03.jpg",
         "392_kvaernerinnovation_01.jpg",
@@ -22487,7 +22487,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "394-hero.jpg",
+      "hero": "394.jpg",
       "gallery": [
         "394_swedishmatch_02.jpg",
         "394_swedishmatch_01.jpg",
@@ -22603,7 +22603,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "396-hero.jpg",
+      "hero": "396.jpg",
       "gallery": [
         "396_silkcut_01.jpg",
         "396_silkcut_01sm.jpg",
@@ -22885,7 +22885,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "407-hero.jpg",
+      "hero": "407_usa53.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -22982,7 +22982,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "411-hero.jpg",
+      "hero": "411.jpg",
       "gallery": [
         "411_01.jpg",
         "411_02.jpg",
@@ -23040,7 +23040,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "412-hero.jpg",
+      "hero": "412.jpg",
       "gallery": [
         "412_01.jpg"
       ],
@@ -23122,7 +23122,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "414-hero.jpg",
+      "hero": "414.jpg",
       "gallery": [
         "414_wally_08.jpg",
         "414_venomous.jpg",
@@ -23192,7 +23192,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "415-hero.jpg",
+      "hero": "415.jpg",
       "gallery": [
         "415_01.jpg"
       ],
@@ -23242,7 +23242,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "416-hero.jpg",
+      "hero": "416.jpg",
       "gallery": [
         "416_01.jpg"
       ],
@@ -23320,7 +23320,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "417-hero.jpg",
+      "hero": "417.jpg",
       "gallery": [
         "417_03.jpg",
         "417_01.jpg",
@@ -23383,7 +23383,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "418-hero.gif",
+      "hero": "418.gif",
       "gallery": [
         "418deckside.gif"
       ],
@@ -23513,7 +23513,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "420-hero.jpg",
+      "hero": "420.jpg",
       "gallery": [
         "420_bg.jpg",
         "420_01.jpg"
@@ -23588,7 +23588,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "421-hero.jpg",
+      "hero": "421.jpg",
       "gallery": [
         "421m_01.jpg",
         "421m deck & interior.jpg",
@@ -23675,7 +23675,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "421M-hero.jpg",
+      "hero": "421m_deck_&_interior.jpg",
       "gallery": [
         "421m_01.jpg"
       ],
@@ -23757,7 +23757,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "422-hero.jpg",
+      "hero": "422.jpg",
       "gallery": [
         "422_01.jpg"
       ],
@@ -23842,7 +23842,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "425-hero.jpg",
+      "hero": "425.jpg",
       "gallery": [
         "425_06.jpg",
         "425_01.jpg",
@@ -23902,7 +23902,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "425M-hero.jpg",
+      "hero": "425m.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -24005,7 +24005,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "428-hero.jpg",
+      "hero": "428.jpg",
       "gallery": [
         "428deckside.gif"
       ],
@@ -24087,7 +24087,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "429-hero.jpg",
+      "hero": "429.jpg",
       "gallery": [
         "429_01.jpg"
       ],
@@ -24259,7 +24259,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "435-hero.jpg",
+      "hero": "435.jpg",
       "gallery": [
         "435_indio_03.jpg",
         "435_aori_01.jpg",
@@ -24374,7 +24374,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "441-hero.jpg",
+      "hero": "441.jpg",
       "gallery": [
         "441_01.jpg"
       ],
@@ -24424,7 +24424,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "442-hero.jpg",
+      "hero": "442.jpg",
       "gallery": [
         "442_soj04.jpg",
         "442 photo1.gif",
@@ -24515,7 +24515,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "443-hero.jpg",
+      "hero": "443.jpg",
       "gallery": [
         "443_01.jpg"
       ],
@@ -24565,7 +24565,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "444-hero.jpg",
+      "hero": "444.jpg",
       "gallery": [
         "444m2_01.jpg",
         "444m2 deck.jpg",
@@ -24637,7 +24637,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "444M-hero.jpg",
+      "hero": "444m.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -24686,7 +24686,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "444M2-hero.jpg",
+      "hero": "444m2.jpg",
       "gallery": [
         "444m2_01.jpg"
       ],
@@ -24736,9 +24736,9 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "446-hero.jpg",
+      "hero": "446.jpg",
       "gallery": [
-        "446-hero.jpg"
+        "446.jpg"
       ],
       "card": null,
       "cardCropHint": null,
@@ -25068,7 +25068,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "466-hero.jpg",
+      "hero": "466.jpg",
       "gallery": [
         "466_01.jpg"
       ],
@@ -25118,7 +25118,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "466M-hero.jpg",
+      "hero": "466m.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -25166,7 +25166,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "467-hero.jpg",
+      "hero": "467.jpg",
       "gallery": [
         "467_04.jpg",
         "467_03.jpg",
@@ -25224,7 +25224,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "468-hero.jpg",
+      "hero": "468.jpg",
       "gallery": [
         "468promo1.jpg",
         "468_01.jpg",
@@ -25298,7 +25298,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "471-hero.jpg",
+      "hero": "471.jpg",
       "gallery": [
         "471_01.jpg",
         "471_02.jpg",
@@ -25367,7 +25367,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "472-hero.jpg",
+      "hero": "472.jpg",
       "gallery": [
         "472_01.jpg",
         "472_01sm.jpg",
@@ -25436,7 +25436,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "473-hero.jpg",
+      "hero": "473.jpg",
       "gallery": [
         "473_04.jpg",
         "473_01.jpg",
@@ -25506,7 +25506,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "474-hero.jpg",
+      "hero": "474.jpg",
       "gallery": [
         "474_01.jpg",
         "474_01sm.jpg",
@@ -25559,7 +25559,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "476-hero.jpg",
+      "hero": "476.jpg",
       "gallery": [
         "476_nc_02.jpg",
         "476_nc_01.jpg",
@@ -25691,7 +25691,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "486-hero.jpg",
+      "hero": "486.jpg",
       "gallery": [
         "486_04.jpg",
         "486_01.jpg",
@@ -25782,7 +25782,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "487-hero.jpg",
+      "hero": "487.jpg",
       "gallery": [
         "487_mistera_02.jpg",
         "487_mistera_01.jpg",
@@ -25858,7 +25858,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "488-hero.jpg",
+      "hero": "488.jpg",
       "gallery": [
         "488.gif",
         "488deckside.gif"
@@ -25939,9 +25939,9 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "489-hero.jpg",
+      "hero": "489.jpg",
       "gallery": [
-        "489-hero.jpg",
+        "489.jpg",
         "489m_fg_20130801_0037.jpg",
         "489m_fg_20130801_0209.jpg",
         "489m_yacht-82.02-int-img-2.jpg",
@@ -26005,7 +26005,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "490-hero.jpg",
+      "hero": "490.jpg",
       "gallery": [
         "490_07.jpg",
         "490 color promo.gif",
@@ -26066,7 +26066,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "491-hero.jpg",
+      "hero": "491.jpg",
       "gallery": [
         "491deckside.gif"
       ],
@@ -26116,7 +26116,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "492-hero.jpg",
+      "hero": "492.jpg",
       "gallery": [
         "492_tazo_01.jpg",
         "492_ballyhoo_last cruise0910b.jpg",
@@ -26175,7 +26175,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "493-hero.jpg",
+      "hero": "493.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -26271,7 +26271,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "495-hero.jpg",
+      "hero": "495.jpg",
       "gallery": [
         "495_apollo.jpg",
         "495_apollo_fas09-1102.jpg",
@@ -26323,7 +26323,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "496-hero.jpg",
+      "hero": "496.jpg",
       "gallery": [
         "496_44_7_sail_over.jpg",
         "496rendering.gif"
@@ -26377,9 +26377,9 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "498-hero.jpg",
+      "hero": "498.jpg",
       "gallery": [
-        "498-hero.jpg",
+        "498.jpg",
         "498-2.jpg",
         "498-3.jpg",
         "498-4.jpg",
@@ -26709,7 +26709,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "533-hero.jpg",
+      "hero": "533.jpg",
       "gallery": [
         "533_lucky_midsearace.jpg",
         "533evolutionracing_chinasearace2010.jpg",
@@ -26771,7 +26771,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "534-hero.jpg",
+      "hero": "534.jpg",
       "gallery": [
         "534sailplan.jpg",
         "534 deck.gif",
@@ -26824,7 +26824,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "535-hero.jpg",
+      "hero": "535.jpg",
       "gallery": [
         "535_05.jpg",
         "535_01.jpg",
@@ -26982,7 +26982,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "539-hero.jpg",
+      "hero": "539.jpg",
       "gallery": [
         "539_02.jpg",
         "539_01.jpg",
@@ -27037,7 +27037,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "540-hero.jpg",
+      "hero": "540.jpg",
       "gallery": [
         "540promo2.jpg",
         "540promo.jpg",
@@ -27090,7 +27090,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "541-hero.jpg",
+      "hero": "541.jpg",
       "gallery": [
         "541_03.jpg",
         "541_01.jpg",
@@ -27181,7 +27181,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "542-hero.jpg",
+      "hero": "542.jpg",
       "gallery": [
         "542_01.jpg",
         "542_02.jpg",
@@ -27301,7 +27301,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "543-hero.jpg",
+      "hero": "543.jpg",
       "gallery": [
         "543_02.jpg",
         "543_01.jpg",
@@ -27389,7 +27389,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "545-hero.jpg",
+      "hero": "545.jpg",
       "gallery": [
         "545_pirates_01.jpg",
         "545_01.jpg",
@@ -27446,7 +27446,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "545 Regata-hero.jpg",
+      "hero": "545_regata.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -27497,7 +27497,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "545 VOR Yachting-hero.jpg",
+      "hero": "545_vor_yachting.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -27548,7 +27548,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "545 VOR2-hero.jpg",
+      "hero": "545_vor2.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -27597,7 +27597,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "546-hero.jpg",
+      "hero": "546.jpg",
       "gallery": [
         "services.jpg"
       ],
@@ -27671,7 +27671,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "550-hero.jpg",
+      "hero": "550.jpg",
       "gallery": [
         "550_04.jpg",
         "550_01.jpg",
@@ -27726,7 +27726,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "560-hero.jpg",
+      "hero": "560.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -27774,7 +27774,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "585-hero.jpg",
+      "hero": "585.jpg",
       "gallery": [
         "585_rush_01.jpg",
         "585_01.jpg",
@@ -27829,7 +27829,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "585 Spanish-hero.jpg",
+      "hero": "585_spanish.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -27880,7 +27880,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "585 Stark-hero.jpg",
+      "hero": "585_stark.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -27931,7 +27931,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "585 Tirado-hero.jpg",
+      "hero": "585_tirado.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -27980,7 +27980,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "586-hero.jpg",
+      "hero": "586.jpg",
       "gallery": [
         "585_01.jpg"
       ],
@@ -28032,7 +28032,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "586 Kahn-hero.jpg",
+      "hero": "586_kahn.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -28117,7 +28117,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "588-hero.jpg",
+      "hero": "588.jpg",
       "gallery": [
         "588_evolutionracing.jpg",
         "588m_sue_01.jpg",
@@ -28226,7 +28226,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "588M-hero.jpg",
+      "hero": "588m.jpg",
       "gallery": [
         "588m_sue_02.jpg"
       ],
@@ -28308,7 +28308,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "590-hero.jpg",
+      "hero": "590.jpg",
       "gallery": [
         "590_01.jpg",
         "590_01sm.jpg",
@@ -28386,7 +28386,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "591-hero.jpg",
+      "hero": "591.jpg",
       "gallery": [
         "591_01.jpg",
         "591_01sm.jpg",
@@ -28504,7 +28504,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "597-hero.jpg",
+      "hero": "597.jpg",
       "gallery": [
         "597_01.jpg",
         "597_01sm.jpg",
@@ -28574,7 +28574,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "602-hero.jpg",
+      "hero": "602.jpg",
       "gallery": [
         "602_01.jpg",
         "602ma_01.jpg",
@@ -28662,7 +28662,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "602_2-hero.jpg",
+      "hero": "602_2.jpg",
       "gallery": [
         "602_foncia_05.jpg"
       ],
@@ -28716,7 +28716,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "603-hero.jpg",
+      "hero": "603.jpg",
       "gallery": [
         "603_19.jpg",
         "603-2_01.jpg",
@@ -28791,7 +28791,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "603_2-hero.jpg",
+      "hero": "603_2.jpg",
       "gallery": [
         "603_estrelladamm_ny_bcn_2010.jpg"
       ],
@@ -28873,7 +28873,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "604-hero.jpg",
+      "hero": "604.jpg",
       "gallery": [
         "604_03.jpg",
         "604_01.jpg",
@@ -28952,7 +28952,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "605-hero.jpg",
+      "hero": "605.jpg",
       "gallery": [
         "605_roma_01.jpg",
         "605_01.jpg",
@@ -29034,7 +29034,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "606-hero.jpg",
+      "hero": "606.jpg",
       "gallery": [
         "606_07.jpg",
         "606_01.jpg",
@@ -29135,7 +29135,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "608-hero.jpg",
+      "hero": "608.jpg",
       "gallery": [
         "608_04.jpg",
         "608_01.jpg",
@@ -29209,7 +29209,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "609-hero.jpg",
+      "hero": "609.jpg",
       "gallery": [
         "609_13.jpg",
         "609m_hb_vg2012arrival022b.jpg",
@@ -29291,7 +29291,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "609M-hero.jpg",
+      "hero": "609m.jpg",
       "gallery": [
         "boss.jpg"
       ],
@@ -29373,7 +29373,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "613-hero.jpg",
+      "hero": "613.jpg",
       "gallery": [
         "613_tazo_01.jpg",
         "613_rendering_01.jpg",
@@ -29471,7 +29471,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "615-hero.jpg",
+      "hero": "615.jpg",
       "gallery": [
         "615_thalima_sailing3.jpg",
         "615_promos.jpg",
@@ -29538,7 +29538,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "620-hero.jpg",
+      "hero": "620.jpg",
       "gallery": [
         "620_04.jpg",
         "620_01.jpg",
@@ -29616,7 +29616,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "622-hero.jpg",
+      "hero": "622.jpg",
       "gallery": [
         "622_beneteau_first_35._600x400jpg.jpg",
         "622_photo_01.jpg",
@@ -29746,7 +29746,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "634-hero.jpg",
+      "hero": "634.jpg",
       "gallery": [
         "634-635_01.jpg",
         "634-635_01sm.jpg",
@@ -29812,7 +29812,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "635-hero.jpg",
+      "hero": "635.jpg",
       "gallery": [
         "635_01.jpg"
       ],
@@ -29886,7 +29886,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "640-hero.jpg",
+      "hero": "640.jpg",
       "gallery": [
         "640_05_400x600.jpg",
         "640_01.jpg",
@@ -29966,7 +29966,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "641-hero.jpg",
+      "hero": "641.jpg",
       "gallery": [
         "641_20.jpg",
         "641_01.jpg",
@@ -30042,7 +30042,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "642-hero.jpg",
+      "hero": "642.jpg",
       "gallery": [
         "642_01.jpg",
         "642_01lg.jpg",
@@ -30118,7 +30118,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "642M-hero.jpg",
+      "hero": "642m.jpg",
       "gallery": [
         "642m_01.jpg"
       ],
@@ -30206,7 +30206,7 @@
     "inProduction": true,
     "isArchived": false,
     "images": {
-      "hero": "667-hero.jpg",
+      "hero": "667.jpg",
       "gallery": [
         "667_01.jpg"
       ],
@@ -30262,7 +30262,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "668-hero.jpg",
+      "hero": "668.jpg",
       "gallery": [
         "668_img_4403.jpg",
         "668_01.jpg",
@@ -30318,7 +30318,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "673-hero.jpg",
+      "hero": "673.jpg",
       "gallery": [
         "673_02.jpg",
         "673m_cr56-int-22.jpg",
@@ -30387,7 +30387,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "675-hero.jpg",
+      "hero": "675.jpg",
       "gallery": [
         "675mcr33-innen011200.jpg",
         "675mcr33-innen0412.jpg",
@@ -30468,7 +30468,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "675M-hero.jpg",
+      "hero": "675m.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -30516,7 +30516,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "675M2-hero.jpg",
+      "hero": "675m2.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -30612,7 +30612,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "680-hero.png",
+      "hero": "680.png",
       "gallery": [
         "680_cruiser50.png",
         "680_cr50a_3390_08_600x400.jpg",
@@ -30668,7 +30668,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "685-hero.jpg",
+      "hero": "685.jpg",
       "gallery": [
         "685_bd16.jpg",
         "685elevation.jpg",
@@ -30736,7 +30736,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "691-hero.jpg",
+      "hero": "cape-arrow-1.jpg",
       "gallery": [
         "sw102_mr.jpg",
         "691_almagores_327.jpg",
@@ -30790,7 +30790,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "695-hero.jpg",
+      "hero": "695.jpg",
       "gallery": [
         "695_sail_mag.jpg",
         "695_cruiser45_3cabin.jpg",
@@ -30848,7 +30848,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "695M-hero.jpg",
+      "hero": "695m.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -30934,7 +30934,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "715-hero.jpg",
+      "hero": "715_azzam_cascais.jpg",
       "gallery": [
         "715_azzam_photo2.jpg",
         "715_azzam_photo1.jpg",
@@ -31021,7 +31021,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "720-hero.jpg",
+      "hero": "720_01.jpg",
       "gallery": [
         "720_100804_bavaria_303.jpg",
         "720_100804_bavaria_113.jpg",
@@ -31077,7 +31077,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "720M-hero.jpg",
+      "hero": "720m.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -31125,7 +31125,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "720M2-hero.jpg",
+      "hero": "720m2.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -31173,7 +31173,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "720M3-hero.jpg",
+      "hero": "720m3.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -31315,7 +31315,7 @@
     "inProduction": true,
     "isArchived": false,
     "images": {
-      "hero": "724-hero.jpg",
+      "hero": "724.jpg",
       "gallery": [
         "724_f400_press6.jpg",
         "724_bbs_01.jpg",
@@ -31471,7 +31471,7 @@
     "inProduction": true,
     "isArchived": false,
     "images": {
-      "hero": "726-hero.jpg",
+      "hero": "726m_cr37-aussen-render01.jpg",
       "gallery": [
         "726m_cr37-aussen-render02.jpg",
         "726m_cr37-aussen01.jpg",
@@ -31547,7 +31547,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "726M-hero.jpg",
+      "hero": "726m.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -31627,7 +31627,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "727-hero.jpg",
+      "hero": "727.jpg",
       "gallery": [
         "727_110112cnst_6545.jpeg",
         "727_110112cnst_6670.jpg",
@@ -31727,7 +31727,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "732-hero.jpg",
+      "hero": "732-369-f-13-original.jpg",
       "gallery": [
         "732-369-f-13.jpg",
         "732-369-f-15-400.jpg",
@@ -31781,7 +31781,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "733-hero.jpg",
+      "hero": "733.jpg",
       "gallery": [
         "733_bys_9261.jpg",
         "733_photo1.jpg",
@@ -31879,7 +31879,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "739-hero.jpg",
+      "hero": "739.jpg",
       "gallery": [
         "739-v42-exterior3.jpg",
         "739-v42_interior-cabin.jpg",
@@ -31940,7 +31940,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "740-hero.jpg",
+      "hero": "740_powerboat_0002_layer9-larger.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -31987,7 +31987,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "746-hero.jpg",
+      "hero": "746_fairweather-older.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -32086,7 +32086,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "749-hero.jpg",
+      "hero": "749_horizon_f14.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -32156,7 +32156,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "750-hero.jpg",
+      "hero": "750.jpg",
       "gallery": [
         "750_bys_0805.jpg",
         "750_bys_0805_400x265.jpg",
@@ -32214,7 +32214,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "757-hero.jpg",
+      "hero": "757_vo65_banner.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -32453,7 +32453,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "766-hero.jpg",
+      "hero": "766_image_2.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -32544,7 +32544,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "768-hero.jpg",
+      "hero": "768-seatius_launch-04.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -33064,7 +33064,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "779-hero.jpg",
+      "hero": "779_iso_20_press_release_2.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -33160,7 +33160,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "781-hero.jpg",
+      "hero": "781_13m_irc.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -33304,7 +33304,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "784-hero.jpg",
+      "hero": "784_60ft_dss.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -33515,7 +33515,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "788-hero.jpg",
+      "hero": "788_baltic142_rendering-crop-u746327.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -34041,7 +34041,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "801-hero.jpg",
+      "hero": "801_release.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -34228,7 +34228,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "809-hero.jpg",
+      "hero": "809-top-view-1b-3300x2200-crop-u7481265.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -34276,7 +34276,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "810-hero.jpg",
+      "hero": "810_-_view_1_-_clean-crop-u895318.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -34466,7 +34466,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "814-hero.jpg",
+      "hero": "814_bow_iso_view_1.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -34696,7 +34696,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "819-hero.jpg",
+      "hero": "819_ac_leeward_banner-crop-u814367.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -35014,7 +35014,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "826-hero.png",
+      "hero": "826_fwd_ISO_1a_mounted_800x600.png",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -35062,7 +35062,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "827-hero.jpg",
+      "hero": "827_bow_iso_2_generic-crop-u895290.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -35105,7 +35105,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "828-hero.png",
+      "hero": "828-bow-iso-view-1-mounted-scaled.png",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -35695,7 +35695,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "841-hero.jpg",
+      "hero": "841-sail-mounted-banner.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -35743,7 +35743,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "842-hero.jpg",
+      "hero": "842_aft_iso_view_1_mounted_800x600-crop-u8964185.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -35850,7 +35850,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "844-hero.jpg",
+      "hero": "844_aft_iso_view_1_mounted_800x600.jpg",
       "gallery": [],
       "card": null,
       "cardCropHint": null,
@@ -37707,7 +37707,7 @@
     "inProduction": null,
     "isArchived": null,
     "images": {
-      "hero": "414-hero.jpg",
+      "hero": "414.jpg",
       "gallery": [
         "414_wally_08.jpg",
         "414_venomous.jpg",
